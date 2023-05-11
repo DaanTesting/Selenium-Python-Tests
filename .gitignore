@@ -1,0 +1,29 @@
+.vscode
+__pycache__
+
+# direnv files
+.envrc
+
+# Backup and merge files
+\#*
+*~
+*.orig
+
+# Python stuff
+__pycache__/
+.eggs/
+*.pyc
+*.pyo
+*.egg-info
+.mypy_cache/
+env/
+static/
+
+# Common editors, this should go to ~/.gitignore but to avoid
+# polluting the repository, add them here anyway.
+*.sublime-project
+*.sublime-workspace
+.idea
+*.komodoproject
+*.swp
+.vscode
