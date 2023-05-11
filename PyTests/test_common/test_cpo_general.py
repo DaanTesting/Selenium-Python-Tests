@@ -126,7 +126,10 @@ class TestOne(BaseClass):
         individualcharginglocation.update_button()
 
         updatedlocationname = individualcharginglocation.overview_location_name().text
-        assert updatedlocationname == "Location: Autotest Location Configuration In Progress"
+        assert (
+            updatedlocationname
+            == "Location: Autotest Location Configuration In Progress"
+        )
         updatedcontactphone = individualcharginglocation.overview_contact_phone().text
         assert updatedcontactphone == "0477998844"
         updatedcontactname = individualcharginglocation.overview_contact_name().text
@@ -231,3 +234,5 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+    def test_fake(self):
+        pass
