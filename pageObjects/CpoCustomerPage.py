@@ -7,22 +7,20 @@ class CpoCustomerPage:
         self.driver = driver
 
     def search_by_name_field(self):
-        selector = (
+        selector1 = (
             By.CSS_SELECTOR,
             "input[placeholder='Name, email, phone, or internal code']",
         )
-        return self.driver.find_element(*selector)
+        return self.driver.find_element(*selector1)
 
     def click_on_top_result_customer(self):
-        selector = (By.CSS_SELECTOR, "a[href='/co/admin/customers/599/']")
-        self.driver.find_element(*selector).click()
+        selector1 = (By.CSS_SELECTOR, "a[href='/co/admin/customers/599/']")
+        self.driver.find_element(*selector1).click()
         cpoindividualcustomer = CpoIndividualCustomer(self.driver)
         return cpoindividualcustomer
-    
-    def click_on_top_result_carrefour(self):
-        selector = (By.CSS_SELECTOR, "a[href='/co/admin/customers/3/']")
-        self.driver.find_element(*selector).click()
-        cpoindividualcustomer = CpoIndividualCustomer(self.driver)
-        return cpoindividualcustomer
-    
 
+    def click_on_top_result_carrefour(self):
+        selector1 = (By.CSS_SELECTOR, "a[href='/co/admin/customers/3/']")
+        self.driver.find_element(*selector1).click()
+        cpoindividualcustomer = CpoIndividualCustomer(self.driver)
+        return cpoindividualcustomer

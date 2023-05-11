@@ -233,6 +233,3 @@ class TestOne(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-
-    def test_fake(self):
-        pass
