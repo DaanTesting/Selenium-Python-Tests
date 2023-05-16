@@ -92,3 +92,20 @@ class TestOne(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
+    def test_profiles_multiple_app_invites(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        homepage.menu_label_profiles()
+        hrprofilesoverview = homepage.menu_label_profiles_overview()
+        hrprofilesoverview.profile_overview_checkbox_all_users()
+        hrprofilesoverview.profile_overview_actions_button_invite()
+        message = str(hrprofilesoverview.profile_overview_message().text)
+        assert "app invitations have been sent successfully" in message
+

@@ -115,8 +115,8 @@ class HomePage:
     def menu_label_profiles_overview(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Overview'])[1]")
         self.driver.find_element(*selector1).click()
-        profilesoverview = HrProfilesOverview(self.driver)
-        return profilesoverview
+        hrprofilesoverview = HrProfilesOverview(self.driver)
+        return hrprofilesoverview
 
     def menu_label_import_export(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Import & Export'])[1]")

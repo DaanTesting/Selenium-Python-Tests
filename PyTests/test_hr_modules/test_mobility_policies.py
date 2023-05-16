@@ -16,7 +16,7 @@ def login_data(request):
     return request.param
 
 
-class SubModuleOne(BaseClass):
+class TestOne(BaseClass):
     def test_mobility_policies_searchbar(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -149,17 +149,10 @@ class SubModuleOne(BaseClass):
         mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
         time.sleep(1)
-        changemobilitypolicypage = (
-            mobilitypoliciesmainpage.mobility_policies_view_top_policy()
-        )
+        changemobilitypolicypage = mobilitypoliciesmainpage.mobility_policies_view_top_policy()
         changemobilitypolicypage.change_mobility_policy_activate_draft()
-        message = str(
-            changemobilitypolicypage.change_mobility_policy_activation_message().text
-        )
+        message = str(changemobilitypolicypage.change_mobility_policy_activation_message().text)
         assert "activated successfully" in message
-
-        generalobjects = GeneralObjects(self.driver)
-        generalobjects.sign_out_button()
 
     def test_mobility_policies_draft_link_users(self, setup, login_data):
         log = self.get_logger()
@@ -248,10 +241,42 @@ class SubModuleOne(BaseClass):
         changemobilitypolicypage.change_mobility_policy_select_car_sharing()
         changemobilitypolicypage.change_mobility_policy_select_bike_sharing()
         changemobilitypolicypage.change_mobility_policy_save()
-        message = str(
-            changemobilitypolicypage.change_mobility_policy_activation_message().text
-        )
-        assert "changed" in message
+        time.sleep(1)
+        message = str(changemobilitypolicypage.change_mobility_policy_activation_message().text)
+        assert "updated" in message
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+    
+    def test_mobility_policies_duplicate(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+
+        homepage = loginpage.login_button()
+        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
+        mobilitypoliciesmainpage.mobility_policies_filter_draft()
+        time.sleep(1)
+        changemobilitypolicypage = mobilitypoliciesmainpage.mobility_policies_view_top_policy()
+        changemobilitypolicypage.change_mobility_policy_duplicate()
+        time.sleep(1)
+        policyname = changemobilitypolicypage.change_mobility_policy_name_field()
+        newname = str(policyname.get_attribute("value"))
+        assert 'copy' in newname
+
+        changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+            Keys.CONTROL + "a"
+        )
+        changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+            Keys.DELETE)
+        
+        timestamp = str(datetime.now())
+        changemobilitypolicypage.change_mobility_policy_name_field().send_keys(timestamp)
+        changemobilitypolicypage.change_mobility_policy_save()
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+        
