@@ -33,6 +33,14 @@ class MobilityPoliciesMainPage:
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
 
+    def mobility_policies_filter_active(self):
+        selector1 = (By.XPATH, "//span[.='Filter']")
+        selector2 = (By.XPATH, "(//input[@type='checkbox'])[1]")
+        selector3 = (By.XPATH, "//button[.='Apply']")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()
+
     def mobility_policies_view_top_policy(self):
         selector1 = (By.XPATH, "(//*[name()='svg'])[2]")
         selector2 = (By.XPATH, "//a[normalize-space()='View']")

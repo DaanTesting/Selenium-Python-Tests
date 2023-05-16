@@ -25,3 +25,45 @@ class ChangeMobilityPolicyPage:
             ".fade.alert.alert-success.alert-dismissible.show",
         )
         return self.driver.find_element(*selector1)
+
+    def change_mobility_policy_name_field(self):
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Type your policy name here']")
+        return self.driver.find_element(*selector1)
+
+    def change_mobility_policy_select_all_linked_users(self):
+        selector1 = (By.XPATH, "(//div/input[@class='form-check-input'])[12]")
+        self.driver.find_element(*selector1).click()
+
+    def change_mobility_policy_select_all_available_users(self):
+        selector1 = (By.XPATH, "(//input[@type='checkbox'])[11]")
+        self.driver.find_element(*selector1).click()
+
+    def change_mobility_policy_link_all_users(self):
+        selector1 = (By.XPATH, "(//button[@type='button'])[6]")
+        self.driver.find_element(*selector1).click()
+
+    def change_mobility_policy_unlink_all_users(self):
+        selector1 = (By.XPATH, "(//button[@type='button'])[7]")
+        self.driver.find_element(*selector1).click()
+
+    def change_mobility_policy_select_parking(self):
+        selector1 = (By.CSS_SELECTOR, "div[title='Parking']")
+        selector2 = (By.CSS_SELECTOR, "#service-item-1")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+
+    def change_mobility_policy_select_car_sharing(self):
+        selector1 = (By.CSS_SELECTOR, "div[title='Car sharing']")
+        selector2 = (By.CSS_SELECTOR, "#service-item-3")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+
+    def change_mobility_policy_select_bike_sharing(self):
+        selector1 = (By.CSS_SELECTOR, "div[title='Bike sharing']")
+        selector2 = (By.CSS_SELECTOR, "#service-item-4")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+
+    def change_mobility_policy_save(self):
+        selector1 = (By.CSS_SELECTOR, "button[type='submit']")
+        self.driver.find_element(*selector1).click()
