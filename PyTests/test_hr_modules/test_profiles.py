@@ -1,6 +1,6 @@
 import time
 import pytest
-import datetime
+from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -8,6 +8,7 @@ from utilities.BaseClass import BaseClass
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
 from pageObjects.GeneralObjects import GeneralObjects
+from selenium.webdriver.common.keys import Keys
 
 
 @pytest.fixture(params=LoginPageData.testhr_login_data)
@@ -108,4 +109,48 @@ class TestOne(BaseClass):
         hrprofilesoverview.profile_overview_actions_button_invite()
         message = str(hrprofilesoverview.profile_overview_message().text)
         assert "app invitations have been sent successfully" in message
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+
+    #blockeduntilissueresolved   def test_add_and_delete_user(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys("daan.swinnen@optimile.eu")
+        loginpage.password_box().send_keys("UmVIi90k4GybBQz0X2Gv")
+        homepage = loginpage.login_button()
+        homepage.menu_label_cpo_customers()
+        self.driver.find_element(By.CSS_SELECTOR, "input[placeholder='Name, email, phone, or internal code']").send_keys("automatic" + Keys.ENTER)
+        self.driver.find_element(By.CSS_SELECTOR, "a[href='/sp/admin/customers/1300/']").click()
+        self.driver.find_element(By.XPATH, "//span[contains(.,'Users')]").click()
+        self.driver.find_element(By.XPATH, "//a[.='Create user']").click()
+        self.driver.find_element(By.CSS_SELECTOR, "#id_form-0-first_name").send_keys("Automatic")
+        self.driver.find_element(By.CSS_SELECTOR, "#id_form-0-last_name").send_keys("Deleted")
+        emailfield = self.driver.find_element(By.CSS_SELECTOR, "#id_form-0-email")
+        timestamp = datetime.now()
+        timestamp_str = timestamp.strftime("%Y%m%d%H%M%S")
+        emailfield.send_keys("daan.swinnen+" + timestamp_str + "@optimile.eu")
+        self.driver.find_element(By.CSS_SELECTOR, "button[name='save']").click()
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+        
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        homepage.menu_label_profiles()
+        hrprofilesoverview = homepage.menu_label_profiles_overview()
+        hrprofilesoverview.profile_overview_searchbar().send_keys("Automatic Deleted")
+
+
+
+
+
+
+
+
 

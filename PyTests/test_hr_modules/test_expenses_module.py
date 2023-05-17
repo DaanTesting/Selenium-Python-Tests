@@ -8,6 +8,7 @@ from utilities.BaseClass import BaseClass
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
 from pageObjects.GeneralObjects import GeneralObjects
+from selenium.webdriver.common.keys import Keys
 
 
 @pytest.fixture(params=LoginPageData.testhr_login_data)
@@ -49,8 +50,55 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-    def test_expenses_SearchByID_HRmod(self, setup, login_data):
+    def test_expenses_verify_overview(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
 
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+
+        expensesmainpage = homepage.menu_label_expenses()
+        overviewtitle = str(expensesmainpage.expenses_title_all_expenses().text)
+        assert overviewtitle == "All expenses"
+
+    def test_expenses_detail_modal(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+
+        expensesmainpage = homepage.menu_label_expenses()
+        expensesmainpage.expenses_open_top_expense_detail_modal()
+        expensesmainpage.expenses_detailmodal_show_details()
+        idtag1 = str(expensesmainpage.expenses_detailmodal_idtag().text)
+        expensesmainpage.expenses_detailmodal_next()
+        idtag2 = str(expensesmainpage.expenses_detailmodal_idtag().text)
+        assert idtag1 != idtag2
+
+    def test_expenses_detail_modal_attachment_scroll(self, setup, login_data):
+        log = self.get_logger()
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+
+        expensesmainpage = homepage.menu_label_expenses()
+        expensesmainpage.expenses_main_searchbar().send_keys("13513")
+        time.sleep(1)
+        expensesmainpage.expenses_open_top_expense_detail_modal()
+        time.sleep(1)
+        expensesmainpage.expenses_detailmodal_attachment_scroll()
+
+    def test_expenses_SearchByID_HRmod(self, setup, login_data):
         log = self.get_logger()
 
         loginpage = LoginPage(self.driver)
@@ -85,7 +133,6 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
     def test_expenses_SearchByType_HRmod(self, setup, login_data):
-
         loginpage = LoginPage(self.driver)
 
         loginpage.username_box().send_keys(login_data["account"])
@@ -107,7 +154,6 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
     def test_expenses_DenyUndo_HRmod(self, setup, login_data):
-
         log = self.get_logger()
 
         loginpage = LoginPage(self.driver)
@@ -165,7 +211,6 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
     def test_expenses_ApproveUndo_HRmod(self, setup, login_data):
-
         log = self.get_logger()
 
         loginpage = LoginPage(self.driver)
@@ -221,4 +266,64 @@ class TestOne(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+    
+    def test_expenses_verify_error_tab(self, setup, login_data):
+        log = self.get_logger()
 
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+
+        expensesmainpage = homepage.menu_label_expenses()
+        expensesmainpage.expenses_tab_error()
+        time.sleep(1)
+        statusbadge = str(self.driver.find_element(By.XPATH, "//tr/td[.='Error']").text)
+        assert statusbadge == 'Error'
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+    def test_expenses_date_picker(self, setup, login_data):
+        log = self.get_logger()
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+
+        expensesmainpage = homepage.menu_label_expenses()
+        self.driver.find_element(By.CSS_SELECTOR, ".fas.fa-calendar").click()
+        expensesmainpage.expenses_datepicker_field().send_keys("2023-05-16 to 2023-05-17" + Keys.ENTER)
+        time.sleep(1)
+        expensedates = self.driver.find_elements(By.XPATH, "//tr/td[3]")
+        for expensedate in expensedates:
+            assert str(expensedate.text) == "2023-05-17"
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+    def test_expenses_status_filter(self, setup, login_data):
+        log = self.get_logger()
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+
+        expensesmainpage = homepage.menu_label_expenses()
+        expensesmainpage.expenses_filter_paid()
+        time.sleep(1)
+        statustags = self.driver.find_elements(By.XPATH, "//tr/td[6]")
+        for statustag in statustags:
+            assert str(statustag.text) == "Paid"
+        
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+
+
+    

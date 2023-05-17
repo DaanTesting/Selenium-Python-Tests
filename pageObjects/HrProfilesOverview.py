@@ -18,6 +18,10 @@ class HrProfilesOverview:
     def profile_overview_message(self):
         selector1 = (By.CSS_SELECTOR, ".fade.alert.alert-success.alert-dismissible.show")
         return self.driver.find_element(*selector1)
+    
+    def profile_overview_searchbar(self):
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Search users']")
+        return self.driver.find_element(*selector1)
 
 
 

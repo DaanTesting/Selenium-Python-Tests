@@ -310,3 +310,13 @@
 2023-05-16 16:07:09,136 : INFO : test_tags_create_delete_expanded : daan.swinnen+autotest.admin@optimile.eu
 2023-05-16 16:25:00,683 : INFO : test_profiles_multiple_app_invites : daan.swinnen+autotest.admin@optimile.eu
 2023-05-16 16:31:14,273 : INFO : test_profiles_multiple_app_invites : daan.swinnen+autotest.admin@optimile.eu
+2023-05-16 17:02:14,666 : INFO : test_add_and_delete_user : daan.swinnen+autotest.admin@optimile.eu
+2023-05-16 17:03:06,109 : INFO : test_add_and_delete_user : daan.swinnen+autotest.admin@optimile.eu
+2023-05-17 10:50:07,029 : INFO : test_add_and_delete_user : daan.swinnen+autotest.admin@optimile.eu
+2023-05-17 11:01:44,653 : INFO : test_add_and_delete_user : daan.swinnen+autotest.admin@optimile.eu
+2023-05-17 11:02:27,281 : INFO : test_add_and_delete_user : daan.swinnen+autotest.admin@optimile.eu
+2023-05-17 11:02:49,792 : INFO : test_add_and_delete_user : daan.swinnen+autotest.admin@optimile.eu
+2023-05-17 13:33:28,158 : INFO : test_expenses_DownloadAttachment_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-05-17 13:33:38,421 : INFO : test_expenses_verify_basics : daan.swinnen+autotest.admin@optimile.eu
+2023-05-17 14:12:45,170 : INFO : test_expenses_detail_modal : daan.swinnen+autotest.admin@optimile.eu
+2023-05-17 14:13:06,912 : INFO : test_expenses_detail_modal : daan.swinnen+autotest.admin@optimile.eu
