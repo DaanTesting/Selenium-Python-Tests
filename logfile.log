@@ -1,0 +1,7 @@
+2023-05-23 11:06:07,265 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2023-05-23 11:06:07,266 : INFO : test_cpo_overview_screen : Attempting login.
+2023-05-23 11:06:09,390 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2023-05-23 11:06:09,390 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2023-05-23 13:05:51,909 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-05-23 13:05:51,909 : INFO : test_create_user_contract : Attempting login.
+2023-05-23 13:05:55,371 : INFO : test_create_user_contract : Succesfully logged in.

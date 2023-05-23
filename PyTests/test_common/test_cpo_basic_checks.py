@@ -15,10 +15,13 @@ class TestOne(BaseClass):
     def test_cpo_overview_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to CPO overview page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_overview()
         titleoverviewpage = str(
@@ -27,6 +30,7 @@ class TestOne(BaseClass):
             ).text
         )
         assert "Overview" in titleoverviewpage
+        log.info("Succesfully verified CPO overview page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -34,10 +38,13 @@ class TestOne(BaseClass):
     def test_cpo_customers_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to CPO customers page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_customers()
         titlecustomerspage = str(
@@ -46,17 +53,21 @@ class TestOne(BaseClass):
             ).text
         )
         assert titlecustomerspage is "Customers"
+        log.info("Succesfully verified customers page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-    def test_cpo_customers_screen(self, setup, login_data):
+    def test_cpo_charging_locations_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to charging locations page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_locations()
         titlelocationspage = str(
@@ -65,17 +76,21 @@ class TestOne(BaseClass):
             ).text
         )
         assert titlelocationspage is "Locations"
+        log.info("Succesfully verified locations page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-    def test_cpo_customers_screen(self, setup, login_data):
+    def test_cpo_tokens_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to tokens page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_tokens()
         titletokenspage = str(
@@ -84,6 +99,7 @@ class TestOne(BaseClass):
             ).text
         )
         assert "Tokens" in titletokenspage
+        log.info("Succesfully verified tokens page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -91,10 +107,13 @@ class TestOne(BaseClass):
     def test_cpo_simcards_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to simcards page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_simcards()
         titlesimcardsspage = str(
@@ -104,6 +123,7 @@ class TestOne(BaseClass):
             ).text
         )
         assert "sim" in titlesimcardsspage
+        log.info("Succesfully verified simcards page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -111,10 +131,13 @@ class TestOne(BaseClass):
     def test_cpo_contracts_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to contracts page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_contracts()
         titlecontractspage = str(
@@ -123,6 +146,7 @@ class TestOne(BaseClass):
             ).text
         )
         assert "Device contracts" in titlecontractspage
+        log.info("Succesfully verified contracts page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -130,10 +154,13 @@ class TestOne(BaseClass):
     def test_cpo_roaming_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to roaming page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_roaming()
         titleroamingpage = str(
@@ -142,6 +169,7 @@ class TestOne(BaseClass):
             ).text
         )
         assert "Roaming" in titleroamingpage
+        log.info("Succesfully verified roaming page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -149,10 +177,13 @@ class TestOne(BaseClass):
     def test_cpo_finance_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to finance page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_finance()
         titlefinancepage = str(
@@ -161,6 +192,7 @@ class TestOne(BaseClass):
             ).text
         )
         assert "Finance" in titlefinancepage
+        log.info("Succesfully verified finance page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -168,10 +200,13 @@ class TestOne(BaseClass):
     def test_cpo_reports_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to cpo reports page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_reports()
         titlefinancepage = str(
@@ -180,6 +215,7 @@ class TestOne(BaseClass):
             ).text
         )
         assert "Reports" in titlefinancepage
+        log.info("Succesfully verified reports page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -187,10 +223,13 @@ class TestOne(BaseClass):
     def test_cpo_splitbilling_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
+        log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to splitbilling page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_splitbilling()
         titlefinancepage = str(
@@ -199,6 +238,7 @@ class TestOne(BaseClass):
             ).text
         )
         assert "Split billing" in titlefinancepage
+        log.info("Succesfully verified split billing page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
