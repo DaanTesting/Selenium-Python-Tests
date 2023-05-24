@@ -110,7 +110,7 @@ class TestOne(BaseClass):
         homepage.menu_label_msp_operators()
         titleoperatorspage = self.driver.find_element(
             By.XPATH, "(//h1[normalize-space()='Operators'])[1]"
-        )
+        ).text
         assert titleoperatorspage == "Operators"
         log.info("Succesfully verified operators page.")
 

@@ -123,9 +123,9 @@ class TestThree(BaseClass):
 
 
 class TestFour(BaseClass):
-    def test_add_token_to_whitelist(self):
+    def test_add_token_to_whitelist(self, setup):
         log = self.get_logger()
-        log.info(login_data["account"])
+        log.info("daan.swinnen+splitbilling4@optimile.eu")
         log.info("Attempting login.")
 
         loginpage = LoginPage(self.driver)

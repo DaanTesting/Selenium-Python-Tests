@@ -14,7 +14,7 @@ class ManageUsersPage:
         return self.driver.find_element(*selector1)
 
     def checkbox_account_admin(self):
-        selector1 = (By.CSS_SELECTOR, "#id_form-1-roles_0")
+        selector1 = (By.CSS_SELECTOR, "#id_form-1-SYS_ADMIN")
         self.driver.find_element(*selector1).click()
 
     def create_user_save_button(self):

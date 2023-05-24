@@ -52,7 +52,7 @@ class TestOne(BaseClass):
                 By.XPATH, "(//h1[normalize-space()='Customers'])[1]"
             ).text
         )
-        assert titlecustomerspage is "Customers"
+        assert titlecustomerspage == "Customers"
         log.info("Succesfully verified customers page.")
 
         generalobjects = GeneralObjects(self.driver)
@@ -75,7 +75,7 @@ class TestOne(BaseClass):
                 By.XPATH, "(//h1[normalize-space()='Locations'])[1]"
             ).text
         )
-        assert titlelocationspage is "Locations"
+        assert titlelocationspage == "Locations"
         log.info("Succesfully verified locations page.")
 
         generalobjects = GeneralObjects(self.driver)
