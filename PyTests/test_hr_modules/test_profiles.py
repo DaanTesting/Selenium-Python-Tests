@@ -1,6 +1,6 @@
 import time
 import pytest
-from datetime import datetime
+import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -29,7 +29,7 @@ class TestOne(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to profiles page.")
-        homepage.menu_label_profiles()
+        homepage.menu_label_administration()
         tagmanagerpage = homepage.menu_label_tag_manager()
         log.info("Attempting to create new tag.")
         tagmanagerpage.create_tag_button()
@@ -59,7 +59,7 @@ class TestOne(BaseClass):
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
-        homepage.menu_label_profiles()
+        homepage.menu_label_administration()
         log.info("Succesfully logged in.")
         tagmanagerpage = homepage.menu_label_tag_manager()
         log.info("Attempting to create new tag.")
@@ -79,6 +79,7 @@ class TestOne(BaseClass):
         tagmanagerpage.tag_save_button()
         log.info("Saved new tag.")
         time.sleep(1)
+        homepage.menu_label_employees()
         profilesoverview = homepage.menu_label_profiles_overview()
         time.sleep(1)
         assert profilesoverview.driver.find_element(By.XPATH, "(//div[@class='color-badge-blue user-tag'])[1]")
@@ -92,6 +93,7 @@ class TestOne(BaseClass):
         
         log.info("Succesfully verified tagname.")
 
+        homepage.menu_label_administration()
         tagmanagerpage = homepage.menu_label_tag_manager()
         time.sleep(1)
         log.info("Attempting to edit tag.")
@@ -129,8 +131,8 @@ class TestOne(BaseClass):
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
-        homepage.menu_label_profiles()
         log.info("Succesfully logged in.")
+        homepage.menu_label_administration()
         log.info("Navigating to profile overview.")
         hrprofilesoverview = homepage.menu_label_profiles_overview()
         log.info("Attempting to invite multiple users to the app.")

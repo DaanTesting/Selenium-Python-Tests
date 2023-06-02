@@ -39,6 +39,10 @@ class ExpensesMainPage:
         selector1 = (By.CSS_SELECTOR, ".id-tag")
         return self.driver.find_element(*selector1)
     
+    def expenses_detailmodal_close(self):
+        selector1 = (By.XPATH, "//button[@class='btn-close']")
+        self.driver.find_element(*selector1).click()
+    
     def expenses_detailmodal_next(self):
         selector1 = (By.XPATH, "//button[.='Next']")
         self.driver.find_element(*selector1).click()

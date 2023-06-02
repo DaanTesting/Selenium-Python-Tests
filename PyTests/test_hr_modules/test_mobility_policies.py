@@ -95,14 +95,18 @@ class TestOne(BaseClass):
         log.info("Selected second contract.")
         newmobilitypolicypage.new_policy_budget_value().send_keys("150")
         log.info("Set policy budget to '150'.")
+        
         newmobilitypolicypage.new_policy_datepicker()
         log.info("Set start date on 'today'.")
         log.info("Set end date as undefined.")
+        
         newmobilitypolicypage.new_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
-        newmobilitypolicypage.new_policy_select_all_available_users()
+
+        newmobilitypolicypage.new_policy_select_all_available_users().click()
         newmobilitypolicypage.new_policy_move_users_to_linked()
         log.info("Linked all available users.")
+        
         newmobilitypolicypage.new_policy_activate()
         time.sleep(1)
         newmobilitypolicypage.new_policy_accept_button()
@@ -220,9 +224,7 @@ class TestOne(BaseClass):
         )
         log.info("Opened top draft.")
         time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//div/input[@class='form-check-input'])[12]"
-        ).click()
+        changemobilitypolicypage.change_mobility_policy_select_all_linked_users()
         time.sleep(1)
         changemobilitypolicypage.change_mobility_policy_unlink_all_users()
         log.info("Unlinked all users from draft policy.")

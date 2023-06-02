@@ -72,6 +72,9 @@ class TestOne(BaseClass):
         assert overviewtitle == "All expenses"
         log.info("Succesfully verified expenses overview-page.")
 
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
     def test_expenses_detail_modal(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -94,6 +97,11 @@ class TestOne(BaseClass):
         idtag2 = str(expensesmainpage.expenses_detailmodal_idtag().text)
         assert idtag1 != idtag2
         log.info("Succesfully scrolled between expenses.")
+        log.info("Closing detail modal.")
+        expensesmainpage.expenses_detailmodal_close()
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
 
     def test_expenses_detail_modal_attachment_scroll(self, setup, login_data):
         log = self.get_logger()
@@ -116,6 +124,11 @@ class TestOne(BaseClass):
         time.sleep(1)
         expensesmainpage.expenses_detailmodal_attachment_scroll()
         log.info("Succesfully scrolled between various attachments.")
+
+        expensesmainpage.expenses_detailmodal_close()
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
 
     def test_expenses_SearchByID_HRmod(self, setup, login_data):
         log = self.get_logger()
@@ -154,6 +167,7 @@ class TestOne(BaseClass):
         log.info("Succesfully verified expense ID.")
 
         self.driver.find_element(By.CSS_SELECTOR, "button[aria-label='Close']").click()
+        
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
@@ -202,6 +216,7 @@ class TestOne(BaseClass):
 
         expensesmainpage = homepage.menu_label_expenses()
         expensesmainpage.tab_all_expenses(self.driver)
+        time.sleep(1)
         expensesmainpage.tab_new(self.driver)
         log.info("Navigating to new expenses tab.")
         time.sleep(1)

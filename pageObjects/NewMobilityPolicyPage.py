@@ -28,14 +28,15 @@ class NewMobilityPolicyPage:
 
     def new_policy_datepicker(self):
         selector1 = (By.CSS_SELECTOR, "input[placeholder='Start date']")
-        selector2 = (By.XPATH, "//div[@class='dayContainer']/span")
+        selector2 = (By.XPATH, "//div[@class='flatpickr-days']/div/span")
         today = str(datetime.today().strftime("%B %d, %Y"))
         self.driver.find_element(*selector1).click()
         days = self.driver.find_elements(*selector2)
+        time.sleep(1)
         for day in days:
             if day.get_attribute("aria-label") == (today):
                 day.click()
-                break
+                
 
     def new_policy_select_parking(self):
         selector1 = (By.XPATH, "//h6[.='Parking']")
@@ -44,8 +45,8 @@ class NewMobilityPolicyPage:
         self.driver.find_element(*selector2).click()
 
     def new_policy_select_all_available_users(self):
-        selector1 = (By.XPATH, "(//input[@type='checkbox'])[11]")
-        self.driver.find_element(*selector1).click()
+        selector1 = (By.XPATH, "(//div/input[contains(@type,'checkbox')])[12]")
+        return self.driver.find_element(*selector1)
 
     def new_policy_move_users_to_linked(self):
         selector1 = (By.CSS_SELECTOR, "i[class='fas fa-chevron-right']")

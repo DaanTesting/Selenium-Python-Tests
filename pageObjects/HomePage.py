@@ -17,10 +17,8 @@ class HomePage:
         self.driver = driver
 
     def menu_label_expenses(self):
-        selector1 = (By.CSS_SELECTOR, 'a[href*="mobility"]')
-        selector2 = (By.CSS_SELECTOR, 'a[href*="expenses"]')
+        selector1 = (By.XPATH, "//span[.='Expenses']")
         self.driver.find_element(*selector1).click()
-        self.driver.find_element(*selector2).click()
         expensesmainpage = ExpensesMainPage(self.driver)
         return expensesmainpage
 
@@ -75,14 +73,14 @@ class HomePage:
         manageuserspage = ManageUsersPage(self.driver)
         return manageuserspage
 
-    def menu_label_profiles(self):
-        selector1 = (By.XPATH, "//span[contains(normalize-space(),'Profiles')]")
+    def menu_label_administration(self):
+        selector1 = (By.XPATH, "//span[.='Administration']")
         self.driver.find_element(*selector1).click()
 
     def menu_label_tag_manager(self):
         selector1 = (
-            By.XPATH,
-            "(//span[@class='menu-label'][normalize-space()='Tag manager'])",
+            By.CSS_SELECTOR,
+            "div[data-bs-original-title='Tags'] span[class='menu-label']",
         )
         self.driver.find_element(*selector1).click()
         tagmanagerpage = TagManagerPage(self.driver)
@@ -94,8 +92,8 @@ class HomePage:
         whitelistpage = WhiteListPage(self.driver)
         return whitelistpage
 
-    def menu_label_account(self):
-        selector1 = (By.XPATH, "//span[.='Account']")
+    def menu_label_finance(self):
+        selector1 = (By.XPATH, "//span[.='Finance']")
         self.driver.find_element(*selector1).click()
 
     def menu_label_account_details(self):
@@ -118,8 +116,8 @@ class HomePage:
         hrprofilesoverview = HrProfilesOverview(self.driver)
         return hrprofilesoverview
 
-    def menu_label_import_export(self):
-        selector1 = (By.XPATH, "(//span[normalize-space()='Import & Export'])[1]")
+    def menu_label_employees(self):
+        selector1 = (By.XPATH, "//span[.='Employees']")
         self.driver.find_element(*selector1).click()
 
     def menu_label_import(self):

@@ -31,11 +31,11 @@ class ChangeMobilityPolicyPage:
         return self.driver.find_element(*selector1)
 
     def change_mobility_policy_select_all_linked_users(self):
-        selector1 = (By.XPATH, "(//div/input[@class='form-check-input'])[12]")
+        selector1 = (By.XPATH, "(//div/input[@class='form-check-input'])[14]")
         self.driver.find_element(*selector1).click()
 
     def change_mobility_policy_select_all_available_users(self):
-        selector1 = (By.XPATH, "(//input[@type='checkbox'])[11]")
+        selector1 = (By.XPATH, "(//input[@type='checkbox'])[12]")
         self.driver.find_element(*selector1).click()
 
     def change_mobility_policy_link_all_users(self):
@@ -71,8 +71,6 @@ class ChangeMobilityPolicyPage:
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
-
-
 
     def change_mobility_policy_save(self):
         selector1 = (By.CSS_SELECTOR, "button[type='submit']")

@@ -12,3 +12,7 @@ class AccountDetailsPage:
     def account_details_updated_message(self):
         selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
         return self.driver.find_element(*selector1)
+    
+    def account_details_title(self):
+        selector1 = (By.XPATH, "(//h1[normalize-space()='Account details'])[1]")
+        return self.driver.find_element(*selector1)
