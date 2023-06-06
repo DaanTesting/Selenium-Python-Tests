@@ -16,7 +16,7 @@ def login_data(request):
     return request.param
 
 
-class TestOne(BaseClass):
+class TestSubModuleOne(BaseClass):
     def test_expenses_DownloadAttachment_HRmod(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -54,6 +54,7 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleTwo(BaseClass):
     def test_expenses_verify_overview(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -130,6 +131,7 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleThree(BaseClass):
     def test_expenses_SearchByID_HRmod(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -167,7 +169,7 @@ class TestOne(BaseClass):
         log.info("Succesfully verified expense ID.")
 
         self.driver.find_element(By.CSS_SELECTOR, "button[aria-label='Close']").click()
-        
+
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
@@ -201,6 +203,7 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleFour(BaseClass):
     def test_expenses_DenyUndo_HRmod(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -322,6 +325,7 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleFive(BaseClass):
     def test_expenses_verify_error_tab(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

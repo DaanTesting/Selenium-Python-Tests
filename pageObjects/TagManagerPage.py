@@ -43,7 +43,7 @@ class TagManagerPage:
         self.driver.find_element(*selector4).click()
 
     def page_title(self):
-        selector1 = (By.XPATH, "(//h1[normalize-space()='Tag manager'])[1]")
+        selector1 = (By.XPATH, "//h1[contains(.,'Tag manager')]")
         return self.driver.find_element(*selector1)
 
     def edit_tag(self):

@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-from datetime import datetime
+import datetime
 import time
 
 
@@ -29,14 +29,14 @@ class NewMobilityPolicyPage:
     def new_policy_datepicker(self):
         selector1 = (By.CSS_SELECTOR, "input[placeholder='Start date']")
         selector2 = (By.XPATH, "//div[@class='flatpickr-days']/div/span")
-        today = str(datetime.today().strftime("%B %d, %Y"))
+        today = str(datetime.datetime.today().strftime("%B%e, %Y"))
         self.driver.find_element(*selector1).click()
         days = self.driver.find_elements(*selector2)
         time.sleep(1)
         for day in days:
-            if day.get_attribute("aria-label") == (today):
-                day.click()
-                
+                if day.get_attribute("aria-label") == today:
+                    day.click()
+                    break
 
     def new_policy_select_parking(self):
         selector1 = (By.XPATH, "//h6[.='Parking']")

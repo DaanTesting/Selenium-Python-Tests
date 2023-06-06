@@ -65,7 +65,7 @@ class TestOne(BaseClass):
 
         tagmanagerpage = homepage.menu_label_tag_manager()
         titletagmanagerpage = tagmanagerpage.page_title().text
-        assert titletagmanagerpage == "Tag manager"
+        assert "Tag manager" in titletagmanagerpage
         log.info("Succesfully verified tag manager page.")
 
         generalobjects = GeneralObjects(self.driver)
@@ -128,11 +128,53 @@ class TestOne(BaseClass):
         log.info("Succesfully verified mobility policies-page.")
 
         homepage.menu_label_expenses()
-        titleexpenses = self.driver.find_element(
-            By.XPATH, "//h1[.='Expenses']"
-        ).text
+        titleexpenses = self.driver.find_element(By.XPATH, "//h1[.='Expenses']").text
         assert titleexpenses == "Expenses"
         log.info("Succesfully verified expenses-page.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
+    def test_user_detail(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting Login.")
+
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to employee overview.")
+        homepage.menu_label_employees()
+        hrprofilesoverview = homepage.menu_label_profiles_overview()
+        log.info("Opening Auto 10 User 10's profile by clicking on name.")
+        userdetailpage = hrprofilesoverview.profile_overview_click_name()
+        wait = WebDriverWait(self.driver, 10)
+        wait.until(EC.presence_of_element_located((By.XPATH, "//button[.='Personal']")))
+        log.info("Attempting to verify presence of all relevant elements.")
+        userdetailpage.userdetail_verify_presence_personal_elements()
+        log.info("Succesfully verified page elements.")
+        log.info("Opening employment subtab.")
+        userdetailpage.userdetail_select_employment_tab()
+        userdetailpage.userdetail_verify_presence_employment_elements()
+        log.info("Successfully verified employment subtab.")
+        log.info("Opening financial info subtab.")
+        userdetailpage.userdetail_select_financialinfo_tab()
+        userdetailpage.userdetail_verify_presence_financialinfo_elements()
+        log.info("Succesfully verified financial info subtab.")
+        log.info("Opening securex subtab.")
+        userdetailpage.userdetail_select_securex_tab()
+        userdetailpage.userdetail_verify_presence_securex_elements()
+        log.info("Succesfully verified securex subtab.")
+        log.info("Attempting to navigate to the next user.")
+        userdetailpage.userdetail_next_previous()
+        log.info("Succesfully navigated to the next user detail.")
+        log.info("Returning to profiles overview.")
+
+        userdetailpage.userdetail_return_to_overview()
+        log.info("Attempting to open profile through view-option.")
+        userdetailpage.profile_overview_view_profile()
+        wait.until(EC.presence_of_element_located((By.XPATH, "//button[.='Personal']")))
+        userinfotitle = self.driver.find_element(By.XPATH, "//h5[.='User info']").text
+        assert userinfotitle == "User info"

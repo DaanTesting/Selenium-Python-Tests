@@ -16,7 +16,7 @@ def login_data(request):
     return request.param
 
 
-class TestOne(BaseClass):
+class TestSubModuleOne(BaseClass):
     def test_mobility_policies_searchbar(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -167,7 +167,7 @@ class TestOne(BaseClass):
         log.info("Set end date as undefined.")
         newmobilitypolicypage.new_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
-        newmobilitypolicypage.new_policy_select_all_available_users()
+        newmobilitypolicypage.new_policy_select_all_available_users().click()
         newmobilitypolicypage.new_policy_move_users_to_linked()
         log.info("Linked all available users.")
         log.info("Saving the policy as a draft.")
@@ -203,6 +203,7 @@ class TestOne(BaseClass):
         assert "activated successfully" in message
         log.info("Succesfully activated draft policy.")
 
+class TestSubModuleTwo(BaseClass):
     def test_mobility_policies_draft_link_users(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -267,10 +268,19 @@ class TestOne(BaseClass):
             Keys.DELETE
         )
         timestamp = str(datetime.now())
+        timestampbase = datetime.now()
+        limitedtimestamp = timestampbase.strftime('%Y-%m-%d %H')
+
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
             timestamp
         )
         log.info("Changed draft name to 'timestamp'.")
+        changemobilitypolicypage.change_mobility_policy_save()
+        time.sleep(1)
+        mobilitypoliciesmainpage.mobility_policies_filter_draft()
+        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys(limitedtimestamp)
+        mobilitypoliciesmainpage.mobility_policies_view_top_policy()
+
         changemobilitypolicypage.change_mobility_policy_activate_draft()
         message = str(
             changemobilitypolicypage.change_mobility_policy_activation_message().text
@@ -351,7 +361,9 @@ class TestOne(BaseClass):
             Keys.DELETE)
         
         timestamp = str(datetime.now())
+        
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(timestamp)
+
         log.info("Named duplicate policy 'timestamp'.")
         changemobilitypolicypage.change_mobility_policy_save()
         log.info("Succesfully saved duplicate policy.")

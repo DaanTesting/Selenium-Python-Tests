@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from pageObjects.UserDetailPage import UserDetailPage
 
 
 class HrProfilesOverview:
@@ -22,6 +23,18 @@ class HrProfilesOverview:
     def profile_overview_searchbar(self):
         selector1 = (By.CSS_SELECTOR, "input[placeholder='Search users']")
         return self.driver.find_element(*selector1)
+    
+    def profile_overview_click_name(self):
+        selector1 = (By.XPATH, "//div[.='User 10 Auto 10']")
+        self.driver.find_element(*selector1).click()
+        userdetailpage = UserDetailPage(self.driver)
+        return userdetailpage
+    
+    
+        
+
+
+    
 
 
 
