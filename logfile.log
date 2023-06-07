@@ -1557,3 +1557,225 @@
 2023-06-06 13:55:12,099 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
 2023-06-06 13:55:15,866 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
 2023-06-06 13:55:18,458 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2023-06-06 13:59:45,505 : INFO : test_cpo_splitbilling_screen : daan.swinnen@optimile.eu
+2023-06-06 13:59:45,505 : INFO : test_cpo_splitbilling_screen : Attempting login.
+2023-06-06 13:59:47,860 : INFO : test_cpo_splitbilling_screen : Succesfully logged in.
+2023-06-06 13:59:47,860 : INFO : test_cpo_splitbilling_screen : Navigating to splitbilling page.
+2023-06-06 13:59:48,817 : INFO : test_cpo_splitbilling_screen : Succesfully verified split billing page.
+2023-06-06 14:01:06,791 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2023-06-06 14:01:06,791 : INFO : test_configure_location_information : Attempting login.
+2023-06-06 14:01:09,019 : INFO : test_configure_location_information : Succesfully logged in.
+2023-06-06 14:01:09,019 : INFO : test_configure_location_information : Navigating to locations page.
+2023-06-06 14:01:09,388 : INFO : test_configure_location_information : Searching for 'Autotest Location Configuration'.
+2023-06-06 14:01:09,695 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2023-06-06 14:01:10,335 : INFO : test_configure_location_information : Edit location name.
+2023-06-06 14:01:10,414 : INFO : test_configure_location_information : Edit location phone number.
+2023-06-06 14:01:10,508 : INFO : test_configure_location_information : Edit contact name.
+2023-06-06 14:01:10,579 : INFO : test_configure_location_information : Attempting to update location.
+2023-06-06 14:01:10,897 : INFO : test_configure_location_information : Verified location name changed correctly.
+2023-06-06 14:01:10,912 : INFO : test_configure_location_information : Verified phone number changed correctly.
+2023-06-06 14:01:10,926 : INFO : test_configure_location_information : Verified contact name changed correctly.
+2023-06-06 14:01:10,926 : INFO : test_configure_location_information : Attempting to reset location information.
+2023-06-06 14:01:11,900 : INFO : test_configure_location_information : Succesfully reset location information.
+2023-06-06 14:01:18,890 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2023-06-06 14:01:18,890 : INFO : test_configure_location_location_data : Attempting login.
+2023-06-06 14:01:21,178 : INFO : test_configure_location_location_data : Succesfully logged in.
+2023-06-06 14:01:21,178 : INFO : test_configure_location_location_data : Navigating to locations page.
+2023-06-06 14:01:21,734 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2023-06-06 14:01:22,152 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2023-06-06 14:01:22,805 : INFO : test_configure_location_location_data : Updated location adress
+2023-06-06 14:01:22,888 : INFO : test_configure_location_location_data : Updated postcode.
+2023-06-06 14:01:22,965 : INFO : test_configure_location_location_data : Updated town.
+2023-06-06 14:01:23,020 : INFO : test_configure_location_location_data : Updated country.
+2023-06-06 14:01:24,021 : INFO : test_configure_location_location_data : Attempting to update location data.
+2023-06-06 14:01:25,484 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2023-06-06 14:01:25,484 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2023-06-06 14:01:28,773 : INFO : test_configure_location_location_data : Succesfully reset location data.
+2023-06-06 14:34:26,142 : INFO : test_cpo_finance_screen : daan.swinnen@optimile.eu
+2023-06-06 14:34:26,142 : INFO : test_cpo_finance_screen : Attempting login.
+2023-06-06 14:34:28,526 : INFO : test_cpo_finance_screen : Succesfully logged in.
+2023-06-06 14:34:28,526 : INFO : test_cpo_finance_screen : Navigating to finance page.
+2023-06-06 14:34:28,986 : INFO : test_cpo_finance_screen : Succesfully verified finance page.
+2023-06-06 15:23:11,999 : INFO : test_administration_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:23:12,000 : INFO : test_administration_screen : Attempting login.
+2023-06-06 15:23:14,402 : INFO : test_administration_screen : Succesfully logged in.
+2023-06-06 15:23:14,403 : INFO : test_administration_screen : Navigating to administration tab.
+2023-06-06 15:24:06,375 : INFO : test_administration_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:24:06,375 : INFO : test_administration_screen : Attempting login.
+2023-06-06 15:24:08,729 : INFO : test_administration_screen : Succesfully logged in.
+2023-06-06 15:24:08,729 : INFO : test_administration_screen : Navigating to administration tab.
+2023-06-06 15:24:09,182 : INFO : test_administration_screen : Verified account details page.
+2023-06-06 15:28:49,355 : INFO : test_administration_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:28:49,355 : INFO : test_administration_screen : Attempting login.
+2023-06-06 15:28:51,815 : INFO : test_administration_screen : Succesfully logged in.
+2023-06-06 15:28:51,815 : INFO : test_administration_screen : Navigating to administration tab.
+2023-06-06 15:28:52,189 : INFO : test_administration_screen : Verified account details page.
+2023-06-06 15:30:35,692 : INFO : test_administration_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:30:35,692 : INFO : test_administration_screen : Attempting login.
+2023-06-06 15:30:37,830 : INFO : test_administration_screen : Succesfully logged in.
+2023-06-06 15:30:37,830 : INFO : test_administration_screen : Navigating to administration tab.
+2023-06-06 15:30:38,238 : INFO : test_administration_screen : Verified account details page.
+2023-06-06 15:31:30,655 : INFO : test_administration_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:31:30,655 : INFO : test_administration_screen : Attempting login.
+2023-06-06 15:31:33,386 : INFO : test_administration_screen : Succesfully logged in.
+2023-06-06 15:31:33,386 : INFO : test_administration_screen : Navigating to administration tab.
+2023-06-06 15:31:33,880 : INFO : test_administration_screen : Verified account details page.
+2023-06-06 15:39:13,811 : INFO : test_administration_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:39:13,812 : INFO : test_administration_screen : Attempting login.
+2023-06-06 15:39:16,447 : INFO : test_administration_screen : Succesfully logged in.
+2023-06-06 15:39:16,447 : INFO : test_administration_screen : Navigating to administration tab.
+2023-06-06 15:39:16,885 : INFO : test_administration_screen : Verified account details page.
+2023-06-06 15:47:27,261 : INFO : test_administration_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:47:27,262 : INFO : test_administration_screen : Attempting login.
+2023-06-06 15:47:29,589 : INFO : test_administration_screen : Succesfully logged in.
+2023-06-06 15:47:29,589 : INFO : test_administration_screen : Navigating to administration tab.
+2023-06-06 15:47:29,979 : INFO : test_administration_screen : Verified account details page.
+2023-06-06 15:47:39,744 : INFO : test_administration_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:47:39,744 : INFO : test_administration_screen : Attempting login.
+2023-06-06 15:47:41,997 : INFO : test_administration_screen : Succesfully logged in.
+2023-06-06 15:47:41,997 : INFO : test_administration_screen : Navigating to administration tab.
+2023-06-06 15:47:42,419 : INFO : test_administration_screen : Verified account details page.
+2023-06-06 15:52:19,970 : INFO : test_administration_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 15:52:19,970 : INFO : test_administration_tab : Attempting login.
+2023-06-06 15:52:22,078 : INFO : test_administration_tab : Succesfully logged in.
+2023-06-06 15:52:22,079 : INFO : test_administration_tab : Navigating to administration tab.
+2023-06-06 15:52:22,509 : INFO : test_administration_tab : Verified account details page.
+2023-06-06 15:52:22,708 : INFO : test_administration_tab : Verified preferences page.
+2023-06-06 15:52:23,044 : INFO : test_administration_tab : Verified users page.
+2023-06-06 15:52:23,335 : INFO : test_administration_tab : Verified tags page.
+2023-06-06 15:52:23,529 : INFO : test_administration_tab : Verified external users page.
+2023-06-06 15:52:23,721 : INFO : test_administration_tab : Verified user invites page.
+2023-06-06 16:25:41,864 : INFO : test_finance_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 16:25:41,864 : INFO : test_finance_tab : Attempting login.
+2023-06-06 16:25:44,144 : INFO : test_finance_tab : Succesfully logged in.
+2023-06-06 16:25:44,144 : INFO : test_finance_tab : Navigating to finance tab.
+2023-06-06 16:27:00,925 : INFO : test_finance_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 16:27:00,925 : INFO : test_finance_tab : Attempting login.
+2023-06-06 16:27:03,895 : INFO : test_finance_tab : Succesfully logged in.
+2023-06-06 16:27:03,895 : INFO : test_finance_tab : Navigating to finance tab.
+2023-06-06 16:27:04,395 : INFO : test_finance_tab : Verified invoices page.
+2023-06-06 16:27:04,830 : INFO : test_finance_tab : Verified payment methods page.
+2023-06-06 16:27:05,204 : INFO : test_finance_tab : Verified credit transactions page.
+2023-06-06 16:27:05,593 : INFO : test_finance_tab : Verified revenue page.
+2023-06-06 16:27:05,841 : INFO : test_finance_tab : Verified payment requests page.
+2023-06-06 16:27:06,080 : INFO : test_finance_tab : Verified debit notes page.
+2023-06-06 16:27:13,776 : INFO : test_administration_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-06 16:27:13,777 : INFO : test_administration_tab : Attempting login.
+2023-06-06 16:27:15,944 : INFO : test_administration_tab : Succesfully logged in.
+2023-06-06 16:27:15,944 : INFO : test_administration_tab : Navigating to administration tab.
+2023-06-06 16:27:16,369 : INFO : test_administration_tab : Verified account details page.
+2023-06-06 16:27:16,580 : INFO : test_administration_tab : Verified preferences page.
+2023-06-06 16:27:16,957 : INFO : test_administration_tab : Verified users page.
+2023-06-06 16:27:17,272 : INFO : test_administration_tab : Verified tags page.
+2023-06-06 16:27:17,467 : INFO : test_administration_tab : Verified external users page.
+2023-06-06 16:27:17,661 : INFO : test_administration_tab : Verified user invites page.
+2023-06-07 12:30:58,081 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 12:30:58,082 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 12:31:00,543 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 12:39:45,671 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 12:39:45,671 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 12:39:48,160 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 12:40:17,828 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 12:40:17,828 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 12:40:20,182 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 12:53:19,009 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 12:53:19,009 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 12:53:21,475 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 12:54:25,618 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 12:54:25,618 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 12:54:28,265 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 12:55:05,291 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 12:55:05,292 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 12:55:07,707 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 12:57:26,412 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 12:57:26,413 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 12:57:28,639 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 14:15:31,900 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:15:31,901 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 14:15:34,636 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 14:41:24,995 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:41:24,996 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 14:41:27,126 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 14:42:13,610 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:42:13,610 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 14:42:14,725 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 14:43:03,870 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:43:03,870 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 14:43:05,981 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 14:45:24,946 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:45:24,946 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 14:45:27,075 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 14:46:34,539 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:46:34,540 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 14:46:36,909 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 14:47:10,752 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:47:10,752 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 14:47:12,744 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 14:47:24,497 : INFO : test_administration_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:47:24,497 : INFO : test_administration_tab : Attempting login.
+2023-06-07 14:47:26,887 : INFO : test_administration_tab : Succesfully logged in.
+2023-06-07 14:47:26,887 : INFO : test_administration_tab : Navigating to administration tab.
+2023-06-07 14:47:27,318 : INFO : test_administration_tab : Verified account details page.
+2023-06-07 14:47:27,540 : INFO : test_administration_tab : Verified preferences page.
+2023-06-07 14:47:27,906 : INFO : test_administration_tab : Verified users page.
+2023-06-07 14:47:28,174 : INFO : test_administration_tab : Verified tags page.
+2023-06-07 14:47:28,421 : INFO : test_administration_tab : Verified external users page.
+2023-06-07 14:47:28,619 : INFO : test_administration_tab : Verified user invites page.
+2023-06-07 14:47:35,997 : INFO : test_finance_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:47:35,998 : INFO : test_finance_tab : Attempting login.
+2023-06-07 14:47:38,199 : INFO : test_finance_tab : Succesfully logged in.
+2023-06-07 14:47:38,200 : INFO : test_finance_tab : Navigating to finance tab.
+2023-06-07 14:47:38,551 : INFO : test_finance_tab : Verified invoices page.
+2023-06-07 14:47:38,743 : INFO : test_finance_tab : Verified payment methods page.
+2023-06-07 14:47:38,992 : INFO : test_finance_tab : Verified credit transactions page.
+2023-06-07 14:47:39,218 : INFO : test_finance_tab : Verified revenue page.
+2023-06-07 14:47:39,440 : INFO : test_finance_tab : Verified payment requests page.
+2023-06-07 14:47:39,623 : INFO : test_finance_tab : Verified debit notes page.
+2023-06-07 14:47:47,096 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 14:47:47,096 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 14:47:49,489 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 16:14:00,790 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:14:00,790 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:14:03,836 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:14:03,837 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 16:15:48,929 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:15:48,929 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 16:15:51,377 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 16:15:51,377 : INFO : test_account_details_screen : Navigate to account details screen.
+2023-06-07 16:15:51,786 : INFO : test_account_details_screen : Attempting to change all account details.
+2023-06-07 16:15:53,281 : INFO : test_account_details_screen : Succesfully saved changes.
+2023-06-07 16:15:53,281 : INFO : test_account_details_screen : Attempting to verify accuracy of changes.
+2023-06-07 16:15:54,571 : INFO : test_account_details_screen : Succesfully verified accuracy of changes.
+2023-06-07 16:15:54,571 : INFO : test_account_details_screen : Succesfully reset test.
+2023-06-07 16:16:04,418 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:16:04,418 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:16:07,128 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:16:07,128 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 16:20:09,491 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:20:09,491 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:20:11,895 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:20:11,895 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 16:31:50,298 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:31:50,299 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:31:52,621 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:31:52,622 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 16:32:23,750 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:32:23,750 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:32:26,010 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:32:26,010 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 16:32:53,539 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:32:53,540 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:32:55,720 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:32:55,721 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 16:33:12,951 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:33:12,951 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:33:15,480 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:33:15,480 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 16:33:26,269 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:33:26,269 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:33:28,419 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:33:28,419 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 16:33:37,775 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 16:33:37,775 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 16:33:39,890 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 16:33:39,890 : INFO : test_users_details_screen : Navigate to account details screen.

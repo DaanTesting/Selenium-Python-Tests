@@ -1860,3 +1860,37 @@
 2023-06-01 17:23:54,363 : INFO : test_splitbilling_session : Stopping transaction.
 2023-06-01 17:23:56,409 : INFO : test_splitbilling_session__platform_verification : daan.swinnen@optimile.eu
 2023-06-01 17:23:56,409 : INFO : test_splitbilling_session__platform_verification : Attempting login.
+2023-06-06 13:58:01,608 : INFO : test_msp_customers_screen : daan.swinnen@optimile.eu
+2023-06-06 13:58:01,609 : INFO : test_msp_customers_screen : Attempting login.
+2023-06-06 13:58:05,283 : INFO : test_msp_customers_screen : Succesfully logged in.
+2023-06-06 13:58:05,283 : INFO : test_msp_customers_screen : Navigating to msp customers page.
+2023-06-06 13:58:05,635 : INFO : test_msp_customers_screen : Succesfully verified msp customers page.
+2023-06-06 13:58:05,840 : INFO : test_msp_tokens_screen : daan.swinnen@optimile.eu
+2023-06-06 13:58:05,840 : INFO : test_msp_tokens_screen : Attempting login.
+2023-06-06 13:58:07,169 : INFO : test_msp_tokens_screen : Succesfully logged in.
+2023-06-06 13:58:07,169 : INFO : test_msp_tokens_screen : Navigating to msp tokens page.
+2023-06-06 13:58:07,689 : INFO : test_msp_tokens_screen : Succesfully verified tokens page.
+2023-06-06 13:58:07,865 : INFO : test_msp_vouchers_screen : daan.swinnen@optimile.eu
+2023-06-06 13:58:07,865 : INFO : test_msp_vouchers_screen : Attempting login.
+2023-06-06 13:58:08,883 : INFO : test_msp_vouchers_screen : Succesfully logged in.
+2023-06-06 13:58:08,884 : INFO : test_msp_vouchers_screen : Navigating to msp vouchers page.
+2023-06-06 13:58:09,386 : INFO : test_msp_vouchers_screen : Succesfully verified vouchers page.
+2023-06-06 13:58:09,558 : INFO : test_msp_contracts_screen : daan.swinnen@optimile.eu
+2023-06-06 13:58:09,558 : INFO : test_msp_contracts_screen : Attempting login.
+2023-06-06 13:58:10,467 : INFO : test_msp_contracts_screen : Succesfully logged in.
+2023-06-06 13:58:10,467 : INFO : test_msp_contracts_screen : Navigating to msp contracts page.
+2023-06-06 13:58:11,170 : INFO : test_msp_contracts_screen : Succesfully verified contracts page.
+2023-06-06 13:58:11,362 : INFO : test_msp_operators_screen : daan.swinnen@optimile.eu
+2023-06-06 13:58:11,362 : INFO : test_msp_operators_screen : Attempting login.
+2023-06-06 13:58:12,128 : INFO : test_msp_operators_screen : Succesfully logged in.
+2023-06-06 13:58:12,128 : INFO : test_msp_operators_screen : Navigating to msp operators page.
+2023-06-06 13:58:12,801 : INFO : test_msp_operators_screen : Succesfully verified operators page.
+2023-06-06 13:58:13,002 : INFO : test_msp_invoices_screen : daan.swinnen@optimile.eu
+2023-06-06 13:58:13,002 : INFO : test_msp_invoices_screen : Attempting login.
+2023-06-06 13:58:13,938 : INFO : test_msp_invoices_screen : Succesfully logged in.
+2023-06-06 13:58:13,938 : INFO : test_msp_invoices_screen : Navigating to msp invoices page.
+2023-06-06 13:58:14,506 : INFO : test_msp_invoices_screen : Succesfully verified invoices page.
+2023-06-06 13:58:14,700 : INFO : test_user_detail : daan.swinnen@optimile.eu
+2023-06-06 13:58:14,700 : INFO : test_user_detail : Attempting Login.
+2023-06-06 13:58:15,623 : INFO : test_user_detail : Succesfully logged in.
+2023-06-06 13:58:15,623 : INFO : test_user_detail : Navigating to employee overview.
