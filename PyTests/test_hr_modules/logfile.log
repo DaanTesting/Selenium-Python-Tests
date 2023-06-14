@@ -3089,3 +3089,518 @@
 2023-06-06 13:49:33,725 : INFO : test_mobility_policies_active_change_mob : Attempting login.
 2023-06-06 13:49:43,894 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
 2023-06-06 13:49:43,895 : INFO : test_mobility_policies_duplicate : Attempting login.
+2023-06-13 13:33:10,886 : INFO : test_pages_finance : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:10,887 : INFO : test_pages_finance : Attempting Login.
+2023-06-13 13:33:13,085 : INFO : test_pages_finance : Succesfully logged in.
+2023-06-13 13:33:13,085 : INFO : test_pages_finance : Navigating to finance-pages.
+2023-06-13 13:33:13,429 : INFO : test_pages_finance : Succesfully verified invoices-page.
+2023-06-13 13:33:13,613 : INFO : test_pages_administration : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:13,613 : INFO : test_pages_administration : Attempting Login.
+2023-06-13 13:33:14,706 : INFO : test_pages_administration : Succesfully logged in.
+2023-06-13 13:33:14,706 : INFO : test_pages_administration : Navigating to administration-pages.
+2023-06-13 13:33:15,162 : INFO : test_pages_administration : Succesfully verified account details page.
+2023-06-13 13:33:15,479 : INFO : test_pages_administration : Succesfully updated account details.
+2023-06-13 13:33:15,782 : INFO : test_pages_administration : Succesfully verified tag manager page.
+2023-06-13 13:33:15,975 : INFO : test_pages_employees : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:15,976 : INFO : test_pages_employees : Attempting Login.
+2023-06-13 13:33:16,676 : INFO : test_pages_employees : Succesfully logged in.
+2023-06-13 13:33:16,676 : INFO : test_pages_employees : Navigating to employees pages.
+2023-06-13 13:33:26,996 : INFO : test_pages_mobility_policies : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:26,996 : INFO : test_pages_mobility_policies : Attempting Login.
+2023-06-13 13:33:49,500 : INFO : test_pages_finance : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:49,500 : INFO : test_pages_finance : Attempting Login.
+2023-06-13 13:33:50,457 : INFO : test_pages_finance : Succesfully logged in.
+2023-06-13 13:33:50,457 : INFO : test_pages_finance : Navigating to finance-pages.
+2023-06-13 13:33:50,781 : INFO : test_pages_finance : Succesfully verified invoices-page.
+2023-06-13 13:33:50,964 : INFO : test_pages_administration : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:50,964 : INFO : test_pages_administration : Attempting Login.
+2023-06-13 13:33:51,719 : INFO : test_pages_administration : Succesfully logged in.
+2023-06-13 13:33:51,719 : INFO : test_pages_administration : Navigating to administration-pages.
+2023-06-13 13:33:52,166 : INFO : test_pages_administration : Succesfully verified account details page.
+2023-06-13 13:33:52,508 : INFO : test_pages_administration : Succesfully updated account details.
+2023-06-13 13:33:52,968 : INFO : test_pages_administration : Succesfully verified tag manager page.
+2023-06-13 13:33:53,136 : INFO : test_pages_employees : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:53,136 : INFO : test_pages_employees : Attempting Login.
+2023-06-13 13:33:53,836 : INFO : test_pages_employees : Succesfully logged in.
+2023-06-13 13:33:53,836 : INFO : test_pages_employees : Navigating to employees pages.
+2023-06-13 13:33:54,298 : INFO : test_pages_employees : Succesfully verified import-page.
+2023-06-13 13:33:54,762 : INFO : test_pages_employees : Succesfully verified report-page.
+2023-06-13 13:33:54,987 : INFO : test_pages_employees : Succesfully verified overview-page.
+2023-06-13 13:33:55,170 : INFO : test_pages_mobility_policies : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:55,170 : INFO : test_pages_mobility_policies : Attempting Login.
+2023-06-13 13:33:55,836 : INFO : test_pages_mobility_policies : Succesfully logged in.
+2023-06-13 13:33:55,836 : INFO : test_pages_mobility_policies : Navigating to mobility-pages.
+2023-06-13 13:33:56,277 : INFO : test_pages_mobility_policies : Succesfully verified mobility policies-page.
+2023-06-13 13:33:56,486 : INFO : test_pages_mobility_policies : Succesfully verified expenses-page.
+2023-06-13 13:33:56,642 : INFO : test_user_detail : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:33:56,643 : INFO : test_user_detail : Attempting Login.
+2023-06-13 13:33:57,248 : INFO : test_user_detail : Succesfully logged in.
+2023-06-13 13:33:57,248 : INFO : test_user_detail : Navigating to employee overview.
+2023-06-13 13:33:57,541 : INFO : test_user_detail : Opening Auto 10 User 10's profile by clicking on name.
+2023-06-13 13:33:58,130 : INFO : test_user_detail : Attempting to verify presence of all relevant elements.
+2023-06-13 13:33:58,236 : INFO : test_user_detail : Succesfully verified page elements.
+2023-06-13 13:33:58,236 : INFO : test_user_detail : Opening employment subtab.
+2023-06-13 13:33:58,332 : INFO : test_user_detail : Successfully verified employment subtab.
+2023-06-13 13:33:58,333 : INFO : test_user_detail : Opening financial info subtab.
+2023-06-13 13:33:58,507 : INFO : test_user_detail : Succesfully verified financial info subtab.
+2023-06-13 13:33:58,508 : INFO : test_user_detail : Opening securex subtab.
+2023-06-13 13:33:58,676 : INFO : test_user_detail : Succesfully verified securex subtab.
+2023-06-13 13:33:58,676 : INFO : test_user_detail : Attempting to navigate to the next user.
+2023-06-13 13:33:59,419 : INFO : test_user_detail : Succesfully navigated to the next user detail.
+2023-06-13 13:33:59,419 : INFO : test_user_detail : Returning to profiles overview.
+2023-06-13 13:33:59,854 : INFO : test_user_detail : Attempting to open profile through view-option.
+2023-06-13 13:34:02,988 : INFO : test_expenses_DownloadAttachment_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:02,988 : INFO : test_expenses_DownloadAttachment_HRmod : Attempting Login.
+2023-06-13 13:34:04,784 : INFO : test_expenses_DownloadAttachment_HRmod : Succesfully logged in.
+2023-06-13 13:34:04,784 : INFO : test_expenses_DownloadAttachment_HRmod : Navigating to expenses-page.
+2023-06-13 13:34:05,343 : INFO : test_expenses_DownloadAttachment_HRmod : Attempting to download attachment.
+2023-06-13 13:34:06,294 : INFO : test_expenses_DownloadAttachment_HRmod : Succesfully downloaded attachment.
+2023-06-13 13:34:08,855 : INFO : test_expenses_verify_overview : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:08,855 : INFO : test_expenses_verify_overview : Attempting Login.
+2023-06-13 13:34:09,775 : INFO : test_expenses_verify_overview : Succesfully logged in.
+2023-06-13 13:34:09,776 : INFO : test_expenses_verify_overview : Navigating to expenses-page.
+2023-06-13 13:34:10,419 : INFO : test_expenses_verify_overview : Succesfully verified expenses overview-page.
+2023-06-13 13:34:10,629 : INFO : test_expenses_detail_modal : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:10,629 : INFO : test_expenses_detail_modal : Attempting Login.
+2023-06-13 13:34:11,265 : INFO : test_expenses_detail_modal : Succesfully logged in.
+2023-06-13 13:34:11,266 : INFO : test_expenses_detail_modal : Navigating to expenses-page.
+2023-06-13 13:34:12,006 : INFO : test_expenses_detail_modal : Succesfully opened expense detail modal.
+2023-06-13 13:34:12,138 : INFO : test_expenses_detail_modal : Succesfully scrolled between expenses.
+2023-06-13 13:34:12,138 : INFO : test_expenses_detail_modal : Closing detail modal.
+2023-06-13 13:34:12,538 : INFO : test_expenses_detail_modal_attachment_scroll : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:12,538 : INFO : test_expenses_detail_modal_attachment_scroll : Attempting Login.
+2023-06-13 13:34:13,262 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully logged in.
+2023-06-13 13:34:13,262 : INFO : test_expenses_detail_modal_attachment_scroll : Navigating to expenses-page.
+2023-06-13 13:34:13,489 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully searched for expense with ID 13513.
+2023-06-13 13:34:15,615 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully scrolled between various attachments.
+2023-06-13 13:34:18,044 : INFO : test_expenses_SearchByID_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:18,044 : INFO : test_expenses_SearchByID_HRmod : Attempting Login.
+2023-06-13 13:34:18,960 : INFO : test_expenses_SearchByID_HRmod : Succesfully logged in.
+2023-06-13 13:34:18,960 : INFO : test_expenses_SearchByID_HRmod : Navigating to expenses-page.
+2023-06-13 13:34:19,510 : INFO : test_expenses_SearchByID_HRmod : Searched for expense with ID 13423.
+2023-06-13 13:34:19,959 : INFO : test_expenses_SearchByID_HRmod : Opened expense detail modal.
+2023-06-13 13:34:20,034 : INFO : test_expenses_SearchByID_HRmod : Succesfully verified expense ID.
+2023-06-13 13:34:20,387 : INFO : test_expenses_SearchByType_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:20,387 : INFO : test_expenses_SearchByType_HRmod : Attempting Login.
+2023-06-13 13:34:21,173 : INFO : test_expenses_SearchByType_HRmod : Succesfully logged in.
+2023-06-13 13:34:21,173 : INFO : test_expenses_SearchByType_HRmod : Navigating to expenses-page.
+2023-06-13 13:34:21,483 : INFO : test_expenses_SearchByType_HRmod : Searched for expense type 'taxi'.
+2023-06-13 13:34:22,780 : INFO : test_expenses_SearchByType_HRmod : Succesfully verified that only taxi-expenses are visible.
+2023-06-13 13:34:25,109 : INFO : test_expenses_DenyUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:25,109 : INFO : test_expenses_DenyUndo_HRmod : Attempting Login.
+2023-06-13 13:34:26,373 : INFO : test_expenses_DenyUndo_HRmod : Succesfully logged in.
+2023-06-13 13:34:26,373 : INFO : test_expenses_DenyUndo_HRmod : Navigating to expenses-page.
+2023-06-13 13:34:27,979 : INFO : test_expenses_DenyUndo_HRmod : Navigating to new expenses tab.
+2023-06-13 13:34:30,317 : INFO : test_expenses_DenyUndo_HRmod : Marked expense as 'denied'.
+2023-06-13 13:34:30,317 : INFO : test_expenses_DenyUndo_HRmod : Navigating towards pending-tab.
+2023-06-13 13:34:32,549 : INFO : test_expenses_DenyUndo_HRmod : Undo expense.
+2023-06-13 13:34:32,737 : INFO : test_expenses_DenyUndo_HRmod : Succesfully marked expense as 'new'.
+2023-06-13 13:34:32,982 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:32,982 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-06-13 13:34:33,693 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-06-13 13:34:33,694 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-06-13 13:34:36,048 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-06-13 13:34:37,185 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-06-13 13:34:37,258 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-06-13 13:34:38,413 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-06-13 13:34:39,514 : INFO : test_expenses_ApproveUndo_HRmod : Undo expense.
+2023-06-13 13:34:39,726 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully marked expense as 'new'.
+2023-06-13 13:34:42,138 : INFO : test_expenses_verify_error_tab : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:42,138 : INFO : test_expenses_verify_error_tab : Attempting Login.
+2023-06-13 13:34:42,979 : INFO : test_expenses_verify_error_tab : Succesfully logged in.
+2023-06-13 13:34:42,979 : INFO : test_expenses_verify_error_tab : Navigating to expenses-page.
+2023-06-13 13:34:43,572 : INFO : test_expenses_verify_error_tab : Navigating to error tab.
+2023-06-13 13:34:44,608 : INFO : test_expenses_verify_error_tab : Succesfully verified that only expenses marked as 'error' are present.
+2023-06-13 13:34:44,820 : INFO : test_expenses_date_picker : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:44,820 : INFO : test_expenses_date_picker : Attempting Login.
+2023-06-13 13:34:45,682 : INFO : test_expenses_date_picker : Succesfully logged in.
+2023-06-13 13:34:45,682 : INFO : test_expenses_date_picker : Navigating to expenses-page.
+2023-06-13 13:34:46,024 : INFO : test_expenses_date_picker : Selected date range in datepicker.
+2023-06-13 13:34:47,082 : INFO : test_expenses_date_picker : Succesfully verified that all expenses fall within correct date range.
+2023-06-13 13:34:47,257 : INFO : test_expenses_status_filter : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:47,257 : INFO : test_expenses_status_filter : Attempting Login.
+2023-06-13 13:34:48,014 : INFO : test_expenses_status_filter : Succesfully logged in.
+2023-06-13 13:34:48,014 : INFO : test_expenses_status_filter : Navigating to expenses-page.
+2023-06-13 13:34:49,547 : INFO : test_expenses_status_filter : Filtering expenses for 'paid'-status.
+2023-06-13 13:34:50,998 : INFO : test_expenses_status_filter : Succesfully verified that only 'Paid' expenses are present.
+2023-06-13 13:34:53,443 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:53,443 : INFO : test_mobility_policies_searchbar : Attempting login.
+2023-06-13 13:34:54,636 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2023-06-13 13:34:54,636 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2023-06-13 13:34:55,484 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2023-06-13 13:34:56,524 : INFO : test_mobility_policies_searchbar : Succesfully verified search result.
+2023-06-13 13:34:56,735 : INFO : test_mobility_policies_filter : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:34:56,736 : INFO : test_mobility_policies_filter : Attempting login.
+2023-06-13 13:34:57,762 : INFO : test_mobility_policies_filter : Succesfully logged in.
+2023-06-13 13:34:57,763 : INFO : test_mobility_policies_filter : Navigating to mobility policies page.
+2023-06-13 13:34:58,339 : INFO : test_mobility_policies_filter : Filtering 'active' mobility policies.
+2023-06-13 13:35:00,042 : INFO : test_mobility_policies_filter : Succesfully verified filtering occurred correctly.
+2023-06-13 13:35:00,288 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:35:00,289 : INFO : test_mobility_policies_create_policy : Attempting login.
+2023-06-13 13:35:01,386 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2023-06-13 13:35:01,387 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2023-06-13 13:35:02,551 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2023-06-13 13:35:03,227 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2023-06-13 13:35:03,334 : INFO : test_mobility_policies_create_policy : Selected mobility policy type as 'professional'.
+2023-06-13 13:35:03,449 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2023-06-13 13:35:03,531 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2023-06-13 13:35:05,185 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2023-06-13 13:35:05,186 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2023-06-13 13:35:05,353 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2023-06-13 13:35:05,468 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2023-06-13 13:35:07,607 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2023-06-13 13:35:18,298 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:35:18,298 : INFO : test_mobility_policies_create_draft : Attempting login.
+2023-06-13 13:35:28,493 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:35:28,493 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2023-06-13 13:35:40,853 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:35:40,853 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-06-13 13:35:41,966 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-06-13 13:35:41,966 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-06-13 13:35:42,742 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-06-13 13:35:54,241 : INFO : test_mobility_policies_active_change_mob : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:35:54,241 : INFO : test_mobility_policies_active_change_mob : Attempting login.
+2023-06-13 13:36:04,410 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:36:04,410 : INFO : test_mobility_policies_duplicate : Attempting login.
+2023-06-13 13:36:16,728 : INFO : test_tags_create_delete_basic : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:36:16,729 : INFO : test_tags_create_delete_basic : Attempting login.
+2023-06-13 13:36:18,074 : INFO : test_tags_create_delete_basic : Succesfully logged in.
+2023-06-13 13:36:18,075 : INFO : test_tags_create_delete_basic : Navigating to profiles page.
+2023-06-13 13:36:18,732 : INFO : test_tags_create_delete_basic : Attempting to create new tag.
+2023-06-13 13:36:19,148 : INFO : test_tags_create_delete_basic : Set tag name as 'timestamp'.
+2023-06-13 13:36:19,265 : INFO : test_tags_create_delete_basic : Linked all available users.
+2023-06-13 13:36:19,322 : INFO : test_tags_create_delete_basic : Saved new tag.
+2023-06-13 13:36:20,534 : INFO : test_tags_create_delete_basic : Deleted new tag.
+2023-06-13 13:36:20,777 : INFO : test_tags_create_delete_expanded : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:36:20,777 : INFO : test_tags_create_delete_expanded : Attempting login.
+2023-06-13 13:36:21,547 : INFO : test_tags_create_delete_expanded : Succesfully logged in.
+2023-06-13 13:36:21,867 : INFO : test_tags_create_delete_expanded : Attempting to create new tag.
+2023-06-13 13:36:22,363 : INFO : test_tags_create_delete_expanded : Set tag name as 'timestamp'.
+2023-06-13 13:36:22,417 : INFO : test_tags_create_delete_expanded : Set new tag color.
+2023-06-13 13:36:23,526 : INFO : test_tags_create_delete_expanded : Link all available users.
+2023-06-13 13:36:23,581 : INFO : test_tags_create_delete_expanded : Saved new tag.
+2023-06-13 13:36:26,166 : INFO : test_tags_create_delete_expanded : Succesfully verified badge color is correct.
+2023-06-13 13:36:26,236 : INFO : test_tags_create_delete_expanded : Succesfully verified tagname.
+2023-06-13 13:36:27,769 : INFO : test_tags_create_delete_expanded : Attempting to edit tag.
+2023-06-13 13:36:29,262 : INFO : test_tags_create_delete_expanded : Edit tagname.
+2023-06-13 13:36:29,378 : INFO : test_tags_create_delete_expanded : Unlinked all users.
+2023-06-13 13:36:29,437 : INFO : test_tags_create_delete_expanded : Saved edited tag.
+2023-06-13 13:36:30,476 : INFO : test_tags_create_delete_expanded : Succesfully verified edited name.
+2023-06-13 13:36:30,510 : INFO : test_tags_create_delete_expanded : Succesfully verified number of linked users.
+2023-06-13 13:36:30,663 : INFO : test_tags_create_delete_expanded : Delete test tag.
+2023-06-13 13:36:30,890 : INFO : test_profiles_multiple_app_invites : daan.swinnen+autotest.admin@optimile.eu
+2023-06-13 13:36:30,891 : INFO : test_profiles_multiple_app_invites : Attempting login.
+2023-06-13 13:36:31,630 : INFO : test_profiles_multiple_app_invites : Succesfully logged in.
+2023-06-13 13:36:31,660 : INFO : test_profiles_multiple_app_invites : Navigating to profile overview.
+2023-06-13 13:36:31,933 : INFO : test_profiles_multiple_app_invites : Attempting to invite multiple users to the app.
+2023-06-13 13:36:32,944 : INFO : test_profiles_multiple_app_invites : Succesfully verified invites have been sent.
+2023-06-14 15:19:25,271 : INFO : test_re_create_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:19:25,272 : INFO : test_re_create_ruleset : Attempting login.
+2023-06-14 15:19:26,203 : INFO : test_re_create_ruleset : Succesfully logged in.
+2023-06-14 15:19:26,203 : INFO : test_re_create_ruleset : Navigating to rule engine page.
+2023-06-14 15:19:29,978 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:19:29,979 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-06-14 15:19:30,753 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-06-14 15:19:30,753 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-06-14 15:19:35,790 : INFO : test_re_activate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:19:35,790 : INFO : test_re_activate_ruleset : Attempting login.
+2023-06-14 15:19:36,933 : INFO : test_re_activate_ruleset : Succesfully logged in.
+2023-06-14 15:19:36,933 : INFO : test_re_activate_ruleset : Navigating to rule engine page.
+2023-06-14 15:19:41,505 : INFO : test_re_deactivate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:19:41,506 : INFO : test_re_deactivate_ruleset : Attempting login.
+2023-06-14 15:19:42,565 : INFO : test_re_deactivate_ruleset : Succesfully logged in.
+2023-06-14 15:19:42,565 : INFO : test_re_deactivate_ruleset : Navigating to rule engine page.
+2023-06-14 15:19:47,269 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:19:47,269 : INFO : test_re_create_rule : Attempting login.
+2023-06-14 15:19:48,466 : INFO : test_re_create_rule : Succesfully logged in.
+2023-06-14 15:19:48,466 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-06-14 15:19:54,417 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:19:54,417 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-06-14 15:19:55,436 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-06-14 15:19:55,436 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-06-14 15:20:00,544 : INFO : test_re_edit_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:20:00,545 : INFO : test_re_edit_rule : Attempting login.
+2023-06-14 15:20:03,375 : INFO : test_re_edit_rule : Succesfully logged in.
+2023-06-14 15:20:03,377 : INFO : test_re_edit_rule : Navigating to rule engine page.
+2023-06-14 15:22:26,505 : INFO : test_re_create_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:22:26,505 : INFO : test_re_create_ruleset : Attempting login.
+2023-06-14 15:22:27,540 : INFO : test_re_create_ruleset : Succesfully logged in.
+2023-06-14 15:22:27,540 : INFO : test_re_create_ruleset : Navigating to rule engine page.
+2023-06-14 15:22:31,496 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:22:31,497 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-06-14 15:22:32,441 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-06-14 15:22:32,441 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-06-14 15:22:37,527 : INFO : test_re_activate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:22:37,527 : INFO : test_re_activate_ruleset : Attempting login.
+2023-06-14 15:22:38,299 : INFO : test_re_activate_ruleset : Succesfully logged in.
+2023-06-14 15:22:38,299 : INFO : test_re_activate_ruleset : Navigating to rule engine page.
+2023-06-14 15:22:43,398 : INFO : test_re_deactivate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:22:43,398 : INFO : test_re_deactivate_ruleset : Attempting login.
+2023-06-14 15:22:44,198 : INFO : test_re_deactivate_ruleset : Succesfully logged in.
+2023-06-14 15:22:44,199 : INFO : test_re_deactivate_ruleset : Navigating to rule engine page.
+2023-06-14 15:22:48,821 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:22:48,822 : INFO : test_re_create_rule : Attempting login.
+2023-06-14 15:22:49,919 : INFO : test_re_create_rule : Succesfully logged in.
+2023-06-14 15:22:49,919 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-06-14 15:22:55,140 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:22:55,140 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-06-14 15:22:56,011 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-06-14 15:22:56,011 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-06-14 15:23:01,213 : INFO : test_re_edit_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 15:23:01,213 : INFO : test_re_edit_rule : Attempting login.
+2023-06-14 15:23:03,051 : INFO : test_re_edit_rule : Succesfully logged in.
+2023-06-14 15:23:03,052 : INFO : test_re_edit_rule : Navigating to rule engine page.
+2023-06-14 16:28:57,319 : INFO : test_re_create_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:28:57,319 : INFO : test_re_create_ruleset : Attempting login.
+2023-06-14 16:28:58,342 : INFO : test_re_create_ruleset : Succesfully logged in.
+2023-06-14 16:28:58,342 : INFO : test_re_create_ruleset : Navigating to rule engine page.
+2023-06-14 16:29:01,735 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:29:01,736 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-06-14 16:29:03,586 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-06-14 16:29:03,586 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-06-14 16:29:09,557 : INFO : test_re_activate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:29:09,557 : INFO : test_re_activate_ruleset : Attempting login.
+2023-06-14 16:29:10,554 : INFO : test_re_activate_ruleset : Succesfully logged in.
+2023-06-14 16:29:10,554 : INFO : test_re_activate_ruleset : Navigating to rule engine page.
+2023-06-14 16:29:15,304 : INFO : test_re_deactivate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:29:15,305 : INFO : test_re_deactivate_ruleset : Attempting login.
+2023-06-14 16:29:16,254 : INFO : test_re_deactivate_ruleset : Succesfully logged in.
+2023-06-14 16:29:16,254 : INFO : test_re_deactivate_ruleset : Navigating to rule engine page.
+2023-06-14 16:29:21,280 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:29:21,281 : INFO : test_re_create_rule : Attempting login.
+2023-06-14 16:29:22,250 : INFO : test_re_create_rule : Succesfully logged in.
+2023-06-14 16:29:22,251 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-06-14 16:29:27,043 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:29:27,043 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-06-14 16:29:28,351 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-06-14 16:29:28,351 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-06-14 16:29:33,456 : INFO : test_re_edit_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:29:33,456 : INFO : test_re_edit_rule : Attempting login.
+2023-06-14 16:29:34,351 : INFO : test_re_edit_rule : Succesfully logged in.
+2023-06-14 16:29:34,351 : INFO : test_re_edit_rule : Navigating to rule engine page.
+2023-06-14 16:29:39,824 : INFO : test_re_filter_rulesets : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:29:39,824 : INFO : test_re_filter_rulesets : Attempting login.
+2023-06-14 16:29:41,314 : INFO : test_re_filter_rulesets : Succesfully logged in.
+2023-06-14 16:29:41,314 : INFO : test_re_filter_rulesets : Navigating to rule engine page.
+2023-06-14 16:30:41,116 : INFO : test_pages_finance : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:30:41,116 : INFO : test_pages_finance : Attempting Login.
+2023-06-14 16:30:42,069 : INFO : test_pages_finance : Succesfully logged in.
+2023-06-14 16:30:42,069 : INFO : test_pages_finance : Navigating to finance-pages.
+2023-06-14 16:30:42,382 : INFO : test_pages_finance : Succesfully verified invoices-page.
+2023-06-14 16:30:42,551 : INFO : test_pages_administration : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:30:42,551 : INFO : test_pages_administration : Attempting Login.
+2023-06-14 16:30:43,252 : INFO : test_pages_administration : Succesfully logged in.
+2023-06-14 16:30:43,252 : INFO : test_pages_administration : Navigating to administration-pages.
+2023-06-14 16:30:43,860 : INFO : test_pages_administration : Succesfully verified account details page.
+2023-06-14 16:30:44,213 : INFO : test_pages_administration : Succesfully updated account details.
+2023-06-14 16:30:44,666 : INFO : test_pages_administration : Succesfully verified tag manager page.
+2023-06-14 16:30:44,845 : INFO : test_pages_employees : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:30:44,845 : INFO : test_pages_employees : Attempting Login.
+2023-06-14 16:30:45,676 : INFO : test_pages_employees : Succesfully logged in.
+2023-06-14 16:30:45,676 : INFO : test_pages_employees : Navigating to employees pages.
+2023-06-14 16:30:46,270 : INFO : test_pages_employees : Succesfully verified import-page.
+2023-06-14 16:30:46,729 : INFO : test_pages_employees : Succesfully verified report-page.
+2023-06-14 16:30:46,947 : INFO : test_pages_employees : Succesfully verified overview-page.
+2023-06-14 16:30:47,126 : INFO : test_pages_mobility_policies : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:30:47,126 : INFO : test_pages_mobility_policies : Attempting Login.
+2023-06-14 16:30:47,808 : INFO : test_pages_mobility_policies : Succesfully logged in.
+2023-06-14 16:30:47,808 : INFO : test_pages_mobility_policies : Navigating to mobility-pages.
+2023-06-14 16:30:48,225 : INFO : test_pages_mobility_policies : Succesfully verified mobility policies-page.
+2023-06-14 16:30:48,430 : INFO : test_pages_mobility_policies : Succesfully verified expenses-page.
+2023-06-14 16:30:48,607 : INFO : test_user_detail : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:30:48,607 : INFO : test_user_detail : Attempting Login.
+2023-06-14 16:30:49,343 : INFO : test_user_detail : Succesfully logged in.
+2023-06-14 16:30:49,343 : INFO : test_user_detail : Navigating to employee overview.
+2023-06-14 16:30:49,624 : INFO : test_user_detail : Opening Auto 10 User 10's profile by clicking on name.
+2023-06-14 16:30:50,406 : INFO : test_user_detail : Attempting to verify presence of all relevant elements.
+2023-06-14 16:30:50,496 : INFO : test_user_detail : Succesfully verified page elements.
+2023-06-14 16:30:50,496 : INFO : test_user_detail : Opening employment subtab.
+2023-06-14 16:30:50,592 : INFO : test_user_detail : Successfully verified employment subtab.
+2023-06-14 16:30:50,592 : INFO : test_user_detail : Opening financial info subtab.
+2023-06-14 16:30:50,688 : INFO : test_user_detail : Succesfully verified financial info subtab.
+2023-06-14 16:30:50,689 : INFO : test_user_detail : Opening securex subtab.
+2023-06-14 16:30:50,775 : INFO : test_user_detail : Succesfully verified securex subtab.
+2023-06-14 16:30:50,775 : INFO : test_user_detail : Attempting to navigate to the next user.
+2023-06-14 16:30:52,221 : INFO : test_user_detail : Succesfully navigated to the next user detail.
+2023-06-14 16:30:52,221 : INFO : test_user_detail : Returning to profiles overview.
+2023-06-14 16:30:52,600 : INFO : test_user_detail : Attempting to open profile through view-option.
+2023-06-14 16:30:54,358 : INFO : test_ruleset_overview : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:30:54,359 : INFO : test_ruleset_overview : Attempting Login.
+2023-06-14 16:30:55,202 : INFO : test_ruleset_overview : Succesfully logged in.
+2023-06-14 16:30:55,202 : INFO : test_ruleset_overview : Navigating to ruleset overview.
+2023-06-14 16:30:57,807 : INFO : test_expenses_DownloadAttachment_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:30:57,807 : INFO : test_expenses_DownloadAttachment_HRmod : Attempting Login.
+2023-06-14 16:30:59,134 : INFO : test_expenses_DownloadAttachment_HRmod : Succesfully logged in.
+2023-06-14 16:30:59,134 : INFO : test_expenses_DownloadAttachment_HRmod : Navigating to expenses-page.
+2023-06-14 16:30:59,634 : INFO : test_expenses_DownloadAttachment_HRmod : Attempting to download attachment.
+2023-06-14 16:31:00,280 : INFO : test_expenses_DownloadAttachment_HRmod : Succesfully downloaded attachment.
+2023-06-14 16:31:02,924 : INFO : test_expenses_verify_overview : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:02,924 : INFO : test_expenses_verify_overview : Attempting Login.
+2023-06-14 16:31:04,083 : INFO : test_expenses_verify_overview : Succesfully logged in.
+2023-06-14 16:31:04,083 : INFO : test_expenses_verify_overview : Navigating to expenses-page.
+2023-06-14 16:31:04,712 : INFO : test_expenses_verify_overview : Succesfully verified expenses overview-page.
+2023-06-14 16:31:05,036 : INFO : test_expenses_detail_modal : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:05,036 : INFO : test_expenses_detail_modal : Attempting Login.
+2023-06-14 16:31:05,906 : INFO : test_expenses_detail_modal : Succesfully logged in.
+2023-06-14 16:31:05,906 : INFO : test_expenses_detail_modal : Navigating to expenses-page.
+2023-06-14 16:31:06,657 : INFO : test_expenses_detail_modal : Succesfully opened expense detail modal.
+2023-06-14 16:31:06,774 : INFO : test_expenses_detail_modal : Succesfully scrolled between expenses.
+2023-06-14 16:31:06,774 : INFO : test_expenses_detail_modal : Closing detail modal.
+2023-06-14 16:31:07,168 : INFO : test_expenses_detail_modal_attachment_scroll : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:07,168 : INFO : test_expenses_detail_modal_attachment_scroll : Attempting Login.
+2023-06-14 16:31:07,904 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully logged in.
+2023-06-14 16:31:07,904 : INFO : test_expenses_detail_modal_attachment_scroll : Navigating to expenses-page.
+2023-06-14 16:31:08,127 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully searched for expense with ID 13513.
+2023-06-14 16:31:10,228 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully scrolled between various attachments.
+2023-06-14 16:31:12,660 : INFO : test_expenses_SearchByID_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:12,660 : INFO : test_expenses_SearchByID_HRmod : Attempting Login.
+2023-06-14 16:31:14,050 : INFO : test_expenses_SearchByID_HRmod : Succesfully logged in.
+2023-06-14 16:31:14,050 : INFO : test_expenses_SearchByID_HRmod : Navigating to expenses-page.
+2023-06-14 16:31:14,707 : INFO : test_expenses_SearchByID_HRmod : Searched for expense with ID 13423.
+2023-06-14 16:31:15,122 : INFO : test_expenses_SearchByID_HRmod : Opened expense detail modal.
+2023-06-14 16:31:15,194 : INFO : test_expenses_SearchByID_HRmod : Succesfully verified expense ID.
+2023-06-14 16:31:15,585 : INFO : test_expenses_SearchByType_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:15,585 : INFO : test_expenses_SearchByType_HRmod : Attempting Login.
+2023-06-14 16:31:16,319 : INFO : test_expenses_SearchByType_HRmod : Succesfully logged in.
+2023-06-14 16:31:16,319 : INFO : test_expenses_SearchByType_HRmod : Navigating to expenses-page.
+2023-06-14 16:31:16,640 : INFO : test_expenses_SearchByType_HRmod : Searched for expense type 'taxi'.
+2023-06-14 16:31:17,931 : INFO : test_expenses_SearchByType_HRmod : Succesfully verified that only taxi-expenses are visible.
+2023-06-14 16:31:20,367 : INFO : test_expenses_DenyUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:20,367 : INFO : test_expenses_DenyUndo_HRmod : Attempting Login.
+2023-06-14 16:31:21,379 : INFO : test_expenses_DenyUndo_HRmod : Succesfully logged in.
+2023-06-14 16:31:21,379 : INFO : test_expenses_DenyUndo_HRmod : Navigating to expenses-page.
+2023-06-14 16:31:23,153 : INFO : test_expenses_DenyUndo_HRmod : Navigating to new expenses tab.
+2023-06-14 16:31:25,458 : INFO : test_expenses_DenyUndo_HRmod : Marked expense as 'denied'.
+2023-06-14 16:31:25,458 : INFO : test_expenses_DenyUndo_HRmod : Navigating towards pending-tab.
+2023-06-14 16:31:27,634 : INFO : test_expenses_DenyUndo_HRmod : Undo expense.
+2023-06-14 16:31:27,786 : INFO : test_expenses_DenyUndo_HRmod : Succesfully marked expense as 'new'.
+2023-06-14 16:31:28,002 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:28,002 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-06-14 16:31:28,822 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-06-14 16:31:28,822 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-06-14 16:31:31,156 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-06-14 16:31:32,279 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-06-14 16:31:32,375 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-06-14 16:31:33,525 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-06-14 16:31:34,594 : INFO : test_expenses_ApproveUndo_HRmod : Undo expense.
+2023-06-14 16:31:34,747 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully marked expense as 'new'.
+2023-06-14 16:31:37,113 : INFO : test_expenses_verify_error_tab : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:37,114 : INFO : test_expenses_verify_error_tab : Attempting Login.
+2023-06-14 16:31:37,929 : INFO : test_expenses_verify_error_tab : Succesfully logged in.
+2023-06-14 16:31:37,929 : INFO : test_expenses_verify_error_tab : Navigating to expenses-page.
+2023-06-14 16:31:38,477 : INFO : test_expenses_verify_error_tab : Navigating to error tab.
+2023-06-14 16:31:39,522 : INFO : test_expenses_verify_error_tab : Succesfully verified that only expenses marked as 'error' are present.
+2023-06-14 16:31:39,716 : INFO : test_expenses_date_picker : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:39,716 : INFO : test_expenses_date_picker : Attempting Login.
+2023-06-14 16:31:40,572 : INFO : test_expenses_date_picker : Succesfully logged in.
+2023-06-14 16:31:40,572 : INFO : test_expenses_date_picker : Navigating to expenses-page.
+2023-06-14 16:31:40,903 : INFO : test_expenses_date_picker : Selected date range in datepicker.
+2023-06-14 16:31:41,976 : INFO : test_expenses_date_picker : Succesfully verified that all expenses fall within correct date range.
+2023-06-14 16:31:42,135 : INFO : test_expenses_status_filter : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:42,135 : INFO : test_expenses_status_filter : Attempting Login.
+2023-06-14 16:31:42,866 : INFO : test_expenses_status_filter : Succesfully logged in.
+2023-06-14 16:31:42,866 : INFO : test_expenses_status_filter : Navigating to expenses-page.
+2023-06-14 16:31:44,309 : INFO : test_expenses_status_filter : Filtering expenses for 'paid'-status.
+2023-06-14 16:31:45,552 : INFO : test_expenses_status_filter : Succesfully verified that only 'Paid' expenses are present.
+2023-06-14 16:31:47,902 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:47,902 : INFO : test_mobility_policies_searchbar : Attempting login.
+2023-06-14 16:31:48,909 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2023-06-14 16:31:48,909 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2023-06-14 16:31:49,768 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2023-06-14 16:31:50,804 : INFO : test_mobility_policies_searchbar : Succesfully verified search result.
+2023-06-14 16:31:51,005 : INFO : test_mobility_policies_filter : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:51,005 : INFO : test_mobility_policies_filter : Attempting login.
+2023-06-14 16:31:51,887 : INFO : test_mobility_policies_filter : Succesfully logged in.
+2023-06-14 16:31:51,887 : INFO : test_mobility_policies_filter : Navigating to mobility policies page.
+2023-06-14 16:31:52,537 : INFO : test_mobility_policies_filter : Filtering 'active' mobility policies.
+2023-06-14 16:31:53,814 : INFO : test_mobility_policies_filter : Succesfully verified filtering occurred correctly.
+2023-06-14 16:31:54,021 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:31:54,021 : INFO : test_mobility_policies_create_policy : Attempting login.
+2023-06-14 16:31:54,847 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2023-06-14 16:31:54,847 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2023-06-14 16:31:55,210 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2023-06-14 16:31:55,674 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2023-06-14 16:31:55,745 : INFO : test_mobility_policies_create_policy : Selected mobility policy type as 'professional'.
+2023-06-14 16:31:55,815 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2023-06-14 16:31:55,889 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2023-06-14 16:31:57,495 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2023-06-14 16:31:57,495 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2023-06-14 16:31:57,657 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2023-06-14 16:31:57,795 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2023-06-14 16:31:59,928 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2023-06-14 16:32:10,580 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:32:10,580 : INFO : test_mobility_policies_create_draft : Attempting login.
+2023-06-14 16:32:20,727 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:32:20,727 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2023-06-14 16:32:33,360 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:32:33,360 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-06-14 16:32:34,318 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-06-14 16:32:34,318 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-06-14 16:32:35,025 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-06-14 16:32:46,451 : INFO : test_mobility_policies_active_change_mob : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:32:46,452 : INFO : test_mobility_policies_active_change_mob : Attempting login.
+2023-06-14 16:32:56,584 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:32:56,584 : INFO : test_mobility_policies_duplicate : Attempting login.
+2023-06-14 16:33:08,897 : INFO : test_tags_create_delete_basic : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:08,897 : INFO : test_tags_create_delete_basic : Attempting login.
+2023-06-14 16:33:09,690 : INFO : test_tags_create_delete_basic : Succesfully logged in.
+2023-06-14 16:33:09,690 : INFO : test_tags_create_delete_basic : Navigating to profiles page.
+2023-06-14 16:33:10,582 : INFO : test_tags_create_delete_basic : Attempting to create new tag.
+2023-06-14 16:33:11,123 : INFO : test_tags_create_delete_basic : Set tag name as 'timestamp'.
+2023-06-14 16:33:11,271 : INFO : test_tags_create_delete_basic : Linked all available users.
+2023-06-14 16:33:11,341 : INFO : test_tags_create_delete_basic : Saved new tag.
+2023-06-14 16:33:12,545 : INFO : test_tags_create_delete_basic : Deleted new tag.
+2023-06-14 16:33:12,792 : INFO : test_tags_create_delete_expanded : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:12,792 : INFO : test_tags_create_delete_expanded : Attempting login.
+2023-06-14 16:33:13,592 : INFO : test_tags_create_delete_expanded : Succesfully logged in.
+2023-06-14 16:33:13,919 : INFO : test_tags_create_delete_expanded : Attempting to create new tag.
+2023-06-14 16:33:14,414 : INFO : test_tags_create_delete_expanded : Set tag name as 'timestamp'.
+2023-06-14 16:33:14,480 : INFO : test_tags_create_delete_expanded : Set new tag color.
+2023-06-14 16:33:15,589 : INFO : test_tags_create_delete_expanded : Link all available users.
+2023-06-14 16:33:15,637 : INFO : test_tags_create_delete_expanded : Saved new tag.
+2023-06-14 16:33:18,230 : INFO : test_tags_create_delete_expanded : Succesfully verified badge color is correct.
+2023-06-14 16:33:18,289 : INFO : test_tags_create_delete_expanded : Succesfully verified tagname.
+2023-06-14 16:33:19,793 : INFO : test_tags_create_delete_expanded : Attempting to edit tag.
+2023-06-14 16:33:21,430 : INFO : test_tags_create_delete_expanded : Edit tagname.
+2023-06-14 16:33:21,526 : INFO : test_tags_create_delete_expanded : Unlinked all users.
+2023-06-14 16:33:21,582 : INFO : test_tags_create_delete_expanded : Saved edited tag.
+2023-06-14 16:33:22,618 : INFO : test_tags_create_delete_expanded : Succesfully verified edited name.
+2023-06-14 16:33:22,631 : INFO : test_tags_create_delete_expanded : Succesfully verified number of linked users.
+2023-06-14 16:33:22,789 : INFO : test_tags_create_delete_expanded : Delete test tag.
+2023-06-14 16:33:23,003 : INFO : test_profiles_multiple_app_invites : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:23,004 : INFO : test_profiles_multiple_app_invites : Attempting login.
+2023-06-14 16:33:23,975 : INFO : test_profiles_multiple_app_invites : Succesfully logged in.
+2023-06-14 16:33:24,008 : INFO : test_profiles_multiple_app_invites : Navigating to profile overview.
+2023-06-14 16:33:24,402 : INFO : test_profiles_multiple_app_invites : Attempting to invite multiple users to the app.
+2023-06-14 16:33:27,746 : INFO : test_re_create_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:27,746 : INFO : test_re_create_ruleset : Attempting login.
+2023-06-14 16:33:29,234 : INFO : test_re_create_ruleset : Succesfully logged in.
+2023-06-14 16:33:29,234 : INFO : test_re_create_ruleset : Navigating to rule engine page.
+2023-06-14 16:33:32,927 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:32,927 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-06-14 16:33:33,808 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-06-14 16:33:33,808 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-06-14 16:33:39,130 : INFO : test_re_activate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:39,130 : INFO : test_re_activate_ruleset : Attempting login.
+2023-06-14 16:33:40,109 : INFO : test_re_activate_ruleset : Succesfully logged in.
+2023-06-14 16:33:40,109 : INFO : test_re_activate_ruleset : Navigating to rule engine page.
+2023-06-14 16:33:45,373 : INFO : test_re_deactivate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:45,373 : INFO : test_re_deactivate_ruleset : Attempting login.
+2023-06-14 16:33:46,437 : INFO : test_re_deactivate_ruleset : Succesfully logged in.
+2023-06-14 16:33:46,437 : INFO : test_re_deactivate_ruleset : Navigating to rule engine page.
+2023-06-14 16:33:51,383 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:51,383 : INFO : test_re_create_rule : Attempting login.
+2023-06-14 16:33:52,345 : INFO : test_re_create_rule : Succesfully logged in.
+2023-06-14 16:33:52,345 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-06-14 16:33:57,650 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:33:57,650 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-06-14 16:33:58,479 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-06-14 16:33:58,480 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-06-14 16:34:03,996 : INFO : test_re_edit_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:34:03,996 : INFO : test_re_edit_rule : Attempting login.
+2023-06-14 16:34:05,641 : INFO : test_re_edit_rule : Succesfully logged in.
+2023-06-14 16:34:05,641 : INFO : test_re_edit_rule : Navigating to rule engine page.
+2023-06-14 16:34:11,966 : INFO : test_re_filter_rulesets : daan.swinnen+autotest.admin@optimile.eu
+2023-06-14 16:34:11,967 : INFO : test_re_filter_rulesets : Attempting login.
+2023-06-14 16:34:13,056 : INFO : test_re_filter_rulesets : Succesfully logged in.
+2023-06-14 16:34:13,056 : INFO : test_re_filter_rulesets : Navigating to rule engine page.

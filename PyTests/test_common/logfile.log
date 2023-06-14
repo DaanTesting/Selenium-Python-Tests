@@ -1894,3 +1894,602 @@
 2023-06-06 13:58:14,700 : INFO : test_user_detail : Attempting Login.
 2023-06-06 13:58:15,623 : INFO : test_user_detail : Succesfully logged in.
 2023-06-06 13:58:15,623 : INFO : test_user_detail : Navigating to employee overview.
+2023-06-07 17:00:30,858 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:30,858 : INFO : test_cpo_overview_screen : Attempting login.
+2023-06-07 17:00:33,391 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2023-06-07 17:00:33,391 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2023-06-07 17:00:34,142 : INFO : test_cpo_overview_screen : Succesfully verified CPO overview page.
+2023-06-07 17:00:34,515 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:34,515 : INFO : test_cpo_customers_screen : Attempting login.
+2023-06-07 17:00:35,275 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2023-06-07 17:00:35,275 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2023-06-07 17:00:36,584 : INFO : test_cpo_customers_screen : Succesfully verified customers page.
+2023-06-07 17:00:36,742 : INFO : test_cpo_charging_locations_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:36,742 : INFO : test_cpo_charging_locations_screen : Attempting login.
+2023-06-07 17:00:37,448 : INFO : test_cpo_charging_locations_screen : Succesfully logged in.
+2023-06-07 17:00:37,448 : INFO : test_cpo_charging_locations_screen : Navigating to charging locations page.
+2023-06-07 17:00:38,018 : INFO : test_cpo_charging_locations_screen : Succesfully verified locations page.
+2023-06-07 17:00:38,185 : INFO : test_cpo_tokens_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:38,185 : INFO : test_cpo_tokens_screen : Attempting login.
+2023-06-07 17:00:39,136 : INFO : test_cpo_tokens_screen : Succesfully logged in.
+2023-06-07 17:00:39,137 : INFO : test_cpo_tokens_screen : Navigating to tokens page.
+2023-06-07 17:00:39,524 : INFO : test_cpo_tokens_screen : Succesfully verified tokens page.
+2023-06-07 17:00:39,749 : INFO : test_cpo_simcards_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:39,749 : INFO : test_cpo_simcards_screen : Attempting login.
+2023-06-07 17:00:40,738 : INFO : test_cpo_simcards_screen : Succesfully logged in.
+2023-06-07 17:00:40,738 : INFO : test_cpo_simcards_screen : Navigating to simcards page.
+2023-06-07 17:00:41,284 : INFO : test_cpo_simcards_screen : Succesfully verified simcards page.
+2023-06-07 17:00:41,481 : INFO : test_cpo_contracts_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:41,481 : INFO : test_cpo_contracts_screen : Attempting login.
+2023-06-07 17:00:42,221 : INFO : test_cpo_contracts_screen : Succesfully logged in.
+2023-06-07 17:00:42,221 : INFO : test_cpo_contracts_screen : Navigating to contracts page.
+2023-06-07 17:00:42,667 : INFO : test_cpo_contracts_screen : Succesfully verified contracts page.
+2023-06-07 17:00:42,831 : INFO : test_cpo_roaming_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:42,831 : INFO : test_cpo_roaming_screen : Attempting login.
+2023-06-07 17:00:43,541 : INFO : test_cpo_roaming_screen : Succesfully logged in.
+2023-06-07 17:00:43,541 : INFO : test_cpo_roaming_screen : Navigating to roaming page.
+2023-06-07 17:00:44,068 : INFO : test_cpo_roaming_screen : Succesfully verified roaming page.
+2023-06-07 17:00:44,256 : INFO : test_cpo_finance_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:44,256 : INFO : test_cpo_finance_screen : Attempting login.
+2023-06-07 17:00:45,169 : INFO : test_cpo_finance_screen : Succesfully logged in.
+2023-06-07 17:00:45,170 : INFO : test_cpo_finance_screen : Navigating to finance page.
+2023-06-07 17:00:45,660 : INFO : test_cpo_finance_screen : Succesfully verified finance page.
+2023-06-07 17:00:45,889 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:45,889 : INFO : test_cpo_reports_screen : Attempting login.
+2023-06-07 17:00:46,860 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2023-06-07 17:00:46,861 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2023-06-07 17:00:47,493 : INFO : test_cpo_reports_screen : Succesfully verified reports page.
+2023-06-07 17:00:47,670 : INFO : test_cpo_splitbilling_screen : daan.swinnen@optimile.eu
+2023-06-07 17:00:47,671 : INFO : test_cpo_splitbilling_screen : Attempting login.
+2023-06-07 17:00:48,624 : INFO : test_cpo_splitbilling_screen : Succesfully logged in.
+2023-06-07 17:00:48,624 : INFO : test_cpo_splitbilling_screen : Navigating to splitbilling page.
+2023-06-07 17:00:49,613 : INFO : test_cpo_splitbilling_screen : Succesfully verified split billing page.
+2023-06-07 17:00:52,099 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2023-06-07 17:00:52,099 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2023-06-07 17:00:54,387 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2023-06-07 17:00:54,387 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2023-06-07 17:00:55,201 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2023-06-07 17:00:55,959 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2023-06-07 17:00:56,142 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2023-06-07 17:00:56,524 : INFO : test_reimbursementpolicy_valuechange : Succesfully changed policy value.
+2023-06-07 17:00:56,810 : INFO : test_reimbursementpolicy_valuechange : Deleted new value. Test has been reset.
+2023-06-07 17:00:56,975 : INFO : test_filter_locations : daan.swinnen@optimile.eu
+2023-06-07 17:00:56,975 : INFO : test_filter_locations : Attempting login.
+2023-06-07 17:00:58,087 : INFO : test_filter_locations : Succesfully logged in.
+2023-06-07 17:00:58,087 : INFO : test_filter_locations : Navigating to locations page.
+2023-06-07 17:00:58,464 : INFO : test_filter_locations : Searching locations list for 'Carrefour'.
+2023-06-07 17:00:59,767 : INFO : test_filter_locations : Verified only Carrefour locations show up.
+2023-06-07 17:00:59,943 : INFO : test_locations_search_devices : daan.swinnen@optimile.eu
+2023-06-07 17:00:59,943 : INFO : test_locations_search_devices : Attempting login.
+2023-06-07 17:01:00,976 : INFO : test_locations_search_devices : Succesfully logged in.
+2023-06-07 17:01:00,976 : INFO : test_locations_search_devices : Navigating to locations page.
+2023-06-07 17:01:01,391 : INFO : test_locations_search_devices : Searching for device 'QATEST'.
+2023-06-07 17:01:01,815 : INFO : test_locations_search_devices : Verified 'QATEST' is only device returned.
+2023-06-07 17:01:02,048 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2023-06-07 17:01:02,049 : INFO : test_configure_location_information : Attempting login.
+2023-06-07 17:01:03,533 : INFO : test_configure_location_information : Succesfully logged in.
+2023-06-07 17:01:03,534 : INFO : test_configure_location_information : Navigating to locations page.
+2023-06-07 17:01:04,069 : INFO : test_configure_location_information : Searching for 'Autotest Location Configuration'.
+2023-06-07 17:01:04,337 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2023-06-07 17:01:04,990 : INFO : test_configure_location_information : Edit location name.
+2023-06-07 17:01:05,052 : INFO : test_configure_location_information : Edit location phone number.
+2023-06-07 17:01:05,161 : INFO : test_configure_location_information : Edit contact name.
+2023-06-07 17:01:05,214 : INFO : test_configure_location_information : Attempting to update location.
+2023-06-07 17:01:05,627 : INFO : test_configure_location_information : Verified location name changed correctly.
+2023-06-07 17:01:05,640 : INFO : test_configure_location_information : Verified phone number changed correctly.
+2023-06-07 17:01:05,653 : INFO : test_configure_location_information : Verified contact name changed correctly.
+2023-06-07 17:01:05,653 : INFO : test_configure_location_information : Attempting to reset location information.
+2023-06-07 17:01:06,805 : INFO : test_configure_location_information : Succesfully reset location information.
+2023-06-07 17:01:07,032 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2023-06-07 17:01:07,032 : INFO : test_configure_location_location_data : Attempting login.
+2023-06-07 17:01:08,124 : INFO : test_configure_location_location_data : Succesfully logged in.
+2023-06-07 17:01:08,124 : INFO : test_configure_location_location_data : Navigating to locations page.
+2023-06-07 17:01:08,552 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2023-06-07 17:01:08,815 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2023-06-07 17:01:09,329 : INFO : test_configure_location_location_data : Updated location adress
+2023-06-07 17:01:09,422 : INFO : test_configure_location_location_data : Updated postcode.
+2023-06-07 17:01:09,521 : INFO : test_configure_location_location_data : Updated town.
+2023-06-07 17:01:09,573 : INFO : test_configure_location_location_data : Updated country.
+2023-06-07 17:01:10,574 : INFO : test_configure_location_location_data : Attempting to update location data.
+2023-06-07 17:01:12,105 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2023-06-07 17:01:12,105 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2023-06-07 17:01:15,359 : INFO : test_configure_location_location_data : Succesfully reset location data.
+2023-06-07 17:01:15,607 : INFO : test_add_charging_device : daan.swinnen@optimile.eu
+2023-06-07 17:01:15,607 : INFO : test_add_charging_device : Attempting login.
+2023-06-07 17:01:16,478 : INFO : test_add_charging_device : Succesfully logged in.
+2023-06-07 17:01:16,478 : INFO : test_add_charging_device : Navigating to locations page.
+2023-06-07 17:01:17,028 : INFO : test_add_charging_device : Searching for 'Autotest Location Configuration'.
+2023-06-07 17:01:17,273 : INFO : test_add_charging_device : Navigating to devices tab.
+2023-06-07 17:01:17,313 : INFO : test_add_charging_device : Attempting to register a new device.
+2023-06-07 17:01:17,876 : INFO : test_add_charging_device : Setting OCPP_ID.
+2023-06-07 17:01:17,932 : INFO : test_add_charging_device : Selecting contract from dropdown.
+2023-06-07 17:01:18,021 : INFO : test_add_charging_device : Attempting to finalize registration.
+2023-06-07 17:01:19,701 : INFO : test_add_charging_device : Succesfully registered new device.
+2023-06-07 17:01:22,180 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 17:01:22,181 : INFO : test_create_user : Attempting login.
+2023-06-07 17:01:24,447 : INFO : test_create_user : Succesfully logged in.
+2023-06-07 17:01:24,448 : INFO : test_create_user : Navigating to users page.
+2023-06-07 17:01:24,932 : INFO : test_create_user : Attempting to create new user.
+2023-06-07 17:01:25,247 : INFO : test_create_user : Creating random emailadres.
+2023-06-07 17:01:25,350 : INFO : test_create_user : Attempting to save new user.
+2023-06-07 17:01:27,349 : INFO : test_create_user : Succesfully created new user.
+2023-06-07 17:01:29,756 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-06-07 17:01:29,756 : INFO : test_create_user_contract : Attempting login.
+2023-06-07 17:01:31,965 : INFO : test_create_user_contract : Succesfully logged in.
+2023-06-07 17:01:31,965 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-06-07 17:01:32,196 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-06-07 17:01:32,282 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-06-07 17:01:32,512 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-06-07 17:01:32,779 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-06-07 17:01:33,247 : INFO : test_create_user_contract : Selecting contract.
+2023-06-07 17:01:33,366 : INFO : test_create_user_contract : Selecting user.
+2023-06-07 17:01:45,681 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2023-06-07 17:01:45,682 : INFO : test_assign_user_token : Attempting login.
+2023-06-07 17:01:48,132 : INFO : test_assign_user_token : Succesfully logged in.
+2023-06-07 17:01:48,133 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2023-06-07 17:01:48,427 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2023-06-07 17:01:48,501 : INFO : test_assign_user_token : Opening customer.
+2023-06-07 17:01:48,792 : INFO : test_assign_user_token : Attempting to assign token to user.
+2023-06-07 17:02:01,353 : INFO : test_add_token_to_whitelist : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 17:02:01,353 : INFO : test_add_token_to_whitelist : Attempting login.
+2023-06-07 17:02:03,890 : INFO : test_add_token_to_whitelist : Succesfully logged in.
+2023-06-07 17:02:03,890 : INFO : test_add_token_to_whitelist : Navigating to whitelist page.
+2023-06-07 17:02:04,430 : INFO : test_add_token_to_whitelist : Attempting to add tokens to whitelist.
+2023-06-07 17:02:06,223 : INFO : test_add_token_to_whitelist : Succesfully added tokens to whitelist.
+2023-06-07 17:02:08,372 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2023-06-07 17:02:08,373 : INFO : test_roaming_session : TestDevice89
+2023-06-07 17:02:08,373 : INFO : test_roaming_session : Attempting to connect to simulator.
+2023-06-07 17:02:08,767 : INFO : test_roaming_session : Connected to simulator.
+2023-06-07 17:02:09,768 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2023-06-07 17:02:09,917 : INFO : test_roaming_session : Entering connectorID.
+2023-06-07 17:02:09,966 : INFO : test_roaming_session : Sending token RFID.
+2023-06-07 17:02:10,058 : INFO : test_roaming_session : Attempting to start transaction.
+2023-06-07 17:02:20,108 : INFO : test_roaming_session : Getting transaction ID.
+2023-06-07 17:02:20,154 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2023-06-07 17:02:20,263 : INFO : test_roaming_session : Sending token RFID.
+2023-06-07 17:02:20,310 : INFO : test_roaming_session : Simulating meter end value.
+2023-06-07 17:02:20,351 : INFO : test_roaming_session : Sending transaction ID.
+2023-06-07 17:02:20,394 : INFO : test_roaming_session : Sending timestamp.
+2023-06-07 17:02:20,489 : INFO : test_roaming_session : Selecting transaction stop reason.
+2023-06-07 17:02:20,538 : INFO : test_roaming_session : Stopping transaction.
+2023-06-07 17:02:21,584 : INFO : test_roaming_session__platform_verification : daan.swinnen@optimile.eu
+2023-06-07 17:02:21,585 : INFO : test_roaming_session__platform_verification : Attempting login.
+2023-06-07 17:02:24,064 : INFO : test_roaming_session__platform_verification : Succesfully logged in.
+2023-06-07 17:02:24,064 : INFO : test_roaming_session__platform_verification : Navigating to msp customers page.
+2023-06-07 17:02:24,318 : INFO : test_roaming_session__platform_verification : Searching for 'Autotesting Roaming'.
+2023-06-07 17:02:25,515 : INFO : test_roaming_session__platform_verification : Opening customer.
+2023-06-07 17:02:25,864 : INFO : test_roaming_session__platform_verification : Activity tab.
+2023-06-07 17:02:26,423 : INFO : test_roaming_session__platform_verification : Succesfully verified charging session registered as 'normal'.
+2023-06-07 17:02:26,667 : INFO : test_whitelist_session : daan.swinnen@optimile.eu
+2023-06-07 17:02:26,668 : INFO : test_whitelist_session : TestDevice89
+2023-06-07 17:02:26,668 : INFO : test_whitelist_session : Attempting to connect to simulator.
+2023-06-07 17:02:26,968 : INFO : test_whitelist_session : Connected to simulator.
+2023-06-07 17:02:27,969 : INFO : test_whitelist_session : Requesting 'start transaction'-screen.
+2023-06-07 17:02:28,059 : INFO : test_whitelist_session : Entering connectorID.
+2023-06-07 17:02:28,096 : INFO : test_whitelist_session : Sending token RFID.
+2023-06-07 17:02:28,170 : INFO : test_whitelist_session : Attempting to start transaction.
+2023-06-07 17:02:38,201 : INFO : test_whitelist_session : Getting transaction ID.
+2023-06-07 17:02:38,249 : INFO : test_whitelist_session : Requesting 'stop transaction'-screen.
+2023-06-07 17:02:38,340 : INFO : test_whitelist_session : Sending token RFID.
+2023-06-07 17:02:38,388 : INFO : test_whitelist_session : Simulating meter end value.
+2023-06-07 17:02:38,427 : INFO : test_whitelist_session : Sending transaction ID.
+2023-06-07 17:02:38,465 : INFO : test_whitelist_session : Sending timestamp.
+2023-06-07 17:02:38,547 : INFO : test_whitelist_session : Selecting transaction stop reason.
+2023-06-07 17:02:38,591 : INFO : test_whitelist_session : Stopping transaction.
+2023-06-07 17:02:39,637 : INFO : test_whitelist_session__platform_verification : daan.swinnen@optimile.eu
+2023-06-07 17:02:39,637 : INFO : test_whitelist_session__platform_verification : Attempting login.
+2023-06-07 17:02:41,259 : INFO : test_whitelist_session__platform_verification : Succesfully logged in.
+2023-06-07 17:02:41,260 : INFO : test_whitelist_session__platform_verification : Navigating to cpo customers page.
+2023-06-07 17:02:41,635 : INFO : test_whitelist_session__platform_verification : Searching for 'Carrefour'.
+2023-06-07 17:02:41,859 : INFO : test_whitelist_session__platform_verification : Opening user.
+2023-06-07 17:02:42,071 : INFO : test_whitelist_session__platform_verification : Opening sessions-tab.
+2023-06-07 17:02:42,452 : INFO : test_splitbilling_session : daan.swinnen@optimile.eu
+2023-06-07 17:02:42,452 : INFO : test_splitbilling_session : TestDevice89
+2023-06-07 17:02:42,452 : INFO : test_splitbilling_session : Attempting to connect to simulator.
+2023-06-07 17:02:42,849 : INFO : test_splitbilling_session : Connected to simulator.
+2023-06-07 17:02:43,850 : INFO : test_splitbilling_session : Requesting 'start transaction'-screen.
+2023-06-07 17:02:43,933 : INFO : test_splitbilling_session : Entering connectorID.
+2023-06-07 17:02:44,001 : INFO : test_splitbilling_session : Sending token RFID.
+2023-06-07 17:02:44,116 : INFO : test_splitbilling_session : Attempting to start transaction.
+2023-06-07 17:02:54,154 : INFO : test_splitbilling_session : Getting transaction ID.
+2023-06-07 17:02:54,184 : INFO : test_splitbilling_session : Requesting 'stop transaction'-screen.
+2023-06-07 17:02:54,243 : INFO : test_splitbilling_session : Sending token RFID.
+2023-06-07 17:02:54,287 : INFO : test_splitbilling_session : Simulating meter end value.
+2023-06-07 17:02:54,325 : INFO : test_splitbilling_session : Sending transaction ID.
+2023-06-07 17:02:54,358 : INFO : test_splitbilling_session : Sending timestamp.
+2023-06-07 17:02:54,444 : INFO : test_splitbilling_session : Selecting transaction stop reason.
+2023-06-07 17:02:54,480 : INFO : test_splitbilling_session : Stopping transaction.
+2023-06-07 17:02:56,518 : INFO : test_splitbilling_session__platform_verification : daan.swinnen@optimile.eu
+2023-06-07 17:02:56,519 : INFO : test_splitbilling_session__platform_verification : Attempting login.
+2023-06-07 17:03:09,428 : INFO : test_administration_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 17:03:09,428 : INFO : test_administration_tab : Attempting login.
+2023-06-07 17:03:11,517 : INFO : test_administration_tab : Succesfully logged in.
+2023-06-07 17:03:11,517 : INFO : test_administration_tab : Navigating to administration tab.
+2023-06-07 17:03:12,033 : INFO : test_administration_tab : Verified account details page.
+2023-06-07 17:03:12,288 : INFO : test_administration_tab : Verified preferences page.
+2023-06-07 17:03:12,662 : INFO : test_administration_tab : Verified users page.
+2023-06-07 17:03:12,923 : INFO : test_administration_tab : Verified tags page.
+2023-06-07 17:03:13,172 : INFO : test_administration_tab : Verified external users page.
+2023-06-07 17:03:13,409 : INFO : test_administration_tab : Verified user invites page.
+2023-06-07 17:03:13,651 : INFO : test_finance_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 17:03:13,652 : INFO : test_finance_tab : Attempting login.
+2023-06-07 17:03:14,533 : INFO : test_finance_tab : Succesfully logged in.
+2023-06-07 17:03:14,533 : INFO : test_finance_tab : Navigating to finance tab.
+2023-06-07 17:03:14,912 : INFO : test_finance_tab : Verified invoices page.
+2023-06-07 17:03:15,102 : INFO : test_finance_tab : Verified payment methods page.
+2023-06-07 17:03:15,318 : INFO : test_finance_tab : Verified credit transactions page.
+2023-06-07 17:03:15,538 : INFO : test_finance_tab : Verified revenue page.
+2023-06-07 17:03:15,728 : INFO : test_finance_tab : Verified payment requests page.
+2023-06-07 17:03:15,903 : INFO : test_finance_tab : Verified debit notes page.
+2023-06-07 17:03:16,091 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 17:03:16,091 : INFO : test_account_details_screen : Attempting login.
+2023-06-07 17:03:17,198 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-07 17:03:17,198 : INFO : test_account_details_screen : Navigate to account details screen.
+2023-06-07 17:03:17,671 : INFO : test_account_details_screen : Attempting to change all account details.
+2023-06-07 17:03:19,792 : INFO : test_account_details_screen : Succesfully saved changes.
+2023-06-07 17:03:19,792 : INFO : test_account_details_screen : Attempting to verify accuracy of changes.
+2023-06-07 17:03:21,375 : INFO : test_account_details_screen : Succesfully verified accuracy of changes.
+2023-06-07 17:03:21,375 : INFO : test_account_details_screen : Succesfully reset test.
+2023-06-07 17:03:21,532 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 17:03:21,532 : INFO : test_users_details_screen : Attempting login.
+2023-06-07 17:03:22,352 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-07 17:03:22,352 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-07 17:03:36,489 : INFO : test_tags_create_delete_basic : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 17:03:36,490 : INFO : test_tags_create_delete_basic : Attempting login.
+2023-06-07 17:03:38,656 : INFO : test_tags_create_delete_basic : Succesfully logged in.
+2023-06-07 17:03:38,656 : INFO : test_tags_create_delete_basic : Navigating to profiles page.
+2023-06-07 17:03:39,215 : INFO : test_tags_create_delete_basic : Attempting to create new tag.
+2023-06-07 17:03:39,767 : INFO : test_tags_create_delete_basic : Set tag name as 'timestamp'.
+2023-06-07 17:03:39,937 : INFO : test_tags_create_delete_basic : Linked all available users.
+2023-06-07 17:03:40,002 : INFO : test_tags_create_delete_basic : Saved new tag.
+2023-06-07 17:03:41,192 : INFO : test_tags_create_delete_basic : Deleted new tag.
+2023-06-07 17:03:41,471 : INFO : test_tags_create_delete_expanded : daan.swinnen+splitbilling4@optimile.eu
+2023-06-07 17:03:41,471 : INFO : test_tags_create_delete_expanded : Attempting login.
+2023-06-07 17:03:42,648 : INFO : test_tags_create_delete_expanded : Succesfully logged in.
+2023-06-07 17:03:42,998 : INFO : test_tags_create_delete_expanded : Attempting to create new tag.
+2023-06-07 17:03:43,450 : INFO : test_tags_create_delete_expanded : Set tag name as 'timestamp'.
+2023-06-07 17:03:43,535 : INFO : test_tags_create_delete_expanded : Set new tag color.
+2023-06-07 17:03:44,627 : INFO : test_tags_create_delete_expanded : Link all available users.
+2023-06-07 17:03:44,675 : INFO : test_tags_create_delete_expanded : Saved new tag.
+2023-06-07 17:03:46,956 : INFO : test_tags_create_delete_expanded : Succesfully verified badge color is correct.
+2023-06-07 17:03:47,417 : INFO : test_tags_create_delete_expanded : Succesfully verified tagname.
+2023-06-07 17:03:48,667 : INFO : test_tags_create_delete_expanded : Attempting to edit tag.
+2023-06-07 17:03:50,185 : INFO : test_tags_create_delete_expanded : Edit tagname.
+2023-06-07 17:03:50,289 : INFO : test_tags_create_delete_expanded : Unlinked all users.
+2023-06-07 17:03:50,341 : INFO : test_tags_create_delete_expanded : Saved edited tag.
+2023-06-07 17:03:51,373 : INFO : test_tags_create_delete_expanded : Succesfully verified edited name.
+2023-06-07 17:03:51,390 : INFO : test_tags_create_delete_expanded : Succesfully verified number of linked users.
+2023-06-07 17:03:51,558 : INFO : test_tags_create_delete_expanded : Delete test tag.
+2023-06-07 17:03:54,067 : INFO : test_msp_customers_screen : daan.swinnen@optimile.eu
+2023-06-07 17:03:54,067 : INFO : test_msp_customers_screen : Attempting login.
+2023-06-07 17:03:56,456 : INFO : test_msp_customers_screen : Succesfully logged in.
+2023-06-07 17:03:56,456 : INFO : test_msp_customers_screen : Navigating to msp customers page.
+2023-06-07 17:03:56,821 : INFO : test_msp_customers_screen : Succesfully verified msp customers page.
+2023-06-07 17:03:57,076 : INFO : test_msp_tokens_screen : daan.swinnen@optimile.eu
+2023-06-07 17:03:57,076 : INFO : test_msp_tokens_screen : Attempting login.
+2023-06-07 17:03:58,027 : INFO : test_msp_tokens_screen : Succesfully logged in.
+2023-06-07 17:03:58,027 : INFO : test_msp_tokens_screen : Navigating to msp tokens page.
+2023-06-07 17:03:58,455 : INFO : test_msp_tokens_screen : Succesfully verified tokens page.
+2023-06-07 17:03:58,610 : INFO : test_msp_vouchers_screen : daan.swinnen@optimile.eu
+2023-06-07 17:03:58,610 : INFO : test_msp_vouchers_screen : Attempting login.
+2023-06-07 17:03:59,289 : INFO : test_msp_vouchers_screen : Succesfully logged in.
+2023-06-07 17:03:59,289 : INFO : test_msp_vouchers_screen : Navigating to msp vouchers page.
+2023-06-07 17:03:59,728 : INFO : test_msp_vouchers_screen : Succesfully verified vouchers page.
+2023-06-07 17:03:59,910 : INFO : test_msp_contracts_screen : daan.swinnen@optimile.eu
+2023-06-07 17:03:59,911 : INFO : test_msp_contracts_screen : Attempting login.
+2023-06-07 17:04:00,642 : INFO : test_msp_contracts_screen : Succesfully logged in.
+2023-06-07 17:04:00,642 : INFO : test_msp_contracts_screen : Navigating to msp contracts page.
+2023-06-07 17:04:01,284 : INFO : test_msp_contracts_screen : Succesfully verified contracts page.
+2023-06-07 17:04:01,498 : INFO : test_msp_operators_screen : daan.swinnen@optimile.eu
+2023-06-07 17:04:01,499 : INFO : test_msp_operators_screen : Attempting login.
+2023-06-07 17:04:02,351 : INFO : test_msp_operators_screen : Succesfully logged in.
+2023-06-07 17:04:02,351 : INFO : test_msp_operators_screen : Navigating to msp operators page.
+2023-06-07 17:04:03,160 : INFO : test_msp_operators_screen : Succesfully verified operators page.
+2023-06-07 17:04:03,400 : INFO : test_msp_invoices_screen : daan.swinnen@optimile.eu
+2023-06-07 17:04:03,400 : INFO : test_msp_invoices_screen : Attempting login.
+2023-06-07 17:04:04,877 : INFO : test_msp_invoices_screen : Succesfully logged in.
+2023-06-07 17:04:04,877 : INFO : test_msp_invoices_screen : Navigating to msp invoices page.
+2023-06-13 13:28:35,020 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:35,020 : INFO : test_cpo_overview_screen : Attempting login.
+2023-06-13 13:28:37,962 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2023-06-13 13:28:37,962 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2023-06-13 13:28:38,666 : INFO : test_cpo_overview_screen : Succesfully verified CPO overview page.
+2023-06-13 13:28:38,854 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:38,855 : INFO : test_cpo_customers_screen : Attempting login.
+2023-06-13 13:28:39,888 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2023-06-13 13:28:39,888 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2023-06-13 13:28:40,277 : INFO : test_cpo_customers_screen : Succesfully verified customers page.
+2023-06-13 13:28:40,407 : INFO : test_cpo_charging_locations_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:40,407 : INFO : test_cpo_charging_locations_screen : Attempting login.
+2023-06-13 13:28:41,047 : INFO : test_cpo_charging_locations_screen : Succesfully logged in.
+2023-06-13 13:28:41,047 : INFO : test_cpo_charging_locations_screen : Navigating to charging locations page.
+2023-06-13 13:28:41,555 : INFO : test_cpo_charging_locations_screen : Succesfully verified locations page.
+2023-06-13 13:28:41,711 : INFO : test_cpo_tokens_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:41,711 : INFO : test_cpo_tokens_screen : Attempting login.
+2023-06-13 13:28:42,394 : INFO : test_cpo_tokens_screen : Succesfully logged in.
+2023-06-13 13:28:42,394 : INFO : test_cpo_tokens_screen : Navigating to tokens page.
+2023-06-13 13:28:42,826 : INFO : test_cpo_tokens_screen : Succesfully verified tokens page.
+2023-06-13 13:28:42,979 : INFO : test_cpo_simcards_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:42,980 : INFO : test_cpo_simcards_screen : Attempting login.
+2023-06-13 13:28:43,978 : INFO : test_cpo_simcards_screen : Succesfully logged in.
+2023-06-13 13:28:43,978 : INFO : test_cpo_simcards_screen : Navigating to simcards page.
+2023-06-13 13:28:44,589 : INFO : test_cpo_simcards_screen : Succesfully verified simcards page.
+2023-06-13 13:28:44,743 : INFO : test_cpo_contracts_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:44,743 : INFO : test_cpo_contracts_screen : Attempting login.
+2023-06-13 13:28:45,427 : INFO : test_cpo_contracts_screen : Succesfully logged in.
+2023-06-13 13:28:45,427 : INFO : test_cpo_contracts_screen : Navigating to contracts page.
+2023-06-13 13:28:45,882 : INFO : test_cpo_contracts_screen : Succesfully verified contracts page.
+2023-06-13 13:28:46,036 : INFO : test_cpo_roaming_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:46,036 : INFO : test_cpo_roaming_screen : Attempting login.
+2023-06-13 13:28:46,698 : INFO : test_cpo_roaming_screen : Succesfully logged in.
+2023-06-13 13:28:46,699 : INFO : test_cpo_roaming_screen : Navigating to roaming page.
+2023-06-13 13:28:47,228 : INFO : test_cpo_roaming_screen : Succesfully verified roaming page.
+2023-06-13 13:28:47,410 : INFO : test_cpo_finance_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:47,410 : INFO : test_cpo_finance_screen : Attempting login.
+2023-06-13 13:28:48,137 : INFO : test_cpo_finance_screen : Succesfully logged in.
+2023-06-13 13:28:48,137 : INFO : test_cpo_finance_screen : Navigating to finance page.
+2023-06-13 13:28:48,583 : INFO : test_cpo_finance_screen : Succesfully verified finance page.
+2023-06-13 13:28:48,789 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:48,789 : INFO : test_cpo_reports_screen : Attempting login.
+2023-06-13 13:28:49,522 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2023-06-13 13:28:49,522 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2023-06-13 13:28:50,102 : INFO : test_cpo_reports_screen : Succesfully verified reports page.
+2023-06-13 13:28:50,269 : INFO : test_cpo_splitbilling_screen : daan.swinnen@optimile.eu
+2023-06-13 13:28:50,269 : INFO : test_cpo_splitbilling_screen : Attempting login.
+2023-06-13 13:28:50,948 : INFO : test_cpo_splitbilling_screen : Succesfully logged in.
+2023-06-13 13:28:50,949 : INFO : test_cpo_splitbilling_screen : Navigating to splitbilling page.
+2023-06-13 13:28:51,887 : INFO : test_cpo_splitbilling_screen : Succesfully verified split billing page.
+2023-06-13 13:28:54,220 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2023-06-13 13:28:54,220 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2023-06-13 13:28:56,461 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2023-06-13 13:28:56,461 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2023-06-13 13:28:57,378 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2023-06-13 13:28:57,746 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2023-06-13 13:28:57,933 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2023-06-13 13:28:58,367 : INFO : test_reimbursementpolicy_valuechange : Succesfully changed policy value.
+2023-06-13 13:28:58,659 : INFO : test_reimbursementpolicy_valuechange : Deleted new value. Test has been reset.
+2023-06-13 13:28:58,830 : INFO : test_filter_locations : daan.swinnen@optimile.eu
+2023-06-13 13:28:58,830 : INFO : test_filter_locations : Attempting login.
+2023-06-13 13:29:00,026 : INFO : test_filter_locations : Succesfully logged in.
+2023-06-13 13:29:00,026 : INFO : test_filter_locations : Navigating to locations page.
+2023-06-13 13:29:00,327 : INFO : test_filter_locations : Searching locations list for 'Carrefour'.
+2023-06-13 13:29:01,832 : INFO : test_filter_locations : Verified only Carrefour locations show up.
+2023-06-13 13:29:02,062 : INFO : test_locations_search_devices : daan.swinnen@optimile.eu
+2023-06-13 13:29:02,063 : INFO : test_locations_search_devices : Attempting login.
+2023-06-13 13:29:02,834 : INFO : test_locations_search_devices : Succesfully logged in.
+2023-06-13 13:29:02,834 : INFO : test_locations_search_devices : Navigating to locations page.
+2023-06-13 13:29:03,244 : INFO : test_locations_search_devices : Searching for device 'QATEST'.
+2023-06-13 13:29:03,751 : INFO : test_locations_search_devices : Verified 'QATEST' is only device returned.
+2023-06-13 13:29:03,943 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2023-06-13 13:29:03,943 : INFO : test_configure_location_information : Attempting login.
+2023-06-13 13:29:04,662 : INFO : test_configure_location_information : Succesfully logged in.
+2023-06-13 13:29:04,662 : INFO : test_configure_location_information : Navigating to locations page.
+2023-06-13 13:29:05,124 : INFO : test_configure_location_information : Searching for 'Autotest Location Configuration'.
+2023-06-13 13:29:05,366 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2023-06-13 13:29:06,043 : INFO : test_configure_location_information : Edit location name.
+2023-06-13 13:29:06,116 : INFO : test_configure_location_information : Edit location phone number.
+2023-06-13 13:29:06,247 : INFO : test_configure_location_information : Edit contact name.
+2023-06-13 13:29:06,301 : INFO : test_configure_location_information : Attempting to update location.
+2023-06-13 13:29:06,658 : INFO : test_configure_location_information : Verified location name changed correctly.
+2023-06-13 13:29:06,674 : INFO : test_configure_location_information : Verified phone number changed correctly.
+2023-06-13 13:29:06,688 : INFO : test_configure_location_information : Verified contact name changed correctly.
+2023-06-13 13:29:06,688 : INFO : test_configure_location_information : Attempting to reset location information.
+2023-06-13 13:29:07,712 : INFO : test_configure_location_information : Succesfully reset location information.
+2023-06-13 13:29:07,924 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2023-06-13 13:29:07,924 : INFO : test_configure_location_location_data : Attempting login.
+2023-06-13 13:29:08,666 : INFO : test_configure_location_location_data : Succesfully logged in.
+2023-06-13 13:29:08,667 : INFO : test_configure_location_location_data : Navigating to locations page.
+2023-06-13 13:29:09,211 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2023-06-13 13:29:09,447 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2023-06-13 13:29:09,979 : INFO : test_configure_location_location_data : Updated location adress
+2023-06-13 13:29:10,073 : INFO : test_configure_location_location_data : Updated postcode.
+2023-06-13 13:29:10,182 : INFO : test_configure_location_location_data : Updated town.
+2023-06-13 13:29:10,258 : INFO : test_configure_location_location_data : Updated country.
+2023-06-13 13:29:11,259 : INFO : test_configure_location_location_data : Attempting to update location data.
+2023-06-13 13:29:12,671 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2023-06-13 13:29:12,671 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2023-06-13 13:29:15,799 : INFO : test_configure_location_location_data : Succesfully reset location data.
+2023-06-13 13:29:15,962 : INFO : test_add_charging_device : daan.swinnen@optimile.eu
+2023-06-13 13:29:15,962 : INFO : test_add_charging_device : Attempting login.
+2023-06-13 13:29:16,686 : INFO : test_add_charging_device : Succesfully logged in.
+2023-06-13 13:29:16,686 : INFO : test_add_charging_device : Navigating to locations page.
+2023-06-13 13:29:17,234 : INFO : test_add_charging_device : Searching for 'Autotest Location Configuration'.
+2023-06-13 13:29:17,485 : INFO : test_add_charging_device : Navigating to devices tab.
+2023-06-13 13:29:17,525 : INFO : test_add_charging_device : Attempting to register a new device.
+2023-06-13 13:29:18,015 : INFO : test_add_charging_device : Setting OCPP_ID.
+2023-06-13 13:29:18,070 : INFO : test_add_charging_device : Selecting contract from dropdown.
+2023-06-13 13:29:18,158 : INFO : test_add_charging_device : Attempting to finalize registration.
+2023-06-13 13:29:19,992 : INFO : test_add_charging_device : Succesfully registered new device.
+2023-06-13 13:29:22,344 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-06-13 13:29:22,345 : INFO : test_create_user : Attempting login.
+2023-06-13 13:29:25,249 : INFO : test_create_user : Succesfully logged in.
+2023-06-13 13:29:25,249 : INFO : test_create_user : Navigating to users page.
+2023-06-13 13:29:25,738 : INFO : test_create_user : Attempting to create new user.
+2023-06-13 13:29:26,052 : INFO : test_create_user : Creating random emailadres.
+2023-06-13 13:29:26,160 : INFO : test_create_user : Attempting to save new user.
+2023-06-13 13:29:28,045 : INFO : test_create_user : Succesfully created new user.
+2023-06-13 13:29:30,327 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-06-13 13:29:30,327 : INFO : test_create_user_contract : Attempting login.
+2023-06-13 13:29:32,548 : INFO : test_create_user_contract : Succesfully logged in.
+2023-06-13 13:29:32,548 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-06-13 13:29:32,761 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-06-13 13:29:32,833 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-06-13 13:29:33,083 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-06-13 13:29:33,407 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-06-13 13:29:33,958 : INFO : test_create_user_contract : Selecting contract.
+2023-06-13 13:29:34,072 : INFO : test_create_user_contract : Selecting user.
+2023-06-13 13:29:42,299 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2023-06-13 13:29:42,299 : INFO : test_assign_user_token : Attempting login.
+2023-06-13 13:29:44,736 : INFO : test_assign_user_token : Succesfully logged in.
+2023-06-13 13:29:44,737 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2023-06-13 13:29:44,931 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2023-06-13 13:29:45,001 : INFO : test_assign_user_token : Opening customer.
+2023-06-13 13:29:45,222 : INFO : test_assign_user_token : Attempting to assign token to user.
+2023-06-13 13:29:47,600 : INFO : test_assign_user_token : Succesfully assigned token to user.
+2023-06-13 13:29:49,974 : INFO : test_add_token_to_whitelist : daan.swinnen+splitbilling4@optimile.eu
+2023-06-13 13:29:49,974 : INFO : test_add_token_to_whitelist : Attempting login.
+2023-06-13 13:29:52,229 : INFO : test_add_token_to_whitelist : Succesfully logged in.
+2023-06-13 13:29:52,229 : INFO : test_add_token_to_whitelist : Navigating to whitelist page.
+2023-06-13 13:29:52,600 : INFO : test_add_token_to_whitelist : Attempting to add tokens to whitelist.
+2023-06-13 13:29:54,261 : INFO : test_add_token_to_whitelist : Succesfully added tokens to whitelist.
+2023-06-13 13:29:56,344 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2023-06-13 13:29:56,344 : INFO : test_roaming_session : TestDevice89
+2023-06-13 13:29:56,345 : INFO : test_roaming_session : Attempting to connect to simulator.
+2023-06-13 13:29:56,737 : INFO : test_roaming_session : Connected to simulator.
+2023-06-13 13:29:57,738 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2023-06-13 13:29:57,875 : INFO : test_roaming_session : Entering connectorID.
+2023-06-13 13:29:57,927 : INFO : test_roaming_session : Sending token RFID.
+2023-06-13 13:29:58,012 : INFO : test_roaming_session : Attempting to start transaction.
+2023-06-13 13:30:08,058 : INFO : test_roaming_session : Getting transaction ID.
+2023-06-13 13:30:08,083 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2023-06-13 13:30:08,161 : INFO : test_roaming_session : Sending token RFID.
+2023-06-13 13:30:08,218 : INFO : test_roaming_session : Simulating meter end value.
+2023-06-13 13:30:08,269 : INFO : test_roaming_session : Sending transaction ID.
+2023-06-13 13:30:08,319 : INFO : test_roaming_session : Sending timestamp.
+2023-06-13 13:30:08,456 : INFO : test_roaming_session : Selecting transaction stop reason.
+2023-06-13 13:30:08,497 : INFO : test_roaming_session : Stopping transaction.
+2023-06-13 13:30:09,541 : INFO : test_roaming_session__platform_verification : daan.swinnen@optimile.eu
+2023-06-13 13:30:09,541 : INFO : test_roaming_session__platform_verification : Attempting login.
+2023-06-13 13:30:12,025 : INFO : test_roaming_session__platform_verification : Succesfully logged in.
+2023-06-13 13:30:12,026 : INFO : test_roaming_session__platform_verification : Navigating to msp customers page.
+2023-06-13 13:30:12,280 : INFO : test_roaming_session__platform_verification : Searching for 'Autotesting Roaming'.
+2023-06-13 13:30:13,526 : INFO : test_roaming_session__platform_verification : Opening customer.
+2023-06-13 13:30:13,958 : INFO : test_roaming_session__platform_verification : Activity tab.
+2023-06-13 13:30:14,545 : INFO : test_roaming_session__platform_verification : Succesfully verified charging session registered as 'normal'.
+2023-06-13 13:30:14,724 : INFO : test_whitelist_session : daan.swinnen@optimile.eu
+2023-06-13 13:30:14,725 : INFO : test_whitelist_session : TestDevice89
+2023-06-13 13:30:14,725 : INFO : test_whitelist_session : Attempting to connect to simulator.
+2023-06-13 13:30:15,026 : INFO : test_whitelist_session : Connected to simulator.
+2023-06-13 13:30:16,027 : INFO : test_whitelist_session : Requesting 'start transaction'-screen.
+2023-06-13 13:30:16,116 : INFO : test_whitelist_session : Entering connectorID.
+2023-06-13 13:30:16,157 : INFO : test_whitelist_session : Sending token RFID.
+2023-06-13 13:30:16,233 : INFO : test_whitelist_session : Attempting to start transaction.
+2023-06-13 13:30:26,276 : INFO : test_whitelist_session : Getting transaction ID.
+2023-06-13 13:30:26,319 : INFO : test_whitelist_session : Requesting 'stop transaction'-screen.
+2023-06-13 13:30:26,431 : INFO : test_whitelist_session : Sending token RFID.
+2023-06-13 13:30:26,487 : INFO : test_whitelist_session : Simulating meter end value.
+2023-06-13 13:30:26,561 : INFO : test_whitelist_session : Sending transaction ID.
+2023-06-13 13:30:26,613 : INFO : test_whitelist_session : Sending timestamp.
+2023-06-13 13:30:26,742 : INFO : test_whitelist_session : Selecting transaction stop reason.
+2023-06-13 13:30:26,824 : INFO : test_whitelist_session : Stopping transaction.
+2023-06-13 13:30:27,882 : INFO : test_whitelist_session__platform_verification : daan.swinnen@optimile.eu
+2023-06-13 13:30:27,882 : INFO : test_whitelist_session__platform_verification : Attempting login.
+2023-06-13 13:30:29,309 : INFO : test_whitelist_session__platform_verification : Succesfully logged in.
+2023-06-13 13:30:29,309 : INFO : test_whitelist_session__platform_verification : Navigating to cpo customers page.
+2023-06-13 13:30:29,619 : INFO : test_whitelist_session__platform_verification : Searching for 'Carrefour'.
+2023-06-13 13:30:30,095 : INFO : test_whitelist_session__platform_verification : Opening user.
+2023-06-13 13:30:30,437 : INFO : test_whitelist_session__platform_verification : Opening sessions-tab.
+2023-06-13 13:30:30,774 : INFO : test_whitelist_session__platform_verification : Succesfully verified session status as 'whitelist'.
+2023-06-13 13:30:31,026 : INFO : test_splitbilling_session : daan.swinnen@optimile.eu
+2023-06-13 13:30:31,026 : INFO : test_splitbilling_session : TestDevice89
+2023-06-13 13:30:31,026 : INFO : test_splitbilling_session : Attempting to connect to simulator.
+2023-06-13 13:30:31,362 : INFO : test_splitbilling_session : Connected to simulator.
+2023-06-13 13:30:32,363 : INFO : test_splitbilling_session : Requesting 'start transaction'-screen.
+2023-06-13 13:30:32,442 : INFO : test_splitbilling_session : Entering connectorID.
+2023-06-13 13:30:32,486 : INFO : test_splitbilling_session : Sending token RFID.
+2023-06-13 13:30:32,573 : INFO : test_splitbilling_session : Attempting to start transaction.
+2023-06-13 13:30:42,608 : INFO : test_splitbilling_session : Getting transaction ID.
+2023-06-13 13:30:42,646 : INFO : test_splitbilling_session : Requesting 'stop transaction'-screen.
+2023-06-13 13:30:42,716 : INFO : test_splitbilling_session : Sending token RFID.
+2023-06-13 13:30:42,766 : INFO : test_splitbilling_session : Simulating meter end value.
+2023-06-13 13:30:42,802 : INFO : test_splitbilling_session : Sending transaction ID.
+2023-06-13 13:30:42,839 : INFO : test_splitbilling_session : Sending timestamp.
+2023-06-13 13:30:42,919 : INFO : test_splitbilling_session : Selecting transaction stop reason.
+2023-06-13 13:30:42,962 : INFO : test_splitbilling_session : Stopping transaction.
+2023-06-13 13:30:45,002 : INFO : test_splitbilling_session__platform_verification : daan.swinnen@optimile.eu
+2023-06-13 13:30:45,002 : INFO : test_splitbilling_session__platform_verification : Attempting login.
+2023-06-13 13:30:46,017 : INFO : test_splitbilling_session__platform_verification : Succesfully logged in.
+2023-06-13 13:30:46,017 : INFO : test_splitbilling_session__platform_verification : Navigating to CPO customers screen.
+2023-06-13 13:30:46,873 : INFO : test_splitbilling_session__platform_verification : Searching for 'Autotest Splitbilling'.
+2023-06-13 13:30:47,105 : INFO : test_splitbilling_session__platform_verification : Opening user.
+2023-06-13 13:30:47,313 : INFO : test_splitbilling_session__platform_verification : Opening sessions-tab
+2023-06-13 13:30:47,522 : INFO : test_splitbilling_session__platform_verification : Succesfully verified the session as 'Split Billing'.
+2023-06-13 13:30:49,970 : INFO : test_administration_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-13 13:30:49,970 : INFO : test_administration_tab : Attempting login.
+2023-06-13 13:30:51,990 : INFO : test_administration_tab : Succesfully logged in.
+2023-06-13 13:30:51,990 : INFO : test_administration_tab : Navigating to administration tab.
+2023-06-13 13:30:52,433 : INFO : test_administration_tab : Verified account details page.
+2023-06-13 13:30:52,644 : INFO : test_administration_tab : Verified preferences page.
+2023-06-13 13:30:53,015 : INFO : test_administration_tab : Verified users page.
+2023-06-13 13:30:53,308 : INFO : test_administration_tab : Verified tags page.
+2023-06-13 13:30:53,552 : INFO : test_administration_tab : Verified external users page.
+2023-06-13 13:30:53,769 : INFO : test_administration_tab : Verified user invites page.
+2023-06-13 13:30:53,980 : INFO : test_finance_tab : daan.swinnen+splitbilling4@optimile.eu
+2023-06-13 13:30:53,980 : INFO : test_finance_tab : Attempting login.
+2023-06-13 13:30:55,035 : INFO : test_finance_tab : Succesfully logged in.
+2023-06-13 13:30:55,035 : INFO : test_finance_tab : Navigating to finance tab.
+2023-06-13 13:30:55,424 : INFO : test_finance_tab : Verified invoices page.
+2023-06-13 13:30:55,628 : INFO : test_finance_tab : Verified payment methods page.
+2023-06-13 13:30:55,945 : INFO : test_finance_tab : Verified credit transactions page.
+2023-06-13 13:30:56,152 : INFO : test_finance_tab : Verified revenue page.
+2023-06-13 13:30:56,373 : INFO : test_finance_tab : Verified payment requests page.
+2023-06-13 13:30:56,626 : INFO : test_finance_tab : Verified debit notes page.
+2023-06-13 13:30:56,810 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-13 13:30:56,810 : INFO : test_account_details_screen : Attempting login.
+2023-06-13 13:30:57,663 : INFO : test_account_details_screen : Succesfully logged in.
+2023-06-13 13:30:57,663 : INFO : test_account_details_screen : Navigate to account details screen.
+2023-06-13 13:30:58,244 : INFO : test_account_details_screen : Attempting to change all account details.
+2023-06-13 13:30:59,759 : INFO : test_account_details_screen : Succesfully saved changes.
+2023-06-13 13:30:59,760 : INFO : test_account_details_screen : Attempting to verify accuracy of changes.
+2023-06-13 13:31:01,314 : INFO : test_account_details_screen : Succesfully verified accuracy of changes.
+2023-06-13 13:31:01,314 : INFO : test_account_details_screen : Succesfully reset test.
+2023-06-13 13:31:01,476 : INFO : test_users_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-06-13 13:31:01,476 : INFO : test_users_details_screen : Attempting login.
+2023-06-13 13:31:02,204 : INFO : test_users_details_screen : Succesfully logged in.
+2023-06-13 13:31:02,204 : INFO : test_users_details_screen : Navigate to account details screen.
+2023-06-13 13:31:17,047 : INFO : test_tags_create_delete_basic : daan.swinnen+splitbilling4@optimile.eu
+2023-06-13 13:31:17,047 : INFO : test_tags_create_delete_basic : Attempting login.
+2023-06-13 13:31:19,457 : INFO : test_tags_create_delete_basic : Succesfully logged in.
+2023-06-13 13:31:19,457 : INFO : test_tags_create_delete_basic : Navigating to profiles page.
+2023-06-13 13:31:20,141 : INFO : test_tags_create_delete_basic : Attempting to create new tag.
+2023-06-13 13:31:20,717 : INFO : test_tags_create_delete_basic : Set tag name as 'timestamp'.
+2023-06-13 13:31:20,877 : INFO : test_tags_create_delete_basic : Linked all available users.
+2023-06-13 13:31:20,939 : INFO : test_tags_create_delete_basic : Saved new tag.
+2023-06-13 13:31:22,160 : INFO : test_tags_create_delete_basic : Deleted new tag.
+2023-06-13 13:31:22,419 : INFO : test_tags_create_delete_expanded : daan.swinnen+splitbilling4@optimile.eu
+2023-06-13 13:31:22,419 : INFO : test_tags_create_delete_expanded : Attempting login.
+2023-06-13 13:31:23,385 : INFO : test_tags_create_delete_expanded : Succesfully logged in.
+2023-06-13 13:31:23,754 : INFO : test_tags_create_delete_expanded : Attempting to create new tag.
+2023-06-13 13:31:24,212 : INFO : test_tags_create_delete_expanded : Set tag name as 'timestamp'.
+2023-06-13 13:31:24,286 : INFO : test_tags_create_delete_expanded : Set new tag color.
+2023-06-13 13:31:25,393 : INFO : test_tags_create_delete_expanded : Link all available users.
+2023-06-13 13:31:25,445 : INFO : test_tags_create_delete_expanded : Saved new tag.
+2023-06-13 13:31:27,803 : INFO : test_tags_create_delete_expanded : Succesfully verified badge color is correct.
+2023-06-13 13:31:28,438 : INFO : test_tags_create_delete_expanded : Succesfully verified tagname.
+2023-06-13 13:31:29,877 : INFO : test_tags_create_delete_expanded : Attempting to edit tag.
+2023-06-13 13:31:31,541 : INFO : test_tags_create_delete_expanded : Edit tagname.
+2023-06-13 13:31:31,658 : INFO : test_tags_create_delete_expanded : Unlinked all users.
+2023-06-13 13:31:31,718 : INFO : test_tags_create_delete_expanded : Saved edited tag.
+2023-06-13 13:31:32,775 : INFO : test_tags_create_delete_expanded : Succesfully verified edited name.
+2023-06-13 13:31:32,805 : INFO : test_tags_create_delete_expanded : Succesfully verified number of linked users.
+2023-06-13 13:31:33,065 : INFO : test_tags_create_delete_expanded : Delete test tag.
+2023-06-13 13:31:35,307 : INFO : test_msp_customers_screen : daan.swinnen@optimile.eu
+2023-06-13 13:31:35,307 : INFO : test_msp_customers_screen : Attempting login.
+2023-06-13 13:31:37,532 : INFO : test_msp_customers_screen : Succesfully logged in.
+2023-06-13 13:31:37,532 : INFO : test_msp_customers_screen : Navigating to msp customers page.
+2023-06-13 13:31:37,875 : INFO : test_msp_customers_screen : Succesfully verified msp customers page.
+2023-06-13 13:31:38,064 : INFO : test_msp_tokens_screen : daan.swinnen@optimile.eu
+2023-06-13 13:31:38,064 : INFO : test_msp_tokens_screen : Attempting login.
+2023-06-13 13:31:39,085 : INFO : test_msp_tokens_screen : Succesfully logged in.
+2023-06-13 13:31:39,085 : INFO : test_msp_tokens_screen : Navigating to msp tokens page.
+2023-06-13 13:31:39,495 : INFO : test_msp_tokens_screen : Succesfully verified tokens page.
+2023-06-13 13:31:39,685 : INFO : test_msp_vouchers_screen : daan.swinnen@optimile.eu
+2023-06-13 13:31:39,685 : INFO : test_msp_vouchers_screen : Attempting login.
+2023-06-13 13:31:40,374 : INFO : test_msp_vouchers_screen : Succesfully logged in.
+2023-06-13 13:31:40,374 : INFO : test_msp_vouchers_screen : Navigating to msp vouchers page.
+2023-06-13 13:31:40,787 : INFO : test_msp_vouchers_screen : Succesfully verified vouchers page.
+2023-06-13 13:31:40,950 : INFO : test_msp_contracts_screen : daan.swinnen@optimile.eu
+2023-06-13 13:31:40,950 : INFO : test_msp_contracts_screen : Attempting login.
+2023-06-13 13:31:41,644 : INFO : test_msp_contracts_screen : Succesfully logged in.
+2023-06-13 13:31:41,644 : INFO : test_msp_contracts_screen : Navigating to msp contracts page.
+2023-06-13 13:31:42,196 : INFO : test_msp_contracts_screen : Succesfully verified contracts page.
+2023-06-13 13:31:42,364 : INFO : test_msp_operators_screen : daan.swinnen@optimile.eu
+2023-06-13 13:31:42,364 : INFO : test_msp_operators_screen : Attempting login.
+2023-06-13 13:31:43,061 : INFO : test_msp_operators_screen : Succesfully logged in.
+2023-06-13 13:31:43,061 : INFO : test_msp_operators_screen : Navigating to msp operators page.
+2023-06-13 13:31:43,726 : INFO : test_msp_operators_screen : Succesfully verified operators page.
+2023-06-13 13:31:43,916 : INFO : test_msp_invoices_screen : daan.swinnen@optimile.eu
+2023-06-13 13:31:43,916 : INFO : test_msp_invoices_screen : Attempting login.
+2023-06-13 13:31:44,611 : INFO : test_msp_invoices_screen : Succesfully logged in.
+2023-06-13 13:31:44,611 : INFO : test_msp_invoices_screen : Navigating to msp invoices page.
+2023-06-13 13:31:45,119 : INFO : test_msp_invoices_screen : Succesfully verified invoices page.

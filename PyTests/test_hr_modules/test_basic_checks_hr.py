@@ -178,3 +178,24 @@ class TestOne(BaseClass):
         wait.until(EC.presence_of_element_located((By.XPATH, "//button[.='Personal']")))
         userinfotitle = self.driver.find_element(By.XPATH, "//h5[.='User info']").text
         assert userinfotitle == "User info"
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+    def test_ruleset_overview(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting Login.")
+
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to ruleset overview.")
+        ruleengineoverview = homepage.menu_label_rule_engine()
+        rulesetoverviewtitle = str(ruleengineoverview.ruleset_overview_title().text)
+        assert "Expense rule engine" in rulesetoverviewtitle
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()

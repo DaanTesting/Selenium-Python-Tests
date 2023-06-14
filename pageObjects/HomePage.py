@@ -11,6 +11,7 @@ from pageObjects.TagManagerPage import TagManagerPage
 from pageObjects.AccountDetailsPage import AccountDetailsPage
 from pageObjects.HrProfilesOverview import HrProfilesOverview
 from pageObjects.UserDetailPageTest import UserDetailPageTest
+from pageObjects.RuleEngineOverview import RuleEngineOverview
 
 
 class HomePage:
@@ -214,4 +215,10 @@ class HomePage:
     def menu_label_debit_notes(self):
         selector1 = (By.XPATH, "(//span[@class='menu-label'][normalize-space()='Debit notes'])[1]")
         self.driver.find_element(*selector1).click()
+
+    def menu_label_rule_engine(self):
+        selector1 = (By.XPATH, "//span[.='Rule engine']")
+        self.driver.find_element(*selector1).click()
+        ruleengineoverview = RuleEngineOverview(self.driver)
+        return ruleengineoverview
 
