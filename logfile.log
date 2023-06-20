@@ -2223,3 +2223,54 @@
 2023-06-14 16:44:17,291 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
 2023-06-14 16:44:17,414 : INFO : test_mobility_policies_create_policy : Linked all available users.
 2023-06-14 16:44:19,583 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2023-06-15 08:51:21,099 : INFO : test_mobility_policies_filter : daan.swinnen+autotest.admin@optimile.eu
+2023-06-15 08:51:21,099 : INFO : test_mobility_policies_filter : Attempting login.
+2023-06-15 08:51:22,181 : INFO : test_mobility_policies_filter : Succesfully logged in.
+2023-06-15 08:51:22,181 : INFO : test_mobility_policies_filter : Navigating to mobility policies page.
+2023-06-15 08:51:23,013 : INFO : test_mobility_policies_filter : Filtering 'active' mobility policies.
+2023-06-15 08:51:24,364 : INFO : test_mobility_policies_filter : Succesfully verified filtering occurred correctly.
+2023-06-15 08:51:31,390 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2023-06-15 08:51:31,391 : INFO : test_mobility_policies_create_policy : Attempting login.
+2023-06-15 08:51:32,689 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2023-06-15 08:51:32,689 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2023-06-15 08:51:33,261 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2023-06-15 08:51:33,738 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2023-06-15 08:51:33,825 : INFO : test_mobility_policies_create_policy : Selected mobility policy type as 'professional'.
+2023-06-15 08:51:33,896 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2023-06-15 08:51:33,975 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2023-06-15 08:51:34,063 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2023-06-15 08:51:34,063 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2023-06-15 08:51:34,245 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2023-06-15 08:51:34,348 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2023-06-15 08:51:36,506 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2023-06-15 08:51:36,559 : INFO : test_mobility_policies_create_policy : Succesfully verified new mobility policy is now active.
+2023-06-15 08:54:31,650 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2023-06-15 08:54:31,651 : INFO : test_mobility_policies_create_policy : Attempting login.
+2023-06-15 08:54:32,595 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2023-06-15 08:54:32,595 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2023-06-15 08:54:33,223 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2023-06-15 08:54:39,756 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2023-06-15 08:54:39,850 : INFO : test_mobility_policies_create_policy : Selected mobility policy type as 'professional'.
+2023-06-15 08:54:39,935 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2023-06-15 08:54:40,015 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2023-06-15 08:54:40,109 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2023-06-15 08:54:40,109 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2023-06-15 08:54:40,282 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2023-06-15 08:54:40,402 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2023-06-15 08:54:42,585 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2023-06-15 08:54:42,639 : INFO : test_mobility_policies_create_policy : Succesfully verified new mobility policy is now active.
+2023-06-15 08:55:12,098 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2023-06-15 08:55:12,098 : INFO : test_mobility_policies_create_policy : Attempting login.
+2023-06-15 08:55:12,936 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2023-06-15 08:55:12,937 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2023-06-15 08:55:13,593 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2023-06-15 08:55:14,017 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2023-06-15 08:55:14,100 : INFO : test_mobility_policies_create_policy : Selected mobility policy type as 'professional'.
+2023-06-15 08:55:14,180 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2023-06-15 08:55:14,250 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2023-06-15 08:55:14,335 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2023-06-15 08:55:14,335 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2023-06-15 08:55:14,546 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2023-06-15 08:55:14,657 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2023-06-15 08:55:16,816 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2023-06-15 08:55:16,892 : INFO : test_mobility_policies_create_policy : Succesfully verified new mobility policy is now active.

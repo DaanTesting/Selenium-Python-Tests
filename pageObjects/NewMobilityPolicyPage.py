@@ -25,8 +25,9 @@ class NewMobilityPolicyPage:
     def new_policy_budget_value(self):
         selector1 = (By.CSS_SELECTOR, "input[name*='refillLimit']")
         return self.driver.find_element(*selector1)
-
-    def new_policy_datepicker(self):
+    
+    #comment: This method of navigating the datepicker has been deprecated because of inconsistencies.
+    #def new_policy_datepicker(self):
         selector1 = (By.CSS_SELECTOR, "input[placeholder='Start date']")
         selector2 = (By.XPATH, "//div[@class='flatpickr-days']/div/span")
         today = str(datetime.datetime.today().strftime("%B%e, %Y"))
@@ -37,6 +38,10 @@ class NewMobilityPolicyPage:
                 if day.get_attribute("aria-label") == today:
                     day.click()
                     break
+
+    def new_policy_datepicker_alt(self):
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Start date']")
+        return self.driver.find_element(*selector1)
 
     def new_policy_select_parking(self):
         selector1 = (By.XPATH, "//h6[.='Parking']")

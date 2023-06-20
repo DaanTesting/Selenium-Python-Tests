@@ -86,6 +86,7 @@ class TestSubModuleOne(BaseClass):
         )
 
         timestamp = str(datetime.now())
+        
 
         newmobilitypolicypage.new_policy_name_field().send_keys(timestamp)
         log.info("Set policy name as 'timestamp'.")
@@ -96,7 +97,9 @@ class TestSubModuleOne(BaseClass):
         newmobilitypolicypage.new_policy_budget_value().send_keys("150")
         log.info("Set policy budget to '150'.")
         
-        newmobilitypolicypage.new_policy_datepicker()
+        today = datetime.today().strftime("%Y-%m-%d")
+        newmobilitypolicypage.new_policy_datepicker_alt().send_keys(today + Keys.ENTER)
+        #newmobilitypolicypage.new_policy_datepicker()
         log.info("Set start date on 'today'.")
         log.info("Set end date as undefined.")
         
@@ -162,7 +165,8 @@ class TestSubModuleOne(BaseClass):
         log.info("Selected second contract.")
         newmobilitypolicypage.new_policy_budget_value().send_keys("150")
         log.info("Set policy budget to '150'.")
-        newmobilitypolicypage.new_policy_datepicker()
+        today = datetime.today().strftime("%Y-%m-%d")
+        newmobilitypolicypage.new_policy_datepicker_alt().send_keys(today + Keys.ENTER)
         log.info("Set start date on 'today'.")
         log.info("Set end date as undefined.")
         newmobilitypolicypage.new_policy_select_parking()
