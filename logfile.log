@@ -6162,3 +6162,32 @@
 2023-07-20 17:11:38,525 : INFO : test_routeplanner_testcase1 : Attempting login.
 2023-07-20 17:12:45,534 : INFO : test_routeplanner_testcase1 : daan.swinnen@optimile.eu
 2023-07-20 17:12:45,534 : INFO : test_routeplanner_testcase1 : Attempting login.
+2023-07-25 10:41:26,485 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2023-07-25 10:41:26,485 : INFO : test_roaming_session : TestDevice89
+2023-07-25 10:41:26,485 : INFO : test_roaming_session : Attempting to connect to simulator.
+2023-07-25 10:41:26,818 : INFO : test_roaming_session : Connected to simulator.
+2023-07-25 10:41:27,823 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2023-07-25 10:41:27,905 : INFO : test_roaming_session : Entering connectorID.
+2023-07-25 10:41:27,925 : INFO : test_roaming_session : Sending token RFID.
+2023-07-25 10:41:27,965 : INFO : test_roaming_session : Attempting to start transaction.
+2023-07-25 10:41:37,990 : INFO : test_roaming_session : Getting transaction ID.
+2023-07-25 10:42:01,308 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2023-07-25 10:42:01,308 : INFO : test_roaming_session : TestDevice89
+2023-07-25 10:42:01,308 : INFO : test_roaming_session : Attempting to connect to simulator.
+2023-07-25 10:42:01,778 : INFO : test_roaming_session : Connected to simulator.
+2023-07-25 10:42:02,784 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2023-07-25 10:42:02,854 : INFO : test_roaming_session : Entering connectorID.
+2023-07-25 10:42:02,882 : INFO : test_roaming_session : Sending token RFID.
+2023-07-25 10:42:02,930 : INFO : test_roaming_session : Attempting to start transaction.
+2023-07-25 10:42:12,956 : INFO : test_roaming_session : Getting transaction ID.
+2023-07-25 10:44:43,593 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2023-07-25 10:44:43,593 : INFO : test_roaming_session : TestDevice89
+2023-07-25 10:44:43,593 : INFO : test_roaming_session : Attempting to connect to simulator.
+2023-07-25 10:44:44,019 : INFO : test_roaming_session : Connected to simulator.
+2023-07-25 10:44:45,024 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2023-07-25 10:44:45,103 : INFO : test_roaming_session : Entering connectorID.
+2023-07-25 10:44:45,129 : INFO : test_roaming_session : Sending token RFID.
+2023-07-25 10:44:45,180 : INFO : test_roaming_session : Attempting to start transaction.
+2023-07-25 10:44:55,208 : INFO : test_roaming_session : Getting transaction ID.
+2023-07-25 11:07:45,014 : INFO : test_tags_create_delete_basic : daan.swinnen+autotest.admin@optimile.eu
+2023-07-25 11:07:45,014 : INFO : test_tags_create_delete_basic : Attempting login.
