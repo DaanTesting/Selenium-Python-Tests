@@ -13,9 +13,9 @@ class TagManagerPage:
         selector1 = (By.CSS_SELECTOR, "input[placeholder='Type your tag name here']")
         return self.driver.find_element(*selector1)
 
-    def select_all_available_users(self):
+    def select_available_user(self):
         selector1 = (By.XPATH, "(//input[@type='checkbox'])[1]")
-        self.driver.find_element(*selector1).click()
+        return self.driver.find_element(*selector1)
 
     def move_all_users_right(self):
         selector1 = (By.XPATH, "(//button[@type='button'])[3]")
@@ -53,7 +53,7 @@ class TagManagerPage:
         self.driver.find_element(*selector2).click()
 
     def select_all_linked_users(self):
-        selector1 = (By.XPATH, "(//input[@type='checkbox'])[2]")
+        selector1 = (By.XPATH, "(//input[@type='checkbox'])[12]")
         self.driver.find_element(*selector1).click()
 
     def unlink_users(self):

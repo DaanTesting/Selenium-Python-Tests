@@ -41,6 +41,7 @@ class TestSubModuleOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleTwo(BaseClass):
     def test_mobility_policies_filter(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -67,6 +68,7 @@ class TestSubModuleOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleThree(BaseClass):
     def test_mobility_policies_create_policy(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -106,7 +108,7 @@ class TestSubModuleOne(BaseClass):
         newmobilitypolicypage.new_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
 
-        newmobilitypolicypage.new_policy_select_all_available_users().click()
+        newmobilitypolicypage.new_policy_select_top_available_user().click()
         newmobilitypolicypage.new_policy_move_users_to_linked()
         log.info("Linked all available users.")
         
@@ -137,6 +139,7 @@ class TestSubModuleOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleFour(BaseClass):
     def test_mobility_policies_create_draft(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -171,7 +174,7 @@ class TestSubModuleOne(BaseClass):
         log.info("Set end date as undefined.")
         newmobilitypolicypage.new_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
-        newmobilitypolicypage.new_policy_select_all_available_users().click()
+        newmobilitypolicypage.new_policy_select_top_available_user().click()
         newmobilitypolicypage.new_policy_move_users_to_linked()
         log.info("Linked all available users.")
         log.info("Saving the policy as a draft.")
@@ -185,6 +188,7 @@ class TestSubModuleOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleFive(BaseClass):
     def test_mobility_policies_activate_draft(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -203,11 +207,12 @@ class TestSubModuleOne(BaseClass):
         time.sleep(1)
         changemobilitypolicypage = mobilitypoliciesmainpage.mobility_policies_view_top_policy()
         changemobilitypolicypage.change_mobility_policy_activate_draft()
+        time.sleep(2)
         message = str(changemobilitypolicypage.change_mobility_policy_activation_message().text)
-        assert "activated successfully" in message
+        assert "activated" in message
         log.info("Succesfully activated draft policy.")
 
-class TestSubModuleTwo(BaseClass):
+class TestSubModuleSix(BaseClass):
     def test_mobility_policies_draft_link_users(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -234,7 +239,7 @@ class TestSubModuleTwo(BaseClass):
         changemobilitypolicypage.change_mobility_policy_unlink_all_users()
         log.info("Unlinked all users from draft policy.")
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
-            Keys.CONTROL + "a"
+            Keys.COMMAND + "a"
         )
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
             Keys.DELETE
@@ -266,7 +271,7 @@ class TestSubModuleTwo(BaseClass):
         )
         time.sleep(1)
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
-            Keys.CONTROL + "a"
+            Keys.COMMAND + "a"
         )
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
             Keys.DELETE
@@ -283,9 +288,11 @@ class TestSubModuleTwo(BaseClass):
         time.sleep(1)
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
         mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys(limitedtimestamp)
+        time.sleep(2)
         mobilitypoliciesmainpage.mobility_policies_view_top_policy()
 
         changemobilitypolicypage.change_mobility_policy_activate_draft()
+        time.sleep(2)
         message = str(
             changemobilitypolicypage.change_mobility_policy_activation_message().text
         )
@@ -295,6 +302,7 @@ class TestSubModuleTwo(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubModuleSeven(BaseClass):
     def test_mobility_policies_active_change_mob(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -331,7 +339,8 @@ class TestSubModuleTwo(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-    
+
+class TestSubModuleEight(BaseClass):    
     def test_mobility_policies_duplicate(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

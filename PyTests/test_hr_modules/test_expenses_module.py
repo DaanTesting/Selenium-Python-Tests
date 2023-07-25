@@ -35,15 +35,7 @@ class TestSubModuleOne(BaseClass):
         expensesmainpage.driver.find_element(By.XPATH, "(//div/button)[3]").click()
         expensesmainpage.driver.find_element(By.PARTIAL_LINK_TEXT, "attachment").click()
 
-        wait = WebDriverWait(self.driver, 5)
-        wait.until(
-            EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "//div[@class='fade alert alert-success alert-dismissible show']",
-                )
-            )
-        )
+        time.sleep(2)
         Message = self.driver.find_element(
             By.XPATH, "//div[@class='fade alert alert-success alert-dismissible show']"
         ).text
@@ -244,15 +236,8 @@ class TestSubModuleFour(BaseClass):
         self.driver.find_element(By.XPATH, "//a[text()='Undo']").click()
         log.info("Undo expense.")
 
-        wait = WebDriverWait(self.driver, 5)
-        wait.until(
-            EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "//div[@class='fade alert alert-success alert-dismissible show']",
-                )
-            )
-        )
+        time.sleep(2)
+    
         Message = self.driver.find_element(
             By.XPATH, "//div[@class='fade alert alert-success alert-dismissible show']"
         ).text
@@ -306,15 +291,7 @@ class TestSubModuleFour(BaseClass):
         self.driver.find_element(By.XPATH, "//a[text()='Undo']").click()
         log.info("Undo expense.")
 
-        wait = WebDriverWait(self.driver, 5)
-        wait.until(
-            EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "//div[@class='fade alert alert-success alert-dismissible show']",
-                )
-            )
-        )
+        time.sleep(2)
         Message = self.driver.find_element(
             By.XPATH, "//div[@class='fade alert alert-success alert-dismissible show']"
         ).text
@@ -366,12 +343,13 @@ class TestSubModuleFive(BaseClass):
         log.info("Navigating to expenses-page.")
 
         expensesmainpage = homepage.menu_label_expenses()
-        self.driver.find_element(By.CSS_SELECTOR, ".fas.fa-calendar").click()
-        expensesmainpage.expenses_datepicker_field().send_keys(
-            "2023-05-16 to 2023-05-17" + Keys.ENTER
-        )
-        log.info("Selected date range in datepicker.")
         time.sleep(1)
+        self.driver.find_element(By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-calendar").click()
+        expensesmainpage.expenses_datepicker_field().send_keys(
+            "2023-05-16 to 2023-05-17")
+        expensesmainpage.expenses_datepicker_field().send_keys(Keys.ENTER)
+        log.info("Selected date range in datepicker.")
+        time.sleep(2)
         expensedates = self.driver.find_elements(By.XPATH, "//tr/td[3]")
         for expensedate in expensedates:
             assert str(expensedate.text) == "2023-05-17"
@@ -400,7 +378,7 @@ class TestSubModuleFive(BaseClass):
 
         expensesmainpage.expenses_filter_paid()
         log.info("Filtering expenses for 'paid'-status.")
-        time.sleep(1)
+        time.sleep(2)
         statustags = self.driver.find_elements(By.XPATH, "//tr/td[6]")
         for statustag in statustags:
             assert str(statustag.text) == "Paid"

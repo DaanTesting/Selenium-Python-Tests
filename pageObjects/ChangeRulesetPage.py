@@ -73,7 +73,7 @@ class ChangeRulesetPage:
         return self.driver.find_element(*selector1)
     
     def ruleset_rule_activate(self):
-        selector1 = (By.XPATH, "(//button[contains(@class,'d-flex align-items-center custom-toggle-button-hidden dropdown-toggle btn btn-invisible btn-sm')])[1]")
+        selector1 = (By.XPATH, "(//*[name()='svg'])[3]")
         selector2 = (By.XPATH, "//a[.='Activate']")
         selector3 = (By.XPATH, "//button[.='Activate']")
         self.driver.find_element(*selector1).click()

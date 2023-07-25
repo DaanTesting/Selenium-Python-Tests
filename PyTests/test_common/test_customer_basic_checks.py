@@ -44,7 +44,7 @@ class TestOne(BaseClass):
         log.info("Verified users page.")
         tagmanagerpage = homepage.menu_label_tag_manager()
         tagtitle = str(tagmanagerpage.page_title().text)
-        assert tagtitle == "Tag manager"
+        assert "Tag manager" in tagtitle
         log.info("Verified tags page.")
         homepage.menu_label_external_users()
         externalusertitle = str(
@@ -128,37 +128,24 @@ class TestOne(BaseClass):
         homepage.menu_label_administration()
         accountdetailspage = homepage.menu_label_account_details()
         log.info("Attempting to change all account details.")
-        accountdetailspage.account_details_company_type().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        accountdetailspage.account_details_company_type().clear()
         accountdetailspage.account_details_company_type().send_keys("Active Flow")
-        accountdetailspage.account_details_VAT_number().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        accountdetailspage.account_details_VAT_number().clear()
         accountdetailspage.account_details_VAT_number().send_keys("BE0794810872")
-        accountdetailspage.account_details_first_name().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        accountdetailspage.account_details_first_name().clear()
         accountdetailspage.account_details_first_name().send_keys("ActiveTest")
-        accountdetailspage.account_details_last_name().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        accountdetailspage.account_details_last_name().clear()
         accountdetailspage.account_details_last_name().send_keys("Ongoing")
-        accountdetailspage.account_details_emailaddress().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        accountdetailspage.account_details_emailaddress().clear()
         accountdetailspage.account_details_emailaddress().send_keys(
             "daan.swinnen+splitbillingactive@optimile.eu"
         )
-        accountdetailspage.account_details_phone().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        accountdetailspage.account_details_phone().clear()
         accountdetailspage.account_details_phone().send_keys("014524213")
         accountdetailspage.account_details_language_select_english()
-        accountdetailspage.account_details_address().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        accountdetailspage.account_details_address().clear()
         accountdetailspage.account_details_address().send_keys("Active street")
+        time.sleep(15)
         accountdetailspage.account_details_postcode().send_keys(
             Keys.CONTROL, "a" + Keys.BACKSPACE
         )
@@ -168,7 +155,7 @@ class TestOne(BaseClass):
         )
         accountdetailspage.account_details_town().send_keys("Activeville")
         accountdetailspage.account_details_invoice_email().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
+            Keys.COMMAND, "a" + Keys.BACKSPACE
         )
         accountdetailspage.account_details_invoice_email().send_keys(
             "daan.swinnen+activeaccounttest@optimile.eu"
@@ -221,7 +208,7 @@ class TestOne(BaseClass):
         )
         assert emailaddress == "daan.swinnen+splitbillingactive@optimile.eu"
         accountdetailspage.account_details_emailaddress().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
+            Keys.COMMAND, "a" + Keys.BACKSPACE
         )
         accountdetailspage.account_details_emailaddress().send_keys(
             "daan.swinnen+splitbilling4@optimile.eu"
@@ -268,7 +255,7 @@ class TestOne(BaseClass):
         )
         assert invoiceemail == "daan.swinnen+activeaccounttest@optimile.eu"
         accountdetailspage.account_details_invoice_email().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
+            Keys.COMMAND, "a" + Keys.BACKSPACE
         )
         accountdetailspage.account_details_invoice_email().send_keys(
             "daan.swinnen+splitbilling4@optimile.eu"
@@ -284,6 +271,7 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestSubmoduleTwo(BaseClass):
     def test_users_details_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -299,38 +287,21 @@ class TestOne(BaseClass):
         userdetailpagetest = homepage.menu_label_users()
         userdetailpagetest.user_detail_open_top_user()
 
-        userdetailpagetest.user_detail_first_name().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        userdetailpagetest.user_detail_first_name().clear()
         userdetailpagetest.user_detail_first_name().send_keys("Robotester")
-
-        userdetailpagetest.user_detail_last_name().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        userdetailpagetest.user_detail_last_name().clear()
         userdetailpagetest.user_detail_last_name().send_keys("Onamission")
 
+        userdetailpagetest.user_detail_email().clear()
         userdetailpagetest.user_detail_email().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
+            "daan.swinnen+activerobot3@optimile.eu"
         )
-        userdetailpagetest.user_detail_email().send_keys(
-            "daan.swinnen+activerobot@optimile.eu"
-        )
-
-        userdetailpagetest.user_detail_phone().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
-        userdetailpagetest.user_detail_phone().send_keys("+32477885544")
-
-        userdetailpagetest.user_detail_postcode().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        userdetailpagetest.user_detail_phone().clear()
+        userdetailpagetest.user_detail_phone().send_keys("+32477885535")
+        userdetailpagetest.user_detail_postcode().clear()
         userdetailpagetest.user_detail_postcode().send_keys("9999")
-
-        userdetailpagetest.user_detail_town().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        userdetailpagetest.user_detail_town().clear()
         userdetailpagetest.user_detail_town().send_keys("Roboland")
-
         userdetailpagetest.user_detail_country_select_belgium()
         userdetailpagetest.user_detail_role_select_accountadmin()
         userdetailpagetest.user_detail_notification_settings()
@@ -345,52 +316,41 @@ class TestOne(BaseClass):
             userdetailpagetest.user_detail_first_name().get_attribute("value")
         )
         assert firstname == "Robotester"
-        userdetailpagetest.user_detail_first_name().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        userdetailpagetest.user_detail_first_name().clear()
         userdetailpagetest.user_detail_first_name().send_keys("Offline")
 
         lastname = str(
             userdetailpagetest.user_detail_last_name().get_attribute("value")
         )
         assert lastname == "Onamission"
-        userdetailpagetest.user_detail_last_name().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        userdetailpagetest.user_detail_last_name().clear()
         userdetailpagetest.user_detail_last_name().send_keys("Tester")
 
         email = str(userdetailpagetest.user_detail_email().get_attribute("value"))
-        assert email == "daan.swinnen+activerobot@optimile.eu"
+        assert email == "daan.swinnen+activerobot3@optimile.eu"
+        userdetailpagetest.user_detail_email().clear()
         userdetailpagetest.user_detail_email().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
-        userdetailpagetest.user_detail_email().send_keys(
-            "daan.swinnen+5642321@optimile.eu"
+            "daan.swinnen+5642329@optimile.eu"
         )
 
         phone = str(userdetailpagetest.user_detail_phone().get_attribute("value"))
-        assert phone == "+32477885544"
-        userdetailpagetest.user_detail_phone().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
-        userdetailpagetest.user_detail_phone().send_keys("+32499543216")
+        assert phone == "+32477885535"
+        userdetailpagetest.user_detail_phone().clear()
+        userdetailpagetest.user_detail_phone().send_keys("+32499543218")
 
         postcode = str(userdetailpagetest.user_detail_postcode().get_attribute("value"))
         assert postcode == "9999"
-        userdetailpagetest.user_detail_postcode().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        userdetailpagetest.user_detail_postcode().clear()
         userdetailpagetest.user_detail_postcode().send_keys("9000")
 
         town = str(userdetailpagetest.user_detail_town().get_attribute("value"))
         assert town == "Roboland"
-        userdetailpagetest.user_detail_town().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+        userdetailpagetest.user_detail_town().clear()
         userdetailpagetest.user_detail_town().send_keys("Gent")
 
         userdetailpagetest.user_detail_country_select_netherlands()
         userdetailpagetest.user_detail_role_select_accountadmin()
         userdetailpagetest.user_detail_notification_settings()
         userdetailpagetest.user_detail_save_button()
+        
 

@@ -6,16 +6,18 @@ class UserDetailPage:
         self.driver = driver
 
     def userdetail_verify_presence_personal_elements(self):
-        selector1 = (By.XPATH, "//div[.='Auto 10 User 10']")
+        selector1 = (By.XPATH, "//span[.='Auto 10']")
         selector2 = (By.XPATH, "//h5[.='User info']")
         selector3 = (By.XPATH, "//span[.='DETAILS']")
         selector4 = (By.XPATH, "//span[.='SUSPENSION']")
         selector5 = (By.XPATH, "//span[.='CONTACT']")
         selector6 = (By.XPATH, "//div[.='Mobility policies']")
-        selector7 = (By.XPATH, "//h5[.='Tags']")
+        selector8 = (By.XPATH, "//span[.='User 10']")
 
-        titlename = self.driver.find_element(*selector1).text
-        assert titlename == "Auto 10 User 10"
+        titlelastname = self.driver.find_element(*selector1).text
+        assert titlelastname == "Auto 10"
+        titlefirstname = self.driver.find_element(*selector8).text
+        assert titlefirstname == "User 10"
         titleuserinfo = self.driver.find_element(*selector2).text
         assert titleuserinfo == "User info"
         subtitledetails = self.driver.find_element(*selector3).text
@@ -26,8 +28,7 @@ class UserDetailPage:
         assert subtitlecontact == "CONTACT"
         titlemobilitypolicies = self.driver.find_element(*selector6).text
         assert titlemobilitypolicies == "Mobility policies"
-        titletags = self.driver.find_element(*selector7).text
-        assert titletags == "Tags"
+       
 
     def userdetail_select_employment_tab(self):
         selector1 = (

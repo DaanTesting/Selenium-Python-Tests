@@ -18,7 +18,7 @@ class RuleEngineOverview:
         return self.driver.find_element(*selector1)
     
     def ruleset_select_top(self):
-        selector1 = (By.XPATH, "(//*[name()='svg'])[2]")
+        selector1 = (By.XPATH, "(//*[name()='path'])[2]")
         selector2 = (By.XPATH,"//a[.='Edit']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()

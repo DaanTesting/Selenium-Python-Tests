@@ -53,11 +53,11 @@ class UserDetailPageTest:
         return self.driver.find_element(*selector1)
     
     def user_detail_country_select_belgium(self):
-        selector1 = (By.CSS_SELECTOR, "button[class*='btn dropdown-toggle bs-placeholder btn-default']")
+        selector1 = (By.XPATH, "//button[@data-id='id_user-country']")
         self.driver.find_element(*selector1).send_keys("Belgium" + Keys.ENTER)
 
     def user_detail_country_select_netherlands(self):
-        selector1 = (By.CSS_SELECTOR, "button[class*='btn dropdown-toggle bs-placeholder btn-default']")
+        selector1 = (By.XPATH, "//button[@data-id='id_user-country']")
         self.driver.find_element(*selector1).send_keys("Netherlands" + Keys.ENTER)    
     
     def user_detail_role_select_accountadmin(self):

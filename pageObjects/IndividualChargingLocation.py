@@ -7,7 +7,7 @@ class IndividualChargingLocation:
         self.driver = driver
 
     def edit_button(self):
-        selector1 = (By.CSS_SELECTOR, ".fas.fa-ellipsis-v")
+        selector1 = (By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-ellipsis-vertical")
         selector2 = (By.CSS_SELECTOR, "a[href$='/co/admin/locations/119/edit/']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()

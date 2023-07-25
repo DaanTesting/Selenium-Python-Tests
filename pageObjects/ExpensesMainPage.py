@@ -48,8 +48,8 @@ class ExpensesMainPage:
         self.driver.find_element(*selector1).click()
     
     def expenses_detailmodal_attachment_scroll(self):
-        selector1 = (By.CSS_SELECTOR, "i[class='fas fa-chevron-right']")
-        selector2 = (By.CSS_SELECTOR, ".fas.fa-chevron-left")
+        selector1 = (By.CSS_SELECTOR, "i[class='fa-sharp fa-solid fa-chevron-right']")
+        selector2 = (By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-chevron-left")
         self.driver.find_element(*selector1)
         self.driver.find_element(*selector2)
     

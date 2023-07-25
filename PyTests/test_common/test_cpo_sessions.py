@@ -161,6 +161,7 @@ class TestOne(BaseClass):
         cpoindividualcustomer = cpocustomerpage.click_on_top_result_carrefour()
         log.info("Opening sessions-tab.")
         cpoindividualcustomer.sessions_tab()
+        time.sleep(2)
         statuslatestsession = self.driver.find_element(
             By.XPATH, "//tr[1]/td[10]/span"
         ).text
@@ -240,6 +241,7 @@ class TestOne(BaseClass):
         cpoindividualcustomer = cpocustomerpage.click_on_top_result_customer()
         log.info("Opening sessions-tab")
         cpoindividualcustomer.sessions_tab()
+        time.sleep(2)
         statuslatestsession = self.driver.find_element(
             By.XPATH, "//tr[1]/td[10]/span"
         ).get_attribute("title")
