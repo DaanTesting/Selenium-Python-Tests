@@ -30,6 +30,7 @@ class TestSubModuleOne(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
 
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
         log.info("Attempting to download attachment.")
         expensesmainpage.driver.find_element(By.XPATH, "(//div/button)[3]").click()
@@ -46,6 +47,7 @@ class TestSubModuleOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
 class TestSubModuleTwo(BaseClass):
     def test_expenses_verify_overview(self, setup, login_data):
         log = self.get_logger()
@@ -59,7 +61,7 @@ class TestSubModuleTwo(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
         overviewtitle = str(expensesmainpage.expenses_title_all_expenses().text)
         assert overviewtitle == "All expenses"
@@ -80,14 +82,19 @@ class TestSubModuleTwo(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
         expensesmainpage.expenses_open_top_expense_detail_modal()
         expensesmainpage.expenses_detailmodal_show_details()
         log.info("Succesfully opened expense detail modal.")
+        time.sleep(1)
         idtag1 = str(expensesmainpage.expenses_detailmodal_idtag().text)
+        assert idtag1 != ""
         expensesmainpage.expenses_detailmodal_next()
+        time.sleep(1)
         idtag2 = str(expensesmainpage.expenses_detailmodal_idtag().text)
+        assert idtag2 != ""
+
         assert idtag1 != idtag2
         log.info("Succesfully scrolled between expenses.")
         log.info("Closing detail modal.")
@@ -108,8 +115,9 @@ class TestSubModuleTwo(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
+        time.sleep(1)
         expensesmainpage.expenses_main_searchbar().send_keys("13513")
         log.info("Succesfully searched for expense with ID 13513.")
         time.sleep(1)
@@ -122,6 +130,7 @@ class TestSubModuleTwo(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 
 class TestSubModuleThree(BaseClass):
     def test_expenses_SearchByID_HRmod(self, setup, login_data):
@@ -136,7 +145,7 @@ class TestSubModuleThree(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
 
         expensesmainpage.driver.find_element(
@@ -177,8 +186,9 @@ class TestSubModuleThree(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
+        time.sleep(1)
         expensesmainpage.driver.find_element(
             By.CSS_SELECTOR, "input[placeholder='Search expenses']"
         ).send_keys("Taxi")
@@ -195,6 +205,7 @@ class TestSubModuleThree(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
 class TestSubModuleFour(BaseClass):
     def test_expenses_DenyUndo_HRmod(self, setup, login_data):
         log = self.get_logger()
@@ -208,7 +219,7 @@ class TestSubModuleFour(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
         expensesmainpage.tab_all_expenses(self.driver)
         time.sleep(1)
@@ -237,7 +248,7 @@ class TestSubModuleFour(BaseClass):
         log.info("Undo expense.")
 
         time.sleep(2)
-    
+
         Message = self.driver.find_element(
             By.XPATH, "//div[@class='fade alert alert-success alert-dismissible show']"
         ).text
@@ -260,7 +271,7 @@ class TestSubModuleFour(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
         expensesmainpage.tab_all_expenses(self.driver)
         time.sleep(1)
@@ -291,7 +302,7 @@ class TestSubModuleFour(BaseClass):
         self.driver.find_element(By.XPATH, "//a[text()='Undo']").click()
         log.info("Undo expense.")
 
-        time.sleep(2)
+        time.sleep(3)
         Message = self.driver.find_element(
             By.XPATH, "//div[@class='fade alert alert-success alert-dismissible show']"
         ).text
@@ -301,6 +312,7 @@ class TestSubModuleFour(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 
 class TestSubModuleFive(BaseClass):
     def test_expenses_verify_error_tab(self, setup, login_data):
@@ -315,7 +327,7 @@ class TestSubModuleFive(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
         expensesmainpage.expenses_tab_error()
         log.info("Navigating to error tab.")
@@ -341,12 +353,15 @@ class TestSubModuleFive(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
         time.sleep(1)
-        self.driver.find_element(By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-calendar").click()
+        self.driver.find_element(
+            By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-calendar"
+        ).click()
         expensesmainpage.expenses_datepicker_field().send_keys(
-            "2023-05-16 to 2023-05-17")
+            "2023-05-16 to 2023-05-17"
+        )
         expensesmainpage.expenses_datepicker_field().send_keys(Keys.ENTER)
         log.info("Selected date range in datepicker.")
         time.sleep(2)
@@ -373,7 +388,7 @@ class TestSubModuleFive(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to expenses-page.")
-
+        homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
 
         expensesmainpage.expenses_filter_paid()

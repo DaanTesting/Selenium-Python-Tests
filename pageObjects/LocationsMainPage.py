@@ -11,7 +11,7 @@ class LocationsMainPage:
         return self.driver.find_element(*selector1)
 
     def find_device(self):
-        selector1 = (By.CSS_SELECTOR, "input[placeholder='Serial number']")
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Serial number, OCPP ID or EVSE ID']")
         return self.driver.find_element(*selector1)
 
     def find_location_click_top_result(self):

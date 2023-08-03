@@ -12,9 +12,11 @@ from pageObjects.GeneralObjects import GeneralObjects
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
+
 @pytest.fixture(params=LoginPageData.testhr_login_data)
 def login_data(request):
     return request.param
+
 
 class TestSubModuleOne(BaseClass):
     def test_re_create_ruleset(self, setup, login_data):
@@ -29,6 +31,7 @@ class TestSubModuleOne(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to rule engine page.")
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Attempting to create a ruleset.")
         newrulesetpage = ruleengineoverview.create_ruleset_button()
@@ -44,7 +47,9 @@ class TestSubModuleOne(BaseClass):
         actions.send_keys(Keys.ENTER)
         actions.perform()
 
-        newrulesetpage.ruleset_description_field().send_keys("This ruleset was created by an automatic test on" + timestamp)
+        newrulesetpage.ruleset_description_field().send_keys(
+            "This ruleset was created by an automatic test on" + timestamp
+        )
         newrulesetpage.ruleset_save()
         time.sleep(1)
         message = str(newrulesetpage.ruleset_message().text)
@@ -53,7 +58,8 @@ class TestSubModuleOne(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-        
+
+
 class TestSubmoduleTwo(BaseClass):
     def test_re_edit_settings_inactive(self, setup, login_data):
         log = self.get_logger()
@@ -67,6 +73,7 @@ class TestSubmoduleTwo(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to rule engine page.")
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Filtering for inactive rulesets.")
         ruleengineoverview.ruleset_filter_inactive()
@@ -89,7 +96,9 @@ class TestSubmoduleTwo(BaseClass):
 
         changerulesetpage.ruleset_description_field().send_keys(Keys.COMMAND + "a")
         changerulesetpage.ruleset_description_field().send_keys(Keys.BACKSPACE)
-        changerulesetpage.ruleset_description_field().send_keys("This ruleset was edited by an automatic test on: " + timestamp)
+        changerulesetpage.ruleset_description_field().send_keys(
+            "This ruleset was edited by an automatic test on: " + timestamp
+        )
         log.info("Edited description field.")
         changerulesetpage.ruleset_save_button()
         time.sleep(2)
@@ -99,7 +108,7 @@ class TestSubmoduleTwo(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-        
+
 
 class TestSubmoduleThree(BaseClass):
     def test_re_activate_ruleset(self, setup, login_data):
@@ -114,6 +123,8 @@ class TestSubmoduleThree(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to rule engine page.")
+
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Filtering for inactive rulesets.")
         ruleengineoverview.ruleset_filter_inactive()
@@ -129,7 +140,7 @@ class TestSubmoduleThree(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-        
+
 
 class TestSubmoduleFour(BaseClass):
     def test_re_deactivate_ruleset(self, setup, login_data):
@@ -144,6 +155,8 @@ class TestSubmoduleFour(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to rule engine page.")
+
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Filtering for active rulesets.")
         ruleengineoverview.ruleset_filter_active()
@@ -159,7 +172,7 @@ class TestSubmoduleFour(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-        
+
 
 class TestSubmoduleFive(BaseClass):
     def test_re_create_rule(self, setup, login_data):
@@ -174,6 +187,7 @@ class TestSubmoduleFive(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to rule engine page.")
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Searching for 'active test' ruleset.")
         ruleengineoverview.ruleset_search_bar().send_keys("active test")
@@ -196,9 +210,9 @@ class TestSubmoduleFive(BaseClass):
         log.info("Successfully saved new rule.")
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-        
 
-class TestSubmoduleSix (BaseClass):
+
+class TestSubmoduleSix(BaseClass):
     def test_re_activate_deactivate_rule(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -211,6 +225,7 @@ class TestSubmoduleSix (BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to rule engine page.")
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Searching for 'active test' ruleset.")
         ruleengineoverview.ruleset_search_bar().send_keys("active test")
@@ -233,11 +248,13 @@ class TestSubmoduleSix (BaseClass):
         changerulesetpage.ruleset_rule_deactivate()
         log.info("Deactivated rule.")
         wait = WebDriverWait(self.driver, 10)
-        wait.until(EC.presence_of_element_located((By.XPATH, "(//td/span[.='Inactive'])[1]")))
+        wait.until(
+            EC.presence_of_element_located((By.XPATH, "(//td/span[.='Inactive'])[1]"))
+        )
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-        
+
 
 class TestSubmoduleSeven(BaseClass):
     def test_re_edit_rule(self, setup, login_data):
@@ -252,6 +269,7 @@ class TestSubmoduleSeven(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to rule engine page.")
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Searching for 'active test' ruleset.")
         ruleengineoverview.ruleset_search_bar().send_keys("active tes")
@@ -274,10 +292,10 @@ class TestSubmoduleSeven(BaseClass):
         changerulesetpage.ruleset_name_field().send_keys(timestamp)
         changerulesetpage.ruleset_save_button()
 
-
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-        
+
+
 class TestSubmoduleEight(BaseClass):
     def test_re_filter_rulesets(self, setup, login_data):
         log = self.get_logger()
@@ -291,6 +309,7 @@ class TestSubmoduleEight(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to rule engine page.")
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         ruleengineoverview.ruleset_filter_active()
         time.sleep(1)
@@ -304,13 +323,3 @@ class TestSubmoduleEight(BaseClass):
         statusbadges = self.driver.find_elements(By.XPATH, "//td/span")
         for statusbadge in statusbadges:
             assert statusbadge.text == "Inactive"
-    
-
-
-
-
-
-
-
-
-    

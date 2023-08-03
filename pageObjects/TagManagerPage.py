@@ -15,7 +15,7 @@ class TagManagerPage:
 
     def select_available_user(self):
         selector1 = (By.XPATH, "(//input[@type='checkbox'])[1]")
-        return self.driver.find_element(*selector1)
+        self.driver.find_element(*selector1).click()
 
     def move_all_users_right(self):
         selector1 = (By.XPATH, "(//button[@type='button'])[3]")

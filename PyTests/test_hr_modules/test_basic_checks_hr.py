@@ -39,6 +39,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestTwo(BaseClass):
     def test_pages_administration(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -71,6 +73,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestThree(BaseClass):
     def test_pages_employees(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -108,6 +112,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestFour(BaseClass):
     def test_pages_mobility_policies(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -119,7 +125,7 @@ class TestOne(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility-pages.")
-
+        homepage.menu_label_mobility()
         homepage.menu_label_mobility_policies()
         titlemobilitypolicies = self.driver.find_element(
             By.XPATH, "//span[.='Mobility policies']"
@@ -135,6 +141,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestFive(BaseClass):
     def test_user_detail(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -163,9 +171,9 @@ class TestOne(BaseClass):
         userdetailpage.userdetail_select_financialinfo_tab()
         userdetailpage.userdetail_verify_presence_financialinfo_elements()
         log.info("Succesfully verified financial info subtab.")
-        log.info("Opening securex subtab.")
-        userdetailpage.userdetail_select_securex_tab()
-        userdetailpage.userdetail_verify_presence_securex_elements()
+        log.info("Opening identifiers subtab.")
+        userdetailpage.userdetail_select_identifiers_tab()
+        userdetailpage.userdetail_verify_presence_identifiers_elements()
         log.info("Succesfully verified securex subtab.")
         log.info("Attempting to navigate to the next user.")
         userdetailpage.userdetail_next_previous()
@@ -182,6 +190,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestSix(BaseClass):
     def test_ruleset_overview(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -193,6 +203,7 @@ class TestOne(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to ruleset overview.")
+        homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         rulesetoverviewtitle = str(ruleengineoverview.ruleset_overview_title().text)
         assert "Expense rule engine" in rulesetoverviewtitle

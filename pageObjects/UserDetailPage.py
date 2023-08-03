@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+import time
 
 class UserDetailPage:
     def __init__(self, driver):
@@ -48,12 +48,12 @@ class UserDetailPage:
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
-    def userdetail_select_securex_tab(self):
+    def userdetail_select_identifiers_tab(self):
         selector1 = (
             By.XPATH,
             "//button[@class='custom-toggle-button dropdown-toggle btn btn-default']",
         )
-        selector2 = (By.XPATH, "//a[.='Securex']")
+        selector2 = (By.XPATH, "//a[.='Identifiers']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
@@ -71,7 +71,7 @@ class UserDetailPage:
         subtitlefinanceinfo = self.driver.find_element(*selector2).text
         assert subtitlefinanceinfo == "FINANCE INFO"
 
-    def userdetail_verify_presence_securex_elements(self):
+    def userdetail_verify_presence_identifiers_elements(self):
         selector1 = (By.XPATH, "//span[.='DETAILS']")
         selector2 = (By.XPATH, "//span[.='ID INFO']")
         subtitledetails = self.driver.find_element(*selector1).text

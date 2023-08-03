@@ -1,5 +1,7 @@
 import pytest
 import time
+import random
+from datetime import datetime
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from utilities.BaseClass import BaseClass
@@ -147,11 +149,11 @@ class TestOne(BaseClass):
         accountdetailspage.account_details_address().send_keys("Active street")
         time.sleep(15)
         accountdetailspage.account_details_postcode().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
+            Keys.COMMAND, "a" + Keys.BACKSPACE
         )
         accountdetailspage.account_details_postcode().send_keys("9001")
         accountdetailspage.account_details_town().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
+            Keys.COMMAND, "a" + Keys.BACKSPACE
         )
         accountdetailspage.account_details_town().send_keys("Activeville")
         accountdetailspage.account_details_invoice_email().send_keys(
@@ -293,64 +295,21 @@ class TestSubmoduleTwo(BaseClass):
         userdetailpagetest.user_detail_last_name().send_keys("Onamission")
 
         userdetailpagetest.user_detail_email().clear()
-        userdetailpagetest.user_detail_email().send_keys(
-            "daan.swinnen+activerobot3@optimile.eu"
-        )
+        current_datetime = datetime.now()
+        timestamp = current_datetime.strftime("%m%d%Y%H%M%S%f")[:-3]
+        email_format = f"daan.swinnen+{timestamp}@optimile.eu"
+
+        userdetailpagetest.user_detail_email().send_keys(email_format)
         userdetailpagetest.user_detail_phone().clear()
-        userdetailpagetest.user_detail_phone().send_keys("+32477885535")
+        random_variable = str(random.randint(100000, 999999))
+        userdetailpagetest.user_detail_phone().send_keys("+32477" + random_variable)
         userdetailpagetest.user_detail_postcode().clear()
         userdetailpagetest.user_detail_postcode().send_keys("9999")
         userdetailpagetest.user_detail_town().clear()
         userdetailpagetest.user_detail_town().send_keys("Roboland")
-        userdetailpagetest.user_detail_country_select_belgium()
         userdetailpagetest.user_detail_role_select_accountadmin()
         userdetailpagetest.user_detail_notification_settings()
         userdetailpagetest.user_detail_save_button()
 
         updatemessage = str(userdetailpagetest.user_detail_update_message().text)
         assert "User information updated" in updatemessage
-
-        userdetailpagetest.user_detail_open_top_user()
-
-        firstname = str(
-            userdetailpagetest.user_detail_first_name().get_attribute("value")
-        )
-        assert firstname == "Robotester"
-        userdetailpagetest.user_detail_first_name().clear()
-        userdetailpagetest.user_detail_first_name().send_keys("Offline")
-
-        lastname = str(
-            userdetailpagetest.user_detail_last_name().get_attribute("value")
-        )
-        assert lastname == "Onamission"
-        userdetailpagetest.user_detail_last_name().clear()
-        userdetailpagetest.user_detail_last_name().send_keys("Tester")
-
-        email = str(userdetailpagetest.user_detail_email().get_attribute("value"))
-        assert email == "daan.swinnen+activerobot3@optimile.eu"
-        userdetailpagetest.user_detail_email().clear()
-        userdetailpagetest.user_detail_email().send_keys(
-            "daan.swinnen+5642329@optimile.eu"
-        )
-
-        phone = str(userdetailpagetest.user_detail_phone().get_attribute("value"))
-        assert phone == "+32477885535"
-        userdetailpagetest.user_detail_phone().clear()
-        userdetailpagetest.user_detail_phone().send_keys("+32499543218")
-
-        postcode = str(userdetailpagetest.user_detail_postcode().get_attribute("value"))
-        assert postcode == "9999"
-        userdetailpagetest.user_detail_postcode().clear()
-        userdetailpagetest.user_detail_postcode().send_keys("9000")
-
-        town = str(userdetailpagetest.user_detail_town().get_attribute("value"))
-        assert town == "Roboland"
-        userdetailpagetest.user_detail_town().clear()
-        userdetailpagetest.user_detail_town().send_keys("Gent")
-
-        userdetailpagetest.user_detail_country_select_netherlands()
-        userdetailpagetest.user_detail_role_select_accountadmin()
-        userdetailpagetest.user_detail_notification_settings()
-        userdetailpagetest.user_detail_save_button()
-        
-

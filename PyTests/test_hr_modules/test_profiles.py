@@ -37,7 +37,9 @@ class TestOne(BaseClass):
         tagname = str(datetime.datetime.now())
         tagmanagerpage.choose_tag_name_field().send_keys(tagname)
         log.info("Set tag name as 'timestamp'.")
-        tagmanagerpage.select_available_user().click()
+        time.sleep(1)
+        tagmanagerpage.select_available_user()
+        time.sleep(1)
         tagmanagerpage.move_all_users_right()
         log.info("Linked available user.")
         tagmanagerpage.tag_save_button()
@@ -49,6 +51,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestTwo(BaseClass):
     def test_tags_create_delete_expanded(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -75,7 +79,8 @@ class TestOne(BaseClass):
         ).click()
         log.info("Set new tag color.")
         time.sleep(1)
-        tagmanagerpage.select_available_user().click()
+        tagmanagerpage.select_available_user()
+        time.sleep(1)
         tagmanagerpage.move_all_users_right()
         log.info("Link all available users.")
         tagmanagerpage.tag_save_button()
@@ -107,6 +112,7 @@ class TestOne(BaseClass):
         tagmanagerpage.choose_tag_name_field().send_keys("SecondName")
         log.info("Edit tagname.")
         tagmanagerpage.select_all_linked_users()
+        time.sleep(1)
         tagmanagerpage.unlink_users()
         log.info("Unlinked all users.")
         tagmanagerpage.tag_save_button()
@@ -129,6 +135,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestThree(BaseClass):
     def test_profiles_multiple_app_invites(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

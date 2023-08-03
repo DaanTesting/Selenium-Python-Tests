@@ -29,7 +29,7 @@ class HomePage:
         self.driver.find_element(*selector1).click()
 
     def menu_label_mobility(self):
-        selector1 = (By.XPATH, "//span[text()='Mobility']")
+        selector1 = (By.XPATH, "//span[.='Mobility']")
         self.driver.find_element(*selector1).click()
 
     def menu_label_locations(self):
@@ -221,4 +221,6 @@ class HomePage:
         self.driver.find_element(*selector1).click()
         ruleengineoverview = RuleEngineOverview(self.driver)
         return ruleengineoverview
+    
+    
 

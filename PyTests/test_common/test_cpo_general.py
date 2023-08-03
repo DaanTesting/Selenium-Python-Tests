@@ -69,6 +69,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestTwo(BaseClass):
     def test_filter_locations(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -95,6 +97,7 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestThree(BaseClass):
     def test_locations_search_devices(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -121,6 +124,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestFour(BaseClass):
     def test_configure_location_information(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -187,6 +192,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestFive(BaseClass):
     def test_configure_location_location_data(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -250,6 +257,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestSix(BaseClass):
     def test_add_charging_device(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
