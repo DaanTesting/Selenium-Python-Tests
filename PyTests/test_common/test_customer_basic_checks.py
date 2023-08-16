@@ -1,6 +1,7 @@
 import pytest
 import time
 import random
+import platform
 from datetime import datetime
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -9,6 +10,7 @@ from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
 from pageObjects.GeneralObjects import GeneralObjects
 
+user_os = platform.system()
 
 @pytest.fixture(params=LoginPageData.test_fullflow_data)
 def login_data(request):
@@ -147,18 +149,27 @@ class TestOne(BaseClass):
         accountdetailspage.account_details_language_select_english()
         accountdetailspage.account_details_address().clear()
         accountdetailspage.account_details_address().send_keys("Active street")
-        time.sleep(15)
-        accountdetailspage.account_details_postcode().send_keys(
-            Keys.COMMAND, "a" + Keys.BACKSPACE
-        )
+        time.sleep(3)
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_postcode().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_postcode().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+
         accountdetailspage.account_details_postcode().send_keys("9001")
-        accountdetailspage.account_details_town().send_keys(
-            Keys.COMMAND, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_town().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_town().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+    
         accountdetailspage.account_details_town().send_keys("Activeville")
-        accountdetailspage.account_details_invoice_email().send_keys(
-            Keys.COMMAND, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_invoice_email().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_invoice_email().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+
         accountdetailspage.account_details_invoice_email().send_keys(
             "daan.swinnen+activeaccounttest@optimile.eu"
         )
@@ -173,45 +184,61 @@ class TestOne(BaseClass):
             accountdetailspage.account_details_company_type().get_attribute("value")
         )
         assert companytype == "Active Flow"
-        accountdetailspage.account_details_company_type().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_company_type().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_company_type().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+        
         accountdetailspage.account_details_company_type().send_keys("Main Flow")
 
         VATnumber = str(
             accountdetailspage.account_details_VAT_number().get_attribute("value")
         )
         assert VATnumber == "BE0794810872"
-        accountdetailspage.account_details_VAT_number().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_VAT_number().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_VAT_number().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+
+        
         accountdetailspage.account_details_VAT_number().send_keys("BE0013755093")
 
         firstname = str(
             accountdetailspage.account_details_first_name().get_attribute("value")
         )
         assert firstname == "ActiveTest"
-        accountdetailspage.account_details_first_name().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_first_name().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_first_name().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+        
         accountdetailspage.account_details_first_name().send_keys("Splitbilling")
 
         lastname = str(
             accountdetailspage.account_details_last_name().get_attribute("value")
         )
         assert lastname == "Ongoing"
-        accountdetailspage.account_details_last_name().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_last_name().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_last_name().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+
         accountdetailspage.account_details_last_name().send_keys("TestCustomer")
 
         emailaddress = str(
             accountdetailspage.account_details_emailaddress().get_attribute("value")
         )
         assert emailaddress == "daan.swinnen+splitbillingactive@optimile.eu"
-        accountdetailspage.account_details_emailaddress().send_keys(
-            Keys.COMMAND, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_emailaddress().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_emailaddress().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+
         accountdetailspage.account_details_emailaddress().send_keys(
             "daan.swinnen+splitbilling4@optimile.eu"
         )
@@ -220,9 +247,12 @@ class TestOne(BaseClass):
             accountdetailspage.account_details_phone().get_attribute("value")
         )
         assert phonenumber == "+3214524213"
-        accountdetailspage.account_details_phone().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_phone().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_phone().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+        
         accountdetailspage.account_details_phone().send_keys("014568945")
 
         accountdetailspage.account_details_language_select_nederlands()
@@ -231,34 +261,46 @@ class TestOne(BaseClass):
             accountdetailspage.account_details_address().get_attribute("value")
         )
         assert address == "Active street"
-        accountdetailspage.account_details_address().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_address().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_address().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+
         accountdetailspage.account_details_address().send_keys("Passive street")
 
         postcode = str(
             accountdetailspage.account_details_postcode().get_attribute("value")
         )
         assert postcode == "9001"
-        accountdetailspage.account_details_postcode().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_postcode().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_postcode().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+        
         accountdetailspage.account_details_postcode().send_keys("9000")
 
         town = str(accountdetailspage.account_details_town().get_attribute("value"))
         assert town == "Activeville"
-        accountdetailspage.account_details_town().send_keys(
-            Keys.CONTROL, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_town().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_town().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+
         accountdetailspage.account_details_town().send_keys("Gent")
 
         invoiceemail = str(
             accountdetailspage.account_details_invoice_email().get_attribute("value")
         )
         assert invoiceemail == "daan.swinnen+activeaccounttest@optimile.eu"
-        accountdetailspage.account_details_invoice_email().send_keys(
-            Keys.COMMAND, "a" + Keys.BACKSPACE
-        )
+
+        if user_os == 'Darwin':
+            accountdetailspage.account_details_invoice_email().send_keys(Keys.COMMAND + "a" + Keys.BACKSPACE)
+        else: 
+            accountdetailspage.account_details_invoice_email().send_keys(Keys.CONTROL + "a" + Keys.BACKSPACE)
+
         accountdetailspage.account_details_invoice_email().send_keys(
             "daan.swinnen+splitbilling4@optimile.eu"
         )

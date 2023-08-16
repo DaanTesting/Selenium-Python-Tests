@@ -49,8 +49,6 @@ class TestOne(BaseClass):
 def login_data(request):
     return request.param
 
-
-
 class TestTwo(BaseClass):
     def test_create_user_contract(self, setup, login_data):
         log = self.get_logger()
@@ -73,15 +71,15 @@ class TestTwo(BaseClass):
         log.info("Opening mail tab to gather most recent new user.")
         mspindividualcustomer.mail_tab()
         newestuser = mspindividualcustomer.select_top_emailadress().text
+        print(newestuser)
         log.info("Attempting to create new contract.")
         mspindividualcustomer.contracts_tab()
         mspindividualcustomer.create_contract_button()
         log.info("Selecting contract.")
         mspindividualcustomer.create_contract_select_formula_freepostpaid()
         log.info("Selecting user.")
-        mspindividualcustomer.create_contract_select_user().select_by_visible_text(
-            newestuser
-        )
+        mspindividualcustomer.create_contract_select_user().select_by_value(
+            newestuser)
         mspindividualcustomer.create_contract_create_button()
         time.sleep(1)
         message = mspindividualcustomer.message_contract_created().text

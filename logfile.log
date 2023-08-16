@@ -6777,3 +6777,405 @@
 2023-08-03 14:02:33,946 : INFO : test_expenses_detail_modal : Succesfully opened expense detail modal.
 2023-08-03 14:02:34,017 : INFO : test_expenses_detail_modal : Succesfully scrolled between expenses.
 2023-08-03 14:02:34,018 : INFO : test_expenses_detail_modal : Closing detail modal.
+2023-08-10 08:49:04,068 : INFO : test_pages_employees : daan.swinnen+autotest.admin@optimile.eu
+2023-08-10 08:49:04,068 : INFO : test_pages_employees : Attempting Login.
+2023-08-10 08:49:04,833 : INFO : test_pages_employees : Succesfully logged in.
+2023-08-10 08:49:04,833 : INFO : test_pages_employees : Navigating to employees pages.
+2023-08-10 08:49:27,032 : INFO : test_pages_employees : daan.swinnen+autotest.admin@optimile.eu
+2023-08-10 08:49:27,032 : INFO : test_pages_employees : Attempting Login.
+2023-08-10 08:49:27,817 : INFO : test_pages_employees : Succesfully logged in.
+2023-08-10 08:49:27,817 : INFO : test_pages_employees : Navigating to employees pages.
+2023-08-10 08:49:28,422 : INFO : test_pages_employees : Succesfully verified import-page.
+2023-08-10 08:49:28,668 : INFO : test_pages_employees : Succesfully verified report-page.
+2023-08-10 08:49:28,849 : INFO : test_pages_employees : Succesfully verified overview-page.
+2023-08-10 08:49:42,721 : INFO : test_pages_employees : daan.swinnen+autotest.admin@optimile.eu
+2023-08-10 08:49:42,721 : INFO : test_pages_employees : Attempting Login.
+2023-08-10 08:49:43,540 : INFO : test_pages_employees : Succesfully logged in.
+2023-08-10 08:49:43,540 : INFO : test_pages_employees : Navigating to employees pages.
+2023-08-10 08:49:44,082 : INFO : test_pages_employees : Succesfully verified import-page.
+2023-08-10 08:49:44,264 : INFO : test_pages_employees : Succesfully verified report-page.
+2023-08-10 08:49:44,481 : INFO : test_pages_employees : Succesfully verified overview-page.
+2023-08-11 08:52:57,303 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 08:52:57,303 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-08-11 08:52:58,121 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-08-11 08:52:58,121 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-08-11 08:52:58,710 : INFO : test_re_edit_settings_inactive : Filtering for inactive rulesets.
+2023-08-11 08:53:00,383 : INFO : test_re_edit_settings_inactive : Edited name field.
+2023-08-11 08:53:00,420 : INFO : test_re_edit_settings_inactive : Edited mobility policy field.
+2023-08-11 08:53:01,595 : INFO : test_re_edit_settings_inactive : Edited description field.
+2023-08-11 08:53:03,650 : INFO : test_re_edit_settings_inactive : Successfully updated ruleset.
+2023-08-11 13:43:54,295 : INFO : test_re_create_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 13:43:54,295 : INFO : test_re_create_ruleset : Attempting login.
+2023-08-11 13:43:55,115 : INFO : test_re_create_ruleset : Succesfully logged in.
+2023-08-11 13:43:55,115 : INFO : test_re_create_ruleset : Navigating to rule engine page.
+2023-08-11 13:43:55,726 : INFO : test_re_create_ruleset : Attempting to create a ruleset.
+2023-08-11 13:43:58,053 : INFO : test_re_create_ruleset : Succesfully created new ruleset.
+2023-08-11 13:45:39,557 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 13:45:39,557 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-08-11 13:45:40,775 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-08-11 13:45:40,775 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-08-11 13:45:41,388 : INFO : test_re_edit_settings_inactive : Filtering for inactive rulesets.
+2023-08-11 13:45:43,144 : INFO : test_re_edit_settings_inactive : Edited name field.
+2023-08-11 13:45:43,182 : INFO : test_re_edit_settings_inactive : Edited mobility policy field.
+2023-08-11 13:45:44,362 : INFO : test_re_edit_settings_inactive : Edited description field.
+2023-08-11 13:45:46,423 : INFO : test_re_edit_settings_inactive : Successfully updated ruleset.
+2023-08-11 13:45:52,848 : INFO : test_re_activate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 13:45:52,848 : INFO : test_re_activate_ruleset : Attempting login.
+2023-08-11 13:45:53,737 : INFO : test_re_activate_ruleset : Succesfully logged in.
+2023-08-11 13:45:53,737 : INFO : test_re_activate_ruleset : Navigating to rule engine page.
+2023-08-11 13:45:54,708 : INFO : test_re_activate_ruleset : Filtering for inactive rulesets.
+2023-08-11 13:45:56,122 : INFO : test_re_activate_ruleset : Opening ruleset.
+2023-08-11 13:45:56,379 : INFO : test_re_activate_ruleset : Activated ruleset.
+2023-08-11 13:45:58,414 : INFO : test_re_activate_ruleset : Successfully updated ruleset status to 'Active'.
+2023-08-11 13:46:05,040 : INFO : test_re_deactivate_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 13:46:05,040 : INFO : test_re_deactivate_ruleset : Attempting login.
+2023-08-11 13:46:06,811 : INFO : test_re_deactivate_ruleset : Succesfully logged in.
+2023-08-11 13:46:06,811 : INFO : test_re_deactivate_ruleset : Navigating to rule engine page.
+2023-08-11 13:46:07,652 : INFO : test_re_deactivate_ruleset : Filtering for active rulesets.
+2023-08-11 13:46:09,099 : INFO : test_re_deactivate_ruleset : Opening ruleset.
+2023-08-11 13:46:09,347 : INFO : test_re_deactivate_ruleset : Deactivated ruleset.
+2023-08-11 13:46:11,381 : INFO : test_re_deactivate_ruleset : Succesfully updated ruleset status to 'Inactive'.
+2023-08-11 13:46:17,066 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 13:46:17,066 : INFO : test_re_create_rule : Attempting login.
+2023-08-11 13:46:18,153 : INFO : test_re_create_rule : Succesfully logged in.
+2023-08-11 13:46:18,153 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-08-11 13:46:18,822 : INFO : test_re_create_rule : Searching for 'active test' ruleset.
+2023-08-11 13:46:19,853 : INFO : test_re_create_rule : Opening ruleset.
+2023-08-11 13:46:19,954 : INFO : test_re_create_rule : Attempting to create a new rule.
+2023-08-11 13:46:21,290 : INFO : test_re_create_rule : Successfully saved new rule.
+2023-08-11 13:46:27,112 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 13:46:27,112 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-08-11 13:46:27,889 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-08-11 13:46:27,889 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-08-11 13:46:28,593 : INFO : test_re_activate_deactivate_rule : Searching for 'active test' ruleset.
+2023-08-11 13:46:29,630 : INFO : test_re_activate_deactivate_rule : Opening ruleset.
+2023-08-11 13:46:32,050 : INFO : test_re_activate_deactivate_rule : Activated rule.
+2023-08-11 13:46:32,151 : INFO : test_re_activate_deactivate_rule : Deactivated rule.
+2023-08-11 13:46:37,949 : INFO : test_re_edit_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 13:46:37,949 : INFO : test_re_edit_rule : Attempting login.
+2023-08-11 13:46:38,758 : INFO : test_re_edit_rule : Succesfully logged in.
+2023-08-11 13:46:38,758 : INFO : test_re_edit_rule : Navigating to rule engine page.
+2023-08-11 13:46:39,393 : INFO : test_re_edit_rule : Searching for 'active test' ruleset.
+2023-08-11 13:46:40,430 : INFO : test_re_edit_rule : Opening ruleset.
+2023-08-11 13:46:48,933 : INFO : test_re_filter_rulesets : daan.swinnen+autotest.admin@optimile.eu
+2023-08-11 13:46:48,933 : INFO : test_re_filter_rulesets : Attempting login.
+2023-08-11 13:46:49,743 : INFO : test_re_filter_rulesets : Succesfully logged in.
+2023-08-11 13:46:49,743 : INFO : test_re_filter_rulesets : Navigating to rule engine page.
+2023-08-11 13:56:31,242 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2023-08-11 13:56:31,242 : INFO : test_assign_user_token : Attempting login.
+2023-08-11 13:56:33,962 : INFO : test_assign_user_token : Succesfully logged in.
+2023-08-11 13:56:33,962 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2023-08-11 13:56:34,245 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2023-08-11 13:56:34,283 : INFO : test_assign_user_token : Opening customer.
+2023-08-11 13:56:34,536 : INFO : test_assign_user_token : Attempting to assign token to user.
+2023-08-11 13:56:48,488 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-08-11 13:56:48,488 : INFO : test_create_user_contract : Attempting login.
+2023-08-11 13:56:50,643 : INFO : test_create_user_contract : Succesfully logged in.
+2023-08-11 13:56:50,643 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-08-11 13:56:50,982 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-08-11 13:56:51,008 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-08-11 13:56:51,263 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-08-11 13:56:51,530 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-08-11 13:56:52,060 : INFO : test_create_user_contract : Selecting contract.
+2023-08-11 13:56:52,107 : INFO : test_create_user_contract : Selecting user.
+2023-08-11 13:59:38,295 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-08-11 13:59:38,295 : INFO : test_create_user_contract : Attempting login.
+2023-08-11 13:59:40,666 : INFO : test_create_user_contract : Succesfully logged in.
+2023-08-11 13:59:40,666 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-08-11 13:59:40,945 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-08-11 13:59:40,979 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-08-11 13:59:41,199 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-08-11 13:59:41,412 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-08-11 13:59:41,866 : INFO : test_create_user_contract : Selecting contract.
+2023-08-11 13:59:41,925 : INFO : test_create_user_contract : Selecting user.
+2023-08-11 13:59:54,050 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2023-08-11 13:59:54,050 : INFO : test_assign_user_token : Attempting login.
+2023-08-11 13:59:56,299 : INFO : test_assign_user_token : Succesfully logged in.
+2023-08-11 13:59:56,299 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2023-08-11 13:59:56,514 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2023-08-11 13:59:56,552 : INFO : test_assign_user_token : Opening customer.
+2023-08-11 13:59:56,771 : INFO : test_assign_user_token : Attempting to assign token to user.
+2023-08-11 13:59:59,266 : INFO : test_assign_user_token : Succesfully assigned token to user.
+2023-08-11 14:00:04,236 : INFO : test_add_token_to_whitelist : daan.swinnen+splitbilling4@optimile.eu
+2023-08-11 14:00:04,236 : INFO : test_add_token_to_whitelist : Attempting login.
+2023-08-11 14:00:07,268 : INFO : test_add_token_to_whitelist : Succesfully logged in.
+2023-08-11 14:00:07,268 : INFO : test_add_token_to_whitelist : Navigating to whitelist page.
+2023-08-11 14:00:07,837 : INFO : test_add_token_to_whitelist : Attempting to add tokens to whitelist.
+2023-08-11 14:00:09,871 : INFO : test_add_token_to_whitelist : Succesfully added tokens to whitelist.
+2023-08-16 13:15:31,596 : INFO : test_add_token_to_whitelist : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 13:15:31,596 : INFO : test_add_token_to_whitelist : Attempting login.
+2023-08-16 13:15:33,698 : INFO : test_add_token_to_whitelist : Succesfully logged in.
+2023-08-16 13:15:33,699 : INFO : test_add_token_to_whitelist : Navigating to whitelist page.
+2023-08-16 13:15:34,098 : INFO : test_add_token_to_whitelist : Attempting to add tokens to whitelist.
+2023-08-16 13:23:23,148 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-08-16 13:23:23,148 : INFO : test_create_user_contract : Attempting login.
+2023-08-16 13:23:25,572 : INFO : test_create_user_contract : Succesfully logged in.
+2023-08-16 13:23:25,572 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-08-16 13:23:25,796 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-08-16 13:23:25,821 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-08-16 13:23:26,039 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-08-16 13:23:26,313 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-08-16 13:23:26,801 : INFO : test_create_user_contract : Selecting contract.
+2023-08-16 13:23:26,847 : INFO : test_create_user_contract : Selecting user.
+2023-08-16 13:24:01,230 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-08-16 13:24:01,230 : INFO : test_create_user_contract : Attempting login.
+2023-08-16 13:24:04,348 : INFO : test_create_user_contract : Succesfully logged in.
+2023-08-16 13:24:04,348 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-08-16 13:24:04,621 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-08-16 13:24:04,648 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-08-16 13:24:04,918 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-08-16 13:24:05,306 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-08-16 13:24:05,924 : INFO : test_create_user_contract : Selecting contract.
+2023-08-16 13:24:05,969 : INFO : test_create_user_contract : Selecting user.
+2023-08-16 13:25:47,223 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-08-16 13:25:47,223 : INFO : test_create_user_contract : Attempting login.
+2023-08-16 13:25:49,368 : INFO : test_create_user_contract : Succesfully logged in.
+2023-08-16 13:25:49,368 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-08-16 13:25:49,574 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-08-16 13:25:49,599 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-08-16 13:25:49,805 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-08-16 13:25:50,067 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-08-16 13:25:50,552 : INFO : test_create_user_contract : Selecting contract.
+2023-08-16 13:25:50,596 : INFO : test_create_user_contract : Selecting user.
+2023-08-16 13:26:28,420 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 13:26:28,420 : INFO : test_create_user : Attempting login.
+2023-08-16 13:26:30,475 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 13:26:30,475 : INFO : test_create_user : Navigating to users page.
+2023-08-16 13:26:30,978 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 13:26:31,298 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 13:26:31,348 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 13:26:33,430 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 13:26:38,365 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-08-16 13:26:38,365 : INFO : test_create_user_contract : Attempting login.
+2023-08-16 13:26:40,508 : INFO : test_create_user_contract : Succesfully logged in.
+2023-08-16 13:26:40,508 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-08-16 13:26:40,756 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-08-16 13:26:40,782 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-08-16 13:26:41,013 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-08-16 13:26:41,239 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-08-16 13:26:41,730 : INFO : test_create_user_contract : Selecting contract.
+2023-08-16 13:26:41,774 : INFO : test_create_user_contract : Selecting user.
+2023-08-16 13:42:29,971 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 13:42:29,971 : INFO : test_create_user : Attempting login.
+2023-08-16 13:42:31,987 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 13:42:31,987 : INFO : test_create_user : Navigating to users page.
+2023-08-16 13:42:32,457 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 13:42:32,760 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 13:42:32,819 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 13:42:34,595 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:22:16,527 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:22:16,527 : INFO : test_create_user : Attempting login.
+2023-08-16 14:22:18,771 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:22:18,771 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:22:19,623 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:22:19,927 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:22:19,999 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:22:22,051 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:23:37,972 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:23:37,972 : INFO : test_create_user : Attempting login.
+2023-08-16 14:23:39,917 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:23:39,917 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:23:40,386 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:23:40,756 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:23:40,834 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:23:42,524 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:23:53,376 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:23:53,377 : INFO : test_create_user : Attempting login.
+2023-08-16 14:23:55,544 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:23:55,544 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:23:56,022 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:23:56,305 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:23:56,368 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:23:58,509 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:24:03,116 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:24:03,116 : INFO : test_create_user : Attempting login.
+2023-08-16 14:24:05,848 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:24:05,848 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:24:06,326 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:24:06,670 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:24:06,735 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:24:08,735 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:29:10,478 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:29:10,478 : INFO : test_create_user : Attempting login.
+2023-08-16 14:29:12,484 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:29:12,484 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:29:12,949 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:29:13,237 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:29:13,303 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:29:15,177 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:29:18,815 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:29:18,815 : INFO : test_create_user : Attempting login.
+2023-08-16 14:29:20,828 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:29:20,828 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:29:21,292 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:29:21,538 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:29:21,603 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:29:23,508 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:29:27,203 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:29:27,203 : INFO : test_create_user : Attempting login.
+2023-08-16 14:29:29,241 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:29:29,241 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:29:29,780 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:29:30,106 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:29:30,185 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:29:32,087 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:29:35,578 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:29:35,578 : INFO : test_create_user : Attempting login.
+2023-08-16 14:29:37,685 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:29:37,686 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:29:38,148 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:29:38,406 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:29:38,464 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:29:40,459 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:29:44,140 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 14:29:44,140 : INFO : test_create_user : Attempting login.
+2023-08-16 14:29:46,360 : INFO : test_create_user : Succesfully logged in.
+2023-08-16 14:29:46,360 : INFO : test_create_user : Navigating to users page.
+2023-08-16 14:29:46,908 : INFO : test_create_user : Attempting to create new user.
+2023-08-16 14:29:47,160 : INFO : test_create_user : Creating random emailadres.
+2023-08-16 14:29:47,216 : INFO : test_create_user : Attempting to save new user.
+2023-08-16 14:29:49,029 : INFO : test_create_user : Succesfully created new user.
+2023-08-16 14:32:34,554 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2023-08-16 14:32:34,554 : INFO : test_create_user_contract : Attempting login.
+2023-08-16 14:32:36,674 : INFO : test_create_user_contract : Succesfully logged in.
+2023-08-16 14:32:36,674 : INFO : test_create_user_contract : Navigating to msp customers page.
+2023-08-16 14:32:36,943 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2023-08-16 14:32:36,978 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2023-08-16 14:32:37,196 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2023-08-16 14:32:37,464 : INFO : test_create_user_contract : Attempting to create new contract.
+2023-08-16 14:32:37,995 : INFO : test_create_user_contract : Selecting contract.
+2023-08-16 14:32:38,053 : INFO : test_create_user_contract : Selecting user.
+2023-08-16 15:21:55,489 : INFO : test_expenses_status_filter : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:21:55,489 : INFO : test_expenses_status_filter : Attempting Login.
+2023-08-16 15:21:56,593 : INFO : test_expenses_status_filter : Succesfully logged in.
+2023-08-16 15:21:56,593 : INFO : test_expenses_status_filter : Navigating to expenses-page.
+2023-08-16 15:21:58,427 : INFO : test_expenses_status_filter : Filtering expenses for 'paid'-status.
+2023-08-16 15:22:00,580 : INFO : test_expenses_status_filter : Succesfully verified that only 'Paid' expenses are present.
+2023-08-16 15:33:06,217 : INFO : test_expenses_status_filter : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:33:06,217 : INFO : test_expenses_status_filter : Attempting Login.
+2023-08-16 15:33:07,526 : INFO : test_expenses_status_filter : Succesfully logged in.
+2023-08-16 15:33:07,526 : INFO : test_expenses_status_filter : Navigating to expenses-page.
+2023-08-16 15:33:09,386 : INFO : test_expenses_status_filter : Filtering expenses for 'paid'-status.
+2023-08-16 15:33:11,544 : INFO : test_expenses_status_filter : Succesfully verified that only 'Paid' expenses are present.
+2023-08-16 15:33:25,170 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:33:25,170 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:33:26,305 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:33:26,305 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:33:28,930 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:33:30,078 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:33:30,119 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:33:31,290 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:39:59,946 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:39:59,946 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:40:01,372 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:40:01,372 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:40:04,059 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:40:05,210 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:40:05,253 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:40:06,429 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:40:27,746 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:40:27,746 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:40:29,121 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:40:29,121 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:40:31,838 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:40:32,990 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:40:33,037 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:40:34,207 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:40:37,392 : INFO : test_expenses_ApproveUndo_HRmod : Undo expense.
+2023-08-16 15:41:38,466 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:41:38,467 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:41:39,541 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:41:39,541 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:41:42,282 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:41:43,436 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:41:43,478 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:41:44,651 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:45:31,815 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:45:31,815 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:45:33,159 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:45:33,159 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:45:35,944 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:45:37,097 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:45:37,140 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:45:38,300 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:45:41,249 : INFO : test_expenses_ApproveUndo_HRmod : Undo expense.
+2023-08-16 15:46:33,175 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:46:33,175 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:46:34,328 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:46:34,329 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:46:37,067 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:46:38,218 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:46:38,262 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:46:39,428 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:47:41,288 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:47:41,288 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:47:42,590 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:47:42,590 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:47:45,492 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:47:46,648 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:47:46,695 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:47:47,861 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:47:54,361 : INFO : test_expenses_ApproveUndo_HRmod : Undo expense.
+2023-08-16 15:48:23,311 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:48:23,311 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:48:24,651 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:48:24,651 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:48:27,475 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:48:28,628 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:48:28,670 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:48:29,840 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:49:19,063 : INFO : test_expenses_ApproveUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 15:49:19,063 : INFO : test_expenses_ApproveUndo_HRmod : Attempting Login.
+2023-08-16 15:49:20,359 : INFO : test_expenses_ApproveUndo_HRmod : Succesfully logged in.
+2023-08-16 15:49:20,359 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to expenses-page.
+2023-08-16 15:49:23,074 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to new expenses tab.
+2023-08-16 15:49:24,222 : INFO : test_expenses_ApproveUndo_HRmod : Opening expense detail modal.
+2023-08-16 15:49:24,263 : INFO : test_expenses_ApproveUndo_HRmod : Marked expense as 'approved'.
+2023-08-16 15:49:25,428 : INFO : test_expenses_ApproveUndo_HRmod : Navigating to pending expenses tab.
+2023-08-16 15:49:28,524 : INFO : test_expenses_ApproveUndo_HRmod : Undo expense.
+2023-08-16 16:16:46,962 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 16:16:46,962 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-16 16:16:48,196 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-16 16:16:48,196 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-16 16:16:48,830 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-16 16:16:50,302 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-16 16:16:52,420 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-16 16:16:52,544 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-16 16:16:52,595 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-16 16:16:53,912 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-16 16:16:54,179 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-16 16:16:55,271 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-16 16:16:58,823 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-16 16:17:04,871 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2023-08-16 16:26:18,015 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 16:26:18,016 : INFO : test_account_details_screen : Attempting login.
+2023-08-16 16:26:18,866 : INFO : test_account_details_screen : Succesfully logged in.
+2023-08-16 16:26:18,866 : INFO : test_account_details_screen : Navigate to account details screen.
+2023-08-16 16:27:03,208 : INFO : test_account_details_screen : daan.swinnen+splitbilling4@optimile.eu
+2023-08-16 16:27:03,209 : INFO : test_account_details_screen : Attempting login.
+2023-08-16 16:27:05,333 : INFO : test_account_details_screen : Succesfully logged in.
+2023-08-16 16:27:05,333 : INFO : test_account_details_screen : Navigate to account details screen.
+2023-08-16 16:27:05,737 : INFO : test_account_details_screen : Attempting to change all account details.
+2023-08-16 16:29:41,002 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 16:29:41,002 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-08-16 16:29:43,161 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-08-16 16:29:43,161 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-08-16 16:30:08,401 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 16:30:08,401 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-08-16 16:30:09,382 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-08-16 16:30:09,383 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-08-16 16:30:10,081 : INFO : test_re_edit_settings_inactive : Filtering for inactive rulesets.
+2023-08-16 16:30:11,951 : INFO : test_re_edit_settings_inactive : Edited name field.
+2023-08-16 16:30:11,986 : INFO : test_re_edit_settings_inactive : Edited mobility policy field.
+2023-08-16 16:30:13,174 : INFO : test_re_edit_settings_inactive : Edited description field.
+2023-08-16 16:30:15,233 : INFO : test_re_edit_settings_inactive : Successfully updated ruleset.
+2023-08-16 16:36:17,977 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2023-08-16 16:36:17,977 : INFO : test_mobility_policies_duplicate : Attempting login.
+2023-08-16 16:36:19,267 : INFO : test_mobility_policies_duplicate : Succesfully logged in.
+2023-08-16 16:36:19,267 : INFO : test_mobility_policies_duplicate : Navigating to mobility policies page.
+2023-08-16 16:36:20,066 : INFO : test_mobility_policies_duplicate : Filtered for draft policies.
+2023-08-16 16:36:21,313 : INFO : test_mobility_policies_duplicate : Opened top policy.
+2023-08-16 16:36:21,313 : INFO : test_mobility_policies_duplicate : Attempting to duplicate policy.
+2023-08-16 16:36:22,810 : INFO : test_mobility_policies_duplicate : Succesfully duplicated mobility policy.
+2023-08-16 16:36:22,998 : INFO : test_mobility_policies_duplicate : Named duplicate policy 'timestamp'.
+2023-08-16 16:36:23,051 : INFO : test_mobility_policies_duplicate : Succesfully saved duplicate policy.

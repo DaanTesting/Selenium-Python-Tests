@@ -90,9 +90,9 @@ class TestThree(BaseClass):
         homepage.menu_label_employees()
         homepage.menu_label_import()
         titleimportpage = self.driver.find_element(
-            By.XPATH, "(//h1[normalize-space()='Import'])[1]"
+            By.XPATH, "//h1[.='Import employees']"
         ).text
-        assert titleimportpage == "Import"
+        assert titleimportpage == "Import employees"
         log.info("Succesfully verified import-page.")
 
         homepage.menu_label_create_report()

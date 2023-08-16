@@ -1,5 +1,6 @@
 import time
 import pytest
+import platform
 from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -9,6 +10,8 @@ from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
 from pageObjects.GeneralObjects import GeneralObjects
 from selenium.webdriver.common.keys import Keys
+
+user_os = platform.system()
 
 
 @pytest.fixture(params=LoginPageData.testhr_login_data)
@@ -41,6 +44,7 @@ class TestSubModuleOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
 class TestSubModuleTwo(BaseClass):
     def test_mobility_policies_filter(self, setup, login_data):
         log = self.get_logger()
@@ -63,11 +67,12 @@ class TestSubModuleTwo(BaseClass):
 
         for filterresult in filterresults:
             assert (filterresult.text) == "Active"
-        
+
         log.info("Succesfully verified filtering occurred correctly.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 
 class TestSubModuleThree(BaseClass):
     def test_mobility_policies_create_policy(self, setup, login_data):
@@ -90,7 +95,6 @@ class TestSubModuleThree(BaseClass):
         )
 
         timestamp = str(datetime.now())
-        
 
         newmobilitypolicypage.new_policy_name_field().send_keys(timestamp)
         log.info("Set policy name as 'timestamp'.")
@@ -100,20 +104,20 @@ class TestSubModuleThree(BaseClass):
         log.info("Selected second contract.")
         newmobilitypolicypage.new_policy_budget_value().send_keys("150")
         log.info("Set policy budget to '150'.")
-        
+
         today = datetime.today().strftime("%Y-%m-%d")
         newmobilitypolicypage.new_policy_datepicker_alt().send_keys(today + Keys.ENTER)
-        #newmobilitypolicypage.new_policy_datepicker()
+        # newmobilitypolicypage.new_policy_datepicker()
         log.info("Set start date on 'today'.")
         log.info("Set end date as undefined.")
-        
+
         newmobilitypolicypage.new_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
 
         newmobilitypolicypage.new_policy_select_top_available_user().click()
         newmobilitypolicypage.new_policy_move_users_to_linked()
         log.info("Linked all available users.")
-        
+
         newmobilitypolicypage.new_policy_activate()
         time.sleep(1)
         newmobilitypolicypage.new_policy_accept_button()
@@ -140,6 +144,7 @@ class TestSubModuleThree(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 
 class TestSubModuleFour(BaseClass):
     def test_mobility_policies_create_draft(self, setup, login_data):
@@ -191,6 +196,7 @@ class TestSubModuleFour(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
 class TestSubModuleFive(BaseClass):
     def test_mobility_policies_activate_draft(self, setup, login_data):
         log = self.get_logger()
@@ -209,12 +215,17 @@ class TestSubModuleFive(BaseClass):
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
         log.info("Filtering for draft policies.")
         time.sleep(1)
-        changemobilitypolicypage = mobilitypoliciesmainpage.mobility_policies_view_top_policy()
+        changemobilitypolicypage = (
+            mobilitypoliciesmainpage.mobility_policies_view_top_policy()
+        )
         changemobilitypolicypage.change_mobility_policy_activate_draft()
         time.sleep(2)
-        message = str(changemobilitypolicypage.change_mobility_policy_activation_message().text)
+        message = str(
+            changemobilitypolicypage.change_mobility_policy_activation_message().text
+        )
         assert "activated" in message
         log.info("Succesfully activated draft policy.")
+
 
 class TestSubModuleSix(BaseClass):
     def test_mobility_policies_draft_link_users(self, setup, login_data):
@@ -243,9 +254,16 @@ class TestSubModuleSix(BaseClass):
         time.sleep(1)
         changemobilitypolicypage.change_mobility_policy_unlink_all_users()
         log.info("Unlinked all users from draft policy.")
-        changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
-            Keys.COMMAND + "a"
-        )
+
+        if user_os == "Darwin":
+            changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+                Keys.COMMAND + "a"
+            )
+        else:
+            changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+                Keys.CONTROL + "a"
+            )
+
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
             Keys.DELETE
         )
@@ -275,15 +293,22 @@ class TestSubModuleSix(BaseClass):
             mobilitypoliciesmainpage.mobility_policies_view_top_policy()
         )
         time.sleep(1)
-        changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
-            Keys.COMMAND + "a"
-        )
+
+        if user_os == "Darwin":
+            changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+                Keys.COMMAND + "a"
+            )
+        else:
+            changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+                Keys.CONTROL + "a"
+            )
+
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
             Keys.DELETE
         )
         timestamp = str(datetime.now())
         timestampbase = datetime.now()
-        limitedtimestamp = timestampbase.strftime('%Y-%m-%d %H')
+        limitedtimestamp = timestampbase.strftime("%Y-%m-%d %H")
 
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
             timestamp
@@ -292,7 +317,9 @@ class TestSubModuleSix(BaseClass):
         changemobilitypolicypage.change_mobility_policy_save()
         time.sleep(1)
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
-        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys(limitedtimestamp)
+        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys(
+            limitedtimestamp
+        )
         time.sleep(2)
         mobilitypoliciesmainpage.mobility_policies_view_top_policy()
 
@@ -306,6 +333,7 @@ class TestSubModuleSix(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 
 class TestSubModuleSeven(BaseClass):
     def test_mobility_policies_active_change_mob(self, setup, login_data):
@@ -338,14 +366,17 @@ class TestSubModuleSeven(BaseClass):
         log.info("Selected mobility option 'bike sharing'.")
         changemobilitypolicypage.change_mobility_policy_save()
         time.sleep(1)
-        message = str(changemobilitypolicypage.change_mobility_policy_activation_message().text)
+        message = str(
+            changemobilitypolicypage.change_mobility_policy_activation_message().text
+        )
         assert "updated" in message
         log.info("Succesfully verified that active policy has been updated.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-class TestSubModuleEight(BaseClass):    
+
+class TestSubModuleEight(BaseClass):
     def test_mobility_policies_duplicate(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -363,25 +394,36 @@ class TestSubModuleEight(BaseClass):
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
         log.info("Filtered for draft policies.")
         time.sleep(1)
-        changemobilitypolicypage = mobilitypoliciesmainpage.mobility_policies_view_top_policy()
+        changemobilitypolicypage = (
+            mobilitypoliciesmainpage.mobility_policies_view_top_policy()
+        )
         log.info("Opened top policy.")
         log.info("Attempting to duplicate policy.")
         changemobilitypolicypage.change_mobility_policy_duplicate()
         time.sleep(1)
         policyname = changemobilitypolicypage.change_mobility_policy_name_field()
         newname = str(policyname.get_attribute("value"))
-        assert 'copy' in newname
+        assert "copy" in newname
         log.info("Succesfully duplicated mobility policy.")
 
+        if user_os == "Darwin":
+            changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+                Keys.COMMAND + "a"
+            )
+        else:
+            changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+                Keys.CONTROL + "a"
+            )
+
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
-            Keys.CONTROL + "a"
+            Keys.DELETE
         )
-        changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
-            Keys.DELETE)
-        
+
         timestamp = str(datetime.now())
-        
-        changemobilitypolicypage.change_mobility_policy_name_field().send_keys(timestamp)
+
+        changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
+            timestamp
+        )
 
         log.info("Named duplicate policy 'timestamp'.")
         changemobilitypolicypage.change_mobility_policy_save()
@@ -389,4 +431,3 @@ class TestSubModuleEight(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-        

@@ -1,0 +1,49 @@
+2023-08-11 13:51:14,350 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:14,350 : INFO : test_cpo_overview_screen : Attempting login.
+2023-08-11 13:51:16,497 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2023-08-11 13:51:16,497 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2023-08-11 13:51:16,996 : INFO : test_cpo_overview_screen : Succesfully verified CPO overview page.
+2023-08-11 13:51:17,169 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:17,169 : INFO : test_cpo_customers_screen : Attempting login.
+2023-08-11 13:51:18,171 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2023-08-11 13:51:18,171 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2023-08-11 13:51:19,189 : INFO : test_cpo_customers_screen : Succesfully verified customers page.
+2023-08-11 13:51:19,359 : INFO : test_cpo_charging_locations_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:19,359 : INFO : test_cpo_charging_locations_screen : Attempting login.
+2023-08-11 13:51:20,183 : INFO : test_cpo_charging_locations_screen : Succesfully logged in.
+2023-08-11 13:51:20,183 : INFO : test_cpo_charging_locations_screen : Navigating to charging locations page.
+2023-08-11 13:51:20,694 : INFO : test_cpo_charging_locations_screen : Succesfully verified locations page.
+2023-08-11 13:51:20,871 : INFO : test_cpo_tokens_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:20,871 : INFO : test_cpo_tokens_screen : Attempting login.
+2023-08-11 13:51:21,614 : INFO : test_cpo_tokens_screen : Succesfully logged in.
+2023-08-11 13:51:21,614 : INFO : test_cpo_tokens_screen : Navigating to tokens page.
+2023-08-11 13:51:22,013 : INFO : test_cpo_tokens_screen : Succesfully verified tokens page.
+2023-08-11 13:51:22,201 : INFO : test_cpo_simcards_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:22,201 : INFO : test_cpo_simcards_screen : Attempting login.
+2023-08-11 13:51:23,139 : INFO : test_cpo_simcards_screen : Succesfully logged in.
+2023-08-11 13:51:23,139 : INFO : test_cpo_simcards_screen : Navigating to simcards page.
+2023-08-11 13:51:24,309 : INFO : test_cpo_simcards_screen : Succesfully verified simcards page.
+2023-08-11 13:51:24,508 : INFO : test_cpo_contracts_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:24,508 : INFO : test_cpo_contracts_screen : Attempting login.
+2023-08-11 13:51:25,242 : INFO : test_cpo_contracts_screen : Succesfully logged in.
+2023-08-11 13:51:25,243 : INFO : test_cpo_contracts_screen : Navigating to contracts page.
+2023-08-11 13:51:25,713 : INFO : test_cpo_contracts_screen : Succesfully verified contracts page.
+2023-08-11 13:51:25,886 : INFO : test_cpo_roaming_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:25,886 : INFO : test_cpo_roaming_screen : Attempting login.
+2023-08-11 13:51:26,754 : INFO : test_cpo_roaming_screen : Succesfully logged in.
+2023-08-11 13:51:26,755 : INFO : test_cpo_roaming_screen : Navigating to roaming page.
+2023-08-11 13:51:27,323 : INFO : test_cpo_roaming_screen : Succesfully verified roaming page.
+2023-08-11 13:51:27,501 : INFO : test_cpo_finance_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:27,501 : INFO : test_cpo_finance_screen : Attempting login.
+2023-08-11 13:51:28,344 : INFO : test_cpo_finance_screen : Succesfully logged in.
+2023-08-11 13:51:28,344 : INFO : test_cpo_finance_screen : Navigating to finance page.
+2023-08-11 13:51:28,837 : INFO : test_cpo_finance_screen : Succesfully verified finance page.
+2023-08-11 13:51:29,049 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:29,050 : INFO : test_cpo_reports_screen : Attempting login.
+2023-08-11 13:51:30,002 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2023-08-11 13:51:30,002 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2023-08-11 13:51:30,506 : INFO : test_cpo_reports_screen : Succesfully verified reports page.
+2023-08-11 13:51:30,690 : INFO : test_cpo_splitbilling_screen : daan.swinnen@optimile.eu
+2023-08-11 13:51:30,690 : INFO : test_cpo_splitbilling_screen : Attempting login.
+2023-08-11 13:51:31,387 : INFO : test_cpo_splitbilling_screen : Succesfully logged in.
+2023-08-11 13:51:31,387 : INFO : test_cpo_splitbilling_screen : Navigating to splitbilling page.

@@ -297,9 +297,10 @@ class TestSubModuleFour(BaseClass):
 
         self.driver.find_element(By.XPATH, "//span[text()='Pending']").click()
         log.info("Navigating to pending expenses tab.")
-        self.driver.find_element(By.XPATH, "//tbody/tr/td/div/div/button").click()
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, "(//tbody/tr/td/div/div/button)[1]").click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "//a[text()='Undo']").click()
+        self.driver.find_element(By.XPATH, "//a[.='Undo']").click()
         log.info("Undo expense.")
 
         time.sleep(3)
