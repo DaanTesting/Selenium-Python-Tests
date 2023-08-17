@@ -8,7 +8,7 @@ driver = None
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome")
-    parser.addoption("--server_name", action="store", default="testhr")
+    parser.addoption("--server_name", action="store", default="test")
 
 
 @pytest.fixture(scope="class")
@@ -21,7 +21,7 @@ def setup(request):
         service_obj = Service("/Users/daanswinnen/Documents/chromedriver")
         driver = webdriver.Chrome(service=service_obj)
         driver.implicitly_wait(10)
-        driver.maximize_window
+        driver.maximize_window()
     elif browser_name == "firefox":
         print("Firefox not supported")
     elif browser_name == "IE":
@@ -36,7 +36,7 @@ def setup(request):
 
     request.cls.driver = driver
     yield
-    driver.close
+    driver.close()
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item):

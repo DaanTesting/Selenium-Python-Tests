@@ -19,3 +19,7 @@ class LocationsMainPage:
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation
+    
+    def generate_export(self):
+        selector1 = (By.XPATH, "//a[.='» Export']")
+        self.driver.find_element(*selector1).click()
