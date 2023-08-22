@@ -1,3 +1,4 @@
+import time
 from selenium.webdriver.common.by import By
 from pageObjects.MspIndividualCustomer import MspIndividualCustomer
 
@@ -24,3 +25,31 @@ class MspCustomerPage:
         self.driver.find_element(*selector1).click()
         mspindividualcustomer = MspIndividualCustomer(self.driver)
         return mspindividualcustomer
+
+    def generate_mobility_customers_export(self):
+        selector1 = (By.XPATH, "//a[contains(text(),'Mobility')]")
+        selector2 = (By.XPATH, "//button[.=' Download customers']")
+        self.driver.find_element(*selector1).click()
+        time.sleep(3)
+        self.driver.find_element(*selector2).click()
+
+    def generate_mobility_users_export(self):
+        selector1 = (By.XPATH, "//a[contains(text(),'Mobility')]")
+        selector2 = (By.XPATH, "//button[.=' Download users']")
+        self.driver.find_element(*selector1).click()
+        time.sleep(3)
+        self.driver.find_element(*selector2).click()
+
+    def generate_all_customers_export(self):
+        selector1 = (By.XPATH, "//a[contains(.,'All')]")
+        selector2 = (By.XPATH, "//button[.=' Download customers']")
+        self.driver.find_element(*selector1).click()
+        time.sleep(3)
+        self.driver.find_element(*selector2).click()
+
+    def generate_all_users_export(self):
+        selector1 = (By.XPATH, "//a[contains(.,'All')]")
+        selector2 = (By.XPATH, "//button[.=' Download users']")
+        self.driver.find_element(*selector1).click()
+        time.sleep(3)
+        self.driver.find_element(*selector2).click()

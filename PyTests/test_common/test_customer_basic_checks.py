@@ -50,6 +50,7 @@ class TestOne(BaseClass):
         tagtitle = str(tagmanagerpage.page_title().text)
         assert "Tag manager" in tagtitle
         log.info("Verified tags page.")
+        homepage.menu_label_administration()
         homepage.menu_label_external_users()
         externalusertitle = str(
             self.driver.find_element(By.XPATH, "//h1[.='External users']").text

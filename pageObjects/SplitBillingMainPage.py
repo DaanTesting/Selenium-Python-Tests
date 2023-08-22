@@ -30,3 +30,7 @@ class SplitBillingMainPage:
         selector2 = (By.CSS_SELECTOR, "#okButton")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
+
+    def generate_export(self):
+        selector1 = (By.XPATH, "(//a[normalize-space()='Export excel'])[1]")
+        self.driver.find_element(*selector1).click()

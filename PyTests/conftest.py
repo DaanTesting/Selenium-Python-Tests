@@ -1,14 +1,15 @@
 import pytest
+import os
+import shutil
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-import time
 
 driver = None
 
-
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome")
-    parser.addoption("--server_name", action="store", default="test")
+    parser.addoption("--server_name", action="store", default="testhr")
 
 
 @pytest.fixture(scope="class")
@@ -17,11 +18,20 @@ def setup(request):
     browser_name = request.config.getoption("browser_name")
     server_name = request.config.getoption("server_name")
 
+    if os.path.exists("/Users/daanswinnen/Downloads/SeleniumCache"):
+        pass
+    else:
+        os.mkdir("/Users/daanswinnen/Downloads/SeleniumCache")
+
     if browser_name == "chrome":
         service_obj = Service("/Users/daanswinnen/Documents/chromedriver")
-        driver = webdriver.Chrome(service=service_obj)
+        options = Options()
+        options.add_argument("--remote-allow-origins=*")
+        options.add_experimental_option("prefs", {"download.default_directory": r"/Users/daanswinnen/Downloads/SeleniumCache"})
+        driver = webdriver.Chrome(service=service_obj, options=options)
         driver.implicitly_wait(10)
         driver.maximize_window()
+
     elif browser_name == "firefox":
         print("Firefox not supported")
     elif browser_name == "IE":
@@ -36,6 +46,7 @@ def setup(request):
 
     request.cls.driver = driver
     yield
+    shutil.rmtree("/Users/daanswinnen/Downloads/SeleniumCache")
     driver.close()
 
 @pytest.hookimpl(hookwrapper=True)

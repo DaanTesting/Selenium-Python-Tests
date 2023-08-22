@@ -12,6 +12,13 @@ from pageObjects.AccountDetailsPage import AccountDetailsPage
 from pageObjects.HrProfilesOverview import HrProfilesOverview
 from pageObjects.UserDetailPageTest import UserDetailPageTest
 from pageObjects.RuleEngineOverview import RuleEngineOverview
+from pageObjects.CpoTokensPage import CpoTokensPage
+from pageObjects.CpoSimCardsPage import CpoSimCardsPage
+from pageObjects.CpoRoamingPage import CpoRoamingPage
+from pageObjects.CpoReportsPage import CpoReportsPage
+from pageObjects.MspTokensPage import MspTokensPage
+from pageObjects.MspVouchersPage import MspVouchersPage
+from pageObjects.MspOperatorsPage import MspOperatorsPage
 
 
 class HomePage:
@@ -137,10 +144,14 @@ class HomePage:
     def menu_label_msp_tokens(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Tokens'])[2]")
         self.driver.find_element(*selector1).click()
+        msptokenspage = MspTokensPage(self.driver)
+        return msptokenspage
 
     def menu_label_msp_vouchers(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Vouchers'])[1]")
         self.driver.find_element(*selector1).click()
+        mspvoucherspage = MspVouchersPage(self.driver)
+        return mspvoucherspage
 
     def menu_label_msp_contracts(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Contracts'])[2]")
@@ -149,6 +160,8 @@ class HomePage:
     def menu_label_msp_operators(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Operators'])[1]")
         self.driver.find_element(*selector1).click()
+        mspoperatorspage = MspOperatorsPage(self.driver)
+        return mspoperatorspage 
 
     def menu_label_cpo_overview(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Overview'])[1]")
@@ -157,10 +170,14 @@ class HomePage:
     def menu_label_cpo_tokens(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Tokens'])[1]")
         self.driver.find_element(*selector1).click()
+        cpotokenspage = CpoTokensPage(self.driver)
+        return cpotokenspage
 
     def menu_label_cpo_simcards(self):
         selector1 = (By.XPATH, "(//a[@href='/co/admin/simcards/'])[1]")
         self.driver.find_element(*selector1).click()
+        cposimcardspage = CpoSimCardsPage(self.driver)
+        return cposimcardspage
 
     def menu_label_cpo_contracts(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Contracts'])[1]")
@@ -169,6 +186,8 @@ class HomePage:
     def menu_label_cpo_roaming(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Roaming'])[1]")
         self.driver.find_element(*selector1).click()
+        cporoamingpage = CpoRoamingPage(self.driver)
+        return cporoamingpage
 
     def menu_label_cpo_finance(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Finance'])[1]")
@@ -177,6 +196,8 @@ class HomePage:
     def menu_label_cpo_reports(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Reports'])[1]")
         self.driver.find_element(*selector1).click()
+        cporeportspage = CpoReportsPage(self.driver)
+        return cporeportspage
     
     def menu_label_preferences(self):
         selector1 = (By.XPATH, "(//span[contains(@class,'menu-label')][normalize-space()='Preferences'])[1]")
@@ -189,7 +210,7 @@ class HomePage:
         return userdetailpagetest
 
     def menu_label_external_users(self):
-        selector1 = (By.XPATH, "(//span[@class='menu-label'][normalize-space()='External users'])[1]")
+        selector1 = (By.XPATH, "(//span[.='External users'])[1]")
         self.driver.find_element(*selector1).click()
     
     def menu_label_user_invites(self):
@@ -221,6 +242,3 @@ class HomePage:
         self.driver.find_element(*selector1).click()
         ruleengineoverview = RuleEngineOverview(self.driver)
         return ruleengineoverview
-    
-    
-
