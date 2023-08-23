@@ -34,6 +34,7 @@ class TestOne(BaseClass):
         tagname = str(datetime.now())
         tagmanagerpage.choose_tag_name_field().send_keys(tagname)
         log.info("Set tag name as 'timestamp'.")
+        time.sleep(1)
         tagmanagerpage.select_available_user()
         time.sleep(2)
         tagmanagerpage.move_all_users_right()

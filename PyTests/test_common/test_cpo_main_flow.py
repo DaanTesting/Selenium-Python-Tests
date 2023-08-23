@@ -78,8 +78,7 @@ class TestTwo(BaseClass):
         log.info("Selecting contract.")
         mspindividualcustomer.create_contract_select_formula_freepostpaid()
         log.info("Selecting user.")
-        mspindividualcustomer.create_contract_select_user().select_by_value(
-            newestuser)
+        mspindividualcustomer.create_contract_select_user().select_by_index(5)
         mspindividualcustomer.create_contract_create_button()
         time.sleep(1)
         message = mspindividualcustomer.message_contract_created().text

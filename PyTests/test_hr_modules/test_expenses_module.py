@@ -16,7 +16,7 @@ def login_data(request):
     return request.param
 
 
-class TestSubModuleOne(BaseClass):
+class TestOne(BaseClass):
     def test_expenses_DownloadAttachment_HRmod(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -48,7 +48,7 @@ class TestSubModuleOne(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestSubModuleTwo(BaseClass):
+class TestTwo(BaseClass):
     def test_expenses_verify_overview(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -70,6 +70,8 @@ class TestSubModuleTwo(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestThree(BaseClass):
     def test_expenses_detail_modal(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -103,6 +105,8 @@ class TestSubModuleTwo(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestFour(BaseClass):
     def test_expenses_detail_modal_attachment_scroll(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -132,7 +136,7 @@ class TestSubModuleTwo(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestSubModuleThree(BaseClass):
+class TestFive(BaseClass):
     def test_expenses_SearchByID_HRmod(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -174,6 +178,8 @@ class TestSubModuleThree(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestSix(BaseClass):
     def test_expenses_SearchByType_HRmod(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -206,7 +212,7 @@ class TestSubModuleThree(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestSubModuleFour(BaseClass):
+class TestSeven(BaseClass):
     def test_expenses_DenyUndo_HRmod(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -242,7 +248,8 @@ class TestSubModuleFour(BaseClass):
         time.sleep(1)
 
         self.driver.find_element(By.XPATH, "//span[text()='Pending']").click()
-        self.driver.find_element(By.XPATH, "//tbody/tr/td/div/div/button").click()
+        time.sleep(2)
+        self.driver.find_element(By.XPATH, "(//tbody/tr/td/div/div/button)[1]").click()
         time.sleep(1)
         self.driver.find_element(By.XPATH, "//a[text()='Undo']").click()
         log.info("Undo expense.")
@@ -253,12 +260,14 @@ class TestSubModuleFour(BaseClass):
             By.XPATH, "//div[@class='fade alert alert-success alert-dismissible show']"
         ).text
 
-        assert Message == "Expense was updated successfully and is now marked as new."
+        assert "was updated successfully and is now marked as 'new'" in Message
         log.info("Succesfully marked expense as 'new'.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestEight(BaseClass):
     def test_expenses_ApproveUndo_HRmod(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -308,14 +317,14 @@ class TestSubModuleFour(BaseClass):
             By.XPATH, "//div[@class='fade alert alert-success alert-dismissible show']"
         ).text
 
-        assert Message == "Expense was updated successfully and is now marked as new."
+        assert "was updated successfully and is now marked as 'new'" in Message
         log.info("Succesfully marked expense as 'new'.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
 
-class TestSubModuleFive(BaseClass):
+class TestNine(BaseClass):
     def test_expenses_verify_error_tab(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -342,6 +351,8 @@ class TestSubModuleFive(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestTen(BaseClass):
     def test_expenses_date_picker(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -377,6 +388,8 @@ class TestSubModuleFive(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestEleven(BaseClass):
     def test_expenses_status_filter(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -394,7 +407,7 @@ class TestSubModuleFive(BaseClass):
 
         expensesmainpage.expenses_filter_paid()
         log.info("Filtering expenses for 'paid'-status.")
-        time.sleep(2)
+        time.sleep(5)
         statustags = self.driver.find_elements(By.XPATH, "//tr/td[6]")
         for statustag in statustags:
             assert str(statustag.text) == "Paid"

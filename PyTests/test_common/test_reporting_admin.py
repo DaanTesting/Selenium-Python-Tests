@@ -5,6 +5,7 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from utilities.BaseClass import BaseClass
+from utilities.Settings import cache_directory
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
 from pageObjects.GeneralObjects import GeneralObjects
@@ -31,7 +32,7 @@ class TestOne(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"customers-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -59,7 +60,7 @@ class TestTwo(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"locations-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -88,7 +89,7 @@ class TestThree(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache"
+        download_directory = cache_directory
         downloaded_file_name = f"tokens_assigned-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -101,7 +102,7 @@ class TestThree(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache"
+        download_directory = cache_directory
         downloaded_file_name = f"tokens_available-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -129,7 +130,7 @@ class TestFour(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"simcards-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -155,7 +156,7 @@ class TestFive(BaseClass):
         cporoamingpage = homepage.menu_label_cpo_roaming()
         cporoamingpage.export_prices()
 
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"1-sp_test.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -185,7 +186,7 @@ class TestSix(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"sessions-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -195,7 +196,7 @@ class TestSix(BaseClass):
 
         cporeportspage.export_csv()
 
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"sessions-{formatted_date}.csv"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -223,7 +224,7 @@ class TestSix(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"split_billing-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -251,7 +252,7 @@ class TestSeven(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"customers-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -264,7 +265,7 @@ class TestSeven(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"users-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -276,7 +277,7 @@ class TestSeven(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"customers-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -289,7 +290,7 @@ class TestSeven(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"users-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -317,8 +318,8 @@ class TestEight(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
-        downloaded_file_name = f"tokens_in_use-{formatted_date}.xlsx"
+        download_directory = cache_directory
+        downloaded_file_name = f"tokens_assigned-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
         time.sleep(3)
@@ -328,7 +329,7 @@ class TestEight(BaseClass):
         msptokenspage.export_available_tokens()
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"tokens_available-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -356,7 +357,7 @@ class TestNine(BaseClass):
 
         today = datetime.date.today()
         formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"vouchers-{formatted_date}.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
@@ -387,7 +388,7 @@ class TestTen(BaseClass):
 
         time.sleep(2)
 
-        download_directory = "/Users/daanswinnen/Downloads/SeleniumCache/"
+        download_directory = cache_directory
         downloaded_file_name = f"export_from_2022-01-01_until_2023-12-13.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 

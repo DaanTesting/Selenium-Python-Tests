@@ -4,6 +4,9 @@ import shutil
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from utilities.Settings import cache_directory
+from utilities.Settings import chromedriver_directory
+from utilities.Settings import screenshot_directory
 
 driver = None
 
@@ -17,17 +20,17 @@ def setup(request):
     global driver
     browser_name = request.config.getoption("browser_name")
     server_name = request.config.getoption("server_name")
-
-    if os.path.exists("/Users/daanswinnen/Downloads/SeleniumCache"):
+    
+    if os.path.exists(cache_directory):
         pass
     else:
-        os.mkdir("/Users/daanswinnen/Downloads/SeleniumCache")
+        os.mkdir(cache_directory)
 
     if browser_name == "chrome":
-        service_obj = Service("/Users/daanswinnen/Documents/chromedriver")
+        service_obj = Service(chromedriver_directory)
         options = Options()
         options.add_argument("--remote-allow-origins=*")
-        options.add_experimental_option("prefs", {"download.default_directory": r"/Users/daanswinnen/Downloads/SeleniumCache"})
+        options.add_experimental_option("prefs", {"download.default_directory": cache_directory})
         driver = webdriver.Chrome(service=service_obj, options=options)
         driver.implicitly_wait(10)
         driver.maximize_window()
@@ -46,7 +49,7 @@ def setup(request):
 
     request.cls.driver = driver
     yield
-    shutil.rmtree("/Users/daanswinnen/Downloads/SeleniumCache")
+    shutil.rmtree(cache_directory)
     driver.close()
 
 @pytest.hookimpl(hookwrapper=True)
@@ -75,5 +78,5 @@ def pytest_runtest_makereport(item):
 
 
 def _capture_screenshot(name):
-    path = r"/Users/daanswinnen/Documents/Screenshots/{}".format(name)
+    path = screenshot_directory.format(name)
     driver.get_screenshot_as_file(path)
