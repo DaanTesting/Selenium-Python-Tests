@@ -1,3 +1,5 @@
+import time
+
 import pytest
 from selenium.webdriver.common.by import By
 
@@ -22,6 +24,7 @@ class TestOne(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        time.sleep(1)
         return homepage
 
     def test_msp_customers_screen(self, setup, login_data):
