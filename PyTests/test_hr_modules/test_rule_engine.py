@@ -15,6 +15,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 user_os = platform.system()
 
+
 @pytest.fixture(params=LoginPageData.testhr_login_data)
 def login_data(request):
     return request.param
@@ -95,7 +96,7 @@ class TestSubmoduleTwo(BaseClass):
         time.sleep(1)
         actions.send_keys(Keys.ENTER)
         actions.perform()
-        if user_os == 'Darwin':
+        if user_os == "Darwin":
             changerulesetpage.ruleset_description_field().send_keys(Keys.COMMAND + "a")
         else:
             changerulesetpage.ruleset_description_field().send_keys(Keys.CONTROL + "a")

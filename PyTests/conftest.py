@@ -10,6 +10,7 @@ from utilities.Settings import screenshot_directory
 
 driver = None
 
+
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome")
     parser.addoption("--server_name", action="store", default="testhr")
@@ -20,7 +21,7 @@ def setup(request):
     global driver
     browser_name = request.config.getoption("browser_name")
     server_name = request.config.getoption("server_name")
-    
+
     if os.path.exists(cache_directory):
         pass
     else:
@@ -30,7 +31,9 @@ def setup(request):
         service_obj = Service(chromedriver_directory)
         options = Options()
         options.add_argument("--remote-allow-origins=*")
-        options.add_experimental_option("prefs", {"download.default_directory": cache_directory})
+        options.add_experimental_option(
+            "prefs", {"download.default_directory": cache_directory}
+        )
         driver = webdriver.Chrome(service=service_obj, options=options)
         driver.implicitly_wait(10)
         driver.maximize_window()
@@ -51,6 +54,7 @@ def setup(request):
     yield
     shutil.rmtree(cache_directory)
     driver.close()
+
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item):

@@ -97,6 +97,7 @@ class TestTwo(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
 class TestThree(BaseClass):
     def test_locations_search_devices(self, setup, login_data):
         log = self.get_logger()

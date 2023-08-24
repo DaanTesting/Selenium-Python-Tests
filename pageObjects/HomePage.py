@@ -161,7 +161,7 @@ class HomePage:
         selector1 = (By.XPATH, "(//span[normalize-space()='Operators'])[1]")
         self.driver.find_element(*selector1).click()
         mspoperatorspage = MspOperatorsPage(self.driver)
-        return mspoperatorspage 
+        return mspoperatorspage
 
     def menu_label_cpo_overview(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Overview'])[1]")
@@ -198,13 +198,19 @@ class HomePage:
         self.driver.find_element(*selector1).click()
         cporeportspage = CpoReportsPage(self.driver)
         return cporeportspage
-    
+
     def menu_label_preferences(self):
-        selector1 = (By.XPATH, "(//span[contains(@class,'menu-label')][normalize-space()='Preferences'])[1]")
+        selector1 = (
+            By.XPATH,
+            "(//span[contains(@class,'menu-label')][normalize-space()='Preferences'])[1]",
+        )
         self.driver.find_element(*selector1).click()
-    
+
     def menu_label_users(self):
-        selector1 = (By.XPATH, "(//span[@class='menu-label'][normalize-space()='Users'])[1]")
+        selector1 = (
+            By.XPATH,
+            "(//span[@class='menu-label'][normalize-space()='Users'])[1]",
+        )
         self.driver.find_element(*selector1).click()
         userdetailpagetest = UserDetailPageTest(self.driver)
         return userdetailpagetest
@@ -212,29 +218,47 @@ class HomePage:
     def menu_label_external_users(self):
         selector1 = (By.XPATH, "(//span[.='External users'])[1]")
         self.driver.find_element(*selector1).click()
-    
+
     def menu_label_user_invites(self):
-        selector1 = (By.XPATH, "(//span[@class='menu-label'][normalize-space()='User invites'])[1]")
+        selector1 = (
+            By.XPATH,
+            "(//span[@class='menu-label'][normalize-space()='User invites'])[1]",
+        )
         self.driver.find_element(*selector1).click()
-    
+
     def menu_label_invoices(self):
-        selector1 = (By.XPATH, "(//span[contains(@class,'menu-label')][normalize-space()='Invoices'])[1]")
+        selector1 = (
+            By.XPATH,
+            "(//span[contains(@class,'menu-label')][normalize-space()='Invoices'])[1]",
+        )
         self.driver.find_element(*selector1).click()
 
     def menu_label_credit(self):
-        selector1 = (By.XPATH, "(//span[contains(@class,'menu-label')][normalize-space()='Credit'])[1]")
+        selector1 = (
+            By.XPATH,
+            "(//span[contains(@class,'menu-label')][normalize-space()='Credit'])[1]",
+        )
         self.driver.find_element(*selector1).click()
-    
+
     def menu_label_revenue(self):
-        selector1 = (By.XPATH, "(//span[contains(@class,'menu-label')][normalize-space()='Revenue'])[1]")
+        selector1 = (
+            By.XPATH,
+            "(//span[contains(@class,'menu-label')][normalize-space()='Revenue'])[1]",
+        )
         self.driver.find_element(*selector1).click()
-    
+
     def menu_label_payment_requests(self):
-        selector1 = (By.XPATH, "(//span[@class='menu-label'][normalize-space()='Payment requests'])[1]")
+        selector1 = (
+            By.XPATH,
+            "(//span[@class='menu-label'][normalize-space()='Payment requests'])[1]",
+        )
         self.driver.find_element(*selector1).click()
-    
+
     def menu_label_debit_notes(self):
-        selector1 = (By.XPATH, "(//span[@class='menu-label'][normalize-space()='Debit notes'])[1]")
+        selector1 = (
+            By.XPATH,
+            "(//span[@class='menu-label'][normalize-space()='Debit notes'])[1]",
+        )
         self.driver.find_element(*selector1).click()
 
     def menu_label_rule_engine(self):

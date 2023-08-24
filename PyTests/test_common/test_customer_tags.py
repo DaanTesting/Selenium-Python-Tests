@@ -48,6 +48,7 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
 class TestTwo(BaseClass):
     def test_tags_create_delete_expanded(self, setup, login_data):
         log = self.get_logger()

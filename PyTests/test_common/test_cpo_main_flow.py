@@ -49,6 +49,7 @@ class TestOne(BaseClass):
 def login_data(request):
     return request.param
 
+
 class TestTwo(BaseClass):
     def test_create_user_contract(self, setup, login_data):
         log = self.get_logger()

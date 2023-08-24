@@ -9,6 +9,7 @@ from pageObjects.RouteplannerLogin import RouteplannerLogin
 from pageObjects.RouteplannerMain import RouteplannerMain
 from PyTests.TestData.LoginPageData import LoginPageData
 
+
 @pytest.fixture(params=LoginPageData.plannertest_data)
 def login_data(request):
     return request.param
@@ -27,20 +28,32 @@ class TestSubModuleOne(BaseClass):
         routeplannermain.use_button()
         time.sleep(3)
 
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]").click()
-
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]"
+        ).click()
 
         time.sleep(15)
+
 
 class TestSubModuleTwo(BaseClass):
     def test_routeplanner_testcase2(self, setup, login_data):
@@ -55,19 +68,32 @@ class TestSubModuleTwo(BaseClass):
         routeplannermain.use_button()
         time.sleep(3)
 
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]"
+        ).click()
 
         time.sleep(15)
+
 
 class TestSubModuleThree(BaseClass):
     def test_routeplanner_testcase3(self, setup, login_data):
@@ -82,16 +108,28 @@ class TestSubModuleThree(BaseClass):
         routeplannermain.use_button()
         time.sleep(3)
 
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]").click()
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]"
+        ).click()
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]").click()
-        
+        self.driver.find_element(
+            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]"
+        ).click()
+
         time.sleep(15)

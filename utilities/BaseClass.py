@@ -2,10 +2,10 @@ import logging
 import inspect
 import pytest
 
+
 @pytest.mark.usefixtures("setup")
 class BaseClass:
     def get_logger(self):
-
         loggerName = inspect.stack()[1][3]
         logger = logging.getLogger(loggerName)
 

@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 import time
 
+
 class UserDetailPage:
     def __init__(self, driver):
         self.driver = driver
@@ -28,7 +29,6 @@ class UserDetailPage:
         assert subtitlecontact == "CONTACT"
         titlemobilitypolicies = self.driver.find_element(*selector6).text
         assert titlemobilitypolicies == "Mobility policies"
-       
 
     def userdetail_select_employment_tab(self):
         selector1 = (

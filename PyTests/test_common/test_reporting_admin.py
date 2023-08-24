@@ -398,4 +398,3 @@ class TestTen(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-

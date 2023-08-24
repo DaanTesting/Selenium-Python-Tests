@@ -63,9 +63,12 @@ class ChangeMobilityPolicyPage:
         selector2 = (By.CSS_SELECTOR, "#service-item-4")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
-    
+
     def change_mobility_policy_duplicate(self):
-        selector1 = (By.XPATH, "//div/button[@class='d-flex align-items-center custom-toggle-button-hidden dropdown-toggle btn btn-default']")
+        selector1 = (
+            By.XPATH,
+            "//div/button[@class='d-flex align-items-center custom-toggle-button-hidden dropdown-toggle btn btn-default']",
+        )
         selector2 = (By.XPATH, "(//a[.='Duplicate'])")
         selector3 = (By.XPATH, "(//button[.='Duplicate'])")
         self.driver.find_element(*selector1).click()
