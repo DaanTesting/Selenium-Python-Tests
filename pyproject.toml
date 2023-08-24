@@ -1,0 +1,53 @@
+[tool.black]
+line-length = 79
+target_version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 79
+combine_as_imports = true
+combine_star = true
+remove_redundant_aliases = true
+
+known_django = ["django"]
+known_django_thirdparty = [
+  "adminsortable",
+  "app_namespace",
+  "background_task",
+  "channels_redis",
+  "channels",
+  "compat",
+  "corsheaders",
+  "crispy_forms",
+  "crum",
+  "dal",
+  "django_countries",
+  "django_extensions",
+  "django_filters",
+  "django_redis",
+  "django_resized",
+  "dynamic_preferences",
+  "enmerkar",
+  "fcm_django",
+  "localflavor",
+  "loginas",
+  "model_utils",
+  "modeltranslation",
+  "pipeline",
+  "post_office",
+  "private_storage",
+  "rest_framework_nested",
+  "rest_framework",
+  "uuidfield",
+  "webpack_loader",
+  "websockets",
+]
+sections = [
+  "FUTURE",
+  "STDLIB",
+  "THIRDPARTY",
+  "DJANGO",
+  "DJANGO_THIRDPARTY",
+  "FIRSTPARTY",
+  "LOCALFOLDER",
+]

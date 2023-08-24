@@ -1,3 +1,5 @@
+from selenium.webdriver.common.by import By
+
 from pageObjects.AccountDetailsPage import AccountDetailsPage
 from pageObjects.CpoCustomerPage import CpoCustomerPage
 from pageObjects.CpoReportsPage import CpoReportsPage
@@ -18,7 +20,6 @@ from pageObjects.SplitBillingMainPage import SplitBillingMainPage
 from pageObjects.TagManagerPage import TagManagerPage
 from pageObjects.UserDetailPageTest import UserDetailPageTest
 from pageObjects.WhiteListPage import WhiteListPage
-from selenium.webdriver.common.by import By
 
 
 class HomePage:

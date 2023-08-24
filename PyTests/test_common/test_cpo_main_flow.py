@@ -2,6 +2,7 @@ import random
 import time
 
 import pytest
+
 from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
@@ -21,7 +22,9 @@ class TestOne(BaseClass):
 
         loginpage = LoginPage(self.driver)
 
-        loginpage.username_box().send_keys("daan.swinnen+splitbilling4@optimile.eu")
+        loginpage.username_box().send_keys(
+            "daan.swinnen+splitbilling4@optimile.eu"
+        )
         loginpage.password_box().send_keys("hHsxpRXGX9NrN4aw6iCH")
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
@@ -67,7 +70,9 @@ class TestTwo(BaseClass):
         log.info("Navigating to msp customers page.")
         mspcustomerpage = homepage.menu_label_msp_customers()
         log.info("Searching for 'Automated Test Company'.")
-        mspcustomerpage.search_by_name_field().send_keys("Automated Test Company")
+        mspcustomerpage.search_by_name_field().send_keys(
+            "Automated Test Company"
+        )
         log.info("Open 'Automated Test Company'.")
         mspindividualcustomer = mspcustomerpage.click_on_main_flow_account()
         log.info("Opening mail tab to gather most recent new user.")
@@ -107,7 +112,9 @@ class TestThree(BaseClass):
         log.info("Navigating towards msp customers page.")
         mspcustomerpage = homepage.menu_label_msp_customers()
         log.info("Search for 'Automated Test Company'.")
-        mspcustomerpage.search_by_name_field().send_keys("Automated Test Company")
+        mspcustomerpage.search_by_name_field().send_keys(
+            "Automated Test Company"
+        )
         log.info("Opening customer.")
         mspindividualcustomer = mspcustomerpage.click_on_main_flow_account()
         log.info("Attempting to assign token to user.")
@@ -130,7 +137,9 @@ class TestFour(BaseClass):
 
         loginpage = LoginPage(self.driver)
 
-        loginpage.username_box().send_keys("daan.swinnen+splitbilling4@optimile.eu")
+        loginpage.username_box().send_keys(
+            "daan.swinnen+splitbilling4@optimile.eu"
+        )
         loginpage.password_box().send_keys("hHsxpRXGX9NrN4aw6iCH")
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")

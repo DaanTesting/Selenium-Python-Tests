@@ -1,12 +1,13 @@
 import time
 
 import pytest
+from selenium.webdriver.common.by import By
+
 from pageObjects.ChargingSimulator import ChargingSimulator
 from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.ChargingSessionData import ChargingSessionData
 from PyTests.TestData.LoginPageData import LoginPageData
-from selenium.webdriver.common.by import By
 from utilities.BaseClass import BaseClass
 
 
@@ -30,7 +31,9 @@ class TestOne(BaseClass):
         log.info("Attempting to connect to simulator.")
         chargingsimulator.open_simulator()
         chargingsimulator.OCPP_ID_Field().clear()
-        chargingsimulator.OCPP_ID_Field().send_keys(roaming_session_data["OCPP ID"])
+        chargingsimulator.OCPP_ID_Field().send_keys(
+            roaming_session_data["OCPP ID"]
+        )
         chargingsimulator.mode_select_dropdown()
         chargingsimulator.connect_button()
         log.info("Connected to simulator.")
@@ -42,7 +45,9 @@ class TestOne(BaseClass):
             roaming_session_data["connectorId"]
         )
         log.info("Sending token RFID.")
-        chargingsimulator.id_tag_field().send_keys(roaming_session_data["token RFID"])
+        chargingsimulator.id_tag_field().send_keys(
+            roaming_session_data["token RFID"]
+        )
         chargingsimulator.meter_start_field().send_keys("1")
         log.info("Attempting to start transaction.")
         chargingsimulator.start_transaction_button()
@@ -82,15 +87,21 @@ class TestOne(BaseClass):
         homepage.menu_label_mobility()
         mspcustomerpage = homepage.menu_label_msp_customers()
         log.info("Searching for 'Autotesting Roaming'.")
-        mspcustomerpage.search_by_name_field().send_keys("Autotesting Roaming" + "\n")
+        mspcustomerpage.search_by_name_field().send_keys(
+            "Autotesting Roaming" + "\n"
+        )
         time.sleep(1)
         log.info("Opening customer.")
         mspindividualcustomer = mspcustomerpage.click_on_top_result_customer()
         log.info("Activity tab.")
         mspindividualcustomer.activity_tab()
-        statuslatestsession = self.driver.find_element(By.XPATH, "//tr[1]/td[6]").text
+        statuslatestsession = self.driver.find_element(
+            By.XPATH, "//tr[1]/td[6]"
+        ).text
         assert statuslatestsession == "Normal"
-        log.info("Succesfully verified charging session registered as 'normal'.")
+        log.info(
+            "Succesfully verified charging session registered as 'normal'."
+        )
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
@@ -103,7 +114,9 @@ class TestOne(BaseClass):
         log.info("Attempting to connect to simulator.")
         chargingsimulator.open_simulator()
         chargingsimulator.OCPP_ID_Field().clear()
-        chargingsimulator.OCPP_ID_Field().send_keys(roaming_session_data["OCPP ID"])
+        chargingsimulator.OCPP_ID_Field().send_keys(
+            roaming_session_data["OCPP ID"]
+        )
         chargingsimulator.mode_select_dropdown()
         chargingsimulator.connect_button()
         log.info("Connected to simulator.")
@@ -171,7 +184,9 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-    def test_splitbilling_session(self, setup, roaming_session_data, login_data):
+    def test_splitbilling_session(
+        self, setup, roaming_session_data, login_data
+    ):
         log = self.get_logger()
         log.info(login_data["account"])
         log.info(roaming_session_data["OCPP ID"])
@@ -222,7 +237,9 @@ class TestOne(BaseClass):
         chargingsimulator.stop_transaction_button()
         time.sleep(2)
 
-    def test_splitbilling_session__platform_verification(self, setup, login_data):
+    def test_splitbilling_session__platform_verification(
+        self, setup, login_data
+    ):
         log = self.get_logger()
         log.info(login_data["account"])
         log.info("Attempting login.")
@@ -237,7 +254,9 @@ class TestOne(BaseClass):
         homepage.menu_label_chargingpoints()
         cpocustomerpage = homepage.menu_label_cpo_customers()
         log.info("Searching for 'Autotest Splitbilling'.")
-        cpocustomerpage.search_by_name_field().send_keys("Autotest Splitbilling" + "\n")
+        cpocustomerpage.search_by_name_field().send_keys(
+            "Autotest Splitbilling" + "\n"
+        )
         log.info("Opening user.")
         cpoindividualcustomer = cpocustomerpage.click_on_top_result_customer()
         log.info("Opening sessions-tab")
@@ -246,7 +265,10 @@ class TestOne(BaseClass):
         statuslatestsession = self.driver.find_element(
             By.XPATH, "//tr[1]/td[10]/span"
         ).get_attribute("title")
-        assert statuslatestsession == "Session is remunerated under split billing."
+        assert (
+            statuslatestsession
+            == "Session is remunerated under split billing."
+        )
         log.info("Succesfully verified the session as 'Split Billing'.")
 
         generalobjects = GeneralObjects(self.driver)

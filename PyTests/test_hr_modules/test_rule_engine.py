@@ -3,14 +3,15 @@ import time
 from datetime import datetime
 
 import pytest
-from pageObjects.GeneralObjects import GeneralObjects
-from pageObjects.LoginPage import LoginPage
-from PyTests.TestData.LoginPageData import LoginPageData
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+
+from pageObjects.GeneralObjects import GeneralObjects
+from pageObjects.LoginPage import LoginPage
+from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 
 user_os = platform.system()

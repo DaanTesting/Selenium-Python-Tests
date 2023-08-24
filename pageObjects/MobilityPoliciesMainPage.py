@@ -1,6 +1,7 @@
+from selenium.webdriver.common.by import By
+
 from pageObjects.ChangeMobilityPolicyPage import ChangeMobilityPolicyPage
 from pageObjects.NewMobilityPolicyPage import NewMobilityPolicyPage
-from selenium.webdriver.common.by import By
 
 
 class MobilityPoliciesMainPage:

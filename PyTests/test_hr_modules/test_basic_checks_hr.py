@@ -2,12 +2,13 @@ import datetime
 import time
 
 import pytest
-from pageObjects.GeneralObjects import GeneralObjects
-from pageObjects.LoginPage import LoginPage
-from PyTests.TestData.LoginPageData import LoginPageData
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+
+from pageObjects.GeneralObjects import GeneralObjects
+from pageObjects.LoginPage import LoginPage
+from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 
 

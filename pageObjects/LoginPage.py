@@ -1,5 +1,6 @@
-from pageObjects.HomePage import HomePage
 from selenium.webdriver.common.by import By
+
+from pageObjects.HomePage import HomePage
 
 
 class LoginPage:

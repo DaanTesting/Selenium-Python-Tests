@@ -2,10 +2,11 @@ import time
 from datetime import datetime
 
 import pytest
+from selenium.webdriver.common.by import By
+
 from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
-from selenium.webdriver.common.by import By
 from utilities.BaseClass import BaseClass
 
 
