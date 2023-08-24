@@ -1,8 +1,9 @@
 import pytest
+from selenium.webdriver.common.by import By
+
 from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
-from selenium.webdriver.common.by import By
 from utilities.BaseClass import BaseClass
 
 
@@ -12,7 +13,7 @@ def login_data(request):
 
 
 class TestOne(BaseClass):
-    def test_msp_customers_screen(self, setup, login_data):
+    def _login(self, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
         log.info("Attempting login.")
@@ -21,6 +22,11 @@ class TestOne(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        return homepage
+
+    def test_msp_customers_screen(self, setup, login_data):
+        homepage = self._login(login_data)
+        log = self.get_logger()
         log.info("Navigating to msp customers page.")
         homepage.menu_label_mobility()
         homepage.menu_label_msp_customers()
@@ -34,14 +40,8 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
     def test_msp_tokens_screen(self, setup, login_data):
+        homepage = self._login(login_data)
         log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
         log.info("Navigating to msp tokens page.")
         homepage.menu_label_mobility()
         homepage.menu_label_msp_tokens()
@@ -55,14 +55,8 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
     def test_msp_vouchers_screen(self, setup, login_data):
+        homepage = self._login(login_data)
         log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
         log.info("Navigating to msp vouchers page.")
         homepage.menu_label_mobility()
         homepage.menu_label_msp_vouchers()
@@ -76,14 +70,8 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
     def test_msp_contracts_screen(self, setup, login_data):
+        homepage = self._login(login_data)
         log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
         log.info("Navigating to msp contracts page.")
         homepage.menu_label_mobility()
         homepage.menu_label_msp_contracts()
@@ -97,14 +85,8 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
     def test_msp_operators_screen(self, setup, login_data):
+        homepage = self._login(login_data)
         log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
         log.info("Navigating to msp operators page.")
         homepage.menu_label_mobility()
         homepage.menu_label_msp_operators()
@@ -118,14 +100,8 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
     def test_msp_invoices_screen(self, setup, login_data):
+        homepage = self._login(login_data)
         log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
         log.info("Navigating to msp invoices page.")
         homepage.menu_label_mobility()
         homepage.menu_label_msp_invoices()
