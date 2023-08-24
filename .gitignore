@@ -9,6 +9,9 @@ __pycache__
 *~
 *.orig
 
+# Logging
+*logfile.log
+
 # Python stuff
 __pycache__/
 .eggs/
@@ -28,4 +31,5 @@ static/
 *.swp
 .vscode
 
+# local settings
 *Settings.py
