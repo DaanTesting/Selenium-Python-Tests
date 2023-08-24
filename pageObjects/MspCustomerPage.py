@@ -1,6 +1,7 @@
 import time
-from selenium.webdriver.common.by import By
+
 from pageObjects.MspIndividualCustomer import MspIndividualCustomer
+from selenium.webdriver.common.by import By
 
 
 class MspCustomerPage:

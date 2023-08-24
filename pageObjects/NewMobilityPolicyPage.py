@@ -1,7 +1,8 @@
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
 import datetime
 import time
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 
 
 class NewMobilityPolicyPage:

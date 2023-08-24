@@ -1,14 +1,15 @@
-import time
-import pytest
 import datetime
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from utilities.BaseClass import BaseClass
-from pageObjects.LoginPage import LoginPage
-from PyTests.TestData.LoginPageData import LoginPageData
+import time
+
+import pytest
 from pageObjects.GeneralObjects import GeneralObjects
+from pageObjects.LoginPage import LoginPage
 from pageObjects.SplitBillingMainPage import SplitBillingMainPage
+from PyTests.TestData.LoginPageData import LoginPageData
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from utilities.BaseClass import BaseClass
 
 
 @pytest.fixture(params=LoginPageData.test_login_data)

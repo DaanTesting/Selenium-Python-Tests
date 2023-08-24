@@ -1,15 +1,16 @@
-import time
-import pytest
 import platform
+import time
 from datetime import datetime
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from utilities.BaseClass import BaseClass
+
+import pytest
+from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
-from pageObjects.GeneralObjects import GeneralObjects
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from utilities.BaseClass import BaseClass
 
 user_os = platform.system()
 

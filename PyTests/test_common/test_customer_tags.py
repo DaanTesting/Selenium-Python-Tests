@@ -1,11 +1,12 @@
-import pytest
 import time
 from datetime import datetime
-from selenium.webdriver.common.by import By
-from utilities.BaseClass import BaseClass
+
+import pytest
+from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
-from pageObjects.GeneralObjects import GeneralObjects
+from selenium.webdriver.common.by import By
+from utilities.BaseClass import BaseClass
 
 
 @pytest.fixture(params=LoginPageData.test_fullflow_data)

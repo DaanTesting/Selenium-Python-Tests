@@ -1,13 +1,14 @@
-import time
-import pytest
 import datetime
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from utilities.BaseClass import BaseClass
+import time
+
+import pytest
 from pageObjects.RouteplannerLogin import RouteplannerLogin
 from pageObjects.RouteplannerMain import RouteplannerMain
 from PyTests.TestData.LoginPageData import LoginPageData
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from utilities.BaseClass import BaseClass
 
 
 @pytest.fixture(params=LoginPageData.plannertest_data)

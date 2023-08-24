@@ -1,5 +1,5 @@
-from selenium.webdriver.common.by import By
 from pageObjects.IndividualChargingLocation import IndividualChargingLocation
+from selenium.webdriver.common.by import By
 
 
 class LocationsMainPage:

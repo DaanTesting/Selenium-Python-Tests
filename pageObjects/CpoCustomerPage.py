@@ -1,5 +1,5 @@
-from selenium.webdriver.common.by import By
 from pageObjects.CpoIndividualCustomer import CpoIndividualCustomer
+from selenium.webdriver.common.by import By
 
 
 class CpoCustomerPage:

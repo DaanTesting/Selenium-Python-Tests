@@ -1,10 +1,11 @@
-import time
-import pytest
 import random
-from utilities.BaseClass import BaseClass
+import time
+
+import pytest
+from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
-from pageObjects.GeneralObjects import GeneralObjects
+from utilities.BaseClass import BaseClass
 
 
 @pytest.fixture(params=LoginPageData.test_login_data)

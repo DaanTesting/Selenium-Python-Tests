@@ -1,6 +1,6 @@
-from selenium.webdriver.common.by import By
-from pageObjects.NewRulesetPage import NewRulesetPage
 from pageObjects.ChangeRulesetPage import ChangeRulesetPage
+from pageObjects.NewRulesetPage import NewRulesetPage
+from selenium.webdriver.common.by import By
 
 
 class RuleEngineOverview:

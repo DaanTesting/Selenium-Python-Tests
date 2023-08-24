@@ -1,14 +1,15 @@
-import pytest
-import time
-import random
 import platform
+import random
+import time
 from datetime import datetime
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from utilities.BaseClass import BaseClass
+
+import pytest
+from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
-from pageObjects.GeneralObjects import GeneralObjects
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from utilities.BaseClass import BaseClass
 
 user_os = platform.system()
 

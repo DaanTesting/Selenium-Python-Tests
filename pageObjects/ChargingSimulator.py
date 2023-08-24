@@ -1,6 +1,7 @@
+from datetime import datetime, timedelta
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-from datetime import datetime, timedelta
 
 
 class ChargingSimulator:

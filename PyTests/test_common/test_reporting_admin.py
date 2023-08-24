@@ -1,14 +1,15 @@
-import pytest
-import os
 import datetime
+import os
 import time
+
+import pytest
+from pageObjects.GeneralObjects import GeneralObjects
+from pageObjects.LoginPage import LoginPage
+from PyTests.TestData.LoginPageData import LoginPageData
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from utilities.BaseClass import BaseClass
 from utilities.Settings import cache_directory
-from pageObjects.LoginPage import LoginPage
-from PyTests.TestData.LoginPageData import LoginPageData
-from pageObjects.GeneralObjects import GeneralObjects
 
 
 @pytest.fixture(params=LoginPageData.test_login_data)

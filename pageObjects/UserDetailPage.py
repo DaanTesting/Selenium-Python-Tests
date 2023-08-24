@@ -1,5 +1,6 @@
-from selenium.webdriver.common.by import By
 import time
+
+from selenium.webdriver.common.by import By
 
 
 class UserDetailPage:

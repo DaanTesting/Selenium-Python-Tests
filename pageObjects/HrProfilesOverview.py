@@ -1,5 +1,5 @@
-from selenium.webdriver.common.by import By
 from pageObjects.UserDetailPage import UserDetailPage
+from selenium.webdriver.common.by import By
 
 
 class HrProfilesOverview:

@@ -1,5 +1,6 @@
-import logging
 import inspect
+import logging
+
 import pytest
 
 

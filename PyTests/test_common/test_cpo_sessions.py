@@ -1,12 +1,13 @@
 import time
+
 import pytest
+from pageObjects.ChargingSimulator import ChargingSimulator
+from pageObjects.GeneralObjects import GeneralObjects
+from pageObjects.LoginPage import LoginPage
+from PyTests.TestData.ChargingSessionData import ChargingSessionData
+from PyTests.TestData.LoginPageData import LoginPageData
 from selenium.webdriver.common.by import By
 from utilities.BaseClass import BaseClass
-from pageObjects.LoginPage import LoginPage
-from PyTests.TestData.LoginPageData import LoginPageData
-from PyTests.TestData.ChargingSessionData import ChargingSessionData
-from pageObjects.GeneralObjects import GeneralObjects
-from pageObjects.ChargingSimulator import ChargingSimulator
 
 
 @pytest.fixture(params=ChargingSessionData.roaming_session_data)

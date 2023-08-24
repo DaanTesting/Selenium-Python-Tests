@@ -1,9 +1,9 @@
 import pytest
-from selenium.webdriver.common.by import By
-from utilities.BaseClass import BaseClass
+from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
-from pageObjects.GeneralObjects import GeneralObjects
+from selenium.webdriver.common.by import By
+from utilities.BaseClass import BaseClass
 
 
 @pytest.fixture(params=LoginPageData.test_login_data)
