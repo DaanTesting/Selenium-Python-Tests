@@ -7695,3 +7695,550 @@
 2023-08-23 12:13:48,758 : INFO : test_re_edit_rule : Navigating to rule engine page.
 2023-08-23 12:13:49,375 : INFO : test_re_edit_rule : Searching for 'active test' ruleset.
 2023-08-23 12:13:50,413 : INFO : test_re_edit_rule : Opening ruleset.
+2023-08-29 15:45:09,709 : INFO : test_expenses_detail_modal_attachment_scroll : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:45:09,709 : INFO : test_expenses_detail_modal_attachment_scroll : Attempting Login.
+2023-08-29 15:45:10,664 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully logged in.
+2023-08-29 15:45:10,664 : INFO : test_expenses_detail_modal_attachment_scroll : Navigating to expenses-page.
+2023-08-29 15:45:12,307 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully searched for expense with ID 13513.
+2023-08-29 15:47:30,408 : INFO : test_expenses_detail_modal_attachment_scroll : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:47:30,408 : INFO : test_expenses_detail_modal_attachment_scroll : Attempting Login.
+2023-08-29 15:47:31,581 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully logged in.
+2023-08-29 15:47:31,581 : INFO : test_expenses_detail_modal_attachment_scroll : Navigating to expenses-page.
+2023-08-29 15:47:33,335 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully searched for expense with ID 13513.
+2023-08-29 15:48:09,792 : INFO : test_expenses_detail_modal_attachment_scroll : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:48:09,792 : INFO : test_expenses_detail_modal_attachment_scroll : Attempting Login.
+2023-08-29 15:48:10,952 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully logged in.
+2023-08-29 15:48:10,952 : INFO : test_expenses_detail_modal_attachment_scroll : Navigating to expenses-page.
+2023-08-29 15:48:12,536 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully searched for expense with ID 13513.
+2023-08-29 15:48:16,665 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully scrolled between various attachments.
+2023-08-29 15:48:34,309 : INFO : test_expenses_detail_modal_attachment_scroll : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:48:34,309 : INFO : test_expenses_detail_modal_attachment_scroll : Attempting Login.
+2023-08-29 15:48:35,394 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully logged in.
+2023-08-29 15:48:35,395 : INFO : test_expenses_detail_modal_attachment_scroll : Navigating to expenses-page.
+2023-08-29 15:48:37,092 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully searched for expense with ID 13513.
+2023-08-29 15:48:40,233 : INFO : test_expenses_detail_modal_attachment_scroll : Succesfully scrolled between various attachments.
+2023-08-29 15:50:04,343 : INFO : test_expenses_SearchByType_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:50:04,344 : INFO : test_expenses_SearchByType_HRmod : Attempting Login.
+2023-08-29 15:50:05,816 : INFO : test_expenses_SearchByType_HRmod : Succesfully logged in.
+2023-08-29 15:50:05,816 : INFO : test_expenses_SearchByType_HRmod : Navigating to expenses-page.
+2023-08-29 15:50:07,512 : INFO : test_expenses_SearchByType_HRmod : Searched for expense type 'taxi'.
+2023-08-29 15:50:25,026 : INFO : test_expenses_SearchByType_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:50:25,026 : INFO : test_expenses_SearchByType_HRmod : Attempting Login.
+2023-08-29 15:50:26,060 : INFO : test_expenses_SearchByType_HRmod : Succesfully logged in.
+2023-08-29 15:50:26,061 : INFO : test_expenses_SearchByType_HRmod : Navigating to expenses-page.
+2023-08-29 15:50:27,679 : INFO : test_expenses_SearchByType_HRmod : Searched for expense type 'taxi'.
+2023-08-29 15:50:28,843 : INFO : test_expenses_SearchByType_HRmod : Succesfully verified that only taxi-expenses are visible.
+2023-08-29 15:54:29,172 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:54:29,172 : INFO : test_mobility_policies_searchbar : Attempting login.
+2023-08-29 15:54:30,150 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2023-08-29 15:54:30,150 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2023-08-29 15:54:30,822 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2023-08-29 15:54:49,204 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:54:49,204 : INFO : test_mobility_policies_searchbar : Attempting login.
+2023-08-29 15:54:50,181 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2023-08-29 15:54:50,182 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2023-08-29 15:54:50,977 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2023-08-29 15:54:51,997 : INFO : test_mobility_policies_searchbar : Succesfully verified search result.
+2023-08-29 15:55:45,903 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:55:45,903 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2023-08-29 15:55:46,974 : INFO : test_mobility_policies_activate_draft : Succesfully logged in.
+2023-08-29 15:55:46,974 : INFO : test_mobility_policies_activate_draft : Navigating to mobility policies page.
+2023-08-29 15:55:47,855 : INFO : test_mobility_policies_activate_draft : Filtering for draft policies.
+2023-08-29 15:56:32,385 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:56:32,386 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2023-08-29 15:56:33,344 : INFO : test_mobility_policies_activate_draft : Succesfully logged in.
+2023-08-29 15:56:33,344 : INFO : test_mobility_policies_activate_draft : Navigating to mobility policies page.
+2023-08-29 15:56:34,110 : INFO : test_mobility_policies_activate_draft : Filtering for draft policies.
+2023-08-29 15:56:37,811 : INFO : test_mobility_policies_activate_draft : Succesfully activated draft policy.
+2023-08-29 15:56:43,613 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 15:56:43,613 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 15:56:44,613 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 15:56:44,613 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 15:56:45,284 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 15:56:46,726 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 15:56:48,849 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-29 15:56:48,979 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-29 15:56:49,032 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-29 16:12:15,181 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:12:15,181 : INFO : test_mobility_policies_create_policy : Attempting login.
+2023-08-29 16:12:16,135 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2023-08-29 16:12:16,135 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2023-08-29 16:12:16,853 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2023-08-29 16:12:17,157 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2023-08-29 16:12:17,180 : INFO : test_mobility_policies_create_policy : Selected mobility policy type as 'professional'.
+2023-08-29 16:12:17,281 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2023-08-29 16:12:17,326 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2023-08-29 16:12:17,380 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2023-08-29 16:12:17,380 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2023-08-29 16:12:17,547 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2023-08-29 16:12:17,606 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2023-08-29 16:12:19,712 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2023-08-29 16:12:19,746 : INFO : test_mobility_policies_create_policy : Succesfully verified new mobility policy is now active.
+2023-08-29 16:12:35,834 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:12:35,834 : INFO : test_mobility_policies_create_draft : Attempting login.
+2023-08-29 16:12:36,872 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2023-08-29 16:12:36,872 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2023-08-29 16:12:37,523 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2023-08-29 16:12:37,848 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2023-08-29 16:12:37,872 : INFO : test_mobility_policies_create_draft : Selected mobility policy type as 'professional'.
+2023-08-29 16:12:38,028 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2023-08-29 16:12:38,068 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2023-08-29 16:12:38,113 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2023-08-29 16:12:38,114 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2023-08-29 16:12:38,280 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2023-08-29 16:12:38,341 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2023-08-29 16:12:38,341 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2023-08-29 16:12:39,422 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2023-08-29 16:12:56,937 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:12:56,937 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2023-08-29 16:12:57,941 : INFO : test_mobility_policies_activate_draft : Succesfully logged in.
+2023-08-29 16:12:57,942 : INFO : test_mobility_policies_activate_draft : Navigating to mobility policies page.
+2023-08-29 16:12:58,742 : INFO : test_mobility_policies_activate_draft : Filtering for draft policies.
+2023-08-29 16:13:02,518 : INFO : test_mobility_policies_activate_draft : Succesfully activated draft policy.
+2023-08-29 16:13:13,341 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:13:13,341 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 16:13:14,418 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 16:13:14,418 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 16:13:15,450 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 16:13:16,918 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 16:13:19,038 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-29 16:13:19,152 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-29 16:13:19,197 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-29 16:13:20,521 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-29 16:13:20,770 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-29 16:13:21,862 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-29 16:13:25,413 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-29 16:16:41,905 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:16:41,906 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 16:16:43,031 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 16:16:43,031 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 16:16:43,940 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 16:16:45,433 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 16:16:47,550 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-29 16:16:47,680 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-29 16:16:47,735 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-29 16:16:49,183 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-29 16:16:49,402 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-29 16:19:44,462 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:19:44,462 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 16:19:45,478 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 16:19:45,478 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 16:19:46,106 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 16:19:47,617 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 16:21:54,665 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:21:54,665 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 16:21:55,671 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 16:21:55,671 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 16:21:56,246 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 16:21:57,694 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 16:22:39,816 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:22:39,816 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 16:22:40,824 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 16:22:40,824 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 16:22:41,514 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 16:22:42,941 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 16:24:01,329 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 16:24:01,329 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 16:24:03,139 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 16:24:03,139 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 16:24:03,845 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 16:24:05,339 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 17:26:10,749 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:26:10,749 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 17:26:11,904 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 17:26:11,905 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 17:26:12,664 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 17:26:14,116 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 17:31:59,882 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:31:59,882 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 17:32:00,966 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 17:32:00,967 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 17:32:01,740 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 17:32:03,321 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 17:33:56,982 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:33:56,982 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 17:33:58,143 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 17:33:58,143 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 17:33:58,779 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 17:34:00,276 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 17:34:31,415 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:34:31,415 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 17:34:32,448 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 17:34:32,448 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 17:34:32,963 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 17:34:34,497 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 17:36:29,580 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:36:29,580 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 17:36:30,663 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 17:36:30,663 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 17:36:31,355 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 17:36:32,808 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 17:50:53,978 : INFO : test_re_create_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:50:53,978 : INFO : test_re_create_ruleset : Attempting login.
+2023-08-29 17:50:54,968 : INFO : test_re_create_ruleset : Succesfully logged in.
+2023-08-29 17:50:54,968 : INFO : test_re_create_ruleset : Navigating to rule engine page.
+2023-08-29 17:50:55,686 : INFO : test_re_create_ruleset : Attempting to create a ruleset.
+2023-08-29 17:51:31,763 : INFO : test_re_create_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:51:31,763 : INFO : test_re_create_ruleset : Attempting login.
+2023-08-29 17:51:32,834 : INFO : test_re_create_ruleset : Succesfully logged in.
+2023-08-29 17:51:32,834 : INFO : test_re_create_ruleset : Navigating to rule engine page.
+2023-08-29 17:51:33,678 : INFO : test_re_create_ruleset : Attempting to create a ruleset.
+2023-08-29 17:51:36,018 : INFO : test_re_create_ruleset : Succesfully created new ruleset.
+2023-08-29 17:54:10,009 : INFO : test_re_edit_settings_inactive : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:54:10,009 : INFO : test_re_edit_settings_inactive : Attempting login.
+2023-08-29 17:54:11,065 : INFO : test_re_edit_settings_inactive : Succesfully logged in.
+2023-08-29 17:54:11,066 : INFO : test_re_edit_settings_inactive : Navigating to rule engine page.
+2023-08-29 17:54:11,701 : INFO : test_re_edit_settings_inactive : Filtering for inactive rulesets.
+2023-08-29 17:54:13,364 : INFO : test_re_edit_settings_inactive : Edited name field.
+2023-08-29 17:54:13,405 : INFO : test_re_edit_settings_inactive : Edited mobility policy field.
+2023-08-29 17:54:14,605 : INFO : test_re_edit_settings_inactive : Edited description field.
+2023-08-29 17:54:16,674 : INFO : test_re_edit_settings_inactive : Successfully updated ruleset.
+2023-08-29 17:56:54,361 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 17:56:54,361 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-08-29 17:56:55,327 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-08-29 17:56:55,327 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-08-29 17:56:56,232 : INFO : test_re_activate_deactivate_rule : Searching for 'active test' ruleset.
+2023-08-29 17:56:57,262 : INFO : test_re_activate_deactivate_rule : Opening ruleset.
+2023-08-29 17:56:59,693 : INFO : test_re_activate_deactivate_rule : Activated rule.
+2023-08-29 18:06:00,128 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 18:06:00,128 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 18:06:01,271 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 18:06:01,271 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 18:06:02,574 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 18:06:04,161 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 18:08:35,247 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 18:08:35,247 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 18:08:36,319 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 18:08:36,319 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 18:08:37,220 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 18:08:38,715 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 18:12:46,029 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-29 18:12:46,029 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-29 18:12:46,909 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-29 18:12:46,909 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-29 18:12:47,547 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-29 18:12:48,999 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-29 18:12:52,103 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-29 18:12:52,236 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-29 18:12:52,294 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-29 18:12:54,624 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-29 18:12:54,832 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-29 18:12:55,928 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-29 18:12:59,492 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-29 18:13:05,505 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2023-08-30 17:01:49,614 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:01:49,615 : INFO : test_mobility_policies_create_policy : Attempting login.
+2023-08-30 17:01:50,895 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2023-08-30 17:01:50,895 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2023-08-30 17:01:51,569 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2023-08-30 17:01:51,946 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2023-08-30 17:01:51,971 : INFO : test_mobility_policies_create_policy : Selected mobility policy type as 'professional'.
+2023-08-30 17:01:52,182 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2023-08-30 17:01:52,230 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2023-08-30 17:01:52,280 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2023-08-30 17:01:52,280 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2023-08-30 17:01:52,498 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2023-08-30 17:01:52,571 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2023-08-30 17:01:54,687 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2023-08-30 17:01:54,707 : INFO : test_mobility_policies_create_policy : Succesfully verified new mobility policy is now active.
+2023-08-30 17:08:35,233 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:08:35,233 : INFO : test_mobility_policies_create_draft : Attempting login.
+2023-08-30 17:08:36,334 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2023-08-30 17:08:36,334 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2023-08-30 17:08:36,978 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2023-08-30 17:08:38,020 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2023-08-30 17:08:38,047 : INFO : test_mobility_policies_create_draft : Selected mobility policy type as 'professional'.
+2023-08-30 17:08:38,259 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2023-08-30 17:08:38,304 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2023-08-30 17:08:38,357 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2023-08-30 17:08:38,357 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2023-08-30 17:08:38,466 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2023-08-30 17:08:38,537 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2023-08-30 17:08:38,537 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2023-08-30 17:08:40,099 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2023-08-30 17:14:51,469 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:14:51,469 : INFO : test_mobility_policies_create_draft : Attempting login.
+2023-08-30 17:14:52,487 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2023-08-30 17:14:52,487 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2023-08-30 17:14:53,033 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2023-08-30 17:14:53,328 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2023-08-30 17:14:53,352 : INFO : test_mobility_policies_create_draft : Selected mobility policy type as 'professional'.
+2023-08-30 17:14:53,570 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2023-08-30 17:14:53,611 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2023-08-30 17:14:53,660 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2023-08-30 17:14:53,661 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2023-08-30 17:14:53,827 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2023-08-30 17:14:53,897 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2023-08-30 17:14:53,897 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2023-08-30 17:14:54,978 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2023-08-30 17:15:06,452 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:15:06,452 : INFO : test_mobility_policies_create_draft : Attempting login.
+2023-08-30 17:15:08,045 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2023-08-30 17:15:08,045 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2023-08-30 17:15:08,727 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2023-08-30 17:15:09,139 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2023-08-30 17:15:09,161 : INFO : test_mobility_policies_create_draft : Selected mobility policy type as 'professional'.
+2023-08-30 17:15:09,633 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2023-08-30 17:15:09,673 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2023-08-30 17:15:09,721 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2023-08-30 17:15:09,721 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2023-08-30 17:15:09,832 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2023-08-30 17:15:09,903 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2023-08-30 17:15:09,903 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2023-08-30 17:15:10,987 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2023-08-30 17:15:20,501 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:15:20,501 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2023-08-30 17:15:21,665 : INFO : test_mobility_policies_activate_draft : Succesfully logged in.
+2023-08-30 17:15:21,665 : INFO : test_mobility_policies_activate_draft : Navigating to mobility policies page.
+2023-08-30 17:15:22,511 : INFO : test_mobility_policies_activate_draft : Filtering for draft policies.
+2023-08-30 17:15:26,205 : INFO : test_mobility_policies_activate_draft : Succesfully activated draft policy.
+2023-08-30 17:19:50,620 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:19:50,620 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:19:51,676 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:19:51,677 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:19:52,210 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:19:53,754 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:21:29,289 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:21:29,289 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:21:30,369 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:21:30,372 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:21:31,048 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:21:32,552 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:22:16,533 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:22:16,533 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:22:17,782 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:22:17,782 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:22:18,315 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:22:19,725 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:22:22,865 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 17:22:22,994 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 17:22:23,047 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 17:27:33,771 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:27:33,772 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:27:34,862 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:27:34,862 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:27:35,448 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:27:36,908 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:27:40,041 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 17:27:40,151 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 17:27:40,195 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 17:27:42,578 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-30 17:27:42,848 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-30 17:32:24,103 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:32:24,103 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:32:25,078 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:32:25,078 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:32:25,676 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:32:27,178 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:32:30,306 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 17:32:30,418 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 17:32:30,469 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 17:32:32,815 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-30 17:32:33,066 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-30 17:32:34,164 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-30 17:32:37,688 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-30 17:32:43,590 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2023-08-30 17:38:09,629 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:38:09,629 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:38:10,871 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:38:10,871 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:38:11,635 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:38:13,069 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:38:16,204 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 17:38:16,334 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 17:38:16,387 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 17:38:18,789 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-30 17:38:19,009 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-30 17:38:20,112 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-30 17:38:23,707 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-30 17:38:29,598 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2023-08-30 17:51:04,407 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:51:04,407 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:51:05,473 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:51:05,474 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:51:06,138 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:51:07,612 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:52:26,958 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:52:26,958 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:52:27,970 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:52:27,970 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:52:28,578 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:52:30,042 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:52:33,184 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 17:52:33,310 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 17:52:33,360 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 17:54:37,333 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 17:54:37,334 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 17:54:38,419 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 17:54:38,419 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 17:54:39,113 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 17:54:40,600 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 17:54:43,738 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 17:54:43,867 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 17:54:43,924 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 17:54:46,243 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-30 17:54:46,490 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-30 17:54:47,588 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-30 17:54:51,163 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-30 17:54:57,058 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2023-08-30 18:00:50,362 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 18:00:50,362 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 18:00:51,345 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 18:00:51,345 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 18:00:51,955 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 18:00:53,411 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 18:00:56,548 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 18:00:56,676 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 18:00:56,728 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 18:00:59,077 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-30 18:00:59,329 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-30 18:01:00,427 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-30 18:01:04,047 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-30 18:01:54,583 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 18:01:54,584 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 18:01:55,647 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 18:01:55,647 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 18:01:56,225 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 18:01:57,669 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 18:02:00,838 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 18:02:00,981 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 18:02:01,025 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 18:02:03,460 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-30 18:02:03,730 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-30 18:02:04,830 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-30 18:02:09,395 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-30 18:03:18,782 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 18:03:18,782 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 18:03:19,860 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 18:03:19,860 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 18:03:20,433 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 18:03:21,866 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 18:03:25,006 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 18:03:25,116 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 18:03:25,161 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 18:03:27,483 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-30 18:03:27,770 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-30 18:03:28,870 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-30 18:03:33,433 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-30 18:03:53,205 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2023-08-30 18:04:06,598 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 18:04:06,598 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2023-08-30 18:04:08,122 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2023-08-30 18:04:08,122 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2023-08-30 18:04:08,649 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2023-08-30 18:04:10,155 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2023-08-30 18:04:13,293 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2023-08-30 18:04:13,420 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2023-08-30 18:04:13,464 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2023-08-30 18:04:15,773 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2023-08-30 18:04:16,012 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2023-08-30 18:04:17,110 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2023-08-30 18:04:21,710 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2023-08-30 18:04:28,587 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2023-08-30 18:21:46,228 : INFO : test_expenses_SearchByID_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 18:21:46,228 : INFO : test_expenses_SearchByID_HRmod : Attempting Login.
+2023-08-30 18:21:47,330 : INFO : test_expenses_SearchByID_HRmod : Succesfully logged in.
+2023-08-30 18:21:47,330 : INFO : test_expenses_SearchByID_HRmod : Navigating to expenses-page.
+2023-08-30 18:21:47,849 : INFO : test_expenses_SearchByID_HRmod : Searched for expense with ID 13423.
+2023-08-30 18:21:51,017 : INFO : test_expenses_SearchByID_HRmod : Opened expense detail modal.
+2023-08-30 18:21:51,058 : INFO : test_expenses_SearchByID_HRmod : Succesfully verified expense ID.
+2023-08-30 18:24:09,852 : INFO : test_re_filter_rulesets : daan.swinnen+autotest.admin@optimile.eu
+2023-08-30 18:24:09,852 : INFO : test_re_filter_rulesets : Attempting login.
+2023-08-30 18:24:11,101 : INFO : test_re_filter_rulesets : Succesfully logged in.
+2023-08-30 18:24:11,101 : INFO : test_re_filter_rulesets : Navigating to rule engine page.
+2023-08-31 08:28:31,664 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:28:31,664 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-08-31 08:28:33,007 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-08-31 08:28:33,007 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-08-31 08:28:33,545 : INFO : test_re_activate_deactivate_rule : Searching for 'active test' ruleset.
+2023-08-31 08:28:34,578 : INFO : test_re_activate_deactivate_rule : Opening ruleset.
+2023-08-31 08:28:37,078 : INFO : test_re_activate_deactivate_rule : Activated rule.
+2023-08-31 08:29:01,495 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:29:01,495 : INFO : test_re_create_rule : Attempting login.
+2023-08-31 08:29:02,887 : INFO : test_re_create_rule : Succesfully logged in.
+2023-08-31 08:29:02,887 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-08-31 08:29:03,498 : INFO : test_re_create_rule : Searching for 'active test' ruleset.
+2023-08-31 08:29:04,529 : INFO : test_re_create_rule : Opening ruleset.
+2023-08-31 08:29:04,620 : INFO : test_re_create_rule : Attempting to create a new rule.
+2023-08-31 08:29:05,967 : INFO : test_re_create_rule : Successfully saved new rule.
+2023-08-31 08:29:11,378 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:29:11,378 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-08-31 08:29:12,394 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-08-31 08:29:12,394 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-08-31 08:29:13,000 : INFO : test_re_activate_deactivate_rule : Searching for 'active test' ruleset.
+2023-08-31 08:29:14,037 : INFO : test_re_activate_deactivate_rule : Opening ruleset.
+2023-08-31 08:29:16,491 : INFO : test_re_activate_deactivate_rule : Activated rule.
+2023-08-31 08:30:50,413 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:30:50,413 : INFO : test_re_create_rule : Attempting login.
+2023-08-31 08:30:51,527 : INFO : test_re_create_rule : Succesfully logged in.
+2023-08-31 08:30:51,527 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-08-31 08:30:52,151 : INFO : test_re_create_rule : Searching for 'active test' ruleset.
+2023-08-31 08:30:53,176 : INFO : test_re_create_rule : Opening ruleset.
+2023-08-31 08:30:53,269 : INFO : test_re_create_rule : Attempting to create a new rule.
+2023-08-31 08:30:54,628 : INFO : test_re_create_rule : Successfully saved new rule.
+2023-08-31 08:38:28,727 : INFO : test_re_create_ruleset : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:38:28,727 : INFO : test_re_create_ruleset : Attempting login.
+2023-08-31 08:38:29,868 : INFO : test_re_create_ruleset : Succesfully logged in.
+2023-08-31 08:38:29,868 : INFO : test_re_create_ruleset : Navigating to rule engine page.
+2023-08-31 08:38:30,390 : INFO : test_re_create_ruleset : Attempting to create a ruleset.
+2023-08-31 08:38:32,728 : INFO : test_re_create_ruleset : Succesfully created new ruleset.
+2023-08-31 08:38:44,696 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:38:44,696 : INFO : test_re_create_rule : Attempting login.
+2023-08-31 08:38:45,991 : INFO : test_re_create_rule : Succesfully logged in.
+2023-08-31 08:38:45,991 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-08-31 08:38:46,552 : INFO : test_re_create_rule : Searching for 'active test' ruleset.
+2023-08-31 08:38:47,600 : INFO : test_re_create_rule : Opening ruleset.
+2023-08-31 08:38:47,697 : INFO : test_re_create_rule : Attempting to create a new rule.
+2023-08-31 08:38:49,083 : INFO : test_re_create_rule : Successfully saved new rule.
+2023-08-31 08:39:08,804 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:39:08,804 : INFO : test_re_create_rule : Attempting login.
+2023-08-31 08:39:09,868 : INFO : test_re_create_rule : Succesfully logged in.
+2023-08-31 08:39:09,868 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-08-31 08:39:10,396 : INFO : test_re_create_rule : Searching for 'active test' ruleset.
+2023-08-31 08:39:13,432 : INFO : test_re_create_rule : Opening ruleset.
+2023-08-31 08:39:13,515 : INFO : test_re_create_rule : Attempting to create a new rule.
+2023-08-31 08:39:14,882 : INFO : test_re_create_rule : Successfully saved new rule.
+2023-08-31 08:40:00,814 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:40:00,814 : INFO : test_re_create_rule : Attempting login.
+2023-08-31 08:40:02,990 : INFO : test_re_create_rule : Succesfully logged in.
+2023-08-31 08:40:02,990 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-08-31 08:40:03,510 : INFO : test_re_create_rule : Searching for 'active test' ruleset.
+2023-08-31 08:40:06,569 : INFO : test_re_create_rule : Opening ruleset.
+2023-08-31 08:40:06,683 : INFO : test_re_create_rule : Attempting to create a new rule.
+2023-08-31 08:40:08,087 : INFO : test_re_create_rule : Successfully saved new rule.
+2023-08-31 08:40:22,360 : INFO : test_re_create_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:40:22,361 : INFO : test_re_create_rule : Attempting login.
+2023-08-31 08:40:23,516 : INFO : test_re_create_rule : Succesfully logged in.
+2023-08-31 08:40:23,516 : INFO : test_re_create_rule : Navigating to rule engine page.
+2023-08-31 08:40:25,099 : INFO : test_re_create_rule : Searching for 'active test' ruleset.
+2023-08-31 08:40:28,246 : INFO : test_re_create_rule : Opening ruleset.
+2023-08-31 08:40:28,342 : INFO : test_re_create_rule : Attempting to create a new rule.
+2023-08-31 08:40:29,671 : INFO : test_re_create_rule : Successfully saved new rule.
+2023-08-31 08:41:06,336 : INFO : test_re_activate_deactivate_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:41:06,336 : INFO : test_re_activate_deactivate_rule : Attempting login.
+2023-08-31 08:41:07,378 : INFO : test_re_activate_deactivate_rule : Succesfully logged in.
+2023-08-31 08:41:07,378 : INFO : test_re_activate_deactivate_rule : Navigating to rule engine page.
+2023-08-31 08:41:08,006 : INFO : test_re_activate_deactivate_rule : Searching for 'active test' ruleset.
+2023-08-31 08:41:12,142 : INFO : test_re_activate_deactivate_rule : Opening ruleset.
+2023-08-31 08:41:14,502 : INFO : test_re_activate_deactivate_rule : Activated rule.
+2023-08-31 08:41:14,598 : INFO : test_re_activate_deactivate_rule : Deactivated rule.
+2023-08-31 08:41:33,387 : INFO : test_re_edit_rule : daan.swinnen+autotest.admin@optimile.eu
+2023-08-31 08:41:33,387 : INFO : test_re_edit_rule : Attempting login.
+2023-08-31 08:41:34,499 : INFO : test_re_edit_rule : Succesfully logged in.
+2023-08-31 08:41:34,499 : INFO : test_re_edit_rule : Navigating to rule engine page.
+2023-08-31 08:41:35,055 : INFO : test_re_edit_rule : Searching for 'active test' ruleset.
+2023-08-31 08:41:39,190 : INFO : test_re_edit_rule : Opening ruleset.
+2023-08-31 08:59:21,067 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2023-08-31 08:59:21,067 : INFO : test_configure_location_location_data : Attempting login.
+2023-08-31 08:59:22,896 : INFO : test_configure_location_location_data : Succesfully logged in.
+2023-08-31 08:59:22,896 : INFO : test_configure_location_location_data : Navigating to locations page.
+2023-08-31 08:59:23,310 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2023-08-31 08:59:23,596 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2023-08-31 08:59:24,332 : INFO : test_configure_location_location_data : Updated location adress
+2023-08-31 08:59:24,392 : INFO : test_configure_location_location_data : Updated postcode.
+2023-08-31 08:59:24,451 : INFO : test_configure_location_location_data : Updated town.
+2023-08-31 08:59:24,490 : INFO : test_configure_location_location_data : Updated country.
+2023-08-31 08:59:25,495 : INFO : test_configure_location_location_data : Attempting to update location data.
+2023-08-31 08:59:27,254 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2023-08-31 08:59:27,254 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2023-08-31 08:59:30,165 : INFO : test_configure_location_location_data : Succesfully reset location data.

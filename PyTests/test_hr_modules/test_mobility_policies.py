@@ -36,7 +36,7 @@ class TestSubModuleOne(BaseClass):
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
         mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
-        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("OldPolicy")
+        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("OldPolicy" + Keys.ENTER)
         log.info("Searching for mobility policy named 'OldPolicy'.")
         time.sleep(1)
         searchresult = self.driver.find_element(By.XPATH, "(//tr/td)[1]").text
@@ -116,7 +116,10 @@ class TestSubModuleThree(BaseClass):
         newmobilitypolicypage.new_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
 
-        newmobilitypolicypage.new_policy_select_top_available_user().click()
+        available_table = self.driver.find_element(By.CLASS_NAME, "dual-table-left-container")
+        available_checkbox = newmobilitypolicypage.get_header_checkbox(available_table)
+        available_checkbox.click()
+
         newmobilitypolicypage.new_policy_move_users_to_linked()
         log.info("Linked all available users.")
 
@@ -184,7 +187,10 @@ class TestSubModuleFour(BaseClass):
         log.info("Set end date as undefined.")
         newmobilitypolicypage.new_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
-        newmobilitypolicypage.new_policy_select_top_available_user().click()
+
+        available_table = self.driver.find_element(By.CLASS_NAME, "dual-table-left-container")
+        available_checkbox = newmobilitypolicypage.get_header_checkbox(available_table)
+        available_checkbox.click()
         newmobilitypolicypage.new_policy_move_users_to_linked()
         log.info("Linked all available users.")
         log.info("Saving the policy as a draft.")
@@ -252,7 +258,10 @@ class TestSubModuleSix(BaseClass):
         )
         log.info("Opened top draft.")
         time.sleep(1)
-        changemobilitypolicypage.change_mobility_policy_select_all_linked_users()
+        time.sleep(1)
+        linked_table = self.driver.find_element(By.CLASS_NAME, "dual-table-right-container")
+        linked_checkbox = changemobilitypolicypage.get_header_checkbox(linked_table)
+        linked_checkbox.click()
         time.sleep(1)
         changemobilitypolicypage.change_mobility_policy_unlink_all_users()
         log.info("Unlinked all users from draft policy.")
@@ -267,7 +276,7 @@ class TestSubModuleSix(BaseClass):
             )
 
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
-            Keys.DELETE
+            Keys.BACKSPACE
         )
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
             "active test"
@@ -275,22 +284,24 @@ class TestSubModuleSix(BaseClass):
         log.info("Changed draft name to 'active test'.")
         changemobilitypolicypage.change_mobility_policy_save()
         log.info("Saved draft.")
-        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("active test")
-        time.sleep(1)
+        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("active test" + Keys.ENTER)
+        time.sleep(2)
         log.info("Searched for 'active draft' policy.")
         changemobilitypolicypage = (
             mobilitypoliciesmainpage.mobility_policies_view_top_policy()
         )
         log.info("Opened 'active draft' policy.")
         time.sleep(1)
-        changemobilitypolicypage.change_mobility_policy_select_all_available_users()
+        available_table = self.driver.find_element(By.CLASS_NAME, "dual-table-left-container")
+        available_checkbox = changemobilitypolicypage.get_header_checkbox(available_table)
+        available_checkbox.click()
         changemobilitypolicypage.change_mobility_policy_link_all_users()
         log.info("Linked all users to draft.")
         changemobilitypolicypage.change_mobility_policy_save()
         time.sleep(1)
 
-        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("active test")
-        time.sleep(1)
+        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("active test" + Keys.ENTER)
+        time.sleep(2)
         changemobilitypolicypage = (
             mobilitypoliciesmainpage.mobility_policies_view_top_policy()
         )
@@ -306,7 +317,7 @@ class TestSubModuleSix(BaseClass):
             )
 
         changemobilitypolicypage.change_mobility_policy_name_field().send_keys(
-            Keys.DELETE
+            Keys.BACKSPACE
         )
         timestamp = str(datetime.now())
         timestampbase = datetime.now()
@@ -317,10 +328,10 @@ class TestSubModuleSix(BaseClass):
         )
         log.info("Changed draft name to 'timestamp'.")
         changemobilitypolicypage.change_mobility_policy_save()
-        time.sleep(1)
+        time.sleep(2)
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
         mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys(
-            limitedtimestamp
+            limitedtimestamp + Keys.ENTER
         )
         time.sleep(2)
         mobilitypoliciesmainpage.mobility_policies_view_top_policy()

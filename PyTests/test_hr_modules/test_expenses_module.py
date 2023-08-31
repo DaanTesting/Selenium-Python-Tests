@@ -124,9 +124,9 @@ class TestFour(BaseClass):
         homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
         time.sleep(1)
-        expensesmainpage.expenses_main_searchbar().send_keys("13513")
+        expensesmainpage.expenses_main_searchbar().send_keys("13513" + Keys.ENTER)
         log.info("Succesfully searched for expense with ID 13513.")
-        time.sleep(1)
+        time.sleep(2)
         expensesmainpage.expenses_open_top_expense_detail_modal()
         time.sleep(1)
         expensesmainpage.expenses_detailmodal_attachment_scroll()
@@ -156,12 +156,9 @@ class TestFive(BaseClass):
 
         expensesmainpage.driver.find_element(
             By.CSS_SELECTOR, "input[placeholder='Search expenses']"
-        ).send_keys("13423")
+        ).send_keys("13423" + Keys.ENTER)
         log.info("Searched for expense with ID 13423.")
-
-        wait = WebDriverWait(self.driver, 10)
-        wait.until(EC.visibility_of_element_located((By.XPATH, "//td/div/div/button")))
-
+        time.sleep(3)
         self.driver.find_element(By.XPATH, "//td/div/div/button").click()
         self.driver.find_element(By.PARTIAL_LINK_TEXT, "details").click()
         log.info("Opened expense detail modal.")
@@ -199,7 +196,7 @@ class TestSix(BaseClass):
         time.sleep(1)
         expensesmainpage.driver.find_element(
             By.CSS_SELECTOR, "input[placeholder='Search expenses']"
-        ).send_keys("Taxi")
+        ).send_keys("Taxi" + Keys.ENTER)
         log.info("Searched for expense type 'taxi'.")
 
         time.sleep(1)

@@ -69,6 +69,9 @@ class NewMobilityPolicyPage:
     def save_policy_as_draft_button(self):
         selector1 = (By.XPATH, "//button[.='Save as draft']")
         self.driver.find_element(*selector1).click()
+    
+    def get_header_checkbox(self, table):
+        return table.find_element(By.TAG_NAME, "thead").find_element(By.TAG_NAME, "input")
 
     def message_saved_as_draft(self):
         selector1 = (

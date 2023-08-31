@@ -196,9 +196,11 @@ class TestSubmoduleFive(BaseClass):
         log.info("Navigating to rule engine page.")
         homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
+        time.sleep(1)
         log.info("Searching for 'active test' ruleset.")
         ruleengineoverview.ruleset_search_bar().send_keys("active test")
-        time.sleep(1)
+        ruleengineoverview.ruleset_search_bar().send_keys(Keys.ENTER)
+        time.sleep(3)
         log.info("Opening ruleset.")
         changerulesetpage = ruleengineoverview.ruleset_select_top()
         changerulesetpage.ruleset_rules_tab()
@@ -235,8 +237,9 @@ class TestSubmoduleSix(BaseClass):
         homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Searching for 'active test' ruleset.")
-        ruleengineoverview.ruleset_search_bar().send_keys("active test")
         time.sleep(1)
+        ruleengineoverview.ruleset_search_bar().send_keys("active test" + Keys.ENTER)
+        time.sleep(3)
         log.info("Opening ruleset.")
         changerulesetpage = ruleengineoverview.ruleset_select_top()
         changerulesetpage.ruleset_rules_tab()
@@ -279,8 +282,9 @@ class TestSubmoduleSeven(BaseClass):
         homepage.menu_label_mobility()
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Searching for 'active test' ruleset.")
-        ruleengineoverview.ruleset_search_bar().send_keys("active tes")
         time.sleep(1)
+        ruleengineoverview.ruleset_search_bar().send_keys("active tes" + Keys.ENTER)
+        time.sleep(3)
         log.info("Opening ruleset.")
         changerulesetpage = ruleengineoverview.ruleset_select_top()
         changerulesetpage.ruleset_rules_tab()
@@ -294,7 +298,12 @@ class TestSubmoduleSeven(BaseClass):
         assert "updated" in rulesetactivateemessage
 
         changerulesetpage.ruleset_settings_tab()
-        changerulesetpage.ruleset_name_field().clear()
+        if user_os == "Darwin":
+            changerulesetpage.ruleset_name_field().send_keys(Keys.COMMAND + "a")
+        else:
+            changerulesetpage.ruleset_name_field().send_keys(Keys.CONTROL + "a")
+
+        changerulesetpage.ruleset_name_field().send_keys(Keys.BACKSPACE)
         timestamp = str(datetime.now())
         changerulesetpage.ruleset_name_field().send_keys(timestamp)
         changerulesetpage.ruleset_save_button()
@@ -326,7 +335,7 @@ class TestSubmoduleEight(BaseClass):
         ruleengineoverview.ruleset_filter_reset()
         time.sleep(1)
         ruleengineoverview.ruleset_filter_inactive()
-        time.sleep(1)
+        time.sleep(2)
         statusbadges = self.driver.find_elements(By.XPATH, "//td/span")
         for statusbadge in statusbadges:
             assert statusbadge.text == "Inactive"

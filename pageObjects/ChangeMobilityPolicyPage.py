@@ -30,9 +30,12 @@ class ChangeMobilityPolicyPage:
     def change_mobility_policy_name_field(self):
         selector1 = (By.CSS_SELECTOR, "input[placeholder='Type your policy name here']")
         return self.driver.find_element(*selector1)
+    
+    def get_header_checkbox(self, table):
+        return table.find_element(By.TAG_NAME, "thead").find_element(By.TAG_NAME, "input")
 
     def change_mobility_policy_select_all_linked_users(self):
-        selector1 = (By.XPATH, "(//div/input[@class='form-check-input'])[16]")
+        selector1 = (By.XPATH, "(//div/input[@class='form-check-input'])[14]")
         self.driver.find_element(*selector1).click()
 
     def change_mobility_policy_select_all_available_users(self):
