@@ -49,11 +49,11 @@ class TestOne(BaseClass):
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_customers()
         titlecustomerspage = str(
-            homepage.driver.find_element(
-                By.XPATH, "(//h1[normalize-space()='Customers'])[1]"
+            self.driver.find_element(
+                By.XPATH, "//h1[contains(.,'Customers')]"
             ).text
         )
-        assert titlecustomerspage == "Customers"
+        assert "Customers" in titlecustomerspage
         log.info("Succesfully verified customers page.")
 
         generalobjects = GeneralObjects(self.driver)

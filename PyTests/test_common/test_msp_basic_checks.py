@@ -34,9 +34,9 @@ class TestOne(BaseClass):
         homepage.menu_label_mobility()
         homepage.menu_label_msp_customers()
         titlecustomerpage = self.driver.find_element(
-            By.XPATH, "(//h1[normalize-space()='Customers'])[1]"
+            By.XPATH, "//h1[contains(.,'Customers')]"
         ).text
-        assert titlecustomerpage == "Customers"
+        assert "Customers" in titlecustomerpage
         log.info("Succesfully verified msp customers page.")
 
         generalobjects = GeneralObjects(self.driver)

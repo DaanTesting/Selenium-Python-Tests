@@ -27,7 +27,5 @@ class CpoCustomerPage:
         return cpoindividualcustomer
 
     def generate_all_customer_report(self):
-        selector1 = (By.XPATH, "//a[contains(.,'All')]")
         selector2 = (By.XPATH, "//button[.=' Download as xlsx']")
-        self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()

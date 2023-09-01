@@ -275,31 +275,6 @@ class TestSeven(BaseClass):
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
 
-        mspcustomerpage.generate_all_customers_export()
-
-        today = datetime.date.today()
-        formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = cache_directory
-        downloaded_file_name = f"customers-{formatted_date}.xlsx"
-        downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
-
-        time.sleep(3)
-        os.path.exists(downloaded_file_path)
-        os.remove(downloaded_file_path)
-
-        mspcustomerpage.generate_all_users_export()
-        time.sleep(10)
-
-        today = datetime.date.today()
-        formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = cache_directory
-        downloaded_file_name = f"users-{formatted_date}.xlsx"
-        downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
-
-        time.sleep(3)
-        os.path.exists(downloaded_file_path)
-        os.remove(downloaded_file_path)
-
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 

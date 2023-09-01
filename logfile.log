@@ -8242,3 +8242,34 @@
 2023-08-31 08:59:27,254 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
 2023-08-31 08:59:27,254 : INFO : test_configure_location_location_data : Attempting to reset location data.
 2023-08-31 08:59:30,165 : INFO : test_configure_location_location_data : Succesfully reset location data.
+2023-09-01 13:53:26,601 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2023-09-01 13:53:26,602 : INFO : test_cpo_customers_screen : Attempting login.
+2023-09-01 13:53:28,550 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2023-09-01 13:53:28,551 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2023-09-01 13:55:02,870 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2023-09-01 13:55:02,870 : INFO : test_cpo_customers_screen : Attempting login.
+2023-09-01 13:55:04,970 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2023-09-01 13:55:04,970 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2023-09-01 13:56:10,165 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2023-09-01 13:56:10,165 : INFO : test_cpo_customers_screen : Attempting login.
+2023-09-01 13:56:12,568 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2023-09-01 13:56:12,568 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2023-09-01 13:56:42,154 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2023-09-01 13:56:42,154 : INFO : test_cpo_customers_screen : Attempting login.
+2023-09-01 13:56:44,201 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2023-09-01 13:56:44,201 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2023-09-01 13:56:44,578 : INFO : test_cpo_customers_screen : Succesfully verified customers page.
+2023-09-01 14:04:11,593 : INFO : _login : daan.swinnen@optimile.eu
+2023-09-01 14:04:11,594 : INFO : _login : Attempting login.
+2023-09-01 14:04:13,603 : INFO : _login : Succesfully logged in.
+2023-09-01 14:04:14,615 : INFO : test_msp_customers_screen : Navigating to msp customers page.
+2023-09-01 14:04:15,059 : INFO : test_msp_customers_screen : Succesfully verified msp customers page.
+2023-09-01 14:14:15,494 : INFO : test_cpo_customers_export : daan.swinnen@optimile.eu
+2023-09-01 14:14:15,494 : INFO : test_cpo_customers_export : Attempting login.
+2023-09-01 14:14:17,653 : INFO : test_cpo_customers_export : Succesfully logged in.
+2023-09-01 14:14:45,260 : INFO : test_msp_customers_export : daan.swinnen@optimile.eu
+2023-09-01 14:14:45,260 : INFO : test_msp_customers_export : Attempting login.
+2023-09-01 14:14:47,368 : INFO : test_msp_customers_export : Succesfully logged in.
+2023-09-01 14:16:49,479 : INFO : test_msp_customers_export : daan.swinnen@optimile.eu
+2023-09-01 14:16:49,479 : INFO : test_msp_customers_export : Attempting login.
+2023-09-01 14:16:51,750 : INFO : test_msp_customers_export : Succesfully logged in.
