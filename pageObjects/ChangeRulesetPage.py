@@ -85,7 +85,7 @@ class ChangeRulesetPage:
     def ruleset_rule_deactivate(self):
         selector1 = (
             By.XPATH,
-            "(//button[contains(@class,'d-flex align-items-center custom-toggle-button-hidden dropdown-toggle btn btn-invisible btn-sm')])[1]",
+            "(//button[@data-testid='dropdown-show-options'])[2]",
         )
         selector2 = (By.XPATH, "//a[.='Deactivate']")
         selector3 = (By.XPATH, "//button[.='Deactivate']")
@@ -96,7 +96,7 @@ class ChangeRulesetPage:
     def ruleset_rule_edit(self):
         selector1 = (
             By.XPATH,
-            "(//button[contains(@class,'d-flex align-items-center custom-toggle-button-hidden dropdown-toggle btn btn-invisible btn-sm')])[1]",
+            "(//button[@data-testid='dropdown-show-options'])[2]",
         )
         selector2 = (By.XPATH, "//a[.='Edit']")
         self.driver.find_element(*selector1).click()

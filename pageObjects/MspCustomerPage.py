@@ -29,23 +29,29 @@ class MspCustomerPage:
         return mspindividualcustomer
 
     def generate_mobility_customers_export(self):
-        selector2 = (By.XPATH, "//button[.=' Download customers']")
+        selector1 = (By.XPATH, "//small[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Download customers']")
+        self.driver.find_element(*selector1).click()
+        time.sleep(1)
         self.driver.find_element(*selector2).click()
 
     def generate_mobility_users_export(self):
-        selector2 = (By.XPATH, "//button[.=' Download users']")
+        selector1 = (By.XPATH, "//small[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Download users']")
+        self.driver.find_element(*selector1).click()
+        time.sleep(1)
         self.driver.find_element(*selector2).click()
 
     def generate_all_customers_export(self):
-        selector1 = (By.XPATH, "//a[contains(.,'All')]")
-        selector2 = (By.XPATH, "//button[.=' Download customers']")
+        selector1 = (By.XPATH, "//small[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Download customers']")
         self.driver.find_element(*selector1).click()
         time.sleep(3)
         self.driver.find_element(*selector2).click()
 
     def generate_all_users_export(self):
-        selector1 = (By.XPATH, "//a[contains(.,'All')]")
-        selector2 = (By.XPATH, "//button[.=' Download users']")
+        selector1 = (By.XPATH, "//small[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Download users']")
         self.driver.find_element(*selector1).click()
         time.sleep(3)
         self.driver.find_element(*selector2).click()

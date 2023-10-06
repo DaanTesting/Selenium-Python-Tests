@@ -12,7 +12,7 @@ class ChangeMobilityPolicyPage:
     def change_mobility_policy_activate_draft(self):
         selector1 = (
             By.XPATH,
-            "//button[@class='d-flex align-items-center custom-toggle-button-hidden dropdown-toggle btn btn-default']",
+            "//button[@style='padding: 0px;']",
         )
         selector2 = (By.XPATH, "//a[normalize-space()='Activate']")
         selector3 = (By.CSS_SELECTOR, "button[data-testid='confirmModalButton']")
@@ -71,7 +71,7 @@ class ChangeMobilityPolicyPage:
     def change_mobility_policy_duplicate(self):
         selector1 = (
             By.XPATH,
-            "//div/button[@class='d-flex align-items-center custom-toggle-button-hidden dropdown-toggle btn btn-default']",
+            "//button[@style='padding: 0px;']",
         )
         selector2 = (By.XPATH, "(//a[.='Duplicate'])")
         selector3 = (By.XPATH, "(//button[.='Duplicate'])")
@@ -81,4 +81,8 @@ class ChangeMobilityPolicyPage:
 
     def change_mobility_policy_save(self):
         selector1 = (By.CSS_SELECTOR, "button[type='submit']")
+        self.driver.find_element(*selector1).click()
+
+    def change_mobility_policy_set_unlimited(self):
+        selector1 = (By.XPATH, "//input[@value='unlimited']")
         self.driver.find_element(*selector1).click()

@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
-
 from pageObjects.UserDetailPage import UserDetailPage
+import time
 
 
 class HrProfilesOverview:
@@ -12,9 +12,10 @@ class HrProfilesOverview:
         self.driver.find_element(*selector1).click()
 
     def profile_overview_actions_button_invite(self):
-        selector1 = (By.XPATH, "//span[.='Actions']")
+        selector1 = (By.XPATH, "//small[.='Actions']")
         selector2 = (By.XPATH, "//a[.='Send app invite']")
         self.driver.find_element(*selector1).click()
+        time.sleep(1)
         self.driver.find_element(*selector2).click()
 
     def profile_overview_message(self):

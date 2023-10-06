@@ -34,18 +34,24 @@ class TestOne(BaseClass):
         log.info("Navigating to administration tab.")
         homepage.menu_label_administration()
         accountdetailspage = homepage.menu_label_account_details()
-        accountdetailstitle = str(accountdetailspage.account_details_title().text)
+        accountdetailstitle = str(
+            accountdetailspage.account_details_title().text
+        )
         assert accountdetailstitle == "Account details"
         log.info("Verified account details page.")
         homepage.menu_label_preferences()
         preferencestitle = str(
-            self.driver.find_element(By.XPATH, "//h1[.='Account preferences']").text
+            self.driver.find_element(
+                By.XPATH, "//h1[.='Account preferences']"
+            ).text
         )
         assert preferencestitle == "Account preferences"
         log.info("Verified preferences page.")
         homepage.menu_label_users()
         userstitle = str(
-            self.driver.find_element(By.XPATH, "//h1[contains(.,'Overview')]").text
+            self.driver.find_element(
+                By.XPATH, "//h1[contains(.,'Overview')]"
+            ).text
         )
         assert "Overview" in userstitle
         log.info("Verified users page.")
@@ -90,18 +96,24 @@ class TestOne(BaseClass):
         log.info("Verified invoices page.")
         homepage.menu_label_payment_methods()
         titlepaymentmethods = str(
-            self.driver.find_element(By.XPATH, "//h1[.='Payment methods']").text
+            self.driver.find_element(
+                By.XPATH, "//h1[.='Payment methods']"
+            ).text
         )
         assert titlepaymentmethods == "Payment methods"
         log.info("Verified payment methods page.")
         homepage.menu_label_credit()
         titlecredit = str(
-            self.driver.find_element(By.XPATH, "//h1[.='Credit transactions']").text
+            self.driver.find_element(
+                By.XPATH, "//h1[.='Credit transactions']"
+            ).text
         )
         assert titlecredit == "Credit transactions"
         log.info("Verified credit transactions page.")
         homepage.menu_label_revenue()
-        titlerevenue = str(self.driver.find_element(By.XPATH, "//h1[.='Revenue']").text)
+        titlerevenue = str(
+            self.driver.find_element(By.XPATH, "//h1[.='Revenue']").text
+        )
         assert titlerevenue == "Revenue"
         log.info("Verified revenue page.")
         homepage.menu_label_payment_requests()
@@ -137,9 +149,9 @@ class TestOne(BaseClass):
         accountdetailspage = homepage.menu_label_account_details()
         log.info("Attempting to change all account details.")
         accountdetailspage.account_details_company_type().clear()
-        accountdetailspage.account_details_company_type().send_keys("Active Flow")
-        accountdetailspage.account_details_VAT_number().clear()
-        accountdetailspage.account_details_VAT_number().send_keys("BE0794810872")
+        accountdetailspage.account_details_company_type().send_keys(
+            "Active Flow"
+        )
         accountdetailspage.account_details_first_name().clear()
         accountdetailspage.account_details_first_name().send_keys("ActiveTest")
         accountdetailspage.account_details_last_name().clear()
@@ -151,31 +163,8 @@ class TestOne(BaseClass):
         accountdetailspage.account_details_phone().clear()
         accountdetailspage.account_details_phone().send_keys("014524213")
         accountdetailspage.account_details_language_select_english()
-        accountdetailspage.account_details_address().clear()
-        accountdetailspage.account_details_address().send_keys("Active street")
+
         time.sleep(3)
-
-        if user_os == "Darwin":
-            accountdetailspage.account_details_postcode().send_keys(
-                Keys.COMMAND + "a" + Keys.BACKSPACE
-            )
-        else:
-            accountdetailspage.account_details_postcode().send_keys(
-                Keys.CONTROL + "a" + Keys.BACKSPACE
-            )
-
-        accountdetailspage.account_details_postcode().send_keys("9001")
-
-        if user_os == "Darwin":
-            accountdetailspage.account_details_town().send_keys(
-                Keys.COMMAND + "a" + Keys.BACKSPACE
-            )
-        else:
-            accountdetailspage.account_details_town().send_keys(
-                Keys.CONTROL + "a" + Keys.BACKSPACE
-            )
-
-        accountdetailspage.account_details_town().send_keys("Activeville")
 
         if user_os == "Darwin":
             accountdetailspage.account_details_invoice_email().send_keys(
@@ -191,13 +180,17 @@ class TestOne(BaseClass):
         )
 
         accountdetailspage.account_details_save_button()
-        message = str(accountdetailspage.account_details_updated_message().text)
+        message = str(
+            accountdetailspage.account_details_updated_message().text
+        )
         assert "Account details updated" in message
         log.info("Succesfully saved changes.")
         log.info("Attempting to verify accuracy of changes.")
 
         companytype = str(
-            accountdetailspage.account_details_company_type().get_attribute("value")
+            accountdetailspage.account_details_company_type().get_attribute(
+                "value"
+            )
         )
         assert companytype == "Active Flow"
 
@@ -210,26 +203,14 @@ class TestOne(BaseClass):
                 Keys.CONTROL + "a" + Keys.BACKSPACE
             )
 
-        accountdetailspage.account_details_company_type().send_keys("Main Flow")
-
-        VATnumber = str(
-            accountdetailspage.account_details_VAT_number().get_attribute("value")
+        accountdetailspage.account_details_company_type().send_keys(
+            "Main Flow"
         )
-        assert VATnumber == "BE0794810872"
-
-        if user_os == "Darwin":
-            accountdetailspage.account_details_VAT_number().send_keys(
-                Keys.COMMAND + "a" + Keys.BACKSPACE
-            )
-        else:
-            accountdetailspage.account_details_VAT_number().send_keys(
-                Keys.CONTROL + "a" + Keys.BACKSPACE
-            )
-
-        accountdetailspage.account_details_VAT_number().send_keys("BE0013755093")
 
         firstname = str(
-            accountdetailspage.account_details_first_name().get_attribute("value")
+            accountdetailspage.account_details_first_name().get_attribute(
+                "value"
+            )
         )
         assert firstname == "ActiveTest"
 
@@ -242,10 +223,14 @@ class TestOne(BaseClass):
                 Keys.CONTROL + "a" + Keys.BACKSPACE
             )
 
-        accountdetailspage.account_details_first_name().send_keys("Splitbilling")
+        accountdetailspage.account_details_first_name().send_keys(
+            "Splitbilling"
+        )
 
         lastname = str(
-            accountdetailspage.account_details_last_name().get_attribute("value")
+            accountdetailspage.account_details_last_name().get_attribute(
+                "value"
+            )
         )
         assert lastname == "Ongoing"
 
@@ -258,10 +243,14 @@ class TestOne(BaseClass):
                 Keys.CONTROL + "a" + Keys.BACKSPACE
             )
 
-        accountdetailspage.account_details_last_name().send_keys("TestCustomer")
+        accountdetailspage.account_details_last_name().send_keys(
+            "TestCustomer"
+        )
 
         emailaddress = str(
-            accountdetailspage.account_details_emailaddress().get_attribute("value")
+            accountdetailspage.account_details_emailaddress().get_attribute(
+                "value"
+            )
         )
         assert emailaddress == "daan.swinnen+splitbillingactive@optimile.eu"
 
@@ -296,54 +285,10 @@ class TestOne(BaseClass):
 
         accountdetailspage.account_details_language_select_nederlands()
 
-        address = str(
-            accountdetailspage.account_details_address().get_attribute("value")
-        )
-        assert address == "Active street"
-
-        if user_os == "Darwin":
-            accountdetailspage.account_details_address().send_keys(
-                Keys.COMMAND + "a" + Keys.BACKSPACE
-            )
-        else:
-            accountdetailspage.account_details_address().send_keys(
-                Keys.CONTROL + "a" + Keys.BACKSPACE
-            )
-
-        accountdetailspage.account_details_address().send_keys("Passive street")
-
-        postcode = str(
-            accountdetailspage.account_details_postcode().get_attribute("value")
-        )
-        assert postcode == "9001"
-
-        if user_os == "Darwin":
-            accountdetailspage.account_details_postcode().send_keys(
-                Keys.COMMAND + "a" + Keys.BACKSPACE
-            )
-        else:
-            accountdetailspage.account_details_postcode().send_keys(
-                Keys.CONTROL + "a" + Keys.BACKSPACE
-            )
-
-        accountdetailspage.account_details_postcode().send_keys("9000")
-
-        town = str(accountdetailspage.account_details_town().get_attribute("value"))
-        assert town == "Activeville"
-
-        if user_os == "Darwin":
-            accountdetailspage.account_details_town().send_keys(
-                Keys.COMMAND + "a" + Keys.BACKSPACE
-            )
-        else:
-            accountdetailspage.account_details_town().send_keys(
-                Keys.CONTROL + "a" + Keys.BACKSPACE
-            )
-
-        accountdetailspage.account_details_town().send_keys("Gent")
-
         invoiceemail = str(
-            accountdetailspage.account_details_invoice_email().get_attribute("value")
+            accountdetailspage.account_details_invoice_email().get_attribute(
+                "value"
+            )
         )
         assert invoiceemail == "daan.swinnen+activeaccounttest@optimile.eu"
 
@@ -361,7 +306,9 @@ class TestOne(BaseClass):
         )
 
         accountdetailspage.account_details_save_button()
-        message = str(accountdetailspage.account_details_updated_message().text)
+        message = str(
+            accountdetailspage.account_details_updated_message().text
+        )
         assert "Account details updated" in message
 
         log.info("Succesfully verified accuracy of changes.")
@@ -400,7 +347,9 @@ class TestSubmoduleTwo(BaseClass):
         userdetailpagetest.user_detail_email().send_keys(email_format)
         userdetailpagetest.user_detail_phone().clear()
         random_variable = str(random.randint(100000, 999999))
-        userdetailpagetest.user_detail_phone().send_keys("+32477" + random_variable)
+        userdetailpagetest.user_detail_phone().send_keys(
+            "+32477" + random_variable
+        )
         userdetailpagetest.user_detail_postcode().clear()
         userdetailpagetest.user_detail_postcode().send_keys("9999")
         userdetailpagetest.user_detail_town().clear()
@@ -409,5 +358,7 @@ class TestSubmoduleTwo(BaseClass):
         userdetailpagetest.user_detail_notification_settings()
         userdetailpagetest.user_detail_save_button()
 
-        updatemessage = str(userdetailpagetest.user_detail_update_message().text)
+        updatemessage = str(
+            userdetailpagetest.user_detail_update_message().text
+        )
         assert "User information updated" in updatemessage

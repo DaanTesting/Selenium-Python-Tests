@@ -25,6 +25,10 @@ class TestOne(BaseClass):
         log.info("Navigating to CPO overview page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_overview()
+
+        assert self.driver.find_element(By.CSS_SELECTOR, "#mapDivId")
+        log.info("Verifying overview map is present.")
+
         titleoverviewpage = str(
             homepage.driver.find_element(
                 By.XPATH, "(//h1[normalize-space()='Overview'])[1]"

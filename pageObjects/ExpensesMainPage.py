@@ -79,4 +79,5 @@ class ExpensesMainPage:
         self.driver.find_element(*selector1).click()
         time.sleep(1)
         self.driver.find_element(*selector2).click()
+        time.sleep(1)
         self.driver.find_element(*selector3).click()

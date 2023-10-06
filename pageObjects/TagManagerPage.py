@@ -35,7 +35,7 @@ class TagManagerPage:
     def delete_tag(self):
         selector1 = (By.XPATH, "(//input[@type='checkbox'])[1]")
         self.driver.find_element(*selector1).click()
-        selector2 = (By.XPATH, "//span[.='Actions']")
+        selector2 = (By.XPATH, "//small[.='Actions']")
         self.driver.find_element(*selector2).click()
         selector3 = (By.XPATH, "//div/a[text()='Delete']")
         self.driver.find_element(*selector3).click()

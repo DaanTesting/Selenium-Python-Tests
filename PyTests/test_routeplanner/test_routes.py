@@ -5,7 +5,8 @@ import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 from pageObjects.RouteplannerLogin import RouteplannerLogin
 from pageObjects.RouteplannerMain import RouteplannerMain
 from PyTests.TestData.LoginPageData import LoginPageData
@@ -26,36 +27,92 @@ class TestSubModuleOne(BaseClass):
         routeplannerlogin.username_field().send_keys(login_data["account"])
         routeplannerlogin.password_field().send_keys(login_data["password"])
         routeplannermain = routeplannerlogin.login_button()
-        routeplannermain.scenario_dropdown().select_by_visible_text("TestCase1")
+        routeplannermain.scenario_dropdown().select_by_visible_text(
+            "TestCase1"
+        )
         routeplannermain.use_button()
-        time.sleep(3)
+        wait = WebDriverWait(self.driver, 10)
+        actions = ActionChains(self.driver)
 
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]"
-        ).click()
         time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]"
-        ).click()
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
         time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]"
-        ).click()
+        selector1 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]",
+        )
+        transportmethod1 = wait.until(EC.element_to_be_clickable(selector1))
+        transportmethod1.click()
 
-        time.sleep(15)
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+        selector2 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]",
+        )
 
+        transportmethod2 = wait.until(EC.element_to_be_clickable(selector2))
+        transportmethod2.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+        selector3 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]",
+        )
+
+        transportmethod3 = wait.until(EC.element_to_be_clickable(selector3))
+        transportmethod3.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+
+        selector4 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]",
+        )
+
+        transportmethod4 = wait.until(EC.element_to_be_clickable(selector4))
+        transportmethod4.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+        selector5 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]",
+        )
+
+        transportmethod5 = wait.until(EC.element_to_be_clickable(selector5))
+        transportmethod5.click()
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+
+        try:
+            selector6 = (
+                By.XPATH,
+                "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]",
+            )
+            transportmethod6 = wait.until(
+                EC.element_to_be_clickable(selector6)
+            )
+            transportmethod6.click()
+        except:
+            print("6th option not present")
+            pass
+
+        time.sleep(2)
+
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'De Lijn']")
+        
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'DonkeyRepublic']") 
+
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'BlueBike']")
+        
 
 class TestSubModuleTwo(BaseClass):
     def test_routeplanner_testcase2(self, setup, login_data):
@@ -66,35 +123,79 @@ class TestSubModuleTwo(BaseClass):
         routeplannerlogin.username_field().send_keys(login_data["account"])
         routeplannerlogin.password_field().send_keys(login_data["password"])
         routeplannermain = routeplannerlogin.login_button()
-        routeplannermain.scenario_dropdown().select_by_visible_text("TestCase2")
+        routeplannermain.scenario_dropdown().select_by_visible_text(
+            "TestCase2"
+        )
         routeplannermain.use_button()
-        time.sleep(3)
+        wait = WebDriverWait(self.driver, 10)
+        actions = ActionChains(self.driver)
 
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]"
-        ).click()
         time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]"
-        ).click()
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
         time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]"
-        ).click()
+        selector1 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]",
+        )
+        transportmethod1 = wait.until(EC.element_to_be_clickable(selector1))
+        transportmethod1.click()
 
-        time.sleep(15)
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+        selector2 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]",
+        )
+
+        transportmethod2 = wait.until(EC.element_to_be_clickable(selector2))
+        transportmethod2.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+        selector3 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]",
+        )
+
+        transportmethod3 = wait.until(EC.element_to_be_clickable(selector3))
+        transportmethod3.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+
+        selector4 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]",
+        )
+
+        transportmethod4 = wait.until(EC.element_to_be_clickable(selector4))
+        transportmethod4.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+        selector5 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]",
+        )
+
+        transportmethod5 = wait.until(EC.element_to_be_clickable(selector5))
+        transportmethod5.click()
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(2)
+
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'De Lijn']")
+        
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'NMBS/SNCB']")
+        
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'Cambio']")
+        
+
+
 
 
 class TestSubModuleThree(BaseClass):
@@ -106,32 +207,66 @@ class TestSubModuleThree(BaseClass):
         routeplannerlogin.username_field().send_keys(login_data["account"])
         routeplannerlogin.password_field().send_keys(login_data["password"])
         routeplannermain = routeplannerlogin.login_button()
-        routeplannermain.scenario_dropdown().select_by_visible_text("TestCase3")
+        routeplannermain.scenario_dropdown().select_by_visible_text(
+            "TestCase3"
+        )
         routeplannermain.use_button()
-        time.sleep(3)
+        wait = WebDriverWait(self.driver, 10)
+        actions = ActionChains(self.driver)
 
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]"
-        ).click()
         time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]"
-        ).click()
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
         time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[5]"
-        ).click()
-        time.sleep(1)
-        self.driver.find_element(
-            By.XPATH, "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[6]"
-        ).click()
+        selector1 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[1]",
+        )
+        transportmethod1 = wait.until(EC.element_to_be_clickable(selector1))
+        transportmethod1.click()
 
-        time.sleep(15)
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+        selector2 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[2]",
+        )
+
+        transportmethod2 = wait.until(EC.element_to_be_clickable(selector2))
+        transportmethod2.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+        selector3 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[3]",
+        )
+
+        transportmethod3 = wait.until(EC.element_to_be_clickable(selector3))
+        transportmethod3.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(1)
+
+        selector4 = (
+            By.XPATH,
+            "(//i[@class='fa-sharp fa-solid fa-chevron-down'])[4]",
+        )
+
+        transportmethod4 = wait.until(EC.element_to_be_clickable(selector4))
+        transportmethod4.click()
+
+        time.sleep(1)
+        actions.key_down(Keys.END).key_up(Keys.END).perform()
+        time.sleep(2)
+
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'De Lijn']")
+        
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'NMBS/SNCB']")
+        
+        assert self.driver.find_elements(By.XPATH, "//tr/td[text() = 'Cambio']")
+        
+
+        
