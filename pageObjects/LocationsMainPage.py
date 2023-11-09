@@ -19,7 +19,7 @@ class LocationsMainPage:
         return self.driver.find_element(*selector1)
 
     def find_location_click_top_result(self):
-        selector1 = (By.CSS_SELECTOR, "a[href='/co/admin/locations/119/']")
+        selector1 = (By.XPATH, "//a[.='Autotest Location Configuration']")
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation

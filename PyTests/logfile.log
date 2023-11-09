@@ -47,3 +47,7 @@
 2023-08-11 13:51:30,690 : INFO : test_cpo_splitbilling_screen : Attempting login.
 2023-08-11 13:51:31,387 : INFO : test_cpo_splitbilling_screen : Succesfully logged in.
 2023-08-11 13:51:31,387 : INFO : test_cpo_splitbilling_screen : Navigating to splitbilling page.
+2023-11-07 10:37:23,955 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2023-11-07 10:37:23,955 : INFO : test_cpo_overview_screen : Attempting login.
+2023-11-07 10:37:34,256 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2023-11-07 10:37:34,256 : INFO : test_cpo_customers_screen : Attempting login.

@@ -28,7 +28,7 @@ class ExpensesMainPage:
         return self.driver.find_element(*selector1)
 
     def expenses_open_top_expense_detail_modal(self):
-        selector1 = (By.XPATH, "(//div/div/button)[2]")
+        selector1 = (By.XPATH, "(//td/div/button)[1]")
         selector2 = (
             By.XPATH,
             "(//a[@role='button'][normalize-space()='Show details'])[1]",
@@ -74,7 +74,7 @@ class ExpensesMainPage:
             By.CSS_SELECTOR,
             "button[class='d-flex align-items-center gap-2 btn btn-default']",
         )
-        selector2 = (By.XPATH, "(//input[@type='checkbox'])[3]")
+        selector2 = (By.XPATH, "(//input[@type='checkbox'])[54]")
         selector3 = (By.XPATH, "//button[.='Apply']")
         self.driver.find_element(*selector1).click()
         time.sleep(1)

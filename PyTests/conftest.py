@@ -53,6 +53,8 @@ def setup(request):
         driver.get("https://test.optimile.eu/")
     elif server_name == "plannertest":
         driver.get("https://plannertest.optimile.eu/tester/")
+    elif server_name == "qatest":
+        driver.get("https://qatest.optimile.eu/welcome/?next=/co/")
 
     request.cls.driver = driver
     yield

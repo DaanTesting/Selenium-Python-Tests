@@ -20,7 +20,8 @@ from pageObjects.SplitBillingMainPage import SplitBillingMainPage
 from pageObjects.TagManagerPage import TagManagerPage
 from pageObjects.UserDetailPageTest import UserDetailPageTest
 from pageObjects.WhiteListPage import WhiteListPage
-
+from pageObjects.DiscountListOverview import DiscountListOverview
+from pageObjects.CpoPricingPage import CpoPricingPage
 
 class HomePage:
     def __init__(self, driver):
@@ -267,3 +268,16 @@ class HomePage:
         self.driver.find_element(*selector1).click()
         ruleengineoverview = RuleEngineOverview(self.driver)
         return ruleengineoverview
+    
+    def menu_label_discount_lists(self):
+        selector1 = (By.XPATH, "//span[.='Discount lists']")
+        self.driver.find_element(*selector1).click()
+        discountlistoverview = DiscountListOverview(self.driver)
+        return discountlistoverview
+    
+    def menu_label_cpo_pricing(self):
+        selector1 = (By.XPATH, "//span[.='Pricing']")
+        self.driver.find_element(*selector1).click()
+        cpopricingpage = CpoPricingPage(self.driver)
+        return cpopricingpage
+

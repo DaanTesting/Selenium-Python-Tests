@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import platform
 
 
 class GeneralObjects:
@@ -8,3 +10,10 @@ class GeneralObjects:
     def sign_out_button(self):
         selector1 = (By.CSS_SELECTOR, "a[title='Sign out']")
         self.driver.find_element(*selector1).click()
+
+    def open_new_tab(self):
+        selector1 = (By.CSS_SELECTOR, "body")
+        if platform.system() == 'Darwin':
+            self.driver.find_element(*selector1).send_keys(Keys.COMMAND + 't')
+        else:
+            self.driver.find_element(*selector1).send_keys(Keys.CONTROL + 't')

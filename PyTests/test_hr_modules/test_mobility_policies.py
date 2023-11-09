@@ -226,6 +226,7 @@ class TestSubModuleFive(BaseClass):
         changemobilitypolicypage = (
             mobilitypoliciesmainpage.mobility_policies_view_top_policy()
         )
+        time.sleep(2)
         changemobilitypolicypage.change_mobility_policy_activate_draft()
         time.sleep(2)
         message = str(
@@ -339,7 +340,7 @@ class TestSubModuleSix(BaseClass):
         )
         time.sleep(2)
         mobilitypoliciesmainpage.mobility_policies_view_top_policy()
-
+        time.sleep(2)
         changemobilitypolicypage.change_mobility_policy_activate_draft()
         time.sleep(2)
         message = str(

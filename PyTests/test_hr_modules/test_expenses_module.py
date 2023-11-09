@@ -153,14 +153,15 @@ class TestFive(BaseClass):
         log.info("Navigating to expenses-page.")
         homepage.menu_label_mobility()
         expensesmainpage = homepage.menu_label_expenses()
+        time.sleep(2)
 
         expensesmainpage.driver.find_element(
             By.CSS_SELECTOR, "input[placeholder='Search expenses']"
         ).send_keys("13423" + Keys.ENTER)
         log.info("Searched for expense with ID 13423.")
-        time.sleep(3)
-        self.driver.find_element(By.XPATH, "//td/div/div/button").click()
-        self.driver.find_element(By.PARTIAL_LINK_TEXT, "details").click()
+        time.sleep(2)
+        expensesmainpage.expenses_open_top_expense_detail_modal()
+        self.driver.find_element(By.XPATH, "//button[.='Show details']").click()
         log.info("Opened expense detail modal.")
         self.driver.find_element(
             By.CSS_SELECTOR, ".btn-muted-small.collapse-button.btn.btn-light"
@@ -203,7 +204,7 @@ class TestSix(BaseClass):
 
         Expenses = self.driver.find_elements(By.XPATH, "//tbody/tr")
         for Expense in Expenses:
-            assert self.driver.find_element(By.XPATH, "//td[5]").text == "Taxi"
+            assert self.driver.find_element(By.XPATH, "//td[5]").text == "Taxi & Uber"
 
         log.info("Succesfully verified that only taxi-expenses are visible.")
 
@@ -231,7 +232,7 @@ class TestSeven(BaseClass):
         expensesmainpage.tab_new(self.driver)
         log.info("Navigating to new expenses tab.")
         time.sleep(1)
-        self.driver.find_element(By.XPATH, "(//tbody/tr/td/div/div/button)[1]").click()
+        self.driver.find_element(By.XPATH, "(//td/div/button)[1]").click()
         time.sleep(1)
 
         self.driver.find_element(
@@ -248,7 +249,7 @@ class TestSeven(BaseClass):
 
         self.driver.find_element(By.XPATH, "//span[text()='Pending']").click()
         time.sleep(2)
-        self.driver.find_element(By.XPATH, "(//tbody/tr/td/div/div/button)[1]").click()
+        self.driver.find_element(By.XPATH, "(//td/div/button)[1]").click()
         time.sleep(1)
         self.driver.find_element(By.XPATH, "//a[.='Undo']").click()
         log.info("Undo expense.")
@@ -287,7 +288,7 @@ class TestEight(BaseClass):
         time.sleep(1)
         log.info("Navigating to new expenses tab.")
 
-        self.driver.find_element(By.XPATH, "(//tbody/tr/td/div/div/button)[1]").click()
+        self.driver.find_element(By.XPATH, "(//td/div/button)[1]").click()
         time.sleep(1)
         self.driver.find_element(
             By.XPATH, "//a[normalize-space()='Show details']"
@@ -306,7 +307,7 @@ class TestEight(BaseClass):
         self.driver.find_element(By.XPATH, "//span[text()='Pending']").click()
         log.info("Navigating to pending expenses tab.")
         time.sleep(2)
-        self.driver.find_element(By.XPATH, "(//tbody/tr/td/div/div/button)[1]").click()
+        self.driver.find_element(By.XPATH, "(//td/div/button)[1]").click()
         time.sleep(1)
         self.driver.find_element(By.XPATH, "//a[.='Undo']").click()
         log.info("Undo expense.")
@@ -376,7 +377,7 @@ class TestTen(BaseClass):
         expensesmainpage.expenses_datepicker_field().send_keys(Keys.ENTER)
         log.info("Selected date range in datepicker.")
         time.sleep(2)
-        expensedates = self.driver.find_elements(By.XPATH, "//tr/td[3]")
+        expensedates = self.driver.find_elements(By.XPATH, "//tr/td[4]")
         for expensedate in expensedates:
             assert str(expensedate.text) == "2023-05-17"
 
@@ -407,7 +408,7 @@ class TestEleven(BaseClass):
         expensesmainpage.expenses_filter_paid()
         log.info("Filtering expenses for 'paid'-status.")
         time.sleep(5)
-        statustags = self.driver.find_elements(By.XPATH, "//tr/td[6]")
+        statustags = self.driver.find_elements(By.XPATH, "//tr/td[7]")
         for statustag in statustags:
             assert str(statustag.text) == "Paid"
 

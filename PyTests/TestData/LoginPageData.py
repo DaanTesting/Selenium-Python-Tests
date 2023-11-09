@@ -20,6 +20,13 @@ class LoginPageData:
             "URL": "https://test.optimile.eu/",
         }
     ]
+    qatest_login_data = [
+        {
+            "account": "daan.swinnen@optimile.eu",
+            "password": "9FdfUh^V@U^3je",
+            "URL": "https://test.optimile.eu/",
+        }
+    ]
     plannertest_data = [
         {"account": "daan.swinnen@optimile.eu", "password": "wVVPlBgmVviujodBUEnc"}
     ]
