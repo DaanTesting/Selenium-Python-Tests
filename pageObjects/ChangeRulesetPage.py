@@ -12,7 +12,7 @@ class ChangeRulesetPage:
         return self.driver.find_element(*selector1)
 
     def ruleset_mobility_policy_field(self):
-        selector1 = (By.XPATH, "(//*[name()='svg'][@class='css-8mmkcg'])")
+        selector1 = (By.CSS_SELECTOR, ".react-select__value-container.css-hlgwow")
         self.driver.find_element(*selector1).click()
 
     def ruleset_description_field(self):
@@ -32,7 +32,7 @@ class ChangeRulesetPage:
         self.driver.find_element(*selector1).click()
 
     def ruleset_new_rule_expense_type(self):
-        selector1 = (By.XPATH, "(//*[name()='svg'][@class='css-8mmkcg'])[2]")
+        selector1 = (By.XPATH, "(//div[@class='react-select__input-container css-19bb58m'])[2]")
         self.driver.find_element(*selector1).click()
 
     def ruleset_new_rule_expense_amount(self):

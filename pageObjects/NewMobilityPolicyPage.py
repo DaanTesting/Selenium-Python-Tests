@@ -21,7 +21,7 @@ class NewMobilityPolicyPage:
     def new_policy_contract_dropdown(self):
         selector1 = (By.CSS_SELECTOR, "select[placeholder='Select a contract type']")
         dropdown = Select(self.driver.find_element(*selector1))
-        dropdown.select_by_index(1)
+        dropdown.select_by_visible_text("CMAAS Postpaid")
 
     def new_policy_budget_value(self):
         selector1 = (By.CSS_SELECTOR, "input[name*='refillLimit']")
@@ -49,6 +49,13 @@ class NewMobilityPolicyPage:
         selector2 = (By.CSS_SELECTOR, "#service-item-1")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
+    
+    def new_professional_policy_select_parking(self):
+        selector1 = (By.XPATH, "//h6[.='Parking']")
+        selector2 = (By.CSS_SELECTOR, "#service-1")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+    
 
     def new_policy_select_top_available_user(self):
         selector1 = (By.XPATH, "(//input[@type='checkbox'])[13]")
@@ -68,6 +75,10 @@ class NewMobilityPolicyPage:
 
     def save_policy_as_draft_button(self):
         selector1 = (By.XPATH, "//button[.='Save as draft']")
+        self.driver.find_element(*selector1).click()
+
+    def save_policy_button(self):
+        selector1 = (By.XPATH, "//button[.='Save']")
         self.driver.find_element(*selector1).click()
     
     def get_header_checkbox(self, table):

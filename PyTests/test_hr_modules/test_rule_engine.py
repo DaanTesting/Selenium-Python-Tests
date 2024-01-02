@@ -283,7 +283,7 @@ class TestSubmoduleSeven(BaseClass):
         ruleengineoverview = homepage.menu_label_rule_engine()
         log.info("Searching for 'active test' ruleset.")
         time.sleep(1)
-        ruleengineoverview.ruleset_search_bar().send_keys("active tes" + Keys.ENTER)
+        ruleengineoverview.ruleset_search_bar().send_keys("active test" + Keys.ENTER)
         time.sleep(3)
         log.info("Opening ruleset.")
         changerulesetpage = ruleengineoverview.ruleset_select_top()

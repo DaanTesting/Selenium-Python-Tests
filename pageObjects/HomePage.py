@@ -22,6 +22,10 @@ from pageObjects.UserDetailPageTest import UserDetailPageTest
 from pageObjects.WhiteListPage import WhiteListPage
 from pageObjects.DiscountListOverview import DiscountListOverview
 from pageObjects.CpoPricingPage import CpoPricingPage
+from pageObjects.ProfessionalPoliciesMainPage import ProfessionalPoliciesMainPage
+from pageObjects.ReportingPage import ReportingPage
+from pageObjects.FederalBudgetsPage import FederalBudgetsPage
+from pageObjects.FederalPoliciesPage import FederalPoliciesPage
 
 class HomePage:
     def __init__(self, driver):
@@ -63,6 +67,17 @@ class HomePage:
         self.driver.find_element(*selector2).click()
         mobilitypoliciesmainpage = MobilityPoliciesMainPage(self.driver)
         return mobilitypoliciesmainpage
+
+    def menu_label_professional_policies(self):
+        selector1 = (By.CSS_SELECTOR, 'a[href*="mobility"]')
+        selector2 = (
+            By.XPATH,
+            "//span[.='Professional policies']",
+        )
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        professionalpoliciesmainpage = ProfessionalPoliciesMainPage(self.driver)
+        return professionalpoliciesmainpage
 
     def menu_label_msp_customers(self):
         selector1 = (By.XPATH, "(//span[text()='Customers'])[2]")
@@ -136,7 +151,7 @@ class HomePage:
         self.driver.find_element(*selector1).click()
 
     def menu_label_administration_hr(self):
-        selector1 = (By.XPATH, "(//span[normalize-space()='Administration'])[1]")
+        selector1 = (By.XPATH, "//span[.='Administration']")
         self.driver.find_element(*selector1).click()
 
     def menu_label_create_report(self):
@@ -280,4 +295,23 @@ class HomePage:
         self.driver.find_element(*selector1).click()
         cpopricingpage = CpoPricingPage(self.driver)
         return cpopricingpage
+    
+    def menu_label_reporting(self):
+        selector1 = (By.XPATH, "//span[@class='menu-label'][contains(.,'Reporting')]")
+        self.driver.find_element(*selector1).click()
+        reportingpage = ReportingPage(self.driver)
+        return reportingpage
+    
+    def menu_label_federal_budgets(self):
+        selector1 = (By.XPATH, "//span[.='Federal budgets']")
+        self.driver.find_element(*selector1).click()
+        federalbudgetspage = FederalBudgetsPage(self.driver)
+        return federalbudgetspage             
+    
+    def menu_label_federal_policies(self):
+        selector1 = (By.XPATH, "//span[.='Federal policies']")
+        self.driver.find_element(*selector1).click()
+        federalpoliciespage = FederalPoliciesPage(self.driver)
+        return federalpoliciespage
+
 

@@ -57,6 +57,7 @@ class TestTwo(BaseClass):
         log.info("Navigating to administration-pages.")
 
         homepage.menu_label_administration()
+
         accountdetailspage = homepage.menu_label_account_details()
         titleaccountdetailspage = accountdetailspage.account_details_title().text
         assert titleaccountdetailspage == "Account details"
@@ -71,6 +72,9 @@ class TestTwo(BaseClass):
         titletagmanagerpage = tagmanagerpage.page_title().text
         assert "Tag manager" in titletagmanagerpage
         log.info("Succesfully verified tag manager page.")
+
+        reportingpage = homepage.menu_label_reporting()
+        
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -96,13 +100,6 @@ class TestThree(BaseClass):
         ).text
         assert titleimportpage == "Import employees"
         log.info("Succesfully verified import-page.")
-
-        homepage.menu_label_create_report()
-        titlecreatereportpage = self.driver.find_element(
-            By.XPATH, "(//h1[normalize-space()='Create report'])[1]"
-        ).text
-        assert titlecreatereportpage == "Create report"
-        log.info("Succesfully verified report-page.")
 
         homepage.menu_label_profiles_overview()
         titleprofilesoverview = self.driver.find_element(
@@ -212,3 +209,52 @@ class TestSix(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
+class TestSeven(BaseClass):
+    def test_federal_budgets(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting Login.")
+
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        homepage.menu_label_mobility()
+        federalbudgetspage = homepage.menu_label_federal_budgets()
+        federalbudgetspage.budget_management_tab()
+        federalbudgetspage.budget_creation_tab()
+        pagetitle = self.driver.find_element(By.XPATH, "//h1[@class='title-with-button']").text
+        assert "Federal mobility budgets" in pagetitle
+
+class TestEight(BaseClass):
+    def test_federal_policies(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting Login.")
+
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        homepage.menu_label_mobility()
+        homepage.menu_label_federal_policies()
+        
+        pagetitle = self.driver.find_element(By.XPATH, "//h1[@class='title-with-button']").text
+        assert "Federal mobility policies" in pagetitle
+    
+class TestNine(BaseClass):
+    def test_professional_policies(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting Login.")
+
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        homepage.menu_label_mobility()
+        homepage.menu_label_professional_policies()
+        
+        pagetitle = self.driver.find_element(By.XPATH, "//h1[@class='title-with-button']").text
+        assert "Professional mobility policies" in pagetitle

@@ -1,11 +1,10 @@
 import datetime
 import time
-
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-
+from selenium.webdriver.common.keys import Keys
 from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from pageObjects.SplitBillingMainPage import SplitBillingMainPage
@@ -144,7 +143,7 @@ class TestFour(BaseClass):
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
         log.info("Searching for 'Autotest Location Configuration'.")
-        locationsmainpage.find_location().send_keys("Autotest Location Configuration")
+        locationsmainpage.find_location().send_keys("Autotest Location Configuration" + Keys.ENTER)
         individualcharginglocation = locationsmainpage.find_location_click_top_result()
         log.info("Attempting to edit 'Autotest Location'.")
         individualcharginglocation.edit_button()
@@ -212,7 +211,7 @@ class TestFive(BaseClass):
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
         log.info("Searching for 'Autotest Location Configuration'.")
-        locationsmainpage.find_location().send_keys("Autotest Location Configuration")
+        locationsmainpage.find_location().send_keys("Autotest Location Configuration" + Keys.ENTER)
         individualcharginglocation = locationsmainpage.find_location_click_top_result()
         log.info("Attempting to edit 'Autotest Location'.")
         individualcharginglocation.edit_button()
@@ -277,7 +276,7 @@ class TestSix(BaseClass):
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
         log.info("Searching for 'Autotest Location Configuration'.")
-        locationsmainpage.find_location().send_keys("Autotest Location Configuration")
+        locationsmainpage.find_location().send_keys("Autotest Location Configuration" + Keys.ENTER)
         individualcharginglocation = locationsmainpage.find_location_click_top_result()
         log.info("Navigating to devices tab.")
         individualcharginglocation.devices_tab()
@@ -298,3 +297,35 @@ class TestSix(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
+class TestSeven(BaseClass):
+    def test_add_charging_location(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to locations page.")
+        homepage.menu_label_chargingpoints()
+        locationsmainpage = homepage.menu_label_locations()
+        locationsmainpage.create_location_button()
+        locationsmainpage.create_location_select_customer()
+        timestamp = str(datetime.datetime.now())
+        locationsmainpage.create_location_location_name().send_keys(timestamp)
+        locationsmainpage.create_location_address().send_keys("Raas Van Gaverestraat 11")
+        locationsmainpage.create_location_postcode().send_keys("9000")
+        locationsmainpage.create_location_town().send_keys("Gent" + Keys.ENTER)
+        locationsmainpage.create_location_create_button()
+        successmessage = str(self.driver.find_element(By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible").text)
+        assert "Charging location saved" in successmessage
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+
+

@@ -12,10 +12,7 @@ class NewRulesetPage:
         return self.driver.find_element(*selector1)
 
     def ruleset_mobility_policy_dropdown(self):
-        selector1 = (
-            By.CSS_SELECTOR,
-            ".react-select__indicator.react-select__dropdown-indicator.css-1xc3v61-indicatorContainer",
-        )
+        selector1 = (By.CSS_SELECTOR, ".react-select__input-container.css-19bb58m")
         self.driver.find_element(*selector1).click()
 
     def ruleset_description_field(self):

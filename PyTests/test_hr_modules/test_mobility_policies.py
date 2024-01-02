@@ -90,18 +90,16 @@ class TestSubModuleThree(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
-        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
+        professionalpoliciesmainpage = homepage.menu_label_professional_policies()
         log.info("Attempting to create new mobility policy.")
         newmobilitypolicypage = (
-            mobilitypoliciesmainpage.mobility_policies_create_button()
+            professionalpoliciesmainpage.mobility_policies_create_button()
         )
 
         timestamp = str(datetime.now())
 
         newmobilitypolicypage.new_policy_name_field().send_keys(timestamp)
         log.info("Set policy name as 'timestamp'.")
-        newmobilitypolicypage.new_policy_type_dropdown()
-        log.info("Selected mobility policy type as 'professional'.")
         newmobilitypolicypage.new_policy_contract_dropdown()
         log.info("Selected second contract.")
         newmobilitypolicypage.new_policy_budget_value().send_keys("150")
@@ -113,7 +111,7 @@ class TestSubModuleThree(BaseClass):
         log.info("Set start date on 'today'.")
         log.info("Set end date as undefined.")
 
-        newmobilitypolicypage.new_policy_select_parking()
+        newmobilitypolicypage.new_professional_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
 
         available_table = self.driver.find_element(By.CLASS_NAME, "dual-table-left-container")
@@ -197,8 +195,9 @@ class TestSubModuleFour(BaseClass):
 
         newmobilitypolicypage.save_policy_as_draft_button()
         time.sleep(1)
+        newmobilitypolicypage.save_policy_button()
         message = newmobilitypolicypage.message_saved_as_draft().text
-        assert message == "Mobility policy successfully saved as draft."
+        assert message == "Mobility policy successfully updated."
         log.info("Succesfully verified new mobility policy has been saved as draft.")
 
         generalobjects = GeneralObjects(self.driver)
