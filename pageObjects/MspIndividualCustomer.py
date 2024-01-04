@@ -60,3 +60,7 @@ class MspIndividualCustomer:
     def select_top_emailadress(self):
         selector1 = (By.XPATH, "//tr[3]/td[2]")
         return self.driver.find_element(*selector1)
+    
+    def top_session_value(self):
+        selector1 = (By.XPATH, "//tr[1]/td[7]")
+        return self.driver.find_element(*selector1)

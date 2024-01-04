@@ -301,7 +301,8 @@ class TestSubModuleSeven(BaseClass):
         reportingpage.select_report_type()
 
         actions = ActionChains(self.driver)
-        actions.send_keys("Finance extended" + Keys.ENTER)
+        actions.send_keys("Finance extended")
+        actions.send_keys(Keys.ENTER)
         actions.perform()
 
         reportingpage.create_report_next_button()

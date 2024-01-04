@@ -8,6 +8,7 @@ class ReportingPage:
 
     def page_title(self):
         selector1 = (By.XPATH, "//h1[@class='title-with-button']")
+        return self.driver.find_element(*selector1)
         
     
     def create_report_button(self):

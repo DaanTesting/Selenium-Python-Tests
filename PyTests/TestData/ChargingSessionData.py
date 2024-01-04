@@ -9,3 +9,11 @@ class ChargingSessionData:
             "connectorId": "1",
         }
     ]
+
+    discount_session_data = [
+        {
+            "OCPP ID": "AutoTestDevice",
+            "discount RFID": "23B4587B",
+            "connectorId": "1",
+        }
+    ]

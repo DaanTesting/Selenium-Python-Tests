@@ -203,6 +203,3 @@ class TestFive(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-
-        
-

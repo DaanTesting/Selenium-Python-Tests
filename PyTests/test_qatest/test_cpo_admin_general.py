@@ -222,3 +222,42 @@ class TestSix(BaseClass):
         cpotokenspage.select_customer()
         time.sleep(1)
         cpotokenspage.save_token_button()
+
+class TestSeven(BaseClass):
+    def test_create_customer(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to customers page.")
+        cpocustomerpage = homepage.menu_label_cpo_customers()
+        createcustomerpage = cpocustomerpage.create_customer_button()
+        random_integer = str(random.randint(100000000, 999999999))
+        timestamp = str(datetime.datetime.now())
+        createcustomerpage.company_name_field().send_keys(random_integer)
+        createcustomerpage.company_type_field().send_keys("Generated on: " + timestamp)
+        createcustomerpage.VAT_number_field().send_keys("BE1252175374")
+        createcustomerpage.first_name_field().send_keys(random_integer)
+        createcustomerpage.last_name_field().send_keys(random_integer)
+        createcustomerpage.email_address_field().send_keys("daan.swinnen+" + random_integer + "@optimile.eu")
+        createcustomerpage.phone_field().send_keys("+32474531188")
+        createcustomerpage.address_field().send_keys("Autotest straat 123")
+        createcustomerpage.postcode_field().send_keys("9000")
+        createcustomerpage.town_field().send_keys("Gent")
+
+        cpoindividualcustomer = createcustomerpage.save_button()
+        message = cpoindividualcustomer.message_banner().text
+        assert message == "Customer created."
+
+        cpoindividualcustomer.delete_button()
+        message = cpoindividualcustomer.message_banner().text
+        assert "Customer deleted:" in message
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()

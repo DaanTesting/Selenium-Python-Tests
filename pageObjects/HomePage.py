@@ -26,6 +26,8 @@ from pageObjects.ProfessionalPoliciesMainPage import ProfessionalPoliciesMainPag
 from pageObjects.ReportingPage import ReportingPage
 from pageObjects.FederalBudgetsPage import FederalBudgetsPage
 from pageObjects.FederalPoliciesPage import FederalPoliciesPage
+from pageObjects.ExternalUsersPage import ExternalUsersPage
+from pageObjects.UserInvitesPage import UserInvitesPage
 
 class HomePage:
     def __init__(self, driver):
@@ -235,46 +237,51 @@ class HomePage:
     def menu_label_external_users(self):
         selector1 = (By.XPATH, "(//span[.='External users'])[1]")
         self.driver.find_element(*selector1).click()
+        externaluserspage = ExternalUsersPage(self.driver)
+        return externaluserspage
 
     def menu_label_user_invites(self):
         selector1 = (
             By.XPATH,
-            "(//span[@class='menu-label'][normalize-space()='User invites'])[1]",
+            "(//span[.='User invites'])[1]",
         )
         self.driver.find_element(*selector1).click()
+        userinvitespage = UserInvitesPage(self.driver)
+        return userinvitespage
+
 
     def menu_label_invoices(self):
         selector1 = (
             By.XPATH,
-            "(//span[contains(@class,'menu-label')][normalize-space()='Invoices'])[1]",
+            "(//span[.='Invoices'])[1]",
         )
         self.driver.find_element(*selector1).click()
 
     def menu_label_credit(self):
         selector1 = (
             By.XPATH,
-            "(//span[contains(@class,'menu-label')][normalize-space()='Credit'])[1]",
+            "(//span[.='Credit'])[1]",
         )
         self.driver.find_element(*selector1).click()
 
     def menu_label_revenue(self):
         selector1 = (
             By.XPATH,
-            "(//span[contains(@class,'menu-label')][normalize-space()='Revenue'])[1]",
+            "(//span[.='Revenue'])[1]",
         )
         self.driver.find_element(*selector1).click()
 
     def menu_label_payment_requests(self):
         selector1 = (
             By.XPATH,
-            "(//span[@class='menu-label'][normalize-space()='Payment requests'])[1]",
+            "(//span[.='Payment requests'])[1]",
         )
         self.driver.find_element(*selector1).click()
 
     def menu_label_debit_notes(self):
         selector1 = (
             By.XPATH,
-            "(//span[@class='menu-label'][normalize-space()='Debit notes'])[1]",
+            "(//span[.='Debit notes'])[1]",
         )
         self.driver.find_element(*selector1).click()
 

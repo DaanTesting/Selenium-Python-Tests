@@ -1,6 +1,8 @@
 import datetime
 import time
 import pytest
+import random
+from datetime import datetime
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -70,7 +72,6 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-
 class TestTwo(BaseClass):
     def test_filter_locations(self, setup, login_data):
         log = self.get_logger()
@@ -98,7 +99,6 @@ class TestTwo(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-
 class TestThree(BaseClass):
     def test_locations_search_devices(self, setup, login_data):
         log = self.get_logger()
@@ -125,7 +125,6 @@ class TestThree(BaseClass):
         log.info("Verified 'QATEST' is only device returned.")
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
-
 
 class TestFour(BaseClass):
     def test_configure_location_information(self, setup, login_data):
@@ -194,7 +193,6 @@ class TestFour(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-
 class TestFive(BaseClass):
     def test_configure_location_location_data(self, setup, login_data):
         log = self.get_logger()
@@ -259,7 +257,6 @@ class TestFive(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-
 class TestSix(BaseClass):
     def test_add_charging_device(self, setup, login_data):
         log = self.get_logger()
@@ -283,7 +280,7 @@ class TestSix(BaseClass):
         log.info("Attempting to register a new device.")
         individualcharginglocation.register_a_new_device()
 
-        dt = str(datetime.datetime.now())
+        dt = str(datetime.now())
         log.info("Setting OCPP_ID.")
         individualcharginglocation.OCPP_ID_field().send_keys("MOCK_<" + dt + ">")
         log.info("Selecting contract from dropdown.")
@@ -315,7 +312,7 @@ class TestSeven(BaseClass):
         locationsmainpage = homepage.menu_label_locations()
         locationsmainpage.create_location_button()
         locationsmainpage.create_location_select_customer()
-        timestamp = str(datetime.datetime.now())
+        timestamp = str(datetime.now())
         locationsmainpage.create_location_location_name().send_keys(timestamp)
         locationsmainpage.create_location_address().send_keys("Raas Van Gaverestraat 11")
         locationsmainpage.create_location_postcode().send_keys("9000")
@@ -326,6 +323,139 @@ class TestSeven(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
+class TestEight(BaseClass):
+    def test_create_customer(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to customers page.")
+        homepage.menu_label_chargingpoints()
+        cpocustomerpage = homepage.menu_label_cpo_customers()
+        createcustomerpage = cpocustomerpage.create_customer_button()
+        random_integer = str(random.randint(100000000, 999999999))
+        timestamp = str(datetime.now())
+        createcustomerpage.company_name_field().send_keys(random_integer)
+        createcustomerpage.company_type_field().send_keys("Generated on: " + timestamp)
+        createcustomerpage.VAT_number_field().send_keys("BE1252175374")
+        createcustomerpage.first_name_field().send_keys(random_integer)
+        createcustomerpage.last_name_field().send_keys(random_integer)
+        createcustomerpage.email_address_field().send_keys("daan.swinnen+" + random_integer + "@optimile.eu")
+        createcustomerpage.phone_field().send_keys("+32474531188")
+        createcustomerpage.address_field().send_keys("Autotest straat 123")
+        createcustomerpage.postcode_field().send_keys("9000")
+        createcustomerpage.town_field().send_keys("Gent")
+
+        cpoindividualcustomer = createcustomerpage.save_button()
+        message = cpoindividualcustomer.message_banner().text
+        assert message == "Customer created."
+
+        cpoindividualcustomer.delete_button()
+        message = cpoindividualcustomer.message_banner().text
+        assert "Customer deleted:" in message
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+class TestNine(BaseClass):
+    def test_activate_pending_contract(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to customers page.")
+        homepage.menu_label_chargingpoints()
+        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage.pending_contracts_button()
+        cpocustomerpage.activate_top_pending_contract()
+        message = cpocustomerpage.message_banner().text
+        assert message == "Contract approved."
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+        
+class TestTen(BaseClass):
+    def test_activate_customer(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to customers page.")
+        homepage.menu_label_chargingpoints()
+        cpocustomerpage = homepage.menu_label_cpo_customers()
+
+        cpocustomerpage.active_customers_filter()
+        cpocustomerpage.blocked_customer_filter()
+        title = cpocustomerpage.page_title().text
+        assert "Customers that require activation" in title
+
+        cpocustomerpage.click_on_top_result_customer()
+
+        try:
+            cpocustomerpage.approve_customer()
+            message = cpocustomerpage.message_banner().text
+            assert message == "Customer accepted"
+        except Exception as error:
+            log.info(error)
+
+        cpocustomerpage.approve_registration()
+        message = cpocustomerpage.message_banner().text
+        assert message == "Customer registered and login credentials are sent."
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+class TestEleven(BaseClass):
+    def test_filters_customer_page(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to customers page.")
+        homepage.menu_label_chargingpoints()
+        cpocustomerpage = homepage.menu_label_cpo_customers()
+
+        cpocustomerpage.active_customers_filter()
+        cpocustomerpage.pending_customer_filter()
+        cpocustomerpage.new_customer_filter()
+        cpocustomerpage.blocked_customer_filter()
+
+        empty_page_title = self.driver.find_element(By.XPATH, "(//p)[2]").text
+        assert empty_page_title == "No customers found."
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+
+
+
+
+
 
 
 

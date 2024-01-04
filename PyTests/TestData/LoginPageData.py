@@ -20,6 +20,17 @@ class LoginPageData:
             "URL": "https://test.optimile.eu/",
         }
     ]
+
+    test_auto_main_data = [
+        {
+            
+            "account": "daan.swinnen+autotest.cpocompany@optimile.eu",
+            "password": "hHsxpRXGX9NrN4aw6iCH_",
+            "URL": "https://test.optimile.eu/",
+        
+        }
+    ]
+
     qatest_login_data = [
         {
             "account": "daan.swinnen@optimile.eu",

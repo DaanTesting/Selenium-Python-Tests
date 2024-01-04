@@ -38,6 +38,10 @@ class TestOne(BaseClass):
         assert titlepageinvoices == "Invoices"
         log.info("Succesfully verified invoices-page.")
 
+        homepage.menu_label_payment_requests()
+        titlepagepaymentrequests = self.driver.find_element(By.XPATH, "//h1[contains(.,'Payment requests')]").text
+        assert titlepagepaymentrequests == "Payment requests"
+
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
@@ -59,8 +63,8 @@ class TestTwo(BaseClass):
         homepage.menu_label_administration()
 
         accountdetailspage = homepage.menu_label_account_details()
-        titleaccountdetailspage = accountdetailspage.account_details_title().text
-        assert titleaccountdetailspage == "Account details"
+        title_accountdetailspage = accountdetailspage.account_details_title().text
+        assert title_accountdetailspage == "Account details"
         log.info("Succesfully verified account details page.")
 
         accountdetailspage.account_details_save_button()
@@ -69,12 +73,26 @@ class TestTwo(BaseClass):
         log.info("Succesfully updated account details.")
 
         tagmanagerpage = homepage.menu_label_tag_manager()
-        titletagmanagerpage = tagmanagerpage.page_title().text
-        assert "Tag manager" in titletagmanagerpage
+        title_tagmanagerpage = tagmanagerpage.page_title().text
+        assert title_tagmanagerpage == "Tag manager\nCreate tag"
         log.info("Succesfully verified tag manager page.")
 
+        homepage.menu_label_administration()
+
+        externaluserspage = homepage.menu_label_external_users()
+        title_externaluserspage = externaluserspage.page_title().text
+        assert title_externaluserspage == "External users"
+        log.info("Succesfully verified external users page.")
+
+        userinvitespage = homepage.menu_label_user_invites()
+        title_usersinvitespage = userinvitespage.page_title().text
+        assert title_usersinvitespage == 'User invites'
+        log.info("Succesfully verified User invites page.")
+
         reportingpage = homepage.menu_label_reporting()
-        
+        title_reportingpage = reportingpage.page_title().text
+        assert title_reportingpage == "Reports\nCreate report"
+        log.info("Succesfully verified reporting page")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()

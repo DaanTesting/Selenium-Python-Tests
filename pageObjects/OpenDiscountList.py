@@ -62,10 +62,31 @@ class OpenDiscountList:
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         
-
     def charging_point_save_button(self):
         selector1 = (By.XPATH, "//button[.='Save']")
         self.driver.find_element(*selector1).click()
+
+    def add_external_token_button(self):
+        selector1 = (By.XPATH, "//button[.='External token']")
+        self.driver.find_element(*selector1).click()
+
+    def external_token_uid_field(self):
+        selector1 = (By.CSS_SELECTOR, "#id_uid")
+        return self.driver.find_element(*selector1)
+    
+    def remove_top_token_from_discount(self):
+        selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
+        selector2 = (By.XPATH, "//button[.='Remove']")
+        selector3 = (By.CSS_SELECTOR, "#okButton")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()
+
+    def message_banner(self):
+        selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
+        return self.driver.find_element(*selector1)
+    
+
 
 
     

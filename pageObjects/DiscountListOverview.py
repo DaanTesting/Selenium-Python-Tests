@@ -31,7 +31,7 @@ class DiscountListOverview:
 
     def enable_top_list(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
-        selector2 = (By.XPATH, "(//form[@id='remove_47'])[1]")
+        selector2 = (By.XPATH, "(//button[.='Enable'])[1]")
         selector3 = (By.CSS_SELECTOR, "#okButton")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
@@ -44,4 +44,14 @@ class DiscountListOverview:
         self.driver.find_element(*selector2).click()
         opendiscountlist = OpenDiscountList(self.driver)
         return opendiscountlist
+    
+    def open_autotest_list(self):
+        selector1 = (By.XPATH, "//a[.=' Automatic Test Discount']")
+        self.driver.find_element(*selector1).click()
+        opendiscountlist = OpenDiscountList(self.driver)
+        return opendiscountlist
+    
+    def message_banner(self):
+        selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
+        return self.driver.find_element(*selector1)
 

@@ -73,6 +73,11 @@ class TestOne(BaseClass):
         assert titleuserinvites == "User invites"
         log.info("Verified user invites page.")
 
+        reportingpage = homepage.menu_label_reporting()
+        title_reportingpage = reportingpage.page_title().text
+        assert title_reportingpage == "Reports\nCreate report"
+        log.info("Succesfully verified reporting page")
+
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 

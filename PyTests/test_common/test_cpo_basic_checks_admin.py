@@ -1,4 +1,5 @@
 import pytest
+import time
 from selenium.webdriver.common.by import By
 
 from pageObjects.GeneralObjects import GeneralObjects
@@ -34,7 +35,7 @@ class TestOne(BaseClass):
                 By.XPATH, "(//h1[normalize-space()='Overview'])[1]"
             ).text
         )
-        assert "Overview" in titleoverviewpage
+        assert titleoverviewpage == "Overview"
         log.info("Succesfully verified CPO overview page.")
 
         generalobjects = GeneralObjects(self.driver)
@@ -221,7 +222,6 @@ class TestOne(BaseClass):
         )
         assert "Reports" in titlefinancepage
         log.info("Succesfully verified reports page.")
-
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
@@ -270,4 +270,5 @@ class TestOne(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 

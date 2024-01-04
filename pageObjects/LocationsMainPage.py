@@ -8,7 +8,7 @@ class LocationsMainPage:
         self.driver = driver
 
     def find_location(self):
-        selector1 = (By.CSS_SELECTOR, "input[placeholder='Name, location or owner']")
+        selector1 = (By.XPATH, "(//div/input)[1]")
         return self.driver.find_element(*selector1)
 
     def find_device(self):
@@ -19,7 +19,7 @@ class LocationsMainPage:
         return self.driver.find_element(*selector1)
 
     def find_location_click_top_result(self):
-        selector1 = (By.XPATH, "//a[.='Autotest Location Configuration']")
+        selector1 = (By.XPATH, "//tr/td[2]/a[1]")
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation
