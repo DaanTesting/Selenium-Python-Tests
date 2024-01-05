@@ -19,7 +19,7 @@ class LocationsMainPage:
         return self.driver.find_element(*selector1)
 
     def find_location_click_top_result(self):
-        selector1 = (By.XPATH, "//tr/td[2]/a[1]")
+        selector1 = (By.XPATH, "//tr/td[3]/a[1]")
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation
