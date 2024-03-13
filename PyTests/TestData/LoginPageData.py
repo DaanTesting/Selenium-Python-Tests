@@ -9,7 +9,7 @@ class LoginPageData:
     test_login_data = [
         {
             "account": "daan.swinnen@optimile.eu",
-            "password": "lhiM6Alk8jW4Nh2skJMV",
+            "password": "lhiM6Alk8jW4Nh2skJMV_",
             "URL": "https://test.optimile.eu/",
         }
     ]

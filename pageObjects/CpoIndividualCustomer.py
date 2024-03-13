@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+from pageObjects.CpoNewUserForm import CpoNewUserForm
 
 class CpoIndividualCustomer:
     def __init__(self, driver):
@@ -7,6 +7,10 @@ class CpoIndividualCustomer:
 
     def sessions_tab(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Sessions'])")
+        self.driver.find_element(*selector1).click()
+
+    def users_tab(self):
+        selector1 = (By.XPATH, "//span[contains(.,'Users')]")
         self.driver.find_element(*selector1).click()
     
     def top_session_value(self):
@@ -20,3 +24,10 @@ class CpoIndividualCustomer:
     def delete_button(self):
         selector1 = (By.XPATH, "//button[.='Delete']")
         self.driver.find_element(*selector1).click()
+
+    def create_user_button(self):
+        selector1 = (By.XPATH, "//a[.='Create user']")
+        self.driver.find_element(*selector1).click()
+        cpo_new_user_form = CpoNewUserForm(self.driver)
+        return cpo_new_user_form
+

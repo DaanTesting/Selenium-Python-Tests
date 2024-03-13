@@ -28,8 +28,10 @@ class TestOne(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to cpo customers page.")
         homepage.menu_label_chargingpoints()
         cpocustomerpage = homepage.menu_label_cpo_customers()
+        log.info("Attempting to generate 'all customers' report.")
         cpocustomerpage.generate_all_customer_report()
 
         today = datetime.date.today()
@@ -41,6 +43,7 @@ class TestOne(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified 'all customers' report has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -56,8 +59,10 @@ class TestTwo(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to locations page.")
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
+        log.info("Attempting to generate locations export.")
         locationsmainpage.generate_export()
 
         today = datetime.date.today()
@@ -69,6 +74,7 @@ class TestTwo(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified locations export has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -84,8 +90,10 @@ class TestThree(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to tokens page.")
         homepage.menu_label_chargingpoints()
         cpotokenspage = homepage.menu_label_cpo_tokens()
+        log.info("Attempting to download 'tokens in use' export")
         cpotokenspage.select_tokens_in_use()
         cpotokenspage.download_tokens()
 
@@ -98,7 +106,9 @@ class TestThree(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified 'tokens in use'-export has been downloaded.")
 
+        log.info("Attempting to download 'available tokens' export.")
         cpotokenspage.select_tokens_available()
         cpotokenspage.download_tokens()
 
@@ -111,6 +121,7 @@ class TestThree(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified 'available tokens' export has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -126,8 +137,10 @@ class TestFour(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to simcards page.")
         homepage.menu_label_chargingpoints()
         cposimcardspage = homepage.menu_label_cpo_simcards()
+        log.info("Attempting to generate simcards export.")
         cposimcardspage.generate_export()
 
         today = datetime.date.today()
@@ -139,6 +152,7 @@ class TestFour(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified simcards export has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -154,19 +168,32 @@ class TestFive(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to roaming page.")
         homepage.menu_label_chargingpoints()
         cporoamingpage = homepage.menu_label_cpo_roaming()
+        log.info("Attempting to generate prices export.")
         cporoamingpage.export_prices()
 
         download_directory = cache_directory
-        downloaded_file_name = f"1-sp_test.xlsx"
+        downloaded_file_name = f"26-Spark BV.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Succesfully verified prices export has been downloaded.")
 
+        log.info("Attempting to export cdr.")
         cporoamingpage.export_cdr()
+
+        download_directory = cache_directory
+        downloaded_file_name = f"Optimile Test Brand-cp_test-2023-01-01-2024-01-01.xlsx"
+        downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
+        time.sleep(3)
+        os.path.exists(downloaded_file_path)
+        os.remove(downloaded_file_path)
+
+        log.info("Successfully verified cdr export has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -182,8 +209,10 @@ class TestSix(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to cpo reports page.")
         homepage.menu_label_chargingpoints()
         cporeportspage = homepage.menu_label_cpo_reports()
+        log.info("Attempting to export excel report.")
         cporeportspage.export_excel()
 
         today = datetime.date.today()
@@ -195,6 +224,8 @@ class TestSix(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified excel report has been downloaded.")
+        log.info("Attempting to export csv report.")
 
         cporeportspage.export_csv()
 
@@ -205,12 +236,13 @@ class TestSix(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified csv report has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
 
-class TestSix(BaseClass):
+class TestSeven(BaseClass):
     def test_cpo_splitbilling_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -220,8 +252,10 @@ class TestSix(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to splitbilling page.")
         homepage.menu_label_chargingpoints()
         splitbillingmainpage = homepage.menu_label_splitbilling()
+        log.info("Attempting to generate splitbilling export.")
         splitbillingmainpage.generate_export()
 
         today = datetime.date.today()
@@ -233,12 +267,13 @@ class TestSix(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified splitbilling export has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
 
-class TestSeven(BaseClass):
+class TestEight(BaseClass):
     def test_msp_customers_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -248,8 +283,10 @@ class TestSeven(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to msp customers page.")
         homepage.menu_label_mobility()
         mspcustomerpage = homepage.menu_label_msp_customers()
+        log.info("Attempting to generate mobility customers export.")
         mspcustomerpage.generate_mobility_customers_export()
 
         today = datetime.date.today()
@@ -261,7 +298,9 @@ class TestSeven(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified mobility customers export has been downloaded.")
 
+        log.info("Attempting to generate mobility users export.")
         mspcustomerpage.generate_mobility_users_export()
         time.sleep(10)
 
@@ -274,12 +313,13 @@ class TestSeven(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified mobility users export has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
 
-class TestEight(BaseClass):
+class TestNine(BaseClass):
     def test_msp_tokens_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -318,7 +358,7 @@ class TestEight(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestNine(BaseClass):
+class TestTen(BaseClass):
     def test_msp_vouchers_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -328,8 +368,10 @@ class TestNine(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to msp vouchers page.")
         homepage.menu_label_mobility()
         mspvoucherspage = homepage.menu_label_msp_vouchers()
+        log.info("Attempting to generate all vouchers export.")
         mspvoucherspage.generate_export_all()
 
         today = datetime.date.today()
@@ -341,12 +383,13 @@ class TestNine(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified all vouchers export has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
 
-class TestTen(BaseClass):
+class TestEleven(BaseClass):
     def test_msp_vouchers_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -356,8 +399,10 @@ class TestTen(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
+        log.info("Navigating to msp operators page.")
         homepage.menu_label_mobility()
         mspoperatorspage = homepage.menu_label_msp_operators()
+        log.info("Attempting to export service records.")
         mspoperatorspage.export_service_records_button()
         mspoperatorspage.export_menu_from_field().send_keys("2022-01-01" + Keys.ENTER)
         mspoperatorspage.export_menu_until_field().send_keys("2023-12-12" + Keys.ENTER)
@@ -372,6 +417,42 @@ class TestTen(BaseClass):
         time.sleep(3)
         os.path.exists(downloaded_file_path)
         os.remove(downloaded_file_path)
+        log.info("Successfully verified service records export has been downloaded.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
+
+class TestTwelve(BaseClass):
+    def test_cpo_issues_export(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to cpo overview page.")
+        homepage.menu_label_chargingpoints()
+        cpooverviewpage = homepage.menu_label_cpo_overview()
+        cpooverviewpage.issues_tab()
+        log.info("Attempting to generate issues csv.")
+        cpooverviewpage.export_issues_csv_button()
+
+        time.sleep(2)
+        today = datetime.datetime.today()
+        timestamp = today.strftime('%Y-%m-%d')
+
+        download_directory = cache_directory
+        downloaded_file_name = f"Overview_issues-{timestamp}.csv"
+        downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
+
+        time.sleep(3)
+        os.path.exists(downloaded_file_path)
+        os.remove(downloaded_file_path)
+        log.info("Successfully verified issues csv has been downloaded.")
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+

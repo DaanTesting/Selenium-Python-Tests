@@ -11076,3 +11076,1598 @@ Stacktrace:
 2024-01-05 15:13:58,738 : INFO : test_filters_customer_page : Attempting login.
 2024-01-05 15:14:00,587 : INFO : test_filters_customer_page : Succesfully logged in.
 2024-01-05 15:14:00,587 : INFO : test_filters_customer_page : Navigating to customers page.
+2024-01-12 15:56:50,305 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-01-12 15:56:50,305 : INFO : test_add_charging_location : Attempting login.
+2024-01-12 15:56:52,283 : INFO : test_add_charging_location : Succesfully logged in.
+2024-01-12 15:56:52,283 : INFO : test_add_charging_location : Navigating to locations page.
+2024-01-12 16:03:39,341 : INFO : test_credit_free_charging_with_reserved_credit : daan.swinnen@optimile.eu
+2024-01-12 16:03:39,341 : INFO : test_credit_free_charging_with_reserved_credit : Attempting login.
+2024-01-12 16:03:42,480 : INFO : test_credit_free_charging_with_reserved_credit : Attempting to connect to simulator.
+2024-01-12 16:03:42,599 : INFO : test_credit_free_charging_with_reserved_credit : Connected to simulator.
+2024-01-12 16:03:43,604 : INFO : test_credit_free_charging_with_reserved_credit : Requesting 'start transaction'-screen.
+2024-01-12 16:03:43,683 : INFO : test_credit_free_charging_with_reserved_credit : Entering connectorID.
+2024-01-12 16:03:43,708 : INFO : test_credit_free_charging_with_reserved_credit : Sending token RFID.
+2024-01-12 16:03:43,750 : INFO : test_credit_free_charging_with_reserved_credit : Attempting to start transaction.
+2024-01-12 16:03:57,851 : INFO : test_credit_free_charging_with_reserved_credit : Getting transaction ID.
+2024-01-12 16:03:57,874 : INFO : test_credit_free_charging_with_reserved_credit : Requesting 'stop transaction'-screen.
+2024-01-12 16:03:57,911 : INFO : test_credit_free_charging_with_reserved_credit : Sending token RFID.
+2024-01-12 16:03:57,934 : INFO : test_credit_free_charging_with_reserved_credit : Simulating meter end value.
+2024-01-12 16:03:57,954 : INFO : test_credit_free_charging_with_reserved_credit : Sending transaction ID.
+2024-01-12 16:03:57,974 : INFO : test_credit_free_charging_with_reserved_credit : Sending timestamp.
+2024-01-12 16:03:58,013 : INFO : test_credit_free_charging_with_reserved_credit : Selecting transaction stop reason.
+2024-01-12 16:03:58,037 : INFO : test_credit_free_charging_with_reserved_credit : Stopping transaction.
+2024-01-12 16:04:41,121 : INFO : test_check_discount_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-01-12 16:04:41,121 : INFO : test_check_discount_value : Attempting login.
+2024-01-12 16:04:43,095 : INFO : test_check_discount_value : Succesfully logged in.
+2024-01-12 16:04:43,095 : INFO : test_check_discount_value : Navigating to CPO overview page.
+2024-01-12 16:05:14,296 : INFO : test_check_discount_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-01-12 16:05:14,296 : INFO : test_check_discount_value : Attempting login.
+2024-01-12 16:05:15,818 : INFO : test_check_discount_value : Succesfully logged in.
+2024-01-12 16:05:15,818 : INFO : test_check_discount_value : Navigating to CPO overview page.
+2024-01-12 16:05:55,392 : INFO : test_check_discount_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-01-12 16:05:55,392 : INFO : test_check_discount_value : Attempting login.
+2024-01-12 16:05:57,410 : INFO : test_check_discount_value : Succesfully logged in.
+2024-01-12 16:05:57,410 : INFO : test_check_discount_value : Navigating to CPO overview page.
+2024-01-19 09:24:05,174 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2024-01-19 09:24:05,175 : INFO : test_configure_location_information : Attempting login.
+2024-01-19 09:24:06,953 : INFO : test_configure_location_information : Succesfully logged in.
+2024-01-19 09:24:06,953 : INFO : test_configure_location_information : Navigating to locations page.
+2024-01-19 09:24:07,381 : INFO : test_configure_location_information : Searching for 'Autotest Location Configuration'.
+2024-01-19 09:24:07,904 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2024-01-19 09:24:08,219 : INFO : test_configure_location_information : Edit location name.
+2024-01-19 09:26:02,649 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2024-01-19 09:26:02,649 : INFO : test_configure_location_information : Attempting login.
+2024-01-19 09:26:04,665 : INFO : test_configure_location_information : Succesfully logged in.
+2024-01-19 09:26:04,665 : INFO : test_configure_location_information : Navigating to locations page.
+2024-01-19 09:26:05,180 : INFO : test_configure_location_information : Searching for 'Autotest Location Configuration'.
+2024-01-19 09:26:05,882 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2024-01-19 09:26:06,571 : INFO : test_configure_location_information : Edit location name.
+2024-01-19 09:26:06,609 : INFO : test_configure_location_information : Edit location phone number.
+2024-01-19 09:26:06,708 : INFO : test_configure_location_information : Edit contact name.
+2024-01-19 09:26:06,743 : INFO : test_configure_location_information : Attempting to update location.
+2024-01-19 09:26:07,095 : INFO : test_configure_location_information : Verified location name changed correctly.
+2024-01-19 09:26:07,103 : INFO : test_configure_location_information : Verified phone number changed correctly.
+2024-01-19 09:26:07,110 : INFO : test_configure_location_information : Verified contact name changed correctly.
+2024-01-19 09:26:07,110 : INFO : test_configure_location_information : Attempting to reset location information.
+2024-01-19 09:26:08,320 : INFO : test_configure_location_information : Succesfully reset location information.
+2024-01-19 09:26:14,520 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-01-19 09:26:14,520 : INFO : test_configure_location_location_data : Attempting login.
+2024-01-19 09:26:15,952 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-01-19 09:26:15,952 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-01-19 09:26:16,333 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-01-19 09:26:16,749 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-01-19 09:26:17,310 : INFO : test_configure_location_location_data : Updated location adress
+2024-01-19 09:26:17,374 : INFO : test_configure_location_location_data : Updated postcode.
+2024-01-19 09:26:17,436 : INFO : test_configure_location_location_data : Updated town.
+2024-01-19 09:26:17,477 : INFO : test_configure_location_location_data : Updated country.
+2024-01-19 09:26:18,482 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-01-19 09:26:19,868 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2024-01-19 09:26:19,868 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2024-01-19 09:26:22,747 : INFO : test_configure_location_location_data : Succesfully reset location data.
+2024-01-19 09:26:28,073 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-01-19 09:26:28,073 : INFO : test_add_charging_location : Attempting login.
+2024-01-19 09:26:29,600 : INFO : test_add_charging_location : Succesfully logged in.
+2024-01-19 09:26:29,600 : INFO : test_add_charging_location : Navigating to locations page.
+2024-01-19 09:29:52,135 : INFO : test_pages_mobility_policies : daan.swinnen+autotest.admin@optimile.eu
+2024-01-19 09:29:52,135 : INFO : test_pages_mobility_policies : Attempting Login.
+2024-01-19 09:29:53,882 : INFO : test_pages_mobility_policies : Succesfully logged in.
+2024-01-19 09:29:53,882 : INFO : test_pages_mobility_policies : Navigating to mobility-pages.
+2024-01-19 09:30:39,083 : INFO : test_pages_mobility_policies : daan.swinnen+autotest.admin@optimile.eu
+2024-01-19 09:30:39,083 : INFO : test_pages_mobility_policies : Attempting Login.
+2024-01-19 09:30:40,896 : INFO : test_pages_mobility_policies : Succesfully logged in.
+2024-01-19 09:30:40,896 : INFO : test_pages_mobility_policies : Navigating to mobility-pages.
+2024-01-19 09:31:22,089 : INFO : test_pages_mobility_policies : daan.swinnen+autotest.admin@optimile.eu
+2024-01-19 09:31:22,090 : INFO : test_pages_mobility_policies : Attempting Login.
+2024-01-19 09:31:24,238 : INFO : test_pages_mobility_policies : Succesfully logged in.
+2024-01-19 09:31:24,238 : INFO : test_pages_mobility_policies : Navigating to mobility-pages.
+2024-01-19 09:32:07,183 : INFO : test_pages_mobility_policies : daan.swinnen+autotest.admin@optimile.eu
+2024-01-19 09:32:07,183 : INFO : test_pages_mobility_policies : Attempting Login.
+2024-01-19 09:32:08,277 : INFO : test_pages_mobility_policies : Succesfully logged in.
+2024-01-19 09:32:08,277 : INFO : test_pages_mobility_policies : Navigating to mobility-pages.
+2024-01-23 11:09:47,238 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-01-23 11:09:47,238 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-01-23 11:09:48,157 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-01-23 11:09:48,157 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-01-23 11:10:19,427 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-01-23 11:10:19,427 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-01-23 11:10:20,962 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-01-23 11:10:20,962 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-01-23 11:10:22,082 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2024-01-23 11:10:22,411 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2024-01-23 11:10:22,619 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2024-01-23 11:11:45,220 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-01-23 11:11:45,221 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-01-23 11:11:46,624 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-01-23 11:11:46,624 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-01-23 11:11:47,509 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2024-01-23 11:11:48,311 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2024-01-23 11:11:48,528 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2024-01-23 11:12:00,632 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-01-23 11:12:00,632 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-01-23 11:12:02,777 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-01-23 11:12:02,777 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-01-23 11:12:03,623 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2024-01-23 11:12:04,112 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2024-01-23 11:12:04,462 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2024-01-23 11:12:04,839 : INFO : test_reimbursementpolicy_valuechange : Succesfully changed policy value.
+2024-01-23 11:12:05,245 : INFO : test_reimbursementpolicy_valuechange : Deleted new value. Test has been reset.
+2024-01-23 11:12:20,030 : INFO : test_export_tokens : daan.swinnen+splitbilling4@optimile.eu
+2024-01-23 11:12:20,030 : INFO : test_export_tokens : Attempting login.
+2024-01-23 11:12:21,757 : INFO : test_export_tokens : Succesfully logged in.
+2024-01-23 11:12:21,757 : INFO : test_export_tokens : Navigating to CPO overview page.
+2024-01-23 11:12:52,484 : INFO : test_check_discount_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-01-23 11:12:52,484 : INFO : test_check_discount_value : Attempting login.
+2024-01-23 11:12:53,955 : INFO : test_check_discount_value : Succesfully logged in.
+2024-01-23 11:12:53,955 : INFO : test_check_discount_value : Navigating to CPO overview page.
+2024-01-23 11:14:45,565 : INFO : test_check_discount_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-01-23 11:14:45,565 : INFO : test_check_discount_value : Attempting login.
+2024-01-23 11:14:47,322 : INFO : test_check_discount_value : Succesfully logged in.
+2024-01-23 11:14:47,322 : INFO : test_check_discount_value : Navigating to CPO overview page.
+2024-01-23 11:23:52,100 : INFO : test_activate_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-01-23 11:23:52,100 : INFO : test_activate_discount : Attempting login.
+2024-01-23 11:23:53,867 : INFO : test_activate_discount : Succesfully logged in.
+2024-01-23 11:23:53,868 : INFO : test_activate_discount : Navigating to CPO overview page.
+2024-01-23 11:24:02,110 : INFO : test_check_discount_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-01-23 11:24:02,110 : INFO : test_check_discount_value : Attempting login.
+2024-01-23 11:24:04,987 : INFO : test_check_discount_value : Succesfully logged in.
+2024-01-23 11:24:04,987 : INFO : test_check_discount_value : Navigating to CPO overview page.
+2024-01-23 11:24:26,413 : INFO : test_disable_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-01-23 11:24:26,414 : INFO : test_disable_discount : Attempting login.
+2024-01-23 11:24:28,403 : INFO : test_disable_discount : Succesfully logged in.
+2024-01-23 11:24:28,403 : INFO : test_disable_discount : Navigating to CPO overview page.
+2024-02-02 11:25:26,903 : INFO : test_create_finance_extended_report : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:25:26,903 : INFO : test_create_finance_extended_report : Attempting login.
+2024-02-02 11:25:28,430 : INFO : test_create_finance_extended_report : Succesfully logged in.
+2024-02-02 11:26:18,041 : INFO : test_create_finance_extended_report : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:26:18,041 : INFO : test_create_finance_extended_report : Attempting login.
+2024-02-02 11:26:19,770 : INFO : test_create_finance_extended_report : Succesfully logged in.
+2024-02-02 11:26:38,805 : INFO : test_create_finance_extended_report : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:26:38,805 : INFO : test_create_finance_extended_report : Attempting login.
+2024-02-02 11:26:40,096 : INFO : test_create_finance_extended_report : Succesfully logged in.
+2024-02-02 11:27:13,129 : INFO : test_create_finance_extended_report : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:27:13,129 : INFO : test_create_finance_extended_report : Attempting login.
+2024-02-02 11:27:14,523 : INFO : test_create_finance_extended_report : Succesfully logged in.
+2024-02-02 11:27:30,197 : INFO : test_create_finance_extended_report : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:27:30,197 : INFO : test_create_finance_extended_report : Attempting login.
+2024-02-02 11:27:31,249 : INFO : test_create_finance_extended_report : Succesfully logged in.
+2024-02-02 11:29:37,178 : INFO : test_create_finance_extended_report : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:29:37,178 : INFO : test_create_finance_extended_report : Attempting login.
+2024-02-02 11:29:38,451 : INFO : test_create_finance_extended_report : Succesfully logged in.
+2024-02-02 11:33:45,391 : INFO : test_expenses_DenyUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:33:45,391 : INFO : test_expenses_DenyUndo_HRmod : Attempting Login.
+2024-02-02 11:33:46,589 : INFO : test_expenses_DenyUndo_HRmod : Succesfully logged in.
+2024-02-02 11:33:46,589 : INFO : test_expenses_DenyUndo_HRmod : Navigating to expenses-page.
+2024-02-02 11:33:48,333 : INFO : test_expenses_DenyUndo_HRmod : Navigating to new expenses tab.
+2024-02-02 11:33:50,534 : INFO : test_expenses_DenyUndo_HRmod : Marked expense as 'denied'.
+2024-02-02 11:33:50,534 : INFO : test_expenses_DenyUndo_HRmod : Navigating towards pending-tab.
+2024-02-02 11:34:20,257 : INFO : test_expenses_DenyUndo_HRmod : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:34:20,257 : INFO : test_expenses_DenyUndo_HRmod : Attempting Login.
+2024-02-02 11:34:21,373 : INFO : test_expenses_DenyUndo_HRmod : Succesfully logged in.
+2024-02-02 11:34:21,373 : INFO : test_expenses_DenyUndo_HRmod : Navigating to expenses-page.
+2024-02-02 11:34:23,046 : INFO : test_expenses_DenyUndo_HRmod : Navigating to new expenses tab.
+2024-02-02 11:34:26,270 : INFO : test_expenses_DenyUndo_HRmod : Marked expense as 'denied'.
+2024-02-02 11:34:26,270 : INFO : test_expenses_DenyUndo_HRmod : Navigating towards pending-tab.
+2024-02-02 11:43:36,318 : INFO : test_expenses_date_picker : daan.swinnen+autotest.admin@optimile.eu
+2024-02-02 11:43:36,320 : INFO : test_expenses_date_picker : Attempting Login.
+2024-02-02 11:43:37,437 : INFO : test_expenses_date_picker : Succesfully logged in.
+2024-02-02 11:43:37,437 : INFO : test_expenses_date_picker : Navigating to expenses-page.
+2024-02-02 11:43:39,189 : INFO : test_expenses_date_picker : Selected date range in datepicker.
+2024-02-06 16:32:58,214 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:32:58,215 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:32:59,469 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:32:59,469 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:34:14,937 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:34:14,937 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:34:15,984 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:34:15,984 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:35:16,845 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:35:16,845 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:35:17,908 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:35:17,908 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:37:19,970 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:37:19,970 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:37:21,238 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:37:21,238 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:38:31,945 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:38:31,945 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:38:33,098 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:38:33,099 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:38:33,830 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2024-02-06 16:43:48,756 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:43:48,757 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:43:49,901 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:43:49,901 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:43:50,577 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2024-02-06 16:44:35,042 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:44:35,042 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:44:36,377 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:44:36,377 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:44:37,084 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2024-02-06 16:44:52,229 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:44:52,229 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:44:53,312 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:44:53,312 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:44:54,032 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2024-02-06 16:45:08,833 : INFO : test_mobility_policies_searchbar : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:45:08,833 : INFO : test_mobility_policies_searchbar : Attempting login.
+2024-02-06 16:45:10,230 : INFO : test_mobility_policies_searchbar : Succesfully logged in.
+2024-02-06 16:45:10,230 : INFO : test_mobility_policies_searchbar : Navigating to mobility policies page.
+2024-02-06 16:45:11,977 : INFO : test_mobility_policies_searchbar : Searching for mobility policy named 'OldPolicy'.
+2024-02-06 16:45:12,998 : INFO : test_mobility_policies_searchbar : Succesfully verified search result.
+2024-02-06 16:47:34,309 : INFO : test_mobility_policies_filter : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:47:34,309 : INFO : test_mobility_policies_filter : Attempting login.
+2024-02-06 16:47:35,559 : INFO : test_mobility_policies_filter : Succesfully logged in.
+2024-02-06 16:47:35,559 : INFO : test_mobility_policies_filter : Navigating to mobility policies page.
+2024-02-06 16:47:36,232 : INFO : test_mobility_policies_filter : Filtering 'active' mobility policies.
+2024-02-06 16:47:47,254 : INFO : test_mobility_policies_filter : Succesfully verified filtering occurred correctly.
+2024-02-06 16:48:43,557 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:48:43,559 : INFO : test_mobility_policies_create_policy : Attempting login.
+2024-02-06 16:48:44,830 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2024-02-06 16:48:44,830 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2024-02-06 16:48:45,455 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2024-02-06 16:48:45,844 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2024-02-06 16:49:53,637 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:49:53,637 : INFO : test_mobility_policies_create_policy : Attempting login.
+2024-02-06 16:49:54,865 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2024-02-06 16:49:54,866 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2024-02-06 16:49:55,507 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2024-02-06 16:49:55,853 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2024-02-06 16:49:55,953 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2024-02-06 16:49:55,996 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2024-02-06 16:49:56,052 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2024-02-06 16:49:56,053 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2024-02-06 16:49:56,173 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2024-02-06 16:49:56,232 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2024-02-06 16:49:58,329 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2024-02-06 16:49:58,352 : INFO : test_mobility_policies_create_policy : Succesfully verified new mobility policy is now active.
+2024-02-06 16:50:15,985 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:50:15,985 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 16:50:17,320 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 16:50:17,320 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 16:50:17,974 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 16:50:18,335 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 16:52:46,870 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:52:46,871 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 16:52:47,889 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 16:52:47,889 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 16:52:48,468 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 16:52:48,811 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 16:52:48,912 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-06 16:52:48,961 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-06 16:52:49,013 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-06 16:52:49,013 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-06 16:53:46,460 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:53:46,460 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 16:53:47,739 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 16:53:47,739 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 16:53:48,329 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 16:53:48,795 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 16:53:48,895 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-06 16:53:48,936 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-06 16:53:48,985 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-06 16:53:48,985 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-06 16:54:25,814 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:54:25,814 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 16:54:27,051 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 16:54:27,051 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 16:54:27,719 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 16:54:28,086 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 16:54:28,181 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-06 16:54:28,221 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-06 16:54:28,265 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-06 16:54:28,265 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-06 16:56:22,717 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:56:22,717 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 16:56:23,862 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 16:56:23,862 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 16:56:24,543 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 16:56:24,848 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 16:56:24,942 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-06 16:56:24,978 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-06 16:56:25,022 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-06 16:56:25,022 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-06 16:56:52,378 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 16:56:52,378 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 16:56:53,527 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 16:56:53,527 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 16:56:54,154 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 16:56:54,519 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 16:56:54,584 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-06 16:56:54,633 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-06 16:56:54,689 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-06 16:56:54,689 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-06 17:01:03,231 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:01:03,231 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 17:01:04,512 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 17:01:04,513 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 17:01:05,133 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 17:01:05,527 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 17:01:05,631 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-06 17:01:05,670 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-06 17:01:05,716 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-06 17:01:05,716 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-06 17:01:05,839 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-02-06 17:01:05,897 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-02-06 17:01:05,898 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-02-06 17:01:48,586 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:01:48,586 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 17:01:49,843 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 17:01:49,843 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 17:01:50,710 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 17:01:51,026 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 17:01:51,096 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-06 17:01:51,137 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-06 17:01:51,187 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-06 17:01:51,187 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-06 17:01:51,303 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-02-06 17:01:51,363 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-02-06 17:01:51,363 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-02-06 17:02:22,172 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:02:22,172 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-06 17:02:23,439 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-06 17:02:23,439 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-06 17:02:24,110 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-06 17:02:24,414 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-06 17:02:24,509 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-06 17:02:24,550 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-06 17:02:24,601 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-06 17:02:24,601 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-06 17:02:24,721 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-02-06 17:02:24,779 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-02-06 17:02:24,779 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-02-06 17:02:25,848 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2024-02-06 17:10:52,040 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:10:52,046 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:11:13,713 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:11:13,714 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:11:14,841 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-06 17:11:14,841 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-06 17:11:15,477 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-06 17:11:16,872 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-06 17:13:11,138 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:13:11,139 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:13:12,345 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-06 17:13:12,345 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-06 17:13:13,044 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-06 17:13:14,363 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-06 17:13:17,521 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-02-06 17:13:17,653 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-02-06 17:19:37,559 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:19:37,559 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:19:38,742 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-06 17:19:38,742 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-06 17:19:39,478 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-06 17:19:40,835 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-06 17:20:17,835 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:20:17,838 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:20:18,966 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-06 17:20:18,966 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-06 17:20:19,620 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-06 17:21:06,924 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:21:06,924 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:21:08,161 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-06 17:21:08,161 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-06 17:21:08,869 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-06 17:21:11,226 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-06 17:21:14,377 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-02-06 17:21:14,512 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-02-06 17:22:21,724 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:22:21,724 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:22:22,824 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-06 17:22:22,824 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-06 17:22:23,453 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-06 17:22:25,932 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-06 17:22:29,087 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-02-06 17:22:29,219 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-02-06 17:22:29,283 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-02-06 17:23:36,277 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:23:36,277 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:23:37,572 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-06 17:23:37,572 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-06 17:23:38,223 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-06 17:23:40,643 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-06 17:24:06,718 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:24:06,718 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-06 17:24:08,005 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-06 17:24:08,005 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-06 17:24:08,830 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-06 17:24:11,458 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-06 17:24:14,604 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-02-06 17:24:14,742 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-02-06 17:24:14,805 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-02-06 17:24:17,234 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2024-02-06 17:24:17,500 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2024-02-06 17:24:18,590 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2024-02-06 17:24:23,172 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2024-02-06 17:24:32,861 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2024-02-06 17:25:08,211 : INFO : test_mobility_policies_active_change_mob : daan.swinnen+autotest.admin@optimile.eu
+2024-02-06 17:25:08,211 : INFO : test_mobility_policies_active_change_mob : Attempting login.
+2024-02-06 17:25:09,451 : INFO : test_mobility_policies_active_change_mob : Succesfully logged in.
+2024-02-06 17:25:09,451 : INFO : test_mobility_policies_active_change_mob : Navigating to mobility policies page.
+2024-02-06 17:25:10,217 : INFO : test_mobility_policies_active_change_mob : Filtered for 'active' policies.
+2024-02-06 17:25:11,447 : INFO : test_mobility_policies_active_change_mob : Opened top policy.
+2024-02-07 09:40:26,581 : INFO : test_mobility_policies_active_change_mob : daan.swinnen+autotest.admin@optimile.eu
+2024-02-07 09:40:26,582 : INFO : test_mobility_policies_active_change_mob : Attempting login.
+2024-02-07 09:40:27,860 : INFO : test_mobility_policies_active_change_mob : Succesfully logged in.
+2024-02-07 09:40:27,860 : INFO : test_mobility_policies_active_change_mob : Navigating to mobility policies page.
+2024-02-07 09:40:28,762 : INFO : test_mobility_policies_active_change_mob : Filtered for 'active' policies.
+2024-02-07 09:40:30,030 : INFO : test_mobility_policies_active_change_mob : Opened top policy.
+2024-02-07 09:45:24,244 : INFO : test_mobility_policies_active_change_mob : daan.swinnen+autotest.admin@optimile.eu
+2024-02-07 09:45:24,244 : INFO : test_mobility_policies_active_change_mob : Attempting login.
+2024-02-07 09:45:25,451 : INFO : test_mobility_policies_active_change_mob : Succesfully logged in.
+2024-02-07 09:45:25,451 : INFO : test_mobility_policies_active_change_mob : Navigating to mobility policies page.
+2024-02-07 09:45:26,125 : INFO : test_mobility_policies_active_change_mob : Filtered for 'active' policies.
+2024-02-07 09:45:27,408 : INFO : test_mobility_policies_active_change_mob : Opened top policy.
+2024-02-07 09:45:29,547 : INFO : test_mobility_policies_active_change_mob : Selected mobility option 'parking'.
+2024-02-07 09:45:29,649 : INFO : test_mobility_policies_active_change_mob : Selected mobility policy 'car sharing'.
+2024-02-07 09:45:29,813 : INFO : test_mobility_policies_active_change_mob : Selected mobility option 'bike sharing'.
+2024-02-07 09:45:30,884 : INFO : test_mobility_policies_active_change_mob : Succesfully verified that active policy has been updated.
+2024-02-07 09:46:21,878 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2024-02-07 09:46:21,879 : INFO : test_mobility_policies_duplicate : Attempting login.
+2024-02-07 09:46:28,091 : INFO : test_mobility_policies_duplicate : Succesfully logged in.
+2024-02-07 09:46:28,091 : INFO : test_mobility_policies_duplicate : Navigating to mobility policies page.
+2024-02-07 09:46:29,990 : INFO : test_mobility_policies_duplicate : Filtered for draft policies.
+2024-02-07 09:46:31,326 : INFO : test_mobility_policies_duplicate : Opened top policy.
+2024-02-07 09:46:31,326 : INFO : test_mobility_policies_duplicate : Attempting to duplicate policy.
+2024-02-07 09:46:57,071 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2024-02-07 09:46:57,071 : INFO : test_mobility_policies_duplicate : Attempting login.
+2024-02-07 09:46:58,503 : INFO : test_mobility_policies_duplicate : Succesfully logged in.
+2024-02-07 09:46:58,503 : INFO : test_mobility_policies_duplicate : Navigating to mobility policies page.
+2024-02-07 09:47:00,416 : INFO : test_mobility_policies_duplicate : Filtered for draft policies.
+2024-02-07 09:47:01,666 : INFO : test_mobility_policies_duplicate : Opened top policy.
+2024-02-07 09:47:01,666 : INFO : test_mobility_policies_duplicate : Attempting to duplicate policy.
+2024-02-07 09:47:03,141 : INFO : test_mobility_policies_duplicate : Succesfully duplicated mobility policy.
+2024-02-07 09:47:03,339 : INFO : test_mobility_policies_duplicate : Named duplicate policy 'timestamp'.
+2024-02-07 09:48:34,682 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2024-02-07 09:48:34,683 : INFO : test_mobility_policies_duplicate : Attempting login.
+2024-02-07 09:48:35,910 : INFO : test_mobility_policies_duplicate : Succesfully logged in.
+2024-02-07 09:48:35,911 : INFO : test_mobility_policies_duplicate : Navigating to mobility policies page.
+2024-02-07 09:48:37,705 : INFO : test_mobility_policies_duplicate : Filtered for draft policies.
+2024-02-07 09:48:38,941 : INFO : test_mobility_policies_duplicate : Opened top policy.
+2024-02-07 09:48:38,941 : INFO : test_mobility_policies_duplicate : Attempting to duplicate policy.
+2024-02-07 09:48:40,486 : INFO : test_mobility_policies_duplicate : Succesfully duplicated mobility policy.
+2024-02-07 09:48:40,676 : INFO : test_mobility_policies_duplicate : Named duplicate policy 'timestamp'.
+2024-02-07 09:49:34,810 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2024-02-07 09:49:34,810 : INFO : test_mobility_policies_duplicate : Attempting login.
+2024-02-07 09:53:31,312 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2024-02-07 09:53:31,312 : INFO : test_mobility_policies_duplicate : Attempting login.
+2024-02-07 09:53:32,571 : INFO : test_mobility_policies_duplicate : Succesfully logged in.
+2024-02-07 09:53:32,571 : INFO : test_mobility_policies_duplicate : Navigating to mobility policies page.
+2024-02-07 09:53:34,992 : INFO : test_mobility_policies_duplicate : Filtered for draft policies.
+2024-02-07 09:53:36,472 : INFO : test_mobility_policies_duplicate : Opened top policy.
+2024-02-07 09:53:36,472 : INFO : test_mobility_policies_duplicate : Attempting to duplicate policy.
+2024-02-07 09:53:38,006 : INFO : test_mobility_policies_duplicate : Succesfully duplicated mobility policy.
+2024-02-07 09:53:38,234 : INFO : test_mobility_policies_duplicate : Named duplicate policy 'timestamp'.
+2024-02-07 09:53:38,293 : INFO : test_mobility_policies_duplicate : Succesfully saved duplicate policy.
+2024-02-14 15:49:27,952 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-02-14 15:49:27,952 : INFO : test_cpo_roaming_export : Attempting login.
+2024-02-14 15:49:28,872 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-02-14 15:51:03,212 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-02-14 15:51:03,214 : INFO : test_cpo_roaming_export : Attempting login.
+2024-02-14 15:51:05,319 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-02-14 15:51:38,501 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-02-14 15:51:38,501 : INFO : test_cpo_roaming_export : Attempting login.
+2024-02-14 15:51:40,552 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-02-14 15:52:04,133 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-02-14 15:52:04,133 : INFO : test_cpo_roaming_export : Attempting login.
+2024-02-14 15:52:06,436 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-02-14 15:52:21,107 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-02-14 15:52:21,108 : INFO : test_cpo_roaming_export : Attempting login.
+2024-02-14 15:52:23,033 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-02-23 15:20:06,716 : INFO : test_remove_add_charging_device_BC : daan.swinnen@optimile.eu
+2024-02-23 15:20:06,716 : INFO : test_remove_add_charging_device_BC : Attempting login.
+2024-02-23 15:20:08,740 : INFO : test_remove_add_charging_device_BC : Succesfully logged in.
+2024-02-23 15:20:08,740 : INFO : test_remove_add_charging_device_BC : Navigating to locations page.
+2024-02-23 15:20:09,327 : INFO : test_remove_add_charging_device_BC : Searching for 'Autotest Location Configuration'.
+2024-02-23 15:20:09,890 : INFO : test_remove_add_charging_device_BC : Navigating to devices tab.
+2024-02-23 15:22:10,858 : INFO : test_remove_add_charging_device_BC : daan.swinnen@optimile.eu
+2024-02-23 15:22:10,859 : INFO : test_remove_add_charging_device_BC : Attempting login.
+2024-02-23 15:22:13,047 : INFO : test_remove_add_charging_device_BC : Succesfully logged in.
+2024-02-23 15:22:13,047 : INFO : test_remove_add_charging_device_BC : Navigating to locations page.
+2024-02-23 15:22:13,629 : INFO : test_remove_add_charging_device_BC : Searching for 'Autotest Location Configuration'.
+2024-02-23 15:22:14,153 : INFO : test_remove_add_charging_device_BC : Navigating to devices tab.
+2024-02-27 15:49:33,049 : INFO : test_remove_add_charging_device_BC : daan.swinnen@optimile.eu
+2024-02-27 15:49:33,049 : INFO : test_remove_add_charging_device_BC : Attempting login.
+2024-02-27 15:49:34,695 : INFO : test_remove_add_charging_device_BC : Succesfully logged in.
+2024-02-27 15:49:34,696 : INFO : test_remove_add_charging_device_BC : Navigating to locations page.
+2024-02-27 15:49:35,066 : INFO : test_remove_add_charging_device_BC : Searching for 'Autotest Location Configuration'.
+2024-02-27 15:49:35,463 : INFO : test_remove_add_charging_device_BC : Navigating to devices tab.
+2024-02-28 10:54:41,182 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-02-28 10:54:41,182 : INFO : test_cpo_create_user : Attempting login.
+2024-02-28 10:54:43,022 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-02-28 10:54:43,022 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-02-28 10:55:12,575 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-02-28 10:55:12,575 : INFO : test_cpo_create_user : Attempting login.
+2024-02-28 10:55:14,289 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-02-28 10:55:14,289 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-02-29 12:26:11,348 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-02-29 12:26:11,348 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-02-29 12:26:13,200 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-02-29 12:26:13,200 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-02-29 12:26:13,989 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2024-02-29 12:26:14,274 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2024-02-29 12:26:14,490 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2024-02-29 12:26:14,756 : INFO : test_reimbursementpolicy_valuechange : Succesfully changed policy value.
+2024-02-29 12:28:53,445 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-02-29 12:28:53,445 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-02-29 12:28:54,863 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-02-29 12:28:54,863 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-02-29 12:28:55,692 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2024-02-29 12:28:55,940 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2024-02-29 12:28:56,169 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2024-02-29 12:28:56,411 : INFO : test_reimbursementpolicy_valuechange : Succesfully changed policy value.
+2024-02-29 12:30:35,353 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-02-29 12:30:35,353 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-02-29 12:30:36,994 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-02-29 12:30:36,994 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-02-29 12:30:37,591 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2024-02-29 12:30:37,841 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2024-02-29 12:30:38,018 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2024-02-29 12:30:38,268 : INFO : test_reimbursementpolicy_valuechange : Succesfully changed policy value.
+2024-02-29 12:30:38,539 : INFO : test_reimbursementpolicy_valuechange : Deleted new value. Test has been reset.
+2024-02-29 12:30:55,901 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-02-29 12:30:55,901 : INFO : test_cpo_create_user : Attempting login.
+2024-02-29 12:30:57,855 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-02-29 12:30:57,855 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-02-29 12:32:51,692 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-02-29 12:32:51,692 : INFO : test_assign_user_token : Attempting login.
+2024-02-29 12:32:53,418 : INFO : test_assign_user_token : Succesfully logged in.
+2024-02-29 12:32:53,418 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-02-29 12:32:53,925 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-02-29 12:32:53,985 : INFO : test_assign_user_token : Opening customer.
+2024-02-29 12:32:54,332 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-02-29 12:46:09,647 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-02-29 12:46:09,647 : INFO : test_assign_user_token : Attempting login.
+2024-02-29 12:46:11,618 : INFO : test_assign_user_token : Succesfully logged in.
+2024-02-29 12:46:11,618 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-02-29 12:46:12,042 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-02-29 12:46:12,093 : INFO : test_assign_user_token : Opening customer.
+2024-02-29 12:46:12,363 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-02-29 13:08:10,895 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-02-29 13:08:10,895 : INFO : test_assign_user_token : Attempting login.
+2024-02-29 13:08:13,344 : INFO : test_assign_user_token : Succesfully logged in.
+2024-02-29 13:08:13,344 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-02-29 13:08:13,775 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-02-29 13:08:13,815 : INFO : test_assign_user_token : Opening customer.
+2024-02-29 13:08:14,056 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-02-29 13:08:59,123 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-02-29 13:08:59,123 : INFO : test_assign_user_token : Attempting login.
+2024-02-29 13:09:01,049 : INFO : test_assign_user_token : Succesfully logged in.
+2024-02-29 13:09:01,049 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-02-29 13:09:01,578 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-02-29 13:09:01,634 : INFO : test_assign_user_token : Opening customer.
+2024-02-29 13:09:01,966 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-02-29 13:12:36,183 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-02-29 13:12:36,183 : INFO : test_assign_user_token : Attempting login.
+2024-02-29 13:12:37,941 : INFO : test_assign_user_token : Succesfully logged in.
+2024-02-29 13:12:37,941 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-02-29 13:12:38,308 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-02-29 13:12:38,352 : INFO : test_assign_user_token : Opening customer.
+2024-02-29 13:12:38,607 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-02-29 13:12:45,893 : INFO : test_assign_user_token : Succesfully assigned token to user.
+2024-02-29 13:51:48,495 : INFO : test_discount_list_disable_enable : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 13:51:48,495 : INFO : test_discount_list_disable_enable : Attempting login.
+2024-02-29 13:51:50,243 : INFO : test_discount_list_disable_enable : Succesfully logged in.
+2024-02-29 13:51:50,244 : INFO : test_discount_list_disable_enable : Navigating to CPO overview page.
+2024-02-29 13:53:29,171 : INFO : test_discount_list_disable_enable : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 13:53:29,171 : INFO : test_discount_list_disable_enable : Attempting login.
+2024-02-29 13:53:31,011 : INFO : test_discount_list_disable_enable : Succesfully logged in.
+2024-02-29 13:53:31,012 : INFO : test_discount_list_disable_enable : Navigating to CPO overview page.
+2024-02-29 13:54:21,702 : INFO : test_discount_list_disable_enable : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 13:54:21,702 : INFO : test_discount_list_disable_enable : Attempting login.
+2024-02-29 13:54:23,566 : INFO : test_discount_list_disable_enable : Succesfully logged in.
+2024-02-29 13:54:23,567 : INFO : test_discount_list_disable_enable : Navigating to CPO overview page.
+2024-02-29 14:03:25,188 : INFO : test_cpo_locations_export : daan.swinnen@optimile.eu
+2024-02-29 14:03:25,188 : INFO : test_cpo_locations_export : Attempting login.
+2024-02-29 14:03:26,997 : INFO : test_cpo_locations_export : Succesfully logged in.
+2024-02-29 14:12:34,573 : INFO : test_discount_list_add_edit_delete_token : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 14:12:34,575 : INFO : test_discount_list_add_edit_delete_token : Attempting login.
+2024-02-29 14:12:36,218 : INFO : test_discount_list_add_edit_delete_token : Succesfully logged in.
+2024-02-29 14:12:36,219 : INFO : test_discount_list_add_edit_delete_token : Navigating to CPO overview page.
+2024-02-29 14:15:47,620 : INFO : test_discount_list_add_edit_delete_token : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 14:15:47,620 : INFO : test_discount_list_add_edit_delete_token : Attempting login.
+2024-02-29 14:15:49,794 : INFO : test_discount_list_add_edit_delete_token : Succesfully logged in.
+2024-02-29 14:15:49,794 : INFO : test_discount_list_add_edit_delete_token : Navigating to CPO overview page.
+2024-02-29 14:16:01,618 : INFO : test_export_tokens : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 14:16:01,618 : INFO : test_export_tokens : Attempting login.
+2024-02-29 14:16:04,408 : INFO : test_export_tokens : Succesfully logged in.
+2024-02-29 14:16:04,408 : INFO : test_export_tokens : Navigating to CPO overview page.
+2024-02-29 14:16:31,269 : INFO : test_export_tokens : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 14:16:31,271 : INFO : test_export_tokens : Attempting login.
+2024-02-29 14:16:33,361 : INFO : test_export_tokens : Succesfully logged in.
+2024-02-29 14:16:33,361 : INFO : test_export_tokens : Navigating to CPO overview page.
+2024-02-29 14:16:47,226 : INFO : test_add_remove_charging_points : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 14:16:47,227 : INFO : test_add_remove_charging_points : Attempting login.
+2024-02-29 14:16:49,080 : INFO : test_add_remove_charging_points : Succesfully logged in.
+2024-02-29 14:16:49,080 : INFO : test_add_remove_charging_points : Navigating to CPO overview page.
+2024-02-29 14:24:22,064 : INFO : test_export_tokens : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 14:24:22,064 : INFO : test_export_tokens : Attempting login.
+2024-02-29 14:24:23,814 : INFO : test_export_tokens : Succesfully logged in.
+2024-02-29 14:24:23,814 : INFO : test_export_tokens : Navigating to CPO overview page.
+2024-02-29 14:25:35,564 : INFO : test_add_remove_charging_points : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 14:25:35,564 : INFO : test_add_remove_charging_points : Attempting login.
+2024-02-29 14:25:37,741 : INFO : test_add_remove_charging_points : Succesfully logged in.
+2024-02-29 14:25:37,741 : INFO : test_add_remove_charging_points : Navigating to CPO overview page.
+2024-02-29 14:27:52,737 : INFO : test_discount_list_create : daan.swinnen+splitbilling4@optimile.eu
+2024-02-29 14:27:52,737 : INFO : test_discount_list_create : Attempting login.
+2024-02-29 14:27:54,642 : INFO : test_discount_list_create : Succesfully logged in.
+2024-02-29 14:27:54,642 : INFO : test_discount_list_create : Navigating to CPO overview page.
+2024-02-29 14:41:50,862 : INFO : test_add_token_to_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:41:50,862 : INFO : test_add_token_to_discount : Attempting login.
+2024-02-29 14:41:52,985 : INFO : test_add_token_to_discount : Succesfully logged in.
+2024-02-29 14:41:52,985 : INFO : test_add_token_to_discount : Navigating to CPO overview page.
+2024-02-29 14:43:13,992 : INFO : test_add_token_to_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:43:13,992 : INFO : test_add_token_to_discount : Attempting login.
+2024-02-29 14:43:15,753 : INFO : test_add_token_to_discount : Succesfully logged in.
+2024-02-29 14:43:15,753 : INFO : test_add_token_to_discount : Navigating to CPO overview page.
+2024-02-29 14:43:28,374 : INFO : test_execute_discounted_session : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:43:28,374 : INFO : test_execute_discounted_session : AutoTestDevice
+2024-02-29 14:43:28,374 : INFO : test_execute_discounted_session : Attempting to connect to simulator.
+2024-02-29 14:43:28,661 : INFO : test_execute_discounted_session : Connected to simulator.
+2024-02-29 14:43:29,666 : INFO : test_execute_discounted_session : Requesting 'start transaction'-screen.
+2024-02-29 14:43:29,769 : INFO : test_execute_discounted_session : Entering connectorID.
+2024-02-29 14:43:29,790 : INFO : test_execute_discounted_session : Sending token RFID.
+2024-02-29 14:43:29,865 : INFO : test_execute_discounted_session : Attempting to start transaction.
+2024-02-29 14:43:39,906 : INFO : test_execute_discounted_session : Getting transaction ID.
+2024-02-29 14:43:39,933 : INFO : test_execute_discounted_session : Requesting 'stop transaction'-screen.
+2024-02-29 14:43:39,983 : INFO : test_execute_discounted_session : Sending token RFID.
+2024-02-29 14:43:40,036 : INFO : test_execute_discounted_session : Simulating meter end value.
+2024-02-29 14:43:40,059 : INFO : test_execute_discounted_session : Sending transaction ID.
+2024-02-29 14:43:40,081 : INFO : test_execute_discounted_session : Sending timestamp.
+2024-02-29 14:43:40,126 : INFO : test_execute_discounted_session : Selecting transaction stop reason.
+2024-02-29 14:43:40,154 : INFO : test_execute_discounted_session : Stopping transaction.
+2024-02-29 14:43:58,097 : INFO : test_check_discount_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:43:58,097 : INFO : test_check_discount_value : Attempting login.
+2024-02-29 14:43:59,994 : INFO : test_check_discount_value : Succesfully logged in.
+2024-02-29 14:43:59,994 : INFO : test_check_discount_value : Navigating to CPO overview page.
+2024-02-29 14:44:08,176 : INFO : test_remove_token_from_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:44:08,176 : INFO : test_remove_token_from_discount : Attempting login.
+2024-02-29 14:44:10,472 : INFO : test_remove_token_from_discount : Succesfully logged in.
+2024-02-29 14:44:10,472 : INFO : test_remove_token_from_discount : Navigating to CPO overview page.
+2024-02-29 14:46:41,249 : INFO : test_remove_token_from_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:46:41,250 : INFO : test_remove_token_from_discount : Attempting login.
+2024-02-29 14:46:42,962 : INFO : test_remove_token_from_discount : Succesfully logged in.
+2024-02-29 14:46:42,963 : INFO : test_remove_token_from_discount : Navigating to CPO overview page.
+2024-02-29 14:47:51,913 : INFO : test_full_price_session : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:47:51,913 : INFO : test_full_price_session : AutoTestDevice
+2024-02-29 14:47:51,913 : INFO : test_full_price_session : Attempting to connect to simulator.
+2024-02-29 14:47:52,249 : INFO : test_full_price_session : Connected to simulator.
+2024-02-29 14:47:53,253 : INFO : test_full_price_session : Requesting 'start transaction'-screen.
+2024-02-29 14:47:53,359 : INFO : test_full_price_session : Entering connectorID.
+2024-02-29 14:47:53,386 : INFO : test_full_price_session : Sending token RFID.
+2024-02-29 14:47:53,461 : INFO : test_full_price_session : Attempting to start transaction.
+2024-02-29 14:48:03,511 : INFO : test_full_price_session : Getting transaction ID.
+2024-02-29 14:48:03,539 : INFO : test_full_price_session : Requesting 'stop transaction'-screen.
+2024-02-29 14:48:03,606 : INFO : test_full_price_session : Sending token RFID.
+2024-02-29 14:48:03,644 : INFO : test_full_price_session : Simulating meter end value.
+2024-02-29 14:48:03,678 : INFO : test_full_price_session : Sending transaction ID.
+2024-02-29 14:48:03,706 : INFO : test_full_price_session : Sending timestamp.
+2024-02-29 14:48:03,793 : INFO : test_full_price_session : Selecting transaction stop reason.
+2024-02-29 14:48:03,839 : INFO : test_full_price_session : Stopping transaction.
+2024-02-29 14:48:08,264 : INFO : test_check_full_price_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:48:08,265 : INFO : test_check_full_price_value : Attempting login.
+2024-02-29 14:48:10,355 : INFO : test_check_full_price_value : Succesfully logged in.
+2024-02-29 14:48:10,355 : INFO : test_check_full_price_value : Navigating to CPO overview page.
+2024-02-29 14:48:19,692 : INFO : test_disable_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:48:19,692 : INFO : test_disable_discount : Attempting login.
+2024-02-29 14:48:21,432 : INFO : test_disable_discount : Succesfully logged in.
+2024-02-29 14:48:21,432 : INFO : test_disable_discount : Navigating to CPO overview page.
+2024-02-29 14:48:28,845 : INFO : test_full_price_session : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:48:28,845 : INFO : test_full_price_session : AutoTestDevice
+2024-02-29 14:48:28,845 : INFO : test_full_price_session : Attempting to connect to simulator.
+2024-02-29 14:48:29,144 : INFO : test_full_price_session : Connected to simulator.
+2024-02-29 14:48:30,150 : INFO : test_full_price_session : Requesting 'start transaction'-screen.
+2024-02-29 14:48:30,256 : INFO : test_full_price_session : Entering connectorID.
+2024-02-29 14:48:30,281 : INFO : test_full_price_session : Sending token RFID.
+2024-02-29 14:48:30,324 : INFO : test_full_price_session : Attempting to start transaction.
+2024-02-29 14:48:40,355 : INFO : test_full_price_session : Getting transaction ID.
+2024-02-29 14:48:40,383 : INFO : test_full_price_session : Requesting 'stop transaction'-screen.
+2024-02-29 14:48:40,430 : INFO : test_full_price_session : Sending token RFID.
+2024-02-29 14:48:40,453 : INFO : test_full_price_session : Simulating meter end value.
+2024-02-29 14:48:40,476 : INFO : test_full_price_session : Sending transaction ID.
+2024-02-29 14:48:40,496 : INFO : test_full_price_session : Sending timestamp.
+2024-02-29 14:48:40,538 : INFO : test_full_price_session : Selecting transaction stop reason.
+2024-02-29 14:48:40,565 : INFO : test_full_price_session : Stopping transaction.
+2024-02-29 14:49:15,968 : INFO : test_check_full_price_value : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-02-29 14:49:15,968 : INFO : test_check_full_price_value : Attempting login.
+2024-02-29 14:49:17,752 : INFO : test_check_full_price_value : Succesfully logged in.
+2024-02-29 14:49:17,752 : INFO : test_check_full_price_value : Navigating to CPO overview page.
+2024-02-29 15:43:48,453 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-29 15:43:48,453 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-29 15:43:50,811 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-29 15:43:50,811 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-29 15:44:27,215 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-29 15:44:27,215 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-29 15:44:29,265 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-29 15:44:29,265 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-29 15:46:36,357 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-29 15:46:36,357 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-29 15:46:38,179 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-29 15:46:38,179 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-29 15:46:55,917 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-29 15:46:55,917 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-02-29 15:46:57,078 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-02-29 15:46:57,078 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-02-29 15:46:57,814 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-02-29 15:46:58,231 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-02-29 15:46:58,337 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-02-29 15:46:58,377 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-02-29 15:46:58,423 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-02-29 15:46:58,424 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-02-29 15:46:58,592 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-02-29 15:46:58,660 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-02-29 15:46:58,661 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-02-29 15:46:59,722 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2024-02-29 15:47:21,039 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-02-29 15:47:21,039 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2024-02-29 15:47:22,240 : INFO : test_mobility_policies_activate_draft : Succesfully logged in.
+2024-02-29 15:47:22,240 : INFO : test_mobility_policies_activate_draft : Navigating to mobility policies page.
+2024-02-29 15:47:24,091 : INFO : test_mobility_policies_activate_draft : Filtering for draft policies.
+2024-02-29 15:47:29,594 : INFO : test_mobility_policies_activate_draft : Succesfully activated draft policy.
+2024-02-29 15:47:38,270 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-29 15:47:38,271 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-29 15:47:39,423 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-29 15:47:39,424 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-29 15:47:40,100 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-29 15:47:42,485 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-29 15:47:45,642 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-02-29 15:47:45,781 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-02-29 15:47:45,852 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-02-29 15:49:41,163 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-29 15:49:41,164 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-29 15:49:42,364 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-29 15:49:42,365 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-29 15:49:43,051 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-29 15:49:45,453 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-29 15:49:48,613 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-02-29 15:49:48,759 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-02-29 15:49:48,834 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-02-29 15:50:32,949 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-02-29 15:50:32,949 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-02-29 15:50:34,194 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-02-29 15:50:34,194 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-02-29 15:50:34,953 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-02-29 15:50:37,366 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-02-29 15:50:40,521 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-02-29 15:50:40,641 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-02-29 15:50:40,700 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-02-29 15:50:43,181 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2024-02-29 15:50:43,388 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2024-03-05 10:30:23,145 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-03-05 10:30:23,146 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-03-05 10:30:24,452 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-03-05 10:30:24,453 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-03-05 10:30:36,410 : INFO : test_filter_locations : daan.swinnen@optimile.eu
+2024-03-05 10:30:36,410 : INFO : test_filter_locations : Attempting login.
+2024-03-05 10:30:37,279 : INFO : test_filter_locations : Succesfully logged in.
+2024-03-05 10:30:37,279 : INFO : test_filter_locations : Navigating to locations page.
+2024-03-05 10:45:10,413 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 10:45:10,413 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 10:45:11,308 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 10:45:11,309 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 10:45:29,796 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 10:45:29,796 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 10:45:31,895 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 10:45:31,895 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:34:58,141 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:34:58,141 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:34:59,752 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:34:59,752 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:36:55,948 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:36:55,948 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:36:57,820 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:36:57,820 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:40:24,399 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:40:24,399 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:40:26,153 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:40:26,153 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:41:08,567 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:41:08,567 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:41:10,206 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:41:10,206 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:42:12,380 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:42:12,381 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:42:14,393 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:42:14,393 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:43:29,938 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:43:29,938 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:43:32,092 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:43:32,092 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:44:52,723 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:44:52,723 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:44:54,368 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:44:54,368 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:46:11,752 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:46:11,752 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:46:13,830 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:46:13,830 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:47:58,168 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:47:58,168 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:47:59,735 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:47:59,735 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:50:55,856 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:50:55,856 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:50:57,651 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:50:57,652 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:52:58,593 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:52:58,593 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:53:00,621 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:53:00,621 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:53:36,234 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:53:36,235 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:53:38,009 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:53:38,009 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 16:58:47,325 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-05 16:58:47,325 : INFO : test_cpo_create_user : Attempting login.
+2024-03-05 16:58:49,116 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-05 16:58:49,117 : INFO : test_cpo_create_user : Navigating to customers page.
+2024-03-05 17:01:51,353 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-03-05 17:01:51,353 : INFO : test_assign_user_token : Attempting login.
+2024-03-05 17:01:53,237 : INFO : test_assign_user_token : Succesfully logged in.
+2024-03-05 17:01:53,237 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-03-05 17:01:53,646 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-03-05 17:01:53,687 : INFO : test_assign_user_token : Opening customer.
+2024-03-05 17:01:53,966 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-03-05 17:10:20,542 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-03-05 17:10:20,543 : INFO : test_assign_user_token : Attempting login.
+2024-03-05 17:10:22,191 : INFO : test_assign_user_token : Succesfully logged in.
+2024-03-05 17:10:22,192 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-03-05 17:10:22,606 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-03-05 17:10:22,648 : INFO : test_assign_user_token : Opening customer.
+2024-03-05 17:10:22,883 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-03-05 17:12:09,262 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-03-05 17:12:09,262 : INFO : test_assign_user_token : Attempting login.
+2024-03-05 17:12:11,034 : INFO : test_assign_user_token : Succesfully logged in.
+2024-03-05 17:12:11,035 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-03-05 17:12:11,541 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-03-05 17:12:11,590 : INFO : test_assign_user_token : Opening customer.
+2024-03-05 17:12:11,876 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-03-05 17:14:45,251 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-03-05 17:14:45,253 : INFO : test_assign_user_token : Attempting login.
+2024-03-05 17:14:47,007 : INFO : test_assign_user_token : Succesfully logged in.
+2024-03-05 17:14:47,007 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-03-05 17:14:47,403 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-03-05 17:14:47,442 : INFO : test_assign_user_token : Opening customer.
+2024-03-05 17:14:47,669 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-03-05 17:14:51,258 : INFO : test_assign_user_token : Succesfully assigned token to user.
+2024-03-05 17:14:59,418 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-03-05 17:14:59,418 : INFO : test_assign_user_token : Attempting login.
+2024-03-05 17:15:01,288 : INFO : test_assign_user_token : Succesfully logged in.
+2024-03-05 17:15:01,288 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-03-05 17:15:02,074 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-03-05 17:15:02,120 : INFO : test_assign_user_token : Opening customer.
+2024-03-05 17:15:02,528 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-03-05 17:15:06,360 : INFO : test_assign_user_token : Succesfully assigned token to user.
+2024-03-06 10:17:24,833 : INFO : test_export_tokens : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:17:24,834 : INFO : test_export_tokens : Attempting login.
+2024-03-06 10:17:26,654 : INFO : test_export_tokens : Succesfully logged in.
+2024-03-06 10:17:26,654 : INFO : test_export_tokens : Navigating to CPO overview page.
+2024-03-06 10:19:49,320 : INFO : test_remove_token_from_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-03-06 10:19:49,320 : INFO : test_remove_token_from_discount : Attempting login.
+2024-03-06 10:19:51,487 : INFO : test_remove_token_from_discount : Succesfully logged in.
+2024-03-06 10:19:51,487 : INFO : test_remove_token_from_discount : Navigating to CPO overview page.
+2024-03-06 10:21:16,532 : INFO : test_remove_token_from_discount : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-03-06 10:21:16,532 : INFO : test_remove_token_from_discount : Attempting login.
+2024-03-06 10:21:18,340 : INFO : test_remove_token_from_discount : Succesfully logged in.
+2024-03-06 10:21:18,340 : INFO : test_remove_token_from_discount : Navigating to CPO overview page.
+2024-03-06 10:22:33,375 : INFO : test_export_tokens : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:22:33,375 : INFO : test_export_tokens : Attempting login.
+2024-03-06 10:22:35,238 : INFO : test_export_tokens : Succesfully logged in.
+2024-03-06 10:22:35,238 : INFO : test_export_tokens : Navigating to CPO overview page.
+2024-03-06 10:23:50,076 : INFO : test_discount_list_create : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:23:50,076 : INFO : test_discount_list_create : Attempting login.
+2024-03-06 10:23:51,773 : INFO : test_discount_list_create : Succesfully logged in.
+2024-03-06 10:23:51,773 : INFO : test_discount_list_create : Navigating to CPO overview page.
+2024-03-06 10:24:05,918 : INFO : test_discount_list_create : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:24:05,918 : INFO : test_discount_list_create : Attempting login.
+2024-03-06 10:24:08,115 : INFO : test_discount_list_create : Succesfully logged in.
+2024-03-06 10:24:08,115 : INFO : test_discount_list_create : Navigating to CPO overview page.
+2024-03-06 10:24:43,515 : INFO : test_discount_list_disable_enable : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:24:43,515 : INFO : test_discount_list_disable_enable : Attempting login.
+2024-03-06 10:24:45,411 : INFO : test_discount_list_disable_enable : Succesfully logged in.
+2024-03-06 10:24:45,411 : INFO : test_discount_list_disable_enable : Navigating to CPO overview page.
+2024-03-06 10:25:00,594 : INFO : test_discount_list_edit : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:25:00,594 : INFO : test_discount_list_edit : Attempting login.
+2024-03-06 10:25:02,666 : INFO : test_discount_list_edit : Succesfully logged in.
+2024-03-06 10:25:02,666 : INFO : test_discount_list_edit : Navigating to CPO overview page.
+2024-03-06 10:25:14,082 : INFO : test_discount_list_edit : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:25:14,083 : INFO : test_discount_list_edit : Attempting login.
+2024-03-06 10:25:15,761 : INFO : test_discount_list_edit : Succesfully logged in.
+2024-03-06 10:25:15,761 : INFO : test_discount_list_edit : Navigating to CPO overview page.
+2024-03-06 10:33:08,003 : INFO : test_discount_list_add_edit_delete_token : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:33:08,003 : INFO : test_discount_list_add_edit_delete_token : Attempting login.
+2024-03-06 10:33:09,875 : INFO : test_discount_list_add_edit_delete_token : Succesfully logged in.
+2024-03-06 10:33:09,875 : INFO : test_discount_list_add_edit_delete_token : Navigating to CPO overview page.
+2024-03-06 10:33:23,523 : INFO : test_discount_list_add_edit_delete_token : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:33:23,523 : INFO : test_discount_list_add_edit_delete_token : Attempting login.
+2024-03-06 10:33:25,405 : INFO : test_discount_list_add_edit_delete_token : Succesfully logged in.
+2024-03-06 10:33:25,406 : INFO : test_discount_list_add_edit_delete_token : Navigating to CPO overview page.
+2024-03-06 10:34:23,502 : INFO : test_discount_list_edit : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:34:23,502 : INFO : test_discount_list_edit : Attempting login.
+2024-03-06 10:34:25,212 : INFO : test_discount_list_edit : Succesfully logged in.
+2024-03-06 10:34:25,212 : INFO : test_discount_list_edit : Navigating to CPO overview page.
+2024-03-06 10:35:29,412 : INFO : test_discount_list_edit : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:35:29,412 : INFO : test_discount_list_edit : Attempting login.
+2024-03-06 10:35:31,154 : INFO : test_discount_list_edit : Succesfully logged in.
+2024-03-06 10:35:31,154 : INFO : test_discount_list_edit : Navigating to CPO overview page.
+2024-03-06 10:35:40,329 : INFO : test_discount_list_edit : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:35:40,329 : INFO : test_discount_list_edit : Attempting login.
+2024-03-06 10:35:42,351 : INFO : test_discount_list_edit : Succesfully logged in.
+2024-03-06 10:35:42,351 : INFO : test_discount_list_edit : Navigating to CPO overview page.
+2024-03-06 10:38:11,324 : INFO : test_export_tokens : daan.swinnen+splitbilling4@optimile.eu
+2024-03-06 10:38:11,325 : INFO : test_export_tokens : Attempting login.
+2024-03-06 10:38:13,639 : INFO : test_export_tokens : Succesfully logged in.
+2024-03-06 10:38:13,639 : INFO : test_export_tokens : Navigating to CPO overview page.
+2024-03-06 11:09:08,342 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:09:08,342 : INFO : test_mobility_policies_create_policy : Attempting login.
+2024-03-06 11:09:10,580 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2024-03-06 11:09:10,580 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2024-03-06 11:14:13,793 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:14:13,793 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-03-06 11:14:14,984 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-03-06 11:14:14,984 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-03-06 11:14:15,654 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-03-06 11:14:15,992 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-03-06 11:14:16,097 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-03-06 11:14:16,135 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-03-06 11:14:16,179 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-03-06 11:14:16,179 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-03-06 11:14:16,298 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-03-06 11:14:16,361 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-03-06 11:14:16,361 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-03-06 11:14:17,423 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2024-03-06 11:14:23,135 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:14:23,135 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2024-03-06 11:14:24,357 : INFO : test_mobility_policies_activate_draft : Succesfully logged in.
+2024-03-06 11:14:24,357 : INFO : test_mobility_policies_activate_draft : Navigating to mobility policies page.
+2024-03-06 11:14:26,184 : INFO : test_mobility_policies_activate_draft : Filtering for draft policies.
+2024-03-06 11:14:31,587 : INFO : test_mobility_policies_activate_draft : Succesfully activated draft policy.
+2024-03-06 11:18:22,440 : INFO : test_mobility_policies_create_policy : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:18:22,440 : INFO : test_mobility_policies_create_policy : Attempting login.
+2024-03-06 11:18:23,791 : INFO : test_mobility_policies_create_policy : Succesfully logged in.
+2024-03-06 11:18:23,791 : INFO : test_mobility_policies_create_policy : Navigating to mobility policies page.
+2024-03-06 11:18:24,526 : INFO : test_mobility_policies_create_policy : Attempting to create new mobility policy.
+2024-03-06 11:18:24,893 : INFO : test_mobility_policies_create_policy : Set policy name as 'timestamp'.
+2024-03-06 11:18:24,945 : INFO : test_mobility_policies_create_policy : Selected second contract.
+2024-03-06 11:18:25,004 : INFO : test_mobility_policies_create_policy : Set policy budget to '150'.
+2024-03-06 11:18:25,059 : INFO : test_mobility_policies_create_policy : Set start date on 'today'.
+2024-03-06 11:18:25,059 : INFO : test_mobility_policies_create_policy : Set end date as undefined.
+2024-03-06 11:18:25,196 : INFO : test_mobility_policies_create_policy : Selected mobility option 'parking'.
+2024-03-06 11:18:25,263 : INFO : test_mobility_policies_create_policy : Linked all available users.
+2024-03-06 11:18:27,369 : INFO : test_mobility_policies_create_policy : Activated mobility policy.
+2024-03-06 11:18:27,397 : INFO : test_mobility_policies_create_policy : Succesfully verified new mobility policy is now active.
+2024-03-06 11:18:34,703 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:18:34,703 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-03-06 11:18:35,969 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-03-06 11:18:35,969 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-03-06 11:18:36,694 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-03-06 11:18:37,058 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-03-06 11:18:37,133 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-03-06 11:18:37,178 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-03-06 11:18:37,233 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-03-06 11:18:37,233 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-03-06 11:18:37,361 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-03-06 11:18:37,424 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-03-06 11:18:37,425 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-03-06 11:18:38,493 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2024-03-06 11:18:46,352 : INFO : test_mobility_policies_activate_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:18:46,352 : INFO : test_mobility_policies_activate_draft : Attempting login.
+2024-03-06 11:18:47,918 : INFO : test_mobility_policies_activate_draft : Succesfully logged in.
+2024-03-06 11:18:47,918 : INFO : test_mobility_policies_activate_draft : Navigating to mobility policies page.
+2024-03-06 11:18:49,685 : INFO : test_mobility_policies_activate_draft : Filtering for draft policies.
+2024-03-06 11:18:55,044 : INFO : test_mobility_policies_activate_draft : Succesfully activated draft policy.
+2024-03-06 11:19:03,405 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:19:03,405 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-03-06 11:19:04,603 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-03-06 11:19:04,603 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-03-06 11:19:05,291 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-03-06 11:19:07,722 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-03-06 11:19:10,881 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-03-06 11:19:11,019 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-03-06 11:19:11,096 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-03-06 11:19:13,457 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2024-03-06 11:19:13,737 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2024-03-06 11:20:08,035 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:20:08,035 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-03-06 11:20:09,532 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-03-06 11:20:09,532 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-03-06 11:20:10,304 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-03-06 11:20:12,721 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-03-06 11:24:55,254 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:24:55,254 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-03-06 11:24:56,425 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-03-06 11:24:56,425 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-03-06 11:24:57,024 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-03-06 11:24:59,379 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-03-06 11:25:02,528 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-03-06 11:25:02,677 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-03-06 11:25:02,749 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-03-06 11:25:08,274 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2024-03-06 11:25:08,560 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2024-03-06 11:27:39,656 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:27:39,656 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-03-06 11:27:40,787 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-03-06 11:27:40,787 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-03-06 11:27:41,457 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-03-06 11:27:43,849 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-03-06 11:27:46,977 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-03-06 11:27:47,130 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-03-06 11:27:47,211 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-03-06 11:27:52,530 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2024-03-06 11:27:52,827 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2024-03-06 11:28:30,349 : INFO : test_mobility_policies_draft_link_users : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:28:30,349 : INFO : test_mobility_policies_draft_link_users : Attempting login.
+2024-03-06 11:28:31,411 : INFO : test_mobility_policies_draft_link_users : Succesfully logged in.
+2024-03-06 11:28:31,411 : INFO : test_mobility_policies_draft_link_users : Navigating to mobility policies page.
+2024-03-06 11:28:32,027 : INFO : test_mobility_policies_draft_link_users : Filtering for draft policies.
+2024-03-06 11:28:34,386 : INFO : test_mobility_policies_draft_link_users : Opened top draft.
+2024-03-06 11:28:37,505 : INFO : test_mobility_policies_draft_link_users : Unlinked all users from draft policy.
+2024-03-06 11:28:37,637 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'active test'.
+2024-03-06 11:28:37,701 : INFO : test_mobility_policies_draft_link_users : Saved draft.
+2024-03-06 11:28:43,795 : INFO : test_mobility_policies_draft_link_users : Searched for 'active draft' policy.
+2024-03-06 11:28:44,128 : INFO : test_mobility_policies_draft_link_users : Opened 'active draft' policy.
+2024-03-06 11:28:45,219 : INFO : test_mobility_policies_draft_link_users : Linked all users to draft.
+2024-03-06 11:28:49,870 : INFO : test_mobility_policies_draft_link_users : Changed draft name to 'timestamp'.
+2024-03-06 11:28:59,590 : INFO : test_mobility_policies_draft_link_users : Succesfully verified all users are linked and policy is activated.
+2024-03-06 11:32:48,372 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:32:48,373 : INFO : test_mobility_policies_duplicate : Attempting login.
+2024-03-06 11:32:49,595 : INFO : test_mobility_policies_duplicate : Succesfully logged in.
+2024-03-06 11:32:49,595 : INFO : test_mobility_policies_duplicate : Navigating to mobility policies page.
+2024-03-06 11:32:51,422 : INFO : test_mobility_policies_duplicate : Filtered for draft policies.
+2024-03-06 11:32:59,621 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:32:59,621 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-03-06 11:33:00,826 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-03-06 11:33:00,826 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-03-06 11:33:01,481 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-03-06 11:33:01,830 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-03-06 11:33:01,906 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-03-06 11:33:01,958 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-03-06 11:33:02,015 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-03-06 11:33:02,015 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-03-06 11:33:02,153 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-03-06 11:33:02,224 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-03-06 11:33:02,225 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-03-06 11:33:03,286 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2024-03-06 11:33:07,816 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:33:07,819 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-03-06 11:33:08,979 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-03-06 11:33:08,979 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-03-06 11:33:09,622 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-03-06 11:33:09,968 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-03-06 11:33:10,042 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-03-06 11:33:10,094 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-03-06 11:33:10,150 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-03-06 11:33:10,150 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-03-06 11:33:10,290 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-03-06 11:33:10,361 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-03-06 11:33:10,362 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-03-06 11:33:11,430 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2024-03-06 11:33:14,463 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:33:14,463 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-03-06 11:33:15,597 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-03-06 11:33:15,597 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-03-06 11:33:16,288 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-03-06 11:33:16,668 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-03-06 11:33:16,772 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-03-06 11:33:16,822 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-03-06 11:33:16,879 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-03-06 11:33:16,879 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-03-06 11:33:17,029 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-03-06 11:33:17,103 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-03-06 11:33:17,103 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-03-06 11:33:18,172 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2024-03-06 11:33:21,294 : INFO : test_mobility_policies_create_draft : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:33:21,295 : INFO : test_mobility_policies_create_draft : Attempting login.
+2024-03-06 11:33:22,462 : INFO : test_mobility_policies_create_draft : Succesfully logged in.
+2024-03-06 11:33:22,462 : INFO : test_mobility_policies_create_draft : Navigating to mobility policies page.
+2024-03-06 11:33:23,114 : INFO : test_mobility_policies_create_draft : Attempting to create new mobility policy.
+2024-03-06 11:33:23,506 : INFO : test_mobility_policies_create_draft : Set policy name as 'timestamp'.
+2024-03-06 11:33:23,607 : INFO : test_mobility_policies_create_draft : Selected second contract.
+2024-03-06 11:33:23,657 : INFO : test_mobility_policies_create_draft : Set policy budget to '150'.
+2024-03-06 11:33:23,717 : INFO : test_mobility_policies_create_draft : Set start date on 'today'.
+2024-03-06 11:33:23,717 : INFO : test_mobility_policies_create_draft : Set end date as undefined.
+2024-03-06 11:33:23,853 : INFO : test_mobility_policies_create_draft : Selected mobility option 'parking'.
+2024-03-06 11:33:23,925 : INFO : test_mobility_policies_create_draft : Linked all available users.
+2024-03-06 11:33:23,926 : INFO : test_mobility_policies_create_draft : Saving the policy as a draft.
+2024-03-06 11:33:24,990 : INFO : test_mobility_policies_create_draft : Succesfully verified new mobility policy has been saved as draft.
+2024-03-06 11:41:55,370 : INFO : test_mobility_policies_duplicate : daan.swinnen+autotest.admin@optimile.eu
+2024-03-06 11:41:55,370 : INFO : test_mobility_policies_duplicate : Attempting login.
+2024-03-06 11:41:56,587 : INFO : test_mobility_policies_duplicate : Succesfully logged in.
+2024-03-06 11:41:56,587 : INFO : test_mobility_policies_duplicate : Navigating to mobility policies page.
+2024-03-06 11:41:58,532 : INFO : test_mobility_policies_duplicate : Filtered for draft policies.
+2024-03-06 11:41:59,844 : INFO : test_mobility_policies_duplicate : Opened top policy.
+2024-03-06 11:41:59,844 : INFO : test_mobility_policies_duplicate : Attempting to duplicate policy.
+2024-03-06 11:42:01,342 : INFO : test_mobility_policies_duplicate : Succesfully duplicated mobility policy.
+2024-03-06 11:42:01,571 : INFO : test_mobility_policies_duplicate : Named duplicate policy 'timestamp'.
+2024-03-06 11:42:01,621 : INFO : test_mobility_policies_duplicate : Succesfully saved duplicate policy.
+2024-03-06 12:19:58,156 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-03-06 12:19:58,156 : INFO : test_msp_create_user : Attempting login.
+2024-03-06 12:19:59,296 : INFO : test_msp_create_user : Succesfully logged in.
+2024-03-06 12:19:59,296 : INFO : test_msp_create_user : Navigating to customers page.
+2024-03-06 12:20:22,093 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-03-06 12:20:22,093 : INFO : test_msp_create_user : Attempting login.
+2024-03-06 12:20:23,519 : INFO : test_msp_create_user : Succesfully logged in.
+2024-03-06 12:20:23,519 : INFO : test_msp_create_user : Navigating to customers page.
+2024-03-06 12:24:38,782 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-03-06 12:24:38,783 : INFO : test_msp_create_user : Attempting login.
+2024-03-06 12:24:40,714 : INFO : test_msp_create_user : Succesfully logged in.
+2024-03-06 12:24:40,715 : INFO : test_msp_create_user : Navigating to customers page.
+2024-03-06 12:25:03,201 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-03-06 12:25:03,202 : INFO : test_msp_create_user : Attempting login.
+2024-03-06 12:25:04,844 : INFO : test_msp_create_user : Succesfully logged in.
+2024-03-06 12:25:04,844 : INFO : test_msp_create_user : Navigating to customers page.
+2024-03-06 14:17:17,671 : INFO : test_cpo_issues_export : daan.swinnen@optimile.eu
+2024-03-06 14:17:17,671 : INFO : test_cpo_issues_export : Attempting login.
+2024-03-06 14:17:19,161 : INFO : test_cpo_issues_export : Succesfully logged in.
+2024-03-06 14:18:09,445 : INFO : test_cpo_issues_export : daan.swinnen@optimile.eu
+2024-03-06 14:18:09,445 : INFO : test_cpo_issues_export : Attempting login.
+2024-03-06 14:18:11,285 : INFO : test_cpo_issues_export : Succesfully logged in.
+2024-03-06 14:18:57,428 : INFO : test_cpo_issues_export : daan.swinnen@optimile.eu
+2024-03-06 14:18:57,428 : INFO : test_cpo_issues_export : Attempting login.
+2024-03-06 14:18:58,894 : INFO : test_cpo_issues_export : Succesfully logged in.
+2024-03-06 14:21:32,615 : INFO : test_cpo_issues_export : daan.swinnen@optimile.eu
+2024-03-06 14:21:32,615 : INFO : test_cpo_issues_export : Attempting login.
+2024-03-06 14:21:34,261 : INFO : test_cpo_issues_export : Succesfully logged in.
+2024-03-06 14:31:51,950 : INFO : test_cpo_issues_export : daan.swinnen@optimile.eu
+2024-03-06 14:31:51,950 : INFO : test_cpo_issues_export : Attempting login.
+2024-03-06 14:31:54,175 : INFO : test_cpo_issues_export : Succesfully logged in.
+2024-03-06 14:32:27,598 : INFO : test_cpo_issues_export : daan.swinnen@optimile.eu
+2024-03-06 14:32:27,599 : INFO : test_cpo_issues_export : Attempting login.
+2024-03-06 14:32:29,257 : INFO : test_cpo_issues_export : Succesfully logged in.
+2024-03-06 14:32:57,680 : INFO : test_cpo_issues_export : daan.swinnen@optimile.eu
+2024-03-06 14:32:57,680 : INFO : test_cpo_issues_export : Attempting login.
+2024-03-06 14:32:59,282 : INFO : test_cpo_issues_export : Succesfully logged in.
+2024-03-06 14:57:40,804 : INFO : test_cpo_overview_screen_extended : daan.swinnen@optimile.eu
+2024-03-06 14:57:40,804 : INFO : test_cpo_overview_screen_extended : Attempting login.
+2024-03-06 14:57:42,653 : INFO : test_cpo_overview_screen_extended : Succesfully logged in.
+2024-03-06 14:57:42,653 : INFO : test_cpo_overview_screen_extended : Navigating to CPO overview page.
+2024-03-06 14:57:43,139 : INFO : test_cpo_overview_screen_extended : Verifying overview map is present.
+2024-03-06 14:59:39,222 : INFO : test_cpo_overview_screen_extended : daan.swinnen@optimile.eu
+2024-03-06 14:59:39,222 : INFO : test_cpo_overview_screen_extended : Attempting login.
+2024-03-06 14:59:40,838 : INFO : test_cpo_overview_screen_extended : Succesfully logged in.
+2024-03-06 14:59:40,838 : INFO : test_cpo_overview_screen_extended : Navigating to CPO overview page.
+2024-03-06 14:59:41,368 : INFO : test_cpo_overview_screen_extended : Verifying overview map is present.
+2024-03-06 14:59:42,428 : INFO : test_cpo_overview_screen_extended : Succesfully verified CPO overview page.
+2024-03-06 15:30:50,225 : INFO : test_msp_dashboard_screen_extended : daan.swinnen@optimile.eu
+2024-03-06 15:30:50,225 : INFO : test_msp_dashboard_screen_extended : Attempting login.
+2024-03-06 15:30:51,941 : INFO : test_msp_dashboard_screen_extended : Succesfully logged in.
+2024-03-06 15:30:51,941 : INFO : test_msp_dashboard_screen_extended : Navigating to CPO overview page.
+2024-03-06 15:31:21,720 : INFO : test_msp_dashboard_screen_extended : daan.swinnen@optimile.eu
+2024-03-06 15:31:21,720 : INFO : test_msp_dashboard_screen_extended : Attempting login.
+2024-03-06 15:31:23,492 : INFO : test_msp_dashboard_screen_extended : Succesfully logged in.
+2024-03-06 15:31:23,492 : INFO : test_msp_dashboard_screen_extended : Navigating to CPO overview page.
+2024-03-06 15:31:54,290 : INFO : test_msp_dashboard_screen_extended : daan.swinnen@optimile.eu
+2024-03-06 15:31:54,290 : INFO : test_msp_dashboard_screen_extended : Attempting login.
+2024-03-06 15:31:56,005 : INFO : test_msp_dashboard_screen_extended : Succesfully logged in.
+2024-03-06 15:31:56,005 : INFO : test_msp_dashboard_screen_extended : Navigating to CPO overview page.
+2024-03-06 15:32:00,322 : INFO : test_msp_dashboard_screen_extended : Succesfully verified CPO overview page.
+2024-03-06 15:32:05,379 : INFO : test_msp_dashboard_screen_extended : daan.swinnen@optimile.eu
+2024-03-06 15:32:05,380 : INFO : test_msp_dashboard_screen_extended : Attempting login.
+2024-03-06 15:32:07,597 : INFO : test_msp_dashboard_screen_extended : Succesfully logged in.
+2024-03-06 15:32:07,597 : INFO : test_msp_dashboard_screen_extended : Navigating to CPO overview page.
+2024-03-06 15:32:11,890 : INFO : test_msp_dashboard_screen_extended : Succesfully verified CPO overview page.
+2024-03-06 15:32:23,254 : INFO : test_msp_dashboard_screen_extended : daan.swinnen@optimile.eu
+2024-03-06 15:32:23,254 : INFO : test_msp_dashboard_screen_extended : Attempting login.
+2024-03-06 15:32:25,372 : INFO : test_msp_dashboard_screen_extended : Succesfully logged in.
+2024-03-06 15:32:25,373 : INFO : test_msp_dashboard_screen_extended : Navigating to CPO overview page.
+2024-03-06 15:32:29,638 : INFO : test_msp_dashboard_screen_extended : Succesfully verified CPO overview page.
+2024-03-06 15:50:00,631 : INFO : test_msp_dashboard_screen_extended : daan.swinnen@optimile.eu
+2024-03-06 15:50:00,631 : INFO : test_msp_dashboard_screen_extended : Attempting login.
+2024-03-06 15:50:02,463 : INFO : test_msp_dashboard_screen_extended : Succesfully logged in.
+2024-03-06 15:50:02,463 : INFO : test_msp_dashboard_screen_extended : Navigating to CPO overview page.
+2024-03-06 15:50:06,714 : INFO : test_msp_dashboard_screen_extended : Succesfully verified CPO overview page.
+2024-03-12 11:20:24,029 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-12 11:20:24,029 : INFO : test_cpo_create_user : Attempting login.
+2024-03-12 11:20:25,644 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-12 11:20:25,644 : INFO : test_cpo_create_user : Navigating to cpo customers page.
+2024-03-12 11:20:26,070 : INFO : test_cpo_create_user : Searching for 'Automated Test Company Main.
+2024-03-12 11:20:26,325 : INFO : test_cpo_create_user : Attempting to open top result.
+2024-03-12 11:20:26,612 : INFO : test_cpo_create_user : Navigating to users-tab.
+2024-03-12 11:20:26,632 : INFO : test_cpo_create_user : Attempting to create new user.
+2024-03-12 11:20:31,226 : INFO : test_cpo_create_user : Successfully created new user.
+2024-03-12 11:21:56,275 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-12 11:21:56,275 : INFO : test_cpo_create_user : Attempting login.
+2024-03-12 11:21:57,896 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-12 11:21:57,896 : INFO : test_cpo_create_user : Navigating to cpo customers page.
+2024-03-12 11:21:58,307 : INFO : test_cpo_create_user : Searching for 'Automated Test Company Main.
+2024-03-12 11:21:58,516 : INFO : test_cpo_create_user : Attempting to open top result.
+2024-03-12 11:21:58,732 : INFO : test_cpo_create_user : Navigating to users-tab.
+2024-03-12 11:21:58,753 : INFO : test_cpo_create_user : Attempting to create new user.
+2024-03-12 11:22:04,641 : INFO : test_cpo_create_user : Successfully created new user.
+2024-03-12 11:25:28,949 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-12 11:25:28,949 : INFO : test_cpo_create_user : Attempting login.
+2024-03-12 11:25:30,545 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-12 11:25:30,545 : INFO : test_cpo_create_user : Navigating to cpo customers page.
+2024-03-12 11:25:30,969 : INFO : test_cpo_create_user : Searching for 'Automated Test Company Main.
+2024-03-12 11:25:31,132 : INFO : test_cpo_create_user : Attempting to open top result.
+2024-03-12 11:25:31,376 : INFO : test_cpo_create_user : Navigating to users-tab.
+2024-03-12 11:25:31,399 : INFO : test_cpo_create_user : Attempting to create new user.
+2024-03-12 11:25:35,546 : INFO : test_cpo_create_user : Successfully created new user.
+2024-03-12 12:41:25,777 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-03-12 12:41:25,777 : INFO : test_cpo_create_user : Attempting login.
+2024-03-12 12:41:27,526 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-03-12 12:41:27,526 : INFO : test_cpo_create_user : Navigating to cpo customers page.
+2024-03-12 12:41:27,940 : INFO : test_cpo_create_user : Searching for 'Automated Test Company Main.
+2024-03-12 12:41:28,147 : INFO : test_cpo_create_user : Attempting to open top result.
+2024-03-12 12:41:28,415 : INFO : test_cpo_create_user : Navigating to users-tab.
+2024-03-12 12:41:28,449 : INFO : test_cpo_create_user : Attempting to create new user.
+2024-03-12 12:41:33,284 : INFO : test_cpo_create_user : Successfully created new user.
+2024-03-12 12:41:41,526 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-03-12 12:41:41,526 : INFO : test_msp_create_user : Attempting login.
+2024-03-12 12:41:43,356 : INFO : test_msp_create_user : Succesfully logged in.
+2024-03-12 12:41:43,357 : INFO : test_msp_create_user : Navigating to msp customers page.
+2024-03-12 12:41:43,792 : INFO : test_msp_create_user : Searching for Automated Test Company Main.
+2024-03-12 12:41:44,006 : INFO : test_msp_create_user : Attempting to open top customer result.
+2024-03-12 12:41:44,344 : INFO : test_msp_create_user : Navigating to users tab.
+2024-03-12 12:41:44,379 : INFO : test_msp_create_user : Attempting to create new user.
+2024-03-12 12:41:49,278 : INFO : test_msp_create_user : Successfully created user.
+2024-03-12 14:13:30,353 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-03-12 14:13:30,353 : INFO : test_roaming_session : TestDevice89
+2024-03-12 14:13:30,353 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-03-12 14:13:30,666 : INFO : test_roaming_session : Connected to simulator.
+2024-03-12 14:13:31,672 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-03-12 14:13:31,781 : INFO : test_roaming_session : Entering connectorID.
+2024-03-12 14:13:31,807 : INFO : test_roaming_session : Sending token RFID.
+2024-03-12 14:13:31,891 : INFO : test_roaming_session : Attempting to start transaction.
+2024-03-12 14:13:41,941 : INFO : test_roaming_session : Getting transaction ID.
+2024-03-12 14:13:41,970 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-03-12 14:13:42,037 : INFO : test_roaming_session : Sending token RFID.
+2024-03-12 14:13:42,070 : INFO : test_roaming_session : Simulating meter end value.
+2024-03-12 14:13:42,101 : INFO : test_roaming_session : Sending transaction ID.
+2024-03-12 14:13:42,130 : INFO : test_roaming_session : Sending timestamp.
+2024-03-12 14:13:42,199 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-03-12 14:13:42,235 : INFO : test_roaming_session : Stopping transaction.
+2024-03-12 14:14:51,249 : INFO : test_roaming_session__platform_verification : daan.swinnen@optimile.eu
+2024-03-12 14:14:51,249 : INFO : test_roaming_session__platform_verification : Attempting login.
+2024-03-12 14:14:52,966 : INFO : test_roaming_session__platform_verification : Succesfully logged in.
+2024-03-12 14:14:52,966 : INFO : test_roaming_session__platform_verification : Navigating to msp customers page.
+2024-03-12 14:14:53,422 : INFO : test_roaming_session__platform_verification : Searching for 'Autotesting Roaming'.
+2024-03-12 14:14:54,632 : INFO : test_roaming_session__platform_verification : Opening customer.
+2024-03-12 14:14:54,968 : INFO : test_roaming_session__platform_verification : Activity tab.
+2024-03-12 14:14:55,581 : INFO : test_roaming_session__platform_verification : Succesfully verified charging session registered as 'normal'.
+2024-03-12 14:14:55,591 : INFO : test_roaming_session__platform_verification : Successfully confirmed session value.
+2024-03-12 14:18:53,888 : INFO : test_whitelist_session : daan.swinnen@optimile.eu
+2024-03-12 14:18:53,888 : INFO : test_whitelist_session : TestDevice89
+2024-03-12 14:18:53,888 : INFO : test_whitelist_session : Attempting to connect to simulator.
+2024-03-12 14:18:54,210 : INFO : test_whitelist_session : Connected to simulator.
+2024-03-12 14:18:55,214 : INFO : test_whitelist_session : Requesting 'start transaction'-screen.
+2024-03-12 14:18:55,316 : INFO : test_whitelist_session : Entering connectorID.
+2024-03-12 14:18:55,351 : INFO : test_whitelist_session : Sending token RFID.
+2024-03-12 14:18:55,418 : INFO : test_whitelist_session : Attempting to start transaction.
+2024-03-12 14:19:05,468 : INFO : test_whitelist_session : Getting transaction ID.
+2024-03-12 14:19:05,495 : INFO : test_whitelist_session : Requesting 'stop transaction'-screen.
+2024-03-12 14:19:05,563 : INFO : test_whitelist_session : Sending token RFID.
+2024-03-12 14:19:05,609 : INFO : test_whitelist_session : Simulating meter end value.
+2024-03-12 14:19:05,644 : INFO : test_whitelist_session : Sending transaction ID.
+2024-03-12 14:19:05,670 : INFO : test_whitelist_session : Sending timestamp.
+2024-03-12 14:19:05,739 : INFO : test_whitelist_session : Selecting transaction stop reason.
+2024-03-12 14:19:05,780 : INFO : test_whitelist_session : Stopping transaction.
+2024-03-12 14:19:33,327 : INFO : test_whitelist_session__platform_verification : daan.swinnen@optimile.eu
+2024-03-12 14:19:33,327 : INFO : test_whitelist_session__platform_verification : Attempting login.
+2024-03-12 14:19:35,026 : INFO : test_whitelist_session__platform_verification : Succesfully logged in.
+2024-03-12 14:19:35,026 : INFO : test_whitelist_session__platform_verification : Navigating to cpo customers page.
+2024-03-12 14:19:35,512 : INFO : test_whitelist_session__platform_verification : Searching for 'Carrefour'.
+2024-03-12 14:19:35,735 : INFO : test_whitelist_session__platform_verification : Opening user.
+2024-03-12 14:19:35,961 : INFO : test_whitelist_session__platform_verification : Opening sessions-tab.
+2024-03-12 14:19:38,027 : INFO : test_whitelist_session__platform_verification : Succesfully verified session status as 'whitelist'.
+2024-03-12 14:23:11,821 : INFO : test_splitbilling_session : daan.swinnen@optimile.eu
+2024-03-12 14:23:11,821 : INFO : test_splitbilling_session : TestDevice89
+2024-03-12 14:23:11,821 : INFO : test_splitbilling_session : Attempting to connect to simulator.
+2024-03-12 14:23:12,136 : INFO : test_splitbilling_session : Connected to simulator.
+2024-03-12 14:23:13,136 : INFO : test_splitbilling_session : Requesting 'start transaction'-screen.
+2024-03-12 14:23:13,244 : INFO : test_splitbilling_session : Entering connectorID.
+2024-03-12 14:23:13,269 : INFO : test_splitbilling_session : Sending token RFID.
+2024-03-12 14:23:13,346 : INFO : test_splitbilling_session : Attempting to start transaction.
+2024-03-12 14:23:23,393 : INFO : test_splitbilling_session : Getting transaction ID.
+2024-03-12 14:23:23,422 : INFO : test_splitbilling_session : Requesting 'stop transaction'-screen.
+2024-03-12 14:23:23,483 : INFO : test_splitbilling_session : Sending token RFID.
+2024-03-12 14:23:23,523 : INFO : test_splitbilling_session : Simulating meter end value.
+2024-03-12 14:23:23,557 : INFO : test_splitbilling_session : Sending transaction ID.
+2024-03-12 14:23:23,589 : INFO : test_splitbilling_session : Sending timestamp.
+2024-03-12 14:23:23,656 : INFO : test_splitbilling_session : Selecting transaction stop reason.
+2024-03-12 14:23:23,692 : INFO : test_splitbilling_session : Stopping transaction.
+2024-03-12 14:23:29,273 : INFO : test_splitbilling_session__platform_verification : daan.swinnen@optimile.eu
+2024-03-12 14:23:29,273 : INFO : test_splitbilling_session__platform_verification : Attempting login.
+2024-03-12 14:23:31,241 : INFO : test_splitbilling_session__platform_verification : Succesfully logged in.
+2024-03-12 14:23:31,241 : INFO : test_splitbilling_session__platform_verification : Navigating to CPO customers screen.
+2024-03-12 14:23:31,697 : INFO : test_splitbilling_session__platform_verification : Searching for 'Autotest Splitbilling'.
+2024-03-12 14:23:31,845 : INFO : test_splitbilling_session__platform_verification : Opening user.
+2024-03-12 14:23:32,111 : INFO : test_splitbilling_session__platform_verification : Opening sessions-tab
+2024-03-12 14:23:34,182 : INFO : test_splitbilling_session__platform_verification : Succesfully verified the session as 'Split Billing'.
+2024-03-12 14:27:21,331 : INFO : test_credit_free_charging_with_reserved_credit : daan.swinnen@optimile.eu
+2024-03-12 14:27:21,331 : INFO : test_credit_free_charging_with_reserved_credit : Attempting login.
+2024-03-12 14:27:24,504 : INFO : test_credit_free_charging_with_reserved_credit : Attempting to connect to simulator.
+2024-03-12 14:27:24,636 : INFO : test_credit_free_charging_with_reserved_credit : Connected to simulator.
+2024-03-12 14:27:25,641 : INFO : test_credit_free_charging_with_reserved_credit : Requesting 'start transaction'-screen.
+2024-03-12 14:27:25,751 : INFO : test_credit_free_charging_with_reserved_credit : Entering connectorID.
+2024-03-12 14:27:25,772 : INFO : test_credit_free_charging_with_reserved_credit : Sending token RFID.
+2024-03-12 14:27:25,817 : INFO : test_credit_free_charging_with_reserved_credit : Attempting to start transaction.
+2024-03-12 14:27:39,915 : INFO : test_credit_free_charging_with_reserved_credit : Getting transaction ID.
+2024-03-12 14:27:39,946 : INFO : test_credit_free_charging_with_reserved_credit : Requesting 'stop transaction'-screen.
+2024-03-12 14:27:39,992 : INFO : test_credit_free_charging_with_reserved_credit : Sending token RFID.
+2024-03-12 14:27:40,016 : INFO : test_credit_free_charging_with_reserved_credit : Simulating meter end value.
+2024-03-12 14:27:40,039 : INFO : test_credit_free_charging_with_reserved_credit : Sending transaction ID.
+2024-03-12 14:27:40,061 : INFO : test_credit_free_charging_with_reserved_credit : Sending timestamp.
+2024-03-12 14:27:40,106 : INFO : test_credit_free_charging_with_reserved_credit : Selecting transaction stop reason.
+2024-03-12 14:27:40,135 : INFO : test_credit_free_charging_with_reserved_credit : Stopping transaction.
+2024-03-12 15:03:47,252 : INFO : test_credit_free_charging_with_reserved_credit : daan.swinnen@optimile.eu
+2024-03-12 15:03:47,252 : INFO : test_credit_free_charging_with_reserved_credit : Attempting login.
+2024-03-12 15:03:47,252 : INFO : test_credit_free_charging_with_reserved_credit : Creating second browser tab.
+2024-03-12 15:03:53,616 : INFO : test_credit_free_charging_with_reserved_credit : Navigating to test-credit page.
+2024-03-12 15:03:55,073 : INFO : test_credit_free_charging_with_reserved_credit : Saving starting credit.
+2024-03-12 15:03:55,104 : INFO : test_credit_free_charging_with_reserved_credit : Swapping tab and navigating to charging simulator.
+2024-03-12 15:03:55,267 : INFO : test_credit_free_charging_with_reserved_credit : Attempting to connect to simulator.
+2024-03-12 15:03:55,394 : INFO : test_credit_free_charging_with_reserved_credit : Connected to simulator.
+2024-03-12 15:03:56,397 : INFO : test_credit_free_charging_with_reserved_credit : Requesting 'start transaction'-screen.
+2024-03-12 15:03:56,473 : INFO : test_credit_free_charging_with_reserved_credit : Entering connectorID.
+2024-03-12 15:03:56,496 : INFO : test_credit_free_charging_with_reserved_credit : Sending token RFID.
+2024-03-12 15:03:56,547 : INFO : test_credit_free_charging_with_reserved_credit : Attempting to start transaction.
+2024-03-12 15:04:06,585 : INFO : test_credit_free_charging_with_reserved_credit : Swapping to original window.
+2024-03-12 15:04:10,618 : INFO : test_credit_free_charging_with_reserved_credit : Attempting to verify the correct amount of credit is being reserved.
+2024-03-12 15:04:10,638 : INFO : test_credit_free_charging_with_reserved_credit : Verified correct amount of credit has been reserved.
+2024-03-12 15:04:10,638 : INFO : test_credit_free_charging_with_reserved_credit : Swapping back to simulator tab.
+2024-03-12 15:04:10,647 : INFO : test_credit_free_charging_with_reserved_credit : Getting transaction ID.
+2024-03-12 15:04:10,672 : INFO : test_credit_free_charging_with_reserved_credit : Requesting 'stop transaction'-screen.
+2024-03-12 15:04:10,719 : INFO : test_credit_free_charging_with_reserved_credit : Sending token RFID.
+2024-03-12 15:04:10,752 : INFO : test_credit_free_charging_with_reserved_credit : Simulating meter end value.
+2024-03-12 15:04:10,775 : INFO : test_credit_free_charging_with_reserved_credit : Sending transaction ID.
+2024-03-12 15:04:10,796 : INFO : test_credit_free_charging_with_reserved_credit : Sending timestamp.
+2024-03-12 15:04:10,839 : INFO : test_credit_free_charging_with_reserved_credit : Selecting transaction stop reason.
+2024-03-12 15:04:10,866 : INFO : test_credit_free_charging_with_reserved_credit : Stopping transaction.
+2024-03-12 15:04:11,892 : INFO : test_credit_free_charging_with_reserved_credit : Swapping back to original window.
+2024-03-12 15:04:13,913 : INFO : test_credit_free_charging_with_reserved_credit : Refreshing browser.
+2024-03-12 15:04:15,925 : INFO : test_credit_free_charging_with_reserved_credit : Attempting to verify post-session credit is correct.
+2024-03-12 15:04:15,940 : INFO : test_credit_free_charging_with_reserved_credit : Successfully verified credit was correct before, during, and after whitelist charging session.
+2024-03-12 15:04:35,093 : INFO : test_credit_paid_charging_with_reserved_credit : daan.swinnen@optimile.eu
+2024-03-12 15:04:35,093 : INFO : test_credit_paid_charging_with_reserved_credit : Attempting login.
+2024-03-12 15:04:35,093 : INFO : test_credit_paid_charging_with_reserved_credit : Opening second browser tab.
+2024-03-12 15:04:36,994 : INFO : test_credit_paid_charging_with_reserved_credit : Navigating to account credit page.
+2024-03-12 15:04:38,366 : INFO : test_credit_paid_charging_with_reserved_credit : Saving starting credit.
+2024-03-12 15:04:38,394 : INFO : test_credit_paid_charging_with_reserved_credit : Swapping to second browser tab and navigating to charging simulator.
+2024-03-12 15:04:38,568 : INFO : test_credit_paid_charging_with_reserved_credit : Attempting to connect to simulator.
+2024-03-12 15:04:38,708 : INFO : test_credit_paid_charging_with_reserved_credit : Connected to simulator.
+2024-03-12 15:04:39,713 : INFO : test_credit_paid_charging_with_reserved_credit : Requesting 'start transaction'-screen.
+2024-03-12 15:04:39,821 : INFO : test_credit_paid_charging_with_reserved_credit : Entering connectorID.
+2024-03-12 15:04:39,845 : INFO : test_credit_paid_charging_with_reserved_credit : Sending token RFID.
+2024-03-12 15:04:39,894 : INFO : test_credit_paid_charging_with_reserved_credit : Attempting to start transaction.
+2024-03-12 15:04:49,933 : INFO : test_credit_paid_charging_with_reserved_credit : Swapping back to original tab.
+2024-03-12 15:04:51,953 : INFO : test_credit_paid_charging_with_reserved_credit : Refreshing account credit page.
+2024-03-12 15:04:53,968 : INFO : test_credit_paid_charging_with_reserved_credit : Verifying correct amount of credit gets reserved.
+2024-03-12 15:04:53,987 : INFO : test_credit_paid_charging_with_reserved_credit : Successfully verified correct credit reservation.
+2024-03-12 15:04:53,987 : INFO : test_credit_paid_charging_with_reserved_credit : Swapping back to simulator tab.
+2024-03-12 15:04:54,026 : INFO : test_credit_paid_charging_with_reserved_credit : Getting transaction ID.
+2024-03-12 15:04:54,074 : INFO : test_credit_paid_charging_with_reserved_credit : Requesting 'stop transaction'-screen.
+2024-03-12 15:04:54,147 : INFO : test_credit_paid_charging_with_reserved_credit : Sending token RFID.
+2024-03-12 15:04:54,186 : INFO : test_credit_paid_charging_with_reserved_credit : Simulating meter end value.
+2024-03-12 15:04:54,211 : INFO : test_credit_paid_charging_with_reserved_credit : Sending transaction ID.
+2024-03-12 15:04:54,238 : INFO : test_credit_paid_charging_with_reserved_credit : Sending timestamp.
+2024-03-12 15:04:54,289 : INFO : test_credit_paid_charging_with_reserved_credit : Selecting transaction stop reason.
+2024-03-12 15:04:54,321 : INFO : test_credit_paid_charging_with_reserved_credit : Stopping transaction.
+2024-03-12 15:04:55,347 : INFO : test_credit_paid_charging_with_reserved_credit : Swapping back to original tab.
+2024-03-12 15:04:57,386 : INFO : test_credit_paid_charging_with_reserved_credit : Refreshing account credit page.
+2024-03-12 15:04:59,401 : INFO : test_credit_paid_charging_with_reserved_credit : Verifying the correct amount of credit was deducted.
+2024-03-12 15:04:59,420 : INFO : test_credit_paid_charging_with_reserved_credit : Successfully verified correct credit before, during, and after paid charging session.
+2024-03-12 17:12:05,581 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-03-12 17:12:05,581 : INFO : test_cpo_roaming_export : Attempting login.
+2024-03-12 17:12:07,648 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-03-12 17:12:07,648 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-03-12 17:12:08,338 : INFO : test_cpo_roaming_export : Attempting to generate prices export.
+2024-03-12 17:12:11,644 : INFO : test_cpo_roaming_export : Succesfully verified prices export has been downloaded.
+2024-03-12 17:12:11,644 : INFO : test_cpo_roaming_export : Attempting to export cdr.
+2024-03-12 17:12:12,119 : INFO : test_cpo_roaming_export : Successfully verified cdr export has been downloaded.
+2024-03-12 17:12:43,688 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-03-12 17:12:43,688 : INFO : test_cpo_roaming_export : Attempting login.
+2024-03-12 17:12:45,378 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-03-12 17:12:45,378 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-03-12 17:12:45,867 : INFO : test_cpo_roaming_export : Attempting to generate prices export.
+2024-03-12 17:12:49,418 : INFO : test_cpo_roaming_export : Succesfully verified prices export has been downloaded.
+2024-03-12 17:12:49,424 : INFO : test_cpo_roaming_export : Attempting to export cdr.
+2024-03-12 17:12:51,832 : INFO : test_cpo_roaming_export : Successfully verified cdr export has been downloaded.
+2024-03-12 17:14:35,336 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-03-12 17:14:35,337 : INFO : test_cpo_roaming_export : Attempting login.
+2024-03-12 17:14:37,188 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-03-12 17:14:37,188 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-03-12 17:14:37,713 : INFO : test_cpo_roaming_export : Attempting to generate prices export.
+2024-03-12 17:14:40,934 : INFO : test_cpo_roaming_export : Succesfully verified prices export has been downloaded.
+2024-03-12 17:14:40,934 : INFO : test_cpo_roaming_export : Attempting to export cdr.
+2024-03-12 17:18:15,610 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-03-12 17:18:15,610 : INFO : test_cpo_roaming_export : Attempting login.
+2024-03-12 17:18:17,249 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-03-12 17:18:17,249 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-03-12 17:18:17,782 : INFO : test_cpo_roaming_export : Attempting to generate prices export.
+2024-03-12 17:18:21,025 : INFO : test_cpo_roaming_export : Succesfully verified prices export has been downloaded.
+2024-03-12 17:18:21,025 : INFO : test_cpo_roaming_export : Attempting to export cdr.
+2024-03-12 17:20:15,576 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-03-12 17:20:15,576 : INFO : test_cpo_roaming_export : Attempting login.
+2024-03-12 17:20:17,343 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-03-12 17:20:17,343 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-03-12 17:20:17,941 : INFO : test_cpo_roaming_export : Attempting to generate prices export.
+2024-03-12 17:20:21,166 : INFO : test_cpo_roaming_export : Succesfully verified prices export has been downloaded.
+2024-03-12 17:20:21,167 : INFO : test_cpo_roaming_export : Attempting to export cdr.
+2024-03-12 17:21:24,875 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-03-12 17:21:24,876 : INFO : test_cpo_roaming_export : Attempting login.
+2024-03-12 17:21:26,611 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-03-12 17:21:26,611 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-03-12 17:21:27,169 : INFO : test_cpo_roaming_export : Attempting to generate prices export.
+2024-03-12 17:21:30,410 : INFO : test_cpo_roaming_export : Succesfully verified prices export has been downloaded.
+2024-03-12 17:21:30,411 : INFO : test_cpo_roaming_export : Attempting to export cdr.
+2024-03-12 17:23:17,127 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-03-12 17:23:17,127 : INFO : test_cpo_roaming_export : Attempting login.
+2024-03-12 17:23:18,794 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-03-12 17:23:18,795 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-03-12 17:23:19,370 : INFO : test_cpo_roaming_export : Attempting to generate prices export.
+2024-03-12 17:23:22,672 : INFO : test_cpo_roaming_export : Succesfully verified prices export has been downloaded.
+2024-03-12 17:23:22,673 : INFO : test_cpo_roaming_export : Attempting to export cdr.
+2024-03-12 17:23:31,563 : INFO : test_cpo_roaming_export : Successfully verified cdr export has been downloaded.
+2024-03-12 17:24:06,401 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-03-12 17:24:06,402 : INFO : test_cpo_roaming_export : Attempting login.
+2024-03-12 17:24:08,849 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-03-12 17:24:08,849 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-03-12 17:24:09,534 : INFO : test_cpo_roaming_export : Attempting to generate prices export.
+2024-03-12 17:24:12,898 : INFO : test_cpo_roaming_export : Succesfully verified prices export has been downloaded.
+2024-03-12 17:24:12,898 : INFO : test_cpo_roaming_export : Attempting to export cdr.
+2024-03-12 17:24:17,707 : INFO : test_cpo_roaming_export : Successfully verified cdr export has been downloaded.
+2024-03-13 10:07:43,098 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2024-03-13 10:07:43,098 : INFO : test_cpo_overview_screen : Attempting login.
+2024-03-13 10:07:44,994 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2024-03-13 10:07:44,995 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2024-03-13 10:07:45,463 : INFO : test_cpo_overview_screen : Verifying overview map is present.
+2024-03-13 10:07:45,487 : INFO : test_cpo_overview_screen : Succesfully verified CPO overview page.
+2024-03-13 10:07:50,261 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2024-03-13 10:07:50,261 : INFO : test_cpo_customers_screen : Attempting login.
+2024-03-13 10:07:51,977 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2024-03-13 10:07:51,978 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2024-03-13 10:07:52,447 : INFO : test_cpo_customers_screen : Succesfully verified customers page.
+2024-03-13 10:07:57,469 : INFO : test_cpo_charging_locations_screen : daan.swinnen@optimile.eu
+2024-03-13 10:07:57,469 : INFO : test_cpo_charging_locations_screen : Attempting login.
+2024-03-13 10:07:59,332 : INFO : test_cpo_charging_locations_screen : Succesfully logged in.
+2024-03-13 10:07:59,332 : INFO : test_cpo_charging_locations_screen : Navigating to charging locations page.
+2024-03-13 10:07:59,685 : INFO : test_cpo_charging_locations_screen : Succesfully verified locations page.
+2024-03-13 10:08:04,431 : INFO : test_cpo_tokens_screen : daan.swinnen@optimile.eu
+2024-03-13 10:08:04,431 : INFO : test_cpo_tokens_screen : Attempting login.
+2024-03-13 10:08:06,691 : INFO : test_cpo_tokens_screen : Succesfully logged in.
+2024-03-13 10:08:06,691 : INFO : test_cpo_tokens_screen : Navigating to tokens page.
+2024-03-13 10:08:07,142 : INFO : test_cpo_tokens_screen : Succesfully verified tokens page.
+2024-03-13 10:08:12,497 : INFO : test_cpo_simcards_screen : daan.swinnen@optimile.eu
+2024-03-13 10:08:12,497 : INFO : test_cpo_simcards_screen : Attempting login.
+2024-03-13 10:08:14,499 : INFO : test_cpo_simcards_screen : Succesfully logged in.
+2024-03-13 10:08:14,499 : INFO : test_cpo_simcards_screen : Navigating to simcards page.
+2024-03-13 10:08:15,234 : INFO : test_cpo_simcards_screen : Succesfully verified simcards page.
+2024-03-13 10:08:19,550 : INFO : test_cpo_contracts_screen : daan.swinnen@optimile.eu
+2024-03-13 10:08:19,550 : INFO : test_cpo_contracts_screen : Attempting login.
+2024-03-13 10:08:21,402 : INFO : test_cpo_contracts_screen : Succesfully logged in.
+2024-03-13 10:08:21,402 : INFO : test_cpo_contracts_screen : Navigating to contracts page.
+2024-03-13 10:08:21,781 : INFO : test_cpo_contracts_screen : Succesfully verified contracts page.
+2024-03-13 10:08:26,422 : INFO : test_cpo_roaming_screen : daan.swinnen@optimile.eu
+2024-03-13 10:08:26,422 : INFO : test_cpo_roaming_screen : Attempting login.
+2024-03-13 10:08:28,282 : INFO : test_cpo_roaming_screen : Succesfully logged in.
+2024-03-13 10:08:28,282 : INFO : test_cpo_roaming_screen : Navigating to roaming page.
+2024-03-13 10:08:28,766 : INFO : test_cpo_roaming_screen : Succesfully verified roaming page.
+2024-03-13 10:08:33,649 : INFO : test_cpo_finance_screen : daan.swinnen@optimile.eu
+2024-03-13 10:08:33,649 : INFO : test_cpo_finance_screen : Attempting login.
+2024-03-13 10:08:35,259 : INFO : test_cpo_finance_screen : Succesfully logged in.
+2024-03-13 10:08:35,259 : INFO : test_cpo_finance_screen : Navigating to finance page.
+2024-03-13 10:08:35,691 : INFO : test_cpo_finance_screen : Succesfully verified finance page.
+2024-03-13 10:08:40,366 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2024-03-13 10:08:40,366 : INFO : test_cpo_reports_screen : Attempting login.
+2024-03-13 10:08:42,030 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2024-03-13 10:08:42,031 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2024-03-13 10:08:42,617 : INFO : test_cpo_reports_screen : Succesfully verified reports page.
+2024-03-13 10:09:29,872 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2024-03-13 10:09:29,872 : INFO : test_cpo_reports_screen : Attempting login.
+2024-03-13 10:09:31,630 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2024-03-13 10:09:31,630 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2024-03-13 10:09:32,154 : INFO : test_cpo_reports_screen : Succesfully verified reports page.
+2024-03-13 10:10:41,191 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2024-03-13 10:10:41,192 : INFO : test_cpo_reports_screen : Attempting login.
+2024-03-13 10:10:42,919 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2024-03-13 10:10:42,919 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2024-03-13 10:10:43,427 : INFO : test_cpo_reports_screen : Succesfully verified reports page.
+2024-03-13 10:11:41,733 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2024-03-13 10:11:41,733 : INFO : test_cpo_reports_screen : Attempting login.
+2024-03-13 10:11:43,486 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2024-03-13 10:11:43,486 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2024-03-13 10:11:45,025 : INFO : test_cpo_reports_screen : Succesfully verified reports page.
+2024-03-13 10:12:31,223 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-03-13 10:12:31,223 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-03-13 10:12:33,103 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-03-13 10:12:33,103 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-03-13 10:12:33,980 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2024-03-13 10:12:34,268 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2024-03-13 10:12:34,544 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2024-03-13 10:12:35,020 : INFO : test_reimbursementpolicy_valuechange : Succesfully changed policy value.
+2024-03-13 10:12:35,294 : INFO : test_reimbursementpolicy_valuechange : Deleted new value. Test has been reset.
+2024-03-13 10:22:18,418 : INFO : test_roaming_session__platform_verification : daan.swinnen@optimile.eu
+2024-03-13 10:22:18,419 : INFO : test_roaming_session__platform_verification : Attempting login.
+2024-03-13 10:22:20,285 : INFO : test_roaming_session__platform_verification : Succesfully logged in.
+2024-03-13 10:22:20,285 : INFO : test_roaming_session__platform_verification : Navigating to msp customers page.
+2024-03-13 10:22:20,796 : INFO : test_roaming_session__platform_verification : Searching for 'Autotesting Roaming'.
+2024-03-13 10:22:22,036 : INFO : test_roaming_session__platform_verification : Opening customer.
+2024-03-13 10:22:22,329 : INFO : test_roaming_session__platform_verification : Activity tab.
+2024-03-13 10:22:22,998 : INFO : test_roaming_session__platform_verification : Succesfully verified charging session registered as 'normal'.
+2024-03-13 10:22:23,009 : INFO : test_roaming_session__platform_verification : Successfully confirmed session value.
+2024-03-13 10:22:31,691 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-03-13 10:22:31,691 : INFO : test_roaming_session : TestDevice89
+2024-03-13 10:22:31,691 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-03-13 10:22:31,977 : INFO : test_roaming_session : Connected to simulator.
+2024-03-13 10:22:32,978 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-03-13 10:22:33,055 : INFO : test_roaming_session : Entering connectorID.
+2024-03-13 10:22:33,077 : INFO : test_roaming_session : Sending token RFID.
+2024-03-13 10:22:33,120 : INFO : test_roaming_session : Attempting to start transaction.
+2024-03-13 10:22:43,158 : INFO : test_roaming_session : Getting transaction ID.
+2024-03-13 10:22:43,188 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-03-13 10:22:43,254 : INFO : test_roaming_session : Sending token RFID.
+2024-03-13 10:22:43,276 : INFO : test_roaming_session : Simulating meter end value.
+2024-03-13 10:22:43,297 : INFO : test_roaming_session : Sending transaction ID.
+2024-03-13 10:22:43,321 : INFO : test_roaming_session : Sending timestamp.
+2024-03-13 10:22:43,363 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-03-13 10:22:43,389 : INFO : test_roaming_session : Stopping transaction.
+2024-03-13 10:23:10,357 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-03-13 10:23:10,357 : INFO : test_roaming_session : TestDevice89
+2024-03-13 10:23:10,357 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-03-13 10:23:10,691 : INFO : test_roaming_session : Connected to simulator.
+2024-03-13 10:23:11,692 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-03-13 10:23:11,770 : INFO : test_roaming_session : Entering connectorID.
+2024-03-13 10:23:11,820 : INFO : test_roaming_session : Sending token RFID.
+2024-03-13 10:23:11,888 : INFO : test_roaming_session : Attempting to start transaction.
+2024-03-13 10:23:21,932 : INFO : test_roaming_session : Getting transaction ID.
+2024-03-13 10:23:21,961 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-03-13 10:23:22,026 : INFO : test_roaming_session : Sending token RFID.
+2024-03-13 10:23:22,065 : INFO : test_roaming_session : Simulating meter end value.
+2024-03-13 10:23:22,097 : INFO : test_roaming_session : Sending transaction ID.
+2024-03-13 10:23:22,125 : INFO : test_roaming_session : Sending timestamp.
+2024-03-13 10:23:22,190 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-03-13 10:23:22,226 : INFO : test_roaming_session : Stopping transaction.
+2024-03-13 10:24:05,752 : INFO : test_whitelist_session : daan.swinnen@optimile.eu
+2024-03-13 10:24:05,752 : INFO : test_whitelist_session : TestDevice89
+2024-03-13 10:24:05,752 : INFO : test_whitelist_session : Attempting to connect to simulator.
+2024-03-13 10:24:06,069 : INFO : test_whitelist_session : Connected to simulator.
+2024-03-13 10:24:07,071 : INFO : test_whitelist_session : Requesting 'start transaction'-screen.
+2024-03-13 10:24:07,180 : INFO : test_whitelist_session : Entering connectorID.
+2024-03-13 10:24:07,205 : INFO : test_whitelist_session : Sending token RFID.
+2024-03-13 10:24:07,270 : INFO : test_whitelist_session : Attempting to start transaction.
+2024-03-13 10:24:17,317 : INFO : test_whitelist_session : Getting transaction ID.
+2024-03-13 10:24:17,347 : INFO : test_whitelist_session : Requesting 'stop transaction'-screen.
+2024-03-13 10:24:17,415 : INFO : test_whitelist_session : Sending token RFID.
+2024-03-13 10:24:17,448 : INFO : test_whitelist_session : Simulating meter end value.
+2024-03-13 10:24:17,474 : INFO : test_whitelist_session : Sending transaction ID.
+2024-03-13 10:24:17,503 : INFO : test_whitelist_session : Sending timestamp.
+2024-03-13 10:24:17,567 : INFO : test_whitelist_session : Selecting transaction stop reason.
+2024-03-13 10:24:17,606 : INFO : test_whitelist_session : Stopping transaction.
+2024-03-13 10:25:07,081 : INFO : test_whitelist_session : daan.swinnen@optimile.eu
+2024-03-13 10:25:07,082 : INFO : test_whitelist_session : TestDevice89
+2024-03-13 10:25:07,082 : INFO : test_whitelist_session : Attempting to connect to simulator.
+2024-03-13 10:25:07,453 : INFO : test_whitelist_session : Connected to simulator.
+2024-03-13 10:25:08,459 : INFO : test_whitelist_session : Requesting 'start transaction'-screen.
+2024-03-13 10:25:08,536 : INFO : test_whitelist_session : Entering connectorID.
+2024-03-13 10:25:08,588 : INFO : test_whitelist_session : Sending token RFID.
+2024-03-13 10:25:08,653 : INFO : test_whitelist_session : Attempting to start transaction.
+2024-03-13 10:25:18,701 : INFO : test_whitelist_session : Getting transaction ID.
+2024-03-13 10:25:18,729 : INFO : test_whitelist_session : Requesting 'stop transaction'-screen.
+2024-03-13 10:25:18,800 : INFO : test_whitelist_session : Sending token RFID.
+2024-03-13 10:25:18,836 : INFO : test_whitelist_session : Simulating meter end value.
+2024-03-13 10:25:18,863 : INFO : test_whitelist_session : Sending transaction ID.
+2024-03-13 10:25:18,893 : INFO : test_whitelist_session : Sending timestamp.
+2024-03-13 10:25:18,965 : INFO : test_whitelist_session : Selecting transaction stop reason.
+2024-03-13 10:25:19,002 : INFO : test_whitelist_session : Stopping transaction.
+2024-03-13 10:26:31,644 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-03-13 10:26:31,644 : INFO : test_roaming_session : TestDevice89
+2024-03-13 10:26:31,644 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-03-13 10:26:31,967 : INFO : test_roaming_session : Connected to simulator.
+2024-03-13 10:26:32,972 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-03-13 10:26:33,083 : INFO : test_roaming_session : Entering connectorID.
+2024-03-13 10:26:33,111 : INFO : test_roaming_session : Sending token RFID.
+2024-03-13 10:26:33,177 : INFO : test_roaming_session : Attempting to start transaction.
+2024-03-13 10:26:43,232 : INFO : test_roaming_session : Getting transaction ID.
+2024-03-13 10:26:43,253 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-03-13 10:26:43,308 : INFO : test_roaming_session : Sending token RFID.
+2024-03-13 10:26:43,347 : INFO : test_roaming_session : Simulating meter end value.
+2024-03-13 10:26:43,379 : INFO : test_roaming_session : Sending transaction ID.
+2024-03-13 10:26:43,414 : INFO : test_roaming_session : Sending timestamp.
+2024-03-13 10:26:43,492 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-03-13 10:26:43,530 : INFO : test_roaming_session : Stopping transaction.
+2024-03-13 10:45:28,666 : INFO : _login : daan.swinnen@optimile.eu
+2024-03-13 10:45:28,667 : INFO : _login : Attempting login.
+2024-03-13 10:45:30,558 : INFO : _login : Succesfully logged in.
+2024-03-13 10:45:31,562 : INFO : test_msp_customers_screen : Navigating to msp customers page.
+2024-03-13 10:45:32,084 : INFO : test_msp_customers_screen : Succesfully verified msp customers page.

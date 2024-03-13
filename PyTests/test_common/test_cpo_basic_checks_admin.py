@@ -41,6 +41,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestTwo(BaseClass):
     def test_cpo_customers_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -64,6 +66,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestThree(BaseClass):
     def test_cpo_charging_locations_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -87,6 +91,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestFour(BaseClass):
     def test_cpo_tokens_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -110,6 +116,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestFive(BaseClass):
     def test_cpo_simcards_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -134,6 +142,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestSix(BaseClass):
     def test_cpo_contracts_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -157,6 +167,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestSeven(BaseClass):
     def test_cpo_roaming_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -180,6 +192,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestEight(BaseClass):
     def test_cpo_finance_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -203,6 +217,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestNine(BaseClass):
     def test_cpo_reports_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -215,6 +231,7 @@ class TestOne(BaseClass):
         log.info("Navigating to cpo reports page.")
         homepage.menu_label_chargingpoints()
         homepage.menu_label_cpo_reports()
+        time.sleep(1)
         titlefinancepage = str(
             homepage.driver.find_element(
                 By.XPATH, "(//h1[normalize-space()='Reports'])[1]"
@@ -225,6 +242,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestTen(BaseClass):
     def test_cpo_splitbilling_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -248,6 +267,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestEleven(BaseClass):
     def test_cpo_pricing_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -272,3 +293,37 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
 
+class TestTwelve(BaseClass):
+    def test_cpo_overview_screen_extended(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to CPO overview page.")
+        homepage.menu_label_chargingpoints()
+        cpooverviewpage = homepage.menu_label_cpo_overview()
+
+        cpooverviewpage.sessions_tab()
+        assert self.driver.find_element(By.CSS_SELECTOR, "#mapDivId")
+        log.info("Verifying overview map is present.")
+
+        titleoverviewpage = str(
+            homepage.driver.find_element(
+                By.XPATH, "(//h1[normalize-space()='Overview'])[1]"
+            ).text
+        )
+        assert titleoverviewpage == "Overview"
+
+        cpooverviewpage.issues_tab()
+        time.sleep(1)
+        tableheader = self.driver.find_element(By.XPATH, "//th[2]").text
+        assert tableheader == "Time started"
+
+        log.info("Succesfully verified CPO overview page.")
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()

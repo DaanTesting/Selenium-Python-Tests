@@ -131,35 +131,6 @@ class TestThree(BaseClass):
 
 
 class TestFour(BaseClass):
-    def test_pages_mobility_policies(self, setup, login_data):
-        log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting Login.")
-
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
-        log.info("Navigating to mobility-pages.")
-        homepage.menu_label_mobility()
-        homepage.menu_label_mobility_policies()
-        titlemobilitypolicies = self.driver.find_element(
-            By.XPATH, "//span[.='Mobility policies']"
-        ).text
-        assert titlemobilitypolicies == "Mobility policies"
-        log.info("Succesfully verified mobility policies-page.")
-
-        homepage.menu_label_expenses()
-        titleexpenses = self.driver.find_element(By.XPATH, "//h1[.='Expenses']").text
-        assert titleexpenses == "Expenses"
-        log.info("Succesfully verified expenses-page.")
-
-        generalobjects = GeneralObjects(self.driver)
-        generalobjects.sign_out_button()
-
-
-class TestFive(BaseClass):
     def test_user_detail(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -208,7 +179,7 @@ class TestFive(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestSix(BaseClass):
+class TestFive(BaseClass):
     def test_ruleset_overview(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -228,7 +199,7 @@ class TestSix(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-class TestSeven(BaseClass):
+class TestSix(BaseClass):
     def test_federal_budgets(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -245,7 +216,7 @@ class TestSeven(BaseClass):
         pagetitle = self.driver.find_element(By.XPATH, "//h1[@class='title-with-button']").text
         assert "Federal mobility budgets" in pagetitle
 
-class TestEight(BaseClass):
+class TestSeven(BaseClass):
     def test_federal_policies(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

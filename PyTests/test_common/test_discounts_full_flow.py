@@ -33,13 +33,15 @@ class TestOne(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        log.info("Navigating to CPO overview page.")
+        log.info("Navigating to discount list page.")
         homepage.menu_label_chargingpoints()
         discountlistoverview = homepage.menu_label_discount_lists()
+        log.info("Enabling top discount list.")
         discountlistoverview.enable_top_list()
 
         message = discountlistoverview.message_banner().text
         assert message == "Discount list enabled."
+        log.info("Successfully enabled discount list.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -55,20 +57,26 @@ class TestTwo(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        log.info("Navigating to CPO overview page.")
+        log.info("Navigating to discount list page.")
         homepage.menu_label_chargingpoints()
         discountlistoverview = homepage.menu_label_discount_lists()
+        log.info("Opening test discount list.")
         opendiscountlist = discountlistoverview.open_autotest_list()
+        log.info("Adding charging token to list.")
         opendiscountlist.add_charging_token_button()
+        log.info("Adding external token to list.")
         opendiscountlist.add_external_token_button()
         opendiscountlist.external_token_uid_field().send_keys(
             discount_session_data["discount RFID"]
         )
+        log.info("Updating token description.")
         opendiscountlist.token_description_field().send_keys("Ongoing test")
+        log.info("Saving token to discount list.")
         opendiscountlist.save_charging_token_to_discount_list_button()
 
         message = opendiscountlist.message_banner().text
         assert message == "Token added to discount list."
+        log.info("Successfully added token to discount list.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -82,6 +90,7 @@ class TestThree(BaseClass):
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
+        log.info("Attempting to execute discounted charging session.")
         chargingsimulator.open_simulator()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
@@ -136,15 +145,19 @@ class TestFour(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        log.info("Navigating to CPO overview page.")
+        log.info("Navigating to locations page.")
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
+        log.info("Searching for 'Discounts' location.")
         locationsmainpage.find_location().send_keys("Discounts" + Keys.ENTER)
         time.sleep(1)
+        log.info("Opening location 'Autotests Discounts'.")
         individualcharginglocation = (
-            locationsmainpage.find_location_click_top_result()
+            locationsmainpage.find_location_customer_click_top_result()
         )
+        log.info("Opening sessions tab.")
         individualcharginglocation.sessions_tab()
+        log.info("Attempting to verify correct discount was applied.")
         time.sleep(1)
         sessionvalue_string = (
             individualcharginglocation.top_session_value().text
@@ -153,6 +166,7 @@ class TestFour(BaseClass):
         sessionvalue_float = float(sessionvalue_string)
 
         assert 54 <= sessionvalue_float <= 56, "Incorrect discount value."
+        log.info("Successfully verified discount price.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -168,14 +182,17 @@ class TestFive(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        log.info("Navigating to CPO overview page.")
+        log.info("Navigating to discount lists page.")
         homepage.menu_label_chargingpoints()
         discountlistoverview = homepage.menu_label_discount_lists()
+        log.info("Opening autotest list.")
         opendiscountlist = discountlistoverview.open_autotest_list()
+        log.info("Attempting to remove token from discount list.")
         opendiscountlist.remove_top_token_from_discount()
 
         message = opendiscountlist.message_banner().text
         assert message == "Token removed from discount list."
+        log.info("Successfully removed token from discount list.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -189,6 +206,7 @@ class TestSix(BaseClass):
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
+        log.info("Simulating full price charging session.(Token removed from discount.)")
         chargingsimulator.open_simulator()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
@@ -233,6 +251,7 @@ class TestSix(BaseClass):
         chargingsimulator.stop_transaction_button()
 
 
+
 class TestSeven(BaseClass):
     def test_check_full_price_value(self, login_data):
         log = self.get_logger()
@@ -243,21 +262,26 @@ class TestSeven(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        log.info("Navigating to CPO overview page.")
+        log.info("Navigating to locations page.")
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
+        log.info("Searching for 'Autotest Discounts' location.")
         locationsmainpage.find_location().send_keys("Discounts" + Keys.ENTER)
+        log.info("Opening 'Autotest Discounts' location.")
         time.sleep(1)
         individualcharginglocation = (
-            locationsmainpage.find_location_click_top_result()
+            locationsmainpage.find_location_customer_click_top_result()
         )
+        log.info("Navigating to sessions tab.")
         individualcharginglocation.sessions_tab()
         time.sleep(1)
+        log.info("Attempting to verify correct session price.")
         sessionvalue_string = individualcharginglocation.top_session_value().text
         sessionvalue_string = sessionvalue_string[1:]
         sessionvalue_float = float(sessionvalue_string)
 
         assert 109 <= sessionvalue_float <= 111, "Incorrect discount value."
+        log.info("Successfully verified session was not discounted.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -273,13 +297,15 @@ class TestEight(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        log.info("Navigating to CPO overview page.")
+        log.info("Navigating to discount list page.")
         homepage.menu_label_chargingpoints()
         discountlistoverview = homepage.menu_label_discount_lists()
+        log.info("Disabling top discount list.")
         discountlistoverview.disable_top_list()
 
         message = discountlistoverview.message_banner().text
         assert message == "Discount list disabled."
+        log.info("Successfully disabled top discount list.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -293,6 +319,7 @@ class TestNine(BaseClass):
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
+        log.info("Simulating a full price charging session.(Discount disabled.)")
         chargingsimulator.open_simulator()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
@@ -337,6 +364,7 @@ class TestNine(BaseClass):
         chargingsimulator.stop_transaction_button()
 
 
+
 class TestTen(BaseClass):
     def test_check_full_price_value(self, login_data):
         log = self.get_logger()
@@ -347,16 +375,20 @@ class TestTen(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        log.info("Navigating to CPO overview page.")
+        log.info("Navigating to locations page.")
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
+        log.info("Searching for 'Autotest Discounts' location.")
         locationsmainpage.find_location().send_keys("Discounts" + Keys.ENTER)
         time.sleep(1)
+        log.info("Opening top location.")
         individualcharginglocation = (
-            locationsmainpage.find_location_click_top_result()
+            locationsmainpage.find_location_customer_click_top_result()
         )
+        log.info("Navigating to sessions tab.")
         individualcharginglocation.sessions_tab()
         time.sleep(1)
+        log.info("Attempting to verify session cost.")
         sessionvalue_string = (
             individualcharginglocation.top_session_value().text
         )
@@ -364,6 +396,7 @@ class TestTen(BaseClass):
         sessionvalue_float = float(sessionvalue_string)
 
         assert 109 <= sessionvalue_float <= 111, "Incorrect discount value."
+        log.info("Successfully verified full price charging session.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()

@@ -116,3 +116,43 @@ class TestOne(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
+    def test_msp_dashboard_screen_extended(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to CPO overview page.")
+        mspoverviewpage = homepage.menu_label_msp_dashboard()
+
+        mspoverviewpage.waiting_for_payment_tab()
+        time.sleep(1)
+        waitingforpaymenttitle = self.driver.find_element(By.XPATH, "//h3[.='Waiting for payment']").text
+        assert waitingforpaymenttitle == "Waiting for payment"
+
+        mspoverviewpage.assign_tokens()
+        time.sleep(1)
+        assigntokenstitle = self.driver.find_element(By.XPATH, "//h3[.='Assign tokens']").text
+        assert assigntokenstitle == "Assign tokens"
+
+        mspoverviewpage.sessions_tab()
+        time.sleep(1)
+        sessionstitle = self.driver.find_element(By.XPATH, "//h3[.='Charging sessions']").text
+        assert sessionstitle == "Charging sessions"
+
+        mspoverviewpage.new_registrations_tab()
+        time.sleep(1)
+        newregistrationstitle = self.driver.find_element(By.XPATH, "//h3[.='New registrations']").text
+        assert newregistrationstitle == "New registrations"
+
+        log.info("Succesfully verified CPO overview page.")
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+        
+

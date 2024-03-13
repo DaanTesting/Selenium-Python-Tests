@@ -28,6 +28,8 @@ from pageObjects.FederalBudgetsPage import FederalBudgetsPage
 from pageObjects.FederalPoliciesPage import FederalPoliciesPage
 from pageObjects.ExternalUsersPage import ExternalUsersPage
 from pageObjects.UserInvitesPage import UserInvitesPage
+from pageObjects.CpoOverviewPage import CpoOverviewPage
+from pageObjects.MspDashboard import MspDashboard
 
 class HomePage:
     def __init__(self, driver):
@@ -58,17 +60,6 @@ class HomePage:
         self.driver.find_element(*selector1).click()
         splitbillingmainpage = SplitBillingMainPage(self.driver)
         return splitbillingmainpage
-
-    def menu_label_mobility_policies(self):
-        selector1 = (By.CSS_SELECTOR, 'a[href*="mobility"]')
-        selector2 = (
-            By.XPATH,
-            "//span[@class='menu-label'][text()='Mobility policies']",
-        )
-        self.driver.find_element(*selector1).click()
-        self.driver.find_element(*selector2).click()
-        mobilitypoliciesmainpage = MobilityPoliciesMainPage(self.driver)
-        return mobilitypoliciesmainpage
 
     def menu_label_professional_policies(self):
         selector1 = (By.CSS_SELECTOR, 'a[href*="mobility"]')
@@ -185,6 +176,8 @@ class HomePage:
     def menu_label_cpo_overview(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Overview'])[1]")
         self.driver.find_element(*selector1).click()
+        cpooverviewpage = CpoOverviewPage(self.driver)
+        return cpooverviewpage
 
     def menu_label_cpo_tokens(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Tokens'])[1]")
@@ -320,5 +313,11 @@ class HomePage:
         self.driver.find_element(*selector1).click()
         federalpoliciespage = FederalPoliciesPage(self.driver)
         return federalpoliciespage
+    
+    def menu_label_msp_dashboard(self):
+        selector1 = (By.XPATH, "//span[.='Dashboard']")
+        self.driver.find_element(*selector1).click
+        mspdashboard = MspDashboard(self.driver)
+        return mspdashboard
 
 

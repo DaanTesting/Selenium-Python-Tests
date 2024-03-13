@@ -99,3 +99,25 @@ class IndividualChargingLocation:
     def top_session_value(self):
         selector1 = (By.XPATH, "//tr[1]/td[8]")
         return self.driver.find_element(*selector1)
+    
+    def open_top_device(self):
+        selector1 = (By.XPATH, "(//td[1]/a[1])[1]")
+        self.driver.find_element(*selector1).click()
+
+    def delete_device(self):
+        selector1 = (By.XPATH, "//a[@class='btn btn-warning']")
+        selector2 = (By.XPATH, "//button[@name='delete']")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+
+    def device_deleted_alert(self):
+        selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
+        return self.driver.find_element(*selector1)
+    
+    def device_serial_number(self):
+        selector1 = (By.XPATH, "//div[4]/div/p")
+        return self.driver.find_element(*selector1)
+    
+    def new_device_serial_number_field(self):
+        selector1 = (By.CSS_SELECTOR, "#id_device-device_number")
+        return self.driver.find_element(*selector1)

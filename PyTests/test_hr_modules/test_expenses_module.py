@@ -204,7 +204,7 @@ class TestSix(BaseClass):
 
         Expenses = self.driver.find_elements(By.XPATH, "//tbody/tr")
         for Expense in Expenses:
-            assert self.driver.find_element(By.XPATH, "//td[5]").text == "Taxi & Uber"
+            assert self.driver.find_element(By.XPATH, "//td[5]").text == "Taxi"
 
         log.info("Succesfully verified that only taxi-expenses are visible.")
 
@@ -238,6 +238,7 @@ class TestSeven(BaseClass):
         self.driver.find_element(
             By.XPATH, "//a[normalize-space()='Show details']"
         ).click()
+        time.sleep(1)
 
         self.driver.find_element(By.XPATH, "(//input[@type='radio'])[2]").click()
         self.driver.find_element(By.XPATH, "//button[text()='Apply changes']").click()

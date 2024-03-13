@@ -51,3 +51,7 @@
 2023-11-07 10:37:23,955 : INFO : test_cpo_overview_screen : Attempting login.
 2023-11-07 10:37:34,256 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
 2023-11-07 10:37:34,256 : INFO : test_cpo_customers_screen : Attempting login.
+2024-02-14 16:08:47,048 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-02-14 16:08:47,049 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-02-14 16:08:48,088 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-02-14 16:08:48,089 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.

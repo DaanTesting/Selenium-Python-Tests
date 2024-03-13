@@ -23,7 +23,7 @@ class OpenDiscountList:
     def delete_top_token(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
         selector2 = (By.XPATH, "//button[.='Remove']")
-        selector3 = (By.XPATH, "//button[.='OK']")
+        selector3 = (By.XPATH, "//button[.='Yes']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
@@ -77,7 +77,7 @@ class OpenDiscountList:
     def remove_top_token_from_discount(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
         selector2 = (By.XPATH, "//button[.='Remove']")
-        selector3 = (By.CSS_SELECTOR, "#okButton")
+        selector3 = (By.XPATH, "//button[.='Yes']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()

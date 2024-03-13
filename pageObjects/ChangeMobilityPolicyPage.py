@@ -52,19 +52,19 @@ class ChangeMobilityPolicyPage:
 
     def change_mobility_policy_select_parking(self):
         selector1 = (By.CSS_SELECTOR, "div[title='Parking']")
-        selector2 = (By.CSS_SELECTOR, "#service-item-1")
+        selector2 = (By.CSS_SELECTOR, "#service-1")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
     def change_mobility_policy_select_car_sharing(self):
         selector1 = (By.CSS_SELECTOR, "div[title='Car sharing']")
-        selector2 = (By.CSS_SELECTOR, "#service-item-3")
+        selector2 = (By.CSS_SELECTOR, "#service-3")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
     def change_mobility_policy_select_bike_sharing(self):
         selector1 = (By.CSS_SELECTOR, "div[title='Bike sharing']")
-        selector2 = (By.CSS_SELECTOR, "#service-item-4")
+        selector2 = (By.CSS_SELECTOR, "#service-4")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
@@ -80,7 +80,11 @@ class ChangeMobilityPolicyPage:
         self.driver.find_element(*selector3).click()
 
     def change_mobility_policy_save(self):
-        selector1 = (By.CSS_SELECTOR, "button[type='submit']")
+        selector1 = (By.XPATH, "//button[.='Save']")
+        self.driver.find_element(*selector1).click()
+
+    def change_mobility_policy_save_as_draft(self):
+        selector1 = (By.XPATH, "//button[.='Save as draft']")
         self.driver.find_element(*selector1).click()
 
     def change_mobility_policy_set_unlimited(self):

@@ -35,8 +35,10 @@ class TestSubModuleOne(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
-        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
-        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("OldPolicy" + Keys.ENTER)
+        mobilitypoliciesmainpage = homepage.menu_label_professional_policies()
+        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("OldPolicy")
+        time.sleep(1)
+        mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys(Keys.ENTER)
         log.info("Searching for mobility policy named 'OldPolicy'.")
         time.sleep(1)
         searchresult = self.driver.find_element(By.XPATH, "(//tr/td)[1]").text
@@ -61,7 +63,7 @@ class TestSubModuleTwo(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
-        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
+        mobilitypoliciesmainpage = homepage.menu_label_professional_policies()
         mobilitypoliciesmainpage.mobility_policies_filter_active()
         log.info("Filtering 'active' mobility policies.")
         time.sleep(1)
@@ -163,7 +165,7 @@ class TestSubModuleFour(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
-        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
+        mobilitypoliciesmainpage = homepage.menu_label_professional_policies()
         log.info("Attempting to create new mobility policy.")
         newmobilitypolicypage = (
             mobilitypoliciesmainpage.mobility_policies_create_button()
@@ -173,8 +175,6 @@ class TestSubModuleFour(BaseClass):
 
         newmobilitypolicypage.new_policy_name_field().send_keys(timestamp)
         log.info("Set policy name as 'timestamp'.")
-        newmobilitypolicypage.new_policy_type_dropdown()
-        log.info("Selected mobility policy type as 'professional'.")
         newmobilitypolicypage.new_policy_contract_dropdown()
         log.info("Selected second contract.")
         newmobilitypolicypage.new_policy_budget_value().send_keys("150")
@@ -183,7 +183,8 @@ class TestSubModuleFour(BaseClass):
         newmobilitypolicypage.new_policy_datepicker_alt().send_keys(today + Keys.ENTER)
         log.info("Set start date on 'today'.")
         log.info("Set end date as undefined.")
-        newmobilitypolicypage.new_policy_select_parking()
+        
+        newmobilitypolicypage.new_professional_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
 
         available_table = self.driver.find_element(By.CLASS_NAME, "dual-table-left-container")
@@ -195,9 +196,8 @@ class TestSubModuleFour(BaseClass):
 
         newmobilitypolicypage.save_policy_as_draft_button()
         time.sleep(1)
-        newmobilitypolicypage.save_policy_button()
         message = newmobilitypolicypage.message_saved_as_draft().text
-        assert message == "Mobility policy successfully updated."
+        assert message == "Mobility policy successfully saved as draft."
         log.info("Succesfully verified new mobility policy has been saved as draft.")
 
         generalobjects = GeneralObjects(self.driver)
@@ -218,7 +218,7 @@ class TestSubModuleFive(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
-        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
+        mobilitypoliciesmainpage = homepage.menu_label_professional_policies()
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
         log.info("Filtering for draft policies.")
         time.sleep(1)
@@ -249,7 +249,7 @@ class TestSubModuleSix(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
-        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
+        mobilitypoliciesmainpage = homepage.menu_label_professional_policies()
         log.info("Filtering for draft policies.")
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
         time.sleep(1)
@@ -286,6 +286,7 @@ class TestSubModuleSix(BaseClass):
         changemobilitypolicypage.change_mobility_policy_set_unlimited()
         changemobilitypolicypage.change_mobility_policy_save()
         log.info("Saved draft.")
+        time.sleep(1)
         mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("active test" + Keys.ENTER)
         time.sleep(2)
         log.info("Searched for 'active draft' policy.")
@@ -302,9 +303,8 @@ class TestSubModuleSix(BaseClass):
         changemobilitypolicypage.change_mobility_policy_set_unlimited()
         changemobilitypolicypage.change_mobility_policy_save()
         time.sleep(1)
-
         mobilitypoliciesmainpage.mobility_policies_searchbar().send_keys("active test" + Keys.ENTER)
-        time.sleep(2)
+        time.sleep(1)
         changemobilitypolicypage = (
             mobilitypoliciesmainpage.mobility_policies_view_top_policy()
         )
@@ -366,7 +366,7 @@ class TestSubModuleSeven(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
-        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
+        mobilitypoliciesmainpage = homepage.menu_label_professional_policies()
         mobilitypoliciesmainpage.mobility_policies_filter_active()
         log.info("Filtered for 'active' policies.")
         time.sleep(1)
@@ -374,7 +374,7 @@ class TestSubModuleSeven(BaseClass):
             mobilitypoliciesmainpage.mobility_policies_view_top_policy()
         )
         log.info("Opened top policy.")
-        time.sleep(10)
+        time.sleep(2)
         changemobilitypolicypage.change_mobility_policy_select_parking()
         log.info("Selected mobility option 'parking'.")
         changemobilitypolicypage.change_mobility_policy_select_car_sharing()
@@ -407,7 +407,7 @@ class TestSubModuleEight(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to mobility policies page.")
         homepage.menu_label_mobility()
-        mobilitypoliciesmainpage = homepage.menu_label_mobility_policies()
+        mobilitypoliciesmainpage = homepage.menu_label_professional_policies()
         mobilitypoliciesmainpage.mobility_policies_filter_draft()
         log.info("Filtered for draft policies.")
         time.sleep(1)
@@ -420,7 +420,7 @@ class TestSubModuleEight(BaseClass):
         time.sleep(1)
         policyname = changemobilitypolicypage.change_mobility_policy_name_field()
         newname = str(policyname.get_attribute("value"))
-        assert "copy" in newname
+        assert "Copy" in newname
         log.info("Succesfully duplicated mobility policy.")
 
         if user_os == "Darwin":
@@ -443,7 +443,7 @@ class TestSubModuleEight(BaseClass):
         )
 
         log.info("Named duplicate policy 'timestamp'.")
-        changemobilitypolicypage.change_mobility_policy_save()
+        changemobilitypolicypage.change_mobility_policy_save_as_draft()
         log.info("Succesfully saved duplicate policy.")
 
         generalobjects = GeneralObjects(self.driver)

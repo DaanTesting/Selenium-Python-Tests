@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+import time
 from pageObjects.ChangeMobilityPolicyPage import ChangeMobilityPolicyPage
 from pageObjects.NewMobilityPolicyPage import NewMobilityPolicyPage
 
@@ -9,7 +9,7 @@ class ProfessionalPoliciesMainPage:
         self.driver = driver
 
     def mobility_policies_searchbar(self):
-        selector1 = (By.CSS_SELECTOR, "input[placeholder='Search policies']")
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Search professional mobility policies']")
         return self.driver.find_element(*selector1)
 
     def mobility_policies_filter_active(self):
@@ -29,9 +29,10 @@ class ProfessionalPoliciesMainPage:
     def mobility_policies_filter_draft(self):
         selector1 = (By.XPATH, "//span[.='Filter']")
         selector2 = (By.XPATH, "(//input[@type='checkbox'])[3]")
-        selector3 = (By.XPATH, "//button[.='Apply']")
+        selector3 = (By.XPATH, "(//button[.='Apply'])")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
+        time.sleep(1)
         self.driver.find_element(*selector3).click()
 
     def mobility_policies_filter_active(self):

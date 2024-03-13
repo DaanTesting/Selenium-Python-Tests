@@ -9,7 +9,7 @@ class MobilityPoliciesMainPage:
         self.driver = driver
 
     def mobility_policies_searchbar(self):
-        selector1 = (By.CSS_SELECTOR, "input[placeholder='Search policies']")
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Search professional mobility policies']")
         return self.driver.find_element(*selector1)
 
     def mobility_policies_filter_active(self):

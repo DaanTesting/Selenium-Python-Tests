@@ -19,7 +19,7 @@ class NewMobilityPolicyPage:
         dropdown.select_by_index(0)
 
     def new_policy_contract_dropdown(self):
-        selector1 = (By.CSS_SELECTOR, "select[placeholder='Select a contract type']")
+        selector1 = (By.CSS_SELECTOR, "select[name='contractTemplate']")
         dropdown = Select(self.driver.find_element(*selector1))
         dropdown.select_by_visible_text("CMAAS Postpaid")
 

@@ -81,6 +81,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestTwo(BaseClass):
     def test_finance_tab(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -139,6 +141,7 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+class TestThree(BaseClass):
     def test_account_details_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -323,7 +326,7 @@ class TestOne(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestSubmoduleTwo(BaseClass):
+class TestFour(BaseClass):
     def test_users_details_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -334,16 +337,16 @@ class TestSubmoduleTwo(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        log.info("Navigate to account details screen.")
+        log.info("Navigate to users page.")
         homepage.menu_label_administration()
         userdetailpagetest = homepage.menu_label_users()
+        log.info("Opening top user detail page.")
         userdetailpagetest.user_detail_open_top_user()
-
+        log.info("Attempting to update all user data.")
         userdetailpagetest.user_detail_first_name().clear()
         userdetailpagetest.user_detail_first_name().send_keys("Robotester")
         userdetailpagetest.user_detail_last_name().clear()
         userdetailpagetest.user_detail_last_name().send_keys("Onamission")
-
         userdetailpagetest.user_detail_email().clear()
         current_datetime = datetime.now()
         timestamp = current_datetime.strftime("%m%d%Y%H%M%S%f")[:-3]
@@ -367,3 +370,7 @@ class TestSubmoduleTwo(BaseClass):
             userdetailpagetest.user_detail_update_message().text
         )
         assert "User information updated" in updatemessage
+        log.info("Verified user data was successfully updated.")
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()

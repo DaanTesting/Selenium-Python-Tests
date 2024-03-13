@@ -313,9 +313,9 @@ class TestSubModuleSeven(BaseClass):
 
         topreport = reportingpage.top_report_name().text
         assert "Finance extended" in topreport
-        time.sleep(5)
+        time.sleep(4)
         self.driver.get(self.driver.current_url)
-
+        time.sleep(1)
         reportingpage.download_top_report()
 
         download_directory = cache_directory

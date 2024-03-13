@@ -21,10 +21,18 @@ class DiscountListOverview:
         creatediscountlist = CreateDiscountList(self.driver)
         return creatediscountlist
     
+    def edit_second_list(self):
+        selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[2]")
+        selector2 = (By.XPATH, "(//a[.=' Edit'])[2]")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        creatediscountlist = CreateDiscountList(self.driver)
+        return creatediscountlist
+    
     def disable_top_list(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
         selector2 = (By.XPATH, "(//button[.='Disable'])[1]")
-        selector3 = (By.CSS_SELECTOR, "#okButton")
+        selector3 = (By.XPATH, "//button[.='Yes']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
@@ -32,7 +40,7 @@ class DiscountListOverview:
     def enable_top_list(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
         selector2 = (By.XPATH, "(//button[.='Enable'])[1]")
-        selector3 = (By.CSS_SELECTOR, "#okButton")
+        selector3 = (By.XPATH, "//button[.='Yes']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()

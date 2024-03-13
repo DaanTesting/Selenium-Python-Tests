@@ -108,9 +108,13 @@ class TestOne(BaseClass):
 
         assert 144 <= sessionvalue_float <= 146, "Incorrect value."
 
+        log.info("Successfully confirmed session value.")
+
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestTwo(BaseClass):
     def test_whitelist_session(self, setup, roaming_session_data, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -197,6 +201,8 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
+class TestThree(BaseClass):
     def test_splitbilling_session(
         self, setup, roaming_session_data, login_data
     ):
@@ -248,7 +254,7 @@ class TestOne(BaseClass):
         chargingsimulator.reason_dropdown_evdisconnected()
         log.info("Stopping transaction.")
         chargingsimulator.stop_transaction_button()
-        time.sleep(2)
+        time.sleep(1)
 
     def test_splitbilling_session__platform_verification(
         self, setup, login_data

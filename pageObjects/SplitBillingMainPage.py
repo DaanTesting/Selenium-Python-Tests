@@ -27,7 +27,7 @@ class SplitBillingMainPage:
 
     def reimbursement_policy_value_delete(self):
         selector1 = (By.XPATH, "//button[text()='Delete']")
-        selector2 = (By.CSS_SELECTOR, "#okButton")
+        selector2 = (By.XPATH, "//button[.='Yes']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 

@@ -48,12 +48,6 @@ class TestOne(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-
-@pytest.fixture(params=LoginPageData.test_login_data)
-def login_data(request):
-    return request.param
-
-
 class TestTwo(BaseClass):
     def test_create_user_contract(self, setup, login_data):
         log = self.get_logger()
@@ -119,6 +113,14 @@ class TestThree(BaseClass):
         mspindividualcustomer = mspcustomerpage.click_on_main_flow_account()
         log.info("Attempting to assign token to user.")
         mspindividualcustomer.add_first_token()
+        available_token_string = mspindividualcustomer.next_available_token()
+        time.sleep(1)
+        available_token = mspindividualcustomer.get_available_token(
+            available_token_string
+        )
+        mspindividualcustomer.select_token().send_keys(available_token)
+        mspindividualcustomer.select_token_component_top_token()
+
         mspindividualcustomer.assign_token()
         time.sleep(1)
         message = mspindividualcustomer.message_token_assigned().text
@@ -154,3 +156,6 @@ class TestFour(BaseClass):
         message = whitelistpage.whitelist_saved_message().text
         assert message == "Whitelist entry saved."
         log.info("Succesfully added tokens to whitelist.")
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()

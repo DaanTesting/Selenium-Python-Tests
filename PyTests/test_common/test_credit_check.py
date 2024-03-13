@@ -1,4 +1,5 @@
 import pytest
+import platform
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
@@ -11,7 +12,7 @@ from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 from utilities.Settings import cache_directory
 from decimal import Decimal
-
+user_os = platform.system()
 
 @pytest.fixture(params=LoginPageData.test_login_data)
 def login_data(request):
@@ -25,15 +26,24 @@ class TestOne(BaseClass):
         log = self.get_logger()
         log.info(login_data["account"])
         log.info("Attempting login.")
+        log.info("Creating second browser tab.")
         loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(Keys.COMMAND + "t")
+
+        if user_os == "Darwin":
+            loginpage.username_box().send_keys(Keys.COMMAND + "t")
+
+        else:
+            loginpage.username_box().send_keys(Keys.CONTROL + "t")
+
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
+        loginpage.login_button()
+        log.info("Navigating to test-credit page.")
         self.driver.get(
             "https://test.optimile.eu/sp/admin/customers/639/users/1005/credit/#/credit"
         )
         time.sleep(1)
+        log.info("Saving starting credit.")
         start_credit = self.driver.find_element(
             By.XPATH, "//div/table/tbody/tr[contains(.,'Total')]"
         ).text
@@ -42,8 +52,8 @@ class TestOne(BaseClass):
         )
 
         original_window = self.driver.current_window_handle
+        log.info("Swapping tab and navigating to charging simulator.")
         self.driver.switch_to.new_window("tab")
-
         self.driver.get("https://test.optimile.eu/sim/")
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
@@ -64,7 +74,7 @@ class TestOne(BaseClass):
         log.info("Attempting to start transaction.")
         chargingsimulator.start_transaction_button()
         time.sleep(10)
-
+        log.info("Swapping to original window.")
         for window_handle in self.driver.window_handles:
             if window_handle == original_window:
                 self.driver.switch_to.window(window_handle)
@@ -75,7 +85,7 @@ class TestOne(BaseClass):
             "https://test.optimile.eu/sp/admin/customers/639/users/1005/credit/#/credit"
         )
         time.sleep(2)
-        
+        log.info("Attempting to verify the correct amount of credit is being reserved.")
         reserved_credit = "50"
         credit_during_charging = self.driver.find_element(
             By.XPATH, "//div/table/tbody/tr[contains(.,'Total')]"
@@ -94,12 +104,13 @@ class TestOne(BaseClass):
             theoretical_credit_during_charging,
             rel_tol=0.2,
         )
-
+        log.info("Verified correct amount of credit has been reserved.")
+        log.info("Swapping back to simulator tab.")
         for window_handle in self.driver.window_handles:
             if window_handle != original_window:
                 self.driver.switch_to.window(window_handle)
                 break
-
+        
         log.info("Getting transaction ID.")
         transaction_id = chargingsimulator.get_transaction_id()
         log.info("Requesting 'stop transaction'-screen.")
@@ -117,17 +128,19 @@ class TestOne(BaseClass):
         log.info("Stopping transaction.")
         chargingsimulator.stop_transaction_button()
         time.sleep(1)
-
+        log.info("Swapping back to original window.")
         for window_handle in self.driver.window_handles:
             if window_handle == original_window:
                 self.driver.switch_to.window(window_handle)
                 break
 
         time.sleep(2)
+        log.info("Refreshing browser.")
         self.driver.get(
             "https://test.optimile.eu/sp/admin/customers/639/users/1005/credit/#/credit"
         )
         time.sleep(2)
+        log.info("Attempting to verify post-session credit is correct.")
 
         credit_after_charging = self.driver.find_element(
             By.XPATH, "//div/table/tbody/tr[contains(.,'Total')]"
@@ -139,6 +152,7 @@ class TestOne(BaseClass):
         )
 
         assert credit_after_charging_float == start_credit_float
+        log.info("Successfully verified credit was correct before, during, and after whitelist charging session.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -152,14 +166,23 @@ class TestTwo(BaseClass):
         log.info(login_data["account"])
         log.info("Attempting login.")
         loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(Keys.COMMAND + "t")
+        log.info("Opening second browser tab.")
+
+        if user_os == "Darwin":
+            loginpage.username_box().send_keys(Keys.COMMAND + "t")
+
+        else:
+            loginpage.username_box().send_keys(Keys.CONTROL + "t")
+
         loginpage.username_box().send_keys(login_data["account"])
         loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
+        loginpage.login_button()
+        log.info("Navigating to account credit page.")
         self.driver.get(
             "https://test.optimile.eu/sp/admin/customers/639/users/1005/credit/#/credit"
         )
         time.sleep(1)
+        log.info("Saving starting credit.")
         start_credit = self.driver.find_element(
             By.XPATH, "//div/table/tbody/tr[contains(.,'Total')]"
         ).text
@@ -168,8 +191,10 @@ class TestTwo(BaseClass):
         )
 
         original_window = self.driver.current_window_handle
-        self.driver.switch_to.new_window("tab")
 
+        log.info("Swapping to second browser tab and navigating to charging simulator.")
+
+        self.driver.switch_to.new_window("tab")
         self.driver.get("https://test.optimile.eu/sim/")
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
@@ -190,17 +215,19 @@ class TestTwo(BaseClass):
         log.info("Attempting to start transaction.")
         chargingsimulator.start_transaction_button()
         time.sleep(10)
-
+        log.info("Swapping back to original tab.")
         for window_handle in self.driver.window_handles:
             if window_handle == original_window:
                 self.driver.switch_to.window(window_handle)
                 break
 
         time.sleep(2)
+        log.info("Refreshing account credit page.")
         self.driver.get(
             "https://test.optimile.eu/sp/admin/customers/639/users/1005/credit/#/credit"
         )
         time.sleep(2)
+        log.info("Verifying correct amount of credit gets reserved.")
         reserved_credit = "50"
         credit_during_charging = self.driver.find_element(
             By.XPATH, "//div/table/tbody/tr[contains(.,'Total')]"
@@ -219,7 +246,8 @@ class TestTwo(BaseClass):
             theoretical_credit_during_charging,
             rel_tol=0.2,
         )
-
+        log.info("Successfully verified correct credit reservation.")
+        log.info("Swapping back to simulator tab.")
         for window_handle in self.driver.window_handles:
             if window_handle != original_window:
                 self.driver.switch_to.window(window_handle)
@@ -242,18 +270,19 @@ class TestTwo(BaseClass):
         log.info("Stopping transaction.")
         chargingsimulator.stop_transaction_button()
         time.sleep(1)
-
+        log.info("Swapping back to original tab.")
         for window_handle in self.driver.window_handles:
             if window_handle == original_window:
                 self.driver.switch_to.window(window_handle)
                 break
 
         time.sleep(2)
+        log.info("Refreshing account credit page.")
         self.driver.get(
             "https://test.optimile.eu/sp/admin/customers/639/users/1005/credit/#/credit"
         )
         time.sleep(2)
-
+        log.info("Verifying the correct amount of credit was deducted.")
         charging_cost = 133.10
         credit_after_charging = self.driver.find_element(
             By.XPATH, "//div/table/tbody/tr[contains(.,'Total')]"
@@ -272,6 +301,6 @@ class TestTwo(BaseClass):
             theoretical_credit_after_charging,
             rel_tol=0.2,
         )
-
+        log.info("Successfully verified correct credit before, during, and after paid charging session.")
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
