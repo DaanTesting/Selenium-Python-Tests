@@ -13,6 +13,14 @@ class LoginPageData:
             "URL": "https://test.optimile.eu/",
         }
     ]
+    test_carrefour_data = [
+        {
+            "account": "daan.swinnen+carrefour@optimile.eu",
+            "password": "EasyPass9000_",
+            "URL": "https://test.optimile.eu",
+        }
+    ]
+
     test_fullflow_data = [
         {
             "account": "daan.swinnen+splitbilling4@optimile.eu",

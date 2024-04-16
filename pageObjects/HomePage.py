@@ -30,6 +30,7 @@ from pageObjects.ExternalUsersPage import ExternalUsersPage
 from pageObjects.UserInvitesPage import UserInvitesPage
 from pageObjects.CpoOverviewPage import CpoOverviewPage
 from pageObjects.MspDashboard import MspDashboard
+from pageObjects.AdhocPlatformPage import AdhocPlatformPage
 
 class HomePage:
     def __init__(self, driver):
@@ -319,5 +320,14 @@ class HomePage:
         self.driver.find_element(*selector1).click
         mspdashboard = MspDashboard(self.driver)
         return mspdashboard
+    
+    def menu_label_adhoc(self):
+        selector1 = (By.XPATH, "(//span[@class='menu-label'])[contains(.,'Ad hoc')]")
+        self.driver.find_element(*selector1).click()
+        adhocplatformpage = AdhocPlatformPage(self.driver)
+        return adhocplatformpage
+    
+    
+    
 
 

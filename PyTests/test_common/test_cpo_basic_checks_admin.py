@@ -321,7 +321,7 @@ class TestTwelve(BaseClass):
         cpooverviewpage.issues_tab()
         time.sleep(1)
         tableheader = self.driver.find_element(By.XPATH, "//th[2]").text
-        assert tableheader == "Time started"
+        assert tableheader == "Start time"
 
         log.info("Succesfully verified CPO overview page.")
 

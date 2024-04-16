@@ -12671,3 +12671,283 @@ Stacktrace:
 2024-03-13 10:45:30,558 : INFO : _login : Succesfully logged in.
 2024-03-13 10:45:31,562 : INFO : test_msp_customers_screen : Navigating to msp customers page.
 2024-03-13 10:45:32,084 : INFO : test_msp_customers_screen : Succesfully verified msp customers page.
+2024-03-13 14:15:11,533 : INFO : test_cpo_overview_screen_extended : daan.swinnen@optimile.eu
+2024-03-13 14:15:11,533 : INFO : test_cpo_overview_screen_extended : Attempting login.
+2024-03-13 14:15:13,614 : INFO : test_cpo_overview_screen_extended : Succesfully logged in.
+2024-03-13 14:15:13,615 : INFO : test_cpo_overview_screen_extended : Navigating to CPO overview page.
+2024-03-13 14:15:14,111 : INFO : test_cpo_overview_screen_extended : Verifying overview map is present.
+2024-03-13 14:15:38,430 : INFO : test_cpo_overview_screen_extended : daan.swinnen@optimile.eu
+2024-03-13 14:15:38,430 : INFO : test_cpo_overview_screen_extended : Attempting login.
+2024-03-13 14:15:40,164 : INFO : test_cpo_overview_screen_extended : Succesfully logged in.
+2024-03-13 14:15:40,164 : INFO : test_cpo_overview_screen_extended : Navigating to CPO overview page.
+2024-03-13 14:15:40,694 : INFO : test_cpo_overview_screen_extended : Verifying overview map is present.
+2024-03-13 14:15:41,756 : INFO : test_cpo_overview_screen_extended : Succesfully verified CPO overview page.
+2024-03-21 12:49:33,021 : INFO : test_splitbilling_session : daan.swinnen@optimile.eu
+2024-03-21 12:49:33,021 : INFO : test_splitbilling_session : TestDevice89
+2024-03-21 12:49:33,022 : INFO : test_splitbilling_session : Attempting to connect to simulator.
+2024-03-21 12:49:33,304 : INFO : test_splitbilling_session : Connected to simulator.
+2024-03-21 12:49:34,309 : INFO : test_splitbilling_session : Requesting 'start transaction'-screen.
+2024-03-21 12:49:34,390 : INFO : test_splitbilling_session : Entering connectorID.
+2024-03-21 12:49:34,408 : INFO : test_splitbilling_session : Sending token RFID.
+2024-03-21 12:49:34,446 : INFO : test_splitbilling_session : Attempting to start transaction.
+2024-03-21 12:49:44,486 : INFO : test_splitbilling_session : Getting transaction ID.
+2024-03-21 12:49:44,518 : INFO : test_splitbilling_session : Requesting 'stop transaction'-screen.
+2024-03-21 12:49:44,568 : INFO : test_splitbilling_session : Sending token RFID.
+2024-03-21 12:49:44,591 : INFO : test_splitbilling_session : Simulating meter end value.
+2024-03-21 12:49:44,610 : INFO : test_splitbilling_session : Sending transaction ID.
+2024-03-21 12:49:44,629 : INFO : test_splitbilling_session : Sending timestamp.
+2024-03-21 12:49:44,667 : INFO : test_splitbilling_session : Selecting transaction stop reason.
+2024-03-21 12:49:44,691 : INFO : test_splitbilling_session : Stopping transaction.
+2024-03-21 13:37:46,387 : INFO : test_splitbilling_session : daan.swinnen@optimile.eu
+2024-03-21 13:37:46,387 : INFO : test_splitbilling_session : TestDevice89
+2024-03-21 13:37:46,387 : INFO : test_splitbilling_session : Attempting to connect to simulator.
+2024-03-21 13:37:46,676 : INFO : test_splitbilling_session : Connected to simulator.
+2024-03-21 13:37:47,681 : INFO : test_splitbilling_session : Requesting 'start transaction'-screen.
+2024-03-21 13:37:47,762 : INFO : test_splitbilling_session : Entering connectorID.
+2024-03-21 13:37:47,789 : INFO : test_splitbilling_session : Sending token RFID.
+2024-03-21 13:37:47,845 : INFO : test_splitbilling_session : Attempting to start transaction.
+2024-03-21 13:37:57,890 : INFO : test_splitbilling_session : Getting transaction ID.
+2024-03-21 13:37:57,920 : INFO : test_splitbilling_session : Requesting 'stop transaction'-screen.
+2024-03-21 13:37:57,967 : INFO : test_splitbilling_session : Sending token RFID.
+2024-03-21 13:37:58,000 : INFO : test_splitbilling_session : Simulating meter end value.
+2024-03-21 13:37:58,026 : INFO : test_splitbilling_session : Sending transaction ID.
+2024-03-21 13:37:58,051 : INFO : test_splitbilling_session : Sending timestamp.
+2024-03-21 13:37:58,104 : INFO : test_splitbilling_session : Selecting transaction stop reason.
+2024-03-21 13:37:58,134 : INFO : test_splitbilling_session : Stopping transaction.
+2024-03-21 13:38:03,694 : INFO : test_splitbilling_session : daan.swinnen@optimile.eu
+2024-03-21 13:38:03,694 : INFO : test_splitbilling_session : TestDevice89
+2024-03-21 13:38:03,694 : INFO : test_splitbilling_session : Attempting to connect to simulator.
+2024-03-21 13:38:04,012 : INFO : test_splitbilling_session : Connected to simulator.
+2024-03-21 13:38:05,013 : INFO : test_splitbilling_session : Requesting 'start transaction'-screen.
+2024-03-21 13:38:05,089 : INFO : test_splitbilling_session : Entering connectorID.
+2024-03-21 13:38:05,112 : INFO : test_splitbilling_session : Sending token RFID.
+2024-03-21 13:38:05,167 : INFO : test_splitbilling_session : Attempting to start transaction.
+2024-03-21 13:38:15,207 : INFO : test_splitbilling_session : Getting transaction ID.
+2024-03-21 13:38:15,236 : INFO : test_splitbilling_session : Requesting 'stop transaction'-screen.
+2024-03-21 13:38:15,288 : INFO : test_splitbilling_session : Sending token RFID.
+2024-03-21 13:38:15,321 : INFO : test_splitbilling_session : Simulating meter end value.
+2024-03-21 13:38:15,346 : INFO : test_splitbilling_session : Sending transaction ID.
+2024-03-21 13:38:15,370 : INFO : test_splitbilling_session : Sending timestamp.
+2024-03-21 13:38:15,422 : INFO : test_splitbilling_session : Selecting transaction stop reason.
+2024-03-21 13:38:15,457 : INFO : test_splitbilling_session : Stopping transaction.
+2024-04-02 13:20:06,601 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-04-02 13:20:06,601 : INFO : test_roaming_session : TestDevice89
+2024-04-02 13:20:06,601 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-04-02 13:20:06,948 : INFO : test_roaming_session : Connected to simulator.
+2024-04-02 13:20:07,951 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-04-02 13:20:08,026 : INFO : test_roaming_session : Entering connectorID.
+2024-04-02 13:20:08,050 : INFO : test_roaming_session : Sending token RFID.
+2024-04-02 13:20:08,114 : INFO : test_roaming_session : Attempting to start transaction.
+2024-04-02 13:20:18,160 : INFO : test_roaming_session : Getting transaction ID.
+2024-04-02 13:20:29,811 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-04-02 13:20:29,811 : INFO : test_roaming_session : TestDevice89
+2024-04-02 13:20:29,811 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-04-02 13:20:30,079 : INFO : test_roaming_session : Connected to simulator.
+2024-04-02 13:20:31,083 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-04-02 13:20:31,190 : INFO : test_roaming_session : Entering connectorID.
+2024-04-02 13:20:31,209 : INFO : test_roaming_session : Sending token RFID.
+2024-04-02 13:20:31,252 : INFO : test_roaming_session : Attempting to start transaction.
+2024-04-02 13:20:41,289 : INFO : test_roaming_session : Getting transaction ID.
+2024-04-02 13:37:02,910 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-04-02 13:37:02,910 : INFO : test_roaming_session : TestDevice89
+2024-04-02 13:37:02,910 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-04-02 13:37:03,245 : INFO : test_roaming_session : Connected to simulator.
+2024-04-02 13:37:04,245 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-04-02 13:37:04,327 : INFO : test_roaming_session : Entering connectorID.
+2024-04-02 13:37:04,352 : INFO : test_roaming_session : Sending token RFID.
+2024-04-02 13:37:04,416 : INFO : test_roaming_session : Attempting to start transaction.
+2024-04-02 13:37:14,462 : INFO : test_roaming_session : Getting transaction ID.
+2024-04-02 13:37:14,493 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-04-02 13:37:14,543 : INFO : test_roaming_session : Sending token RFID.
+2024-04-02 13:37:14,575 : INFO : test_roaming_session : Simulating meter end value.
+2024-04-02 13:37:14,601 : INFO : test_roaming_session : Sending transaction ID.
+2024-04-02 13:37:14,630 : INFO : test_roaming_session : Sending timestamp.
+2024-04-02 13:37:14,693 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-04-02 13:37:14,728 : INFO : test_roaming_session : Stopping transaction.
+2024-04-02 13:37:47,974 : INFO : test_roaming_session__platform_verification : daan.swinnen@optimile.eu
+2024-04-02 13:37:47,974 : INFO : test_roaming_session__platform_verification : Attempting login.
+2024-04-02 13:37:49,842 : INFO : test_roaming_session__platform_verification : Succesfully logged in.
+2024-04-02 13:37:49,842 : INFO : test_roaming_session__platform_verification : Navigating to msp customers page.
+2024-04-02 13:37:50,256 : INFO : test_roaming_session__platform_verification : Searching for 'Autotesting Roaming'.
+2024-04-02 13:37:51,477 : INFO : test_roaming_session__platform_verification : Opening customer.
+2024-04-02 13:37:51,823 : INFO : test_roaming_session__platform_verification : Activity tab.
+2024-04-09 15:55:57,757 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-04-09 15:55:57,757 : INFO : test_roaming_session : TestDevice89
+2024-04-09 15:55:57,757 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-04-09 15:55:58,018 : INFO : test_roaming_session : Connected to simulator.
+2024-04-09 15:55:59,024 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-04-09 15:55:59,115 : INFO : test_roaming_session : Entering connectorID.
+2024-04-09 15:55:59,134 : INFO : test_roaming_session : Sending token RFID.
+2024-04-09 15:55:59,172 : INFO : test_roaming_session : Attempting to start transaction.
+2024-04-09 15:56:09,206 : INFO : test_roaming_session : Getting transaction ID.
+2024-04-09 15:56:40,333 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-04-09 15:56:40,333 : INFO : test_roaming_session : TestDevice89
+2024-04-09 15:56:40,333 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-04-09 15:56:40,599 : INFO : test_roaming_session : Connected to simulator.
+2024-04-09 15:56:41,602 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-04-09 15:56:41,691 : INFO : test_roaming_session : Entering connectorID.
+2024-04-09 15:56:41,710 : INFO : test_roaming_session : Sending token RFID.
+2024-04-09 15:56:41,747 : INFO : test_roaming_session : Attempting to start transaction.
+2024-04-09 15:57:01,783 : INFO : test_roaming_session : Getting transaction ID.
+2024-04-09 15:57:01,812 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-04-09 15:57:01,861 : INFO : test_roaming_session : Sending token RFID.
+2024-04-09 15:57:01,884 : INFO : test_roaming_session : Simulating meter end value.
+2024-04-09 15:57:01,903 : INFO : test_roaming_session : Sending transaction ID.
+2024-04-09 15:57:01,922 : INFO : test_roaming_session : Sending timestamp.
+2024-04-09 15:57:01,957 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-04-09 15:57:01,980 : INFO : test_roaming_session : Stopping transaction.
+2024-04-09 16:15:30,735 : INFO : test_activate_charging_point : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-04-09 16:15:30,736 : INFO : test_activate_charging_point : ADHOCREMOTE
+2024-04-09 16:15:30,736 : INFO : test_activate_charging_point : Attempting to connect to simulator.
+2024-04-09 16:15:31,027 : INFO : test_activate_charging_point : Connected to simulator.
+2024-04-09 16:15:32,031 : INFO : test_activate_charging_point : Requesting 'start transaction'-screen.
+2024-04-09 16:15:32,144 : INFO : test_activate_charging_point : Entering connectorID.
+2024-04-09 16:15:32,171 : INFO : test_activate_charging_point : Sending token RFID.
+2024-04-09 16:15:32,233 : INFO : test_activate_charging_point : Attempting to start transaction.
+2024-04-09 16:15:42,274 : INFO : test_activate_charging_point : Getting transaction ID.
+2024-04-09 16:15:42,305 : INFO : test_activate_charging_point : Requesting 'stop transaction'-screen.
+2024-04-09 16:15:42,364 : INFO : test_activate_charging_point : Sending token RFID.
+2024-04-09 16:15:42,394 : INFO : test_activate_charging_point : Simulating meter end value.
+2024-04-09 16:15:42,418 : INFO : test_activate_charging_point : Sending transaction ID.
+2024-04-09 16:15:42,446 : INFO : test_activate_charging_point : Sending timestamp.
+2024-04-09 16:15:42,503 : INFO : test_activate_charging_point : Selecting transaction stop reason.
+2024-04-09 16:15:42,537 : INFO : test_activate_charging_point : Stopping transaction.
+2024-04-09 16:24:40,261 : INFO : test_reimbursementpolicy_valuechange : daan.swinnen@optimile.eu
+2024-04-09 16:24:40,262 : INFO : test_reimbursementpolicy_valuechange : Attempting login.
+2024-04-09 16:24:42,252 : INFO : test_reimbursementpolicy_valuechange : Succesfully logged in.
+2024-04-09 16:24:42,252 : INFO : test_reimbursementpolicy_valuechange : Navigating to split billing page.
+2024-04-09 16:24:43,094 : INFO : test_reimbursementpolicy_valuechange : Opening reimbursement policy tab.
+2024-04-09 16:24:43,436 : INFO : test_reimbursementpolicy_valuechange : Opening blue collar testpolicy.
+2024-04-09 16:24:43,675 : INFO : test_reimbursementpolicy_valuechange : Attempting to change policy value.
+2024-04-09 16:27:42,048 : INFO : test_activate_charging_point : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-04-09 16:27:42,048 : INFO : test_activate_charging_point : ADHOCREMOTE
+2024-04-09 16:27:42,048 : INFO : test_activate_charging_point : Attempting to connect to simulator.
+2024-04-09 16:27:42,351 : INFO : test_activate_charging_point : Connected to simulator.
+2024-04-09 16:27:43,356 : INFO : test_activate_charging_point : Requesting 'start transaction'-screen.
+2024-04-09 16:27:43,449 : INFO : test_activate_charging_point : Entering connectorID.
+2024-04-09 16:27:43,476 : INFO : test_activate_charging_point : Sending token RFID.
+2024-04-09 16:27:43,543 : INFO : test_activate_charging_point : Attempting to start transaction.
+2024-04-09 16:27:53,589 : INFO : test_activate_charging_point : Getting transaction ID.
+2024-04-09 16:27:53,619 : INFO : test_activate_charging_point : Requesting 'stop transaction'-screen.
+2024-04-09 16:27:53,678 : INFO : test_activate_charging_point : Sending token RFID.
+2024-04-09 16:27:53,709 : INFO : test_activate_charging_point : Simulating meter end value.
+2024-04-09 16:27:53,733 : INFO : test_activate_charging_point : Sending transaction ID.
+2024-04-09 16:27:53,762 : INFO : test_activate_charging_point : Sending timestamp.
+2024-04-09 16:27:53,820 : INFO : test_activate_charging_point : Selecting transaction stop reason.
+2024-04-09 16:27:53,852 : INFO : test_activate_charging_point : Stopping transaction.
+2024-04-10 13:46:38,404 : INFO : test_refresh_charging_point : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-04-10 13:46:38,404 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-10 13:46:38,404 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-10 13:47:38,206 : INFO : test_refresh_charging_point : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-04-10 13:47:38,206 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-10 13:47:38,206 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-10 13:51:16,557 : INFO : test_refresh_charging_point : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-04-10 13:51:16,558 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-10 13:51:16,558 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-10 13:52:20,429 : INFO : test_refresh_charging_point : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-04-10 13:52:20,429 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-10 13:52:20,430 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-10 13:52:59,881 : INFO : test_refresh_charging_point : daan.swinnen+autotest.cpocompany@optimile.eu
+2024-04-10 13:52:59,881 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-10 13:52:59,881 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-10 16:05:04,702 : INFO : test_set_adhoc_markup : daan.swinnen@optimile.eu
+2024-04-10 16:06:21,525 : INFO : test_set_adhoc_markup : daan.swinnen@optimile.eu
+2024-04-10 16:07:05,591 : INFO : test_set_adhoc_markup : daan.swinnen@optimile.eu
+2024-04-10 16:08:01,691 : INFO : test_set_adhoc_markup : daan.swinnen@optimile.eu
+2024-04-10 16:08:53,436 : INFO : test_set_adhoc_markup : daan.swinnen@optimile.eu
+2024-04-10 16:10:36,548 : INFO : test_set_adhoc_markup : daan.swinnen@optimile.eu
+2024-04-10 16:12:08,391 : INFO : test_set_adhoc_markup : daan.swinnen@optimile.eu
+2024-04-10 16:12:16,944 : INFO : test_set_pricing_policy : daan.swinnen@optimile.eu
+2024-04-10 16:16:35,106 : INFO : test_set_pricing_policy : daan.swinnen@optimile.eu
+2024-04-12 09:57:04,139 : INFO : test_refresh_charging_point : daan.swinnen@optimile.eu
+2024-04-12 09:57:04,140 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-12 09:57:04,140 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-16 11:32:29,809 : INFO : test_cpo_adhoc_export : daan.swinnen@optimile.eu
+2024-04-16 11:32:29,809 : INFO : test_cpo_adhoc_export : Attempting login.
+2024-04-16 11:32:31,653 : INFO : test_cpo_adhoc_export : Succesfully logged in.
+2024-04-16 11:32:31,655 : INFO : test_cpo_adhoc_export : Navigating to cpo overview page.
+2024-04-16 11:32:37,932 : INFO : test_cpo_adhoc_export : Successfully verified issues csv has been downloaded.
+2024-04-16 11:32:43,092 : INFO : test_cpo_adhoc_export : Successfully verified issues csv has been downloaded.
+2024-04-16 14:21:25,595 : INFO : test_cpo_customer_adhoc_export : daan.swinnen+carrefour@optimile.eu
+2024-04-16 14:21:25,595 : INFO : test_cpo_customer_adhoc_export : Attempting login.
+2024-04-16 14:21:27,564 : INFO : test_cpo_customer_adhoc_export : Succesfully logged in.
+2024-04-16 14:21:27,564 : INFO : test_cpo_customer_adhoc_export : Navigating to cpo overview page.
+2024-04-16 14:21:33,763 : INFO : test_cpo_customer_adhoc_export : Successfully verified adhoc xlsx has been downloaded.
+2024-04-16 14:21:38,945 : INFO : test_cpo_customer_adhoc_export : Successfully verified adhoc csv has been downloaded.
+2024-04-16 14:24:18,982 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-16 14:24:18,982 : INFO : test_add_charging_location : Attempting login.
+2024-04-16 14:24:20,607 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-16 14:24:20,609 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-16 14:25:11,427 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-16 14:25:11,427 : INFO : test_add_charging_location : Attempting login.
+2024-04-16 14:25:13,060 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-16 14:25:13,060 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-16 14:25:34,737 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-16 14:25:34,737 : INFO : test_add_charging_location : Attempting login.
+2024-04-16 14:25:36,760 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-16 14:25:36,761 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-16 14:35:52,519 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-16 14:35:52,519 : INFO : test_add_charging_location : Attempting login.
+2024-04-16 14:35:54,577 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-16 14:35:54,577 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-16 14:37:34,500 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-16 14:37:34,501 : INFO : test_add_charging_location : Attempting login.
+2024-04-16 14:37:36,645 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-16 14:37:36,646 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-16 15:08:49,134 : INFO : test_adhoc_page_search : daan.swinnen@optimile.eu
+2024-04-16 15:08:49,134 : INFO : test_adhoc_page_search : Attempting login.
+2024-04-16 15:08:51,027 : INFO : test_adhoc_page_search : Succesfully logged in.
+2024-04-16 15:08:51,027 : INFO : test_adhoc_page_search : Navigating to split billing page.
+2024-04-16 15:11:48,119 : INFO : test_adhoc_page_search : daan.swinnen@optimile.eu
+2024-04-16 15:11:48,121 : INFO : test_adhoc_page_search : Attempting login.
+2024-04-16 15:11:50,108 : INFO : test_adhoc_page_search : Succesfully logged in.
+2024-04-16 15:11:50,108 : INFO : test_adhoc_page_search : Navigating to split billing page.
+2024-04-16 15:11:52,710 : INFO : test_adhoc_page_search : Verified only ABSDEV sessions show up.
+2024-04-16 15:21:09,951 : INFO : test_payter_settings : daan.swinnen@optimile.eu
+2024-04-16 15:21:09,951 : INFO : test_payter_settings : Attempting login.
+2024-04-16 15:21:12,543 : INFO : test_payter_settings : Succesfully logged in.
+2024-04-16 15:21:12,543 : INFO : test_payter_settings : Navigating to split billing page.
+2024-04-16 15:30:51,716 : INFO : test_adhoc_page_filters : daan.swinnen@optimile.eu
+2024-04-16 15:30:51,716 : INFO : test_adhoc_page_filters : Attempting login.
+2024-04-16 15:30:53,369 : INFO : test_adhoc_page_filters : Succesfully logged in.
+2024-04-16 15:30:53,370 : INFO : test_adhoc_page_filters : Navigating to split billing page.
+2024-04-16 15:30:55,719 : INFO : test_adhoc_page_filters : Verified only Ad hoc payments show up.
+2024-04-16 15:41:07,967 : INFO : test_adhoc_page_filters : daan.swinnen@optimile.eu
+2024-04-16 15:41:07,967 : INFO : test_adhoc_page_filters : Attempting login.
+2024-04-16 15:41:09,943 : INFO : test_adhoc_page_filters : Succesfully logged in.
+2024-04-16 15:41:09,943 : INFO : test_adhoc_page_filters : Navigating to split billing page.
+2024-04-16 15:41:12,129 : INFO : test_adhoc_page_filters : Verified only Ad hoc payments show up.
+2024-04-16 15:41:14,660 : INFO : test_adhoc_page_filters : Verified only Payment page types show up.
+2024-04-16 15:41:17,187 : INFO : test_adhoc_page_filters : Verified only Payment page types show up.
+2024-04-16 15:49:30,387 : INFO : test_adhoc_page_search : daan.swinnen@optimile.eu
+2024-04-16 15:49:30,387 : INFO : test_adhoc_page_search : Attempting login.
+2024-04-16 15:49:32,238 : INFO : test_adhoc_page_search : Succesfully logged in.
+2024-04-16 15:49:32,238 : INFO : test_adhoc_page_search : Navigating to split billing page.
+2024-04-16 15:49:34,486 : INFO : test_adhoc_page_search : Verified only ABSDEV sessions show up.
+2024-04-16 15:49:37,300 : INFO : test_adhoc_page_search : Verified only Bikini bottom sessions show up.
+2024-04-16 15:50:00,691 : INFO : test_adhoc_page_search : daan.swinnen@optimile.eu
+2024-04-16 15:50:00,691 : INFO : test_adhoc_page_search : Attempting login.
+2024-04-16 15:50:02,939 : INFO : test_adhoc_page_search : Succesfully logged in.
+2024-04-16 15:50:02,941 : INFO : test_adhoc_page_search : Navigating to split billing page.
+2024-04-16 15:50:05,495 : INFO : test_adhoc_page_search : Verified only ABSDEV sessions show up.
+2024-04-16 15:50:06,821 : INFO : test_adhoc_page_search : Verified only Bikini bottom sessions show up.
+2024-04-16 15:54:32,259 : INFO : test_adhoc_page_search : daan.swinnen+carrefour@optimile.eu
+2024-04-16 15:54:32,259 : INFO : test_adhoc_page_search : Attempting login.
+2024-04-16 15:54:34,233 : INFO : test_adhoc_page_search : Succesfully logged in.
+2024-04-16 15:54:34,234 : INFO : test_adhoc_page_search : Navigating to split billing page.
+2024-04-16 15:54:36,539 : INFO : test_adhoc_page_search : Verified only ABSDEV sessions show up.
+2024-04-16 15:54:46,226 : INFO : test_payter_settings : daan.swinnen+carrefour@optimile.eu
+2024-04-16 15:54:46,226 : INFO : test_payter_settings : Attempting login.
+2024-04-16 15:54:48,208 : INFO : test_payter_settings : Succesfully logged in.
+2024-04-16 15:54:48,209 : INFO : test_payter_settings : Navigating to split billing page.
+2024-04-16 15:54:55,641 : INFO : test_adhoc_page_filters : daan.swinnen+carrefour@optimile.eu
+2024-04-16 15:54:55,641 : INFO : test_adhoc_page_filters : Attempting login.
+2024-04-16 15:54:57,763 : INFO : test_adhoc_page_filters : Succesfully logged in.
+2024-04-16 15:54:57,763 : INFO : test_adhoc_page_filters : Navigating to split billing page.
+2024-04-16 15:54:59,998 : INFO : test_adhoc_page_filters : Verified only Ad hoc payments show up.
+2024-04-16 15:55:12,562 : INFO : test_adhoc_page_filters : Verified only Payment page types show up.
+2024-04-16 15:55:25,267 : INFO : test_adhoc_page_filters : Verified only Payment page types show up.
+2024-04-16 15:58:36,622 : INFO : test_web_settings : daan.swinnen+carrefour@optimile.eu
+2024-04-16 16:00:48,720 : INFO : test_web_settings : daan.swinnen+carrefour@optimile.eu
+2024-04-16 16:00:59,972 : INFO : test_web_settings : daan.swinnen+carrefour@optimile.eu
+2024-04-16 16:01:10,638 : INFO : test_web_settings : daan.swinnen+carrefour@optimile.eu

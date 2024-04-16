@@ -20,6 +20,11 @@ class ChargingSimulator:
         dropdown = Select(self.driver.find_element(*selector1))
         dropdown.select_by_visible_text("Manual OCPP 1.6")
 
+    def mode_select_dropdown_simulator(self):
+        selector1 = (By.CSS_SELECTOR, "#mode")
+        dropdown = Select(self.driver.find_element(*selector1))
+        dropdown.select_by_visible_text("Simulator")
+
     def connect_button(self):
         selector1 = (By.CSS_SELECTOR, "#connect")
         self.driver.find_element(*selector1).click()
@@ -94,4 +99,12 @@ class ChargingSimulator:
 
     def stop_transaction_button(self):
         selector1 = (By.CSS_SELECTOR, "#submit-cp-StopTransaction")
+        self.driver.find_element(*selector1).click()
+
+    def start_charging_session_button(self):
+        selector1 = (By.CSS_SELECTOR, "#startTransaction")
+        self.driver.find_element(*selector1).click()
+    
+    def stop_charging_session_button(self):
+        selector1 = (By.CSS_SELECTOR, "#stopTransaction")
         self.driver.find_element(*selector1).click()

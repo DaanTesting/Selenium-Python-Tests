@@ -109,6 +109,10 @@ class IndividualChargingLocation:
         selector2 = (By.XPATH, "//button[@name='delete']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
+    
+    def delete_button(self):
+        selector1 = (By.XPATH, "//button[.='Delete']")
+        self.driver.find_element(*selector1).click()
 
     def device_deleted_alert(self):
         selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
@@ -121,3 +125,24 @@ class IndividualChargingLocation:
     def new_device_serial_number_field(self):
         selector1 = (By.CSS_SELECTOR, "#id_device-device_number")
         return self.driver.find_element(*selector1)
+    
+    def pricing_tab(self):
+        selector1 = (By.XPATH, "(//li/a/span)[4]")
+        self.driver.find_element(*selector1).click()
+
+    def edit_pricing_button(self):
+        selector1 = (By.XPATH, "//a[.='Edit pricing']")
+        self.driver.find_element(*selector1).click()
+
+    def set_pricing_policy(self):
+        selector1 = (By.XPATH, "//input[@id='AFIR Platform Pricing']")
+        selector2 = (By.XPATH, "//input[@value='Set pricing policy']")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+
+    def generic_alert(self):
+        selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
+        return self.driver.find_element(*selector1)
+    
+
+

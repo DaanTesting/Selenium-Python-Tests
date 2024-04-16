@@ -63,3 +63,11 @@ class LocationsMainPage:
     def create_location_create_button(self):
         selector1 = (By.XPATH, "//button[.='Create']")
         self.driver.find_element(*selector1).click()
+        individualcharginglocation = IndividualChargingLocation(self.driver)
+        return individualcharginglocation
+
+    def click_top_location(self):
+        selector1 = (By.XPATH, "//tr[1]/td/a[1]")
+        self.driver.find_element(*selector1).click()
+        individualcharginglocation = IndividualChargingLocation(self.driver)
+        return individualcharginglocation

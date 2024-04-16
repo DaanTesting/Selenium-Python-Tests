@@ -362,14 +362,16 @@ class TestSeven(BaseClass):
         )
         locationsmainpage.create_location_postcode().send_keys("9000")
         locationsmainpage.create_location_town().send_keys("Gent" + Keys.ENTER)
-        locationsmainpage.create_location_create_button()
+        individualcharginglocation = locationsmainpage.create_location_create_button()
         successmessage = str(
             self.driver.find_element(
                 By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible"
             ).text
         )
         assert "Charging location saved" in successmessage
-
+        time.sleep(1)
+        individualcharginglocation.delete_button()
+        
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 

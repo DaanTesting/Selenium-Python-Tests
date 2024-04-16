@@ -17,3 +17,13 @@ class ChargingSessionData:
             "connectorId": "1",
         }
     ]
+
+    refresh_cp_data = [
+        {
+            "OCPP ID": "ADHOCREMOTE",
+            "token RFID": "12084213",
+            "whitelist RFID": "12345699",
+            "splitbilling RFID": "AAAA9003",
+            "connectorId": "1",
+        }
+    ]
