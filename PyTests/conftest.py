@@ -17,7 +17,7 @@ driver = None
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome")
-    parser.addoption("--server_name", action="store", default="test")
+    parser.addoption("--server_name", action="store", default="local")
 
 
 @pytest.fixture(scope="class")
@@ -55,6 +55,8 @@ def setup(request):
         driver.get("https://plannertest.optimile.eu/tester/")
     elif server_name == "qatest":
         driver.get("https://qatest.optimile.eu/welcome/?next=/co/")
+    elif server_name == "local":
+        driver.get("http://localhost:8000/")
 
     request.cls.driver = driver
     yield

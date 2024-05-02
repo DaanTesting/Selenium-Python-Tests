@@ -14,7 +14,7 @@ class LocationsMainPage:
     def find_device(self):
         selector1 = (
             By.CSS_SELECTOR,
-            "input[placeholder='Serial number, OCPP ID or EVSE ID']",
+            "input[placeholder='Search by device or location']",
         )
         return self.driver.find_element(*selector1)
 
@@ -31,16 +31,20 @@ class LocationsMainPage:
         return individualcharginglocation
 
     def generate_export(self):
-        selector1 = (By.XPATH, "//a[.='» Export']")
+        selector1 = (By.XPATH, "//button[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Export']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
 
     def create_location_button(self):
-        selector1 = (By.XPATH, "//a[.='» Create location']")
+        selector1 = (By.XPATH, "//button[.='Actions']")
+        selector2 = (By.XPATH, "//a[.='Create location']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
     
     def create_location_select_customer(self):
         selector1 = (By.XPATH, "(//span[@role='combobox'])[1]")
-        selector2 = (By.XPATH, "//li[.='Automated Test Company Main (A00000639)']")
+        selector2 = (By.XPATH, "//li[contains(.,'Automated Test Company Main')]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
@@ -71,3 +75,11 @@ class LocationsMainPage:
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation
+    
+    def location_latitude(self):
+        selector1 = (By.CSS_SELECTOR, "#id_latlng_LATITUDE")
+        return self.driver.find_element(*selector1)
+    
+    def location_longitude(self):
+        selector1 = (By.CSS_SELECTOR, "#id_latlng_LONGITUDE")
+        return self.driver.find_element(*selector1)

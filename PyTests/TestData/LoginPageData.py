@@ -13,6 +13,15 @@ class LoginPageData:
             "URL": "https://test.optimile.eu/",
         }
     ]
+
+    test_local_admin_data = [
+        {
+            "account": "daan.swinnen@optimile.eu",
+            "password": "test",
+            "URL": "http://localhost:8000/",
+        }
+    ]
+
     test_carrefour_data = [
         {
             "account": "daan.swinnen+carrefour@optimile.eu",

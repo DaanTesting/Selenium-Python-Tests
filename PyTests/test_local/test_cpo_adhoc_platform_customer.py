@@ -15,7 +15,7 @@ from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 
 
-@pytest.fixture(params=LoginPageData.test_login_data)
+@pytest.fixture(params=LoginPageData.test_carrefour_data)
 def login_data(request):
     return request.param
 
@@ -43,17 +43,9 @@ class TestOne(BaseClass):
             assert "ABSDEV" in result.text
         log.info("Verified only ABSDEV sessions show up.")
 
-        adhocplatformpage.search_bar().clear()
-        adhocplatformpage.search_bar().send_keys("Bikini bottom" + Keys.ENTER)
-        time.sleep(1)
-
-        results = self.driver.find_elements(By.XPATH, "//tbody/tr/td[2]/a")
-        for result in results:
-            assert "Bikini bottom" in result.text
-        log.info("Verified only Bikini bottom sessions show up.")
-
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 
 class TestTwo(BaseClass):
     def test_payter_settings(self, setup, login_data):
@@ -95,6 +87,41 @@ class TestTwo(BaseClass):
         generalobjects.sign_out_button()
 
 class TestThree(BaseClass):
+    def test_web_settings(self, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+
+        loginpage = LoginPage(self.driver)
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        homepage.menu_label_chargingpoints()
+        adhocplatformpage = homepage.menu_label_adhoc()
+        paymentpagetab = adhocplatformpage.web_settings_tab()
+
+        paymentpagetab.starting_price_margin().clear()
+        paymentpagetab.starting_price_margin().send_keys("0")
+        paymentpagetab.starting_price_fixed().clear()
+        paymentpagetab.starting_price_fixed().send_keys("5")
+
+        paymentpagetab.hourly_price_margin().clear()
+        paymentpagetab.hourly_price_margin().send_keys("100")
+        paymentpagetab.hourly_price_fixed().clear()
+        paymentpagetab.hourly_price_fixed().send_keys("0")
+
+        paymentpagetab.kwh_price_margin().clear()
+        paymentpagetab.kwh_price_margin().send_keys("100")
+        paymentpagetab.kwh_price_fixed().clear()
+        paymentpagetab.kwh_price_fixed().send_keys("0")
+
+        paymentpagetab.save_button()
+        message = paymentpagetab.message_alert().text
+        assert "Adhoc markup updated." in message
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+class TestFour(BaseClass):
     def test_adhoc_page_filters(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

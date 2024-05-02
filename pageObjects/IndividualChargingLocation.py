@@ -61,6 +61,14 @@ class IndividualChargingLocation:
         selector1 = (By.CSS_SELECTOR, "#id_country")
         dropdown = Select(self.driver.find_element(*selector1))
         dropdown.select_by_visible_text("Belgium")
+    
+    def location_latitude(self):
+        selector1 = (By.CSS_SELECTOR, "#id_latlng_LATITUDE")
+        return self.driver.find_element(*selector1)
+    
+    def location_longitude(self):
+        selector1 = (By.CSS_SELECTOR, "#id_latlng_LONGITUDE")
+        return self.driver.find_element(*selector1)
 
     def overview_address(self):
         selector1 = (By.XPATH, "//dl[2]/dd[3]")

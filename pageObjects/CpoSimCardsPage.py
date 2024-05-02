@@ -6,5 +6,7 @@ class CpoSimCardsPage:
         self.driver = driver
 
     def generate_export(self):
-        selector1 = (By.XPATH, "//button[@name='export']")
+        selector1 = (By.XPATH, "//button[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Sim cards']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()

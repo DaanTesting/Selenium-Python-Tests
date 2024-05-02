@@ -12,6 +12,10 @@ class SplitBillingMainPage:
     def blue_collar_testpolicy(self):
         selector1 = (By.XPATH, "//a[text()='Blue collar']")
         self.driver.find_element(*selector1).click()
+    
+    def open_top_policy(self):
+        selector1 = (By.CSS_SELECTOR, "a[href='/co/admin/split-billing/reimbursements/1']")
+        self.driver.find_element(*selector1).click()
 
     def reimbursement_policy_value_button(self):
         selector1 = (By.CSS_SELECTOR, "button[name='rb-policy-value-form']")
@@ -32,5 +36,7 @@ class SplitBillingMainPage:
         self.driver.find_element(*selector2).click()
 
     def generate_export(self):
-        selector1 = (By.XPATH, "(//a[normalize-space()='Export excel'])[1]")
+        selector1 = (By.XPATH, "//button[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Export excel']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()

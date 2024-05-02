@@ -15,7 +15,7 @@ from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 
 
-@pytest.fixture(params=LoginPageData.test_login_data)
+@pytest.fixture(params=LoginPageData.test_local_admin_data)
 def login_data(request):
     return request.param
 
@@ -38,7 +38,7 @@ class TestOne(BaseClass):
         log.info("Opening reimbursement policy tab.")
         splitbillingmainpage.reimbursement_policies_tab()
         log.info("Opening blue collar testpolicy.")
-        splitbillingmainpage.blue_collar_testpolicy()
+        splitbillingmainpage.open_top_policy()
         log.info("Attempting to change policy value.")
         splitbillingmainpage.reimbursement_policy_value_button()
         splitbillingmainpage.reimbursement_policy_new_value_field().send_keys(
@@ -91,14 +91,14 @@ class TestTwo(BaseClass):
         log.info("Navigating to locations page.")
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
-        log.info("Searching locations list for 'Carrefour'.")
-        locationsmainpage.find_location().send_keys("Carrefour" + "\n")
+        log.info("Searching locations list for 'Klaas Vaak'.")
+        locationsmainpage.find_location().send_keys("Klaas Vaak" + "\n")
         time.sleep(1)
 
         results = self.driver.find_elements(By.XPATH, "//tbody/tr")
         for result in results:
-            assert "Carrefour" in result.text
-        log.info("Verified only Carrefour locations show up.")
+            assert "Klaas Vaak" in result.text
+        log.info("Verified only Klaas Vaak locations show up.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -119,15 +119,15 @@ class TestThree(BaseClass):
         log.info("Navigating to locations page.")
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
-        log.info("Searching for device 'QATEST'.")
-        locationsmainpage.find_device().send_keys("QATEST" + "\n")
+        log.info("Searching for device 'BC-TEST-5'.")
+        locationsmainpage.find_device().send_keys("BC-TEST-5" + "\n")
         devicedata = self.driver.find_element(
-            By.XPATH, "//p[normalize-space()='QATEST']"
+            By.XPATH, "//p[normalize-space()='BC-TEST-5']"
         ).text
 
         print(devicedata)
-        assert devicedata == "QATEST"
-        log.info("Verified 'QATEST' is only device returned.")
+        assert devicedata == "BC-TEST-5"
+        log.info("Verified 'BC-TEST-5' is only device returned.")
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
@@ -157,8 +157,9 @@ class TestFour(BaseClass):
         log.info("Attempting to edit 'Autotest Location'.")
         individualcharginglocation.edit_button()
         log.info("Edit location name.")
+        individualcharginglocation.location_name_field().clear()
         individualcharginglocation.location_name_field().send_keys(
-            " In Progress"
+            "Autotest Location Configuration In Progress"
         )
         log.info("Edit location phone number.")
         individualcharginglocation.contact_phone_field().clear()
@@ -166,7 +167,8 @@ class TestFour(BaseClass):
             "0477998844"
         )
         log.info("Edit contact name.")
-        individualcharginglocation.contact_name_field().send_keys(" Is Active")
+        individualcharginglocation.contact_name_field().clear()
+        individualcharginglocation.contact_name_field().send_keys("Robo-Daan Is Active")
         log.info("Attempting to update location.")
         individualcharginglocation.update_button()
 
@@ -261,6 +263,13 @@ class TestFive(BaseClass):
         log.info("Updated town.")
         individualcharginglocation.location_country_field_Netherlands()
         log.info("Updated country.")
+        individualcharginglocation.location_longitude().click()
+        time.sleep(1)
+        individualcharginglocation.location_longitude().send_keys("50")
+        individualcharginglocation.location_latitude().click()
+        time.sleep(1)
+        individualcharginglocation.location_latitude().send_keys("50")
+
         time.sleep(1)
         log.info("Attempting to update location data.")
         individualcharginglocation.update_button()
@@ -281,9 +290,15 @@ class TestFive(BaseClass):
         individualcharginglocation.location_town_field().clear()
         individualcharginglocation.location_town_field().send_keys("Gent")
         individualcharginglocation.location_country_field_Belgium()
+        
+        individualcharginglocation.location_longitude().click()
         time.sleep(1)
+        individualcharginglocation.location_longitude().send_keys("50")
+        individualcharginglocation.location_latitude().click()
+        time.sleep(1)
+        individualcharginglocation.location_latitude().send_keys("50")
+
         individualcharginglocation.update_button()
-        time.sleep(1)
 
         updatedaddress = individualcharginglocation.overview_address().text
         assert updatedaddress == "Robotus Destroyuslaan 99, 9000 Gent, BE"
@@ -362,7 +377,15 @@ class TestSeven(BaseClass):
         )
         locationsmainpage.create_location_postcode().send_keys("9000")
         locationsmainpage.create_location_town().send_keys("Gent" + Keys.ENTER)
-        individualcharginglocation = locationsmainpage.create_location_create_button()
+
+        locationsmainpage.location_longitude().click()
+        time.sleep(1)
+        locationsmainpage.location_longitude().send_keys("50")
+        locationsmainpage.location_latitude().click()
+        time.sleep(1)
+        locationsmainpage.location_latitude().send_keys("50")
+
+        locationsmainpage = locationsmainpage.create_location_create_button()
         successmessage = str(
             self.driver.find_element(
                 By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible"
@@ -370,7 +393,7 @@ class TestSeven(BaseClass):
         )
         assert "Charging location saved" in successmessage
         time.sleep(1)
-        individualcharginglocation.delete_button()
+        locationsmainpage.delete_button()
         
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -453,7 +476,7 @@ class TestNine(BaseClass):
 
 
 class TestTen(BaseClass):
-    def test_activate_customer(self, setup, login_data):
+    def test_create_register_and_activate_customer(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
         log.info("Attempting login.")
@@ -466,6 +489,31 @@ class TestTen(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to cpo customers page.")
         homepage.menu_label_chargingpoints()
+        cpocustomerpage = homepage.menu_label_cpo_customers()
+
+        log.info("Attempting to create new customer.")
+        createcustomerpage = cpocustomerpage.create_customer_button()
+        random_integer = str(random.randint(100000000, 999999999))
+        timestamp = str(datetime.now())
+        createcustomerpage.company_name_field().send_keys(random_integer)
+        createcustomerpage.company_type_field().send_keys(
+            "Generated on: " + timestamp
+        )
+        createcustomerpage.VAT_number_field().send_keys("BE1252175374")
+        createcustomerpage.first_name_field().send_keys(random_integer)
+        createcustomerpage.last_name_field().send_keys(random_integer)
+        createcustomerpage.email_address_field().send_keys(
+            "daan.swinnen+" + random_integer + "@optimile.eu"
+        )
+        createcustomerpage.phone_field().send_keys("+32474531188")
+        createcustomerpage.address_field().send_keys("Autotest straat 123")
+        createcustomerpage.postcode_field().send_keys("9000")
+        createcustomerpage.town_field().send_keys("Gent")
+
+        cpoindividualcustomer = createcustomerpage.save_button()
+        message = cpoindividualcustomer.message_banner().text
+        assert message == "Customer created."
+
         cpocustomerpage = homepage.menu_label_cpo_customers()
 
         log.info("Filtering away active customers.")
@@ -489,6 +537,9 @@ class TestTen(BaseClass):
         cpocustomerpage.approve_registration()
         message = cpocustomerpage.message_banner().text
         assert message == "Customer registered and login credentials are sent."
+
+        cpoindividualcustomer.delete_button()
+
         log.info("Successfully approved customer.")
 
         generalobjects = GeneralObjects(self.driver)
@@ -546,8 +597,8 @@ class TestTwelve(BaseClass):
         log.info("Navigating to locations page.")
         homepage.menu_label_chargingpoints()
         locationsmainpage = homepage.menu_label_locations()
-        log.info("Searching for 'Turia'.")
-        locationsmainpage.find_location().send_keys("Turia" + Keys.ENTER)
+        log.info("Searching for 'Lieven De Winnestraat'.")
+        locationsmainpage.find_location().send_keys("Lieven De Winnestraat" + Keys.ENTER)
         individualcharginglocation = (
             locationsmainpage.find_location_click_top_result()
         )

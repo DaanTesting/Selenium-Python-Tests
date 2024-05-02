@@ -12951,3 +12951,877 @@ Stacktrace:
 2024-04-16 16:00:48,720 : INFO : test_web_settings : daan.swinnen+carrefour@optimile.eu
 2024-04-16 16:00:59,972 : INFO : test_web_settings : daan.swinnen+carrefour@optimile.eu
 2024-04-16 16:01:10,638 : INFO : test_web_settings : daan.swinnen+carrefour@optimile.eu
+2024-04-16 16:23:50,648 : INFO : test_refresh_charging_point : daan.swinnen@optimile.eu
+2024-04-16 16:23:50,649 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-16 16:23:50,649 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-16 16:24:22,183 : INFO : test_set_adhoc_markup : daan.swinnen@optimile.eu
+2024-04-16 16:24:29,165 : INFO : test_set_pricing_policy : daan.swinnen@optimile.eu
+2024-04-16 16:25:37,328 : INFO : test_refresh_charging_point : daan.swinnen@optimile.eu
+2024-04-16 16:25:37,329 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-16 16:25:37,329 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-16 16:28:54,901 : INFO : test_refresh_charging_point : daan.swinnen@optimile.eu
+2024-04-16 16:28:54,901 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-16 16:28:54,901 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-18 14:19:51,235 : INFO : test_refresh_charging_point : daan.swinnen@optimile.eu
+2024-04-18 14:19:51,236 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-18 14:19:51,236 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-18 15:43:02,955 : INFO : test_refresh_charging_point : daan.swinnen@optimile.eu
+2024-04-18 15:43:02,955 : INFO : test_refresh_charging_point : ADHOCREMOTE
+2024-04-18 15:43:02,955 : INFO : test_refresh_charging_point : Attempting to connect to simulator.
+2024-04-23 17:37:37,379 : INFO : test_locations_search_devices : daan.swinnen@optimile.eu
+2024-04-23 17:37:37,379 : INFO : test_locations_search_devices : Attempting login.
+2024-04-23 17:37:39,590 : INFO : test_locations_search_devices : Succesfully logged in.
+2024-04-23 17:37:39,591 : INFO : test_locations_search_devices : Navigating to locations page.
+2024-04-23 17:37:40,420 : INFO : test_locations_search_devices : Searching for device 'QATEST'.
+2024-04-23 17:38:55,058 : INFO : test_locations_search_devices : daan.swinnen@optimile.eu
+2024-04-23 17:38:55,059 : INFO : test_locations_search_devices : Attempting login.
+2024-04-23 17:38:57,296 : INFO : test_locations_search_devices : Succesfully logged in.
+2024-04-23 17:38:57,298 : INFO : test_locations_search_devices : Navigating to locations page.
+2024-04-23 17:38:58,653 : INFO : test_locations_search_devices : Searching for device 'QATEST'.
+2024-04-23 17:40:13,533 : INFO : test_locations_search_devices : daan.swinnen@optimile.eu
+2024-04-23 17:40:13,533 : INFO : test_locations_search_devices : Attempting login.
+2024-04-23 17:40:16,344 : INFO : test_locations_search_devices : Succesfully logged in.
+2024-04-23 17:40:16,347 : INFO : test_locations_search_devices : Navigating to locations page.
+2024-04-23 17:40:17,021 : INFO : test_locations_search_devices : Searching for device 'QATEST'.
+2024-04-23 17:40:17,627 : INFO : test_locations_search_devices : Verified 'QATEST' is only device returned.
+2024-04-23 17:40:40,555 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-23 17:40:40,555 : INFO : test_add_charging_location : Attempting login.
+2024-04-23 17:40:42,576 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-23 17:40:42,576 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-23 17:45:27,383 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-23 17:45:27,383 : INFO : test_add_charging_location : Attempting login.
+2024-04-23 17:45:29,799 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-23 17:45:29,799 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-24 11:10:49,513 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-24 11:10:49,513 : INFO : test_add_charging_location : Attempting login.
+2024-04-24 11:10:52,116 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-24 11:10:52,116 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-24 11:11:13,254 : INFO : test_cpo_overview_screen_extended : daan.swinnen@optimile.eu
+2024-04-24 11:11:13,254 : INFO : test_cpo_overview_screen_extended : Attempting login.
+2024-04-24 11:11:15,075 : INFO : test_cpo_overview_screen_extended : Succesfully logged in.
+2024-04-24 11:11:15,075 : INFO : test_cpo_overview_screen_extended : Navigating to CPO overview page.
+2024-04-24 11:11:15,609 : INFO : test_cpo_overview_screen_extended : Verifying overview map is present.
+2024-04-24 11:11:16,682 : INFO : test_cpo_overview_screen_extended : Succesfully verified CPO overview page.
+2024-04-24 11:11:31,760 : INFO : test_tags_create_delete_expanded : daan.swinnen+splitbilling4@optimile.eu
+2024-04-24 11:11:31,760 : INFO : test_tags_create_delete_expanded : Attempting login.
+2024-04-24 11:11:33,664 : INFO : test_tags_create_delete_expanded : Succesfully logged in.
+2024-04-24 11:11:34,171 : INFO : test_tags_create_delete_expanded : Attempting to create new tag.
+2024-04-24 11:11:34,501 : INFO : test_tags_create_delete_expanded : Set tag name as 'timestamp'.
+2024-04-24 11:11:34,528 : INFO : test_tags_create_delete_expanded : Set new tag color.
+2024-04-24 11:11:37,609 : INFO : test_tags_create_delete_expanded : Link all available users.
+2024-04-24 11:11:37,641 : INFO : test_tags_create_delete_expanded : Saved new tag.
+2024-04-24 11:11:39,928 : INFO : test_tags_create_delete_expanded : Succesfully verified badge color is correct.
+2024-04-24 11:14:17,020 : INFO : test_tags_create_delete_expanded : daan.swinnen+splitbilling4@optimile.eu
+2024-04-24 11:14:17,020 : INFO : test_tags_create_delete_expanded : Attempting login.
+2024-04-24 11:14:18,836 : INFO : test_tags_create_delete_expanded : Succesfully logged in.
+2024-04-24 11:14:19,345 : INFO : test_tags_create_delete_expanded : Attempting to create new tag.
+2024-04-24 11:14:19,676 : INFO : test_tags_create_delete_expanded : Set tag name as 'timestamp'.
+2024-04-24 11:14:19,713 : INFO : test_tags_create_delete_expanded : Set new tag color.
+2024-04-24 11:14:22,825 : INFO : test_tags_create_delete_expanded : Link all available users.
+2024-04-24 11:14:22,857 : INFO : test_tags_create_delete_expanded : Saved new tag.
+2024-04-24 11:14:25,170 : INFO : test_tags_create_delete_expanded : Succesfully verified badge color is correct.
+2024-04-24 11:14:25,336 : INFO : test_tags_create_delete_expanded : Succesfully verified tagname.
+2024-04-24 11:14:26,545 : INFO : test_tags_create_delete_expanded : Attempting to edit tag.
+2024-04-24 11:14:28,017 : INFO : test_tags_create_delete_expanded : Edit tagname.
+2024-04-24 11:14:30,111 : INFO : test_tags_create_delete_expanded : Unlinked all users.
+2024-04-24 11:14:30,141 : INFO : test_tags_create_delete_expanded : Saved edited tag.
+2024-04-24 11:14:31,172 : INFO : test_tags_create_delete_expanded : Succesfully verified edited name.
+2024-04-24 11:14:31,185 : INFO : test_tags_create_delete_expanded : Succesfully verified number of linked users.
+2024-04-24 11:14:31,275 : INFO : test_tags_create_delete_expanded : Delete test tag.
+2024-04-24 11:15:12,090 : INFO : test_cpo_locations_export : daan.swinnen@optimile.eu
+2024-04-24 11:15:12,090 : INFO : test_cpo_locations_export : Attempting login.
+2024-04-24 11:15:13,893 : INFO : test_cpo_locations_export : Succesfully logged in.
+2024-04-24 11:15:13,894 : INFO : test_cpo_locations_export : Navigating to locations page.
+2024-04-24 11:15:14,529 : INFO : test_cpo_locations_export : Attempting to generate locations export.
+2024-04-24 11:17:24,085 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-24 11:17:24,085 : INFO : test_add_charging_location : Attempting login.
+2024-04-24 11:17:25,774 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-24 11:17:25,775 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-24 11:17:39,431 : INFO : test_cpo_locations_export : daan.swinnen@optimile.eu
+2024-04-24 11:17:39,431 : INFO : test_cpo_locations_export : Attempting login.
+2024-04-24 11:17:41,179 : INFO : test_cpo_locations_export : Succesfully logged in.
+2024-04-24 11:17:41,179 : INFO : test_cpo_locations_export : Navigating to locations page.
+2024-04-24 11:17:41,759 : INFO : test_cpo_locations_export : Attempting to generate locations export.
+2024-04-24 11:17:47,629 : INFO : test_cpo_locations_export : Successfully verified locations export has been downloaded.
+2024-04-24 11:17:55,186 : INFO : test_cpo_simcards_export : daan.swinnen@optimile.eu
+2024-04-24 11:17:55,187 : INFO : test_cpo_simcards_export : Attempting login.
+2024-04-24 11:17:56,964 : INFO : test_cpo_simcards_export : Succesfully logged in.
+2024-04-24 11:17:56,964 : INFO : test_cpo_simcards_export : Navigating to simcards page.
+2024-04-24 11:17:57,573 : INFO : test_cpo_simcards_export : Attempting to generate simcards export.
+2024-04-24 11:19:43,042 : INFO : test_cpo_simcards_export : daan.swinnen@optimile.eu
+2024-04-24 11:19:43,042 : INFO : test_cpo_simcards_export : Attempting login.
+2024-04-24 11:19:44,578 : INFO : test_cpo_simcards_export : Succesfully logged in.
+2024-04-24 11:19:44,578 : INFO : test_cpo_simcards_export : Navigating to simcards page.
+2024-04-24 11:19:45,224 : INFO : test_cpo_simcards_export : Attempting to generate simcards export.
+2024-04-24 11:19:48,430 : INFO : test_cpo_simcards_export : Successfully verified simcards export has been downloaded.
+2024-04-24 11:20:13,784 : INFO : test_cpo_splitbilling_export : daan.swinnen@optimile.eu
+2024-04-24 11:20:13,784 : INFO : test_cpo_splitbilling_export : Attempting login.
+2024-04-24 11:20:15,650 : INFO : test_cpo_splitbilling_export : Succesfully logged in.
+2024-04-24 11:20:15,651 : INFO : test_cpo_splitbilling_export : Navigating to splitbilling page.
+2024-04-24 11:20:16,523 : INFO : test_cpo_splitbilling_export : Attempting to generate splitbilling export.
+2024-04-24 11:22:15,437 : INFO : test_cpo_splitbilling_export : daan.swinnen@optimile.eu
+2024-04-24 11:22:15,439 : INFO : test_cpo_splitbilling_export : Attempting login.
+2024-04-24 11:22:17,219 : INFO : test_cpo_splitbilling_export : Succesfully logged in.
+2024-04-24 11:22:17,219 : INFO : test_cpo_splitbilling_export : Navigating to splitbilling page.
+2024-04-24 11:22:17,846 : INFO : test_cpo_splitbilling_export : Attempting to generate splitbilling export.
+2024-04-24 11:22:21,757 : INFO : test_cpo_splitbilling_export : Successfully verified splitbilling export has been downloaded.
+2024-04-24 11:37:15,389 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-04-24 11:37:15,389 : INFO : test_msp_create_user : Attempting login.
+2024-04-24 11:37:17,037 : INFO : test_msp_create_user : Succesfully logged in.
+2024-04-24 11:37:17,037 : INFO : test_msp_create_user : Navigating to msp customers page.
+2024-04-24 11:37:17,568 : INFO : test_msp_create_user : Searching for Automated Test Company Main.
+2024-04-24 11:37:17,848 : INFO : test_msp_create_user : Attempting to open top customer result.
+2024-04-24 11:37:17,866 : INFO : test_msp_create_user : Navigating to users tab.
+2024-04-24 11:39:17,367 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-04-24 11:39:17,367 : INFO : test_msp_create_user : Attempting login.
+2024-04-24 11:39:19,580 : INFO : test_msp_create_user : Succesfully logged in.
+2024-04-24 11:39:19,580 : INFO : test_msp_create_user : Navigating to msp customers page.
+2024-04-24 11:39:20,095 : INFO : test_msp_create_user : Searching for Automated Test Company Main.
+2024-04-24 11:39:20,339 : INFO : test_msp_create_user : Attempting to open top customer result.
+2024-04-24 11:39:21,385 : INFO : test_msp_create_user : Navigating to users tab.
+2024-04-24 11:39:42,166 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-04-24 11:39:42,167 : INFO : test_msp_create_user : Attempting login.
+2024-04-24 11:39:44,118 : INFO : test_msp_create_user : Succesfully logged in.
+2024-04-24 11:39:44,121 : INFO : test_msp_create_user : Navigating to msp customers page.
+2024-04-24 11:39:44,724 : INFO : test_msp_create_user : Searching for Automated Test Company Main.
+2024-04-24 11:39:44,976 : INFO : test_msp_create_user : Attempting to open top customer result.
+2024-04-24 11:39:47,019 : INFO : test_msp_create_user : Navigating to users tab.
+2024-04-24 11:41:24,327 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-04-24 11:41:24,327 : INFO : test_msp_create_user : Attempting login.
+2024-04-24 11:41:26,173 : INFO : test_msp_create_user : Succesfully logged in.
+2024-04-24 11:41:26,173 : INFO : test_msp_create_user : Navigating to msp customers page.
+2024-04-24 11:41:26,638 : INFO : test_msp_create_user : Searching for Automated Test Company Main.
+2024-04-24 11:41:26,921 : INFO : test_msp_create_user : Attempting to open top customer result.
+2024-04-24 11:41:29,229 : INFO : test_msp_create_user : Navigating to users tab.
+2024-04-24 11:41:29,251 : INFO : test_msp_create_user : Attempting to create new user.
+2024-04-24 11:41:36,155 : INFO : test_msp_create_user : Successfully created user.
+2024-04-29 12:12:30,403 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2024-04-29 12:12:30,403 : INFO : test_cpo_overview_screen : Attempting login.
+2024-04-29 12:12:30,880 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2024-04-29 12:12:30,880 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2024-04-29 13:33:28,950 : INFO : test_reimbursement_policy_valuechange : admin@example.test
+2024-04-29 13:33:28,950 : INFO : test_reimbursement_policy_valuechange : Attempting login.
+2024-04-29 13:33:30,862 : INFO : test_reimbursement_policy_valuechange : Succesfully logged in.
+2024-04-29 13:33:30,863 : INFO : test_reimbursement_policy_valuechange : Navigating to split billing page.
+2024-04-29 13:33:32,811 : INFO : test_reimbursement_policy_valuechange : Opening reimbursement policy tab.
+2024-04-29 13:33:34,296 : INFO : test_reimbursement_policy_valuechange : Opening blue collar testpolicy.
+2024-04-29 13:39:52,904 : INFO : test_reimbursement_policy_valuechange : admin@example.test
+2024-04-29 13:39:52,904 : INFO : test_reimbursement_policy_valuechange : Attempting login.
+2024-04-29 13:39:54,700 : INFO : test_reimbursement_policy_valuechange : Succesfully logged in.
+2024-04-29 13:39:54,702 : INFO : test_reimbursement_policy_valuechange : Navigating to split billing page.
+2024-04-29 13:39:56,198 : INFO : test_reimbursement_policy_valuechange : Opening reimbursement policy tab.
+2024-04-29 13:39:57,771 : INFO : test_reimbursement_policy_valuechange : Opening blue collar testpolicy.
+2024-04-29 13:40:29,683 : INFO : test_reimbursement_policy_valuechange : admin@example.test
+2024-04-29 13:40:29,683 : INFO : test_reimbursement_policy_valuechange : Attempting login.
+2024-04-29 13:40:30,311 : INFO : test_reimbursement_policy_valuechange : Succesfully logged in.
+2024-04-29 13:40:30,311 : INFO : test_reimbursement_policy_valuechange : Navigating to split billing page.
+2024-04-29 13:40:32,672 : INFO : test_reimbursement_policy_valuechange : Opening reimbursement policy tab.
+2024-04-29 13:40:33,927 : INFO : test_reimbursement_policy_valuechange : Opening blue collar testpolicy.
+2024-04-29 13:41:19,500 : INFO : test_reimbursement_policy_valuechange : admin@example.test
+2024-04-29 13:41:19,501 : INFO : test_reimbursement_policy_valuechange : Attempting login.
+2024-04-29 13:41:21,156 : INFO : test_reimbursement_policy_valuechange : Succesfully logged in.
+2024-04-29 13:41:21,156 : INFO : test_reimbursement_policy_valuechange : Navigating to split billing page.
+2024-04-29 13:41:22,771 : INFO : test_reimbursement_policy_valuechange : Opening reimbursement policy tab.
+2024-04-29 13:41:24,139 : INFO : test_reimbursement_policy_valuechange : Opening blue collar testpolicy.
+2024-04-29 13:41:24,348 : INFO : test_reimbursement_policy_valuechange : Attempting to change policy value.
+2024-04-29 13:41:24,813 : INFO : test_reimbursement_policy_valuechange : Succesfully changed policy value.
+2024-04-29 13:41:25,201 : INFO : test_reimbursement_policy_valuechange : Deleted new value. Test has been reset.
+2024-04-29 13:42:24,109 : INFO : test_filter_locations : admin@example.test
+2024-04-29 13:42:24,109 : INFO : test_filter_locations : Attempting login.
+2024-04-29 13:42:25,796 : INFO : test_filter_locations : Succesfully logged in.
+2024-04-29 13:42:25,798 : INFO : test_filter_locations : Navigating to locations page.
+2024-04-29 13:42:27,091 : INFO : test_filter_locations : Searching locations list for 'Klaas Vaak'.
+2024-04-29 13:42:29,202 : INFO : test_filter_locations : Verified only Klaas Vaak locations show up.
+2024-04-29 15:34:16,430 : INFO : test_reimbursement_policy_valuechange : daan.swinnen@optimile.eu
+2024-04-29 15:34:16,431 : INFO : test_reimbursement_policy_valuechange : Attempting login.
+2024-04-29 15:34:18,418 : INFO : test_reimbursement_policy_valuechange : Succesfully logged in.
+2024-04-29 15:34:18,420 : INFO : test_reimbursement_policy_valuechange : Navigating to split billing page.
+2024-04-29 15:34:19,956 : INFO : test_reimbursement_policy_valuechange : Opening reimbursement policy tab.
+2024-04-29 15:34:21,184 : INFO : test_reimbursement_policy_valuechange : Opening blue collar testpolicy.
+2024-04-29 15:34:21,372 : INFO : test_reimbursement_policy_valuechange : Attempting to change policy value.
+2024-04-29 15:34:21,772 : INFO : test_reimbursement_policy_valuechange : Succesfully changed policy value.
+2024-04-29 15:34:22,109 : INFO : test_reimbursement_policy_valuechange : Deleted new value. Test has been reset.
+2024-04-29 15:34:35,049 : INFO : test_filter_locations : daan.swinnen@optimile.eu
+2024-04-29 15:34:35,049 : INFO : test_filter_locations : Attempting login.
+2024-04-29 15:34:36,964 : INFO : test_filter_locations : Succesfully logged in.
+2024-04-29 15:34:36,964 : INFO : test_filter_locations : Navigating to locations page.
+2024-04-29 15:34:38,256 : INFO : test_filter_locations : Searching locations list for 'Klaas Vaak'.
+2024-04-29 15:34:40,319 : INFO : test_filter_locations : Verified only Klaas Vaak locations show up.
+2024-04-29 15:37:47,665 : INFO : test_locations_search_devices : daan.swinnen@optimile.eu
+2024-04-29 15:37:47,665 : INFO : test_locations_search_devices : Attempting login.
+2024-04-29 15:37:49,566 : INFO : test_locations_search_devices : Succesfully logged in.
+2024-04-29 15:37:49,567 : INFO : test_locations_search_devices : Navigating to locations page.
+2024-04-29 15:37:50,920 : INFO : test_locations_search_devices : Searching for device 'BC-TEST-5'.
+2024-04-29 15:37:51,461 : INFO : test_locations_search_devices : Verified 'BC-TEST-5' is only device returned.
+2024-04-29 15:45:10,248 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:45:10,248 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:45:12,313 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:45:12,314 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:45:13,517 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:45:14,855 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:45:15,658 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:45:15,741 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:45:15,820 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:45:15,868 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:45:16,872 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:45:43,817 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:45:43,818 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:45:45,741 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:45:45,742 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:45:46,981 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:45:48,228 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:45:48,958 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:45:49,035 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:45:49,111 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:45:49,163 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:45:50,164 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:47:07,439 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:47:07,439 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:47:09,225 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:47:09,225 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:47:10,681 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:47:12,084 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:47:12,808 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:47:12,880 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:47:12,954 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:47:13,011 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:47:14,014 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:48:28,900 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:48:28,900 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:48:30,816 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:48:30,817 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:48:32,119 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:48:33,560 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:48:34,362 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:48:34,443 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:48:34,521 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:48:34,573 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:48:35,578 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:52:46,082 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:52:46,082 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:52:47,836 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:52:47,837 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:52:49,072 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:52:50,422 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:52:51,153 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:52:51,242 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:52:51,339 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:52:51,395 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:52:52,480 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:53:01,632 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:53:01,632 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:53:04,653 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:53:04,654 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:53:06,090 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:53:07,422 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:53:08,116 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:53:08,192 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:53:08,272 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:53:08,323 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:53:09,412 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:53:55,972 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:53:55,972 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:53:57,763 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:53:57,763 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:53:59,016 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:54:00,380 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:54:01,196 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:54:01,282 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:54:01,380 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:54:01,436 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:54:02,543 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:54:27,449 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:54:27,449 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:54:29,290 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:54:29,291 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:54:30,576 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:54:31,883 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:54:32,607 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:54:32,699 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:54:32,780 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:54:32,834 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:54:34,929 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:55:00,567 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:55:00,567 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:55:02,444 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:55:02,444 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:55:03,839 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:55:05,222 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:55:05,986 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:55:06,064 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:55:06,142 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:55:06,192 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:55:10,283 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:56:01,991 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:56:01,991 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:56:03,647 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:56:03,649 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:56:05,179 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:56:06,555 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:56:07,206 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:56:07,257 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:56:07,309 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:56:07,354 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:56:47,380 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:56:47,380 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:56:49,106 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:56:49,108 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:56:50,505 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:56:51,824 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:56:52,566 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:56:52,651 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:56:52,733 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:56:52,787 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 15:56:53,882 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 15:57:18,901 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 15:57:18,901 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 15:57:20,842 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 15:57:20,843 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 15:57:22,052 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 15:57:23,353 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 15:57:24,111 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 15:57:24,188 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 15:57:24,267 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 15:57:24,315 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:01:49,490 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:01:49,490 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:01:51,270 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:01:51,270 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:01:52,740 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:01:54,053 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:01:54,690 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:01:54,744 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:01:54,852 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:01:54,897 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:01:56,987 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:03:03,578 : INFO : test_add_charging_device_mock : daan.swinnen@optimile.eu
+2024-04-29 16:03:03,578 : INFO : test_add_charging_device_mock : Attempting login.
+2024-04-29 16:03:05,470 : INFO : test_add_charging_device_mock : Succesfully logged in.
+2024-04-29 16:03:05,470 : INFO : test_add_charging_device_mock : Navigating to locations page.
+2024-04-29 16:03:06,764 : INFO : test_add_charging_device_mock : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:03:08,087 : INFO : test_add_charging_device_mock : Navigating to devices tab.
+2024-04-29 16:03:08,130 : INFO : test_add_charging_device_mock : Attempting to register a new device.
+2024-04-29 16:03:08,545 : INFO : test_add_charging_device_mock : Setting OCPP_ID.
+2024-04-29 16:03:08,585 : INFO : test_add_charging_device_mock : Selecting contract from dropdown.
+2024-04-29 16:03:08,646 : INFO : test_add_charging_device_mock : Attempting to finalize registration.
+2024-04-29 16:03:10,512 : INFO : test_add_charging_device_mock : Succesfully registered new device.
+2024-04-29 16:03:20,296 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-29 16:03:20,296 : INFO : test_add_charging_location : Attempting login.
+2024-04-29 16:03:22,253 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-29 16:03:22,254 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-29 16:15:30,214 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-29 16:15:30,214 : INFO : test_add_charging_location : Attempting login.
+2024-04-29 16:15:32,171 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-29 16:15:32,171 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-29 16:17:43,293 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-29 16:17:43,294 : INFO : test_add_charging_location : Attempting login.
+2024-04-29 16:17:45,175 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-29 16:17:45,175 : INFO : test_add_charging_location : Navigating to locations page.
+2024-04-29 16:18:07,077 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-04-29 16:18:07,078 : INFO : test_create_customer : Attempting login.
+2024-04-29 16:18:08,880 : INFO : test_create_customer : Succesfully logged in.
+2024-04-29 16:18:08,882 : INFO : test_create_customer : Navigating to customers page.
+2024-04-29 16:18:09,319 : INFO : test_create_customer : Attempting to create new customer.
+2024-04-29 16:18:10,789 : INFO : test_create_customer : New customer succesfully created.
+2024-04-29 16:18:10,789 : INFO : test_create_customer : Attempting to delete new customer.
+2024-04-29 16:18:12,126 : INFO : test_create_customer : New customer successfully deleted.
+2024-04-29 16:18:21,345 : INFO : test_activate_pending_contract : daan.swinnen@optimile.eu
+2024-04-29 16:18:21,345 : INFO : test_activate_pending_contract : Attempting login.
+2024-04-29 16:18:23,051 : INFO : test_activate_pending_contract : Succesfully logged in.
+2024-04-29 16:18:23,052 : INFO : test_activate_pending_contract : Navigating to cpo customers page.
+2024-04-29 16:18:23,475 : INFO : test_activate_pending_contract : Accessing pending contracts.
+2024-04-29 16:18:23,651 : INFO : test_activate_pending_contract : Attempting to activate contract.
+2024-04-29 16:25:47,866 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:25:47,866 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:25:49,716 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:25:49,716 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:25:50,973 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:25:52,181 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:25:52,871 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:25:52,948 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:25:53,022 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:25:53,075 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:25:55,124 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:27:25,403 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:27:25,403 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:27:27,595 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:27:27,595 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:27:28,798 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:27:30,042 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:27:30,752 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:27:30,823 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:27:30,896 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:27:30,948 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:27:33,014 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:28:18,236 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:28:18,236 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:28:20,047 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:28:20,048 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:28:21,215 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:28:22,281 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:28:22,788 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:28:22,837 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:28:22,889 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:28:22,930 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:28:25,023 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:28:40,501 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:28:40,501 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:28:42,283 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:28:42,283 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:28:43,513 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:28:44,685 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:28:45,436 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:28:45,509 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:28:45,582 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:28:45,632 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:28:50,753 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:28:52,127 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2024-04-29 16:28:52,127 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2024-04-29 16:29:10,733 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:29:10,733 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:29:12,426 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:29:12,427 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:29:13,700 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:29:14,843 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:29:15,471 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:29:15,560 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:29:15,637 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:29:15,663 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:29:18,765 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:29:33,927 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:29:33,927 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:29:35,646 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:29:35,647 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:29:36,820 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:29:37,914 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:29:38,541 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:29:38,611 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:29:38,665 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:29:38,690 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:29:42,786 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:30:26,239 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:30:26,239 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:30:27,960 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:30:27,962 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:30:29,079 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:30:30,349 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:30:30,963 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:30:31,040 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:30:31,114 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:30:31,139 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:30:37,251 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:30:38,553 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2024-04-29 16:30:38,553 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2024-04-29 16:31:00,631 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:31:00,631 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:31:02,417 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:31:02,417 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:31:03,606 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:31:04,720 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:31:05,368 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:31:05,434 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:31:05,485 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:31:05,508 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:31:09,612 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:31:10,968 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2024-04-29 16:31:10,969 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2024-04-29 16:31:29,099 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-04-29 16:31:29,100 : INFO : test_configure_location_location_data : Attempting login.
+2024-04-29 16:31:31,000 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-04-29 16:31:31,001 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-04-29 16:31:32,132 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-04-29 16:31:33,370 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-04-29 16:31:34,056 : INFO : test_configure_location_location_data : Updated location adress
+2024-04-29 16:31:34,132 : INFO : test_configure_location_location_data : Updated postcode.
+2024-04-29 16:31:34,207 : INFO : test_configure_location_location_data : Updated town.
+2024-04-29 16:31:34,231 : INFO : test_configure_location_location_data : Updated country.
+2024-04-29 16:31:37,342 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-04-29 16:31:38,711 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2024-04-29 16:31:38,711 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2024-04-29 16:33:44,275 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-04-29 16:33:44,275 : INFO : test_add_charging_location : Attempting login.
+2024-04-29 16:33:46,095 : INFO : test_add_charging_location : Succesfully logged in.
+2024-04-29 16:33:46,095 : INFO : test_add_charging_location : Navigating to locations page.
+2024-05-02 13:05:04,194 : INFO : test_reimbursement_policy_valuechange : daan.swinnen@optimile.eu
+2024-05-02 13:05:04,194 : INFO : test_reimbursement_policy_valuechange : Attempting login.
+2024-05-02 13:05:05,966 : INFO : test_reimbursement_policy_valuechange : Succesfully logged in.
+2024-05-02 13:05:05,966 : INFO : test_reimbursement_policy_valuechange : Navigating to split billing page.
+2024-05-02 13:05:07,369 : INFO : test_reimbursement_policy_valuechange : Opening reimbursement policy tab.
+2024-05-02 13:05:08,380 : INFO : test_reimbursement_policy_valuechange : Opening blue collar testpolicy.
+2024-05-02 13:05:08,566 : INFO : test_reimbursement_policy_valuechange : Attempting to change policy value.
+2024-05-02 13:05:08,933 : INFO : test_reimbursement_policy_valuechange : Succesfully changed policy value.
+2024-05-02 13:05:09,228 : INFO : test_reimbursement_policy_valuechange : Deleted new value. Test has been reset.
+2024-05-02 13:05:13,624 : INFO : test_filter_locations : daan.swinnen@optimile.eu
+2024-05-02 13:05:13,624 : INFO : test_filter_locations : Attempting login.
+2024-05-02 13:05:15,354 : INFO : test_filter_locations : Succesfully logged in.
+2024-05-02 13:05:15,355 : INFO : test_filter_locations : Navigating to locations page.
+2024-05-02 13:05:16,377 : INFO : test_filter_locations : Searching locations list for 'Klaas Vaak'.
+2024-05-02 13:05:18,242 : INFO : test_filter_locations : Verified only Klaas Vaak locations show up.
+2024-05-02 13:05:22,370 : INFO : test_locations_search_devices : daan.swinnen@optimile.eu
+2024-05-02 13:05:22,370 : INFO : test_locations_search_devices : Attempting login.
+2024-05-02 13:05:24,100 : INFO : test_locations_search_devices : Succesfully logged in.
+2024-05-02 13:05:24,101 : INFO : test_locations_search_devices : Navigating to locations page.
+2024-05-02 13:05:25,189 : INFO : test_locations_search_devices : Searching for device 'BC-TEST-5'.
+2024-05-02 13:05:25,642 : INFO : test_locations_search_devices : Verified 'BC-TEST-5' is only device returned.
+2024-05-02 13:05:31,415 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2024-05-02 13:05:31,415 : INFO : test_configure_location_information : Attempting login.
+2024-05-02 13:05:33,300 : INFO : test_configure_location_information : Succesfully logged in.
+2024-05-02 13:05:33,300 : INFO : test_configure_location_information : Navigating to locations page.
+2024-05-02 13:05:34,468 : INFO : test_configure_location_information : Searching for 'Autotest Location Configuration'.
+2024-05-02 13:05:35,516 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2024-05-02 13:05:36,087 : INFO : test_configure_location_information : Edit location name.
+2024-05-02 13:05:36,119 : INFO : test_configure_location_information : Edit location phone number.
+2024-05-02 13:05:36,176 : INFO : test_configure_location_information : Edit contact name.
+2024-05-02 13:05:36,206 : INFO : test_configure_location_information : Attempting to update location.
+2024-05-02 13:05:36,532 : INFO : test_configure_location_information : Verified location name changed correctly.
+2024-05-02 13:05:36,543 : INFO : test_configure_location_information : Verified phone number changed correctly.
+2024-05-02 13:06:13,270 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2024-05-02 13:06:13,270 : INFO : test_configure_location_information : Attempting login.
+2024-05-02 13:06:15,082 : INFO : test_configure_location_information : Succesfully logged in.
+2024-05-02 13:06:15,083 : INFO : test_configure_location_information : Navigating to locations page.
+2024-05-02 13:06:16,264 : INFO : test_configure_location_information : Searching for 'Autotest Location Configuration'.
+2024-05-02 13:06:17,399 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2024-05-02 13:06:18,005 : INFO : test_configure_location_information : Edit location name.
+2024-05-02 13:06:18,051 : INFO : test_configure_location_information : Edit location phone number.
+2024-05-02 13:06:18,198 : INFO : test_configure_location_information : Edit contact name.
+2024-05-02 13:06:18,239 : INFO : test_configure_location_information : Attempting to update location.
+2024-05-02 13:13:56,332 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2024-05-02 13:13:56,332 : INFO : test_configure_location_information : Attempting login.
+2024-05-02 13:13:58,271 : INFO : test_configure_location_information : Succesfully logged in.
+2024-05-02 13:13:58,273 : INFO : test_configure_location_information : Navigating to locations page.
+2024-05-02 13:13:59,349 : INFO : test_configure_location_information : Searching for 'Autotest Location Configuration'.
+2024-05-02 13:14:00,464 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2024-05-02 13:14:01,143 : INFO : test_configure_location_information : Edit location name.
+2024-05-02 13:14:01,220 : INFO : test_configure_location_information : Edit location phone number.
+2024-05-02 13:14:01,298 : INFO : test_configure_location_information : Edit contact name.
+2024-05-02 13:14:01,371 : INFO : test_configure_location_information : Attempting to update location.
+2024-05-02 13:14:01,711 : INFO : test_configure_location_information : Verified location name changed correctly.
+2024-05-02 13:14:01,722 : INFO : test_configure_location_information : Verified phone number changed correctly.
+2024-05-02 13:14:01,734 : INFO : test_configure_location_information : Verified contact name changed correctly.
+2024-05-02 13:14:01,734 : INFO : test_configure_location_information : Attempting to reset location information.
+2024-05-02 13:14:02,790 : INFO : test_configure_location_information : Succesfully reset location information.
+2024-05-02 13:14:08,752 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-05-02 13:14:08,752 : INFO : test_configure_location_location_data : Attempting login.
+2024-05-02 13:14:10,599 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-05-02 13:14:10,600 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-05-02 13:14:11,838 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-05-02 13:14:12,948 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-05-02 13:14:13,643 : INFO : test_configure_location_location_data : Updated location adress
+2024-05-02 13:14:13,721 : INFO : test_configure_location_location_data : Updated postcode.
+2024-05-02 13:14:13,789 : INFO : test_configure_location_location_data : Updated town.
+2024-05-02 13:14:13,817 : INFO : test_configure_location_location_data : Updated country.
+2024-05-02 13:14:16,921 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-05-02 13:14:18,231 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2024-05-02 13:14:18,231 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2024-05-02 13:15:21,820 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-05-02 13:15:21,820 : INFO : test_configure_location_location_data : Attempting login.
+2024-05-02 13:15:23,499 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-05-02 13:15:23,500 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-05-02 13:15:24,616 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-05-02 13:15:25,647 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-05-02 13:15:26,391 : INFO : test_configure_location_location_data : Updated location adress
+2024-05-02 13:15:26,445 : INFO : test_configure_location_location_data : Updated postcode.
+2024-05-02 13:15:26,491 : INFO : test_configure_location_location_data : Updated town.
+2024-05-02 13:15:26,514 : INFO : test_configure_location_location_data : Updated country.
+2024-05-02 13:15:29,608 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-05-02 13:15:30,912 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2024-05-02 13:15:30,912 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2024-05-02 13:15:33,797 : INFO : test_configure_location_location_data : Succesfully reset location data.
+2024-05-02 13:15:53,229 : INFO : test_add_charging_device_mock : daan.swinnen@optimile.eu
+2024-05-02 13:15:53,229 : INFO : test_add_charging_device_mock : Attempting login.
+2024-05-02 13:15:55,115 : INFO : test_add_charging_device_mock : Succesfully logged in.
+2024-05-02 13:15:55,115 : INFO : test_add_charging_device_mock : Navigating to locations page.
+2024-05-02 13:15:56,184 : INFO : test_add_charging_device_mock : Searching for 'Autotest Location Configuration'.
+2024-05-02 13:15:57,290 : INFO : test_add_charging_device_mock : Navigating to devices tab.
+2024-05-02 13:15:57,327 : INFO : test_add_charging_device_mock : Attempting to register a new device.
+2024-05-02 13:15:57,708 : INFO : test_add_charging_device_mock : Setting OCPP_ID.
+2024-05-02 13:15:57,756 : INFO : test_add_charging_device_mock : Selecting contract from dropdown.
+2024-05-02 13:15:57,848 : INFO : test_add_charging_device_mock : Attempting to finalize registration.
+2024-05-02 13:15:59,293 : INFO : test_add_charging_device_mock : Succesfully registered new device.
+2024-05-02 13:16:05,117 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-05-02 13:16:05,117 : INFO : test_add_charging_location : Attempting login.
+2024-05-02 13:16:06,798 : INFO : test_add_charging_location : Succesfully logged in.
+2024-05-02 13:16:06,798 : INFO : test_add_charging_location : Navigating to locations page.
+2024-05-02 13:16:23,524 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-05-02 13:16:23,524 : INFO : test_create_customer : Attempting login.
+2024-05-02 13:16:25,380 : INFO : test_create_customer : Succesfully logged in.
+2024-05-02 13:16:25,381 : INFO : test_create_customer : Navigating to customers page.
+2024-05-02 13:16:25,810 : INFO : test_create_customer : Attempting to create new customer.
+2024-05-02 13:16:26,976 : INFO : test_create_customer : New customer succesfully created.
+2024-05-02 13:16:26,976 : INFO : test_create_customer : Attempting to delete new customer.
+2024-05-02 13:16:28,014 : INFO : test_create_customer : New customer successfully deleted.
+2024-05-02 13:17:21,332 : INFO : test_activate_pending_contract : daan.swinnen@optimile.eu
+2024-05-02 13:17:21,332 : INFO : test_activate_pending_contract : Attempting login.
+2024-05-02 13:17:23,204 : INFO : test_activate_pending_contract : Succesfully logged in.
+2024-05-02 13:17:23,206 : INFO : test_activate_pending_contract : Navigating to cpo customers page.
+2024-05-02 13:17:23,595 : INFO : test_activate_pending_contract : Accessing pending contracts.
+2024-05-02 13:17:23,789 : INFO : test_activate_pending_contract : Attempting to activate contract.
+2024-05-02 13:17:24,122 : INFO : test_activate_pending_contract : Succesfully activated contract.
+2024-05-02 13:17:32,314 : INFO : test_activate_customer : daan.swinnen@optimile.eu
+2024-05-02 13:17:32,314 : INFO : test_activate_customer : Attempting login.
+2024-05-02 13:17:34,121 : INFO : test_activate_customer : Succesfully logged in.
+2024-05-02 13:17:34,122 : INFO : test_activate_customer : Navigating to cpo customers page.
+2024-05-02 13:17:34,519 : INFO : test_activate_customer : Filtering away active customers.
+2024-05-02 13:17:34,703 : INFO : test_activate_customer : Filtering away blocked customers.
+2024-05-02 13:17:34,918 : INFO : test_activate_customer : Verified that remaining customers require activation.
+2024-05-02 13:17:34,918 : INFO : test_activate_customer : Attempting to open top customer.
+2024-05-02 13:17:39,891 : INFO : test_activate_customer : Attempting to approve customer.
+2024-05-02 13:17:42,847 : INFO : test_activate_customer : 'NoneType' object has no attribute 'click'
+2024-05-02 13:27:38,860 : INFO : test_filters_customer_page : daan.swinnen@optimile.eu
+2024-05-02 13:27:38,860 : INFO : test_filters_customer_page : Attempting login.
+2024-05-02 13:27:40,725 : INFO : test_filters_customer_page : Succesfully logged in.
+2024-05-02 13:27:40,727 : INFO : test_filters_customer_page : Navigating to cpo customers page.
+2024-05-02 13:27:41,109 : INFO : test_filters_customer_page : Selecting active customers filter.
+2024-05-02 13:27:41,293 : INFO : test_filters_customer_page : Selecting pending customers filter.
+2024-05-02 13:27:41,476 : INFO : test_filters_customer_page : Selecting new customers filter.
+2024-05-02 13:27:41,659 : INFO : test_filters_customer_page : Selecting blocked customers filter.
+2024-05-02 13:27:41,859 : INFO : test_filters_customer_page : Successfully verified all customers have been filtered away.
+2024-05-02 13:47:01,675 : INFO : test_create_register_and_activate_customer : daan.swinnen@optimile.eu
+2024-05-02 13:47:01,676 : INFO : test_create_register_and_activate_customer : Attempting login.
+2024-05-02 13:47:03,652 : INFO : test_create_register_and_activate_customer : Succesfully logged in.
+2024-05-02 13:47:03,653 : INFO : test_create_register_and_activate_customer : Navigating to cpo customers page.
+2024-05-02 13:47:04,038 : INFO : test_create_register_and_activate_customer : Attempting to create new customer.
+2024-05-02 13:47:07,637 : INFO : test_create_register_and_activate_customer : Filtering away active customers.
+2024-05-02 13:47:07,830 : INFO : test_create_register_and_activate_customer : Filtering away blocked customers.
+2024-05-02 13:47:08,031 : INFO : test_create_register_and_activate_customer : Verified that remaining customers require activation.
+2024-05-02 13:47:08,031 : INFO : test_create_register_and_activate_customer : Attempting to open top customer.
+2024-05-02 13:47:08,504 : INFO : test_create_register_and_activate_customer : Attempting to approve customer.
+2024-05-02 13:47:28,744 : INFO : test_create_register_and_activate_customer : Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[.='Approve customer']"}
+  (Session info: chrome=124.0.6367.94); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000104c703e8 chromedriver + 4326376
+1   chromedriver                        0x0000000104c688b0 chromedriver + 4294832
+2   chromedriver                        0x0000000104894088 chromedriver + 278664
+3   chromedriver                        0x00000001048d6a80 chromedriver + 551552
+4   chromedriver                        0x000000010490f4f8 chromedriver + 783608
+5   chromedriver                        0x00000001048cb4e4 chromedriver + 505060
+6   chromedriver                        0x00000001048cbf5c chromedriver + 507740
+7   chromedriver                        0x0000000104c33984 chromedriver + 4077956
+8   chromedriver                        0x0000000104c3873c chromedriver + 4097852
+9   chromedriver                        0x0000000104c1a528 chromedriver + 3974440
+10  chromedriver                        0x0000000104c39054 chromedriver + 4100180
+11  chromedriver                        0x0000000104c0bb18 chromedriver + 3914520
+12  chromedriver                        0x0000000104c5965c chromedriver + 4232796
+13  chromedriver                        0x0000000104c597d8 chromedriver + 4233176
+14  chromedriver                        0x0000000104c68524 chromedriver + 4293924
+15  libsystem_pthread.dylib             0x000000019fb1af94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019fb15d34 thread_start + 8
+
+2024-05-02 13:47:39,428 : INFO : test_create_register_and_activate_customer : Successfully approved customer.
+2024-05-02 13:48:37,354 : INFO : test_create_register_and_activate_customer : daan.swinnen@optimile.eu
+2024-05-02 13:48:37,354 : INFO : test_create_register_and_activate_customer : Attempting login.
+2024-05-02 13:48:39,232 : INFO : test_create_register_and_activate_customer : Succesfully logged in.
+2024-05-02 13:48:39,233 : INFO : test_create_register_and_activate_customer : Navigating to cpo customers page.
+2024-05-02 13:48:39,615 : INFO : test_create_register_and_activate_customer : Attempting to create new customer.
+2024-05-02 13:48:43,070 : INFO : test_create_register_and_activate_customer : Filtering away active customers.
+2024-05-02 13:48:43,277 : INFO : test_create_register_and_activate_customer : Filtering away blocked customers.
+2024-05-02 13:48:43,475 : INFO : test_create_register_and_activate_customer : Verified that remaining customers require activation.
+2024-05-02 13:48:43,475 : INFO : test_create_register_and_activate_customer : Attempting to open top customer.
+2024-05-02 13:48:43,930 : INFO : test_create_register_and_activate_customer : Attempting to approve customer.
+2024-05-02 13:48:53,945 : INFO : test_create_register_and_activate_customer : Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[.='Approve customer']"}
+  (Session info: chrome=124.0.6367.94); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001031783e8 chromedriver + 4326376
+1   chromedriver                        0x00000001031708b0 chromedriver + 4294832
+2   chromedriver                        0x0000000102d9c088 chromedriver + 278664
+3   chromedriver                        0x0000000102ddea80 chromedriver + 551552
+4   chromedriver                        0x0000000102e174f8 chromedriver + 783608
+5   chromedriver                        0x0000000102dd34e4 chromedriver + 505060
+6   chromedriver                        0x0000000102dd3f5c chromedriver + 507740
+7   chromedriver                        0x000000010313b984 chromedriver + 4077956
+8   chromedriver                        0x000000010314073c chromedriver + 4097852
+9   chromedriver                        0x0000000103122528 chromedriver + 3974440
+10  chromedriver                        0x0000000103141054 chromedriver + 4100180
+11  chromedriver                        0x0000000103113b18 chromedriver + 3914520
+12  chromedriver                        0x000000010316165c chromedriver + 4232796
+13  chromedriver                        0x00000001031617d8 chromedriver + 4233176
+14  chromedriver                        0x0000000103170524 chromedriver + 4293924
+15  libsystem_pthread.dylib             0x000000019fb1af94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000019fb15d34 thread_start + 8
+
+2024-05-02 13:48:54,751 : INFO : test_create_register_and_activate_customer : Successfully approved customer.
+2024-05-02 13:50:10,837 : INFO : test_create_register_and_activate_customer : daan.swinnen@optimile.eu
+2024-05-02 13:50:10,838 : INFO : test_create_register_and_activate_customer : Attempting login.
+2024-05-02 13:50:12,990 : INFO : test_create_register_and_activate_customer : Succesfully logged in.
+2024-05-02 13:50:12,992 : INFO : test_create_register_and_activate_customer : Navigating to cpo customers page.
+2024-05-02 13:50:13,390 : INFO : test_create_register_and_activate_customer : Attempting to create new customer.
+2024-05-02 13:50:15,670 : INFO : test_create_register_and_activate_customer : Filtering away active customers.
+2024-05-02 13:50:15,875 : INFO : test_create_register_and_activate_customer : Filtering away blocked customers.
+2024-05-02 13:50:16,082 : INFO : test_create_register_and_activate_customer : Verified that remaining customers require activation.
+2024-05-02 13:50:16,082 : INFO : test_create_register_and_activate_customer : Attempting to open top customer.
+2024-05-02 13:50:16,565 : INFO : test_create_register_and_activate_customer : Attempting to approve customer.
+2024-05-02 13:50:19,827 : INFO : test_create_register_and_activate_customer : Successfully approved customer.
+2024-05-02 14:00:06,256 : INFO : test_remove_add_charging_device_BC : daan.swinnen@optimile.eu
+2024-05-02 14:00:06,256 : INFO : test_remove_add_charging_device_BC : Attempting login.
+2024-05-02 14:00:08,234 : INFO : test_remove_add_charging_device_BC : Succesfully logged in.
+2024-05-02 14:00:08,236 : INFO : test_remove_add_charging_device_BC : Navigating to locations page.
+2024-05-02 14:00:09,426 : INFO : test_remove_add_charging_device_BC : Searching for 'Lieven De Winnestraat'.
+2024-05-02 14:00:10,484 : INFO : test_remove_add_charging_device_BC : Navigating to devices tab.
+2024-05-02 14:00:10,518 : INFO : test_remove_add_charging_device_BC : Attempting to open top device.
+2024-05-02 14:00:11,938 : INFO : test_remove_add_charging_device_BC : Saving device serial number as variable.
+2024-05-02 14:00:11,964 : INFO : test_remove_add_charging_device_BC : Attempting to delete device.
+2024-05-02 14:00:13,485 : INFO : test_remove_add_charging_device_BC : Successfully deleted device.
+2024-05-02 14:00:13,507 : INFO : test_remove_add_charging_device_BC : Attempting to register device as new.
+2024-05-02 14:16:15,116 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-05-02 14:16:15,116 : INFO : test_cpo_create_user : Attempting login.
+2024-05-02 14:16:16,995 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-05-02 14:16:16,998 : INFO : test_cpo_create_user : Navigating to cpo customers page.
+2024-05-02 14:16:17,400 : INFO : test_cpo_create_user : Searching for 'Automated Test Company Main.
+2024-05-02 14:16:17,628 : INFO : test_cpo_create_user : Attempting to open top result.
+2024-05-02 14:16:18,192 : INFO : test_cpo_create_user : Navigating to users-tab.
+2024-05-02 14:16:18,219 : INFO : test_cpo_create_user : Attempting to create new user.
+2024-05-02 14:16:25,384 : INFO : test_cpo_create_user : Successfully created new user.
+2024-05-02 14:16:30,329 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-05-02 14:16:30,329 : INFO : test_msp_create_user : Attempting login.
+2024-05-02 14:16:31,972 : INFO : test_msp_create_user : Succesfully logged in.
+2024-05-02 14:16:31,973 : INFO : test_msp_create_user : Navigating to msp customers page.
+2024-05-02 14:16:33,127 : INFO : test_msp_create_user : Searching for Automated Test Company Main.
+2024-05-02 14:16:33,982 : INFO : test_msp_create_user : Attempting to open top customer result.
+2024-05-02 14:16:36,577 : INFO : test_msp_create_user : Navigating to users tab.
+2024-05-02 14:16:36,606 : INFO : test_msp_create_user : Attempting to create new user.
+2024-05-02 14:16:42,850 : INFO : test_msp_create_user : Successfully created user.
+2024-05-02 14:16:50,835 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2024-05-02 14:16:50,835 : INFO : test_cpo_overview_screen : Attempting login.
+2024-05-02 14:16:51,272 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2024-05-02 14:16:51,272 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2024-05-02 14:17:20,852 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2024-05-02 14:17:20,852 : INFO : test_cpo_overview_screen : Attempting login.
+2024-05-02 14:17:22,628 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2024-05-02 14:17:22,629 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2024-05-02 14:17:23,842 : INFO : test_cpo_overview_screen : Verifying overview map is present.
+2024-05-02 14:17:23,893 : INFO : test_cpo_overview_screen : Succesfully verified CPO overview page.
+2024-05-02 14:17:31,026 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2024-05-02 14:17:31,026 : INFO : test_cpo_customers_screen : Attempting login.
+2024-05-02 14:17:33,032 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2024-05-02 14:17:33,033 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2024-05-02 14:17:33,434 : INFO : test_cpo_customers_screen : Succesfully verified customers page.
+2024-05-02 14:17:37,008 : INFO : test_cpo_charging_locations_screen : daan.swinnen@optimile.eu
+2024-05-02 14:17:37,008 : INFO : test_cpo_charging_locations_screen : Attempting login.
+2024-05-02 14:17:38,749 : INFO : test_cpo_charging_locations_screen : Succesfully logged in.
+2024-05-02 14:17:38,749 : INFO : test_cpo_charging_locations_screen : Navigating to charging locations page.
+2024-05-02 14:17:39,991 : INFO : test_cpo_charging_locations_screen : Succesfully verified locations page.
+2024-05-02 14:17:43,449 : INFO : test_cpo_tokens_screen : daan.swinnen@optimile.eu
+2024-05-02 14:17:43,450 : INFO : test_cpo_tokens_screen : Attempting login.
+2024-05-02 14:17:45,163 : INFO : test_cpo_tokens_screen : Succesfully logged in.
+2024-05-02 14:17:45,163 : INFO : test_cpo_tokens_screen : Navigating to tokens page.
+2024-05-02 14:17:45,512 : INFO : test_cpo_tokens_screen : Succesfully verified tokens page.
+2024-05-02 14:17:49,827 : INFO : test_cpo_simcards_screen : daan.swinnen@optimile.eu
+2024-05-02 14:17:49,827 : INFO : test_cpo_simcards_screen : Attempting login.
+2024-05-02 14:17:51,659 : INFO : test_cpo_simcards_screen : Succesfully logged in.
+2024-05-02 14:17:51,661 : INFO : test_cpo_simcards_screen : Navigating to simcards page.
+2024-05-02 14:26:52,424 : INFO : test_cpo_contracts_screen : daan.swinnen@optimile.eu
+2024-05-02 14:26:52,424 : INFO : test_cpo_contracts_screen : Attempting login.
+2024-05-02 14:26:54,310 : INFO : test_cpo_contracts_screen : Succesfully logged in.
+2024-05-02 14:26:54,310 : INFO : test_cpo_contracts_screen : Navigating to contracts page.
+2024-05-02 14:26:54,876 : INFO : test_cpo_contracts_screen : Succesfully verified contracts page.
+2024-05-02 14:26:58,440 : INFO : test_cpo_roaming_screen : daan.swinnen@optimile.eu
+2024-05-02 14:26:58,440 : INFO : test_cpo_roaming_screen : Attempting login.
+2024-05-02 14:27:00,162 : INFO : test_cpo_roaming_screen : Succesfully logged in.
+2024-05-02 14:27:00,164 : INFO : test_cpo_roaming_screen : Navigating to roaming page.
+2024-05-02 14:27:00,574 : INFO : test_cpo_roaming_screen : Succesfully verified roaming page.
+2024-05-02 14:27:04,229 : INFO : test_cpo_finance_screen : daan.swinnen@optimile.eu
+2024-05-02 14:27:04,229 : INFO : test_cpo_finance_screen : Attempting login.
+2024-05-02 14:27:06,135 : INFO : test_cpo_finance_screen : Succesfully logged in.
+2024-05-02 14:27:06,135 : INFO : test_cpo_finance_screen : Navigating to finance page.
+2024-05-02 14:27:07,653 : INFO : test_cpo_finance_screen : Succesfully verified finance page.
+2024-05-02 14:27:11,016 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2024-05-02 14:27:11,016 : INFO : test_cpo_reports_screen : Attempting login.
+2024-05-02 14:27:12,730 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2024-05-02 14:27:12,730 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2024-05-02 14:27:14,522 : INFO : test_cpo_reports_screen : Succesfully verified reports page.
+2024-05-02 14:27:18,123 : INFO : test_cpo_splitbilling_screen : daan.swinnen@optimile.eu
+2024-05-02 14:27:18,123 : INFO : test_cpo_splitbilling_screen : Attempting login.
+2024-05-02 14:27:19,704 : INFO : test_cpo_splitbilling_screen : Succesfully logged in.
+2024-05-02 14:27:19,705 : INFO : test_cpo_splitbilling_screen : Navigating to splitbilling page.
+2024-05-02 14:27:20,970 : INFO : test_cpo_splitbilling_screen : Succesfully verified split billing page.
+2024-05-02 14:27:24,898 : INFO : test_cpo_pricing_screen : daan.swinnen@optimile.eu
+2024-05-02 14:27:24,898 : INFO : test_cpo_pricing_screen : Attempting login.
+2024-05-02 14:27:26,676 : INFO : test_cpo_pricing_screen : Succesfully logged in.
+2024-05-02 14:27:26,676 : INFO : test_cpo_pricing_screen : Navigating to cpo reports page.
+2024-05-02 14:27:27,946 : INFO : test_cpo_pricing_screen : Succesfully verified reports page.
+2024-05-02 14:27:31,278 : INFO : test_cpo_overview_screen_extended : daan.swinnen@optimile.eu
+2024-05-02 14:27:31,279 : INFO : test_cpo_overview_screen_extended : Attempting login.
+2024-05-02 14:27:33,169 : INFO : test_cpo_overview_screen_extended : Succesfully logged in.
+2024-05-02 14:27:33,170 : INFO : test_cpo_overview_screen_extended : Navigating to CPO overview page.
+2024-05-02 14:27:34,185 : INFO : test_cpo_overview_screen_extended : Verifying overview map is present.
+2024-05-02 14:27:35,255 : INFO : test_cpo_overview_screen_extended : Succesfully verified CPO overview page.
+2024-05-02 14:30:58,046 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2024-05-02 14:30:58,046 : INFO : test_create_user : Attempting login.
+2024-05-02 14:30:58,566 : INFO : test_create_user : Succesfully logged in.
+2024-05-02 14:30:58,566 : INFO : test_create_user : Navigating to users page.
+2024-05-02 14:32:10,032 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2024-05-02 14:32:10,033 : INFO : test_create_user : Attempting login.
+2024-05-02 14:32:11,780 : INFO : test_create_user : Succesfully logged in.
+2024-05-02 14:32:11,781 : INFO : test_create_user : Navigating to users page.
+2024-05-02 14:32:12,924 : INFO : test_create_user : Attempting to create new user.
+2024-05-02 14:32:13,165 : INFO : test_create_user : Creating random emailadres.
+2024-05-02 14:32:13,236 : INFO : test_create_user : Attempting to save new user.
+2024-05-02 14:32:15,489 : INFO : test_create_user : Succesfully created new user.
+2024-05-02 14:32:25,047 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2024-05-02 14:32:25,047 : INFO : test_create_user_contract : Attempting login.
+2024-05-02 14:32:26,806 : INFO : test_create_user_contract : Succesfully logged in.
+2024-05-02 14:32:26,806 : INFO : test_create_user_contract : Navigating to msp customers page.
+2024-05-02 14:32:27,938 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2024-05-02 14:32:27,977 : INFO : test_create_user_contract : Open 'Automated Test Company'.
+2024-05-02 14:32:48,299 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2024-05-02 14:32:48,299 : INFO : test_create_user_contract : Attempting login.
+2024-05-02 14:32:50,022 : INFO : test_create_user_contract : Succesfully logged in.
+2024-05-02 14:32:50,022 : INFO : test_create_user_contract : Navigating to msp customers page.
+2024-05-02 14:32:51,097 : INFO : test_create_user_contract : Searching for 'Automated Test Company'.
+2024-05-02 14:32:51,203 : INFO : test_create_user_contract : Open 'Automated Test Company Main'.
+2024-05-02 14:39:01,846 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2024-05-02 14:39:01,847 : INFO : test_create_user_contract : Attempting login.
+2024-05-02 14:39:03,844 : INFO : test_create_user_contract : Succesfully logged in.
+2024-05-02 14:39:03,844 : INFO : test_create_user_contract : Navigating to msp customers page.
+2024-05-02 14:39:05,052 : INFO : test_create_user_contract : Searching for 'Automated Test Company Main'.
+2024-05-02 14:39:05,121 : INFO : test_create_user_contract : Open 'Automated Test Company Main'.
+2024-05-02 14:43:48,513 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2024-05-02 14:43:48,513 : INFO : test_create_user_contract : Attempting login.
+2024-05-02 14:43:50,354 : INFO : test_create_user_contract : Succesfully logged in.
+2024-05-02 14:43:50,354 : INFO : test_create_user_contract : Navigating to msp customers page.
+2024-05-02 14:43:51,452 : INFO : test_create_user_contract : Searching for 'Automated Test Company Main'.
+2024-05-02 14:43:52,358 : INFO : test_create_user_contract : Open 'Automated Test Company Main'.
+2024-05-02 14:43:52,904 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2024-05-02 14:43:53,130 : INFO : test_create_user_contract : Attempting to create new contract.
+2024-05-02 14:43:53,866 : INFO : test_create_user_contract : Selecting contract.
+2024-05-02 14:43:53,944 : INFO : test_create_user_contract : Selecting user.
+2024-05-02 14:44:56,201 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2024-05-02 14:44:56,201 : INFO : test_create_user_contract : Attempting login.
+2024-05-02 14:44:58,132 : INFO : test_create_user_contract : Succesfully logged in.
+2024-05-02 14:44:58,132 : INFO : test_create_user_contract : Navigating to msp customers page.
+2024-05-02 14:44:59,291 : INFO : test_create_user_contract : Searching for 'Automated Test Company Main'.
+2024-05-02 14:45:00,221 : INFO : test_create_user_contract : Open 'Automated Test Company Main'.
+2024-05-02 14:45:00,831 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2024-05-02 14:45:01,050 : INFO : test_create_user_contract : Attempting to create new contract.
+2024-05-02 14:45:01,793 : INFO : test_create_user_contract : Selecting contract.
+2024-05-02 14:45:01,849 : INFO : test_create_user_contract : Selecting user.
+2024-05-02 14:45:03,589 : INFO : test_create_user_contract : Contract has been successfully created.
+2024-05-02 14:45:18,359 : INFO : test_create_user_contract : daan.swinnen@optimile.eu
+2024-05-02 14:45:18,360 : INFO : test_create_user_contract : Attempting login.
+2024-05-02 14:45:20,241 : INFO : test_create_user_contract : Succesfully logged in.
+2024-05-02 14:45:20,241 : INFO : test_create_user_contract : Navigating to msp customers page.
+2024-05-02 14:45:21,361 : INFO : test_create_user_contract : Searching for 'Automated Test Company Main'.
+2024-05-02 14:45:22,158 : INFO : test_create_user_contract : Open 'Automated Test Company Main'.
+2024-05-02 14:45:22,728 : INFO : test_create_user_contract : Opening mail tab to gather most recent new user.
+2024-05-02 14:45:22,950 : INFO : test_create_user_contract : Attempting to create new contract.
+2024-05-02 14:45:23,655 : INFO : test_create_user_contract : Selecting contract.
+2024-05-02 14:45:23,711 : INFO : test_create_user_contract : Selecting user.
+2024-05-02 14:45:27,135 : INFO : test_create_user_contract : Contract has been successfully created.
+2024-05-02 14:48:28,753 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-05-02 14:48:28,754 : INFO : test_assign_user_token : Attempting login.
+2024-05-02 14:48:30,710 : INFO : test_assign_user_token : Succesfully logged in.
+2024-05-02 14:48:30,710 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-05-02 14:48:31,786 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-05-02 14:48:31,828 : INFO : test_assign_user_token : Opening customer.
+2024-05-02 14:48:32,432 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-05-02 14:48:36,664 : INFO : test_assign_user_token : Succesfully assigned token to user.
+2024-05-02 14:48:44,662 : INFO : test_add_token_to_whitelist : daan.swinnen+splitbilling4@optimile.eu
+2024-05-02 14:48:44,662 : INFO : test_add_token_to_whitelist : Attempting login.
+2024-05-02 14:48:45,116 : INFO : test_add_token_to_whitelist : Succesfully logged in.
+2024-05-02 14:48:45,116 : INFO : test_add_token_to_whitelist : Navigating to whitelist page.
+2024-05-02 14:49:25,343 : INFO : test_add_token_to_whitelist : daan.swinnen+autotest_user@optimile.eu
+2024-05-02 14:49:25,343 : INFO : test_add_token_to_whitelist : Attempting login.
+2024-05-02 14:49:27,146 : INFO : test_add_token_to_whitelist : Succesfully logged in.
+2024-05-02 14:49:27,148 : INFO : test_add_token_to_whitelist : Navigating to whitelist page.
+2024-05-02 14:49:27,516 : INFO : test_add_token_to_whitelist : Attempting to add tokens to whitelist.
+2024-05-02 14:49:29,090 : INFO : test_add_token_to_whitelist : Succesfully added tokens to whitelist.

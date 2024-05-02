@@ -30,4 +30,8 @@ class CpoIndividualCustomer:
         self.driver.find_element(*selector1).click()
         cpo_new_user_form = CpoNewUserForm(self.driver)
         return cpo_new_user_form
+    
+    def approve_customer_button(self):
+        selector1 = (By.XPATH, "//button[.='Approve customer']")
+        self.driver.find_element(*selector1).click()
 
