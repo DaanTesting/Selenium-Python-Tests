@@ -8,6 +8,9 @@ class AdhocWebApp:
 
     def get_adhoc_web_app(self):
         self.driver.get("https://test.optimile.eu/co/adhoc/?d=ADHOCREMOTE")
+    
+    def get_local_adhoc_web_app(self):
+        self.driver.get("http://localhost:8000/co/adhoc/?d=ADHOCREMOTE")
 
     def open_pricing(self):
         selector1 = (By.XPATH, "//small[.='Pricing']")

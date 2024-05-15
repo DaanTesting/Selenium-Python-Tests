@@ -7,6 +7,6 @@ class CpoSimCardsPage:
 
     def generate_export(self):
         selector1 = (By.XPATH, "//button[.='Export']")
-        selector2 = (By.XPATH, "//a[.='Sim cards']")
+        selector2 = (By.XPATH, "//a[.='Export all - Excel']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()

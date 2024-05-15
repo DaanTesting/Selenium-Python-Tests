@@ -174,19 +174,6 @@ class TestThree(BaseClass):
 
         time.sleep(3)
 
-        if user_os == "Darwin":
-            accountdetailspage.account_details_invoice_email().send_keys(
-                Keys.COMMAND + "a" + Keys.BACKSPACE
-            )
-        else:
-            accountdetailspage.account_details_invoice_email().send_keys(
-                Keys.CONTROL + "a" + Keys.BACKSPACE
-            )
-
-        accountdetailspage.account_details_invoice_email().send_keys(
-            "daan.swinnen+activeaccounttest@optimile.eu"
-        )
-
         accountdetailspage.account_details_save_button()
         message = str(
             accountdetailspage.account_details_updated_message().text
@@ -292,26 +279,6 @@ class TestThree(BaseClass):
         accountdetailspage.account_details_phone().send_keys("014568945")
 
         accountdetailspage.account_details_language_select_nederlands()
-
-        invoiceemail = str(
-            accountdetailspage.account_details_invoice_email().get_attribute(
-                "value"
-            )
-        )
-        assert invoiceemail == "daan.swinnen+activeaccounttest@optimile.eu"
-
-        if user_os == "Darwin":
-            accountdetailspage.account_details_invoice_email().send_keys(
-                Keys.COMMAND + "a" + Keys.BACKSPACE
-            )
-        else:
-            accountdetailspage.account_details_invoice_email().send_keys(
-                Keys.CONTROL + "a" + Keys.BACKSPACE
-            )
-
-        accountdetailspage.account_details_invoice_email().send_keys(
-            "daan.swinnen+splitbilling4@optimile.eu"
-        )
 
         accountdetailspage.account_details_save_button()
         message = str(

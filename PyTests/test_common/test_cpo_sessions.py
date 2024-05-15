@@ -2,7 +2,7 @@ import time
 
 import pytest
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.common.keys import Keys
 from pageObjects.ChargingSimulator import ChargingSimulator
 from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
@@ -88,7 +88,7 @@ class TestOne(BaseClass):
         mspcustomerpage = homepage.menu_label_msp_customers()
         log.info("Searching for 'Autotesting Roaming'.")
         mspcustomerpage.search_by_name_field().send_keys(
-            "Autotesting Roaming" + "\n"
+            "Autotesting Roaming" + Keys.ENTER
         )
         time.sleep(1)
         log.info("Opening customer.")

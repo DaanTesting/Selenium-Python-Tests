@@ -7,5 +7,7 @@ class MspVouchersPage:
         self.driver = driver
 
     def generate_export_all(self):
-        selector1 = (By.XPATH, "//button[.=' Download as xlsx']")
+        selector1 = (By.XPATH, "//button[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Export vouchers']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()

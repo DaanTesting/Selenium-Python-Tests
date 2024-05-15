@@ -11,6 +11,13 @@ class ChargingSimulator:
     def open_simulator(self):
         self.driver.get("https://test.optimile.eu/sim/")
 
+    def open_local_simulator(self):
+        self.driver.get("http://localhost:8888/")
+
+    def URL_Field(self):
+        selector1 = (By.CSS_SELECTOR, "#endpoint")
+        return self.driver.find_element(*selector1)
+
     def OCPP_ID_Field(self):
         selector1 = (By.CSS_SELECTOR, "#ocppIdentity")
         return self.driver.find_element(*selector1)

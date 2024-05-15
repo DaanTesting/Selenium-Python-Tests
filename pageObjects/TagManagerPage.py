@@ -55,6 +55,10 @@ class TagManagerPage:
     def select_all_linked_users(self):
         selector1 = (By.XPATH, "(//input[@type='checkbox'])[12]")
         self.driver.find_element(*selector1).click()
+    
+    def select_all_linked_users_local(self):
+        selector1 = (By.XPATH, "(//input[@type='checkbox'])[2]")
+        self.driver.find_element(*selector1).click()
 
     def unlink_users(self):
         selector1 = (By.XPATH, "(//button[@type='button'])[4]")

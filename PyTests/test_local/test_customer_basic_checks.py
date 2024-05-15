@@ -15,7 +15,7 @@ from utilities.BaseClass import BaseClass
 user_os = platform.system()
 
 
-@pytest.fixture(params=LoginPageData.test_fullflow_data)
+@pytest.fixture(params=LoginPageData.test_local_customer_data)
 def login_data(request):
     return request.param
 

@@ -18,27 +18,29 @@ from utilities.Settings import cache_directory
 user_os = platform.system()
 
 
-@pytest.fixture(params=LoginPageData.test_login_data)
+@pytest.fixture(params=LoginPageData.test_local_admin_data)
 def login_data(request):
     return request.param
 
 
-@pytest.fixture(params=ChargingSessionData.refresh_cp_data)
-def refresh_cp_data(request):
+@pytest.fixture(params=ChargingSessionData.refresh_local_cp_data)
+def refresh_local_cp_data(request):
     return request.param
 
 class TestOne(BaseClass):
-    def test_refresh_charging_point(self, setup, refresh_cp_data, login_data):
+    def test_refresh_charging_point(self, setup, refresh_local_cp_data, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
-        log.info(refresh_cp_data["OCPP ID"])
+        log.info(refresh_local_cp_data["OCPP ID"])
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
-        chargingsimulator.open_simulator()
+        chargingsimulator.open_local_simulator()
+        chargingsimulator.URL_Field().clear()
+        chargingsimulator.URL_Field().send_keys("ws://localhost:8080/ocppj")
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
-            refresh_cp_data["OCPP ID"]
+            refresh_local_cp_data["OCPP ID"]
         )
         chargingsimulator.mode_select_dropdown_simulator()
         chargingsimulator.connect_button()
@@ -83,34 +85,11 @@ class TestThree(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-class TestFour(BaseClass):
-    def test_set_pricing_policy(self, login_data):
-        log = self.get_logger()
-        log.info(login_data["account"])
-
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        homepage.menu_label_chargingpoints()
-        locationsmainpage = homepage.menu_label_locations()
-        locationsmainpage.find_location().send_keys("Adhoc Remote Autotests" + Keys.ENTER)
-        self.driver.find_element(By.XPATH, "//a[.='Adhoc Remote Autotests']").click()
-        individualcharginglocation = IndividualChargingLocation(self.driver)
-        individualcharginglocation.pricing_tab()
-        individualcharginglocation.edit_pricing_button()
-        individualcharginglocation.set_pricing_policy()
-        message = individualcharginglocation.generic_alert().text
-        assert "Pricing policy set." in message
-
-        generalobjects = GeneralObjects(self.driver)
-        generalobjects.sign_out_button()
-
 class TestFive(BaseClass):
     def test_adhoc_payment_page_pricing(self):
         log = self.get_logger()
         adhocwebapp = AdhocWebApp(self.driver)
-        adhocwebapp.get_adhoc_web_app()
+        adhocwebapp.get_local_adhoc_web_app()
         time.sleep(1)
         adhocwebapp.open_pricing()
         time.sleep(1)
@@ -134,6 +113,3 @@ class TestFive(BaseClass):
             
         else:
             assert "Price per hour didn't contain a number" in price_per_hour_field
-
-        
-

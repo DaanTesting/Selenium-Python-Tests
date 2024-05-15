@@ -22,8 +22,14 @@ class CpoIndividualCustomer:
         return self.driver.find_element(*selector1)
     
     def delete_button(self):
-        selector1 = (By.XPATH, "//button[.='Delete']")
+        selector1 = (By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-ellipsis-vertical")
+        selector2 = (By.XPATH, "//a[.='Delete']")
+        selector3 = (By.XPATH, "//button[.='Delete']")
+
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()
+
 
     def create_user_button(self):
         selector1 = (By.XPATH, "//a[.='Create user']")

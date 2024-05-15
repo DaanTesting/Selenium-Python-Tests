@@ -2,7 +2,7 @@ import random
 import time
 
 import pytest
-
+from selenium.webdriver.common.keys import Keys
 from pageObjects.GeneralObjects import GeneralObjects
 from pageObjects.LoginPage import LoginPage
 from PyTests.TestData.LoginPageData import LoginPageData
@@ -65,7 +65,7 @@ class TestTwo(BaseClass):
         mspcustomerpage = homepage.menu_label_msp_customers()
         log.info("Searching for 'Automated Test Company'.")
         mspcustomerpage.search_by_name_field().send_keys(
-            "Automated Test Company"
+            "Automated Test Company Main Flow" + Keys.ENTER
         )
         log.info("Open 'Automated Test Company'.")
         mspindividualcustomer = mspcustomerpage.click_on_main_flow_account()
@@ -107,7 +107,7 @@ class TestThree(BaseClass):
         mspcustomerpage = homepage.menu_label_msp_customers()
         log.info("Search for 'Automated Test Company'.")
         mspcustomerpage.search_by_name_field().send_keys(
-            "Automated Test Company"
+            "Automated Test Company Main Flow" + Keys.ENTER
         )
         log.info("Opening customer.")
         mspindividualcustomer = mspcustomerpage.click_on_main_flow_account()

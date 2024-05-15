@@ -10,7 +10,7 @@ from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 
 
-@pytest.fixture(params=LoginPageData.test_fullflow_data)
+@pytest.fixture(params=LoginPageData.test_local_customer_data)
 def login_data(request):
     return request.param
 
@@ -110,7 +110,7 @@ class TestTwo(BaseClass):
         tagmanagerpage.choose_tag_name_field().clear()
         tagmanagerpage.choose_tag_name_field().send_keys("SecondName")
         log.info("Edit tagname.")
-        tagmanagerpage.select_all_linked_users()
+        tagmanagerpage.select_all_linked_users_local()
         time.sleep(2)
         tagmanagerpage.unlink_users()
         log.info("Unlinked all users.")

@@ -52,6 +52,14 @@ class AdhocPlatformPage:
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
 
+    def filter_direct(self):
+        selector1 = (By.XPATH, "//span[.='Filter']")
+        selector2 = (By.XPATH, "(//input[@type='checkbox'])[1]")
+        selector3 = (By.XPATH, "//button[.='Apply']")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()
+
     def filter_payment_page(self):
         selector1 = (By.XPATH, "//span[.='Filter']")
         selector2 = (By.XPATH, "(//input[@type='checkbox'])[3]")

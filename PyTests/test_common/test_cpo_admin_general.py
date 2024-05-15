@@ -405,7 +405,9 @@ class TestEight(BaseClass):
         createcustomerpage.email_address_field().send_keys(
             "daan.swinnen+" + random_integer + "@optimile.eu"
         )
-        createcustomerpage.phone_field().send_keys("+32474531188")
+
+        random_digits = ''.join([str(random.randint(0, 9)) for _ in range(6)])
+        createcustomerpage.phone_field().send_keys("+32474" + random_digits)
         createcustomerpage.address_field().send_keys("Autotest straat 123")
         createcustomerpage.postcode_field().send_keys("9000")
         createcustomerpage.town_field().send_keys("Gent")
@@ -418,7 +420,7 @@ class TestEight(BaseClass):
 
         cpoindividualcustomer.delete_button()
         message = cpoindividualcustomer.message_banner().text
-        assert "Customer deleted:" in message
+        assert "Customer successfully deleted." in message
         log.info("New customer successfully deleted.")
 
         generalobjects = GeneralObjects(self.driver)

@@ -134,6 +134,3 @@ class TestFive(BaseClass):
             
         else:
             assert "Price per hour didn't contain a number" in price_per_hour_field
-
-        
-

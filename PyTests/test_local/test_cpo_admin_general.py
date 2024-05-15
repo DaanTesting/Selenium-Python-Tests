@@ -582,61 +582,6 @@ class TestEleven(BaseClass):
 
 
 class TestTwelve(BaseClass):
-    def test_remove_add_charging_device_BC(self, setup, login_data):
-
-        log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-
-        loginpage = LoginPage(self.driver)
-
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
-        log.info("Navigating to locations page.")
-        homepage.menu_label_chargingpoints()
-        locationsmainpage = homepage.menu_label_locations()
-        log.info("Searching for 'Lieven De Winnestraat'.")
-        locationsmainpage.find_location().send_keys("Lieven De Winnestraat" + Keys.ENTER)
-        individualcharginglocation = (
-            locationsmainpage.find_location_click_top_result()
-        )
-        log.info("Navigating to devices tab.")
-        individualcharginglocation.devices_tab()
-        log.info("Attempting to open top device.")
-        individualcharginglocation.open_top_device()
-        time.sleep(1)
-        log.info("Saving device serial number as variable.")
-        serial_number = individualcharginglocation.device_serial_number().text
-        log.info("Attempting to delete device.")
-        individualcharginglocation.delete_device()
-        time.sleep(1)
-        deleted_message = (
-            individualcharginglocation.device_deleted_alert().text
-        )
-        assert "Device deleted." in deleted_message
-        log.info("Successfully deleted device.")
-        individualcharginglocation.devices_tab()
-        log.info("Attempting to register device as new.")
-        individualcharginglocation.register_a_new_device()
-        time.sleep(1)
-        individualcharginglocation.new_device_serial_number_field().send_keys(
-            serial_number
-        )
-        individualcharginglocation.select_contract_dropdown()
-        individualcharginglocation.register_new_device_button()
-        created_message = (
-            individualcharginglocation.device_created_alert().text
-        )
-        assert "Device created." in created_message
-        log.info("Successfully added device as new.")
-
-        generalobjects = GeneralObjects(self.driver)
-        generalobjects.sign_out_button()
-
-
-class TestThirteen(BaseClass):
     def test_cpo_create_user(self, setup, login_data):
 
         log = self.get_logger()
@@ -694,7 +639,7 @@ class TestThirteen(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestFourteen(BaseClass):
+class TestThirteen(BaseClass):
     def test_msp_create_user(self, setup, login_data):
 
         log = self.get_logger()

@@ -9,7 +9,7 @@ class LoginPageData:
     test_login_data = [
         {
             "account": "daan.swinnen@optimile.eu",
-            "password": "lhiM6Alk8jW4Nh2skJMV_",
+            "password": "lhiM6Alk8jW4Nh2skJMV?",
             "URL": "https://test.optimile.eu/",
         }
     ]
@@ -19,6 +19,22 @@ class LoginPageData:
             "account": "daan.swinnen@optimile.eu",
             "password": "test",
             "URL": "http://localhost:8000/",
+        }
+    ]
+
+    test_local_customer_data = [
+        {
+            "account": "daan.swinnen+autotest_user@optimile.eu",
+            "password": "test",
+            "URL": "http://localhost:8000/"
+        }
+    ]
+
+    test_local_customer_adhoc_data = [
+        {
+            "account": "klaas.vaak@example.test",
+            "password": "test",
+            "URL": "http://localhost:8000/"
         }
     ]
 
