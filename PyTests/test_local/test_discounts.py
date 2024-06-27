@@ -10,7 +10,7 @@ from utilities.BaseClass import BaseClass
 from utilities.Settings import cache_directory
 
 
-@pytest.fixture(params=LoginPageData.test_fullflow_data)
+@pytest.fixture(params=LoginPageData.test_local_customer_data)
 def login_data(request):
     return request.param
 
@@ -30,11 +30,17 @@ class TestOne(BaseClass):
         discountlistoverview = homepage.menu_label_discount_lists()
         log.info("Attempting to create a new discount list.")
         creatediscountlist = discountlistoverview.new_list_button()
-        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        creatediscountlist.name_field().send_keys(timestamp)
+        creatediscountlist.name_field().send_keys("Automatic Test Discount")
         creatediscountlist.discount_percentage_field().send_keys("75")
         creatediscountlist.selection_charging_points_button()
         creatediscountlist.create_button()
+
+        creatediscountlist = discountlistoverview.new_list_button()
+        creatediscountlist.name_field().send_keys("second_discount")
+        creatediscountlist.discount_percentage_field().send_keys("75")
+        creatediscountlist.selection_charging_points_button()
+        creatediscountlist.create_button()
+
         alerttext = self.driver.find_element(
             By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible"
         ).text
@@ -177,7 +183,7 @@ class TestFive(BaseClass):
         download_directory = cache_directory
         today = datetime.datetime.now()
         timestamp = today.strftime('%Y-%m-%d')
-        downloaded_file_name = "tokens_assigned_to_2023-10-19_10_50_14-" + timestamp + ".csv"
+        downloaded_file_name = "tokens_assigned_to_first_discount-" + timestamp + ".csv"
         downloaded_file_path = os.path.join(
             download_directory, downloaded_file_name
         )

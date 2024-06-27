@@ -31,6 +31,7 @@ from pageObjects.UserInvitesPage import UserInvitesPage
 from pageObjects.CpoOverviewPage import CpoOverviewPage
 from pageObjects.MspDashboard import MspDashboard
 from pageObjects.AdhocPlatformPage import AdhocPlatformPage
+from pageObjects.CreditPage import CreditPage
 
 class HomePage:
     def __init__(self, driver):
@@ -257,6 +258,8 @@ class HomePage:
             "(//span[.='Credit'])[1]",
         )
         self.driver.find_element(*selector1).click()
+        creditpage = CreditPage(self.driver)
+        return creditpage
 
     def menu_label_revenue(self):
         selector1 = (

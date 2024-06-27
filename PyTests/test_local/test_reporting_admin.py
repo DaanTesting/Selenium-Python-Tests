@@ -126,39 +126,7 @@ class TestThree(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-
 class TestFour(BaseClass):
-    def test_cpo_simcards_export(self, setup, login_data):
-        log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
-        log.info("Navigating to simcards page.")
-        homepage.menu_label_chargingpoints()
-        cposimcardspage = homepage.menu_label_cpo_simcards()
-        log.info("Attempting to generate simcards export.")
-        cposimcardspage.generate_export()
-
-        today = datetime.date.today()
-        formatted_date = today.strftime("%Y-%m-%d")
-        download_directory = cache_directory
-        downloaded_file_name = f"simcards-{formatted_date}.xlsx"
-        downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
-
-        time.sleep(3)
-        os.path.exists(downloaded_file_path)
-        os.remove(downloaded_file_path)
-        log.info("Successfully verified simcards export has been downloaded.")
-
-        generalobjects = GeneralObjects(self.driver)
-        generalobjects.sign_out_button()
-
-
-class TestFive(BaseClass):
     def test_cpo_roaming_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -175,7 +143,7 @@ class TestFive(BaseClass):
         cporoamingpage.export_prices()
 
         download_directory = cache_directory
-        downloaded_file_name = f"26-Spark BV.xlsx"
+        downloaded_file_name = f"1-Service Platform 0.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
         time.sleep(3)
@@ -187,7 +155,7 @@ class TestFive(BaseClass):
         cporoamingpage.export_cdr()
 
         download_directory = cache_directory
-        downloaded_file_name = f"Optimile Test Brand-cp_test-2023-01-01-2024-01-01.xlsx"
+        downloaded_file_name = f"Optimile Test-cp_test-2023-01-01-2024-01-01.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
         time.sleep(3)
         os.path.exists(downloaded_file_path)
@@ -199,7 +167,7 @@ class TestFive(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestSix(BaseClass):
+class TestFive(BaseClass):
     def test_cpo_reports_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -242,7 +210,7 @@ class TestSix(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestSeven(BaseClass):
+class TestSix(BaseClass):
     def test_cpo_splitbilling_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -273,7 +241,7 @@ class TestSeven(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestEight(BaseClass):
+class TestSeven(BaseClass):
     def test_msp_customers_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -319,7 +287,7 @@ class TestEight(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestNine(BaseClass):
+class TestEight(BaseClass):
     def test_msp_tokens_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -358,7 +326,7 @@ class TestNine(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestTen(BaseClass):
+class TestNine(BaseClass):
     def test_msp_vouchers_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -389,8 +357,8 @@ class TestTen(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestEleven(BaseClass):
-    def test_msp_vouchers_export(self, setup, login_data):
+class TestTen(BaseClass):
+    def test_msp_operators_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
         log.info("Attempting login.")
@@ -423,7 +391,7 @@ class TestEleven(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestTwelve(BaseClass):
+class TestEleven(BaseClass):
     def test_cpo_issues_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -456,7 +424,7 @@ class TestTwelve(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-class TestThirteen(BaseClass):
+class TestTwelve(BaseClass):
     def test_cpo_adhoc_export(self, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

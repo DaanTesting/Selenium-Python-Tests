@@ -27,7 +27,7 @@ class CpoCustomerPage:
         return cpoindividualcustomer
 
     def click_on_top_result_carrefour(self):
-        selector1 = (By.CSS_SELECTOR, "a[href='/co/admin/customers/3/']")
+        selector1 = (By.XPATH, "//tr[1]/td[2]")
         self.driver.find_element(*selector1).click()
         cpoindividualcustomer = CpoIndividualCustomer(self.driver)
         return cpoindividualcustomer

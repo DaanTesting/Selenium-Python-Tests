@@ -6,11 +6,11 @@ class CpoIndividualCustomer:
         self.driver = driver
 
     def sessions_tab(self):
-        selector1 = (By.XPATH, "(//span[normalize-space()='Sessions'])")
+        selector1 = (By.XPATH, "//a[contains(.,'Sessions')]")
         self.driver.find_element(*selector1).click()
 
     def users_tab(self):
-        selector1 = (By.XPATH, "//span[contains(.,'Users')]")
+        selector1 = (By.XPATH, "//a[contains(.,'Users')]")
         self.driver.find_element(*selector1).click()
     
     def top_session_value(self):
@@ -32,7 +32,7 @@ class CpoIndividualCustomer:
 
 
     def create_user_button(self):
-        selector1 = (By.XPATH, "//a[.='Create user']")
+        selector1 = (By.XPATH, "//small[.='Create user']")
         self.driver.find_element(*selector1).click()
         cpo_new_user_form = CpoNewUserForm(self.driver)
         return cpo_new_user_form

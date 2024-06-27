@@ -187,7 +187,7 @@ class TestTwo(BaseClass):
         cpoindividualcustomer.sessions_tab()
         time.sleep(2)
         statuslatestsession = self.driver.find_element(
-            By.XPATH, "//tr[1]/td[10]/span"
+            By.XPATH, "//tr[1]/td[10]/div/span"
         ).text
         assert statuslatestsession == "Whitelist"
 
@@ -282,7 +282,7 @@ class TestThree(BaseClass):
         cpoindividualcustomer.sessions_tab()
         time.sleep(2)
         statuslatestsession = self.driver.find_element(
-            By.XPATH, "//tr[1]/td[10]/span"
+            By.XPATH, "//tr[1]/td[10]/div/span"
         ).get_attribute("title")
         assert (
             statuslatestsession

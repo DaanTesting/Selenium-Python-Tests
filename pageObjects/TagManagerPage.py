@@ -6,7 +6,7 @@ class TagManagerPage:
         self.driver = driver
 
     def create_tag_button(self):
-        selector1 = (By.XPATH, "//a[text()='Create tag']")
+        selector1 = (By.XPATH, "//a[.='Create tag']")
         self.driver.find_element(*selector1).click()
 
     def choose_tag_name_field(self):

@@ -8,23 +8,24 @@ class CpoRoamingPage:
         self.driver = driver
 
     def export_prices(self):
-        selector1 = (
-            By.XPATH,
-            "(//a[@class='btn btn-default btn-xs'][normalize-space()='Export prices'])[22]",
-        )
+        selector1 = (By.XPATH, "(//i[1])[27]")
+        selector2 = (By.XPATH,"(//li[contains(.,'Export prices')])[1]")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
 
     def export_cdr(self):
-        selector1 = (By.XPATH, "//a[@href='/co/admin/roaming/1/cdrs/']")
-        selector2 = (By.XPATH, "//input[@id='id_date_from']")
-        selector3 = (By.XPATH, "//input[@id='id_date_until']")
-        selector4 = (By.XPATH, "//button[.='Export']")
+        selector1 = (By.XPATH, "(//i[1])[27]")
+        selector2 = (By.XPATH, '(//li[contains(.,"Export CDR")])[1]')
+        selector3 = (By.XPATH, "//input[@id='id_date_from']")
+        selector4 = (By.XPATH, "//input[@id='id_date_until']")
+        selector5 = (By.XPATH, "//button[.='Export']")
         self.driver.find_element(*selector1).click()
-        time.sleep(1)
-        self.driver.find_element(*selector2).clear()
         self.driver.find_element(*selector2).click()
-        self.driver.find_element(*selector2).send_keys("2023-01-01" + Keys.ENTER)
+        time.sleep(1)
         self.driver.find_element(*selector3).clear()
         self.driver.find_element(*selector3).click()
-        self.driver.find_element(*selector3).send_keys("2024-01-01" + Keys.ENTER)
+        self.driver.find_element(*selector3).send_keys("2023-01-01" + Keys.ENTER)
+        self.driver.find_element(*selector4).clear()
         self.driver.find_element(*selector4).click()
+        self.driver.find_element(*selector4).send_keys("2024-01-01" + Keys.ENTER)
+        self.driver.find_element(*selector5).click()

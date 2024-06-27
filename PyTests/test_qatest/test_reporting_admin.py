@@ -141,33 +141,6 @@ class TestFour(BaseClass):
 
 
 class TestFive(BaseClass):
-    def test_cpo_roaming_export(self, setup, login_data):
-        log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
-        cporoamingpage = homepage.menu_label_cpo_roaming()
-        cporoamingpage.export_prices()
-
-        download_directory = cache_directory
-        downloaded_file_name = f"1-sp_test.xlsx"
-        downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
-
-        time.sleep(3)
-        os.path.exists(downloaded_file_path)
-        os.remove(downloaded_file_path)
-
-        cporoamingpage.export_cdr()
-
-        generalobjects = GeneralObjects(self.driver)
-        generalobjects.sign_out_button()
-
-
-class TestSix(BaseClass):
     def test_cpo_reports_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

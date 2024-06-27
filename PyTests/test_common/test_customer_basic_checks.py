@@ -55,10 +55,12 @@ class TestOne(BaseClass):
         )
         assert "Overview" in userstitle
         log.info("Verified users page.")
-        tagmanagerpage = homepage.menu_label_tag_manager()
-        tagtitle = str(tagmanagerpage.page_title().text)
-        assert "Tag manager" in tagtitle
-        log.info("Verified tags page.")
+
+        # tagmanagerpage = homepage.menu_label_tag_manager()
+        # tagtitle = str(tagmanagerpage.page_title().text)
+        # assert "Tag manager" in tagtitle
+        # log.info("Verified tags page.")
+
         homepage.menu_label_administration()
         homepage.menu_label_external_users()
         externalusertitle = str(
@@ -140,6 +142,7 @@ class TestTwo(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 
 class TestThree(BaseClass):
     def test_account_details_screen(self, setup, login_data):

@@ -91,7 +91,7 @@ class MspIndividualCustomer:
         self.driver.find_element(*selector1).click()
 
     def create_user_button(self):
-        selector1 = (By.XPATH, "//a[.='Create user']")
+        selector1 = (By.XPATH, "//button[.='Create user']")
         self.driver.find_element(*selector1).click()
         msp_new_user_form = MspNewUserForm(self.driver)
         return msp_new_user_form

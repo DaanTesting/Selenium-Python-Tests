@@ -35,7 +35,9 @@ class TestOne(BaseClass):
         log.info("Navigating to split billing page.")
         homepage.menu_label_chargingpoints()
         adhocplatformpage = homepage.menu_label_adhoc()
-        adhocplatformpage.search_bar().send_keys("BCDEVICE_GENT_4" + Keys.ENTER)
+        adhocplatformpage.search_bar().send_keys(
+            "BCDEVICE_GENT_4" + Keys.ENTER
+        )
         time.sleep(1)
 
         results = self.driver.find_elements(By.XPATH, "//tbody/tr/td[1]/a")
@@ -86,6 +88,7 @@ class TestTwo(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
+
 class TestThree(BaseClass):
     def test_web_settings(self, login_data):
         log = self.get_logger()
@@ -120,6 +123,7 @@ class TestThree(BaseClass):
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
+
 
 class TestFour(BaseClass):
     def test_adhoc_page_filters(self, setup, login_data):

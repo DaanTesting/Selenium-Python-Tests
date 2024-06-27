@@ -175,7 +175,7 @@ class TestFive(BaseClass):
         cporoamingpage.export_prices()
 
         download_directory = cache_directory
-        downloaded_file_name = f"26-Spark BV.xlsx"
+        downloaded_file_name = f"17-Arval Test.xlsx"
         downloaded_file_path = os.path.join(download_directory, downloaded_file_name)
 
         time.sleep(3)
@@ -390,7 +390,7 @@ class TestTen(BaseClass):
 
 
 class TestEleven(BaseClass):
-    def test_msp_vouchers_export(self, setup, login_data):
+    def test_msp_operators_export(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
         log.info("Attempting login.")

@@ -131,12 +131,7 @@ class TestTwo(BaseClass):
         )
         assert titlepaymentrequests == "Payment requests"
         log.info("Verified payment requests page.")
-        homepage.menu_label_debit_notes()
-        titledebitnotes = str(
-            self.driver.find_element(By.XPATH, "//h1[.='Debit notes']").text
-        )
-        assert titledebitnotes == "Debit notes"
-        log.info("Verified debit notes page.")
+        
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()

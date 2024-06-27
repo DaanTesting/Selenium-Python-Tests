@@ -17,13 +17,13 @@ class MspCustomerPage:
         return self.driver.find_element(*selector1)
 
     def click_on_top_result_customer(self):
-        selector1 = (By.XPATH, "(//tr[1]/td[2]/a)")
+        selector1 = (By.XPATH, "//tr[1]/td[2]")
         self.driver.find_element(*selector1).click()
         mspindividualcustomer = MspIndividualCustomer(self.driver)
         return mspindividualcustomer
 
     def click_on_main_flow_account(self):
-        selector1 = (By.XPATH, "//tr[1]/td[2]/a")
+        selector1 = (By.XPATH, "//tr/td/div/a")
         self.driver.find_element(*selector1).click()
         mspindividualcustomer = MspIndividualCustomer(self.driver)
         return mspindividualcustomer

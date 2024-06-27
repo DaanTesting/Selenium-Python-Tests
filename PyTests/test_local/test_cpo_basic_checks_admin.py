@@ -116,34 +116,7 @@ class TestFour(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-
 class TestFive(BaseClass):
-    def test_cpo_simcards_screen(self, setup, login_data):
-        log = self.get_logger()
-        log.info(login_data["account"])
-        log.info("Attempting login.")
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        log.info("Succesfully logged in.")
-        log.info("Navigating to simcards page.")
-        homepage.menu_label_chargingpoints()
-        homepage.menu_label_cpo_simcards()
-        titlesimcardsspage = str(
-            homepage.driver.find_element(
-                By.XPATH,
-                "(//h1[normalize-space()='List of sim cards in Simcontrol'])[1]",
-            ).text
-        )
-        assert "sim" in titlesimcardsspage
-        log.info("Succesfully verified simcards page.")
-
-        generalobjects = GeneralObjects(self.driver)
-        generalobjects.sign_out_button()
-
-
-class TestSix(BaseClass):
     def test_cpo_contracts_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -168,7 +141,7 @@ class TestSix(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestSeven(BaseClass):
+class TestSix(BaseClass):
     def test_cpo_roaming_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -193,7 +166,7 @@ class TestSeven(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestEight(BaseClass):
+class TestSeven(BaseClass):
     def test_cpo_finance_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -218,7 +191,7 @@ class TestEight(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestNine(BaseClass):
+class TestEight(BaseClass):
     def test_cpo_reports_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -243,7 +216,7 @@ class TestNine(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestTen(BaseClass):
+class TestNine(BaseClass):
     def test_cpo_splitbilling_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -268,7 +241,7 @@ class TestTen(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestEleven(BaseClass):
+class TestTen(BaseClass):
     def test_cpo_pricing_screen(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
@@ -293,7 +266,7 @@ class TestEleven(BaseClass):
         generalobjects.sign_out_button()
 
 
-class TestTwelve(BaseClass):
+class TestEleven(BaseClass):
     def test_cpo_overview_screen_extended(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

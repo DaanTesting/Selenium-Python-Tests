@@ -19,7 +19,7 @@ class LocationsMainPage:
         return self.driver.find_element(*selector1)
 
     def find_location_click_top_result(self):
-        selector1 = (By.XPATH, "(//tr/td[3]/a[1])[1]")
+        selector1 = (By.XPATH, "(//tr[1]/td[3]/div/a[1])")
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation
@@ -37,10 +37,8 @@ class LocationsMainPage:
         self.driver.find_element(*selector2).click()
 
     def create_location_button(self):
-        selector1 = (By.XPATH, "//button[.='Actions']")
-        selector2 = (By.XPATH, "//a[.='Create location']")
+        selector1 = (By.XPATH, "//button[.='Create location']")
         self.driver.find_element(*selector1).click()
-        self.driver.find_element(*selector2).click()
     
     def create_location_select_customer(self):
         selector1 = (By.XPATH, "(//span[@role='combobox'])[1]")

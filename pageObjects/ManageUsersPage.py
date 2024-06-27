@@ -6,7 +6,7 @@ class ManageUsersPage:
         self.driver = driver
 
     def create_user_button(self):
-        selector1 = (By.XPATH, "//a[text()='Create user']")
+        selector1 = (By.XPATH, "//a[.='Create user']")
         self.driver.find_element(*selector1).click()
 
     def create_user_email_field(self):

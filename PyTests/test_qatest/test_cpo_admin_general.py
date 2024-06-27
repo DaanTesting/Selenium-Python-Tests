@@ -257,7 +257,7 @@ class TestSeven(BaseClass):
 
         cpoindividualcustomer.delete_button()
         message = cpoindividualcustomer.message_banner().text
-        assert "Customer deleted:" in message
+        assert "Customer successfully deleted." in message
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()

@@ -49,9 +49,10 @@ class TestOne(BaseClass):
         homepage.menu_label_mobility()
         homepage.menu_label_msp_tokens()
         titlemsptokenspage = self.driver.find_element(
-            By.XPATH, "(//h1[normalize-space()='Tokens in use'])[1]"
+            By.XPATH, "//h1[contains(.,'Tokens')]"
         ).text
-        assert titlemsptokenspage == "Tokens in use"
+        assert titlemsptokenspage == "Tokens"
+
         log.info("Succesfully verified tokens page.")
 
         generalobjects = GeneralObjects(self.driver)

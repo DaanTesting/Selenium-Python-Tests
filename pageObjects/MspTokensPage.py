@@ -7,13 +7,15 @@ class MspTokensPage:
         self.driver = driver
 
     def export_in_use_tokens(self):
-        selector1 = (By.XPATH, "//a[contains(.,'In use')]")
-        selector2 = (By.XPATH, "//button[.=' Download tokens']")
+        selector1 = (By.XPATH, "//button[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Excel']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
     def export_available_tokens(self):
         selector1 = (By.XPATH, "//a[contains(.,'Available')]")
-        selector2 = (By.XPATH, "//button[.=' Download tokens']")
+        selector2 = (By.XPATH, "//button[.='Export']")
+        selector3 = (By.XPATH, "//a[.='Excel']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()

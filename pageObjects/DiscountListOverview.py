@@ -23,7 +23,7 @@ class DiscountListOverview:
     
     def edit_second_list(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[2]")
-        selector2 = (By.XPATH, "(//a[.=' Edit'])[2]")
+        selector2 = (By.XPATH, "(//a[.='Edit'])[2]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         creatediscountlist = CreateDiscountList(self.driver)
@@ -31,23 +31,23 @@ class DiscountListOverview:
     
     def disable_top_list(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
-        selector2 = (By.XPATH, "(//button[.='Disable'])[1]")
-        selector3 = (By.XPATH, "//button[.='Yes']")
+        selector2 = (By.XPATH, "(//span[.='Disable'])[1]")
+        selector3 = (By.XPATH, "(//button[.='Yes'])[2]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
 
     def enable_top_list(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
-        selector2 = (By.XPATH, "(//button[.='Enable'])[1]")
-        selector3 = (By.XPATH, "//button[.='Yes']")
+        selector2 = (By.XPATH, "(//li[.='Enable'])[1]")
+        selector3 = (By.XPATH, "(//button[.='Yes'])[3]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
 
     def open_top_list(self):
         selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
-        selector2 = (By.XPATH, "(//a[.=' Show'])[1]")
+        selector2 = (By.XPATH, "(//a[.='Show'])[1]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         opendiscountlist = OpenDiscountList(self.driver)

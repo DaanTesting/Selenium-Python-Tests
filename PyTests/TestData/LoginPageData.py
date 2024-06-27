@@ -16,7 +16,7 @@ class LoginPageData:
 
     test_local_admin_data = [
         {
-            "account": "daan.swinnen@optimile.eu",
+            "account": "admin@example.test",
             "password": "test",
             "URL": "http://localhost:8000/",
         }
