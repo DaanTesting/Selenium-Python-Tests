@@ -400,7 +400,7 @@ class TestEleven(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to msp operators page.")
-        homepage.menu_label_mobility()
+
         mspoperatorspage = homepage.menu_label_msp_operators()
         log.info("Attempting to export service records.")
         mspoperatorspage.export_service_records_button()

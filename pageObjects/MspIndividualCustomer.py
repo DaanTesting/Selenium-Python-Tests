@@ -16,8 +16,12 @@ class MspIndividualCustomer:
         selector1 = (By.XPATH, "//a[contains(.,'Users')]")
         self.driver.find_element(*selector1).click()
 
+    def users_searchbar(self):
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Name, email or contract']")
+        return self.driver.find_element(*selector1)
+
     def contracts_tab(self):
-        selector1 = (By.XPATH, "(//span[contains(text(),'Contracts')])[3]")
+        selector1 = (By.XPATH, "//li/a[contains(.,'Contracts')]")
         self.driver.find_element(*selector1).click()
 
     def create_contract_button(self):
@@ -30,10 +34,20 @@ class MspIndividualCustomer:
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
+    def create_contract_select_formula_prepaid_tokenoptional(self):
+        selector1 = (By.XPATH, "(//button[@title='---------'])[1]")
+        selector2 = (By.XPATH, "//span[.='Prepaid. Token optional.']")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+
     def create_contract_select_user(self):
         selector1 = (By.CSS_SELECTOR, "#id_user")
         selectuserdropdown = Select(self.driver.find_element(*selector1))
         return selectuserdropdown
+    
+    def create_contract_select_user_field(self):
+        selector1 = (By.XPATH, "(//button[@title='---------'])")
+        return self.driver.find_element(*selector1)
 
     def create_contract_create_button(self):
         selector1 = (By.XPATH, "//button[@name='create']")
@@ -48,8 +62,10 @@ class MspIndividualCustomer:
         self.driver.find_element(*selector1).click()
 
     def add_first_token(self):
-        selector1 = (By.XPATH, "(//a[normalize-space()='Add token'])[1]")
+        selector1 = (By.XPATH, "//li/a[contains(.,'Tokens')]")
+        selector2 = (By.XPATH, "(//tr/td/a[contains(.,'Add token')])[1]")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
 
     def assign_token(self):
         selector1 = (By.XPATH, "//button[.='Assign token']")
@@ -63,8 +79,8 @@ class MspIndividualCustomer:
         selector1 = (By.XPATH, "//a[@href='#mail']")
         self.driver.find_element(*selector1).click()
 
-    def select_top_emailadress(self):
-        selector1 = (By.XPATH, "//tr[3]/td[2]")
+    def top_emailadress(self):
+        selector1 = (By.XPATH, "//tr[1]/td[2]")
         return self.driver.find_element(*selector1)
     
     def top_session_value(self):
@@ -95,3 +111,9 @@ class MspIndividualCustomer:
         self.driver.find_element(*selector1).click()
         msp_new_user_form = MspNewUserForm(self.driver)
         return msp_new_user_form
+    
+    def request_charging_card_checkbox(self):
+        selector1 = (By.CSS_SELECTOR, "label[for='id_user']")
+        selector2 = (By.CSS_SELECTOR, "#id_include_token")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()

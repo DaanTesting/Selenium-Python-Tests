@@ -8,7 +8,7 @@ class GeneralObjects:
         self.driver = driver
 
     def sign_out_button(self):
-        selector1 = (By.CSS_SELECTOR, "a[title='Sign out']")
+        selector1 = (By.CSS_SELECTOR, "button[title='Sign out']")
         self.driver.find_element(*selector1).click()
 
     def open_new_tab(self):

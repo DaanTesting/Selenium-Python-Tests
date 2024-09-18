@@ -16,12 +16,12 @@ class CpoCustomerPage:
     def search_by_name_field(self):
         selector1 = (
             By.CSS_SELECTOR,
-            "input[placeholder='Name, email, phone, or internal code']",
+            "input[placeholder='Search by name, email, phone, or internal code']",
         )
         return self.driver.find_element(*selector1)
 
     def click_on_top_result_customer(self):
-        selector1 = (By.XPATH, "(//tr/td/a)[1]")
+        selector1 = (By.XPATH, "(//tr[1]/td[2]/div)")
         self.driver.find_element(*selector1).click()
         cpoindividualcustomer = CpoIndividualCustomer(self.driver)
         return cpoindividualcustomer
@@ -33,18 +33,22 @@ class CpoCustomerPage:
         return cpoindividualcustomer
 
     def generate_all_customer_report(self):
-        selector2 = (By.XPATH, "//button[.=' Download as xlsx']")
+        selector1 = (By.XPATH, "//button[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Excel']")
+        self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
     
     def create_customer_button(self):
-        selector1 = (By.XPATH, "//a[.='Create customer']")
+        selector1 = (By.XPATH, "//button[.='Create customer']")
         self.driver.find_element(*selector1).click()
         createcustomerpage = CreateCustomerPage(self.driver)
         return createcustomerpage
     
     def pending_contracts_button(self):
-        selector1 = (By.XPATH, "//a[.='» Pending contracts']")
+        selector1 = (By.XPATH, "//button[.='Actions']")
+        selector2 = (By.XPATH, "//a[.='Pending contracts']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
 
     def activate_top_pending_contract(self):
         selector1 = (By.XPATH, "(//button[.='Activate'])[1]")
@@ -55,12 +59,20 @@ class CpoCustomerPage:
         return self.driver.find_element(*selector1)
     
     def active_customers_filter(self):
-        selector1 = (By.XPATH, "//a[contains(.,'Active customers')]")
+        selector1 = (By.XPATH, "//span[.='Filter']")
+        selector2 = (By.XPATH, "(//input[@type='checkbox'])[1]")
+        selector3 = (By.XPATH, "//button[.='Apply']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()
 
     def new_customer_filter(self):
-        selector1 = (By.XPATH, "//a[contains(.,'New customers')]")
+        selector1 = (By.XPATH, "//span[.='Filter']")
+        selector2 = (By.XPATH, "(//input[@type='checkbox'])[3]")
+        selector3 = (By.XPATH, "//button[.='Apply']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()
 
     def pending_customer_filter(self):
         selector1 = (By.XPATH, "//a[contains(.,'Pending customers')]")

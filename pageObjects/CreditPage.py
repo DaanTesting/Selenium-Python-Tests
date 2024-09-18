@@ -14,7 +14,7 @@ class CreditPage:
         return self.driver.find_element(*selector1)
     
     def select_existing_mandate(self):
-        selector1 = (By.XPATH, "(//button[@class='btn btn-default'])[1]")
+        selector1 = (By.XPATH, "(//button/div/span)[2]")
         self.driver.find_element(*selector1).click()
     
     def continue_button(self):

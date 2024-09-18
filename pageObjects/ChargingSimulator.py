@@ -8,7 +8,7 @@ class ChargingSimulator:
     def __init__(self, driver):
         self.driver = driver
 
-    def open_simulator(self):
+    def open_simulator_test(self):
         self.driver.get("https://test.optimile.eu/sim/")
 
     def open_local_simulator(self):

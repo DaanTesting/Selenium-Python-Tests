@@ -7,7 +7,7 @@ class UserDetailPageTest:
         self.driver = driver
 
     def user_detail_open_top_user(self):
-        selector1 = (By.XPATH, "(//*[name()='svg'])[2]")
+        selector1 = (By.XPATH, "(//button[@data-testid='dropdown-show-options'])[3]")
         selector2 = (By.XPATH, "//a[.='View']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()

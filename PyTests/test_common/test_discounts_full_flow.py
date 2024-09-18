@@ -91,7 +91,7 @@ class TestThree(BaseClass):
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
         log.info("Attempting to execute discounted charging session.")
-        chargingsimulator.open_simulator()
+        chargingsimulator.open_simulator_test()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
             discount_session_data["OCPP ID"]
@@ -207,7 +207,7 @@ class TestSix(BaseClass):
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
         log.info("Simulating full price charging session.(Token removed from discount.)")
-        chargingsimulator.open_simulator()
+        chargingsimulator.open_simulator_test()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
             discount_session_data["OCPP ID"]
@@ -320,7 +320,7 @@ class TestNine(BaseClass):
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
         log.info("Simulating a full price charging session.(Discount disabled.)")
-        chargingsimulator.open_simulator()
+        chargingsimulator.open_simulator_test()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
             discount_session_data["OCPP ID"]

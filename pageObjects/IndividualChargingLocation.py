@@ -79,7 +79,7 @@ class IndividualChargingLocation:
         self.driver.find_element(*selector1).click()
 
     def register_a_new_device(self):
-        selector1 = (By.XPATH, "//a[.='Register a new device']")
+        selector1 = (By.XPATH, "//small[.='Register a new device']")
         self.driver.find_element(*selector1).click()
 
     def OCPP_ID_field(self):
@@ -109,14 +109,18 @@ class IndividualChargingLocation:
         return self.driver.find_element(*selector1)
     
     def open_top_device(self):
-        selector1 = (By.XPATH, "(//td[1]/a[1])[1]")
+        selector1 = (By.XPATH, "//tr/td[2]/div/a")
         self.driver.find_element(*selector1).click()
 
     def delete_device(self):
         selector1 = (By.XPATH, "//a[@class='btn btn-warning']")
-        selector2 = (By.XPATH, "//button[@name='delete']")
+        selector2 = (By.XPATH, "//a[@name='close']")
+        selector3 = (By.CSS_SELECTOR, "#no-refund")
+        selector4 = (By.CSS_SELECTOR, "#cancel-button")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()
+        self.driver.find_element(*selector4).click()
     
     def delete_button(self):
         selector1 = (By.XPATH, "//button[.='Delete']")
@@ -143,10 +147,12 @@ class IndividualChargingLocation:
         self.driver.find_element(*selector1).click()
 
     def set_pricing_policy(self):
-        selector1 = (By.XPATH, "//input[@id='AFIR Platform Pricing']")
-        selector2 = (By.XPATH, "//input[@value='Set pricing policy']")
+        selector1 = (By.XPATH, "//input[@name='save']")
         self.driver.find_element(*selector1).click()
-        self.driver.find_element(*selector2).click()
+    
+    def choose_afir_policy(self):
+        selector1 = (By.XPATH, "//input[@class='form-check-input'][1]")
+        self.driver.find_element(*selector1).click()
 
     def generic_alert(self):
         selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")

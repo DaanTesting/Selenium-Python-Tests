@@ -9,6 +9,7 @@ from selenium.webdriver.chrome.service import Service
 from utilities.Settings import (
     cache_directory,
     chromedriver_directory,
+    geckodriver_directory,
     screenshot_directory,
 )
 
@@ -35,6 +36,7 @@ def setup(request):
         service_obj = Service(chromedriver_directory)
         options = Options()
         options.add_argument("--remote-allow-origins=*")
+        options.add_argument("--disable-search-engine-choice-screen")
         options.add_experimental_option(
             "prefs", {"download.default_directory": cache_directory}
         )
@@ -43,9 +45,14 @@ def setup(request):
         driver.maximize_window()
 
     elif browser_name == "firefox":
-        print("Firefox not supported")
-    elif browser_name == "IE":
-        print("IE not supported")
+        driver = webdriver.Firefox()
+        driver.implicitly_wait(10)
+        driver.maximize_window()
+
+    elif browser_name == "edge":
+        driver = webdriver.Edge()
+        driver.implicitly_wait(10)
+        driver.maximize_window()
 
     if server_name == "testhr":
         driver.get("https://testhr.optimile.eu/")

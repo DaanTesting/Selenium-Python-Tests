@@ -102,7 +102,7 @@ class TestFour(BaseClass):
         homepage.menu_label_cpo_tokens()
         titletokenspage = str(
             homepage.driver.find_element(
-                By.XPATH, "(//h1[normalize-space()='Tokens in use'])[1]"
+                By.XPATH, "//h1[contains(.,'Tokens')]"
             ).text
         )
         assert "Tokens" in titletokenspage

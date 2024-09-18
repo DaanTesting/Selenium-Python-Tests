@@ -30,13 +30,13 @@ class AdhocPlatformPage:
     
     def export_button_excel(self):
         selector1 = (By.XPATH, "//button[.='Export']")
-        selector2 = (By.XPATH, "//a[.='Export all - Excel']")
+        selector2 = (By.XPATH, "//a[.='Excel']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
     def export_button_csv(self):
         selector1 = (By.XPATH, "//button[.='Export']")
-        selector2 = (By.XPATH, "//a[.='Export all - CSV']")
+        selector2 = (By.XPATH, "//a[.='CSV']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 

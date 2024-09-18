@@ -70,31 +70,70 @@ class TestTwo(BaseClass):
         log.info("Navigating to split billing page.")
         homepage.menu_label_chargingpoints()
         adhocplatformpage = homepage.menu_label_adhoc()
-        paytersettingstab = adhocplatformpage.payter_settings_tab()
+        paymentpagetab = adhocplatformpage.payter_settings_tab()
 
-        paytersettingstab.starting_price_margin().clear()
-        paytersettingstab.starting_price_margin().send_keys("0")
-        paytersettingstab.starting_price_fixed().clear()
-        paytersettingstab.starting_price_fixed().send_keys("5")
+        paymentpagetab.starting_price_margin().clear()
+        paymentpagetab.starting_price_margin().send_keys("0")
+        paymentpagetab.starting_price_fixed().clear()
+        paymentpagetab.starting_price_fixed().send_keys("5")
 
-        paytersettingstab.hourly_price_margin().clear()
-        paytersettingstab.hourly_price_margin().send_keys("100")
-        paytersettingstab.hourly_price_fixed().clear()
-        paytersettingstab.hourly_price_fixed().send_keys("0")
+        paymentpagetab.hourly_price_margin().clear()
+        paymentpagetab.hourly_price_margin().send_keys("100")
+        paymentpagetab.hourly_price_fixed().clear()
+        paymentpagetab.hourly_price_fixed().send_keys("0")
 
-        paytersettingstab.kwh_price_margin().clear()
-        paytersettingstab.kwh_price_margin().send_keys("100")
-        paytersettingstab.kwh_price_fixed().clear()
-        paytersettingstab.kwh_price_fixed().send_keys("0")
+        paymentpagetab.kwh_price_margin().clear()
+        paymentpagetab.kwh_price_margin().send_keys("100")
+        paymentpagetab.kwh_price_fixed().clear()
+        paymentpagetab.kwh_price_fixed().send_keys("0")
 
-        paytersettingstab.save_button()
-        message = paytersettingstab.message_alert().text
+        paymentpagetab.save_button()
+        message = paymentpagetab.message_alert().text
         assert "Adhoc markup updated." in message
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
 class TestThree(BaseClass):
+    def test_payter_settings(self, setup, login_data):
+        log = self.get_logger()
+        log.info(login_data["account"])
+        log.info("Attempting login.")
+
+        loginpage = LoginPage(self.driver)
+
+        loginpage.username_box().send_keys(login_data["account"])
+        loginpage.password_box().send_keys(login_data["password"])
+        homepage = loginpage.login_button()
+        log.info("Succesfully logged in.")
+        log.info("Navigating to split billing page.")
+        homepage.menu_label_chargingpoints()
+        adhocplatformpage = homepage.menu_label_adhoc()
+        paymentpagetab = adhocplatformpage.payment_page_tab()
+
+        paymentpagetab.starting_price_margin().clear()
+        paymentpagetab.starting_price_margin().send_keys("0")
+        paymentpagetab.starting_price_fixed().clear()
+        paymentpagetab.starting_price_fixed().send_keys("5")
+
+        paymentpagetab.hourly_price_margin().clear()
+        paymentpagetab.hourly_price_margin().send_keys("100")
+        paymentpagetab.hourly_price_fixed().clear()
+        paymentpagetab.hourly_price_fixed().send_keys("0")
+
+        paymentpagetab.kwh_price_margin().clear()
+        paymentpagetab.kwh_price_margin().send_keys("100")
+        paymentpagetab.kwh_price_fixed().clear()
+        paymentpagetab.kwh_price_fixed().send_keys("0")
+
+        paymentpagetab.save_button()
+        message = paymentpagetab.message_alert().text
+        assert "Adhoc markup updated." in message
+
+        generalobjects = GeneralObjects(self.driver)
+        generalobjects.sign_out_button()
+
+class TestFour(BaseClass):
     def test_adhoc_page_filters(self, setup, login_data):
         log = self.get_logger()
         log.info(login_data["account"])

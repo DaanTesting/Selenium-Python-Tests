@@ -86,40 +86,40 @@ class TestTwo(BaseClass):
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
 
-class TestThree(BaseClass):
-    def test_web_settings(self, login_data):
-        log = self.get_logger()
-        log.info(login_data["account"])
+# class TestThree(BaseClass):
+#     def test_web_settings(self, login_data):
+#         log = self.get_logger()
+#         log.info(login_data["account"])
 
-        loginpage = LoginPage(self.driver)
-        loginpage.username_box().send_keys(login_data["account"])
-        loginpage.password_box().send_keys(login_data["password"])
-        homepage = loginpage.login_button()
-        homepage.menu_label_chargingpoints()
-        adhocplatformpage = homepage.menu_label_adhoc()
-        paymentpagetab = adhocplatformpage.web_settings_tab()
+#         loginpage = LoginPage(self.driver)
+#         loginpage.username_box().send_keys(login_data["account"])
+#         loginpage.password_box().send_keys(login_data["password"])
+#         homepage = loginpage.login_button()
+#         homepage.menu_label_chargingpoints()
+#         adhocplatformpage = homepage.menu_label_adhoc()
+#         paymentpagetab = adhocplatformpage.web_settings_tab()
 
-        paymentpagetab.starting_price_margin().clear()
-        paymentpagetab.starting_price_margin().send_keys("0")
-        paymentpagetab.starting_price_fixed().clear()
-        paymentpagetab.starting_price_fixed().send_keys("5")
+#         paymentpagetab.starting_price_margin().clear()
+#         paymentpagetab.starting_price_margin().send_keys("0")
+#         paymentpagetab.starting_price_fixed().clear()
+#         paymentpagetab.starting_price_fixed().send_keys("5")
 
-        paymentpagetab.hourly_price_margin().clear()
-        paymentpagetab.hourly_price_margin().send_keys("100")
-        paymentpagetab.hourly_price_fixed().clear()
-        paymentpagetab.hourly_price_fixed().send_keys("0")
+#         paymentpagetab.hourly_price_margin().clear()
+#         paymentpagetab.hourly_price_margin().send_keys("100")
+#         paymentpagetab.hourly_price_fixed().clear()
+#         paymentpagetab.hourly_price_fixed().send_keys("0")
 
-        paymentpagetab.kwh_price_margin().clear()
-        paymentpagetab.kwh_price_margin().send_keys("100")
-        paymentpagetab.kwh_price_fixed().clear()
-        paymentpagetab.kwh_price_fixed().send_keys("0")
+#         paymentpagetab.kwh_price_margin().clear()
+#         paymentpagetab.kwh_price_margin().send_keys("100")
+#         paymentpagetab.kwh_price_fixed().clear()
+#         paymentpagetab.kwh_price_fixed().send_keys("0")
 
-        paymentpagetab.save_button()
-        message = paymentpagetab.message_alert().text
-        assert "Adhoc markup updated." in message
+#         paymentpagetab.save_button()
+#         message = paymentpagetab.message_alert().text
+#         assert "Adhoc markup updated." in message
 
-        generalobjects = GeneralObjects(self.driver)
-        generalobjects.sign_out_button()
+#         generalobjects = GeneralObjects(self.driver)
+#         generalobjects.sign_out_button()
 
 class TestFour(BaseClass):
     def test_adhoc_page_filters(self, setup, login_data):

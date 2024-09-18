@@ -14,7 +14,7 @@ class DiscountListOverview:
         return creatediscountlist
     
     def edit_top_list(self):
-        selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
+        selector1 = (By.XPATH, "(//button[@data-bs-toggle='dropdown'])[2]")
         selector2 = (By.XPATH, "(//a[.=' Edit'])[1]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
@@ -22,7 +22,7 @@ class DiscountListOverview:
         return creatediscountlist
     
     def edit_second_list(self):
-        selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[2]")
+        selector1 = (By.XPATH, "(//button[@data-bs-toggle='dropdown'])[3]")
         selector2 = (By.XPATH, "(//a[.='Edit'])[2]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
@@ -30,7 +30,7 @@ class DiscountListOverview:
         return creatediscountlist
     
     def disable_top_list(self):
-        selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
+        selector1 = (By.XPATH, "(//button[@data-bs-toggle='dropdown'])[2]")
         selector2 = (By.XPATH, "(//span[.='Disable'])[1]")
         selector3 = (By.XPATH, "(//button[.='Yes'])[2]")
         self.driver.find_element(*selector1).click()
@@ -38,15 +38,15 @@ class DiscountListOverview:
         self.driver.find_element(*selector3).click()
 
     def enable_top_list(self):
-        selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
-        selector2 = (By.XPATH, "(//li[.='Enable'])[1]")
+        selector1 = (By.XPATH, "(//button[@class='btn btn-default btn-sm cell-btn'])[1]")
+        selector2 = (By.XPATH, "//span[.='Enable']")
         selector3 = (By.XPATH, "(//button[.='Yes'])[3]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
 
     def open_top_list(self):
-        selector1 = (By.XPATH, "(//i[@class='fas fa-ellipsis-v'])[1]")
+        selector1 = (By.XPATH, "(//button[@class='btn btn-default btn-sm cell-btn'])[1]")
         selector2 = (By.XPATH, "(//a[.='Show'])[1]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()

@@ -29,7 +29,7 @@ class TestOne(BaseClass):
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
-        chargingsimulator.open_simulator()
+        chargingsimulator.open_simulator_test()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
             roaming_session_data["OCPP ID"]
@@ -122,7 +122,7 @@ class TestTwo(BaseClass):
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
-        chargingsimulator.open_simulator()
+        chargingsimulator.open_simulator_test()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
             roaming_session_data["OCPP ID"]
@@ -212,7 +212,7 @@ class TestThree(BaseClass):
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
-        chargingsimulator.open_simulator()
+        chargingsimulator.open_simulator_test()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
             roaming_session_data["splitbilling OCPP"]

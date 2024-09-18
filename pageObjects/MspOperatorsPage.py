@@ -6,8 +6,10 @@ class MspOperatorsPage:
         self.driver = driver
 
     def export_service_records_button(self):
-        selector1 = (By.XPATH, "//a[contains(.,'Download all service records')]")
+        selector1 = (By.XPATH, "//small[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Download service records']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
 
     def export_menu_from_field(self):
         selector1 = (By.XPATH, "(//input[@id='id_date_from'])")

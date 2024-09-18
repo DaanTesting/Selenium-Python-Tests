@@ -104,13 +104,17 @@ class TestFour(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to tokens page.")
         homepage.menu_label_chargingpoints()
-        homepage.menu_label_cpo_tokens()
+        cpotokenspage = homepage.menu_label_cpo_tokens()
         titletokenspage = str(
             homepage.driver.find_element(
-                By.XPATH, "(//h1[normalize-space()='Tokens in use'])[1]"
+                By.XPATH, "//h1[contains(.,'Tokens')]"
             ).text
         )
         assert "Tokens" in titletokenspage
+        
+        cpotokenspage.available_tokens_tab()
+        cpotokenspage.in_use_tokens_tab()
+
         log.info("Succesfully verified tokens page.")
 
         generalobjects = GeneralObjects(self.driver)
@@ -321,7 +325,7 @@ class TestTwelve(BaseClass):
         cpooverviewpage.issues_tab()
         time.sleep(1)
         tableheader = self.driver.find_element(By.XPATH, "//th[2]").text
-        assert tableheader == "Start time"
+        assert tableheader == "Time started"
 
         log.info("Succesfully verified CPO overview page.")
 

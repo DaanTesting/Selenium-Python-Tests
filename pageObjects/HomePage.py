@@ -32,6 +32,7 @@ from pageObjects.CpoOverviewPage import CpoOverviewPage
 from pageObjects.MspDashboard import MspDashboard
 from pageObjects.AdhocPlatformPage import AdhocPlatformPage
 from pageObjects.CreditPage import CreditPage
+from pageObjects.CpoFinancePage import CpoFinancePage
 
 class HomePage:
     def __init__(self, driver):
@@ -206,6 +207,8 @@ class HomePage:
     def menu_label_cpo_finance(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Finance'])[1]")
         self.driver.find_element(*selector1).click()
+        cpofinancepage = CpoFinancePage(self.driver)
+        return cpofinancepage
 
     def menu_label_cpo_reports(self):
         selector1 = (By.XPATH, "(//span[normalize-space()='Reports'])[1]")

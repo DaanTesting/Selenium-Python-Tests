@@ -15,11 +15,13 @@ class CpoTokensPage:
         self.driver.find_element(*selector1).click()
 
     def download_tokens(self):
-        selector1 = (By.XPATH, "//button[.=' Download tokens']")
+        selector1 = (By.XPATH, "//small[.='Export']")
+        selector2 = (By.XPATH, "//a[.='Excel']")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
 
     def add_token(self):
-        selector1 = (By.XPATH, "//a[.='» Add token']")
+        selector1 = (By.XPATH, "//small[.='Add token']")
         self.driver.find_element(*selector1).click()
 
     def UID_field(self):
@@ -35,4 +37,11 @@ class CpoTokensPage:
     def save_token_button(self):
         selector1 = (By.CSS_SELECTOR, "button[name='save']")
         self.driver.find_element(*selector1).click()
+
+    def available_tokens_tab(self):
+        selector1 = (By.XPATH, "//a[contains(.,'Available')]")
+        self.driver.find_element(*selector1).click()
+
+    def in_use_tokens_tab(self):
+        selector1 = (By.XPATH, "//a[contains(.,'In use')]")
 
