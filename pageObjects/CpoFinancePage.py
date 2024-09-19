@@ -6,10 +6,6 @@ class CpoFinancePage:
 
     def invoices_tab(self):
         self.driver.get("https://test.optimile.eu/co/admin/finance/invoices/#/invoices")
-
-    def revenues_tab(self):
-        selector1 = (By.XPATH, "//span[contains(.,'Revenues')]")
-        self.driver.find_element(*selector1).click()
     
     def debit_notes_tab(self):
         selector1 = (By.XPATH, "//span[contains(.,'Debit notes')]")
@@ -78,3 +74,59 @@ class CpoFinancePage:
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
         self.driver.find_element(*selector3).click()
+
+    def top_SB_PR_number(self):
+        selector1 = (By.XPATH, "//tr[1]/td[1]")
+        return self.driver.find_element(*selector1)
+    
+    def top_SB_PR_status(self):
+        selector1 = (By.XPATH, "(//td/div/span)[1]")
+        return self.driver.find_element(*selector1)
+    
+    def open_top_SB_PR(self):
+        selector1 = (By.XPATH, "(//td[1]/div/a)[1]")
+        self.driver.find_element(*selector1).click()
+
+    def pay_req_search_field(self):
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Customer, debit note No. or payment request No.']")
+        return self.driver.find_element(*selector1)
+    
+    def view_debit_notes_button(self):
+        selector1 = (By.XPATH, "//a[.=' View debit notes']")
+        self.driver.find_element(*selector1).click()
+
+    def debit_notes_search_field(self):
+        selector1 = (By.CSS_SELECTOR, "input[placeholder='Search...']")
+        return self.driver.find_element(*selector1)
+    
+    def top_SB_DN_status(self):
+        selector1 = (By.XPATH, "(//td/div/span)[1]")
+        return self.driver.find_element(*selector1)
+    
+    def open_top_SB_DN(self):
+        selector1 = (By.XPATH, "(//td[1]/div/a)[1]")
+        self.driver.find_element(*selector1).click()
+    
+    def revenues_tab(self):
+        selector1 = (By.XPATH, "//a[@href='#revenues']")
+        self.driver.find_element(*selector1).click()
+    
+    def revenues_filter_unpaid(self):
+        selector1 = (By.XPATH, "(//small[contains(.,'Filter')])[2]")
+        selector2 = (By.XPATH, "(//input[@type='checkbox'])[23]")
+        selector3 = (By.XPATH, "//button[.='Apply']")
+        self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
+        self.driver.find_element(*selector3).click()
+    
+    def open_top_host_invoice(self):
+        selector1 = (By.XPATH, "(//tr[1]/td/div/a/span)[1]")
+        self.driver.find_element(*selector1).click()
+    
+    def host_invoice_status(self):
+        selector1 = (By.XPATH, "(//td/span)[1]")
+        return self.driver.find_element(*selector1)
+    
+    def mark_HI_as_paid(self):
+        selector1 = (By.XPATH, "//a[contains(.,'Mark as paid')]")
+        self.driver.find_element(*selector1).click()

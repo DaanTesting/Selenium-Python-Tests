@@ -6,27 +6,26 @@ from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 
 
-@pytest.fixture(params=LoginPageData.test_login_data)
+@pytest.fixture(params=LoginPageData.test2_login_data)
 def login_data(request):
     return request.param
 
-@pytest.fixture(params=ChargingSessionData.roaming_session_data)
-def roaming_session_data(request):
+@pytest.fixture(params=ChargingSessionData.roaming_test2_data)
+def roaming_test2_data(request):
     return request.param
 
-
 class TestOne(BaseClass):
-    def test_splitbilling_sessions(self, setup, roaming_session_data, login_data):
+    def test_splitbilling_sessions(self, setup, roaming_test2_data, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
-        log.info(roaming_session_data["OCPP ID"])
+        log.info(roaming_test2_data["OCPP ID"])
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
-        chargingsimulator.open_simulator_test()
+        chargingsimulator.open_simulator_test2()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
-            roaming_session_data["splitbilling OCPP"]
+            roaming_test2_data["splitbilling OCPP"]
         )
         chargingsimulator.mode_select_dropdown()
         chargingsimulator.connect_button()
@@ -36,11 +35,11 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_start()
         log.info("Entering connectorID.")
         chargingsimulator.connector_id_field().send_keys(
-            roaming_session_data["connectorId"]
+            roaming_test2_data["connectorId"]
         )
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field().send_keys(
-            roaming_session_data["splitbilling RFID"]
+            roaming_test2_data["splitbilling RFID"]
         )
         chargingsimulator.meter_start_field().send_keys("1")
         log.info("Attempting to start transaction.")
@@ -53,7 +52,7 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_stop()
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field_stop().send_keys(
-            roaming_session_data["splitbilling RFID"]
+            roaming_test2_data["splitbilling RFID"]
         )
         log.info("Simulating meter end value.")
         chargingsimulator.meter_stop_field().send_keys("10001")
@@ -67,10 +66,10 @@ class TestOne(BaseClass):
         chargingsimulator.stop_transaction_button()
         time.sleep(1)
 
-        chargingsimulator.open_simulator_test()
+        chargingsimulator.open_simulator_test2()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
-            roaming_session_data["splitbilling OCPP"]
+            roaming_test2_data["splitbilling OCPP"]
         )
         chargingsimulator.mode_select_dropdown()
         chargingsimulator.connect_button()
@@ -80,11 +79,11 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_start()
         log.info("Entering connectorID.")
         chargingsimulator.connector_id_field().send_keys(
-            roaming_session_data["connectorId"]
+            roaming_test2_data["connectorId"]
         )
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field().send_keys(
-            roaming_session_data["splitbilling RFID"]
+            roaming_test2_data["splitbilling RFID"]
         )
         chargingsimulator.meter_start_field().send_keys("1")
         log.info("Attempting to start transaction.")
@@ -97,7 +96,7 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_stop()
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field_stop().send_keys(
-            roaming_session_data["splitbilling RFID"]
+            roaming_test2_data["splitbilling RFID"]
         )
         log.info("Simulating meter end value.")
         chargingsimulator.meter_stop_field().send_keys("10001")
@@ -111,10 +110,10 @@ class TestOne(BaseClass):
         chargingsimulator.stop_transaction_button()
         time.sleep(1)
 
-        chargingsimulator.open_simulator_test()
+        chargingsimulator.open_simulator_test2()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
-            roaming_session_data["splitbilling OCPP"]
+            roaming_test2_data["splitbilling OCPP"]
         )
         chargingsimulator.mode_select_dropdown()
         chargingsimulator.connect_button()
@@ -124,11 +123,11 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_start()
         log.info("Entering connectorID.")
         chargingsimulator.connector_id_field().send_keys(
-            roaming_session_data["connectorId"]
+            roaming_test2_data["connectorId"]
         )
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field().send_keys(
-            roaming_session_data["splitbilling RFID"]
+            roaming_test2_data["splitbilling RFID"]
         )
         chargingsimulator.meter_start_field().send_keys("1")
         log.info("Attempting to start transaction.")
@@ -141,7 +140,7 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_stop()
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field_stop().send_keys(
-            roaming_session_data["splitbilling RFID"]
+            roaming_test2_data["splitbilling RFID"]
         )
         log.info("Simulating meter end value.")
         chargingsimulator.meter_stop_field().send_keys("10001")
@@ -155,17 +154,17 @@ class TestOne(BaseClass):
         chargingsimulator.stop_transaction_button()
         time.sleep(1)
 
-    def test_roaming_session(self, setup, roaming_session_data, login_data):
+    def test_roaming_session(self, setup, roaming_test2_data, login_data):
         log = self.get_logger()
         log.info(login_data["account"])
-        log.info(roaming_session_data["OCPP ID"])
+        log.info(roaming_test2_data["OCPP ID"])
 
         chargingsimulator = ChargingSimulator(self.driver)
         log.info("Attempting to connect to simulator.")
-        chargingsimulator.open_simulator_test()
+        chargingsimulator.open_simulator_test2()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
-            roaming_session_data["accounting OCPP"]
+            roaming_test2_data["accounting OCPP"]
         )
         chargingsimulator.mode_select_dropdown()
         chargingsimulator.connect_button()
@@ -175,11 +174,11 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_start()
         log.info("Entering connectorID.")
         chargingsimulator.connector_id_field().send_keys(
-            roaming_session_data["connectorId"]
+            roaming_test2_data["connectorId"]
         )
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field().send_keys(
-            roaming_session_data["token RFID"]
+            roaming_test2_data["token RFID"]
         )
         chargingsimulator.meter_start_field().send_keys("1")
         log.info("Attempting to start transaction.")
@@ -192,7 +191,7 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_stop()
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field_stop().send_keys(
-            roaming_session_data["token RFID"]
+            roaming_test2_data["token RFID"]
         )
         log.info("Simulating meter end value.")
         chargingsimulator.meter_stop_field().send_keys("10001")
@@ -206,10 +205,10 @@ class TestOne(BaseClass):
         chargingsimulator.stop_transaction_button()
         time.sleep(1)
 
-        chargingsimulator.open_simulator_test()
+        chargingsimulator.open_simulator_test2()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
-            roaming_session_data["accounting OCPP"]
+            roaming_test2_data["accounting OCPP"]
         )
         chargingsimulator.mode_select_dropdown()
         chargingsimulator.connect_button()
@@ -219,11 +218,11 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_start()
         log.info("Entering connectorID.")
         chargingsimulator.connector_id_field().send_keys(
-            roaming_session_data["connectorId"]
+            roaming_test2_data["connectorId"]
         )
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field().send_keys(
-            roaming_session_data["token RFID"]
+            roaming_test2_data["token RFID"]
         )
         chargingsimulator.meter_start_field().send_keys("1")
         log.info("Attempting to start transaction.")
@@ -236,7 +235,7 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_stop()
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field_stop().send_keys(
-            roaming_session_data["token RFID"]
+            roaming_test2_data["token RFID"]
         )
         log.info("Simulating meter end value.")
         chargingsimulator.meter_stop_field().send_keys("10001")
@@ -250,10 +249,10 @@ class TestOne(BaseClass):
         chargingsimulator.stop_transaction_button()
         time.sleep(1)
 
-        chargingsimulator.open_simulator_test()
+        chargingsimulator.open_simulator_test2()
         chargingsimulator.OCPP_ID_Field().clear()
         chargingsimulator.OCPP_ID_Field().send_keys(
-            roaming_session_data["accounting OCPP"]
+            roaming_test2_data["accounting OCPP"]
         )
         chargingsimulator.mode_select_dropdown()
         chargingsimulator.connect_button()
@@ -263,11 +262,11 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_start()
         log.info("Entering connectorID.")
         chargingsimulator.connector_id_field().send_keys(
-            roaming_session_data["connectorId"]
+            roaming_test2_data["connectorId"]
         )
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field().send_keys(
-            roaming_session_data["token RFID"]
+            roaming_test2_data["token RFID"]
         )
         chargingsimulator.meter_start_field().send_keys("1")
         log.info("Attempting to start transaction.")
@@ -280,7 +279,7 @@ class TestOne(BaseClass):
         chargingsimulator.request_dropdown_stop()
         log.info("Sending token RFID.")
         chargingsimulator.id_tag_field_stop().send_keys(
-            roaming_session_data["token RFID"]
+            roaming_test2_data["token RFID"]
         )
         log.info("Simulating meter end value.")
         chargingsimulator.meter_stop_field().send_keys("10001")

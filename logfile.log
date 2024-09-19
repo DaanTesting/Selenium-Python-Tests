@@ -18632,3 +18632,186 @@ Stacktrace:
 2024-09-18 13:12:47,580 : INFO : test_check_and_process_invoice : daan.swinnen@optimile.eu
 2024-09-18 13:12:47,580 : INFO : test_check_and_process_invoice : Attempting login.
 2024-09-18 13:12:49,464 : INFO : test_check_and_process_invoice : Succesfully logged in.
+2024-09-18 16:53:25,506 : INFO : test_splitbilling_sessions : daan.swinnen@optimile.eu
+2024-09-18 16:54:22,761 : INFO : test_splitbilling_sessions : daan.swinnen@optimile.eu
+2024-09-18 16:54:22,761 : INFO : test_splitbilling_sessions : ABSDEV
+2024-09-18 16:54:22,761 : INFO : test_splitbilling_sessions : Attempting to connect to simulator.
+2024-09-18 16:54:23,171 : INFO : test_splitbilling_sessions : Connected to simulator.
+2024-09-18 16:54:24,176 : INFO : test_splitbilling_sessions : Requesting 'start transaction'-screen.
+2024-09-18 16:54:24,272 : INFO : test_splitbilling_sessions : Entering connectorID.
+2024-09-18 16:54:24,314 : INFO : test_splitbilling_sessions : Sending token RFID.
+2024-09-18 16:54:24,426 : INFO : test_splitbilling_sessions : Attempting to start transaction.
+2024-09-18 16:54:34,505 : INFO : test_splitbilling_sessions : Getting transaction ID.
+2024-09-18 16:55:16,602 : INFO : test_splitbilling_sessions : daan.swinnen@optimile.eu
+2024-09-18 16:55:16,602 : INFO : test_splitbilling_sessions : ABSDEV
+2024-09-18 16:55:16,602 : INFO : test_splitbilling_sessions : Attempting to connect to simulator.
+2024-09-18 16:55:17,015 : INFO : test_splitbilling_sessions : Connected to simulator.
+2024-09-18 16:55:18,016 : INFO : test_splitbilling_sessions : Requesting 'start transaction'-screen.
+2024-09-18 16:55:18,122 : INFO : test_splitbilling_sessions : Entering connectorID.
+2024-09-18 16:55:18,163 : INFO : test_splitbilling_sessions : Sending token RFID.
+2024-09-18 16:55:18,273 : INFO : test_splitbilling_sessions : Attempting to start transaction.
+2024-09-18 16:55:28,359 : INFO : test_splitbilling_sessions : Getting transaction ID.
+2024-09-18 16:57:43,119 : INFO : test_splitbilling_sessions : daan.swinnen@optimile.eu
+2024-09-18 16:57:43,119 : INFO : test_splitbilling_sessions : ABSDEV
+2024-09-18 16:57:43,119 : INFO : test_splitbilling_sessions : Attempting to connect to simulator.
+2024-09-18 16:57:43,557 : INFO : test_splitbilling_sessions : Connected to simulator.
+2024-09-18 16:57:44,562 : INFO : test_splitbilling_sessions : Requesting 'start transaction'-screen.
+2024-09-18 16:57:44,665 : INFO : test_splitbilling_sessions : Entering connectorID.
+2024-09-18 16:57:44,705 : INFO : test_splitbilling_sessions : Sending token RFID.
+2024-09-18 16:57:44,813 : INFO : test_splitbilling_sessions : Attempting to start transaction.
+2024-09-18 16:57:54,879 : INFO : test_splitbilling_sessions : Getting transaction ID.
+2024-09-18 16:57:54,892 : INFO : test_splitbilling_sessions : Requesting 'stop transaction'-screen.
+2024-09-18 16:57:54,963 : INFO : test_splitbilling_sessions : Sending token RFID.
+2024-09-18 16:57:55,014 : INFO : test_splitbilling_sessions : Simulating meter end value.
+2024-09-18 16:57:55,075 : INFO : test_splitbilling_sessions : Sending transaction ID.
+2024-09-18 16:57:55,126 : INFO : test_splitbilling_sessions : Sending timestamp.
+2024-09-18 16:57:55,236 : INFO : test_splitbilling_sessions : Selecting transaction stop reason.
+2024-09-18 16:57:55,289 : INFO : test_splitbilling_sessions : Stopping transaction.
+2024-09-18 16:57:56,547 : INFO : test_splitbilling_sessions : Connected to simulator.
+2024-09-18 16:57:57,552 : INFO : test_splitbilling_sessions : Requesting 'start transaction'-screen.
+2024-09-18 16:57:57,620 : INFO : test_splitbilling_sessions : Entering connectorID.
+2024-09-18 16:57:57,659 : INFO : test_splitbilling_sessions : Sending token RFID.
+2024-09-18 16:57:57,756 : INFO : test_splitbilling_sessions : Attempting to start transaction.
+2024-09-18 16:58:07,823 : INFO : test_splitbilling_sessions : Getting transaction ID.
+2024-09-18 16:58:07,832 : INFO : test_splitbilling_sessions : Requesting 'stop transaction'-screen.
+2024-09-18 16:58:07,902 : INFO : test_splitbilling_sessions : Sending token RFID.
+2024-09-18 16:58:07,950 : INFO : test_splitbilling_sessions : Simulating meter end value.
+2024-09-18 16:58:07,999 : INFO : test_splitbilling_sessions : Sending transaction ID.
+2024-09-18 16:58:08,048 : INFO : test_splitbilling_sessions : Sending timestamp.
+2024-09-18 16:58:08,156 : INFO : test_splitbilling_sessions : Selecting transaction stop reason.
+2024-09-18 16:58:08,200 : INFO : test_splitbilling_sessions : Stopping transaction.
+2024-09-18 16:58:09,428 : INFO : test_splitbilling_sessions : Connected to simulator.
+2024-09-18 16:58:10,433 : INFO : test_splitbilling_sessions : Requesting 'start transaction'-screen.
+2024-09-18 16:58:10,497 : INFO : test_splitbilling_sessions : Entering connectorID.
+2024-09-18 16:58:10,536 : INFO : test_splitbilling_sessions : Sending token RFID.
+2024-09-18 16:58:10,652 : INFO : test_splitbilling_sessions : Attempting to start transaction.
+2024-09-18 16:58:20,700 : INFO : test_splitbilling_sessions : Getting transaction ID.
+2024-09-18 16:58:20,712 : INFO : test_splitbilling_sessions : Requesting 'stop transaction'-screen.
+2024-09-18 16:58:20,794 : INFO : test_splitbilling_sessions : Sending token RFID.
+2024-09-18 16:58:20,841 : INFO : test_splitbilling_sessions : Simulating meter end value.
+2024-09-18 16:58:20,889 : INFO : test_splitbilling_sessions : Sending transaction ID.
+2024-09-18 16:58:20,933 : INFO : test_splitbilling_sessions : Sending timestamp.
+2024-09-18 16:58:21,042 : INFO : test_splitbilling_sessions : Selecting transaction stop reason.
+2024-09-18 16:58:21,093 : INFO : test_splitbilling_sessions : Stopping transaction.
+2024-09-18 16:58:27,455 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-09-18 16:58:27,456 : INFO : test_roaming_session : ABSDEV
+2024-09-18 16:58:27,456 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-09-18 16:58:27,881 : INFO : test_roaming_session : Connected to simulator.
+2024-09-18 16:58:28,885 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-09-18 16:58:28,977 : INFO : test_roaming_session : Entering connectorID.
+2024-09-18 16:58:29,017 : INFO : test_roaming_session : Sending token RFID.
+2024-09-18 16:58:29,150 : INFO : test_roaming_session : Attempting to start transaction.
+2024-09-18 16:58:39,254 : INFO : test_roaming_session : Getting transaction ID.
+2024-09-18 16:58:39,273 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-09-18 16:58:39,343 : INFO : test_roaming_session : Sending token RFID.
+2024-09-18 16:58:39,406 : INFO : test_roaming_session : Simulating meter end value.
+2024-09-18 16:58:39,478 : INFO : test_roaming_session : Sending transaction ID.
+2024-09-18 16:58:39,527 : INFO : test_roaming_session : Sending timestamp.
+2024-09-18 16:58:39,654 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-09-18 16:58:39,724 : INFO : test_roaming_session : Stopping transaction.
+2024-09-18 16:58:40,964 : INFO : test_roaming_session : Connected to simulator.
+2024-09-18 16:58:41,969 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-09-18 16:58:42,041 : INFO : test_roaming_session : Entering connectorID.
+2024-09-18 16:58:42,077 : INFO : test_roaming_session : Sending token RFID.
+2024-09-18 16:58:42,190 : INFO : test_roaming_session : Attempting to start transaction.
+2024-09-18 16:58:52,251 : INFO : test_roaming_session : Getting transaction ID.
+2024-09-18 16:58:52,260 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-09-18 16:58:52,330 : INFO : test_roaming_session : Sending token RFID.
+2024-09-18 16:58:52,384 : INFO : test_roaming_session : Simulating meter end value.
+2024-09-18 16:58:52,451 : INFO : test_roaming_session : Sending transaction ID.
+2024-09-18 16:58:52,495 : INFO : test_roaming_session : Sending timestamp.
+2024-09-18 16:58:52,611 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-09-18 16:58:52,668 : INFO : test_roaming_session : Stopping transaction.
+2024-09-18 16:58:53,907 : INFO : test_roaming_session : Connected to simulator.
+2024-09-18 16:58:54,912 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-09-18 16:58:54,963 : INFO : test_roaming_session : Entering connectorID.
+2024-09-18 16:58:55,003 : INFO : test_roaming_session : Sending token RFID.
+2024-09-18 16:58:55,111 : INFO : test_roaming_session : Attempting to start transaction.
+2024-09-18 16:59:05,171 : INFO : test_roaming_session : Getting transaction ID.
+2024-09-18 16:59:05,183 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-09-18 16:59:05,262 : INFO : test_roaming_session : Sending token RFID.
+2024-09-18 16:59:05,319 : INFO : test_roaming_session : Simulating meter end value.
+2024-09-18 16:59:05,372 : INFO : test_roaming_session : Sending transaction ID.
+2024-09-18 16:59:05,417 : INFO : test_roaming_session : Sending timestamp.
+2024-09-18 16:59:05,542 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-09-18 16:59:05,609 : INFO : test_roaming_session : Stopping transaction.
+2024-09-19 08:50:17,735 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 08:50:17,736 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 09:54:09,261 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 09:54:09,261 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 09:55:03,398 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 09:55:03,398 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 09:58:24,393 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 09:58:24,394 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 10:07:12,070 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 10:07:12,070 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 10:17:39,734 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 10:17:39,734 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 10:18:53,034 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 10:18:53,034 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 10:22:30,477 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 10:22:30,477 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 13:14:35,032 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 13:14:35,032 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 13:26:01,191 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 13:26:01,192 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 13:26:57,189 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 13:26:57,189 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 13:31:31,759 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 13:31:31,759 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 13:33:59,960 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 13:33:59,960 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:10:41,159 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:10:41,159 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:11:23,006 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:11:23,006 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:12:25,967 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:12:25,967 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:13:03,758 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:13:03,758 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:14:03,647 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:14:03,647 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:14:33,858 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:14:33,858 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:17:32,800 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:17:32,800 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:17:58,543 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:17:58,543 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:20:07,089 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:20:07,089 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:33:30,392 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:33:30,392 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:34:10,319 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:34:10,319 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:34:42,577 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:34:42,577 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:35:08,901 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:35:08,901 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:37:40,896 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:37:40,896 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:43:23,026 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:43:23,026 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 14:58:52,972 : INFO : test_check_and_process_paymentrequest : daan.swinnen@optimile.eu
+2024-09-19 14:58:52,973 : INFO : test_check_and_process_paymentrequest : Attempting login.
+2024-09-19 16:25:21,667 : INFO : test_check_and_process_SB_documents : daan.swinnen@optimile.eu
+2024-09-19 16:25:21,667 : INFO : test_check_and_process_SB_documents : Attempting login.
+2024-09-19 16:25:25,027 : INFO : test_check_and_process_SB_documents : Getting PR number + initial status
+2024-09-19 16:25:25,534 : INFO : test_check_and_process_SB_documents : Verifying Debit Note initial status
+2024-09-19 16:31:23,171 : INFO : test_check_and_process_SB_documents : daan.swinnen@optimile.eu
+2024-09-19 16:31:23,171 : INFO : test_check_and_process_SB_documents : Attempting login.
+2024-09-19 16:31:26,220 : INFO : test_check_and_process_SB_documents : Getting PR number + initial status
+2024-09-19 16:31:26,723 : INFO : test_check_and_process_SB_documents : Verifying Debit Note initial status
+2024-09-19 16:36:25,399 : INFO : test_check_and_process_SB_documents : daan.swinnen@optimile.eu
+2024-09-19 16:36:25,399 : INFO : test_check_and_process_SB_documents : Attempting login.
+2024-09-19 16:36:28,348 : INFO : test_check_and_process_SB_documents : Getting PR number + initial status
+2024-09-19 16:36:28,845 : INFO : test_check_and_process_SB_documents : Verifying Debit Note initial status
+2024-09-19 17:23:02,124 : INFO : test_check_and_process_host_invoices : daan.swinnen@optimile.eu
+2024-09-19 17:23:02,125 : INFO : test_check_and_process_host_invoices : Attempting login.
+2024-09-19 17:24:26,850 : INFO : test_check_and_process_host_invoices : daan.swinnen@optimile.eu
+2024-09-19 17:24:26,850 : INFO : test_check_and_process_host_invoices : Attempting login.
+2024-09-19 17:27:37,397 : INFO : test_check_and_process_host_invoices : daan.swinnen@optimile.eu
+2024-09-19 17:27:37,397 : INFO : test_check_and_process_host_invoices : Attempting login.
+2024-09-19 17:28:26,420 : INFO : test_check_and_process_host_invoices : daan.swinnen@optimile.eu
+2024-09-19 17:28:26,421 : INFO : test_check_and_process_host_invoices : Attempting login.
+2024-09-19 17:30:35,108 : INFO : test_check_and_process_host_invoices : daan.swinnen@optimile.eu
+2024-09-19 17:30:35,108 : INFO : test_check_and_process_host_invoices : Attempting login.

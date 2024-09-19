@@ -1,16 +1,18 @@
 class LoginPageData:
-    testhr_login_data = [
-        {
-            "account": "daan.swinnen+autotest.admin@optimile.eu",
-            "password": "hHsxpRXGX9NrN4aw6iCH",
-            "URL": "https://testhr.optimile.eu/",
-        }
-    ]
+
     test_login_data = [
         {
             "account": "daan.swinnen@optimile.eu",
             "password": "lhiM6Alk8jW4Nh2skJMV?",
             "URL": "https://test.optimile.eu/",
+        }
+    ]
+
+    test2_login_data = [
+        {
+            "account": "daan.swinnen@optimile.eu",
+            "password": "hOu8QDiJ6fKUWXJtkOT5",
+            "URL": "https://test2.optimile.eu/",
         }
     ]
 
@@ -26,7 +28,7 @@ class LoginPageData:
         {
             "account": "daan.swinnen+autotest_user@optimile.eu",
             "password": "test",
-            "URL": "http://localhost:8000/"
+            "URL": "http://localhost:8000/",
         }
     ]
 
@@ -34,7 +36,7 @@ class LoginPageData:
         {
             "account": "klaas.vaak@example.test",
             "password": "test",
-            "URL": "http://localhost:8000/"
+            "URL": "http://localhost:8000/",
         }
     ]
 
@@ -56,11 +58,9 @@ class LoginPageData:
 
     test_auto_main_data = [
         {
-            
             "account": "daan.swinnen+autotest.cpocompany@optimile.eu",
             "password": "hHsxpRXGX9NrN4aw6iCH_",
             "URL": "https://test.optimile.eu/",
-        
         }
     ]
 
@@ -72,5 +72,8 @@ class LoginPageData:
         }
     ]
     plannertest_data = [
-        {"account": "daan.swinnen@optimile.eu", "password": "wVVPlBgmVviujodBUEnc"}
+        {
+            "account": "daan.swinnen@optimile.eu",
+            "password": "wVVPlBgmVviujodBUEnc",
+        }
     ]

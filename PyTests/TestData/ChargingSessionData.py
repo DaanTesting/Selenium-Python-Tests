@@ -11,6 +11,17 @@ class ChargingSessionData:
         }
     ]
 
+    roaming_test2_data = [
+        {
+            "OCPP ID": "ABSDEV",
+            "splitbilling OCPP": "ABSDEV_BOBBEJAAN",
+            "accounting OCPP": "accounting_invoice",
+            "token RFID": "048C879ADB6484",
+            "splitbilling RFID": "0460189ADB6484",
+            "connectorId": "1",
+        }
+    ]
+
     discount_session_data = [
         {
             "OCPP ID": "AutoTestDevice",

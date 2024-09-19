@@ -11,6 +11,9 @@ class ChargingSimulator:
     def open_simulator_test(self):
         self.driver.get("https://test.optimile.eu/sim/")
 
+    def open_simulator_test2(self):
+        self.driver.get("https://test2.optimile.eu/sim/")
+
     def open_local_simulator(self):
         self.driver.get("http://localhost:8888/")
 
