@@ -8,7 +8,7 @@ class IndividualChargingLocation:
 
     def edit_button(self):
         selector1 = (By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-ellipsis-vertical")
-        selector2 = (By.XPATH, "//a[contains(.,'Edit')]")
+        selector2 = (By.XPATH, "//a[contains(.,'Details')]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
@@ -92,10 +92,6 @@ class IndividualChargingLocation:
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
-    def register_new_device_button(self):
-        selector1 = (By.XPATH, "//button[text()='Register']")
-        self.driver.find_element(*selector1).click()
-
     def device_created_alert(self):
         selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
         return self.driver.find_element(*selector1)
@@ -158,5 +154,8 @@ class IndividualChargingLocation:
         selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
         return self.driver.find_element(*selector1)
     
+    def new_device_register_button(self):
+        selector1 = (By.XPATH, "//button[.='Register']")
+        self.driver.find_element(*selector1).click()
 
 

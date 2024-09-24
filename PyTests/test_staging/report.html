@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) { // eslint-disable-line no-redeclare
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function findAll(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sortColumn(elem) {
+    toggleSortStates(elem);
+    const colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    let key;
+    if (elem.classList.contains('result')) {
+        key = keyResult;
+    } else if (elem.classList.contains('links')) {
+        key = keyLink;
+    } else {
+        key = keyAlpha;
+    }
+    sortTable(elem, key(colIndex));
+}
+
+function showAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(showExtras);
+}
+
+function hideAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(hideExtras);
+}
+
+function showExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.remove('collapsed');
+    expandcollapse.classList.remove('expander');
+    expandcollapse.classList.add('collapser');
+}
+
+function hideExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.add('collapsed');
+    expandcollapse.classList.remove('collapser');
+    expandcollapse.classList.add('expander');
+}
+
+function showFilters() {
+    let visibleString = getQueryParameter('visible') || 'all';
+    visibleString = visibleString.toLowerCase();
+    const checkedItems = visibleString.split(',');
+
+    const filterItems = document.getElementsByClassName('filter');
+    for (let i = 0; i < filterItems.length; i++) {
+        filterItems[i].hidden = false;
+
+        if (visibleString != 'all') {
+            filterItems[i].checked = checkedItems.includes(filterItems[i].getAttribute('data-test-result'));
+            filterTable(filterItems[i]);
+        }
+    }
+}
+
+function addCollapse() {
+    // Add links for show/hide all
+    const resulttable = find('table#results-table');
+    const showhideall = document.createElement('p');
+    showhideall.innerHTML = '<a href="javascript:showAllExtras()">Show all details</a> / ' +
+                            '<a href="javascript:hideAllExtras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    findAll('.col-result').forEach(function(elem) {
+        const collapsed = getQueryParameter('collapsed') || 'Passed';
+        const extras = elem.parentNode.nextElementSibling;
+        const expandcollapse = document.createElement('span');
+        if (extras.classList.contains('collapsed')) {
+            expandcollapse.classList.add('expander');
+        } else if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add('collapsed');
+            expandcollapse.classList.add('expander');
+        } else {
+            expandcollapse.classList.add('collapser');
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener('click', function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains('collapsed')) {
+                showExtras(event.currentTarget);
+            } else {
+                hideExtras(event.currentTarget);
+            }
+        });
+    });
+}
+
+function getQueryParameter(name) {
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () { // eslint-disable-line no-unused-vars
+    resetSortHeaders();
+
+    addCollapse();
+
+    showFilters();
+
+    sortColumn(find('.initial-sort'));
+
+    findAll('.sortable').forEach(function(elem) {
+        elem.addEventListener('click',
+            function() {
+                sortColumn(elem);
+            }, false);
+    });
+}
+
+function sortTable(clicked, keyFunc) {
+    const rows = findAll('.results-table-row');
+    const reversed = !clicked.classList.contains('asc');
+    const sortedRows = sort(rows, keyFunc, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    const thead = document.getElementById('results-table-head');
+    document.getElementById('results-table').remove();
+    const parent = document.createElement('table');
+    parent.id = 'results-table';
+    parent.appendChild(thead);
+    sortedRows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName('BODY')[0].appendChild(parent);
+}
+
+function sort(items, keyFunc, reversed) {
+    const sortArray = items.map(function(item, i) {
+        return [keyFunc(item), i];
+    });
+
+    sortArray.sort(function(a, b) {
+        const keyA = a[0];
+        const keyB = b[0];
+
+        if (keyA == keyB) return 0;
+
+        if (reversed) {
+            return keyA < keyB ? 1 : -1;
+        } else {
+            return keyA > keyB ? 1 : -1;
+        }
+    });
+
+    return sortArray.map(function(item) {
+        const index = item[1];
+        return items[index];
+    });
+}
+
+function keyAlpha(colIndex) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[colIndex].firstChild.data.toLowerCase();
+    };
+}
+
+function keyLink(colIndex) {
+    return function(elem) {
+        const dataCell = elem.childNodes[1].childNodes[colIndex].firstChild;
+        return dataCell == null ? '' : dataCell.innerText.toLowerCase();
+    };
+}
+
+function keyResult(colIndex) {
+    return function(elem) {
+        const strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+            'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[colIndex].firstChild.data);
+    };
+}
+
+function resetSortHeaders() {
+    findAll('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    findAll('.sortable').forEach(function(elem) {
+        const icon = document.createElement('div');
+        icon.className = 'sort-icon';
+        icon.textContent = 'vvv';
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove('desc', 'active');
+        elem.classList.add('asc', 'inactive');
+    });
+}
+
+function toggleSortStates(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        resetSortHeaders();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function isAllRowsHidden(value) {
+    return value.hidden == false;
+}
+
+function filterTable(elem) { // eslint-disable-line no-unused-vars
+    const outcomeAtt = 'data-test-result';
+    const outcome = elem.getAttribute(outcomeAtt);
+    const classOutcome = outcome + ' results-table-row';
+    const outcomeRows = document.getElementsByClassName(classOutcome);
+
+    for(let i = 0; i < outcomeRows.length; i++){
+        outcomeRows[i].hidden = !elem.checked;
+    }
+
+    const rows = findAll('.results-table-row').filter(isAllRowsHidden);
+    const allRowsHidden = rows.length == 0 ? true : false;
+    const notFoundMessage = document.getElementById('not-found-message');
+    notFoundMessage.hidden = !allRowsHidden;
+}
+</script>
+    <h1>report</h1>
+    <p>Report generated on 24-May-2023 at 10:21:20 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>JAVA_HOME</td>
+        <td>C:\Program Files\Java</td></tr>
+      <tr>
+        <td>Packages</td>
+        <td>{"pluggy": "1.0.0", "pytest": "7.2.1"}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Windows-10-10.0.22621-SP0</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{"html": "3.2.0", "metadata": "2.0.4", "xdist": "3.2.0"}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.11.1</td></tr></table>
+    <h2>Summary</h2>
+    <p>32 tests ran in 156.22 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">30 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable" col="duration">Duration</th>
+          <th class="sortable links" col="links">Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_cpo_sessions.py::TestOne::test_whitelist_session__platform_verification[login_data0]</td>
+          <td class="col-duration">2.33</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div><img src="test_cpo_sessions.py_TestOne_test_whitelist_session__platform_verification[login_data0].png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;PyTests.test_common.test_cpo_sessions.TestOne object at 0x00000168838DC4D0&gt;, setup = None, login_data = {&#x27;URL&#x27;: &#x27;https://test.optimile.eu/&#x27;, &#x27;account&#x27;: &#x27;daan.swinnen@optimile.eu&#x27;, &#x27;password&#x27;: &#x27;lhiM6Alk8jW4Nh2skJMV&#x27;}<br/><br/>    def test_whitelist_session__platform_verification(self, setup, login_data):<br/>        log = self.get_logger()<br/>        log.info(login_data[&quot;account&quot;])<br/>        log.info(&quot;Attempting login.&quot;)<br/>        self.driver.get(&quot;https://test.optimile.eu/&quot;)<br/>        loginpage = LoginPage(self.driver)<br/>        loginpage.username_box().send_keys(login_data[&quot;account&quot;])<br/>        loginpage.password_box().send_keys(login_data[&quot;password&quot;])<br/>        homepage = loginpage.login_button()<br/>        log.info(&quot;Succesfully logged in.&quot;)<br/>        log.info(&quot;Navigating to cpo customers page.&quot;)<br/>        homepage.menu_label_chargingpoints()<br/>        cpocustomerpage = homepage.menu_label_cpo_customers()<br/>        log.info(&quot;Searching for &#x27;Carrefour&#x27;.&quot;)<br/>        cpocustomerpage.search_by_name_field().send_keys(&quot;Carrefour&quot; + &quot;\n&quot;)<br/>        log.info(&quot;Opening user.&quot;)<br/>        cpoindividualcustomer = cpocustomerpage.click_on_top_result_carrefour()<br/>        log.info(&quot;Opening sessions-tab.&quot;)<br/>        cpoindividualcustomer.sessions_tab()<br/>        statuslatestsession = self.driver.find_element(<br/>            By.XPATH, &quot;//tr[1]/td[10]/span&quot;<br/>        ).text<br/>&gt;       assert statuslatestsession == &quot;Whitelist&quot;<br/><span class="error">E       AssertionError: assert &#x27;&#x27; == &#x27;Whitelist&#x27;</span><br/><span class="error">E         - Whitelist</span><br/><br/>test_cpo_sessions.py:167: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_whitelist_session__platform_verification:test_cpo_sessions.py:147 daan.swinnen@optimile.eu
+INFO     test_whitelist_session__platform_verification:test_cpo_sessions.py:148 Attempting login.
+INFO     test_whitelist_session__platform_verification:test_cpo_sessions.py:154 Succesfully logged in.
+INFO     test_whitelist_session__platform_verification:test_cpo_sessions.py:155 Navigating to cpo customers page.
+INFO     test_whitelist_session__platform_verification:test_cpo_sessions.py:158 Searching for &#x27;Carrefour&#x27;.
+INFO     test_whitelist_session__platform_verification:test_cpo_sessions.py:160 Opening user.
+INFO     test_whitelist_session__platform_verification:test_cpo_sessions.py:162 Opening sessions-tab.<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_cpo_sessions.py::TestOne::test_splitbilling_session__platform_verification[login_data0]</td>
+          <td class="col-duration">10.61</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div><img src="test_cpo_sessions.py_TestOne_test_splitbilling_session__platform_verification[login_data0].png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;PyTests.test_common.test_cpo_sessions.TestOne object at 0x00000168838DD090&gt;, setup = None, login_data = {&#x27;URL&#x27;: &#x27;https://test.optimile.eu/&#x27;, &#x27;account&#x27;: &#x27;daan.swinnen@optimile.eu&#x27;, &#x27;password&#x27;: &#x27;lhiM6Alk8jW4Nh2skJMV&#x27;}<br/><br/>    def test_splitbilling_session__platform_verification(self, setup, login_data):<br/>        log = self.get_logger()<br/>        log.info(login_data[&quot;account&quot;])<br/>        log.info(&quot;Attempting login.&quot;)<br/>    <br/>        self.driver.get(&quot;https://test.optimile.eu/&quot;)<br/>        loginpage = LoginPage(self.driver)<br/>&gt;       loginpage.username_box().send_keys(login_data[&quot;account&quot;])<br/><br/>test_cpo_sessions.py:230: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>..\..\pageObjects\LoginPage.py:15: in username_box<br/>    return self.driver.find_element(*selector1)<br/>..\..\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:830: in find_element<br/>    return self.execute(Command.FIND_ELEMENT, {&quot;using&quot;: by, &quot;value&quot;: value})[&quot;value&quot;]<br/>..\..\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:440: in execute<br/>    self.error_handler.check_response(response)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x0000016883D28890&gt;<br/>response = {&#x27;status&#x27;: 404, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;no such element: Unable to locate element: {\...dInitThunk [0x752D7D59+25]\\n\\tRtlInitializeExceptionChain [0x7745B74B+107]\\n\\tRtlClearBits [0x7745B6CF+191]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;Checks that a JSON response from the WebDriver does not have an<br/>        error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:<br/>            exception_class = NoSuchShadowRootException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif (<br/>            status in ErrorCode.INVALID_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER<br/>        ):<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = f&quot;{frame[&#x27;className&#x27;]}.{meth}&quot;<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_username&quot;}</span><br/><span class="error">E         (Session info: chrome=113.0.5672.127)</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       Backtrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00D48893+48451]</span><br/><span class="error">E       	(No symbol) [0x00CDB8A1]</span><br/><span class="error">E       	(No symbol) [0x00BE5058]</span><br/><span class="error">E       	(No symbol) [0x00C10467]</span><br/><span class="error">E       	(No symbol) [0x00C1069B]</span><br/><span class="error">E       	(No symbol) [0x00C3DD92]</span><br/><span class="error">E       	(No symbol) [0x00C2A304]</span><br/><span class="error">E       	(No symbol) [0x00C3C482]</span><br/><span class="error">E       	(No symbol) [0x00C2A0B6]</span><br/><span class="error">E       	(No symbol) [0x00C07E08]</span><br/><span class="error">E       	(No symbol) [0x00C08F2D]</span><br/><span class="error">E       	GetHandleVerifier [0x00FA8E3A+2540266]</span><br/><span class="error">E       	GetHandleVerifier [0x00FE8959+2801161]</span><br/><span class="error">E       	GetHandleVerifier [0x00FE295C+2776588]</span><br/><span class="error">E       	GetHandleVerifier [0x00DD2280+612144]</span><br/><span class="error">E       	(No symbol) [0x00CE4F6C]</span><br/><span class="error">E       	(No symbol) [0x00CE11D8]</span><br/><span class="error">E       	(No symbol) [0x00CE12BB]</span><br/><span class="error">E       	(No symbol) [0x00CD4857]</span><br/><span class="error">E       	BaseThreadInitThunk [0x752D7D59+25]</span><br/><span class="error">E       	RtlInitializeExceptionChain [0x7745B74B+107]</span><br/><span class="error">E       	RtlClearBits [0x7745B6CF+191]</span><br/><br/>..\..\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:245: NoSuchElementException<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_splitbilling_session__platform_verification:test_cpo_sessions.py:225 daan.swinnen@optimile.eu
+INFO     test_splitbilling_session__platform_verification:test_cpo_sessions.py:226 Attempting login.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_overview_screen[login_data0]</td>
+          <td class="col-duration">5.21</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_overview_screen:test_cpo_basic_checks.py:17 daan.swinnen@optimile.eu
+INFO     test_cpo_overview_screen:test_cpo_basic_checks.py:18 Attempting login.
+INFO     test_cpo_overview_screen:test_cpo_basic_checks.py:23 Succesfully logged in.
+INFO     test_cpo_overview_screen:test_cpo_basic_checks.py:24 Navigating to CPO overview page.
+INFO     test_cpo_overview_screen:test_cpo_basic_checks.py:33 Succesfully verified CPO overview page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_customers_screen[login_data0]</td>
+          <td class="col-duration">1.46</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_customers_screen:test_cpo_basic_checks.py:40 daan.swinnen@optimile.eu
+INFO     test_cpo_customers_screen:test_cpo_basic_checks.py:41 Attempting login.
+INFO     test_cpo_customers_screen:test_cpo_basic_checks.py:46 Succesfully logged in.
+INFO     test_cpo_customers_screen:test_cpo_basic_checks.py:47 Navigating to CPO customers page.
+INFO     test_cpo_customers_screen:test_cpo_basic_checks.py:56 Succesfully verified customers page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_charging_locations_screen[login_data0]</td>
+          <td class="col-duration">1.31</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_charging_locations_screen:test_cpo_basic_checks.py:63 daan.swinnen@optimile.eu
+INFO     test_cpo_charging_locations_screen:test_cpo_basic_checks.py:64 Attempting login.
+INFO     test_cpo_charging_locations_screen:test_cpo_basic_checks.py:69 Succesfully logged in.
+INFO     test_cpo_charging_locations_screen:test_cpo_basic_checks.py:70 Navigating to charging locations page.
+INFO     test_cpo_charging_locations_screen:test_cpo_basic_checks.py:79 Succesfully verified locations page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_tokens_screen[login_data0]</td>
+          <td class="col-duration">1.67</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_tokens_screen:test_cpo_basic_checks.py:86 daan.swinnen@optimile.eu
+INFO     test_cpo_tokens_screen:test_cpo_basic_checks.py:87 Attempting login.
+INFO     test_cpo_tokens_screen:test_cpo_basic_checks.py:92 Succesfully logged in.
+INFO     test_cpo_tokens_screen:test_cpo_basic_checks.py:93 Navigating to tokens page.
+INFO     test_cpo_tokens_screen:test_cpo_basic_checks.py:102 Succesfully verified tokens page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_simcards_screen[login_data0]</td>
+          <td class="col-duration">1.57</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_simcards_screen:test_cpo_basic_checks.py:109 daan.swinnen@optimile.eu
+INFO     test_cpo_simcards_screen:test_cpo_basic_checks.py:110 Attempting login.
+INFO     test_cpo_simcards_screen:test_cpo_basic_checks.py:115 Succesfully logged in.
+INFO     test_cpo_simcards_screen:test_cpo_basic_checks.py:116 Navigating to simcards page.
+INFO     test_cpo_simcards_screen:test_cpo_basic_checks.py:126 Succesfully verified simcards page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_contracts_screen[login_data0]</td>
+          <td class="col-duration">1.62</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_contracts_screen:test_cpo_basic_checks.py:133 daan.swinnen@optimile.eu
+INFO     test_cpo_contracts_screen:test_cpo_basic_checks.py:134 Attempting login.
+INFO     test_cpo_contracts_screen:test_cpo_basic_checks.py:139 Succesfully logged in.
+INFO     test_cpo_contracts_screen:test_cpo_basic_checks.py:140 Navigating to contracts page.
+INFO     test_cpo_contracts_screen:test_cpo_basic_checks.py:149 Succesfully verified contracts page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_roaming_screen[login_data0]</td>
+          <td class="col-duration">1.83</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_roaming_screen:test_cpo_basic_checks.py:156 daan.swinnen@optimile.eu
+INFO     test_cpo_roaming_screen:test_cpo_basic_checks.py:157 Attempting login.
+INFO     test_cpo_roaming_screen:test_cpo_basic_checks.py:162 Succesfully logged in.
+INFO     test_cpo_roaming_screen:test_cpo_basic_checks.py:163 Navigating to roaming page.
+INFO     test_cpo_roaming_screen:test_cpo_basic_checks.py:172 Succesfully verified roaming page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_finance_screen[login_data0]</td>
+          <td class="col-duration">1.66</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_finance_screen:test_cpo_basic_checks.py:179 daan.swinnen@optimile.eu
+INFO     test_cpo_finance_screen:test_cpo_basic_checks.py:180 Attempting login.
+INFO     test_cpo_finance_screen:test_cpo_basic_checks.py:185 Succesfully logged in.
+INFO     test_cpo_finance_screen:test_cpo_basic_checks.py:186 Navigating to finance page.
+INFO     test_cpo_finance_screen:test_cpo_basic_checks.py:195 Succesfully verified finance page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_reports_screen[login_data0]</td>
+          <td class="col-duration">1.92</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_reports_screen:test_cpo_basic_checks.py:202 daan.swinnen@optimile.eu
+INFO     test_cpo_reports_screen:test_cpo_basic_checks.py:203 Attempting login.
+INFO     test_cpo_reports_screen:test_cpo_basic_checks.py:208 Succesfully logged in.
+INFO     test_cpo_reports_screen:test_cpo_basic_checks.py:209 Navigating to cpo reports page.
+INFO     test_cpo_reports_screen:test_cpo_basic_checks.py:218 Succesfully verified reports page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_basic_checks.py::TestOne::test_cpo_splitbilling_screen[login_data0]</td>
+          <td class="col-duration">2.18</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_cpo_splitbilling_screen:test_cpo_basic_checks.py:225 daan.swinnen@optimile.eu
+INFO     test_cpo_splitbilling_screen:test_cpo_basic_checks.py:226 Attempting login.
+INFO     test_cpo_splitbilling_screen:test_cpo_basic_checks.py:231 Succesfully logged in.
+INFO     test_cpo_splitbilling_screen:test_cpo_basic_checks.py:232 Navigating to splitbilling page.
+INFO     test_cpo_splitbilling_screen:test_cpo_basic_checks.py:241 Succesfully verified split billing page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_general.py::TestOne::test_reimbursementpolicy_valuechange[login_data0]</td>
+          <td class="col-duration">6.55</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Reimbursement policy value has been deleted.
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:22 daan.swinnen@optimile.eu
+INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:23 Attempting login.
+INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:30 Succesfully logged in.
+INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:31 Navigating to split billing page.
+INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:34 Opening reimbursement policy tab.
+INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:36 Opening blue collar testpolicy.
+INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:38 Attempting to change policy value.
+INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:47 Succesfully changed policy value.
+INFO     test_reimbursementpolicy_valuechange:test_cpo_general.py:67 Deleted new value. Test has been reset.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_general.py::TestOne::test_filter_locations[login_data0]</td>
+          <td class="col-duration">3.39</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_filter_locations:test_cpo_general.py:74 daan.swinnen@optimile.eu
+INFO     test_filter_locations:test_cpo_general.py:75 Attempting login.
+INFO     test_filter_locations:test_cpo_general.py:82 Succesfully logged in.
+INFO     test_filter_locations:test_cpo_general.py:83 Navigating to locations page.
+INFO     test_filter_locations:test_cpo_general.py:86 Searching locations list for &#x27;Carrefour&#x27;.
+INFO     test_filter_locations:test_cpo_general.py:93 Verified only Carrefour locations show up.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_general.py::TestOne::test_locations_search_devices[login_data0]</td>
+          <td class="col-duration">2.16</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>QATEST
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_locations_search_devices:test_cpo_general.py:100 daan.swinnen@optimile.eu
+INFO     test_locations_search_devices:test_cpo_general.py:101 Attempting login.
+INFO     test_locations_search_devices:test_cpo_general.py:108 Succesfully logged in.
+INFO     test_locations_search_devices:test_cpo_general.py:109 Navigating to locations page.
+INFO     test_locations_search_devices:test_cpo_general.py:112 Searching for device &#x27;QATEST&#x27;.
+INFO     test_locations_search_devices:test_cpo_general.py:120 Verified &#x27;QATEST&#x27; is only device returned.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_general.py::TestOne::test_configure_location_information[login_data0]</td>
+          <td class="col-duration">4.84</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_configure_location_information:test_cpo_general.py:126 daan.swinnen@optimile.eu
+INFO     test_configure_location_information:test_cpo_general.py:127 Attempting login.
+INFO     test_configure_location_information:test_cpo_general.py:134 Succesfully logged in.
+INFO     test_configure_location_information:test_cpo_general.py:135 Navigating to locations page.
+INFO     test_configure_location_information:test_cpo_general.py:138 Searching for &#x27;Autotest Location Configuration&#x27;.
+INFO     test_configure_location_information:test_cpo_general.py:141 Attempting to edit &#x27;Autotest Location&#x27;.
+INFO     test_configure_location_information:test_cpo_general.py:143 Edit location name.
+INFO     test_configure_location_information:test_cpo_general.py:145 Edit location phone number.
+INFO     test_configure_location_information:test_cpo_general.py:148 Edit contact name.
+INFO     test_configure_location_information:test_cpo_general.py:150 Attempting to update location.
+INFO     test_configure_location_information:test_cpo_general.py:158 Verified location name changed correctly.
+INFO     test_configure_location_information:test_cpo_general.py:161 Verified phone number changed correctly.
+INFO     test_configure_location_information:test_cpo_general.py:164 Verified contact name changed correctly.
+INFO     test_configure_location_information:test_cpo_general.py:166 Attempting to reset location information.
+INFO     test_configure_location_information:test_cpo_general.py:185 Succesfully reset location information.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_general.py::TestOne::test_configure_location_location_data[login_data0]</td>
+          <td class="col-duration">8.64</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_configure_location_location_data:test_cpo_general.py:192 daan.swinnen@optimile.eu
+INFO     test_configure_location_location_data:test_cpo_general.py:193 Attempting login.
+INFO     test_configure_location_location_data:test_cpo_general.py:200 Succesfully logged in.
+INFO     test_configure_location_location_data:test_cpo_general.py:201 Navigating to locations page.
+INFO     test_configure_location_location_data:test_cpo_general.py:204 Searching for &#x27;Autotest Location Configuration&#x27;.
+INFO     test_configure_location_location_data:test_cpo_general.py:207 Attempting to edit &#x27;Autotest Location&#x27;.
+INFO     test_configure_location_location_data:test_cpo_general.py:213 Updated location adress
+INFO     test_configure_location_location_data:test_cpo_general.py:216 Updated postcode.
+INFO     test_configure_location_location_data:test_cpo_general.py:219 Updated town.
+INFO     test_configure_location_location_data:test_cpo_general.py:221 Updated country.
+INFO     test_configure_location_location_data:test_cpo_general.py:223 Attempting to update location data.
+INFO     test_configure_location_location_data:test_cpo_general.py:229 Verified location data have been changed correctly.
+INFO     test_configure_location_location_data:test_cpo_general.py:230 Attempting to reset location data.
+INFO     test_configure_location_location_data:test_cpo_general.py:248 Succesfully reset location data.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_general.py::TestOne::test_add_charging_device[login_data0]</td>
+          <td class="col-duration">4.48</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_add_charging_device:test_cpo_general.py:255 daan.swinnen@optimile.eu
+INFO     test_add_charging_device:test_cpo_general.py:256 Attempting login.
+INFO     test_add_charging_device:test_cpo_general.py:263 Succesfully logged in.
+INFO     test_add_charging_device:test_cpo_general.py:264 Navigating to locations page.
+INFO     test_add_charging_device:test_cpo_general.py:267 Searching for &#x27;Autotest Location Configuration&#x27;.
+INFO     test_add_charging_device:test_cpo_general.py:270 Navigating to devices tab.
+INFO     test_add_charging_device:test_cpo_general.py:272 Attempting to register a new device.
+INFO     test_add_charging_device:test_cpo_general.py:276 Setting OCPP_ID.
+INFO     test_add_charging_device:test_cpo_general.py:278 Selecting contract from dropdown.
+INFO     test_add_charging_device:test_cpo_general.py:280 Attempting to finalize registration.
+INFO     test_add_charging_device:test_cpo_general.py:285 Succesfully registered new device.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_main_flow.py::TestOne::test_create_user</td>
+          <td class="col-duration">7.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_create_user:test_cpo_main_flow.py:18 daan.swinnen+splitbilling4@optimile.eu
+INFO     test_create_user:test_cpo_main_flow.py:19 Attempting login.
+INFO     test_create_user:test_cpo_main_flow.py:26 Succesfully logged in.
+INFO     test_create_user:test_cpo_main_flow.py:27 Navigating to users page.
+INFO     test_create_user:test_cpo_main_flow.py:29 Attempting to create new user.
+INFO     test_create_user:test_cpo_main_flow.py:31 Creating random emailadres.
+INFO     test_create_user:test_cpo_main_flow.py:37 Attempting to save new user.
+INFO     test_create_user:test_cpo_main_flow.py:42 Succesfully created new user.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_main_flow.py::TestTwo::test_create_user_contract[login_data0]</td>
+          <td class="col-duration">7.44</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_create_user_contract:test_cpo_main_flow.py:56 daan.swinnen@optimile.eu
+INFO     test_create_user_contract:test_cpo_main_flow.py:57 Attempting login.
+INFO     test_create_user_contract:test_cpo_main_flow.py:65 Succesfully logged in.
+INFO     test_create_user_contract:test_cpo_main_flow.py:66 Navigating to msp customers page.
+INFO     test_create_user_contract:test_cpo_main_flow.py:68 Searching for &#x27;Automated Test Company&#x27;.
+INFO     test_create_user_contract:test_cpo_main_flow.py:70 Open &#x27;Automated Test Company&#x27;.
+INFO     test_create_user_contract:test_cpo_main_flow.py:72 Opening mail tab to gather most recent new user.
+INFO     test_create_user_contract:test_cpo_main_flow.py:75 Attempting to create new contract.
+INFO     test_create_user_contract:test_cpo_main_flow.py:78 Selecting contract.
+INFO     test_create_user_contract:test_cpo_main_flow.py:80 Selecting user.
+INFO     test_create_user_contract:test_cpo_main_flow.py:88 Contract has been successfully created.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_main_flow.py::TestThree::test_assign_user_token[login_data0]</td>
+          <td class="col-duration">7.68</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_assign_user_token:test_cpo_main_flow.py:97 daan.swinnen@optimile.eu
+INFO     test_assign_user_token:test_cpo_main_flow.py:98 Attempting login.
+INFO     test_assign_user_token:test_cpo_main_flow.py:106 Succesfully logged in.
+INFO     test_assign_user_token:test_cpo_main_flow.py:107 Navigating towards msp customers page.
+INFO     test_assign_user_token:test_cpo_main_flow.py:109 Search for &#x27;Automated Test Company&#x27;.
+INFO     test_assign_user_token:test_cpo_main_flow.py:111 Opening customer.
+INFO     test_assign_user_token:test_cpo_main_flow.py:113 Attempting to assign token to user.
+INFO     test_assign_user_token:test_cpo_main_flow.py:119 Succesfully assigned token to user.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_main_flow.py::TestFour::test_add_token_to_whitelist</td>
+          <td class="col-duration">7.97</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_add_token_to_whitelist:test_cpo_main_flow.py:128 daan.swinnen+splitbilling4@optimile.eu
+INFO     test_add_token_to_whitelist:test_cpo_main_flow.py:129 Attempting login.
+INFO     test_add_token_to_whitelist:test_cpo_main_flow.py:136 Succesfully logged in.
+INFO     test_add_token_to_whitelist:test_cpo_main_flow.py:137 Navigating to whitelist page.
+INFO     test_add_token_to_whitelist:test_cpo_main_flow.py:140 Attempting to add tokens to whitelist.
+INFO     test_add_token_to_whitelist:test_cpo_main_flow.py:147 Succesfully added tokens to whitelist.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_sessions.py::TestOne::test_roaming_session[roaming_session_data0-login_data0]</td>
+          <td class="col-duration">15.80</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>902
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_roaming_session:test_cpo_sessions.py:25 daan.swinnen@optimile.eu
+INFO     test_roaming_session:test_cpo_sessions.py:26 TestDevice89
+INFO     test_roaming_session:test_cpo_sessions.py:29 Attempting to connect to simulator.
+INFO     test_roaming_session:test_cpo_sessions.py:35 Connected to simulator.
+INFO     test_roaming_session:test_cpo_sessions.py:37 Requesting &#x27;start transaction&#x27;-screen.
+INFO     test_roaming_session:test_cpo_sessions.py:39 Entering connectorID.
+INFO     test_roaming_session:test_cpo_sessions.py:43 Sending token RFID.
+INFO     test_roaming_session:test_cpo_sessions.py:46 Attempting to start transaction.
+INFO     test_roaming_session:test_cpo_sessions.py:49 Getting transaction ID.
+INFO     test_roaming_session:test_cpo_sessions.py:52 Requesting &#x27;stop transaction&#x27;-screen.
+INFO     test_roaming_session:test_cpo_sessions.py:54 Sending token RFID.
+INFO     test_roaming_session:test_cpo_sessions.py:58 Simulating meter end value.
+INFO     test_roaming_session:test_cpo_sessions.py:60 Sending transaction ID.
+INFO     test_roaming_session:test_cpo_sessions.py:62 Sending timestamp.
+INFO     test_roaming_session:test_cpo_sessions.py:64 Selecting transaction stop reason.
+INFO     test_roaming_session:test_cpo_sessions.py:66 Stopping transaction.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_sessions.py::TestOne::test_roaming_session__platform_verification[login_data0]</td>
+          <td class="col-duration">5.66</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_roaming_session__platform_verification:test_cpo_sessions.py:72 daan.swinnen@optimile.eu
+INFO     test_roaming_session__platform_verification:test_cpo_sessions.py:73 Attempting login.
+INFO     test_roaming_session__platform_verification:test_cpo_sessions.py:79 Succesfully logged in.
+INFO     test_roaming_session__platform_verification:test_cpo_sessions.py:80 Navigating to msp customers page.
+INFO     test_roaming_session__platform_verification:test_cpo_sessions.py:83 Searching for &#x27;Autotesting Roaming&#x27;.
+INFO     test_roaming_session__platform_verification:test_cpo_sessions.py:86 Opening customer.
+INFO     test_roaming_session__platform_verification:test_cpo_sessions.py:88 Activity tab.
+INFO     test_roaming_session__platform_verification:test_cpo_sessions.py:92 Succesfully verified charging session registered as &#x27;normal&#x27;.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_sessions.py::TestOne::test_whitelist_session[roaming_session_data0-login_data0]</td>
+          <td class="col-duration">13.10</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>903
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_whitelist_session:test_cpo_sessions.py:98 daan.swinnen@optimile.eu
+INFO     test_whitelist_session:test_cpo_sessions.py:99 TestDevice89
+INFO     test_whitelist_session:test_cpo_sessions.py:102 Attempting to connect to simulator.
+INFO     test_whitelist_session:test_cpo_sessions.py:108 Connected to simulator.
+INFO     test_whitelist_session:test_cpo_sessions.py:110 Requesting &#x27;start transaction&#x27;-screen.
+INFO     test_whitelist_session:test_cpo_sessions.py:112 Entering connectorID.
+INFO     test_whitelist_session:test_cpo_sessions.py:116 Sending token RFID.
+INFO     test_whitelist_session:test_cpo_sessions.py:121 Attempting to start transaction.
+INFO     test_whitelist_session:test_cpo_sessions.py:124 Getting transaction ID.
+INFO     test_whitelist_session:test_cpo_sessions.py:127 Requesting &#x27;stop transaction&#x27;-screen.
+INFO     test_whitelist_session:test_cpo_sessions.py:129 Sending token RFID.
+INFO     test_whitelist_session:test_cpo_sessions.py:133 Simulating meter end value.
+INFO     test_whitelist_session:test_cpo_sessions.py:135 Sending transaction ID.
+INFO     test_whitelist_session:test_cpo_sessions.py:137 Sending timestamp.
+INFO     test_whitelist_session:test_cpo_sessions.py:139 Selecting transaction stop reason.
+INFO     test_whitelist_session:test_cpo_sessions.py:141 Stopping transaction.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cpo_sessions.py::TestOne::test_splitbilling_session[roaming_session_data0-login_data0]</td>
+          <td class="col-duration">14.35</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>904
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_splitbilling_session:test_cpo_sessions.py:174 daan.swinnen@optimile.eu
+INFO     test_splitbilling_session:test_cpo_sessions.py:175 TestDevice89
+INFO     test_splitbilling_session:test_cpo_sessions.py:178 Attempting to connect to simulator.
+INFO     test_splitbilling_session:test_cpo_sessions.py:186 Connected to simulator.
+INFO     test_splitbilling_session:test_cpo_sessions.py:188 Requesting &#x27;start transaction&#x27;-screen.
+INFO     test_splitbilling_session:test_cpo_sessions.py:190 Entering connectorID.
+INFO     test_splitbilling_session:test_cpo_sessions.py:194 Sending token RFID.
+INFO     test_splitbilling_session:test_cpo_sessions.py:199 Attempting to start transaction.
+INFO     test_splitbilling_session:test_cpo_sessions.py:202 Getting transaction ID.
+INFO     test_splitbilling_session:test_cpo_sessions.py:205 Requesting &#x27;stop transaction&#x27;-screen.
+INFO     test_splitbilling_session:test_cpo_sessions.py:207 Sending token RFID.
+INFO     test_splitbilling_session:test_cpo_sessions.py:211 Simulating meter end value.
+INFO     test_splitbilling_session:test_cpo_sessions.py:213 Sending transaction ID.
+INFO     test_splitbilling_session:test_cpo_sessions.py:215 Sending timestamp.
+INFO     test_splitbilling_session:test_cpo_sessions.py:217 Selecting transaction stop reason.
+INFO     test_splitbilling_session:test_cpo_sessions.py:219 Stopping transaction.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_msp_basic_checks.py::TestOne::test_msp_customers_screen[login_data0]</td>
+          <td class="col-duration">4.86</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_msp_customers_screen:test_msp_basic_checks.py:17 daan.swinnen@optimile.eu
+INFO     test_msp_customers_screen:test_msp_basic_checks.py:18 Attempting login.
+INFO     test_msp_customers_screen:test_msp_basic_checks.py:23 Succesfully logged in.
+INFO     test_msp_customers_screen:test_msp_basic_checks.py:24 Navigating to msp customers page.
+INFO     test_msp_customers_screen:test_msp_basic_checks.py:31 Succesfully verified msp customers page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_msp_basic_checks.py::TestOne::test_msp_tokens_screen[login_data0]</td>
+          <td class="col-duration">1.55</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_msp_tokens_screen:test_msp_basic_checks.py:38 daan.swinnen@optimile.eu
+INFO     test_msp_tokens_screen:test_msp_basic_checks.py:39 Attempting login.
+INFO     test_msp_tokens_screen:test_msp_basic_checks.py:44 Succesfully logged in.
+INFO     test_msp_tokens_screen:test_msp_basic_checks.py:45 Navigating to msp tokens page.
+INFO     test_msp_tokens_screen:test_msp_basic_checks.py:52 Succesfully verified tokens page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_msp_basic_checks.py::TestOne::test_msp_vouchers_screen[login_data0]</td>
+          <td class="col-duration">1.38</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_msp_vouchers_screen:test_msp_basic_checks.py:59 daan.swinnen@optimile.eu
+INFO     test_msp_vouchers_screen:test_msp_basic_checks.py:60 Attempting login.
+INFO     test_msp_vouchers_screen:test_msp_basic_checks.py:65 Succesfully logged in.
+INFO     test_msp_vouchers_screen:test_msp_basic_checks.py:66 Navigating to msp vouchers page.
+INFO     test_msp_vouchers_screen:test_msp_basic_checks.py:73 Succesfully verified vouchers page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_msp_basic_checks.py::TestOne::test_msp_contracts_screen[login_data0]</td>
+          <td class="col-duration">1.51</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_msp_contracts_screen:test_msp_basic_checks.py:80 daan.swinnen@optimile.eu
+INFO     test_msp_contracts_screen:test_msp_basic_checks.py:81 Attempting login.
+INFO     test_msp_contracts_screen:test_msp_basic_checks.py:86 Succesfully logged in.
+INFO     test_msp_contracts_screen:test_msp_basic_checks.py:87 Navigating to msp contracts page.
+INFO     test_msp_contracts_screen:test_msp_basic_checks.py:94 Succesfully verified contracts page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_msp_basic_checks.py::TestOne::test_msp_operators_screen[login_data0]</td>
+          <td class="col-duration">1.77</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_msp_operators_screen:test_msp_basic_checks.py:101 daan.swinnen@optimile.eu
+INFO     test_msp_operators_screen:test_msp_basic_checks.py:102 Attempting login.
+INFO     test_msp_operators_screen:test_msp_basic_checks.py:107 Succesfully logged in.
+INFO     test_msp_operators_screen:test_msp_basic_checks.py:108 Navigating to msp operators page.
+INFO     test_msp_operators_screen:test_msp_basic_checks.py:115 Succesfully verified operators page.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_msp_basic_checks.py::TestOne::test_msp_invoices_screen[login_data0]</td>
+          <td class="col-duration">1.46</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_msp_invoices_screen:test_msp_basic_checks.py:122 daan.swinnen@optimile.eu
+INFO     test_msp_invoices_screen:test_msp_basic_checks.py:123 Attempting login.
+INFO     test_msp_invoices_screen:test_msp_basic_checks.py:128 Succesfully logged in.
+INFO     test_msp_invoices_screen:test_msp_basic_checks.py:129 Navigating to msp invoices page.
+INFO     test_msp_invoices_screen:test_msp_basic_checks.py:136 Succesfully verified invoices page.<br/></div></td></tr></tbody></table></body></html>

@@ -18815,3 +18815,804 @@ Stacktrace:
 2024-09-19 17:28:26,421 : INFO : test_check_and_process_host_invoices : Attempting login.
 2024-09-19 17:30:35,108 : INFO : test_check_and_process_host_invoices : daan.swinnen@optimile.eu
 2024-09-19 17:30:35,108 : INFO : test_check_and_process_host_invoices : Attempting login.
+2024-09-20 07:05:38,601 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 07:05:38,601 : INFO : test_create_user : Attempting login.
+2024-09-20 07:05:40,539 : INFO : test_create_user : Succesfully logged in.
+2024-09-20 07:05:40,539 : INFO : test_create_user : Navigating to users page.
+2024-09-20 07:05:41,663 : INFO : test_create_user : Attempting to create new user.
+2024-09-20 07:05:42,168 : INFO : test_create_user : Creating random emailadres.
+2024-09-20 07:05:42,348 : INFO : test_create_user : Attempting to save new user.
+2024-09-20 07:05:44,221 : INFO : test_create_user : Succesfully created new user.
+2024-09-20 07:05:45,774 : INFO : test_create_user : Navigating to msp customers page.
+2024-09-20 07:05:46,360 : INFO : test_create_user : Searching for 'Automated Test Company'.
+2024-09-20 07:05:46,730 : INFO : test_create_user : Open 'Automated Test Company'.
+2024-09-20 07:05:47,161 : INFO : test_create_user : Attempting to create new contract.
+2024-09-20 07:05:48,207 : INFO : test_create_user : Selecting contract.
+2024-09-20 07:05:48,290 : INFO : test_create_user : Selecting user.
+2024-09-20 07:05:59,837 : INFO : test_create_user : Contract has been successfully created.
+2024-09-20 10:22:10,129 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 10:22:10,129 : INFO : test_create_user : Attempting login.
+2024-09-20 10:22:12,382 : INFO : test_create_user : Succesfully logged in.
+2024-09-20 10:22:12,383 : INFO : test_create_user : Navigating to users page.
+2024-09-20 10:22:12,973 : INFO : test_create_user : Attempting to create new user.
+2024-09-20 10:22:13,471 : INFO : test_create_user : Creating random emailadres.
+2024-09-20 10:22:13,605 : INFO : test_create_user : Attempting to save new user.
+2024-09-20 10:22:15,234 : INFO : test_create_user : Succesfully created new user.
+2024-09-20 10:22:16,633 : INFO : test_create_user : Navigating to msp customers page.
+2024-09-20 10:22:17,112 : INFO : test_create_user : Searching for 'Automated Test Company'.
+2024-09-20 10:22:17,397 : INFO : test_create_user : Open 'Automated Test Company'.
+2024-09-20 10:22:17,668 : INFO : test_create_user : Attempting to create new contract.
+2024-09-20 10:22:18,252 : INFO : test_create_user : Selecting contract.
+2024-09-20 10:22:18,333 : INFO : test_create_user : Selecting user.
+2024-09-20 10:23:29,843 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 10:23:29,843 : INFO : test_create_user : Attempting login.
+2024-09-20 10:23:31,719 : INFO : test_create_user : Succesfully logged in.
+2024-09-20 10:23:31,721 : INFO : test_create_user : Navigating to users page.
+2024-09-20 10:23:32,251 : INFO : test_create_user : Attempting to create new user.
+2024-09-20 10:23:32,642 : INFO : test_create_user : Creating random emailadres.
+2024-09-20 10:23:32,770 : INFO : test_create_user : Attempting to save new user.
+2024-09-20 10:23:34,505 : INFO : test_create_user : Succesfully created new user.
+2024-09-20 10:23:35,982 : INFO : test_create_user : Navigating to msp customers page.
+2024-09-20 10:23:36,352 : INFO : test_create_user : Searching for 'Automated Test Company'.
+2024-09-20 10:23:36,645 : INFO : test_create_user : Open 'Automated Test Company'.
+2024-09-20 10:23:36,915 : INFO : test_create_user : Attempting to create new contract.
+2024-09-20 10:23:37,502 : INFO : test_create_user : Selecting contract.
+2024-09-20 10:23:37,587 : INFO : test_create_user : Selecting user.
+2024-09-20 10:23:50,526 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 10:23:50,526 : INFO : test_create_user : Attempting login.
+2024-09-20 10:23:52,395 : INFO : test_create_user : Succesfully logged in.
+2024-09-20 10:23:52,396 : INFO : test_create_user : Navigating to users page.
+2024-09-20 10:23:52,899 : INFO : test_create_user : Attempting to create new user.
+2024-09-20 10:23:53,279 : INFO : test_create_user : Creating random emailadres.
+2024-09-20 10:23:53,419 : INFO : test_create_user : Attempting to save new user.
+2024-09-20 10:23:54,836 : INFO : test_create_user : Succesfully created new user.
+2024-09-20 10:23:56,423 : INFO : test_create_user : Navigating to msp customers page.
+2024-09-20 10:23:56,754 : INFO : test_create_user : Searching for 'Automated Test Company'.
+2024-09-20 10:23:57,049 : INFO : test_create_user : Open 'Automated Test Company'.
+2024-09-20 10:23:57,295 : INFO : test_create_user : Attempting to create new contract.
+2024-09-20 10:23:57,802 : INFO : test_create_user : Selecting contract.
+2024-09-20 10:23:57,887 : INFO : test_create_user : Selecting user.
+2024-09-20 10:24:37,465 : INFO : test_create_user : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 10:24:37,465 : INFO : test_create_user : Attempting login.
+2024-09-20 10:24:39,359 : INFO : test_create_user : Succesfully logged in.
+2024-09-20 10:24:39,359 : INFO : test_create_user : Navigating to users page.
+2024-09-20 10:24:39,833 : INFO : test_create_user : Attempting to create new user.
+2024-09-20 10:24:40,209 : INFO : test_create_user : Creating random emailadres.
+2024-09-20 10:24:40,294 : INFO : test_create_user : Attempting to save new user.
+2024-09-20 10:24:41,838 : INFO : test_create_user : Succesfully created new user.
+2024-09-20 10:24:43,271 : INFO : test_create_user : Navigating to msp customers page.
+2024-09-20 10:24:43,659 : INFO : test_create_user : Searching for 'Automated Test Company'.
+2024-09-20 10:24:43,935 : INFO : test_create_user : Open 'Automated Test Company'.
+2024-09-20 10:24:44,197 : INFO : test_create_user : Attempting to create new contract.
+2024-09-20 10:24:44,731 : INFO : test_create_user : Selecting contract.
+2024-09-20 10:24:44,811 : INFO : test_create_user : Selecting user.
+2024-09-20 10:24:55,405 : INFO : test_create_user : Contract has been successfully created.
+2024-09-20 10:56:34,229 : INFO : test_create_user_contract_and_verify_token_request : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 10:56:34,229 : INFO : test_create_user_contract_and_verify_token_request : Attempting login.
+2024-09-20 10:56:35,886 : INFO : test_create_user_contract_and_verify_token_request : Succesfully logged in.
+2024-09-20 10:56:35,887 : INFO : test_create_user_contract_and_verify_token_request : Navigating to users page.
+2024-09-20 10:56:36,455 : INFO : test_create_user_contract_and_verify_token_request : Attempting to create new user.
+2024-09-20 10:56:36,784 : INFO : test_create_user_contract_and_verify_token_request : Creating random emailadres.
+2024-09-20 10:56:36,872 : INFO : test_create_user_contract_and_verify_token_request : Attempting to save new user.
+2024-09-20 10:56:38,603 : INFO : test_create_user_contract_and_verify_token_request : Succesfully created new user.
+2024-09-20 10:56:40,076 : INFO : test_create_user_contract_and_verify_token_request : Navigating to msp customers page.
+2024-09-20 10:56:40,568 : INFO : test_create_user_contract_and_verify_token_request : Searching for 'Automated Test Company'.
+2024-09-20 10:56:40,915 : INFO : test_create_user_contract_and_verify_token_request : Open 'Automated Test Company'.
+2024-09-20 10:56:41,246 : INFO : test_create_user_contract_and_verify_token_request : Attempting to create new contract.
+2024-09-20 10:56:41,855 : INFO : test_create_user_contract_and_verify_token_request : Selecting contract.
+2024-09-20 10:56:41,939 : INFO : test_create_user_contract_and_verify_token_request : Selecting user.
+2024-09-20 10:56:52,502 : INFO : test_create_user_contract_and_verify_token_request : Contract has been successfully created.
+2024-09-20 11:27:35,280 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:27:35,280 : INFO : test_request_token : Attempting login.
+2024-09-20 11:27:54,857 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:27:54,857 : INFO : test_request_token : Attempting login.
+2024-09-20 11:41:09,354 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:41:09,354 : INFO : test_request_token : Attempting login.
+2024-09-20 11:42:26,828 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:42:26,828 : INFO : test_request_token : Attempting login.
+2024-09-20 11:43:01,911 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:43:01,911 : INFO : test_request_token : Attempting login.
+2024-09-20 11:43:45,729 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:43:45,729 : INFO : test_request_token : Attempting login.
+2024-09-20 11:44:07,464 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:44:07,465 : INFO : test_request_token : Attempting login.
+2024-09-20 11:44:28,390 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:44:28,390 : INFO : test_request_token : Attempting login.
+2024-09-20 11:53:39,986 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:53:39,986 : INFO : test_request_token : Attempting login.
+2024-09-20 11:54:23,757 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:54:23,757 : INFO : test_request_token : Attempting login.
+2024-09-20 11:54:38,092 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:54:38,092 : INFO : test_request_token : Attempting login.
+2024-09-20 11:55:19,246 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:55:19,246 : INFO : test_request_token : Attempting login.
+2024-09-20 11:55:42,924 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:55:42,924 : INFO : test_request_token : Attempting login.
+2024-09-20 11:55:54,509 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 11:55:54,509 : INFO : test_request_token : Attempting login.
+2024-09-20 12:04:35,849 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 12:04:35,850 : INFO : test_request_token : Attempting login.
+2024-09-20 12:22:12,800 : INFO : test_roaming_session : daan.swinnen@optimile.eu
+2024-09-20 12:22:12,800 : INFO : test_roaming_session : TestDevice89
+2024-09-20 12:22:12,800 : INFO : test_roaming_session : Attempting to connect to simulator.
+2024-09-20 12:22:13,148 : INFO : test_roaming_session : Connected to simulator.
+2024-09-20 12:22:14,151 : INFO : test_roaming_session : Requesting 'start transaction'-screen.
+2024-09-20 12:22:14,226 : INFO : test_roaming_session : Entering connectorID.
+2024-09-20 12:22:14,258 : INFO : test_roaming_session : Sending token RFID.
+2024-09-20 12:22:14,333 : INFO : test_roaming_session : Attempting to start transaction.
+2024-09-20 12:22:24,380 : INFO : test_roaming_session : Getting transaction ID.
+2024-09-20 12:22:24,395 : INFO : test_roaming_session : Requesting 'stop transaction'-screen.
+2024-09-20 12:22:24,458 : INFO : test_roaming_session : Sending token RFID.
+2024-09-20 12:22:24,502 : INFO : test_roaming_session : Simulating meter end value.
+2024-09-20 12:22:24,542 : INFO : test_roaming_session : Sending transaction ID.
+2024-09-20 12:22:24,571 : INFO : test_roaming_session : Sending timestamp.
+2024-09-20 12:22:24,654 : INFO : test_roaming_session : Selecting transaction stop reason.
+2024-09-20 12:22:24,698 : INFO : test_roaming_session : Stopping transaction.
+2024-09-20 12:22:34,252 : INFO : test_roaming_session__platform_verification : daan.swinnen@optimile.eu
+2024-09-20 12:22:34,252 : INFO : test_roaming_session__platform_verification : Attempting login.
+2024-09-20 12:22:36,282 : INFO : test_roaming_session__platform_verification : Succesfully logged in.
+2024-09-20 12:22:36,283 : INFO : test_roaming_session__platform_verification : Navigating to msp customers page.
+2024-09-20 12:22:36,753 : INFO : test_roaming_session__platform_verification : Searching for 'Autotesting Roaming'.
+2024-09-20 12:22:38,013 : INFO : test_roaming_session__platform_verification : Opening customer.
+2024-09-20 12:22:38,282 : INFO : test_roaming_session__platform_verification : Activity tab.
+2024-09-20 12:25:31,713 : INFO : test_roaming_session__platform_verification : daan.swinnen@optimile.eu
+2024-09-20 12:25:31,714 : INFO : test_roaming_session__platform_verification : Attempting login.
+2024-09-20 12:25:33,836 : INFO : test_roaming_session__platform_verification : Succesfully logged in.
+2024-09-20 12:25:33,836 : INFO : test_roaming_session__platform_verification : Navigating to msp customers page.
+2024-09-20 12:25:34,317 : INFO : test_roaming_session__platform_verification : Searching for 'Autotesting Roaming'.
+2024-09-20 12:25:35,586 : INFO : test_roaming_session__platform_verification : Opening customer.
+2024-09-20 12:25:35,836 : INFO : test_roaming_session__platform_verification : Activity tab.
+2024-09-20 12:26:59,236 : INFO : test_roaming_session__platform_verification : daan.swinnen@optimile.eu
+2024-09-20 12:26:59,236 : INFO : test_roaming_session__platform_verification : Attempting login.
+2024-09-20 12:27:01,450 : INFO : test_roaming_session__platform_verification : Succesfully logged in.
+2024-09-20 12:27:01,451 : INFO : test_roaming_session__platform_verification : Navigating to msp customers page.
+2024-09-20 12:27:01,940 : INFO : test_roaming_session__platform_verification : Searching for 'Autotesting Roaming'.
+2024-09-20 12:27:03,210 : INFO : test_roaming_session__platform_verification : Opening customer.
+2024-09-20 12:27:03,511 : INFO : test_roaming_session__platform_verification : Activity tab.
+2024-09-20 12:27:04,280 : INFO : test_roaming_session__platform_verification : Succesfully verified charging session registered as 'normal'.
+2024-09-20 12:27:04,289 : INFO : test_roaming_session__platform_verification : Successfully confirmed session value.
+2024-09-20 12:27:12,043 : INFO : test_whitelist_session : daan.swinnen@optimile.eu
+2024-09-20 12:27:12,043 : INFO : test_whitelist_session : TestDevice89
+2024-09-20 12:27:12,043 : INFO : test_whitelist_session : Attempting to connect to simulator.
+2024-09-20 12:27:12,341 : INFO : test_whitelist_session : Connected to simulator.
+2024-09-20 12:27:13,346 : INFO : test_whitelist_session : Requesting 'start transaction'-screen.
+2024-09-20 12:27:13,422 : INFO : test_whitelist_session : Entering connectorID.
+2024-09-20 12:27:13,449 : INFO : test_whitelist_session : Sending token RFID.
+2024-09-20 12:27:13,505 : INFO : test_whitelist_session : Attempting to start transaction.
+2024-09-20 12:27:23,538 : INFO : test_whitelist_session : Getting transaction ID.
+2024-09-20 12:27:23,552 : INFO : test_whitelist_session : Requesting 'stop transaction'-screen.
+2024-09-20 12:27:23,610 : INFO : test_whitelist_session : Sending token RFID.
+2024-09-20 12:27:23,642 : INFO : test_whitelist_session : Simulating meter end value.
+2024-09-20 12:27:23,674 : INFO : test_whitelist_session : Sending transaction ID.
+2024-09-20 12:27:23,702 : INFO : test_whitelist_session : Sending timestamp.
+2024-09-20 12:27:23,757 : INFO : test_whitelist_session : Selecting transaction stop reason.
+2024-09-20 12:27:23,795 : INFO : test_whitelist_session : Stopping transaction.
+2024-09-20 12:27:28,464 : INFO : test_whitelist_session__platform_verification : daan.swinnen@optimile.eu
+2024-09-20 12:27:28,464 : INFO : test_whitelist_session__platform_verification : Attempting login.
+2024-09-20 12:27:30,626 : INFO : test_whitelist_session__platform_verification : Succesfully logged in.
+2024-09-20 12:27:30,626 : INFO : test_whitelist_session__platform_verification : Navigating to cpo customers page.
+2024-09-20 12:27:31,104 : INFO : test_whitelist_session__platform_verification : Searching for 'Carrefour'.
+2024-09-20 12:27:31,326 : INFO : test_whitelist_session__platform_verification : Opening user.
+2024-09-20 12:27:31,681 : INFO : test_whitelist_session__platform_verification : Opening sessions-tab.
+2024-09-20 12:27:34,206 : INFO : test_whitelist_session__platform_verification : Succesfully verified session status as 'whitelist'.
+2024-09-20 12:31:53,709 : INFO : test_splitbilling_session : daan.swinnen@optimile.eu
+2024-09-20 12:31:53,709 : INFO : test_splitbilling_session : TestDevice89
+2024-09-20 12:31:53,709 : INFO : test_splitbilling_session : Attempting to connect to simulator.
+2024-09-20 12:31:54,041 : INFO : test_splitbilling_session : Connected to simulator.
+2024-09-20 12:31:55,046 : INFO : test_splitbilling_session : Requesting 'start transaction'-screen.
+2024-09-20 12:31:55,111 : INFO : test_splitbilling_session : Entering connectorID.
+2024-09-20 12:31:55,144 : INFO : test_splitbilling_session : Sending token RFID.
+2024-09-20 12:31:55,234 : INFO : test_splitbilling_session : Attempting to start transaction.
+2024-09-20 12:32:05,284 : INFO : test_splitbilling_session : Getting transaction ID.
+2024-09-20 12:32:05,297 : INFO : test_splitbilling_session : Requesting 'stop transaction'-screen.
+2024-09-20 12:32:05,367 : INFO : test_splitbilling_session : Sending token RFID.
+2024-09-20 12:32:05,412 : INFO : test_splitbilling_session : Simulating meter end value.
+2024-09-20 12:32:05,452 : INFO : test_splitbilling_session : Sending transaction ID.
+2024-09-20 12:32:05,486 : INFO : test_splitbilling_session : Sending timestamp.
+2024-09-20 12:32:05,559 : INFO : test_splitbilling_session : Selecting transaction stop reason.
+2024-09-20 12:32:05,606 : INFO : test_splitbilling_session : Stopping transaction.
+2024-09-20 12:32:10,431 : INFO : test_splitbilling_session__platform_verification : daan.swinnen@optimile.eu
+2024-09-20 12:32:10,431 : INFO : test_splitbilling_session__platform_verification : Attempting login.
+2024-09-20 12:32:12,562 : INFO : test_splitbilling_session__platform_verification : Succesfully logged in.
+2024-09-20 12:32:12,563 : INFO : test_splitbilling_session__platform_verification : Navigating to CPO customers screen.
+2024-09-20 12:32:13,214 : INFO : test_splitbilling_session__platform_verification : Searching for 'Autotest Splitbilling'.
+2024-09-20 12:32:13,533 : INFO : test_splitbilling_session__platform_verification : Opening user.
+2024-09-20 12:32:13,855 : INFO : test_splitbilling_session__platform_verification : Opening sessions-tab
+2024-09-20 12:32:16,413 : INFO : test_splitbilling_session__platform_verification : Succesfully verified the session as 'Split Billing'.
+2024-09-20 13:53:10,531 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 13:53:10,531 : INFO : test_request_token : Attempting login.
+2024-09-20 13:53:44,202 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 13:53:44,202 : INFO : test_request_token : Attempting login.
+2024-09-20 13:53:54,724 : INFO : test_request_token : Navigating to msp customers page.
+2024-09-20 13:53:55,846 : INFO : test_request_token : Searching for 'Automated Test Company'.
+2024-09-20 13:53:56,134 : INFO : test_request_token : Open 'Automated Test Company'.
+2024-09-20 13:56:26,150 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 13:56:26,151 : INFO : test_request_token : Attempting login.
+2024-09-20 13:56:36,271 : INFO : test_request_token : Navigating to msp customers page.
+2024-09-20 13:56:36,962 : INFO : test_request_token : Searching for 'Automated Test Company'.
+2024-09-20 13:56:37,317 : INFO : test_request_token : Open 'Automated Test Company'.
+2024-09-20 13:57:38,090 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 13:57:38,090 : INFO : test_request_token : Attempting login.
+2024-09-20 13:57:47,757 : INFO : test_request_token : Navigating to msp customers page.
+2024-09-20 13:57:48,558 : INFO : test_request_token : Searching for 'Automated Test Company'.
+2024-09-20 13:57:48,849 : INFO : test_request_token : Open 'Automated Test Company'.
+2024-09-20 14:00:46,399 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 14:00:46,399 : INFO : test_request_token : Attempting login.
+2024-09-20 14:00:56,375 : INFO : test_request_token : Navigating to msp customers page.
+2024-09-20 14:00:57,102 : INFO : test_request_token : Searching for 'Automated Test Company'.
+2024-09-20 14:00:57,383 : INFO : test_request_token : Open 'Automated Test Company'.
+2024-09-20 14:01:27,430 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 14:01:27,430 : INFO : test_request_token : Attempting login.
+2024-09-20 14:01:37,162 : INFO : test_request_token : Navigating to msp customers page.
+2024-09-20 14:01:37,858 : INFO : test_request_token : Searching for 'Automated Test Company'.
+2024-09-20 14:01:38,134 : INFO : test_request_token : Open 'Automated Test Company'.
+2024-09-20 14:02:19,645 : INFO : test_request_token : daan.swinnen+splitbilling4@optimile.eu
+2024-09-20 14:02:19,645 : INFO : test_request_token : Attempting login.
+2024-09-20 14:02:29,558 : INFO : test_request_token : Navigating to msp customers page.
+2024-09-20 14:02:30,090 : INFO : test_request_token : Searching for 'Automated Test Company'.
+2024-09-20 14:02:30,429 : INFO : test_request_token : Open 'Automated Test Company'.
+2024-09-20 15:37:56,180 : INFO : test_adhoc_page_search : daan.swinnen@optimile.eu
+2024-09-20 15:37:56,180 : INFO : test_adhoc_page_search : Attempting login.
+2024-09-20 15:37:58,806 : INFO : test_adhoc_page_search : Succesfully logged in.
+2024-09-20 15:37:58,808 : INFO : test_adhoc_page_search : Navigating to split billing page.
+2024-09-20 15:38:10,872 : INFO : test_adhoc_page_search : Verified only BCDEVICE_GENT_4 sessions show up.
+2024-09-24 11:23:23,604 : INFO : test_payter_settings : daan.swinnen@optimile.eu
+2024-09-24 11:23:23,604 : INFO : test_payter_settings : Attempting login.
+2024-09-24 11:23:25,435 : INFO : test_payter_settings : Succesfully logged in.
+2024-09-24 11:23:25,438 : INFO : test_payter_settings : Navigating to split billing page.
+2024-09-24 11:25:07,568 : INFO : test_payter_settings : daan.swinnen@optimile.eu
+2024-09-24 11:25:07,568 : INFO : test_payter_settings : Attempting login.
+2024-09-24 11:30:45,187 : INFO : test_payter_settings : daan.swinnen@optimile.eu
+2024-09-24 11:30:45,187 : INFO : test_payter_settings : Attempting login.
+2024-09-24 11:30:52,520 : INFO : test_payment_page_settings : daan.swinnen@optimile.eu
+2024-09-24 11:30:52,520 : INFO : test_payment_page_settings : Attempting login.
+2024-09-24 11:55:59,834 : INFO : test_reimbursement_policy_valuechange : daan.swinnen@optimile.eu
+2024-09-24 11:55:59,835 : INFO : test_reimbursement_policy_valuechange : Attempting login.
+2024-09-24 11:56:01,759 : INFO : test_reimbursement_policy_valuechange : Succesfully logged in.
+2024-09-24 11:56:01,761 : INFO : test_reimbursement_policy_valuechange : Navigating to split billing page.
+2024-09-24 11:56:02,392 : INFO : test_reimbursement_policy_valuechange : Opening reimbursement policy tab.
+2024-09-24 11:56:03,110 : INFO : test_reimbursement_policy_valuechange : Opening autotesting reimbursement policy.
+2024-09-24 11:56:47,159 : INFO : test_reimbursement_policy_valuechange : daan.swinnen@optimile.eu
+2024-09-24 11:56:47,159 : INFO : test_reimbursement_policy_valuechange : Attempting login.
+2024-09-24 11:56:49,240 : INFO : test_reimbursement_policy_valuechange : Succesfully logged in.
+2024-09-24 11:56:49,242 : INFO : test_reimbursement_policy_valuechange : Navigating to split billing page.
+2024-09-24 11:56:49,820 : INFO : test_reimbursement_policy_valuechange : Opening reimbursement policy tab.
+2024-09-24 11:56:50,679 : INFO : test_reimbursement_policy_valuechange : Opening autotesting reimbursement policy.
+2024-09-24 11:56:50,919 : INFO : test_reimbursement_policy_valuechange : Attempting to change policy value.
+2024-09-24 11:56:51,352 : INFO : test_reimbursement_policy_valuechange : Succesfully changed policy value.
+2024-09-24 11:56:51,779 : INFO : test_reimbursement_policy_valuechange : Deleted new value. Test has been reset.
+2024-09-24 12:00:05,208 : INFO : test_filter_locations : daan.swinnen@optimile.eu
+2024-09-24 12:00:05,208 : INFO : test_filter_locations : Attempting login.
+2024-09-24 12:00:08,187 : INFO : test_filter_locations : Succesfully logged in.
+2024-09-24 12:00:08,189 : INFO : test_filter_locations : Navigating to locations page.
+2024-09-24 12:00:08,753 : INFO : test_filter_locations : Searching locations list for 'Main Customer'.
+2024-09-24 12:00:10,135 : INFO : test_filter_locations : Verified only main customer locations show up.
+2024-09-24 13:25:33,429 : INFO : test_locations_search_device : daan.swinnen@optimile.eu
+2024-09-24 13:25:33,430 : INFO : test_locations_search_device : Attempting login.
+2024-09-24 13:25:35,633 : INFO : test_locations_search_device : Succesfully logged in.
+2024-09-24 13:25:35,634 : INFO : test_locations_search_device : Navigating to locations page.
+2024-09-24 13:25:36,132 : INFO : test_locations_search_device : Searching for device 'ROAMING_DEVICE'.
+2024-09-24 13:27:43,008 : INFO : test_locations_search_device : daan.swinnen@optimile.eu
+2024-09-24 13:27:43,009 : INFO : test_locations_search_device : Attempting login.
+2024-09-24 13:27:45,082 : INFO : test_locations_search_device : Succesfully logged in.
+2024-09-24 13:27:45,084 : INFO : test_locations_search_device : Navigating to locations page.
+2024-09-24 13:27:45,552 : INFO : test_locations_search_device : Searching for device 'ROAMING_DEVICE'.
+2024-09-24 13:27:46,292 : INFO : test_locations_search_device : Verified 'Roaming Device' is only device returned.
+2024-09-24 13:36:48,391 : INFO : test_configure_location_information : daan.swinnen@optimile.eu
+2024-09-24 13:36:48,392 : INFO : test_configure_location_information : Attempting login.
+2024-09-24 13:36:50,238 : INFO : test_configure_location_information : Succesfully logged in.
+2024-09-24 13:36:50,239 : INFO : test_configure_location_information : Navigating to locations page.
+2024-09-24 13:36:50,698 : INFO : test_configure_location_information : Searching for 'Autotest location configuration'.
+2024-09-24 13:36:51,243 : INFO : test_configure_location_information : Attempting to edit 'Autotest Location'.
+2024-09-24 13:41:30,950 : INFO : test_configure_location_location_data : daan.swinnen@optimile.eu
+2024-09-24 13:41:30,951 : INFO : test_configure_location_location_data : Attempting login.
+2024-09-24 13:41:32,734 : INFO : test_configure_location_location_data : Succesfully logged in.
+2024-09-24 13:41:32,735 : INFO : test_configure_location_location_data : Navigating to locations page.
+2024-09-24 13:41:33,228 : INFO : test_configure_location_location_data : Searching for 'Autotest Location Configuration'.
+2024-09-24 13:41:33,832 : INFO : test_configure_location_location_data : Attempting to edit 'Autotest Location'.
+2024-09-24 13:41:34,936 : INFO : test_configure_location_location_data : Updated location adress
+2024-09-24 13:41:34,988 : INFO : test_configure_location_location_data : Updated postcode.
+2024-09-24 13:41:35,047 : INFO : test_configure_location_location_data : Updated town.
+2024-09-24 13:41:35,093 : INFO : test_configure_location_location_data : Updated country.
+2024-09-24 13:41:36,094 : INFO : test_configure_location_location_data : Attempting to update location data.
+2024-09-24 13:41:37,513 : INFO : test_configure_location_location_data : Verified location data have been changed correctly.
+2024-09-24 13:41:37,513 : INFO : test_configure_location_location_data : Attempting to reset location data.
+2024-09-24 13:41:40,567 : INFO : test_configure_location_location_data : Succesfully reset location data.
+2024-09-24 13:42:33,992 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-09-24 13:42:33,992 : INFO : test_add_charging_location : Attempting login.
+2024-09-24 13:42:36,083 : INFO : test_add_charging_location : Succesfully logged in.
+2024-09-24 13:42:36,086 : INFO : test_add_charging_location : Navigating to locations page.
+2024-09-24 13:43:46,046 : INFO : test_add_charging_location : daan.swinnen@optimile.eu
+2024-09-24 13:43:46,047 : INFO : test_add_charging_location : Attempting login.
+2024-09-24 13:43:48,028 : INFO : test_add_charging_location : Succesfully logged in.
+2024-09-24 13:43:48,029 : INFO : test_add_charging_location : Navigating to locations page.
+2024-09-24 13:44:04,972 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:44:04,972 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:44:07,257 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:44:07,257 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:44:07,722 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:44:08,991 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:44:08,991 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:44:09,662 : INFO : test_create_customer : New customer successfully deleted.
+2024-09-24 13:46:20,694 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:20,694 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:22,446 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:22,448 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:22,933 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:24,020 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:24,020 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:24,334 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:24,334 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:24,335 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:24,335 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:25,625 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:25,625 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:25,627 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:25,627 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:26,015 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:26,015 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:27,165 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:27,165 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:27,166 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:27,166 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:27,347 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:27,347 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:27,347 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:27,347 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:27,347 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:27,347 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:28,614 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:28,614 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:28,614 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:28,615 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:28,615 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:28,615 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:28,998 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:28,998 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:28,998 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:30,011 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:30,011 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:30,011 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:30,011 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:30,011 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:30,011 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:30,198 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:30,198 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:30,198 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:30,198 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:30,198 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:30,198 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:30,198 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:30,198 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:31,712 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:31,712 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:31,712 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:31,712 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:31,712 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:31,712 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:31,712 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:31,712 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:32,172 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:32,172 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:32,172 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:32,172 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:33,225 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:33,225 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:33,225 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:33,225 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:33,225 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:33,225 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:33,225 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:33,225 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:33,424 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:33,424 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:33,424 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:33,424 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:33,424 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:33,424 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:33,424 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:33,424 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:33,424 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:33,424 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:34,755 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:35,121 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:35,121 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:35,121 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:35,121 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:35,121 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:36,202 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:36,202 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:36,202 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:36,202 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:36,202 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:36,203 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:36,203 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:36,203 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:36,203 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:36,203 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:36,419 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:36,419 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:36,419 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:36,419 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:36,419 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:36,419 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:36,420 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:36,420 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:36,420 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:36,420 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:36,420 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:36,420 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:37,680 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:37,991 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:37,991 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:37,991 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:37,991 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:37,991 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:37,991 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:39,033 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:39,323 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:39,323 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:39,323 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:39,323 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:39,323 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:39,323 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:39,323 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 13:46:39,324 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:39,324 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:39,324 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:39,324 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:39,324 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:39,324 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:39,324 : INFO : test_create_customer : Attempting login.
+2024-09-24 13:46:40,373 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:40,373 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:40,373 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:40,373 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:40,373 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:40,373 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:40,373 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 13:46:40,374 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:40,374 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:40,374 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:40,374 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:40,374 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:40,374 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:40,374 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 13:46:40,738 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:40,738 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:40,738 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:40,738 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:40,738 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:40,738 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:40,738 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 13:46:41,704 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 14:02:24,529 : INFO : test_create_customer : daan.swinnen@optimile.eu
+2024-09-24 14:02:24,529 : INFO : test_create_customer : Attempting login.
+2024-09-24 14:02:26,229 : INFO : test_create_customer : Succesfully logged in.
+2024-09-24 14:02:26,229 : INFO : test_create_customer : Navigating to customers page.
+2024-09-24 14:02:26,722 : INFO : test_create_customer : Attempting to create new customer.
+2024-09-24 14:02:28,357 : INFO : test_create_customer : New customer succesfully created.
+2024-09-24 14:02:28,358 : INFO : test_create_customer : Attempting to delete new customer.
+2024-09-24 14:02:33,143 : INFO : test_activate_customer : daan.swinnen@optimile.eu
+2024-09-24 14:02:33,144 : INFO : test_activate_customer : Attempting login.
+2024-09-24 14:02:34,680 : INFO : test_activate_customer : Succesfully logged in.
+2024-09-24 14:02:34,680 : INFO : test_activate_customer : Navigating to cpo customers page.
+2024-09-24 14:02:35,189 : INFO : test_activate_customer : Filtering for new customers
+2024-09-24 14:02:35,511 : INFO : test_activate_customer : Verified that remaining customers require activation.
+2024-09-24 14:02:35,511 : INFO : test_activate_customer : Attempting to open top customer.
+2024-09-24 14:02:35,787 : INFO : test_activate_customer : Attempting to approve customer.
+2024-09-24 14:02:36,997 : INFO : test_activate_customer : Successfully approved customer.
+2024-09-24 14:10:44,998 : INFO : test_create_pending_device_contract : daan.swinnen@optimile.eu
+2024-09-24 14:10:44,998 : INFO : test_create_pending_device_contract : Attempting login.
+2024-09-24 14:10:46,727 : INFO : test_create_pending_device_contract : Succesfully logged in.
+2024-09-24 14:18:49,545 : INFO : test_create_pending_device_contract : daan.swinnen@optimile.eu
+2024-09-24 14:18:49,546 : INFO : test_create_pending_device_contract : Attempting login.
+2024-09-24 14:18:51,459 : INFO : test_create_pending_device_contract : Succesfully logged in.
+2024-09-24 14:19:12,402 : INFO : test_create_pending_device_contract : daan.swinnen@optimile.eu
+2024-09-24 14:19:12,403 : INFO : test_create_pending_device_contract : Attempting login.
+2024-09-24 14:19:14,263 : INFO : test_create_pending_device_contract : Succesfully logged in.
+2024-09-24 14:19:23,089 : INFO : test_activate_pending_contract : daan.swinnen@optimile.eu
+2024-09-24 14:19:23,089 : INFO : test_activate_pending_contract : Attempting login.
+2024-09-24 14:19:24,877 : INFO : test_activate_pending_contract : Succesfully logged in.
+2024-09-24 14:19:24,878 : INFO : test_activate_pending_contract : Navigating to cpo customers page.
+2024-09-24 14:19:25,350 : INFO : test_activate_pending_contract : Accessing pending contracts.
+2024-09-24 14:19:25,658 : INFO : test_activate_pending_contract : Attempting to activate contract.
+2024-09-24 14:19:26,219 : INFO : test_activate_pending_contract : Succesfully activated contract.
+2024-09-24 14:19:36,272 : INFO : test_activate_pending_contract : daan.swinnen@optimile.eu
+2024-09-24 14:19:36,272 : INFO : test_activate_pending_contract : Attempting login.
+2024-09-24 14:19:38,159 : INFO : test_activate_pending_contract : Succesfully logged in.
+2024-09-24 14:19:38,161 : INFO : test_activate_pending_contract : Navigating to cpo customers page.
+2024-09-24 14:19:38,647 : INFO : test_activate_pending_contract : Accessing pending contracts.
+2024-09-24 14:19:38,919 : INFO : test_activate_pending_contract : Attempting to activate contract.
+2024-09-24 14:19:39,351 : INFO : test_activate_pending_contract : Succesfully activated contract.
+2024-09-24 14:20:50,048 : INFO : test_remove_add_charging_device_BC : daan.swinnen@optimile.eu
+2024-09-24 14:20:50,048 : INFO : test_remove_add_charging_device_BC : Attempting login.
+2024-09-24 14:20:52,070 : INFO : test_remove_add_charging_device_BC : Succesfully logged in.
+2024-09-24 14:20:52,070 : INFO : test_remove_add_charging_device_BC : Navigating to locations page.
+2024-09-24 14:20:52,552 : INFO : test_remove_add_charging_device_BC : Searching for 'Autotest Location Configuration'.
+2024-09-24 14:20:53,232 : INFO : test_remove_add_charging_device_BC : Navigating to devices tab.
+2024-09-24 14:20:53,292 : INFO : test_remove_add_charging_device_BC : Attempting to open top device.
+2024-09-24 14:20:55,163 : INFO : test_remove_add_charging_device_BC : Saving device serial number as variable.
+2024-09-24 14:20:55,182 : INFO : test_remove_add_charging_device_BC : Attempting to delete device.
+2024-09-24 14:20:57,067 : INFO : test_remove_add_charging_device_BC : Successfully deleted device.
+2024-09-24 14:20:57,090 : INFO : test_remove_add_charging_device_BC : Attempting to register device as new.
+2024-09-24 14:20:59,663 : INFO : test_remove_add_charging_device_BC : Successfully added device as new.
+2024-09-24 14:29:45,016 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-09-24 14:29:45,016 : INFO : test_cpo_create_user : Attempting login.
+2024-09-24 14:29:46,584 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-09-24 14:29:46,587 : INFO : test_cpo_create_user : Navigating to cpo customers page.
+2024-09-24 14:29:47,041 : INFO : test_cpo_create_user : Searching for 'Autotesting Location Configuration
+2024-09-24 14:29:47,284 : INFO : test_cpo_create_user : Attempting to open top result.
+2024-09-24 14:34:29,643 : INFO : test_cpo_create_user : daan.swinnen@optimile.eu
+2024-09-24 14:34:29,643 : INFO : test_cpo_create_user : Attempting login.
+2024-09-24 14:34:31,697 : INFO : test_cpo_create_user : Succesfully logged in.
+2024-09-24 14:34:31,697 : INFO : test_cpo_create_user : Navigating to cpo customers page.
+2024-09-24 14:34:32,253 : INFO : test_cpo_create_user : Searching for 'Autotesting Main Customer'
+2024-09-24 14:34:32,497 : INFO : test_cpo_create_user : Attempting to open top result.
+2024-09-24 14:34:32,772 : INFO : test_cpo_create_user : Navigating to users-tab.
+2024-09-24 14:34:33,016 : INFO : test_cpo_create_user : Attempting to create new user.
+2024-09-24 14:34:38,531 : INFO : test_cpo_create_user : Successfully created new user.
+2024-09-24 14:35:17,052 : INFO : test_msp_create_user : daan.swinnen@optimile.eu
+2024-09-24 14:35:17,053 : INFO : test_msp_create_user : Attempting login.
+2024-09-24 14:35:18,660 : INFO : test_msp_create_user : Succesfully logged in.
+2024-09-24 14:35:18,661 : INFO : test_msp_create_user : Navigating to msp customers page.
+2024-09-24 14:35:19,084 : INFO : test_msp_create_user : Searching for Automated Test Company Main.
+2024-09-24 14:35:19,388 : INFO : test_msp_create_user : Attempting to open top customer result.
+2024-09-24 14:35:21,681 : INFO : test_msp_create_user : Navigating to users tab.
+2024-09-24 14:35:21,970 : INFO : test_msp_create_user : Attempting to create new user.
+2024-09-24 14:35:28,596 : INFO : test_msp_create_user : Successfully created user.
+2024-09-24 14:36:24,985 : INFO : test_cpo_overview_screen : daan.swinnen@optimile.eu
+2024-09-24 14:36:24,985 : INFO : test_cpo_overview_screen : Attempting login.
+2024-09-24 14:36:26,794 : INFO : test_cpo_overview_screen : Succesfully logged in.
+2024-09-24 14:36:26,797 : INFO : test_cpo_overview_screen : Navigating to CPO overview page.
+2024-09-24 14:36:27,416 : INFO : test_cpo_overview_screen : Verifying overview map is present.
+2024-09-24 14:36:27,431 : INFO : test_cpo_overview_screen : Succesfully verified CPO overview page.
+2024-09-24 14:36:31,228 : INFO : test_cpo_customers_screen : daan.swinnen@optimile.eu
+2024-09-24 14:36:31,228 : INFO : test_cpo_customers_screen : Attempting login.
+2024-09-24 14:36:33,370 : INFO : test_cpo_customers_screen : Succesfully logged in.
+2024-09-24 14:36:33,371 : INFO : test_cpo_customers_screen : Navigating to CPO customers page.
+2024-09-24 14:36:33,899 : INFO : test_cpo_customers_screen : Succesfully verified customers page.
+2024-09-24 14:36:37,497 : INFO : test_cpo_charging_locations_screen : daan.swinnen@optimile.eu
+2024-09-24 14:36:37,497 : INFO : test_cpo_charging_locations_screen : Attempting login.
+2024-09-24 14:36:39,358 : INFO : test_cpo_charging_locations_screen : Succesfully logged in.
+2024-09-24 14:36:39,358 : INFO : test_cpo_charging_locations_screen : Navigating to charging locations page.
+2024-09-24 14:36:39,858 : INFO : test_cpo_charging_locations_screen : Succesfully verified locations page.
+2024-09-24 14:36:43,233 : INFO : test_cpo_tokens_screen : daan.swinnen@optimile.eu
+2024-09-24 14:36:43,233 : INFO : test_cpo_tokens_screen : Attempting login.
+2024-09-24 14:36:44,874 : INFO : test_cpo_tokens_screen : Succesfully logged in.
+2024-09-24 14:36:44,876 : INFO : test_cpo_tokens_screen : Navigating to tokens page.
+2024-09-24 14:36:45,644 : INFO : test_cpo_tokens_screen : Succesfully verified tokens page.
+2024-09-24 14:36:49,235 : INFO : test_cpo_simcards_screen : daan.swinnen@optimile.eu
+2024-09-24 14:36:49,235 : INFO : test_cpo_simcards_screen : Attempting login.
+2024-09-24 14:36:50,991 : INFO : test_cpo_simcards_screen : Succesfully logged in.
+2024-09-24 14:36:50,992 : INFO : test_cpo_simcards_screen : Navigating to simcards page.
+2024-09-24 14:40:52,474 : INFO : test_cpo_contracts_screen : daan.swinnen@optimile.eu
+2024-09-24 14:40:52,475 : INFO : test_cpo_contracts_screen : Attempting login.
+2024-09-24 14:40:54,415 : INFO : test_cpo_contracts_screen : Succesfully logged in.
+2024-09-24 14:40:54,416 : INFO : test_cpo_contracts_screen : Navigating to contracts page.
+2024-09-24 14:40:54,849 : INFO : test_cpo_contracts_screen : Succesfully verified contracts page.
+2024-09-24 14:42:13,189 : INFO : test_cpo_contracts_screen : daan.swinnen@optimile.eu
+2024-09-24 14:42:13,190 : INFO : test_cpo_contracts_screen : Attempting login.
+2024-09-24 14:42:15,481 : INFO : test_cpo_contracts_screen : Succesfully logged in.
+2024-09-24 14:42:15,483 : INFO : test_cpo_contracts_screen : Navigating to contracts page.
+2024-09-24 14:42:15,943 : INFO : test_cpo_contracts_screen : Succesfully verified contracts page.
+2024-09-24 14:42:23,485 : INFO : test_cpo_roaming_screen : daan.swinnen@optimile.eu
+2024-09-24 14:42:23,486 : INFO : test_cpo_roaming_screen : Attempting login.
+2024-09-24 14:42:25,304 : INFO : test_cpo_roaming_screen : Succesfully logged in.
+2024-09-24 14:42:25,304 : INFO : test_cpo_roaming_screen : Navigating to roaming page.
+2024-09-24 14:42:26,133 : INFO : test_cpo_roaming_screen : Succesfully verified roaming page.
+2024-09-24 14:42:30,113 : INFO : test_cpo_finance_screen : daan.swinnen@optimile.eu
+2024-09-24 14:42:30,114 : INFO : test_cpo_finance_screen : Attempting login.
+2024-09-24 14:42:31,762 : INFO : test_cpo_finance_screen : Succesfully logged in.
+2024-09-24 14:42:31,764 : INFO : test_cpo_finance_screen : Navigating to finance page.
+2024-09-24 14:42:32,776 : INFO : test_cpo_finance_screen : Succesfully verified finance page.
+2024-09-24 14:42:36,949 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2024-09-24 14:42:36,950 : INFO : test_cpo_reports_screen : Attempting login.
+2024-09-24 14:42:39,006 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2024-09-24 14:42:39,007 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2024-09-24 14:43:12,523 : INFO : test_cpo_reports_screen : daan.swinnen@optimile.eu
+2024-09-24 14:43:12,523 : INFO : test_cpo_reports_screen : Attempting login.
+2024-09-24 14:43:14,333 : INFO : test_cpo_reports_screen : Succesfully logged in.
+2024-09-24 14:43:14,335 : INFO : test_cpo_reports_screen : Navigating to cpo reports page.
+2024-09-24 15:42:07,436 : INFO : test_cpo_splitbilling_screen : daan.swinnen@optimile.eu
+2024-09-24 15:42:07,436 : INFO : test_cpo_splitbilling_screen : Attempting login.
+2024-09-24 15:42:10,034 : INFO : test_cpo_splitbilling_screen : Succesfully logged in.
+2024-09-24 15:42:10,035 : INFO : test_cpo_splitbilling_screen : Navigating to splitbilling page.
+2024-09-24 15:42:11,587 : INFO : test_cpo_splitbilling_screen : Succesfully verified split billing page.
+2024-09-24 15:42:16,380 : INFO : test_cpo_pricing_screen : daan.swinnen@optimile.eu
+2024-09-24 15:42:16,381 : INFO : test_cpo_pricing_screen : Attempting login.
+2024-09-24 15:42:18,741 : INFO : test_cpo_pricing_screen : Succesfully logged in.
+2024-09-24 15:42:18,741 : INFO : test_cpo_pricing_screen : Navigating to cpo reports page.
+2024-09-24 15:42:19,465 : INFO : test_cpo_pricing_screen : Succesfully verified reports page.
+2024-09-24 15:42:23,324 : INFO : test_cpo_overview_screen_extended : daan.swinnen@optimile.eu
+2024-09-24 15:42:23,324 : INFO : test_cpo_overview_screen_extended : Attempting login.
+2024-09-24 15:42:25,653 : INFO : test_cpo_overview_screen_extended : Succesfully logged in.
+2024-09-24 15:42:25,654 : INFO : test_cpo_overview_screen_extended : Navigating to CPO overview page.
+2024-09-24 15:42:26,446 : INFO : test_cpo_overview_screen_extended : Verifying overview map is present.
+2024-09-24 15:42:27,512 : INFO : test_cpo_overview_screen_extended : Succesfully verified CPO overview page.
+2024-09-24 16:01:37,774 : INFO : test_create_user_and_contract : daan.swinnen+auto_main@optimile.eu 
+2024-09-24 16:01:37,774 : INFO : test_create_user_and_contract : Attempting login.
+2024-09-24 16:01:39,575 : INFO : test_create_user_and_contract : Succesfully logged in.
+2024-09-24 16:01:39,575 : INFO : test_create_user_and_contract : Navigating to users page.
+2024-09-24 16:01:40,384 : INFO : test_create_user_and_contract : Attempting to create new user.
+2024-09-24 16:01:40,827 : INFO : test_create_user_and_contract : Creating random emailadres.
+2024-09-24 16:01:40,980 : INFO : test_create_user_and_contract : Attempting to save new user.
+2024-09-24 16:01:42,529 : INFO : test_create_user_and_contract : Succesfully created new user.
+2024-09-24 16:01:44,088 : INFO : test_create_user_and_contract : Navigating to msp customers page.
+2024-09-24 16:01:44,469 : INFO : test_create_user_and_contract : Searching for 'Main Customer Autotesting'.
+2024-09-24 16:01:44,756 : INFO : test_create_user_and_contract : Open 'Automated Test Company'.
+2024-09-24 16:01:45,081 : INFO : test_create_user_and_contract : Attempting to create new contract.
+2024-09-24 16:01:45,663 : INFO : test_create_user_and_contract : Selecting contract.
+2024-09-24 16:01:45,737 : INFO : test_create_user_and_contract : Selecting user.
+2024-09-24 16:01:48,376 : INFO : test_create_user_and_contract : Contract has been successfully created.
+2024-09-24 16:03:12,531 : INFO : test_create_user_and_contract : daan.swinnen+auto_main@optimile.eu 
+2024-09-24 16:03:12,531 : INFO : test_create_user_and_contract : Attempting login.
+2024-09-24 16:03:14,487 : INFO : test_create_user_and_contract : Succesfully logged in.
+2024-09-24 16:03:14,489 : INFO : test_create_user_and_contract : Navigating to users page.
+2024-09-24 16:03:15,095 : INFO : test_create_user_and_contract : Attempting to create new user.
+2024-09-24 16:03:15,464 : INFO : test_create_user_and_contract : Creating random emailadres.
+2024-09-24 16:03:15,624 : INFO : test_create_user_and_contract : Attempting to save new user.
+2024-09-24 16:03:17,246 : INFO : test_create_user_and_contract : Succesfully created new user.
+2024-09-24 16:03:19,030 : INFO : test_create_user_and_contract : Navigating to msp customers page.
+2024-09-24 16:03:19,361 : INFO : test_create_user_and_contract : Searching for 'Main Customer Autotesting'.
+2024-09-24 16:03:19,695 : INFO : test_create_user_and_contract : Open 'Automated Test Company'.
+2024-09-24 16:03:20,045 : INFO : test_create_user_and_contract : Attempting to create new contract.
+2024-09-24 16:03:20,635 : INFO : test_create_user_and_contract : Selecting contract.
+2024-09-24 16:03:20,709 : INFO : test_create_user_and_contract : Selecting user.
+2024-09-24 16:03:23,340 : INFO : test_create_user_and_contract : Contract has been successfully created.
+2024-09-24 16:03:29,051 : INFO : test_create_user_and_contract : daan.swinnen+auto_main@optimile.eu 
+2024-09-24 16:03:29,051 : INFO : test_create_user_and_contract : Attempting login.
+2024-09-24 16:03:31,175 : INFO : test_create_user_and_contract : Succesfully logged in.
+2024-09-24 16:03:31,176 : INFO : test_create_user_and_contract : Navigating to users page.
+2024-09-24 16:03:31,900 : INFO : test_create_user_and_contract : Attempting to create new user.
+2024-09-24 16:03:32,204 : INFO : test_create_user_and_contract : Creating random emailadres.
+2024-09-24 16:03:32,283 : INFO : test_create_user_and_contract : Attempting to save new user.
+2024-09-24 16:03:33,848 : INFO : test_create_user_and_contract : Succesfully created new user.
+2024-09-24 16:03:35,421 : INFO : test_create_user_and_contract : Navigating to msp customers page.
+2024-09-24 16:03:35,677 : INFO : test_create_user_and_contract : Searching for 'Main Customer Autotesting'.
+2024-09-24 16:03:35,935 : INFO : test_create_user_and_contract : Open 'Automated Test Company'.
+2024-09-24 16:03:36,268 : INFO : test_create_user_and_contract : Attempting to create new contract.
+2024-09-24 16:03:36,952 : INFO : test_create_user_and_contract : Selecting contract.
+2024-09-24 16:03:37,028 : INFO : test_create_user_and_contract : Selecting user.
+2024-09-24 16:03:39,541 : INFO : test_create_user_and_contract : Contract has been successfully created.
+2024-09-24 16:05:07,357 : INFO : test_assign_user_token : daan.swinnen@optimile.eu
+2024-09-24 16:05:07,357 : INFO : test_assign_user_token : Attempting login.
+2024-09-24 16:05:09,378 : INFO : test_assign_user_token : Succesfully logged in.
+2024-09-24 16:05:09,378 : INFO : test_assign_user_token : Navigating towards msp customers page.
+2024-09-24 16:05:09,803 : INFO : test_assign_user_token : Search for 'Automated Test Company'.
+2024-09-24 16:05:10,120 : INFO : test_assign_user_token : Opening customer.
+2024-09-24 16:05:10,437 : INFO : test_assign_user_token : Attempting to assign token to user.
+2024-09-24 16:05:14,281 : INFO : test_assign_user_token : Succesfully assigned token to user.
+2024-09-24 16:06:26,033 : INFO : test_add_token_to_whitelist : daan.swinnen+splitbilling4@optimile.eu
+2024-09-24 16:06:26,033 : INFO : test_add_token_to_whitelist : Attempting login.
+2024-09-24 16:06:28,931 : INFO : test_add_token_to_whitelist : Succesfully logged in.
+2024-09-24 16:06:28,934 : INFO : test_add_token_to_whitelist : Navigating to whitelist page.
+2024-09-24 16:06:29,357 : INFO : test_add_token_to_whitelist : Attempting to add tokens to whitelist.
+2024-09-24 16:06:30,997 : INFO : test_add_token_to_whitelist : Succesfully added tokens to whitelist.
+2024-09-24 16:19:34,712 : INFO : test_administration_tab : daan.swinnen+auto_main@optimile.eu
+2024-09-24 16:19:34,712 : INFO : test_administration_tab : Attempting login.
+2024-09-24 16:19:37,779 : INFO : test_administration_tab : Succesfully logged in.
+2024-09-24 16:19:37,779 : INFO : test_administration_tab : Navigating to administration tab.
+2024-09-24 16:19:38,218 : INFO : test_administration_tab : Verified account details page.
+2024-09-24 16:19:38,465 : INFO : test_administration_tab : Verified preferences page.
+2024-09-24 16:19:38,933 : INFO : test_administration_tab : Verified users page.
+2024-09-24 16:19:39,243 : INFO : test_administration_tab : Verified external users page.
+2024-09-24 16:19:39,499 : INFO : test_administration_tab : Verified user invites page.
+2024-09-24 16:19:39,808 : INFO : test_administration_tab : Succesfully verified reporting page
+2024-09-24 16:19:48,554 : INFO : test_finance_tab : daan.swinnen+auto_main@optimile.eu
+2024-09-24 16:19:48,554 : INFO : test_finance_tab : Attempting login.
+2024-09-24 16:19:50,940 : INFO : test_finance_tab : Succesfully logged in.
+2024-09-24 16:19:50,942 : INFO : test_finance_tab : Navigating to finance tab.
+2024-09-24 16:19:51,374 : INFO : test_finance_tab : Verified invoices page.
+2024-09-24 16:19:51,788 : INFO : test_finance_tab : Verified payment methods page.
+2024-09-24 16:19:52,407 : INFO : test_finance_tab : Verified credit transactions page.
+2024-09-24 16:19:52,643 : INFO : test_finance_tab : Verified revenue page.
+2024-09-24 16:24:40,614 : INFO : _login : daan.swinnen@optimile.eu
+2024-09-24 16:24:40,615 : INFO : _login : Attempting login.
+2024-09-24 16:24:42,721 : INFO : _login : Succesfully logged in.
+2024-09-24 16:24:43,728 : INFO : test_msp_customers_screen : Navigating to msp customers page.
+2024-09-24 16:24:44,148 : INFO : test_msp_customers_screen : Succesfully verified msp customers page.
+2024-09-24 16:24:55,412 : INFO : _login : daan.swinnen@optimile.eu
+2024-09-24 16:24:55,413 : INFO : _login : Attempting login.
+2024-09-24 16:24:57,413 : INFO : _login : Succesfully logged in.
+2024-09-24 16:24:58,419 : INFO : test_msp_tokens_screen : Navigating to msp tokens page.
+2024-09-24 16:24:58,898 : INFO : test_msp_tokens_screen : Succesfully verified tokens page.
+2024-09-24 16:25:03,591 : INFO : _login : daan.swinnen@optimile.eu
+2024-09-24 16:25:03,591 : INFO : _login : Attempting login.
+2024-09-24 16:25:05,436 : INFO : _login : Succesfully logged in.
+2024-09-24 16:25:06,442 : INFO : test_msp_vouchers_screen : Navigating to msp vouchers page.
+2024-09-24 16:25:06,898 : INFO : test_msp_vouchers_screen : Succesfully verified vouchers page.
+2024-09-24 16:25:12,303 : INFO : _login : daan.swinnen@optimile.eu
+2024-09-24 16:25:12,304 : INFO : _login : Attempting login.
+2024-09-24 16:25:14,029 : INFO : _login : Succesfully logged in.
+2024-09-24 16:25:15,034 : INFO : test_msp_contracts_screen : Navigating to msp contracts page.
+2024-09-24 16:25:15,382 : INFO : test_msp_contracts_screen : Succesfully verified contracts page.
+2024-09-24 16:25:19,918 : INFO : _login : daan.swinnen@optimile.eu
+2024-09-24 16:25:19,918 : INFO : _login : Attempting login.
+2024-09-24 16:25:21,691 : INFO : _login : Succesfully logged in.
+2024-09-24 16:25:22,697 : INFO : test_msp_operators_screen : Navigating to msp operators page.
+2024-09-24 16:25:26,091 : INFO : test_msp_operators_screen : Succesfully verified operators page.
+2024-09-24 16:25:29,916 : INFO : _login : daan.swinnen@optimile.eu
+2024-09-24 16:25:29,916 : INFO : _login : Attempting login.
+2024-09-24 16:25:31,900 : INFO : _login : Succesfully logged in.
+2024-09-24 16:25:32,906 : INFO : test_msp_invoices_screen : Navigating to msp invoices page.
+2024-09-24 16:25:33,440 : INFO : test_msp_invoices_screen : Succesfully verified invoices page.
+2024-09-24 16:25:37,309 : INFO : test_msp_dashboard_screen_extended : daan.swinnen@optimile.eu
+2024-09-24 16:25:37,309 : INFO : test_msp_dashboard_screen_extended : Attempting login.
+2024-09-24 16:25:39,555 : INFO : test_msp_dashboard_screen_extended : Succesfully logged in.
+2024-09-24 16:25:39,555 : INFO : test_msp_dashboard_screen_extended : Navigating to CPO overview page.
+2024-09-24 16:25:43,769 : INFO : test_msp_dashboard_screen_extended : Succesfully verified CPO overview page.
+2024-09-24 16:26:06,190 : INFO : test_cpo_customers_export : daan.swinnen@optimile.eu
+2024-09-24 16:26:06,190 : INFO : test_cpo_customers_export : Attempting login.
+2024-09-24 16:26:08,626 : INFO : test_cpo_customers_export : Succesfully logged in.
+2024-09-24 16:26:08,628 : INFO : test_cpo_customers_export : Navigating to cpo customers page.
+2024-09-24 16:26:09,247 : INFO : test_cpo_customers_export : Attempting to generate 'all customers' report.
+2024-09-24 16:26:12,541 : INFO : test_cpo_customers_export : Successfully verified 'all customers' report has been downloaded.
+2024-09-24 16:26:18,820 : INFO : test_cpo_locations_export : daan.swinnen@optimile.eu
+2024-09-24 16:26:18,820 : INFO : test_cpo_locations_export : Attempting login.
+2024-09-24 16:26:21,816 : INFO : test_cpo_locations_export : Succesfully logged in.
+2024-09-24 16:26:21,818 : INFO : test_cpo_locations_export : Navigating to locations page.
+2024-09-24 16:26:22,350 : INFO : test_cpo_locations_export : Attempting to generate locations export.
+2024-09-24 16:26:25,589 : INFO : test_cpo_locations_export : Successfully verified locations export has been downloaded.
+2024-09-24 16:26:29,323 : INFO : test_cpo_tokens_exports : daan.swinnen@optimile.eu
+2024-09-24 16:26:29,323 : INFO : test_cpo_tokens_exports : Attempting login.
+2024-09-24 16:26:31,335 : INFO : test_cpo_tokens_exports : Succesfully logged in.
+2024-09-24 16:26:31,337 : INFO : test_cpo_tokens_exports : Navigating to tokens page.
+2024-09-24 16:26:31,824 : INFO : test_cpo_tokens_exports : Attempting to download 'tokens in use' export
+2024-09-24 16:26:35,243 : INFO : test_cpo_tokens_exports : Successfully verified 'tokens in use'-export has been downloaded.
+2024-09-24 16:26:35,243 : INFO : test_cpo_tokens_exports : Attempting to download 'available tokens' export.
+2024-09-24 16:26:39,065 : INFO : test_cpo_tokens_exports : Successfully verified 'available tokens' export has been downloaded.
+2024-09-24 16:26:44,618 : INFO : test_cpo_simcards_export : daan.swinnen@optimile.eu
+2024-09-24 16:26:44,618 : INFO : test_cpo_simcards_export : Attempting login.
+2024-09-24 16:26:46,560 : INFO : test_cpo_simcards_export : Succesfully logged in.
+2024-09-24 16:26:46,564 : INFO : test_cpo_simcards_export : Navigating to simcards page.
+2024-09-24 16:26:47,137 : INFO : test_cpo_simcards_export : Attempting to generate simcards export.
+2024-09-24 16:27:05,239 : INFO : test_cpo_roaming_export : daan.swinnen@optimile.eu
+2024-09-24 16:27:05,240 : INFO : test_cpo_roaming_export : Attempting login.
+2024-09-24 16:27:07,515 : INFO : test_cpo_roaming_export : Succesfully logged in.
+2024-09-24 16:27:07,517 : INFO : test_cpo_roaming_export : Navigating to roaming page.
+2024-09-24 16:27:08,168 : INFO : test_cpo_roaming_export : Attempting to generate prices export.

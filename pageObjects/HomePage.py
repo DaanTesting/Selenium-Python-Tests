@@ -33,6 +33,7 @@ from pageObjects.MspDashboard import MspDashboard
 from pageObjects.AdhocPlatformPage import AdhocPlatformPage
 from pageObjects.CreditPage import CreditPage
 from pageObjects.CpoFinancePage import CpoFinancePage
+from pageObjects.ChargingCardPage import ChargingCardPage
 
 class HomePage:
     def __init__(self, driver):
@@ -332,6 +333,12 @@ class HomePage:
         self.driver.find_element(*selector1).click()
         adhocplatformpage = AdhocPlatformPage(self.driver)
         return adhocplatformpage
+    
+    def menu_label_charging_cards(self):
+        selector1 = (By.XPATH, "//span[.='Charging cards']")
+        self.driver.find_element(*selector1).click()
+        chargingcardpage = ChargingCardPage(self.driver)
+        return chargingcardpage
     
     
     

@@ -9,7 +9,7 @@ class MspIndividualCustomer:
         self.driver = driver
 
     def activity_tab(self):
-        selector1 = (By.XPATH, "//span[normalize-space()='Activity']")
+        selector1 = (By.XPATH, "//li/a[contains(.,'Activity')]")
         self.driver.find_element(*selector1).click()
 
     def users_tab(self):
@@ -36,7 +36,7 @@ class MspIndividualCustomer:
 
     def create_contract_select_formula_prepaid_tokenoptional(self):
         selector1 = (By.XPATH, "(//button[@title='---------'])[1]")
-        selector2 = (By.XPATH, "//span[.='Prepaid. Token optional.']")
+        selector2 = (By.XPATH, "//span[.='Postpaid Charging']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
@@ -58,7 +58,7 @@ class MspIndividualCustomer:
         return self.driver.find_element(*selector1)
 
     def tokens_tab(self):
-        selector1 = (By.XPATH, "//a[@href='#tokens']")
+        selector1 = (By.XPATH, "(//a[contains(.,'Tokens')])[3]")
         self.driver.find_element(*selector1).click()
 
     def add_first_token(self):

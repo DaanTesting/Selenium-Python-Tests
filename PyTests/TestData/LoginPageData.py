@@ -16,6 +16,22 @@ class LoginPageData:
         }
     ]
 
+    staging_login_data = [
+        {
+            "account": "daan.swinnen@optimile.eu",
+            "password": "lhiM6Alk8jW4Nh2skJMV?",
+            "URL": "https://staging.optimile-dev.eu/",
+        }
+    ]
+
+    staging_customer_login_data = [
+        {
+            "account": "daan.swinnen+auto_main@optimile.eu",
+            "password": "FastPass9000_",
+            "URL": "https://staging.optimile-dev.eu/",
+        }
+    ]
+
     test_local_admin_data = [
         {
             "account": "admin@example.test",

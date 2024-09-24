@@ -9,8 +9,8 @@ class SplitBillingMainPage:
         selector1 = (By.XPATH, "//a[text()='Reimbursement policies']")
         self.driver.find_element(*selector1).click()
 
-    def blue_collar_testpolicy(self):
-        selector1 = (By.XPATH, "//a[text()='Blue collar']")
+    def autotesting_reimbursement(self):
+        selector1 = (By.XPATH, "//a[.='Autotesting Reimbursement']")
         self.driver.find_element(*selector1).click()
     
     def open_top_policy(self):
