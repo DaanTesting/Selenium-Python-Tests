@@ -52,16 +52,8 @@ class CpoNewUserForm:
         time.sleep(1)
         self.driver.find_element(*selector3).click()
 
-    def birthday_month_dropdown(self):
-        selector1 = (By.CSS_SELECTOR, "#id_form-0-birthday_month")
-        return self.driver.find_element(*selector1)
-    
-    def birthday_day_dropdown(self):
-        selector1 = (By.CSS_SELECTOR, "#id_form-0-birthday_day")
-        return self.driver.find_element(*selector1)
-    
-    def birthday_year_dropdown(self):
-        selector1 = (By.CSS_SELECTOR, "#id_form-0-birthday_year")
+    def date_of_birth_field(self):
+        selector1 = (By.CSS_SELECTOR, "#id_form-0-birthday")
         return self.driver.find_element(*selector1)
     
     def rights_set_account_admin(self):

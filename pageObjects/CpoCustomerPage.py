@@ -16,18 +16,18 @@ class CpoCustomerPage:
     def search_by_name_field(self):
         selector1 = (
             By.CSS_SELECTOR,
-            "input[placeholder='Search by name, email, phone, or internal code']",
+            "input[placeholder='Name, email, phone, or internal code']",
         )
         return self.driver.find_element(*selector1)
 
     def click_on_top_result_customer(self):
-        selector1 = (By.XPATH, "(//tr[1]/td[2]/div)")
+        selector1 = (By.XPATH, "//tr[1]/td/div/div/a")
         self.driver.find_element(*selector1).click()
         cpoindividualcustomer = CpoIndividualCustomer(self.driver)
         return cpoindividualcustomer
 
-    def click_on_top_result_carrefour(self):
-        selector1 = (By.XPATH, "//tr[1]/td[2]")
+    def click_on_top_result(self):
+        selector1 = (By.XPATH, "//tr[1]/td/div/div/a")
         self.driver.find_element(*selector1).click()
         cpoindividualcustomer = CpoIndividualCustomer(self.driver)
         return cpoindividualcustomer
@@ -68,7 +68,7 @@ class CpoCustomerPage:
 
     def new_customer_filter(self):
         selector1 = (By.XPATH, "//span[.='Filter']")
-        selector2 = (By.XPATH, "(//input[@type='checkbox'])[3]")
+        selector2 = (By.XPATH, "(//input[@type='checkbox'])[24]")
         selector3 = (By.XPATH, "//button[.='Apply']")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
@@ -83,11 +83,11 @@ class CpoCustomerPage:
         self.driver.find_element(*selector1).click()
 
     def approve_customer(self):
-        selector1 = (By.XPATH, "//button[.='Approve customer']")
+        selector1 = (By.XPATH, "//button[.='Accept']")
         self.driver.find_element(*selector1).click()
 
-    def approve_registration(self):
-        selector1 = (By.XPATH, "//button[.='Approve registration']")
+    def activate_customer(self):
+        selector1 = (By.XPATH, "//button[.='Activate']")
         self.driver.find_element(*selector1).click()
     
 

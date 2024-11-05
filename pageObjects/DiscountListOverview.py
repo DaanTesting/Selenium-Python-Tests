@@ -54,7 +54,7 @@ class DiscountListOverview:
         return opendiscountlist
     
     def open_autotest_list(self):
-        selector1 = (By.XPATH, "//a[.=' Automatic Test Discount']")
+        selector1 = (By.XPATH, "//a[.=' 1 Main Discount List']")
         self.driver.find_element(*selector1).click()
         opendiscountlist = OpenDiscountList(self.driver)
         return opendiscountlist

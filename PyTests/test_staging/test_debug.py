@@ -31,7 +31,7 @@ class TestThree(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         homepage.menu_label_mobility()
-        mspcustomerpage = homepage.menu_label_msp_customers()
+        mspcustomerpage = homepage.menu_label_customers()
         mspcustomerpage.search_by_name_field().send_keys(
             "Automated Test Company Main Flow" + Keys.ENTER
         )

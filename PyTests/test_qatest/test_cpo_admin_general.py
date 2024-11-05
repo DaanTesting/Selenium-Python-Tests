@@ -236,7 +236,7 @@ class TestSeven(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to customers page.")
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
         createcustomerpage = cpocustomerpage.create_customer_button()
         random_integer = str(random.randint(100000000, 999999999))
         timestamp = str(datetime.datetime.now())

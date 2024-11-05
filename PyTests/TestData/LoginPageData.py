@@ -1,21 +1,5 @@
 class LoginPageData:
 
-    test_login_data = [
-        {
-            "account": "daan.swinnen@optimile.eu",
-            "password": "lhiM6Alk8jW4Nh2skJMV?",
-            "URL": "https://test.optimile.eu/",
-        }
-    ]
-
-    test2_login_data = [
-        {
-            "account": "daan.swinnen@optimile.eu",
-            "password": "hOu8QDiJ6fKUWXJtkOT5",
-            "URL": "https://test2.optimile.eu/",
-        }
-    ]
-
     staging_login_data = [
         {
             "account": "daan.swinnen@optimile.eu",
@@ -24,11 +8,27 @@ class LoginPageData:
         }
     ]
 
+    dev_login_data = [
+        {
+            "account": "daan.swinnen@optimile.eu",
+            "password": "lhiM6Alk8jW4Nh2skJMV?",
+            "URL": "https://dev.optimile-dev.eu/",
+        }
+    ]
+
     staging_customer_login_data = [
         {
             "account": "daan.swinnen+auto_main@optimile.eu",
             "password": "FastPass9000_",
             "URL": "https://staging.optimile-dev.eu/",
+        }
+    ]
+
+    dev_stripe_login_data = [
+        {
+            "account": "daan.swinnen+stripe_auto@optimile.eu",
+            "password": "FastPass9000_",
+            "URL": "https://dev.optimile-dev.eu/",
         }
     ]
 
@@ -56,26 +56,10 @@ class LoginPageData:
         }
     ]
 
-    test_carrefour_data = [
-        {
-            "account": "daan.swinnen+carrefour@optimile.eu",
-            "password": "EasyPass9000_",
-            "URL": "https://test.optimile.eu",
-        }
-    ]
-
     test_fullflow_data = [
         {
             "account": "daan.swinnen+splitbilling4@optimile.eu",
             "password": "hHsxpRXGX9NrN4aw6iCH",
-            "URL": "https://test.optimile.eu/",
-        }
-    ]
-
-    test_auto_main_data = [
-        {
-            "account": "daan.swinnen+autotest.cpocompany@optimile.eu",
-            "password": "hHsxpRXGX9NrN4aw6iCH_",
             "URL": "https://test.optimile.eu/",
         }
     ]
@@ -93,3 +77,5 @@ class LoginPageData:
             "password": "wVVPlBgmVviujodBUEnc",
         }
     ]
+
+

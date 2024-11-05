@@ -8,7 +8,7 @@ class IndividualChargingLocation:
 
     def edit_button(self):
         selector1 = (By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-ellipsis-vertical")
-        selector2 = (By.XPATH, "//a[contains(.,'Details')]")
+        selector2 = (By.XPATH, "//a[contains(.,'Edit')]")
         self.driver.find_element(*selector1).click()
         self.driver.find_element(*selector2).click()
 
@@ -139,7 +139,7 @@ class IndividualChargingLocation:
         self.driver.find_element(*selector1).click()
 
     def edit_pricing_button(self):
-        selector1 = (By.XPATH, "//a[.='Edit pricing']")
+        selector1 = (By.XPATH, "(//a[.='Edit pricing'])[1]")
         self.driver.find_element(*selector1).click()
 
     def set_pricing_policy(self):
@@ -148,6 +148,10 @@ class IndividualChargingLocation:
     
     def choose_afir_policy(self):
         selector1 = (By.XPATH, "//input[@class='form-check-input'][1]")
+        self.driver.find_element(*selector1).click()
+
+    def choose_adhoc_policy(self):
+        selector1 = (By.XPATH, "//input[@id='Autotesting Adhoc Price']")
         self.driver.find_element(*selector1).click()
 
     def generic_alert(self):

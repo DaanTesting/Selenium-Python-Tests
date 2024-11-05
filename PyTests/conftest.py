@@ -18,7 +18,7 @@ driver = None
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome")
-    parser.addoption("--server_name", action="store", default="staging")
+    parser.addoption("--server_name", action="store", default="dev")
 
 
 @pytest.fixture(scope="class")
@@ -54,14 +54,8 @@ def setup(request):
         driver.implicitly_wait(10)
         driver.maximize_window()
 
-    if server_name == "testhr":
-        driver.get("https://testhr.optimile.eu/")
-    elif server_name == "test":
-        driver.get("https://test.optimile.eu/")
-    elif server_name == "plannertest":
-        driver.get("https://plannertest.optimile.eu/tester/")
-    elif server_name == "qatest":
-        driver.get("https://qatest.optimile.eu/welcome/?next=/co/")
+    if server_name == "dev":
+        driver.get("https://dev.optimile-dev.eu/")
     elif server_name == "local":
         driver.get("http://localhost:8000/")
     elif server_name == "staging":

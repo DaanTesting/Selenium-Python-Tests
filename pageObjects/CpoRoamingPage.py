@@ -8,13 +8,11 @@ class CpoRoamingPage:
         self.driver = driver
 
     def export_prices(self):
-        selector1 = (By.XPATH, "(//i[1])[27]")
-        selector2 = (By.XPATH,"(//li[contains(.,'Export prices')])[1]")
+        selector1 = (By.XPATH, "(//a[.='Export prices'])[1]")
         self.driver.find_element(*selector1).click()
-        self.driver.find_element(*selector2).click()
 
     def export_cdr(self):
-        selector1 = (By.XPATH, "(//i[1])[27]")
+        selector1 = (By.XPATH, "(//button[@class='btn btn-default btn-sm cell-btn'])[1]")
         selector2 = (By.XPATH, '(//li[contains(.,"Export CDR")])[1]')
         selector3 = (By.XPATH, "//input[@id='id_date_from']")
         selector4 = (By.XPATH, "//input[@id='id_date_until']")

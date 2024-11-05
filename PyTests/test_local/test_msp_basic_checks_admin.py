@@ -32,7 +32,7 @@ class TestOne(BaseClass):
         log = self.get_logger()
         log.info("Navigating to msp customers page.")
         homepage.menu_label_mobility()
-        homepage.menu_label_msp_customers()
+        homepage.menu_label_customers()
         titlecustomerpage = self.driver.find_element(
             By.XPATH, "//h1[contains(.,'Customers')]"
         ).text

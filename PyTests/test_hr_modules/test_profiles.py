@@ -173,7 +173,7 @@ class TestThree(BaseClass):
     # loginpage.username_box().send_keys("daan.swinnen@optimile.eu")
     # loginpage.password_box().send_keys("UmVIi90k4GybBQz0X2Gv")
     # homepage = loginpage.login_button()
-    # homepage.menu_label_cpo_customers()
+    # homepage.menu_label_customers()
     # self.driver.find_element(
     #     By.CSS_SELECTOR, "input[placeholder='Name, email, phone, or internal code']"
     # ).send_keys("automatic" + Keys.ENTER)

@@ -390,7 +390,7 @@ class TestEight(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to customers page.")
         homepage.menu_label_chargingpoints()
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
         log.info("Attempting to create new customer.")
         createcustomerpage = cpocustomerpage.create_customer_button()
         random_integer = str(random.randint(100000000, 999999999))
@@ -441,7 +441,7 @@ class TestNine(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to cpo customers page.")
         homepage.menu_label_chargingpoints()
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
         log.info("Accessing pending contracts.")
         cpocustomerpage.pending_contracts_button()
         log.info("Attempting to activate contract.")
@@ -468,7 +468,7 @@ class TestTen(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to cpo customers page.")
         homepage.menu_label_chargingpoints()
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
 
         log.info("Filtering for new customers")
         cpocustomerpage.new_customer_filter()
@@ -509,7 +509,7 @@ class TestTen(BaseClass):
 #         log.info("Succesfully logged in.")
 #         log.info("Navigating to cpo customers page.")
 #         homepage.menu_label_chargingpoints()
-#         cpocustomerpage = homepage.menu_label_cpo_customers()
+#         cpocustomerpage = homepage.menu_label_customers()
 
 #         log.info("Selecting active customers filter.")
 #         cpocustomerpage.active_customers_filter()
@@ -600,7 +600,7 @@ class TestThirteen(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to cpo customers page.")
         homepage.menu_label_chargingpoints()
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
         log.info("Searching for 'Automated Test Company Main.")
         cpocustomerpage.search_by_name_field().send_keys(
             "Automated Test Company Main" + Keys.ENTER
@@ -658,7 +658,7 @@ class TestFourteen(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to msp customers page.")
         homepage.menu_label_mobility()
-        mspcustomerpage = homepage.menu_label_msp_customers()
+        mspcustomerpage = homepage.menu_label_customers()
         log.info("Searching for Automated Test Company Main.")
         mspcustomerpage.search_by_name_field().send_keys(
             "Automated Test Company Main" + Keys.ENTER

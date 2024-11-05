@@ -459,9 +459,9 @@ class TestNine(BaseClass):
         except Exception as error:
             log.info(error)
 
-        cpocustomerpage.approve_registration()
+        cpocustomerpage.activate_customer()
         message = cpocustomerpage.message_banner().text
-        assert message == "Customer registered and login credentials are sent."
+        assert message == "Customer registered."
         log.info("Successfully approved customer.")
 
         generalobjects = GeneralObjects(self.driver)
@@ -506,7 +506,6 @@ class TestEleven(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to cpo customers page.")
-        homepage.menu_label_chargingpoints()
         cpocustomerpage = homepage.menu_label_customers()
         log.info("Accessing pending contracts.")
         cpocustomerpage.pending_contracts_button()

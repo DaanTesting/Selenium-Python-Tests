@@ -51,7 +51,7 @@ class TestTwo(BaseClass):
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
         log.info("Navigating to CPO customers page.")
-        homepage.menu_label_cpo_customers()
+        homepage.menu_label_customers()
         titlecustomerspage = str(
             self.driver.find_element(
                 By.XPATH, "//h1[contains(.,'Customers')]"

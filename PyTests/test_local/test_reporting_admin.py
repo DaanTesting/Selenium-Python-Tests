@@ -30,7 +30,7 @@ class TestOne(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to cpo customers page.")
         homepage.menu_label_chargingpoints()
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
         log.info("Attempting to generate 'all customers' report.")
         cpocustomerpage.generate_all_customer_report()
 
@@ -253,7 +253,7 @@ class TestSeven(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to msp customers page.")
         homepage.menu_label_mobility()
-        mspcustomerpage = homepage.menu_label_msp_customers()
+        mspcustomerpage = homepage.menu_label_customers()
         log.info("Attempting to generate mobility customers export.")
         mspcustomerpage.generate_mobility_customers_export()
 

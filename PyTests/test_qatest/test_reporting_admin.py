@@ -28,7 +28,7 @@ class TestOne(BaseClass):
         loginpage.password_box().send_keys(login_data["password"])
         homepage = loginpage.login_button()
         log.info("Succesfully logged in.")
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
         cpocustomerpage.generate_all_customer_report()
 
         today = datetime.date.today()

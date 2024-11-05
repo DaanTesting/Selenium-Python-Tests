@@ -76,14 +76,8 @@ class HomePage:
         professionalpoliciesmainpage = ProfessionalPoliciesMainPage(self.driver)
         return professionalpoliciesmainpage
 
-    def menu_label_msp_customers(self):
-        selector1 = (By.XPATH, "(//span[text()='Customers'])[2]")
-        self.driver.find_element(*selector1).click()
-        mspcustomerpage = MspCustomerPage(self.driver)
-        return mspcustomerpage
-
-    def menu_label_cpo_customers(self):
-        selector1 = (By.XPATH, "(//span[text()='Customers'])[1]")
+    def menu_label_customers(self):
+        selector1 = (By.XPATH, "//span[.='Customers']")
         self.driver.find_element(*selector1).click()
         cpocustomerpage = CpoCustomerPage(self.driver)
         return cpocustomerpage

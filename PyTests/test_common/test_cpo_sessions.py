@@ -84,7 +84,7 @@ class TestOne(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to msp customers page.")
         homepage.menu_label_mobility()
-        mspcustomerpage = homepage.menu_label_msp_customers()
+        mspcustomerpage = homepage.menu_label_customers()
         log.info("Searching for 'Autotesting Roaming'.")
         mspcustomerpage.search_by_name_field().send_keys(
             "Autotesting Roaming" + Keys.ENTER
@@ -177,7 +177,7 @@ class TestTwo(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to cpo customers page.")
         homepage.menu_label_chargingpoints()
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
         log.info("Searching for 'Carrefour'.")
         cpocustomerpage.search_by_name_field().send_keys("Carrefour" + "\n")
         log.info("Opening user.")
@@ -270,7 +270,7 @@ class TestThree(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to CPO customers screen.")
         homepage.menu_label_chargingpoints()
-        cpocustomerpage = homepage.menu_label_cpo_customers()
+        cpocustomerpage = homepage.menu_label_customers()
         log.info("Searching for 'Autotest Splitbilling'.")
         cpocustomerpage.search_by_name_field().send_keys(
             "Autotest Splitbilling" + "\n"

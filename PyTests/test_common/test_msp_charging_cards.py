@@ -62,7 +62,7 @@ class TestOne(BaseClass):
         homepage = loginpage.login_button()
         homepage.menu_label_mobility()
         log.info("Navigating to msp customers page.")
-        mspcustomerpage = homepage.menu_label_msp_customers()
+        mspcustomerpage = homepage.menu_label_customers()
         log.info("Searching for 'Automated Test Company'.")
         mspcustomerpage.search_by_name_field().send_keys(
             "Automated Test Company Main Flow" + Keys.ENTER

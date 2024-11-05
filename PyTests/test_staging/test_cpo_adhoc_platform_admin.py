@@ -48,13 +48,13 @@ class TestOne(BaseClass):
         log.info("Verified only correct sessions show up.")
 
         adhocplatformpage.search_bar().clear()
-        adhocplatformpage.search_bar().send_keys("Bikini bottom" + Keys.ENTER)
+        adhocplatformpage.search_bar().send_keys(adhoc_data["AdhocCustomer"] + Keys.ENTER)
         time.sleep(1)
 
         results = self.driver.find_elements(By.XPATH, "//tbody/tr/td[2]/a")
         for result in results:
-            assert "Bikini bottom" in result.text
-        log.info("Verified only Bikini bottom sessions show up.")
+            assert adhoc_data["AdhocCustomer"] in result.text
+        log.info("Verified only adhoc customer sessions show up.")
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()

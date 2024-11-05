@@ -8,7 +8,7 @@ class LocationsMainPage:
         self.driver = driver
 
     def find_location(self):
-        selector1 = (By.XPATH, "(//div/input)[1]")
+        selector1 = (By.XPATH, "//input[@placeholder='Search by device or location']")
         return self.driver.find_element(*selector1)
 
     def find_device(self):
@@ -19,13 +19,19 @@ class LocationsMainPage:
         return self.driver.find_element(*selector1)
 
     def find_location_click_top_result(self):
-        selector1 = (By.XPATH, "(//tr[1]/td[3]/div/a[1])")
+        selector1 = (By.XPATH, "(//td/div/a)[1]")
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation
     
     def find_location_customer_click_top_result(self):
         selector1 = (By.XPATH, "(//tr/td[2]/a[1])[1]")
+        self.driver.find_element(*selector1).click()
+        individualcharginglocation = IndividualChargingLocation(self.driver)
+        return individualcharginglocation
+    
+    def find_location_customer_click_main_location(self):
+        selector1 = (By.XPATH, "//a[.='Autotesting Main Location']")
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation
@@ -69,7 +75,7 @@ class LocationsMainPage:
         return individualcharginglocation
 
     def click_top_location(self):
-        selector1 = (By.XPATH, "(//tr[1]/td/div/a)[2]")
+        selector1 = (By.XPATH, "//tr/td/div/a[1]")
         self.driver.find_element(*selector1).click()
         individualcharginglocation = IndividualChargingLocation(self.driver)
         return individualcharginglocation
