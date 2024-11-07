@@ -8,7 +8,7 @@ from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 
 
-@pytest.fixture(params=LoginPageData.test_login_data)
+@pytest.fixture(params=LoginPageData.staging_login_data)
 def login_data(request):
     return request.param
 

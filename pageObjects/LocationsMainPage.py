@@ -8,13 +8,13 @@ class LocationsMainPage:
         self.driver = driver
 
     def find_location(self):
-        selector1 = (By.XPATH, "//input[@placeholder='Search by device or location']")
+        selector1 = (By.XPATH, "//input[@placeholder='Search by device, location or address']")
         return self.driver.find_element(*selector1)
 
     def find_device(self):
         selector1 = (
-            By.CSS_SELECTOR,
-            "input[placeholder='Search by device or location']",
+            By.XPATH,
+            "//input[@placeholder='Search by device, location or address']",
         )
         return self.driver.find_element(*selector1)
 

@@ -135,7 +135,7 @@ class IndividualChargingLocation:
         return self.driver.find_element(*selector1)
     
     def pricing_tab(self):
-        selector1 = (By.XPATH, "(//li/a/span)[4]")
+        selector1 = (By.CSS_SELECTOR, ".nav-link[href='#pricing']")
         self.driver.find_element(*selector1).click()
 
     def edit_pricing_button(self):

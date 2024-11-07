@@ -1,6 +1,5 @@
 import random
 import time
-
 import pytest
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
@@ -67,7 +66,7 @@ class TestOne(BaseClass):
         mspcustomerpage.search_by_name_field().send_keys(general_data['MainCustomer'] + Keys.ENTER
         )
         log.info("Open 'Automated Test Company'.")
-        mspindividualcustomer = mspcustomerpage.click_on_main_flow_account()
+        mspindividualcustomer = mspcustomerpage.click_on_top_result_customer()
 
         log.info("Attempting to create new contract.")
         mspindividualcustomer.contracts_tab()

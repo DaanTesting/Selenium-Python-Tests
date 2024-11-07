@@ -8,7 +8,7 @@ from PyTests.TestData.LoginPageData import LoginPageData
 from utilities.BaseClass import BaseClass
 
 
-@pytest.fixture(params=LoginPageData.test_login_data)
+@pytest.fixture(params=LoginPageData.staging_login_data)
 def login_data(request):
     return request.param
 
@@ -287,7 +287,7 @@ class TestEleven(BaseClass):
         homepage.menu_label_cpo_pricing()
         titlepricingpage = str(
             homepage.driver.find_element(
-                By.XPATH, "//h1[.='Pricing policies']"
+                By.XPATH, "//h1[contains(.,'Pricing policies')]"
             ).text
         )
         assert "Pricing policies" in titlepricingpage

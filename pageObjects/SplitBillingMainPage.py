@@ -5,9 +5,11 @@ class SplitBillingMainPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def reimbursement_policies_tab(self):
-        selector1 = (By.XPATH, "//a[text()='Reimbursement policies']")
+    def reimbursement_policies_button(self):
+        selector1 = (By.CSS_SELECTOR, ".fa-sharp.fa-solid.fa-ellipsis-vertical")
+        selector2 = (By.XPATH, "//a[contains(.,'Reimbursement policies')]")
         self.driver.find_element(*selector1).click()
+        self.driver.find_element(*selector2).click()
 
     def autotesting_reimbursement(self):
         selector1 = (By.XPATH, "//a[.='Autotesting Reimbursement']")

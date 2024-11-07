@@ -17,3 +17,15 @@ class CpoOverviewPage:
     def sessions_tab(self):
         selector1 = (By.XPATH, "//a[@href='#sessions']")
         self.driver.find_element(*selector1).click()
+
+    def open_activate_contract_table(self):
+        selector1 = (By.XPATH, "(//i[@class='fa-sharp fa-solid fa-magnifying-glass'])[1]")
+        self.driver.find_element(*selector1).click()
+
+    def activate_top_contract(self):
+        selector1 = (By.XPATH, "(//button[.='Activate'])[1]")
+        self.driver.find_element(*selector1).click()
+    
+    def alert(self):
+        selector1 = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
+        return self.driver.find_element(*selector1)

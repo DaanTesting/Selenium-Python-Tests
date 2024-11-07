@@ -41,7 +41,7 @@ class TestOne(BaseClass):
         homepage.menu_label_chargingpoints()
         splitbillingmainpage = homepage.menu_label_splitbilling()
         log.info("Opening reimbursement policy tab.")
-        splitbillingmainpage.reimbursement_policies_tab()
+        splitbillingmainpage.reimbursement_policies_button()
         log.info("Opening autotesting reimbursement policy.")
         splitbillingmainpage.autotesting_reimbursement()
         log.info("Attempting to change policy value.")
@@ -459,9 +459,9 @@ class TestNine(BaseClass):
         except Exception as error:
             log.info(error)
 
-        cpocustomerpage.approve_registration()
+        cpocustomerpage.activate_customer()
         message = cpocustomerpage.message_banner().text
-        assert message == "Customer registered and login credentials are sent."
+        assert message == "Customer registered."
         log.info("Successfully approved customer.")
 
         generalobjects = GeneralObjects(self.driver)
@@ -507,14 +507,12 @@ class TestEleven(BaseClass):
         log.info("Succesfully logged in.")
         log.info("Navigating to cpo customers page.")
         homepage.menu_label_chargingpoints()
-        cpocustomerpage = homepage.menu_label_customers()
-        log.info("Accessing pending contracts.")
-        cpocustomerpage.pending_contracts_button()
-        log.info("Attempting to activate contract.")
-        cpocustomerpage.activate_top_pending_contract()
-        message = cpocustomerpage.message_banner().text
-        assert message == "Contract approved."
-        log.info("Succesfully activated contract.")
+        cpooverviewpage = homepage.menu_label_cpo_overview()
+        cpooverviewpage.open_activate_contract_table()
+        cpooverviewpage.activate_top_contract()
+        alert = cpooverviewpage.alert().text
+
+        assert alert == "Contract approved."
 
         generalobjects = GeneralObjects(self.driver)
         generalobjects.sign_out_button()
@@ -700,7 +698,7 @@ class TestFifteen(BaseClass):
         homepage.menu_label_chargingpoints()
         splitbillingmainpage = homepage.menu_label_splitbilling()
         log.info("Opening reimbursement policy tab.")
-        splitbillingmainpage.reimbursement_policies_tab()
+        splitbillingmainpage.reimbursement_policies_button()
         log.info("Opening autotesting reimbursement policy.")
         splitbillingmainpage.autotesting_reimbursement()
         log.info("Attempting to change policy value.")

@@ -18,7 +18,7 @@ driver = None
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome")
-    parser.addoption("--server_name", action="store", default="dev")
+    parser.addoption("--server_name", action="store", default="staging")
 
 
 @pytest.fixture(scope="class")
